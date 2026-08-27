@@ -16,3 +16,9 @@ by the preceding branch commit. Files using `Q_star`, diagnostic restoring
 matrices, or proxy panel metrics are implementation checks only. The local
 Phase 10 README distinguishes them from the certified aggregate map and
 printed-equation audit.
+
+`11_forensic_reconstruction/` contains the immutable-archive integrity ledger,
+complete `Par.mat` dump, figure provenance map, and deterministic historical-
+equation reproduction outputs. Its local README distinguishes exact
+calibration checks from translated BDF trajectories and from published
+scientific evidence.

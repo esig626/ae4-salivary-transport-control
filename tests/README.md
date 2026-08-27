@@ -19,6 +19,12 @@ implicit-sensitivity identity on an independent nonlinear system, and the
 material inconsistencies found by direct evaluation of the printed baseline.
 They do not certify a full AE4-model equilibrium.
 
+The Phase 11 forensic tests additionally certify source/copy hashes, the
+constructed historical calibration, the calibration-to-`Par.mat` lineage,
+historical WT residuals, deterministic translated BDF outputs, and the reported
+nonmatching AE2/AE4 flow ratios. They do not claim native MATLAB execution or a
+validated published-2018 physiological model.
+
 Run them with
 
 ```bash

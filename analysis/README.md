@@ -13,9 +13,17 @@ The numbered directories define the scientific execution order.
 - `08_robustness` uncertainty, parameter robustness, and final stress tests
 - `10_identifiability_discrimination` independent steady-state reduction,
   identifiability theory, escalation, novelty, and viability audit
+- `11_forensic_reconstruction` exhaustive historical-file audit, MATLAB
+  lineage, paper/code concordance, translated reproduction, blocker
+  reassessment, and conditional reconstruction decision
 
 A phase is complete only when its acceptance criteria are met and the corresponding results are entered in `docs/RESULTS_LEDGER.md`.
 
 Phase 10 can also terminate with a documented `STOP` when the published record
 does not support the requested model-specific numerical claims. In that case,
 only checked structural identities and diagnostics enter the results ledger.
+
+Phase 11 can retain that `STOP` after inspecting the historical implementation
+when exact 2018-code identity, the central phenotype, or a physiological
+parameter-to-observation map cannot be validated. Historical implementation
+evidence remains distinct from published scientific evidence.
