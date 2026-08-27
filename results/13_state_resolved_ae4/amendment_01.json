@@ -1,0 +1,18 @@
+{
+  "amended_summary_hash": "e4c26978c373a48f96a66c12b2781913119cdbc3c6c075f0a4fd92e197787e40",
+  "amended_summary_path": "results/13_state_resolved_ae4/transporter_fit_summary_amended.csv",
+  "amendment_id": "A01_post_reveal_carbonate_observable_and_finite_gauge_grid",
+  "chronology": "performed after the original Stage-A reveal marker",
+  "gauge_scan_hash": "125000629da273c9ab9d195b10e16a1a48d518af2e3276f9f4f93ea507ca4b7a",
+  "interpretation": "SR4a remains a chemistry alternative whose one-cation alkalinity curve misses the cooperative Hill slopes in this declared context; it is still not embeddable in the bicarbonate-only fixed chassis. The bounded null root and WT-gate failure are unchanged.",
+  "knockout_ionic_values_used": false,
+  "knockout_secretion_values_used": false,
+  "original_marker_declared_hash": "785d5c0297b2fe72ed9064293b8acd7f5c975d1afead84a573a51b3c163a51f6",
+  "pre_reveal_summary_hash": "785d5c0297b2fe72ed9064293b8acd7f5c975d1afead84a573a51b3c163a51f6",
+  "pre_reveal_summary_preserved_path": "results/13_state_resolved_ae4/transporter_fit_summary_pre_reveal.csv",
+  "reason": "correct SR4 BCECF projection from HCO3-only to total alkalinity HCO3+2CO3 and add a KO-blind 17-point log-spaced microscopic-barrier grid",
+  "required_summary_current_hash": "e4c26978c373a48f96a66c12b2781913119cdbc3c6c075f0a4fd92e197787e40",
+  "stage_a_outcome_changed": false,
+  "survivors_after": 5,
+  "survivors_before": 5
+}

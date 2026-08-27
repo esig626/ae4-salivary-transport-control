@@ -1,0 +1,11 @@
+{
+  "column_semantics": "row-oriented CTMC: each reversible edge gives source->target kf and target->source kr; construct Q with row sums zero and solve pi Q=0, sum pi=1",
+  "condition_count": 17,
+  "conditions_sha256": "c26b7294303810f342d9a0cc3b5da1fadd2e352261cc7539b6511db2522c3828",
+  "edge_row_count": 365,
+  "edges_sha256": "f7f2c92fbd5ba7974c1400e5db4ae19934a14cb01292e1fdf4b88de88d4af353",
+  "state_row_count": 288,
+  "states_sha256": "c1443d0d8ecc40c678eb5d557681297dedc30f378b09cfd9e27d33bf3b892e53",
+  "status": "frozen_for_independent_reproduction",
+  "strict_holdout_read": false
+}
