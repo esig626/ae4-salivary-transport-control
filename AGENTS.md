@@ -2,93 +2,86 @@
 
 These instructions apply to all work in this repository.
 
-## Scientific objective
+## Current scientific objective
 
-The current priority is a compact mathematical paper on identifiability and discrimination of transporter mechanisms in a reduced salivary pump leak model. The central question is what transporter information can and cannot be recovered from steady state physiological measurements.
+The current branch is a forensic reconstruction of the salivary AE4 project. The immediate objective is to determine whether the historical files in `archive/legacy-2017/` implement, directly precede, or otherwise explain the published 2018 AE4 model, and whether they resolve the published inconsistencies that caused Task 10 to classify the identifiability paper as `STOP`.
 
-This is not a sensitivity analysis project. Numerical continuation, AUTO, MATCONT, and parameter sweeps may be used as diagnostics but must not constitute the main result.
+The executable task for this branch is `prompts/11_full_forensic_reconstruction.md`. It supersedes the earlier quick-paper workflow for this branch only.
 
-The compact paper is the default target, not a ceiling. If the reduced model reveals a stronger analytical structure, the work must explicitly test whether it supports global identifiability, perturbation-induced distinguishability, a general pump leak network theorem, optimal experimental design, a nontrivial hypothesis testing problem, or an inference-relevant singularity.
+Do not assume either that the archived MATLAB files are the 2018 implementation or that they are not. Establish provenance and model identity from equations, parameters, dependencies, figures, and numerical reproduction.
 
 ## Non negotiable provenance rules
 
 1. Treat historical unpublished material as immutable evidence.
-2. Do not copy unpublished prose, figures, derivations, or code from the historical material into the new manuscript or new source code.
-3. The published 2018 AE4 model and other published literature may be used as scientific sources and must be cited in the relevant source map.
-4. Newly implemented code and mathematical reductions must be derived independently from published equations and documented source by source.
-5. If historical material is consulted to understand what was attempted, record that fact in `docs/PROVENANCE.md` or the relevant analysis README.
-6. Do not attribute sole authorship to historical collaborative work. The new project must stand on newly derived results.
+2. Never edit, rename, delete, reformat, or overwrite files under `archive/`.
+3. Historical files may be read, parsed, visually inspected, hashed, and executed unchanged for forensic purposes.
+4. If historical execution requires writable files, use a temporary or clearly labelled forensic working copy outside `archive/`.
+5. Do not copy unpublished prose, figures, derivations, or source code into a new manuscript or independent scientific implementation.
+6. Published sources remain the primary scientific sources. Historical material may resolve implementation provenance or ambiguous conventions, but must be labelled as historical implementation evidence rather than published evidence.
+7. If a clean implementation is created, derive it independently and record whether each convention is `published`, `historical implementation evidence`, or a `new modelling decision`.
+8. Update `docs/PROVENANCE.md` whenever historical scientific content is consulted.
+9. Do not attribute sole authorship to historical collaborative work. Any new project must stand on newly derived results.
 
-## Phase 00 status
+## Established inputs
 
-Phase 00 is complete at commit `2f71f23098037037836853fd96814a0e286cc0af` and is part of the history of this branch. Treat its inventory, source map, reconstruction blockers, provenance record, decision log, and published inconsistencies as inputs. Do not redo the inventory unless a concrete error is found.
+Phase 00 is complete at commit `2f71f23098037037836853fd96814a0e286cc0af` and is part of this branch history.
 
-## Current research workflow
+Task 10 is also complete on the parent branch. Its `STOP` classification is provisional for the present forensic task because it used the published specification rather than the historical implementation as the executable source. Preserve its analytical results and blocker diagnostics, but recompute model-specific conclusions if a validated implementation is recovered.
 
-The quick paper plan in `docs/QUICK_PAPER_PLAN.md` and the executable prompt in `prompts/10_identifiability_discrimination_quickpaper.md` supersede the earlier sensitivity centred workflow.
+## Forensic standard
 
-The priority sequence is
+Inspect all available evidence before concluding provenance or model identity. Account for every archive file. Do not rely on filenames or directory names alone.
 
-1. independently reconstruct the published baseline model using the completed Phase 00 source map
-2. resolve or bracket published inconsistencies that affect the reduction
-3. independently derive the smallest useful steady state reduction
-4. define parameter to observation maps for AE2 and AE4 activities
-5. establish local identifiability and observational equivalence results
-6. identify minimal biologically plausible measurement panels
-7. compute observation geometry as numerical support
-8. perform the mandatory escalation scan
-9. perform a targeted novelty audit on the strongest candidate results
-10. classify the project as `QUICK PAPER`, `PUSH HARDER`, or `STOP`
-11. draft only after the main analytical result is checked
+For historical MATLAB variants, establish the dependency graph and likely lineage using
 
-Before accepting a result
+- state dimensions and algebraic eliminations
+- equation structure
+- numerical parameter matches
+- unit and scaling conventions
+- solver and calcium protocols
+- output figures
+- references in historical TeX
+- reproducibility of published baseline and knockout outputs
 
-- save machine readable outputs in `results/`
-- add or update tests where possible
-- record accepted results in `docs/RESULTS_LEDGER.md`
-- record important methodological choices in `docs/DECISIONS.md`
-- distinguish reproduced results from new results
+For every mismatch between publication and code, distinguish
+
+- algebraic equivalence
+- likely publication typo
+- undocumented implementation convention
+- calibration choice
+- substantive model difference
+- unresolved inconsistency
+
+Do not repair a model silently.
 
 ## Model implementation rules
 
-- Prefer explicit units for every state, parameter, and flux.
-- Preserve mass balance, charge conventions, and stoichiometry exactly as specified by the chosen published model unless a published inconsistency is being explicitly resolved.
+- Preserve mass balance, charge conventions, stoichiometry, and units explicitly.
 - Keep parameter definitions separate from solver code.
-- Keep observables such as fluid flow separate from state equations.
-- Add regression tests for the baseline steady state before new analysis.
-- Do not use raw dimensional sensitivities as scientific conclusions.
-- For the steady state map `F(u;theta)=0`, verify implicit derivatives against numerical derivatives whenever feasible.
-- Do not claim global identifiability from local rank calculations.
-- Do not claim mechanism discrimination when the predicted observation sets overlap over the stated parameter classes.
-- If a published equation is internally inconsistent, do not silently choose a convention. Document the conservation argument and test whether the result depends on the choice.
+- Keep observables separate from state equations.
+- Add regression tests for any claimed baseline reproduction.
+- Verify historical-code residuals under the historical code's own conventions before judging them against the publication.
+- Do not retune historical parameters merely to force agreement with the paper.
+- If a clean reconstructed model is created, verify it independently against both the historical implementation and published outputs.
+- Do not claim global identifiability from local rank alone.
+- Do not claim mechanism discrimination when physiological observation sets overlap over the stated domains.
 
 ## Mathematical standard
 
-Prefer analytical results over numerical diagnostics. A parameter sweep, condition number, or continuation plot is not a theorem. Use the implicit function theorem, rank arguments, level set geometry, elimination, monotonicity, structural rank, topology, and related analytical tools where they genuinely apply.
+The project is not a sensitivity-analysis or bifurcation-catalogue exercise. If a trustworthy physiological steady-state map is recovered, resume the identifiability programme using analytical rank, level-set, elimination, stoichiometric, monotonicity, global-geometry, perturbation, and testing arguments where justified.
 
-Do not stop at a routine local rank calculation if the algebra indicates stronger structure. In particular, actively test whether
-
-- local equivalence extends to an exact or global equivalence manifold
-- a second experimental condition breaks an otherwise structural nonidentifiability
-- transporter stoichiometry gives a general rank criterion for a class of pump leak networks
-- a small experimental design problem has an analytical solution
-- separated mechanism image sets create a genuinely nontrivial testing problem
-- a fold or bifurcation changes inferential distinguishability
-
-State clearly which conclusions are generic, which are model specific, and which are numerical only.
-
-## Escalation discipline
-
-The escalation scan is mandatory, but escalation itself is evidence based.
-
-Use `PUSH HARDER` only when there is concrete mathematical structure beyond the quick paper and a plausible route to proof. Do not invent a general theory because it sounds interesting. Conversely, do not bury a stronger result merely to finish quickly.
-
-For any proposed stronger result, perform a focused literature audit of the mathematical claim before treating it as novel.
+Do not stop at routine local rank if stronger structure is present. Conversely, do not force a general theorem or hypothesis-testing section when the recovered model does not support one.
 
 ## Claims discipline
 
-Do not promote an observation to a biological mechanism without testing plausible alternatives. Do not pad a weak result. If the identifiability structure is trivial or the proposed discrimination problem collapses, record that result and reassess the paper.
+Separate three evidence levels throughout
+
+1. published scientific evidence
+2. historical implementation or provenance evidence
+3. new inference or modelling decisions
+
+Do not promote implementation details to biological facts. Do not hide contradictions. A failed reproduction is a result.
 
 ## Manuscript discipline
 
-Do not draft substantive manuscript sections until the viability audit is complete and the main analytical result has been checked and frozen in `docs/RESULTS_LEDGER.md`. The manuscript must clearly distinguish reproduction of prior published results from new findings.
+Do not draft manuscript prose during Task 11. First establish what the historical materials are, whether the model can be reproduced, whether the previous blockers are resolved, and whether the project should be classified `QUICK PAPER`, `PUSH HARDER`, or `STOP`.
