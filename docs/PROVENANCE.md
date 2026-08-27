@@ -129,6 +129,58 @@ The new implementation must be derived from published model equations and docume
   source code was ported into a manuscript or a new scientific implementation.
   Nothing under `archive/` was modified.
 
+### 2026-08-27 — Phase 12 AE4 mechanism reconstruction
+
+- Read all completed Phase 00, Phase 10, and Phase 11 reports, the canonical
+  `model/` specification, and the project provenance, decision, and results
+  ledgers before defining the Task-12 comparison. The complete Phase-11
+  67-file historical inventory and integrity evidence were treated as the
+  controlling archive map.
+- Reconsulted the immutable historical scientific implementation evidence
+  needed to define the smallest internally closed comparison chassis:
+  `Original/Parameters.m`, `Original/Saliva_Ae4.m`, `Par.m`, `Par.mat`,
+  `Salivary.m`, `Salivary2.m`, and `Salivary_ex.m`. Historical expressions were
+  independently rederived and implemented outside `archive/`; unpublished
+  prose or source was not copied into a manuscript or attributed to one
+  author.
+- Verified the archive before and during the investigation with the Phase-11
+  file ledger and tests. The aggregate local SHA-256 checkpoint over every
+  materialized `archive/` file remained
+  `e92e5a586d3f46d6823d19571558285923a9c1539b94afcf83ab1f48cb70715f`.
+- Consulted the primary knockout study, Peña-Münzenmayer et al. (2015),
+  [DOI 10.1074/jbc.M114.612895](https://doi.org/10.1074/jbc.M114.612895), for
+  the saliva, resting chloride, pH, exchanger-activity, timing, AE2, NKCC1,
+  channel, and NHE observations.
+- Consulted the primary transport study, Peña-Münzenmayer et al. (2016),
+  [DOI 10.1085/jgp.201611571](https://doi.org/10.1085/jgp.201611571), for
+  direct Na and K movement, electroneutrality, reversibility, cation
+  dose-response parameters, and the three explicitly considered
+  stoichiometries. These measurements take precedence over the 2018 model law.
+- Consulted the primary regulation study, Peña-Münzenmayer et al. (2021),
+  [DOI 10.1152/ajpgi.00145.2021](https://doi.org/10.1152/ajpgi.00145.2021),
+  for beta-adrenergic/cAMP/PKA activation, H89 inhibition, and the S173
+  perturbation. Figure-read activation folds are explicitly distinguished
+  from values stated in text and from whole-cell secretion data.
+- Consulted Vera-Sigüenza et al. (2018), DOI
+  `10.1007/s11538-017-0370-6`, only as a lower-priority published model record,
+  not as ground truth for AE4 biology. Its pooled Na/K law and resting-model
+  values were reconstructed as candidates or independent sensitivity targets
+  and were allowed to fail.
+- Independently produced the swappable AE4 implementation, C1–C8 candidate
+  registry, exact stoichiometric/thermodynamic derivations, knockout-blind
+  root and capacity screens, PKA diagnostics, adversarial tests, and final
+  localization. Every equation and parameter in the Task-12 reports is
+  labelled as primary experimental evidence, published model record,
+  historical implementation evidence, or a new modelling decision.
+- The approximately 35% knockout secretion decrement was held out from all
+  calibration, capacity, root, and variant-selection functions. It was read
+  only after candidates were frozen for validation. No file under `archive/`
+  was modified.
+- The moving-root continuation used a finite `1e-8`--`1e4` capacity domain.
+  Its later +/-10% cell-volume acceptance band was a new, post-hoc sensitivity
+  convention selected and screened without knockout outputs; it is not a
+  reported experimental uncertainty or a global root-uniqueness claim.
+
 ## Future entries
 
 Whenever archived material materially informs a research decision, append the date, file consulted, purpose, and what was independently rederived.

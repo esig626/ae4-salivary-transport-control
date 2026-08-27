@@ -46,4 +46,13 @@ No result from the historical material is automatically a result of this project
 
 ## Current status
 
-Repository structure established. Scientific validation has not yet begun.
+Phase 12 has completed a multi-agent AE4 mechanism reconstruction on the best
+internally coherent historical seven-state comparison chassis. The controlling
+conclusion is **`AE4 ALONE INSUFFICIENT; MISSING PATHWAY LOCALIZED`**: changing
+AE4 kinetics, cation branching, cooperativity, stoichiometry, reversibility,
+saturation, and source-bounded PKA activation does not jointly recover WT
+resting physiology and the held-out knockout phenotypes. Exact balance analysis
+localizes a missing two-dimensional cation-homeostasis closure module. See
+`analysis/12_ae4_mechanism_reconstruction/README.md` for scope and
+reproducibility; this result does not constitute a recovered 2018 model or
+authorize manuscript drafting.

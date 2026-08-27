@@ -25,6 +25,13 @@ historical WT residuals, deterministic translated BDF outputs, and the reported
 nonmatching AE2/AE4 flow ratios. They do not claim native MATLAB execution or a
 validated published-2018 physiological model.
 
+The Phase 12 tests certify the independent fixed-chassis implementation,
+candidate registry and balance signatures, thermodynamic sign/equilibrium
+rules, moving-rest and genotype phenotype gates, knockout-data isolation,
+source-bounded stimulus diagnostics, solver agreement, generated-artifact
+schema, and archive immutability. Passing them supports the stated tested-
+domain exclusion; it is not a proof of global root uniqueness.
+
 Run them with
 
 ```bash

@@ -27,3 +27,16 @@ declared matrices; its `Q_star`, panel ranks, and geometry are not published
 model outputs and are not used as evidence in the `STOP` decision.
 
 Install the small analysis environment from `requirements-analysis.txt`.
+
+## Phase 12 mechanism reconstruction
+
+`ae4_mechanism_reconstruction/` is an independently written, swappable
+seven-state comparison harness. It fixes one documented non-AE4 chassis,
+defines the C1--C8 AE4 candidate registry, derives stoichiometric and
+thermodynamic checks, performs knockout-blind calibration/root searches, and
+generates the Phase-12 tables and figures. It is a comparative falsification
+model, not a recovered publication-generating implementation. Run it with
+
+```bash
+PYTHONPATH=src python -m ae4_mechanism_reconstruction.run_analysis
+```

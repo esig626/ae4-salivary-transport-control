@@ -13,3 +13,9 @@ current `STOP` decision.
 Files under `10_identifiability_discrimination/` belong to the retained affine
 software fixture. Their titles label them as non-physiological diagnostics;
 they are not manuscript candidates or evidence for a minimal panel.
+
+Files under `12_ae4_mechanism_reconstruction/` are reproducible Task-12 audit
+figures. They visualize candidate prediction, closure, transported-cation,
+PKA-fold, and resting-capacity comparisons. They are model diagnostics, not
+experimental data or manuscript candidates; the local README gives the source
+table for each image.

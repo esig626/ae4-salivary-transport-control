@@ -22,3 +22,10 @@ complete `Par.mat` dump, figure provenance map, and deterministic historical-
 equation reproduction outputs. Its local README distinguishes exact
 calibration checks from translated BDF trajectories and from published
 scientific evidence.
+
+`12_ae4_mechanism_reconstruction/` contains the primary phenotype ledger,
+fixed-chassis C1--C8 comparisons, moving-rest and thermodynamic screens,
+post-hoc volume-sensitivity capacity bands, source-bounded PKA diagnostics,
+genotype resting-state tests, solver cross-checks, and pathway-localization
+results. Its local README records the evidentiary status of every file and the
+finite-domain limits of the numerical exclusion.
