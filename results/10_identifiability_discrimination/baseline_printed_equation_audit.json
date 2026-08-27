@@ -1,0 +1,65 @@
+{
+  "acid_base_equilibrium_audit": {
+    "equilibrium_predicted_co2_i_mM": 3.5185686845234097,
+    "reported_co2_i_mM": 6.6,
+    "reported_over_equilibrium_prediction": 1.8757627296094606
+  },
+  "activity_signature_cl_hco3_minor_determinant": -1.0,
+  "activity_signature_rank": 2,
+  "apical_qss_current_audit": {
+    "abs_residual_over_abs_tight_current": 0.30573438948496806,
+    "i_cacc_pA": -154.04928359431545,
+    "i_k_t_pA": 9.980233168925716,
+    "i_na_t_pA": 211.90787602322624,
+    "p_cacc": 0.08337988185631025,
+    "qss_residual_pA": -67.8388255978365,
+    "v_cacc_mV": -24.327526098125794,
+    "v_t_mV": 12.559999999999995
+  },
+  "co2_sign_result": "The individually printed apical and basolateral influxes sum to P_CO2*(CO2_l + CO2_e - 2*CO2_i), the negative of the aggregate J_CO2 printed in Appendix 8.",
+  "flux_aggregate_determinant": 1.0,
+  "flux_aggregate_rank": 2,
+  "kinetic_scale_audit": {
+    "ae2_flux_fmol_per_s": -4.8706697161753576e-05,
+    "ae2_turnover_factor": -0.002695445332692506,
+    "ae4_direct_conversion_flux_fmol_per_s": 35732.492253958495,
+    "ae4_mM_to_M_fourth_power_ratio": 1000000000000.0,
+    "ae4_over_nhe1": 31232544.116715383,
+    "ae4_printed_turnover_per_s": 41646.261368249994,
+    "ae4_turnover_if_numeric_concentrations_are_molar_per_s": 4.164626136824999e-08,
+    "ae4_unit_interpretation": "The mM calculation is literal for the printed mM^-4 rate constants. The M-state value shows the error from reusing those same numerical constants without conversion; it is not a second physical convention.",
+    "buffer_direct_conversion_flux_fmol_per_s": 44.06446781131523,
+    "buffer_over_nhe1": 38515.23775938203,
+    "nhe1_flux_fmol_per_s": 0.0011440788211305136
+  },
+  "nkcc_upstream_corrigendum_audit": {
+    "a2_corrigendum_converted_mM_minus4_s_minus2": 2.0096e-05,
+    "a4_corrigendum_converted_mM_minus4_s_minus1": 1.3851999999999999e-06,
+    "concentration_product_mM4": 7500000.0,
+    "corrigendum_converted_turnover_per_s": 0.598094504185787,
+    "corrigendum_url": "https://www.sciencedirect.com/science/article/pii/S0022519312005668",
+    "literal_2018_table_turnover_per_s": -14.507652324557462,
+    "palk_source_doi": "10.1016/j.jtbi.2010.06.027"
+  },
+  "recomputed_osmolarities_mM": {
+    "bath": 292.90003981071703,
+    "cell": 296.5001230268771,
+    "lumen": 297.40030488166184
+  },
+  "reported_osmolarity_water_flux_audit": {
+    "q_a_L_per_s": 3.4559999999998037e-15,
+    "q_b_L_per_s": 2.06e-13,
+    "q_b_over_q_a": 59.60648148148487,
+    "q_t_L_per_s": 1.2479999999999883e-15,
+    "q_total_L_per_s": 4.7039999999997924e-15,
+    "q_total_over_reported": 117.59999999999482,
+    "q_total_uL_per_min": 2.822399999999876e-07,
+    "reported_rest_q_uL_per_min": 2.4e-09
+  },
+  "scope": "printed-equation audit; not a reproduced full model",
+  "source": {
+    "doi": "10.1007/s11538-017-0370-6",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5792321/"
+  },
+  "steady_volume_sign_result": "Both printed signs reduce to q_a = q_b at steady state; the sign conflict does not affect the steady-state identities."
+}

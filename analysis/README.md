@@ -11,5 +11,11 @@ The numbered directories define the scientific execution order.
 - `06_identifiability` distinguishability of microscopic mechanisms
 - `07_variant_predictions` prospective predictions for AE4 variants
 - `08_robustness` uncertainty, parameter robustness, and final stress tests
+- `10_identifiability_discrimination` independent steady-state reduction,
+  identifiability theory, escalation, novelty, and viability audit
 
 A phase is complete only when its acceptance criteria are met and the corresponding results are entered in `docs/RESULTS_LEDGER.md`.
+
+Phase 10 can also terminate with a documented `STOP` when the published record
+does not support the requested model-specific numerical claims. In that case,
+only checked structural identities and diagnostics enter the results ledger.

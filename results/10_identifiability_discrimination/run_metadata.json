@@ -1,0 +1,13 @@
+{
+  "activity_domain": "normalized knockout-to-WT cycle rates [0,1]^2",
+  "checksums_sha256": {
+    "figures/identifiability_stoichiometric_geometry.png": "6ae7e6d713811ece245b721c6e53f34edaf6d635fc9380a9595c6b2f395ac1d7",
+    "results/10_identifiability_discrimination/baseline_printed_equation_audit.json": "dabe41adcf0ca92713492c5019881659a0b2164004d0ff4fbf68bc58656c6381",
+    "results/10_identifiability_discrimination/panel_rank_summary.csv": "ce54b2969d507a283ff6c58e0b0e3fa284b98f165a3599c93d133d1a425d6ce9",
+    "results/10_identifiability_discrimination/stoichiometric_geometry.csv": "5d312bd364582c12eb0974eb8b8643a7dc24038a78f3825edf232f4b330f9e47"
+  },
+  "command": "python src/run_identifiability_audit.py",
+  "date": "2026-08-27",
+  "deterministic": true,
+  "scope": "structural identities and printed-equation diagnostics only"
+}

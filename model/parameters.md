@@ -35,6 +35,16 @@ Published location: Appendix 1, Table 3.
 | `a_3` | 1.0306 | s^-1 | Palk et al. (2010) |
 | `a_4` | 1.3852 × 10^6 | mM^-4 s^-1 | Palk et al. (2010) |
 
+These are the values and units printed by the 2018 article. The upstream
+[Palk et al. corrigendum](https://www.sciencedirect.com/science/article/pii/S0022519312005668)
+instead gives `a_1=157.55 s^-2`, `a_2=2.0096e7 M^-4 s^-2`,
+`a_3=1.0306 s^-1`, and `a_4=1.3852e6 M^-4 s^-1`. For states stored in mM,
+the corrected `a_2` and `a_4` numerical values are `2.0096e-5` and
+`1.3852e-6`, respectively. At the Table 1 state this changes the turnover
+factor from approximately `-14.51 s^-1` under literal 2018-table use to
+approximately `0.598 s^-1`. This source-backed correction does not resolve
+the fitted density-to-whole-cell scaling.
+
 ## NaK-ATPase
 
 Published location: Appendix 2, Table 4.
@@ -44,6 +54,10 @@ Published location: Appendix 2, Table 4.
 | `α_NaK` | 4.84 | amol/μm^3 | Paper-derived |
 | `r` | 1.305 × 10^6 | mM^-3 s^-1 | Palk et al. (2010) |
 | `α_1` | 0.641 | mM^-1 | Palk et al. (2010) |
+
+The Phase 10 upstream audit found no explicit corrigendum for the NaK values.
+Their magnitudes are consistent with an M-based source convention, but any mM
+conversion is an inferred modelling choice and must be sensitivity-tested.
 
 ## Channel gating constants
 

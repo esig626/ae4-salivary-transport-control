@@ -1,0 +1,7 @@
+panel,certified_rank_or_bound,scope
+A shared chloride-cycle aggregate,1,exact scalar projection
+B bicarbonate-cycle aggregate,1,exact scalar projection
+"(A,B) aggregate pair",2,exact
+full intracellular state forcing,2,exact where both turnover factors are nonzero
+Q alone,at most 1,dimension bound only; physiological Jacobian not reconstructed
+Q plus one intracellular ion,not available,not certified: full published Jacobian unavailable

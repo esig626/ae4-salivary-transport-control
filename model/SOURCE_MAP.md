@@ -24,11 +24,11 @@ Provenance labels used here:
 | Intracellular K+ amount balance | §2.3, Eq. (3); §2.7 | Flux sources listed below | Published equation |
 | Intracellular HCO3− amount balance | §2.3, Eq. (4); §2.7 | Buffer, Ae2, and Ae4 sources below | Published equation |
 | Intracellular H+ amount balance | §2.3, Eq. (5); §2.7 | Buffer and Nhe1 sources below | Published equation |
-| Intracellular CO2 amount balance | §2.3, Eq. (6); §2.7 | Appendix 8; Sharp et al. (2015), DOI 10.1016/j.jtbi.2015.06.050 | Published equation; sign convention needs audit |
+| Intracellular CO2 amount balance | §2.3, Eq. (6); §2.7 | Appendix 8; Sharp et al. (2015), DOI 10.1016/j.jtbi.2015.06.050 | Phase 10 conservation audit selects the sum of the two printed inward fluxes; retain the opposite printed aggregate as a sensitivity convention |
 | Basolateral membrane potential | §2.4, Eq. (7); QSS form in §2.9 | Two-potential observation attributed to Young (1968), DOI 10.1007/BF00596392 | Published differential equation; QSS used for simulation |
 | Apical membrane potential | §2.4, Eq. (8); QSS form in §2.9 | Young (1968) | Published differential equation; QSS used for simulation |
-| Cell-volume balance | §2.5, Eq. (9); collected system in §2.7 | Water fluxes based on osmotic gradients; permeabilities from Palk et al. (2010) | **Unresolved:** Eq. (9) and §2.7 have opposite signs |
-| Apical, basolateral, and paracellular water fluxes | §2.5, Eqs. (10)–(13) | AQP5 context: Delporte and Steinfeld (2006), DOI 10.1016/j.bbamem.2006.01.022; permeabilities: Palk et al. (2010) | Published equations; labels/signs require audit |
+| Cell-volume balance | §2.5, Eq. (9); collected system in §2.7 | Palk et al. (2010), DOI 10.1016/j.jtbi.2010.06.027 | **Resolved in Phase 10:** conservation and the upstream equation require `dω_i/dt=q_b-q_a`; both printed signs give the same steady zero set |
+| Apical, basolateral, and paracellular water fluxes | §2.5, Eqs. (10)–(13) | AQP5 context: Delporte and Steinfeld (2006), DOI 10.1016/j.bbamem.2006.01.022; permeabilities: Palk et al. (2010) | Formulas retained; `q_a` is cell-to-lumen and `q_b` bath-to-cell |
 | Luminal Na+ balance | §2.6, Eq. (14); §2.7 | Tight-junction model in Appendix 10 | Published equation |
 | Luminal K+ balance | §2.6, Eq. (15); §2.7 | Tight-junction model in Appendix 10 | Published equation |
 | Luminal Cl− balance | §2.6, Eq. (16); §2.7 | CaCC model in Appendix 4 | Published equation; printed loss term drops a subscript |
@@ -42,7 +42,7 @@ The QSS formulation is described as ten differential equations plus two algebrai
 
 | Flux or constitutive relation | Published location in the 2018 paper | Upstream published source | Provenance/status |
 |---|---|---|---|
-| Nkcc1 cotransporter | §2.2; Appendix 1, Eq. (17), Table 3 | Palk et al. (2010), DOI 10.1016/j.jtbi.2010.06.027, simplifying Benjamin and Johnson (1997), DOI 10.1152/ajprenal.1997.273.3.F473 | Inherited model; density calibrated in the 2018 paper |
+| Nkcc1 cotransporter | §2.2; Appendix 1, Eq. (17), Table 3 | Palk et al. (2010), DOI 10.1016/j.jtbi.2010.06.027, and its 2013 [corrigendum](https://www.sciencedirect.com/science/article/pii/S0022519312005668), simplifying Benjamin and Johnson (1997), DOI 10.1152/ajprenal.1997.273.3.F473 | Upstream corrigendum resolves coefficient units as M-based; the 2018 density remains calibrated and lacks a whole-cell conversion |
 | NaK-ATPase | §2.2; Appendix 2, Eq. (18), Table 4 | Palk et al. (2010), simplifying Smith and Crampin (2004), DOI 10.1016/j.pbiomolbio.2004.01.010 | Inherited model; density calibrated in the 2018 paper |
 | Ca2+-activated K+ channel | §2.2; Appendix 3, Eqs. (19)–(21) | Takahata et al. (2003), DOI 10.1152/ajpcell.00250.2002; one constant taken from Palk et al. (2010) | Inherited/modified model; maximum conductance calibrated |
 | Ca2+-activated Cl− channel | §2.2; Appendix 4, Eqs. (22)–(24) | Simplification based on Takahata et al. (2003); comparison to Arreola et al. (2002), DOI 10.1113/jphysiol.2002.021980; physiological context from Frizzell and Hanrahan (2012), DOI 10.1101/cshperspect.a009563 | Paper-selected simplification; maximum conductance calibrated |
@@ -61,7 +61,7 @@ The QSS formulation is described as ten differential equations plus two algebrai
 |---|---|---|
 | Baseline concentrations, pH, membrane potentials, volume, and fitted osmotic terms | Table 1 | Mixed direct measurements and paper-derived values; preserve row-level labels in `parameters.md` and `observables.md` |
 | Channel and tight-junction conductances; compartment volumes; water permeabilities; physical constants | Appendix 11, Table 2 | Conductances paper-derived; volumes/permeabilities from Palk et al. (2010); `F` and `R` from standards papers |
-| Nkcc1 density and rate parameters | Appendix 1, Table 3 | Density paper-derived; rates from Palk et al. (2010) |
+| Nkcc1 density and rate parameters | Appendix 1, Table 3 | Density paper-derived; corrected rates from the Palk et al. (2013) corrigendum are M-based and require explicit conversion for mM states |
 | NaK density and rate parameters | Appendix 2, Table 4 | Density paper-derived; rates from Palk et al. (2010) |
 | Ae2 activity and half-saturation constants | Appendix 5, Table 5 | Activity paper-derived; constants from Falkenberg and Jakobsson (2010) |
 | Nhe1 activity and half-saturation constants | Appendix 6, Table 6 | Activity paper-derived; constants from Falkenberg and Jakobsson (2010) |
@@ -82,4 +82,4 @@ The QSS formulation is described as ten differential equations plus two algebrai
 
 ## Independent-reconstruction gate
 
-The published paper supplies the model topology, the balance equations, constitutive forms, and nominal tables without using the historical archive. It does **not** yet supply an unambiguous executable specification. The sign conflict in Eq. (9), flux/current unit ambiguities, incomplete numerical Ca2+ input, model-derived calibration values, and missing numerical-method details are recorded in `analysis/00_inventory/open_questions.md`. Phase 01 must resolve these from published sources, author clarification, or an explicitly documented new modelling decision before implementation.
+The published paper supplies the model topology, the balance equations, constitutive forms, and nominal tables without using the historical archive. It does **not** yet supply an unambiguous executable specification. Phase 10 resolves the volume sign and the upstream NKCC coefficient units, but flux/current and whole-cell scaling, incomplete numerical Ca2+ input, acid/base closure, model-derived calibration values, and missing numerical-method details remain. See `analysis/00_inventory/open_questions.md` and `analysis/10_identifiability_discrimination/reduction.md`.

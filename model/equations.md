@@ -80,7 +80,17 @@ The published cell-volume balance is internally inconsistent:
 - §2.7 prints `dω_i/dt = q_b - q_a`.
 - The formulas imply that `q_a` uses the apical/lumen gradient and `q_b` the basolateral/interstitial gradient, while the sentence immediately after Eq. (9) swaps the membrane labels.
 
-No canonical sign is selected in Phase 00.
+Phase 10 resolves the physical equation as
+
+\[
+\frac{d\omega_i}{dt}=q_b-q_a,
+\]
+
+because `q_a` is positive from cell to lumen and `q_b` is positive from bath
+to cell. The same sign appears in the collected system and in the upstream
+Palk et al. (2010) model. At steady state, either printed sign imposes the
+same condition `q_a=q_b`, so the exact Phase 10 steady identities are
+independent of the correction.
 
 The ionic sums printed after Eq. (11) include K+, Na+, H+, Cl−, and HCO3− in lumen; those species plus CO2 in cytoplasm and interstitium. `x_i/ω_i` accounts for impermeant intracellular negative charge and `Ψ_l` for untracked neutral luminal osmolytes/proteins.
 

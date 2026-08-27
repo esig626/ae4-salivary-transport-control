@@ -49,15 +49,16 @@ class ReducedModelTests(unittest.TestCase):
     def test_q_equivalence_is_exact_in_affine_diagnostic(self):
         points = self.model.q_equivalence_segment(n_points=37)
         values = [self.model.observation_values(point)["Q_star"] for point in points]
-        np.testing.assert_allclose(values, np.ones(len(values)), atol=2e-14, rtol=0)
+        reference = self.model.observation_values((0.5, 0.5))["Q_star"]
+        np.testing.assert_allclose(values, reference, atol=2e-14, rtol=0)
 
     def test_consistent_equation_sign_change_leaves_sensitivity_unchanged(self):
         for signs in ((1, 1, 1, -1), (-1, 1, -1, 1), (-1, -1, -1, -1)):
             self.assertLess(self.model.row_sign_invariance_error(signs), 1e-14)
 
     def test_declared_grid_stays_positive(self):
-        for g2 in np.linspace(0.0, 2.0, 11):
-            for g4 in np.linspace(0.0, 2.0, 11):
+        for g2 in np.linspace(0.0, 1.0, 11):
+            for g4 in np.linspace(0.0, 1.0, 11):
                 self.assertGreater(np.min(self.model.steady_state((g2, g4))), 0.0)
 
 

@@ -46,8 +46,8 @@ def write_panel_metrics(model: LinearizedPumpLeakModel) -> list[dict]:
 
 def write_parameter_map(model: LinearizedPumpLeakModel, n: int = 41) -> list[dict]:
     rows = []
-    for g2 in np.linspace(0.0, 2.0, n):
-        for g4 in np.linspace(0.0, 2.0, n):
+    for g2 in np.linspace(0.0, 1.0, n):
+        for g4 in np.linspace(0.0, 1.0, n):
             theta = np.array([g2, g4])
             values = model.observation_values(theta)
             x = model.steady_state(theta)
@@ -69,7 +69,7 @@ def write_parameter_map(model: LinearizedPumpLeakModel, n: int = 41) -> list[dic
 
 def write_equivalence(model: LinearizedPumpLeakModel) -> np.ndarray:
     points = model.q_equivalence_segment()
-    q_reference = model.observation_values((1.0, 1.0))["Q_star"]
+    q_reference = model.observation_values((0.5, 0.5))["Q_star"]
     with (RESULTS / "q_equivalence_set.csv").open("w", newline="", encoding="utf-8") as handle:
         writer = csv.writer(handle)
         writer.writerow(["G2", "G4", "Q_star"])
@@ -87,8 +87,14 @@ def plot_geometry(model: LinearizedPumpLeakModel, parameter_rows: list[dict], eq
 
     fig, axes = plt.subplots(1, 2, figsize=(10.5, 4.3), constrained_layout=True)
     contour = axes[0].tricontourf(g2, g4, q, levels=18, cmap="viridis")
-    axes[0].plot(equivalence[:, 0], equivalence[:, 1], color="white", lw=2.0, label="Q*=baseline")
-    axes[0].plot([1], [1], "o", color="red", ms=5, label="anchor")
+    axes[0].plot(
+        equivalence[:, 0],
+        equivalence[:, 1],
+        color="white",
+        lw=2.0,
+        label="Q*=interior reference",
+    )
+    axes[0].plot([1], [1], "o", color="red", ms=5, label="WT anchor")
     axes[0].set(xlabel="G2 activity multiplier", ylabel="G4 activity multiplier", title="Scalar Q* equivalence")
     axes[0].legend(frameon=False, fontsize=8)
     fig.colorbar(contour, ax=axes[0], label="Q* (diagnostic proxy)")
@@ -165,12 +171,13 @@ def main() -> None:
     write_json(
         RESULTS / "domain_summary.json",
         {
-            "parameter_domain": {"G2": [0.0, 2.0], "G4": [0.0, 2.0]},
+            "parameter_domain": {"G2": [0.0, 1.0], "G4": [0.0, 1.0]},
             "grid_points": len(parameter_rows),
             "minimum_state_ratio_over_grid": min(row["min_state_ratio"] for row in parameter_rows),
             "maximum_Q_star_over_grid": max(row["Q_star"] for row in parameter_rows),
             "minimum_Q_star_over_grid": min(row["Q_star"] for row in parameter_rows),
             "q_equivalence_points": len(equivalence),
+            "q_equivalence_reference": {"G2": 0.5, "G4": 0.5},
             "scope": "affine stoichiometric diagnostic; global statements apply only to this diagnostic map",
         },
     )

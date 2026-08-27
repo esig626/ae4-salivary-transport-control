@@ -22,7 +22,7 @@ Flux directions below follow the verbal and balance-equation descriptions in the
 |---|---|---|
 | `J_CO2_a` | Proportional to `[CO2]_l - [CO2]_i` | Appendix 8; permeability from Sharp et al. (2015) |
 | `J_CO2_b` | Proportional to `[CO2]_e - [CO2]_i` | Appendix 8; permeability from Sharp et al. (2015) |
-| `J_CO2` | Printed as proportional to `2[CO2]_i - [CO2]_l - [CO2]_e` | Appendix 8; sign conflicts with the “influx” wording and Eq. (6), so canonical direction is unresolved |
+| `J_CO2` | Conservation convention is proportional to `[CO2]_l + [CO2]_e - 2[CO2]_i`; the paper prints its negative | Appendix 8; Phase 10 selects the sum of the two individually printed influxes and retains the aggregate printed sign only as a sensitivity branch |
 | `J_Buffer` | Forward CO2 hydration minus reverse H+/HCO3− association | Appendix 8, Table 8; Sharp et al. (2015) |
 
 ## Tight-junction transport
@@ -35,8 +35,8 @@ The appendix labels the expressions `J_K^t` and `J_Na^t`, while the main model u
 
 | Symbol | Function | Published location | Status |
 |---|---|---|---|
-| `q_a` | Osmotic water flux involving lumen and cytoplasm, including `Ψ_l` and `x_i/ω_i` | §2.5 Eq. (10) | Formula is published; prose labels and cell-volume sign need audit |
-| `q_b` | Osmotic water flux involving cytoplasm and interstitium | §2.5 Eq. (11) | Formula is published; prose labels and cell-volume sign need audit |
+| `q_a` | Osmotic water flux from cell to lumen, including `Ψ_l` and `x_i/ω_i` | §2.5 Eq. (10) | Direction and volume contribution resolved by conservation in Phase 10 |
+| `q_b` | Osmotic water flux from interstitium to cell | §2.5 Eq. (11) | Direction and volume contribution resolved by conservation in Phase 10 |
 | `q_t` | Paracellular osmotic water flux from interstitium/lumen gradient | §2.5 Eq. (12) | Published |
 | `q_tot` | `q_a + q_t`; total lumen inflow and, under constant `ω_l`, ductal outflow | §2.5 Eq. (13) | Primary fluid-secretion observable |
 | Convective ion loss | `q_tot [X]_l` for luminal Na+, K+, and Cl− | §2.6 Eqs. (14)–(16) | Published; Eq. (16) drops the `l` subscript in print |
@@ -44,7 +44,7 @@ The appendix labels the expressions `J_K^t` and `J_Na^t`, while the main model u
 ## Required Phase 01 checks
 
 1. Resolve all `I`/`J` conversions and dimensions from published sources.
-2. Resolve the water-flux labels and the sign of `dω_i/dt` without using historical code.
+2. Use the conservation-resolved `dω_i/dt=q_b-q_a` and verify that steady results remain invariant to the isolated printed row sign.
 3. Obtain a numerical, citable `[Ca2+]_i(t)` input or document a new independent input model.
 4. Reconcile the Ae4 table units with Eq. (31) and the amount balances.
 5. Confirm the intended CO2 net-flux sign.

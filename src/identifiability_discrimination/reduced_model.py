@@ -217,12 +217,12 @@ class LinearizedPumpLeakModel:
 
     def q_equivalence_segment(
         self,
-        reference_theta: Sequence[float] = (1.0, 1.0),
+        reference_theta: Sequence[float] = (0.5, 0.5),
         lower: float = 0.0,
-        upper: float = 2.0,
+        upper: float = 1.0,
         n_points: int = 201,
     ) -> np.ndarray:
-        """Points on the affine Q* equivalence set inside a square domain."""
+        """Points on an interior affine Q* equivalence set in the square."""
 
         reference = np.asarray(reference_theta, dtype=float)
         gradient = self.observation_jacobian(("Q_star",))[0]
