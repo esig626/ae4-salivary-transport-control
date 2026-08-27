@@ -14,6 +14,17 @@ Historical unpublished material may be inspected to understand what was attempte
 
 The new implementation must be derived from published model equations and documented published evidence.
 
+## Consultation log
+
+### 2026-08-27 — Phase 00 inventory and source map
+
+- Consulted `archive/README.md` to confirm the archive’s immutable historical status and its broad content categories.
+- Consulted Git tree metadata (paths, file formats, and sizes) for `archive/legacy-2017/` to produce a complete file-level inventory. This metadata inspection did not open any archived file payload.
+- Did **not** consult the contents of `Ae4_Basis.tex`, `Marty.tex`, `mybib.bib`, any historical MATLAB/MAT file, any archived figure, or any historical build output.
+- Did **not** use the duplicate archived article. The scientific source was the separate published pointer `literature/core/2018_AE4_model.pdf` (cross-checked against the same open published article at PMCID PMC5792321).
+- Purpose: classify historical holdings, prevent accidental reuse, and establish that the new `model/` specification depends only on published sources.
+- Independently produced: state inventory, balance-equation map, flux/source map, parameter provenance table, observable definitions, and a list of published-record ambiguities. No Phase 01 code or manuscript prose was created.
+
 ## Future entries
 
 Whenever archived material materially informs a research decision, append the date, file consulted, purpose, and what was independently rederived.
