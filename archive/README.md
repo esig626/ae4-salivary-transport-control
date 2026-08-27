@@ -1,7 +1,9 @@
 # Historical archive
 
-The repository was initialised with an older directory named `M. Golubitsky` containing the approximately 2017 AE4 mathematical analysis project, including manuscript source, generated figures, MATLAB files, and a copy of the published AE4 paper.
+`legacy-2017/` contains the older AE4 mathematical analysis project that was uploaded when this repository was created. It includes manuscript source, generated figures, MATLAB files, build products, and a copy of the published AE4 paper.
 
-That historical material is retained for provenance and comparison only. It must not be edited or silently reused as the basis of new sole authored text, figures, derivations, or code.
+The directory was moved here without modifying its contents so that historical collaborative material is clearly separated from the new project.
 
-A later housekeeping commit may relocate the historical directory under this archive without changing its contents.
+This material is retained for provenance and comparison only. Do not edit it. Do not silently reuse unpublished collaborative text, figures, derivations, or code as new sole authored work.
+
+The Git history preserves the original uploaded location and state.
