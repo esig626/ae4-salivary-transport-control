@@ -4,84 +4,103 @@ These instructions apply to all work in this repository.
 
 ## Current scientific objective
 
-The current branch is a forensic reconstruction of the salivary AE4 project. The immediate objective is to determine whether the historical files in `archive/legacy-2017/` implement, directly precede, or otherwise explain the published 2018 AE4 model, and whether they resolve the published inconsistencies that caused Task 10 to classify the identifiability paper as `STOP`.
+The current branch asks a narrower and more consequential question than the previous reconstruction tasks.
 
-The executable task for this branch is `prompts/11_full_forensic_reconstruction.md`. It supersedes the earlier quick-paper workflow for this branch only.
+The biological AE4 knockout phenotype is independent evidence. The published 2018 model and the archived MATLAB implementations are both imperfect records of the intended model. Do not assume that either record is correct.
 
-Do not assume either that the archived MATLAB files are the 2018 implementation or that they are not. Establish provenance and model identity from equations, parameters, dependencies, figures, and numerical reproduction.
+The immediate objective is to determine whether the missing approximately 30 percent AE4 knockout reduction can be explained by the **structure of the AE4 transport model itself**, while changing as little else in the salivary secretion model as possible.
 
-## Non negotiable provenance rules
-
-1. Treat historical unpublished material as immutable evidence.
-2. Never edit, rename, delete, reformat, or overwrite files under `archive/`.
-3. Historical files may be read, parsed, visually inspected, hashed, and executed unchanged for forensic purposes.
-4. If historical execution requires writable files, use a temporary or clearly labelled forensic working copy outside `archive/`.
-5. Do not copy unpublished prose, figures, derivations, or source code into a new manuscript or independent scientific implementation.
-6. Published sources remain the primary scientific sources. Historical material may resolve implementation provenance or ambiguous conventions, but must be labelled as historical implementation evidence rather than published evidence.
-7. If a clean implementation is created, derive it independently and record whether each convention is `published`, `historical implementation evidence`, or a `new modelling decision`.
-8. Update `docs/PROVENANCE.md` whenever historical scientific content is consulted.
-9. Do not attribute sole authorship to historical collaborative work. Any new project must stand on newly derived results.
+The executable task for this branch is `prompts/12_ae4_mechanism_reconstruction_multiagent.md`.
 
 ## Established inputs
 
-Phase 00 is complete at commit `2f71f23098037037836853fd96814a0e286cc0af` and is part of this branch history.
+Phase 00, Task 10, and Task 11 are complete in this branch history.
 
-Task 10 is also complete on the parent branch. Its `STOP` classification is provisional for the present forensic task because it used the published specification rather than the historical implementation as the executable source. Preserve its analytical results and blocker diagnostics, but recompute model-specific conclusions if a validated implementation is recovered.
+Task 11 established the following.
 
-## Forensic standard
+- The archived code has direct lineage with the published project but is unlikely to be the exact publication generating implementation.
+- The archived seven state model closes its own calibrated WT baseline.
+- Its AE4 knockout changes endpoint flow by only about minus 0.144 percent rather than the experimentally observed approximately 30 percent reduction.
+- The archived AE4 law differs materially from the published AE4 mechanism, including its cation treatment.
+- The exact publication generating implementation remains unavailable.
 
-Inspect all available evidence before concluding provenance or model identity. Account for every archive file. Do not rely on filenames or directory names alone.
+Treat those findings as evidence, not as a reason to stop the present task.
 
-For historical MATLAB variants, establish the dependency graph and likely lineage using
+## Evidence hierarchy
 
-- state dimensions and algebraic eliminations
-- equation structure
-- numerical parameter matches
-- unit and scaling conventions
-- solver and calcium protocols
-- output figures
-- references in historical TeX
-- reproducibility of published baseline and knockout outputs
+Do not treat the 2018 article as ground truth. Use the following hierarchy when records conflict.
 
-For every mismatch between publication and code, distinguish
+1. Conservation laws, electroneutrality, dimensional consistency, and thermodynamic feasibility.
+2. Primary experimental evidence for AE4 transport and salivary knockout phenotypes.
+3. Reproducible behaviour of historical implementations.
+4. Published equations, parameter tables, and prose.
+5. New modelling choices, which must be explicitly labelled and justified.
 
-- algebraic equivalence
-- likely publication typo
-- undocumented implementation convention
-- calibration choice
-- substantive model difference
-- unresolved inconsistency
+The published paper may contain errors. The archived code may also contain errors or represent a different development branch.
 
-Do not repair a model silently.
+## Non negotiable provenance rules
 
-## Model implementation rules
+1. Never edit, rename, delete, reformat, or overwrite files under `archive/`.
+2. Historical files may be read, parsed, visually inspected, hashed, and executed unchanged for forensic purposes.
+3. Any new implementation must live outside `archive/` and must not be a silent copy of unpublished code.
+4. Every new equation or parameter convention must be labelled as `published`, `primary experimental evidence`, `historical implementation evidence`, or `new modelling decision`.
+5. Update `docs/PROVENANCE.md` when historical scientific content is consulted.
+6. Do not attribute sole authorship to historical collaborative work.
 
-- Preserve mass balance, charge conventions, stoichiometry, and units explicitly.
-- Keep parameter definitions separate from solver code.
-- Keep observables separate from state equations.
-- Add regression tests for any claimed baseline reproduction.
-- Verify historical-code residuals under the historical code's own conventions before judging them against the publication.
-- Do not retune historical parameters merely to force agreement with the paper.
-- If a clean reconstructed model is created, verify it independently against both the historical implementation and published outputs.
-- Do not claim global identifiability from local rank alone.
-- Do not claim mechanism discrimination when physiological observation sets overlap over the stated domains.
+## Reconstruction discipline
+
+The knockout phenotype must **not** be used as a calibration target in the primary model comparison.
+
+For each AE4 mechanism candidate
+
+- keep the non AE4 chassis fixed in the primary comparison
+- fit or normalize only AE4 specific quantities using WT baseline closure and independent AE4 transport evidence
+- then predict the AE4 knockout phenotype as held out validation
+- report failure as failure
+
+A secondary robustness stage may vary non AE4 quantities within source supported uncertainty ranges, but it must remain separate from the primary comparison and must not hide parameter compensation.
+
+Do not tune arbitrary parameters until the desired knockout ratio appears.
+
+## Scientific question
+
+Determine which structural properties of AE4 are required, if any, for an otherwise fixed salivary secretion model to reproduce the experimentally observed AE4 knockout phenotype while retaining the negligible AE2 knockout phenotype and other source supported physiological constraints.
+
+Possible structural differences include, but are not limited to
+
+- Na only versus Na and K coupling
+- explicit Na and K branches rather than a pooled cation term
+- cation selectivity
+- cooperative cation dependence
+- transported cations versus cation dependent allosteric gating
+- alternative electroneutral stoichiometries supported or discussed by the primary AE4 experiments
+- reversible thermodynamically consistent transport laws
+- transporter reversal or saturation regimes
+
+Do not assume any one of these is correct before testing it.
+
+## Multi agent standard
+
+The executable prompt uses independent agents for experimental evidence, model lineage, AE4 mechanism derivation, numerical reconstruction, and adversarial validation. The lead agent must reconcile their conclusions and must not suppress disagreements.
+
+## Completion standard
+
+Do not stop at the first candidate that fails or approximately matches the knockout result. Systematically exhaust the source justified candidate family defined in the task.
+
+The task is complete only when one of the following evidence backed answers is reached.
+
+1. A minimal AE4 mechanism class reproduces the held out phenotype and the required structural ingredient is identified.
+2. No source justified AE4 mechanism in the tested family can reproduce the phenotype on the fixed chassis, with a documented exclusion result and the next missing model component localized.
+3. Multiple mechanisms remain observationally equivalent, in which case the task must identify the experiment or observable required to distinguish them.
+
+A vague `STOP` is not an acceptable answer for this branch.
 
 ## Mathematical standard
 
-The project is not a sensitivity-analysis or bifurcation-catalogue exercise. If a trustworthy physiological steady-state map is recovered, resume the identifiability programme using analytical rank, level-set, elimination, stoichiometric, monotonicity, global-geometry, perturbation, and testing arguments where justified.
+Use analytical reasoning where it helps isolate mechanism. Mass balance, stoichiometry, thermodynamic driving force, monotonicity, limiting cases, rank, and exact algebra should be used before broad numerical search.
 
-Do not stop at routine local rank if stronger structure is present. Conversely, do not force a general theorem or hypothesis-testing section when the recovered model does not support one.
-
-## Claims discipline
-
-Separate three evidence levels throughout
-
-1. published scientific evidence
-2. historical implementation or provenance evidence
-3. new inference or modelling decisions
-
-Do not promote implementation details to biological facts. Do not hide contradictions. A failed reproduction is a result.
+If a successful mechanism family is found, then and only then revisit identifiability, mechanism discrimination, experimental design, or hypothesis testing.
 
 ## Manuscript discipline
 
-Do not draft manuscript prose during Task 11. First establish what the historical materials are, whether the model can be reproduced, whether the previous blockers are resolved, and whether the project should be classified `QUICK PAPER`, `PUSH HARDER`, or `STOP`.
+Do not draft a manuscript during Task 12. First obtain the mechanism level answer, validate it independently, and record it in the results ledger.
