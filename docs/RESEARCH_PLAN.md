@@ -1,32 +1,54 @@
 # Research plan
 
-## Primary objective
+## Current objective
 
-Determine whether the AE4 versus AE2 secretory phenotype reflects scale invariant network control, identify its structural basis, and test whether whole cell phenotypes can discriminate AE4 cation coupling mechanisms.
+Develop a compact mathematical paper on identifiability and discrimination of transporter mechanisms in a reduced pump leak model of epithelial secretion.
 
-## Stage A. Reproduction
+The earlier sensitivity centred plan is superseded by `docs/QUICK_PAPER_PLAN.md`.
 
-Phases 00 to 02 establish provenance, reconstruct the published baseline model, and reproduce the perturbation phenotype.
+## Core question
 
-## Stage B. Explanation
+What can be inferred about AE2 and AE4 transporter activities, or about competing transporter mechanisms, from steady state physiological measurements?
 
-Phases 03 and 04 replace the historical raw derivative argument with dimensionless control analysis and a Jacobian based structural decomposition.
+The intended mathematical object is a parameter to observation map obtained from an independently reconstructed steady state reduction of the published 2018 model.
 
-## Stage C. New biology
+## Priority stages
 
-Phases 05 to 07 introduce current AE4 cation coupling evidence, assess mechanism identifiability, and generate prospective variant predictions.
+### Stage A. Independent reconstruction
 
-## Stage D. Stress test and paper
+Reconstruct the published baseline model and derive the smallest useful steady state system without copying the historical unpublished reduction.
 
-Phase 08 tests robustness. Only then are headline results frozen and manuscript drafting begun.
+### Stage B. Identifiability
+
+Study the map from transporter activity parameters to measurable outputs. Establish local rank conditions, observational equivalence sets, and minimal measurement panels.
+
+### Stage C. Observation geometry
+
+Use computation to illustrate the analytical results, including equivalence curves and separation gained by adding observables. Numerical geometry supports the mathematics but is not the headline contribution.
+
+### Stage D. Optional discrimination
+
+Only if justified by the observation geometry, compare explicit transporter mechanism classes and quantify discrimination under a small explicit noise model.
+
+### Stage E. Viability audit and paper
+
+Assess whether the strongest analytical result is enough for a short mathematical biology paper. Draft only after the result has been checked and frozen.
+
+## Methods that are not the project
+
+- conventional sensitivity analysis
+- parameter sweeps as conclusions
+- AUTO or MATCONT bifurcation analysis as the main paper
+- a large new composite testing theory unless forced by the problem
 
 ## Stop conditions
 
-The project should be reconsidered rather than forced into a paper if any of the following occurs.
+Reconsider rather than force a paper if
 
-- the baseline published model cannot be independently reproduced
-- the AE4 versus AE2 distinction disappears under faithful reconstruction
-- dimensionless control reveals no meaningful distinction and no current mechanism question rescues novelty
-- literature audit finds the proposed new mechanism analysis has already been done
+- the published model cannot be independently reconstructed
+- the identifiability result reduces to a trivial parameter count with no model specific structure
+- all biologically plausible measurement panels are trivially full rank and there is no meaningful observational equivalence
+- the mechanism classes overlap everywhere in realistic observation space
+- the only new result is numerical conditioning or sensitivity
 
-A negative result at one stage should be recorded rather than hidden. It may redirect the project toward identifiability or model criticism.
+See `prompts/10_identifiability_discrimination_quickpaper.md` for the executable Codex task.
