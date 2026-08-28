@@ -1,0 +1,24 @@
+{
+  "root_id": "G2_BALANCED_APICAL_K_BIASED:M00",
+  "status": "REJECTED_STALE_WATER_PARAMETERS",
+  "firewall_state": "PRE_REVEAL_NO_HELDOUT_ACCESS",
+  "reason": "Candidate was generated before hydraulic coefficients were converted to Palk-lineage pL/s/mOsm units",
+  "corrected_water_parameters": {
+    "apical_hydraulic_pL_s_mOsm": 0.00432,
+    "basolateral_hydraulic_pL_s_mOsm": 0.0515,
+    "paracellular_hydraulic_pL_s_mOsm": 0.00026
+  },
+  "stale_state_sources_under_corrected_water": {
+    "cell_volume_source_pL_s": 0.337276254,
+    "lumen_volume_source_pL_s": 0.0343138199
+  },
+  "independent_one_percent_refinement": {
+    "success": false,
+    "max_abs_scaled_residual": 377.5055932369518,
+    "max_abs_amount_or_equivalent_source_debug": 0.02936260186162118,
+    "max_abs_volume_source_pL_s": 0.037750559323695185,
+    "scaled_jacobian_rank": 10,
+    "scaled_jacobian_nullity": 0
+  },
+  "interpretation": "Not an accepted WT root; recalibration with corrected water units is required"
+}

@@ -1,0 +1,2027 @@
+{
+  "dependency_artifact_sha256": {
+    "dynamic_frozen_manifest.json": "6283c8aa4ee3449592a1228d82333ba8b06da280460a8fdd562c479e19f9804a",
+    "regulatory_sustainment_summary.json": "337de10e46c7643a6e41a753b3619c976c66c2df04610d1dfc20c5a6480c9a05",
+    "wt_dynamic_gate.json": "01d9bd9b19031e958b0a7ec8fccabe2dc260feb63457d84fca64dfb77b917001",
+    "wt_g5_ae2_independent_summary.json": "1094b4890f37d45f2e6b1df04ede532402b8853885346a4c90efb954fb35f8bb",
+    "wt_g5_ae2_independent_validation.csv": "b53ae10edb93d56fbfff0a099e2659d3a27cfd7bd9591dae4db4151d4cba3be4",
+    "wt_g5_cross_root_repair_summary.json": "a4368ebb370c469f434979c93df8eb86353a8851cc3ea30a3d3cd22c290b952f",
+    "wt_g5_final_candidate_nearby_robustness.csv": "d949e633dbb49b278fb45f948124e2a1bd5bdbaf044ddf1beecfe06e9d56949b",
+    "wt_g5_final_candidate_nearby_summary.json": "1265f893381f5cc22c49ee12a1de0d5f01648c1f2f4433a802b0d52ac7d907e2",
+    "wt_g5_joint_ca_nkcc_group_gate.csv": "6901fd3814fb8417b2df2d53f6d16d3327499dd1a7dfd11f5d46fa618a853dfb",
+    "wt_g5_joint_ca_nkcc_regulatory_profile.csv": "59f8a79c0de11e8fdaf165249c028a09cc479645b715df142af2fb82c42c5dfc",
+    "wt_g5_joint_ca_nkcc_summary.json": "bad7fc425584bdda4368a406ba80d009dd1fe8530d4d0502b424f4e5b8dc4cf7",
+    "wt_nkcc_stimulation_summary.json": "5aede0aef36adb94e61d274e67591314032218850093900d6f8816c828fe4986",
+    "wt_parameter_candidates.csv": "0db2d9a2be3ed227c83ba3da1b3c9282d1444423fe10c07a15039268a404bf0b",
+    "wt_root_states.csv": "6d901ee95120e970dfffffe5c65c003e4409cfafc13b08e9d67cf0d2c06b4039",
+    "wt_root_table.csv": "7e3a5cd16af13d8f94e1d5fbc7e6f32fa532e8e11c1fe4b9bc305ae8ada1c8c6",
+    "wt_selected_candidate.json": "41b91c09a69b6f50f1ea96ec49df9c56681bcc21ada8bc68b515f1b34a0eea44"
+  },
+  "equation_source_file_sha256": {
+    "src/modern_full_model/acid_base.py": "cf123937b6cf085b0cbad01fc464fca9eadbb56888802e427900473c1a737a31",
+    "src/modern_full_model/calibration.py": "fc839e1caf26c9d8143059b3945d77322e1e84584e495a17bb2c7d047a7ca9ca",
+    "src/modern_full_model/camp_pka.py": "b03ef7c794017a1a312fc9bd47188a9bc430e63c8b9c6be4dbfb6c93147eaf03",
+    "src/modern_full_model/freeze_g5_joint.py": "410e05b5d08c61dec4ca5a38c14027b94c0133327a0d5b2e00a093ccc03bc76a",
+    "src/modern_full_model/membranes.py": "8073357f5be3a19237c7cf230b8ec1107056ef6723046dd5be86957f2248fa7c",
+    "src/modern_full_model/model.py": "46c769e7ed16a7970244846e10990fc73130aa05b370617f27433c0281fdc878",
+    "src/modern_full_model/nkcc_stimulation.py": "8ea8cb187d334725b35fb0d5cc694e83ed876534b70d38a4c01c7effd1d02843",
+    "src/modern_full_model/parameters.py": "6d18e7ce0fda76cfd63088f4e2a398a59ce307dcc45eeb236dca57c09b6ff107",
+    "src/modern_full_model/run_analysis.py": "919a9bc843240550537b8a2019bec89dfa6dcc0e4e8a920d7f041bf26a608339",
+    "src/modern_full_model/run_g5_ae2_validation.py": "08e753039974759904fee294fbac91689a98d94aa081c183f2401a07a5842769",
+    "src/modern_full_model/run_g5_cross_root_profile.py": "c682dd163f2e997e86a344edee2b75a3dd185e8f49e515928afaf4300a3e0bf4",
+    "src/modern_full_model/run_g5_joint_repair_profile.py": "c815b44021bab726a282461b9dbc228d5c89e0449e4512708dd82ef7b3f305cd",
+    "src/modern_full_model/run_g5_nearby_robustness.py": "8ef1613ced73de593074eb06f32334e005f14dc10306ba24bd1f85179dfac187",
+    "src/modern_full_model/states.py": "a037f9690960c3b52e738bc4051601adf76bf345b3a32b191770e2469255fd22",
+    "src/modern_full_model/transporters.py": "4177a444fa97e430c345fc1fb73f333b5b6623c3ea3cd84769cb9d6dca76061a",
+    "src/modern_full_model/validation.py": "a11d0d5a7b5dca2f9dad225a807d9f1378d2032226d03a60f4f04409257eae90",
+    "src/modern_full_model/water.py": "d93494f93411123a9c9bdaea5c177c89714ee5ab0794717c586bfd87647671ba"
+  },
+  "equation_source_tree_sha256": "0d763be527ec1d2f8dad8a5317478ba2a70326f8152989cbba2506bdd08692e1",
+  "failed_groups_preserved": [
+    {
+      "all_individual_shape_gates_pass": false,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": false,
+      "ensemble_max_ratio": 1.1512555335510422,
+      "profile_id": "CA015_N1_M1P75",
+      "root_id": "G2_ASYMMETRIC_APICAL_K_BIASED_G10:M00"
+    },
+    {
+      "all_individual_shape_gates_pass": false,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": false,
+      "ensemble_max_ratio": 1.149207768987848,
+      "profile_id": "CA015_N1_M1P75",
+      "root_id": "G2_ASYMMETRIC_APICAL_K_HEAVY_G10:M00"
+    },
+    {
+      "all_individual_shape_gates_pass": false,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": false,
+      "ensemble_max_ratio": 1.148711614332231,
+      "profile_id": "CA015_N1_M1P75",
+      "root_id": "G2_ASYMMETRIC_APICAL_MODERATE_NA_G10:M00"
+    },
+    {
+      "all_individual_shape_gates_pass": false,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": false,
+      "ensemble_max_ratio": 1.1588981249098775,
+      "profile_id": "CA015_N1_M1P75",
+      "root_id": "G2_BALANCED_APICAL_K_BIASED_G10:M00"
+    },
+    {
+      "all_individual_shape_gates_pass": false,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": false,
+      "ensemble_max_ratio": 1.1570445000598562,
+      "profile_id": "CA015_N1_M1P75",
+      "root_id": "G2_BALANCED_APICAL_K_HEAVY_G10:M00"
+    },
+    {
+      "all_individual_shape_gates_pass": false,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": false,
+      "ensemble_max_ratio": 1.1558462308577007,
+      "profile_id": "CA015_N1_M1P75",
+      "root_id": "G2_BALANCED_APICAL_MODERATE_NA_G10:M00"
+    },
+    {
+      "all_individual_shape_gates_pass": false,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": false,
+      "ensemble_max_ratio": 1.186932898653572,
+      "profile_id": "CA015_N1_M1P75",
+      "root_id": "G2_LOW_APICAL_K_BIASED_G10:M00"
+    },
+    {
+      "all_individual_shape_gates_pass": false,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": false,
+      "ensemble_max_ratio": 1.1840758813028038,
+      "profile_id": "CA015_N1_M1P75",
+      "root_id": "G2_LOW_APICAL_K_HEAVY_G10:M00"
+    },
+    {
+      "all_individual_shape_gates_pass": false,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": false,
+      "ensemble_max_ratio": 1.1843048144646624,
+      "profile_id": "CA015_N1_M1P75",
+      "root_id": "G2_LOW_APICAL_MODERATE_NA_G10:M00"
+    }
+  ],
+  "firewall": "NO_HELDOUT_TARGET_FILE_OPEN_HASH_PARSE_OR_MODEL_SELECTION",
+  "flow_scale": {
+    "frozen_scale_by_root_profile": {
+      "G2_ASYMMETRIC_APICAL_K_BIASED_G10:M00::CA010_N1_M1P75": {
+        "feasible_lower_uL_min_per_pL_s": 16910.75566628126,
+        "feasible_upper_uL_min_per_pL_s": 17933.380727005417,
+        "implied_effective_cell_count": 287248286.22886586,
+        "multiplier_uL_min_per_pL_s": 17234.89717373195
+      },
+      "G2_ASYMMETRIC_APICAL_K_BIASED_G10:M00::CA012_N1_M2P0": {
+        "feasible_lower_uL_min_per_pL_s": 15036.615927162404,
+        "feasible_upper_uL_min_per_pL_s": 15505.766237499209,
+        "implied_effective_cell_count": 254519851.3721801,
+        "multiplier_uL_min_per_pL_s": 15271.191082330806
+      },
+      "G2_ASYMMETRIC_APICAL_K_HEAVY_G10:M00::CA010_N1_M1P75": {
+        "feasible_lower_uL_min_per_pL_s": 16967.058726700587,
+        "feasible_upper_uL_min_per_pL_s": 17979.453082561748,
+        "implied_effective_cell_count": 287970414.3232103,
+        "multiplier_uL_min_per_pL_s": 17278.22485939262
+      },
+      "G2_ASYMMETRIC_APICAL_K_HEAVY_G10:M00::CA012_N1_M2P0": {
+        "feasible_lower_uL_min_per_pL_s": 15085.68938557001,
+        "feasible_upper_uL_min_per_pL_s": 15563.415816538389,
+        "implied_effective_cell_count": 255409210.01756996,
+        "multiplier_uL_min_per_pL_s": 15324.552601054198
+      },
+      "G2_ASYMMETRIC_APICAL_MODERATE_NA_G10:M00::CA010_N1_M1P75": {
+        "feasible_lower_uL_min_per_pL_s": 16778.56594820588,
+        "feasible_upper_uL_min_per_pL_s": 17873.906675770348,
+        "implied_effective_cell_count": 286233379.8660989,
+        "multiplier_uL_min_per_pL_s": 17174.002791965933
+      },
+      "G2_ASYMMETRIC_APICAL_MODERATE_NA_G10:M00::CA012_N1_M2P0": {
+        "feasible_lower_uL_min_per_pL_s": 14904.508622548847,
+        "feasible_upper_uL_min_per_pL_s": 15424.495383007932,
+        "implied_effective_cell_count": 248497274.0830031,
+        "multiplier_uL_min_per_pL_s": 14909.836444980187
+      },
+      "G2_BALANCED_APICAL_K_BIASED_G10:M00::CA010_N1_M1P75": {
+        "feasible_lower_uL_min_per_pL_s": 17409.882081293552,
+        "feasible_upper_uL_min_per_pL_s": 18375.76159825075,
+        "implied_effective_cell_count": 294706402.84207857,
+        "multiplier_uL_min_per_pL_s": 17682.384170524714
+      },
+      "G2_BALANCED_APICAL_K_BIASED_G10:M00::CA012_N1_M2P0": {
+        "feasible_lower_uL_min_per_pL_s": 15439.58555962512,
+        "feasible_upper_uL_min_per_pL_s": 15844.908369559318,
+        "implied_effective_cell_count": 260704116.07653698,
+        "multiplier_uL_min_per_pL_s": 15642.24696459222
+      },
+      "G2_BALANCED_APICAL_K_HEAVY_G10:M00::CA010_N1_M1P75": {
+        "feasible_lower_uL_min_per_pL_s": 17471.282158871196,
+        "feasible_upper_uL_min_per_pL_s": 18427.887851003405,
+        "implied_effective_cell_count": 295561483.8483506,
+        "multiplier_uL_min_per_pL_s": 17733.689030901034
+      },
+      "G2_BALANCED_APICAL_K_HEAVY_G10:M00::CA012_N1_M2P0": {
+        "feasible_lower_uL_min_per_pL_s": 15491.873554610089,
+        "feasible_upper_uL_min_per_pL_s": 15905.252281031919,
+        "implied_effective_cell_count": 261642715.2970167,
+        "multiplier_uL_min_per_pL_s": 15698.562917821004
+      },
+      "G2_BALANCED_APICAL_MODERATE_NA_G10:M00::CA010_N1_M1P75": {
+        "feasible_lower_uL_min_per_pL_s": 17262.28367605223,
+        "feasible_upper_uL_min_per_pL_s": 18305.925227368705,
+        "implied_effective_cell_count": 293455982.0166606,
+        "multiplier_uL_min_per_pL_s": 17607.358920999635
+      },
+      "G2_BALANCED_APICAL_MODERATE_NA_G10:M00::CA012_N1_M2P0": {
+        "feasible_lower_uL_min_per_pL_s": 15296.642451027321,
+        "feasible_upper_uL_min_per_pL_s": 15758.490539334478,
+        "implied_effective_cell_count": 258792774.91968164,
+        "multiplier_uL_min_per_pL_s": 15527.5664951809
+      },
+      "G2_LOW_APICAL_K_BIASED_G10:M00::CA010_N1_M1P75": {
+        "feasible_lower_uL_min_per_pL_s": 19998.07518592556,
+        "feasible_upper_uL_min_per_pL_s": 20645.1449464953,
+        "implied_effective_cell_count": 338693501.10350716,
+        "multiplier_uL_min_per_pL_s": 20321.61006621043
+      },
+      "G2_LOW_APICAL_K_BIASED_G10:M00::CA012_N1_M2P0": {
+        "feasible_lower_uL_min_per_pL_s": 17699.715986516334,
+        "feasible_upper_uL_min_per_pL_s": 17732.380482067398,
+        "implied_effective_cell_count": 295267470.5715311,
+        "multiplier_uL_min_per_pL_s": 17716.048234291866
+      },
+      "G2_LOW_APICAL_K_HEAVY_G10:M00::CA010_N1_M1P75": {
+        "feasible_lower_uL_min_per_pL_s": 20076.03549720549,
+        "feasible_upper_uL_min_per_pL_s": 20731.21940720185,
+        "implied_effective_cell_count": 340060457.5367278,
+        "multiplier_uL_min_per_pL_s": 20403.62745220367
+      },
+      "G2_LOW_APICAL_K_HEAVY_G10:M00::CA012_N1_M2P0": {
+        "feasible_lower_uL_min_per_pL_s": 17763.537560515884,
+        "feasible_upper_uL_min_per_pL_s": 17811.74439282563,
+        "implied_effective_cell_count": 296460682.9445126,
+        "multiplier_uL_min_per_pL_s": 17787.64097667076
+      },
+      "G2_LOW_APICAL_MODERATE_NA_G10:M00::CA010_N1_M1P75": {
+        "feasible_lower_uL_min_per_pL_s": 19792.806289242486,
+        "feasible_upper_uL_min_per_pL_s": 20511.72244034112,
+        "implied_effective_cell_count": 329951754.70885235,
+        "multiplier_uL_min_per_pL_s": 19797.10528253114
+      },
+      "G2_LOW_APICAL_MODERATE_NA_G10:M00::CA012_N1_M2P0": {
+        "feasible_lower_uL_min_per_pL_s": 17508.07202375895,
+        "feasible_upper_uL_min_per_pL_s": 17606.684756233117,
+        "implied_effective_cell_count": 292622973.1666005,
+        "multiplier_uL_min_per_pL_s": 17557.378389996033
+      }
+    },
+    "rule": "INTERSECT_ALL_20_MEMBER_AND_BOTH_SOLVER_MULTIPLIER_INTERVALS; USE_PREFERRED_R1_MEAN_SCALE_IF_INSIDE_ELSE_INTERSECTION_MIDPOINT",
+    "source_envelope_uL_min": [
+      9.0,
+      10.0
+    ],
+    "tier": "TIER_2_WT_OBSERVATION_SCALE"
+  },
+  "gate": {
+    "ae2_gate_interpretation": "QUALITATIVELY_CONSISTENT_WITH_NO_DETECTED_LARGE_SECRETION_ROLE; P15_REPORTED_NO_EQUIVALENCE_MARGIN",
+    "ae2_independent_gate_pass": true,
+    "all_matrix_integrations_success": true,
+    "all_retained_groups_common_scale_intersection_pass": true,
+    "all_retained_groups_fixed_flow_shape_gate_pass": true,
+    "all_retained_groups_numerical_gate_pass": true,
+    "candidate_uniqueness": false,
+    "classification": "PHYSIOLOGICALLY_CREDIBLE_WT_G5_ENSEMBLE_WITH_UNIDENTIFIED_EFFECTIVE_CA_NKCC_GAIN_PAIR",
+    "effective_calcium_status": "WT_CALIBRATED_EFFECTIVE_COORDINATE_NOT_MEASURED_FREE_CA",
+    "effective_cell_count_status": "WARNING_ONLY_NO_PRIMARY_GEOMETRY_RANGE",
+    "firewall_status": "PRE_REVEAL_FREEZE_COMPLETE_WITHOUT_TARGET_LEDGER_ACCESS",
+    "passing_group_count": 18,
+    "passing_profile_ids": [
+      "CA010_N1_M1P75",
+      "CA012_N1_M2P0"
+    ],
+    "passing_root_count": 9,
+    "pre_reveal_holdout_eligible": true,
+    "radau_bdf_gate_pass": true,
+    "regulatory_families": [
+      "R0",
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "regulatory_gains": [
+      1.25,
+      1.7
+    ],
+    "regulatory_kinetics_identified": false,
+    "regulatory_member_count": 20,
+    "regulatory_timing_profiles": [
+      "STATIC",
+      "TFAST",
+      "TREFERENCE",
+      "TSLOW"
+    ],
+    "retained_nonuniqueness_reason": "CA010_M1P75_AND_CA012_M2P0_BOTH_PASS_ALL_AVAILABLE_WT_GATES; AVAILABLE_CA_AND_ASSAY_CONTEXT_EVIDENCE_DOES_NOT_SELECT_ONE",
+    "selected_reference_passing_groups": [
+      {
+        "all_individual_shape_gates_pass": true,
+        "all_integrations_success": true,
+        "all_numerical_gates_pass": true,
+        "common_scale_feasible_intersection": true,
+        "common_scale_feasible_lower_uL_min_per_pL_s": 17409.882081293552,
+        "common_scale_feasible_upper_uL_min_per_pL_s": 18375.76159825075,
+        "common_scale_implied_effective_cell_count": 294706402.84207857,
+        "common_scale_multiplier_uL_min_per_pL_s": 17682.384170524714,
+        "effective_calcium_uM": 0.1,
+        "ensemble_endpoint_cl_range_mM": [
+          43.791284804416875,
+          47.19942001889559
+        ],
+        "ensemble_endpoint_ph_range": [
+          6.876553320719077,
+          6.896311893316295
+        ],
+        "ensemble_endpoint_volume_range_pL": [
+          1.20861643105516,
+          1.2560371206205019
+        ],
+        "ensemble_max_ratio": 1.0527081188025944,
+        "ensemble_min_ratio": 1.011136886338233,
+        "g5_joint_group_gate_pass": true,
+        "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+        "max_abs_radau_bdf_ratio_difference": 3.434815187830509e-08,
+        "nkcc1_fully_activated_multiplier": 1.75,
+        "profile_id": "CA010_N1_M1P75",
+        "regulatory_member_count": 20,
+        "root_id": "G2_BALANCED_APICAL_K_BIASED_G10:M00",
+        "selected_reference": true,
+        "solver_count": 2,
+        "source_defensibility_status": "SOURCE_CENTERED_WT_PROFILE_REQUIRES_CA_DEFENSIBILITY_REVIEW"
+      },
+      {
+        "all_individual_shape_gates_pass": true,
+        "all_integrations_success": true,
+        "all_numerical_gates_pass": true,
+        "common_scale_feasible_intersection": true,
+        "common_scale_feasible_lower_uL_min_per_pL_s": 15439.58555962512,
+        "common_scale_feasible_upper_uL_min_per_pL_s": 15844.908369559318,
+        "common_scale_implied_effective_cell_count": 260704116.07653698,
+        "common_scale_multiplier_uL_min_per_pL_s": 15642.24696459222,
+        "effective_calcium_uM": 0.12,
+        "ensemble_endpoint_cl_range_mM": [
+          42.750083411759626,
+          45.98462714431478
+        ],
+        "ensemble_endpoint_ph_range": [
+          6.873681744572479,
+          6.8929722742463655
+        ],
+        "ensemble_endpoint_volume_range_pL": [
+          1.195421096193319,
+          1.2393468374926517
+        ],
+        "ensemble_max_ratio": 1.0826881838716025,
+        "ensemble_min_ratio": 1.0292367400246198,
+        "g5_joint_group_gate_pass": true,
+        "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+        "max_abs_radau_bdf_ratio_difference": 2.734245918567524e-08,
+        "nkcc1_fully_activated_multiplier": 2.0,
+        "profile_id": "CA012_N1_M2P0",
+        "regulatory_member_count": 20,
+        "root_id": "G2_BALANCED_APICAL_K_BIASED_G10:M00",
+        "selected_reference": true,
+        "solver_count": 2,
+        "source_defensibility_status": "CANDIDATE_ONLY_IF_EFFECTIVE_CA_AND_ASSAY_CONTEXT_CONVERSION_ARE_DEFENSIBLE"
+      }
+    ],
+    "selected_reference_root": "G2_BALANCED_APICAL_K_BIASED_G10:M00",
+    "selected_root_cell_lumen_nearby_gate_pass": true,
+    "status": "PASS_PRE_REVEAL_ENSEMBLE_NONUNIQUE",
+    "unidentified_regulatory_kinetics_is_reveal_blocker": false
+  },
+  "independent_validation": {
+    "ae2_summary": {
+      "all_paired_numerical_gates_pass": true,
+      "analysis": "P15_AE2_NULL_INDEPENDENT_VALIDATION_OF_JOINT_G5_PROFILES",
+      "classification": "ALL_PROFILES_NO_CONSPICUOUS_AE2_SECRETION_EFFECT",
+      "firewall": "NO_AE4_NULL_TARGET_OR_TRAJECTORY_USED",
+      "initial_state_scope": "DYNAMIC_DELETION_FROM_EACH_FROZEN_WT_ROOT; NOT_A_MATCHED_AE2_LINE_RESTING_CALIBRATION",
+      "input_joint_group_gate_sha256": "6901fd3814fb8417b2df2d53f6d16d3327499dd1a7dfd11f5d46fa618a853dfb",
+      "large_effect_warning_threshold_fraction": 0.05,
+      "p15_target": "NO_DETECTED_AE2_LINE_DIFFERENCE_IN_KINETICS_OR_10_MIN_TOTAL; NO_EQUIVALENCE_MARGIN_REPORTED",
+      "profile_count": 3,
+      "profile_definitions_sha256": "5904f3cde62e62d893661d01674946a582438f2d2575ae6389fa9d4c5926dad8",
+      "profile_sha256": "b53ae10edb93d56fbfff0a099e2659d3a27cfd7bd9591dae4db4151d4cba3be4",
+      "retained_root_count": 9,
+      "selected_reference_ca012_m2_rows": [
+        {
+          "ae2_minus_wt_cumulative_relative": 0.0006037194237572876,
+          "ae2_minus_wt_endpoint_cl_mM": 0.10649810228845524,
+          "ae2_minus_wt_endpoint_flow_relative": 0.0009325013730637261,
+          "ae2_minus_wt_endpoint_ph": -0.001313807572175918,
+          "ae2_minus_wt_endpoint_volume_pL": 0.0009472578921152497,
+          "ae2_null_cumulative_flow_pL": 0.37097407402508403,
+          "ae2_null_endpoint_cl_mM": 45.74130790267126,
+          "ae2_null_endpoint_flow_pL_s": 0.0006086056130044899,
+          "ae2_null_endpoint_ph": 6.889300024350599,
+          "ae2_null_endpoint_volume_pL": 1.2354395435715824,
+          "ae2_null_numerical_gate_pass": true,
+          "ae2_null_success": true,
+          "effective_calcium_uM": 0.12,
+          "initial_state_status": "SAME_FROZEN_WT_ROOT_DYNAMIC_DELETION_NOT_AE2_LINE_REST_FIT",
+          "large_effect_warning_threshold_fraction": 0.05,
+          "large_secretion_effect_warning": false,
+          "max_abs_minute_flow_relative_difference": 0.0009325013730637261,
+          "nkcc1_fully_activated_multiplier": 2.0,
+          "p15_qualitative_consistency_status": "NO_CONSPICUOUS_MODELED_EFFECT",
+          "paired_numerical_gate_pass": true,
+          "profile_id": "CA012_N1_M2P0",
+          "regulatory_member_id": "R1_G125_P21_PROSE_TREFERENCE",
+          "root_id": "G2_BALANCED_APICAL_K_BIASED_G10:M00",
+          "selected_reference": true,
+          "solver_label": "production_radau",
+          "variant_id": "G2_BALANCED_APICAL_K_BIASED_G10",
+          "warning_threshold_status": "MODELING_DIAGNOSTIC_NOT_SOURCE_EQUIVALENCE_MARGIN",
+          "wt_cumulative_flow_pL": 0.3707502449008746,
+          "wt_endpoint_cl_mM": 45.634809800382804,
+          "wt_endpoint_flow_pL_s": 0.0006080386161600448,
+          "wt_endpoint_ph": 6.890613831922775,
+          "wt_endpoint_volume_pL": 1.2344922856794671,
+          "wt_numerical_gate_pass": true,
+          "wt_success": true
+        },
+        {
+          "ae2_minus_wt_cumulative_relative": 0.0006037194954944396,
+          "ae2_minus_wt_endpoint_cl_mM": 0.10649810232686718,
+          "ae2_minus_wt_endpoint_flow_relative": 0.0009325013729269539,
+          "ae2_minus_wt_endpoint_ph": -0.0013138075764116408,
+          "ae2_minus_wt_endpoint_volume_pL": 0.0009472578924212272,
+          "ae2_null_cumulative_flow_pL": 0.3709740381986838,
+          "ae2_null_endpoint_cl_mM": 45.74130791380787,
+          "ae2_null_endpoint_flow_pL_s": 0.0006086056130696988,
+          "ae2_null_endpoint_ph": 6.889300024442112,
+          "ae2_null_endpoint_volume_pL": 1.2354395437262686,
+          "ae2_null_numerical_gate_pass": true,
+          "ae2_null_success": true,
+          "effective_calcium_uM": 0.12,
+          "initial_state_status": "SAME_FROZEN_WT_ROOT_DYNAMIC_DELETION_NOT_AE2_LINE_REST_FIT",
+          "large_effect_warning_threshold_fraction": 0.05,
+          "large_secretion_effect_warning": false,
+          "max_abs_minute_flow_relative_difference": 0.0009325013729269539,
+          "nkcc1_fully_activated_multiplier": 2.0,
+          "p15_qualitative_consistency_status": "NO_CONSPICUOUS_MODELED_EFFECT",
+          "paired_numerical_gate_pass": true,
+          "profile_id": "CA012_N1_M2P0",
+          "regulatory_member_id": "R1_G125_P21_PROSE_TREFERENCE",
+          "root_id": "G2_BALANCED_APICAL_K_BIASED_G10:M00",
+          "selected_reference": true,
+          "solver_label": "production_bdf",
+          "variant_id": "G2_BALANCED_APICAL_K_BIASED_G10",
+          "warning_threshold_status": "MODELING_DIAGNOSTIC_NOT_SOURCE_EQUIVALENCE_MARGIN",
+          "wt_cumulative_flow_pL": 0.3707502090695099,
+          "wt_endpoint_cl_mM": 45.634809811481006,
+          "wt_endpoint_flow_pL_s": 0.0006080386162252761,
+          "wt_endpoint_ph": 6.8906138320185235,
+          "wt_endpoint_volume_pL": 1.2344922858338474,
+          "wt_numerical_gate_pass": true,
+          "wt_success": true
+        }
+      ],
+      "simulation_pair_count": 54,
+      "solver_count": 2,
+      "warning_threshold_status": "MODELING_DIAGNOSTIC_NOT_SOURCE_EQUIVALENCE_MARGIN"
+    },
+    "selected_root_nearby_summary": {
+      "all_candidate_nearby_gates_pass": true,
+      "analysis": "H23_SELECTED_ROOT_CELL_AND_LUMEN_NEARBY_ROBUSTNESS",
+      "candidate_profiles": [
+        "CA010_N1_M1P75",
+        "CA012_N1_M2P0"
+      ],
+      "charge_preservation": "ENFORCED_BY_nearby_charge_preserving_states_FOR_CELL_AND_LUMEN",
+      "input_group_gate_sha256": "6901fd3814fb8417b2df2d53f6d16d3327499dd1a7dfd11f5d46fa618a853dfb",
+      "nearby_fraction": 0.001,
+      "nearby_initial_conditions": [
+        "baseline",
+        "cell_nacl_down",
+        "cell_nacl_up",
+        "cell_volume_down",
+        "cell_volume_up",
+        "lumen_nacl_down",
+        "lumen_nacl_up",
+        "lumen_volume_down",
+        "lumen_volume_up"
+      ],
+      "output_relative_warning_threshold": 0.01,
+      "output_threshold_status": "MODELING_ROBUSTNESS_DIAGNOSTIC",
+      "profile_gate_pass": {
+        "CA010_N1_M1P75": true,
+        "CA012_N1_M2P0": true
+      },
+      "profile_sha256": "d949e633dbb49b278fb45f948124e2a1bd5bdbaf044ddf1beecfe06e9d56949b",
+      "regulatory_member_id": "R1_G125_P21_PROSE_TREFERENCE",
+      "root_id": "G2_BALANCED_APICAL_K_BIASED_G10:M00",
+      "row_count": 36,
+      "solver_algorithms": [
+        "Radau",
+        "BDF"
+      ]
+    }
+  },
+  "manifest_type": "TASK_13B_FINAL_PRE_REVEAL_G5_ENSEMBLE_FREEZE",
+  "passing_groups": [
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 16910.75566628126,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 17933.380727005417,
+      "common_scale_implied_effective_cell_count": 287248286.22886586,
+      "common_scale_multiplier_uL_min_per_pL_s": 17234.89717373195,
+      "effective_calcium_uM": 0.1,
+      "ensemble_endpoint_cl_range_mM": [
+        43.98838184337118,
+        47.474811564050945
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.877002395228104,
+        6.896947422956364
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.2110268058628937,
+        1.2597733750927396
+      ],
+      "ensemble_max_ratio": 1.047751609172484,
+      "ensemble_min_ratio": 1.0080614416764906,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 3.6107847378730185e-08,
+      "nkcc1_fully_activated_multiplier": 1.75,
+      "profile_id": "CA010_N1_M1P75",
+      "regulatory_member_count": 20,
+      "root_id": "G2_ASYMMETRIC_APICAL_K_BIASED_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "SOURCE_CENTERED_WT_PROFILE_REQUIRES_CA_DEFENSIBILITY_REVIEW"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 15036.615927162404,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 15505.766237499209,
+      "common_scale_implied_effective_cell_count": 254519851.3721801,
+      "common_scale_multiplier_uL_min_per_pL_s": 15271.191082330806,
+      "effective_calcium_uM": 0.12,
+      "ensemble_endpoint_cl_range_mM": [
+        43.01729191452933,
+        46.333652969162664
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.874279178209516,
+        6.893785691119929
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.198636784238208,
+        1.2439628273580359
+      ],
+      "ensemble_max_ratio": 1.0774927708086002,
+      "ensemble_min_ratio": 1.0269280675789014,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 6.551988129821495e-08,
+      "nkcc1_fully_activated_multiplier": 2.0,
+      "profile_id": "CA012_N1_M2P0",
+      "regulatory_member_count": 20,
+      "root_id": "G2_ASYMMETRIC_APICAL_K_BIASED_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "CANDIDATE_ONLY_IF_EFFECTIVE_CA_AND_ASSAY_CONTEXT_CONVERSION_ARE_DEFENSIBLE"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 16967.058726700587,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 17979.453082561748,
+      "common_scale_implied_effective_cell_count": 287970414.3232103,
+      "common_scale_multiplier_uL_min_per_pL_s": 17278.22485939262,
+      "effective_calcium_uM": 0.1,
+      "ensemble_endpoint_cl_range_mM": [
+        44.136720208576584,
+        47.48102747113759
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.885587943127298,
+        6.9004233095943395
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.2175781917348516,
+        1.262208045630086
+      ],
+      "ensemble_max_ratio": 1.0485462146278604,
+      "ensemble_min_ratio": 1.008658142842539,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 3.960178851514229e-08,
+      "nkcc1_fully_activated_multiplier": 1.75,
+      "profile_id": "CA010_N1_M1P75",
+      "regulatory_member_count": 20,
+      "root_id": "G2_ASYMMETRIC_APICAL_K_HEAVY_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "SOURCE_CENTERED_WT_PROFILE_REQUIRES_CA_DEFENSIBILITY_REVIEW"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 15085.68938557001,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 15563.415816538389,
+      "common_scale_implied_effective_cell_count": 255409210.01756996,
+      "common_scale_multiplier_uL_min_per_pL_s": 15324.552601054198,
+      "effective_calcium_uM": 0.12,
+      "ensemble_endpoint_cl_range_mM": [
+        43.19847736921945,
+        46.36654108000521
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.883580694967417,
+        6.897993187111615
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.2059329327842656,
+        1.24726314269627
+      ],
+      "ensemble_max_ratio": 1.077005028295023,
+      "ensemble_min_ratio": 1.028722712433608,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 6.824199139110476e-08,
+      "nkcc1_fully_activated_multiplier": 2.0,
+      "profile_id": "CA012_N1_M2P0",
+      "regulatory_member_count": 20,
+      "root_id": "G2_ASYMMETRIC_APICAL_K_HEAVY_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "CANDIDATE_ONLY_IF_EFFECTIVE_CA_AND_ASSAY_CONTEXT_CONVERSION_ARE_DEFENSIBLE"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 16778.56594820588,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 17873.906675770348,
+      "common_scale_implied_effective_cell_count": 286233379.8660989,
+      "common_scale_multiplier_uL_min_per_pL_s": 17174.002791965933,
+      "effective_calcium_uM": 0.1,
+      "ensemble_endpoint_cl_range_mM": [
+        43.88664391585683,
+        47.52414765835096
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.870841030949206,
+        6.895156544725015
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.2034964881535533,
+        1.257585304606137
+      ],
+      "ensemble_max_ratio": 1.0430204984384226,
+      "ensemble_min_ratio": 1.0076320627431423,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 2.8486664138682727e-08,
+      "nkcc1_fully_activated_multiplier": 1.75,
+      "profile_id": "CA010_N1_M1P75",
+      "regulatory_member_count": 20,
+      "root_id": "G2_ASYMMETRIC_APICAL_MODERATE_NA_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "SOURCE_CENTERED_WT_PROFILE_REQUIRES_CA_DEFENSIBILITY_REVIEW"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 14904.508622548847,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 15424.495383007932,
+      "common_scale_implied_effective_cell_count": 248497274.0830031,
+      "common_scale_multiplier_uL_min_per_pL_s": 14909.836444980187,
+      "effective_calcium_uM": 0.12,
+      "ensemble_endpoint_cl_range_mM": [
+        42.8652420279503,
+        46.356744674315635
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.867115802453123,
+        6.891237992328943
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.1898157558843403,
+        1.2405597224584957
+      ],
+      "ensemble_max_ratio": 1.0736536088431992,
+      "ensemble_min_ratio": 1.0229755358570474,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 6.00234641989772e-08,
+      "nkcc1_fully_activated_multiplier": 2.0,
+      "profile_id": "CA012_N1_M2P0",
+      "regulatory_member_count": 20,
+      "root_id": "G2_ASYMMETRIC_APICAL_MODERATE_NA_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "CANDIDATE_ONLY_IF_EFFECTIVE_CA_AND_ASSAY_CONTEXT_CONVERSION_ARE_DEFENSIBLE"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 17409.882081293552,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 18375.76159825075,
+      "common_scale_implied_effective_cell_count": 294706402.84207857,
+      "common_scale_multiplier_uL_min_per_pL_s": 17682.384170524714,
+      "effective_calcium_uM": 0.1,
+      "ensemble_endpoint_cl_range_mM": [
+        43.791284804416875,
+        47.19942001889559
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.876553320719077,
+        6.896311893316295
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.20861643105516,
+        1.2560371206205019
+      ],
+      "ensemble_max_ratio": 1.0527081188025944,
+      "ensemble_min_ratio": 1.011136886338233,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 3.434815187830509e-08,
+      "nkcc1_fully_activated_multiplier": 1.75,
+      "profile_id": "CA010_N1_M1P75",
+      "regulatory_member_count": 20,
+      "root_id": "G2_BALANCED_APICAL_K_BIASED_G10:M00",
+      "selected_reference": true,
+      "solver_count": 2,
+      "source_defensibility_status": "SOURCE_CENTERED_WT_PROFILE_REQUIRES_CA_DEFENSIBILITY_REVIEW"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 15439.58555962512,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 15844.908369559318,
+      "common_scale_implied_effective_cell_count": 260704116.07653698,
+      "common_scale_multiplier_uL_min_per_pL_s": 15642.24696459222,
+      "effective_calcium_uM": 0.12,
+      "ensemble_endpoint_cl_range_mM": [
+        42.750083411759626,
+        45.98462714431478
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.873681744572479,
+        6.8929722742463655
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.195421096193319,
+        1.2393468374926517
+      ],
+      "ensemble_max_ratio": 1.0826881838716025,
+      "ensemble_min_ratio": 1.0292367400246198,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 2.734245918567524e-08,
+      "nkcc1_fully_activated_multiplier": 2.0,
+      "profile_id": "CA012_N1_M2P0",
+      "regulatory_member_count": 20,
+      "root_id": "G2_BALANCED_APICAL_K_BIASED_G10:M00",
+      "selected_reference": true,
+      "solver_count": 2,
+      "source_defensibility_status": "CANDIDATE_ONLY_IF_EFFECTIVE_CA_AND_ASSAY_CONTEXT_CONVERSION_ARE_DEFENSIBLE"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 17471.282158871196,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 18427.887851003405,
+      "common_scale_implied_effective_cell_count": 295561483.8483506,
+      "common_scale_multiplier_uL_min_per_pL_s": 17733.689030901034,
+      "effective_calcium_uM": 0.1,
+      "ensemble_endpoint_cl_range_mM": [
+        43.94029064119276,
+        47.2053753423155
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.885255796950599,
+        6.899873155639374
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.2152226935623678,
+        1.2585419194768366
+      ],
+      "ensemble_max_ratio": 1.0534324871649403,
+      "ensemble_min_ratio": 1.0117843742654933,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 3.890182265209319e-08,
+      "nkcc1_fully_activated_multiplier": 1.75,
+      "profile_id": "CA010_N1_M1P75",
+      "regulatory_member_count": 20,
+      "root_id": "G2_BALANCED_APICAL_K_HEAVY_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "SOURCE_CENTERED_WT_PROFILE_REQUIRES_CA_DEFENSIBILITY_REVIEW"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 15491.873554610089,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 15905.252281031919,
+      "common_scale_implied_effective_cell_count": 261642715.2970167,
+      "common_scale_multiplier_uL_min_per_pL_s": 15698.562917821004,
+      "effective_calcium_uM": 0.12,
+      "ensemble_endpoint_cl_range_mM": [
+        42.9315442110997,
+        46.01701964143955
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.883107649139808,
+        6.897282135947561
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.2027654705368873,
+        1.2427215225870614
+      ],
+      "ensemble_max_ratio": 1.082233248131722,
+      "ensemble_min_ratio": 1.0311388671615656,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 2.4463781889139113e-08,
+      "nkcc1_fully_activated_multiplier": 2.0,
+      "profile_id": "CA012_N1_M2P0",
+      "regulatory_member_count": 20,
+      "root_id": "G2_BALANCED_APICAL_K_HEAVY_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "CANDIDATE_ONLY_IF_EFFECTIVE_CA_AND_ASSAY_CONTEXT_CONVERSION_ARE_DEFENSIBLE"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 17262.28367605223,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 18305.925227368705,
+      "common_scale_implied_effective_cell_count": 293455982.0166606,
+      "common_scale_multiplier_uL_min_per_pL_s": 17607.358920999635,
+      "effective_calcium_uM": 0.1,
+      "ensemble_endpoint_cl_range_mM": [
+        43.687699142582105,
+        47.25076840751655
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.870092011532334,
+        6.894380736743566
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.2009141810741304,
+        1.253722593350763
+      ],
+      "ensemble_max_ratio": 1.047765406958923,
+      "ensemble_min_ratio": 1.0094429118451724,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 3.693898253942507e-08,
+      "nkcc1_fully_activated_multiplier": 1.75,
+      "profile_id": "CA010_N1_M1P75",
+      "regulatory_member_count": 20,
+      "root_id": "G2_BALANCED_APICAL_MODERATE_NA_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "SOURCE_CENTERED_WT_PROFILE_REQUIRES_CA_DEFENSIBILITY_REVIEW"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 15296.642451027321,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 15758.490539334478,
+      "common_scale_implied_effective_cell_count": 258792774.91968164,
+      "common_scale_multiplier_uL_min_per_pL_s": 15527.5664951809,
+      "effective_calcium_uM": 0.12,
+      "ensemble_endpoint_cl_range_mM": [
+        42.59560953759464,
+        46.01003336609062
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.866194314597292,
+        6.890253936246087
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.1864158110739151,
+        1.2357992015831223
+      ],
+      "ensemble_max_ratio": 1.0785467902275463,
+      "ensemble_min_ratio": 1.0249682496216286,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 3.097068423940641e-08,
+      "nkcc1_fully_activated_multiplier": 2.0,
+      "profile_id": "CA012_N1_M2P0",
+      "regulatory_member_count": 20,
+      "root_id": "G2_BALANCED_APICAL_MODERATE_NA_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "CANDIDATE_ONLY_IF_EFFECTIVE_CA_AND_ASSAY_CONTEXT_CONVERSION_ARE_DEFENSIBLE"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 19998.07518592556,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 20645.1449464953,
+      "common_scale_implied_effective_cell_count": 338693501.10350716,
+      "common_scale_multiplier_uL_min_per_pL_s": 20321.61006621043,
+      "effective_calcium_uM": 0.1,
+      "ensemble_endpoint_cl_range_mM": [
+        44.05759542295326,
+        47.43817543637994
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.877092736419486,
+        6.89656814013899
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.2122175910137931,
+        1.2593439700655824
+      ],
+      "ensemble_max_ratio": 1.0762861485111224,
+      "ensemble_min_ratio": 1.0201452761004701,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 7.474080976344055e-08,
+      "nkcc1_fully_activated_multiplier": 1.75,
+      "profile_id": "CA010_N1_M1P75",
+      "regulatory_member_count": 20,
+      "root_id": "G2_LOW_APICAL_K_BIASED_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "SOURCE_CENTERED_WT_PROFILE_REQUIRES_CA_DEFENSIBILITY_REVIEW"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 17699.715986516334,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 17732.380482067398,
+      "common_scale_implied_effective_cell_count": 295267470.5715311,
+      "common_scale_multiplier_uL_min_per_pL_s": 17716.048234291866,
+      "effective_calcium_uM": 0.12,
+      "ensemble_endpoint_cl_range_mM": [
+        43.133234594774095,
+        46.338679240917955
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.87457548418049,
+        6.893503160839342
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.2004553334920571,
+        1.24414789209147
+      ],
+      "ensemble_max_ratio": 1.1076663598897891,
+      "ensemble_min_ratio": 1.042822646151629,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 9.08169557334304e-08,
+      "nkcc1_fully_activated_multiplier": 2.0,
+      "profile_id": "CA012_N1_M2P0",
+      "regulatory_member_count": 20,
+      "root_id": "G2_LOW_APICAL_K_BIASED_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "CANDIDATE_ONLY_IF_EFFECTIVE_CA_AND_ASSAY_CONTEXT_CONVERSION_ARE_DEFENSIBLE"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 20076.03549720549,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 20731.21940720185,
+      "common_scale_implied_effective_cell_count": 340060457.5367278,
+      "common_scale_multiplier_uL_min_per_pL_s": 20403.62745220367,
+      "effective_calcium_uM": 0.1,
+      "ensemble_endpoint_cl_range_mM": [
+        44.22027183393503,
+        47.450826788611124
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.885944428831438,
+        6.900230499856506
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.2190086285775876,
+        1.2619275551089397
+      ],
+      "ensemble_max_ratio": 1.0757964114485723,
+      "ensemble_min_ratio": 1.0219900436862,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 7.427589410191615e-08,
+      "nkcc1_fully_activated_multiplier": 1.75,
+      "profile_id": "CA010_N1_M1P75",
+      "regulatory_member_count": 20,
+      "root_id": "G2_LOW_APICAL_K_HEAVY_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "SOURCE_CENTERED_WT_PROFILE_REQUIRES_CA_DEFENSIBILITY_REVIEW"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 17763.537560515884,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 17811.74439282563,
+      "common_scale_implied_effective_cell_count": 296460682.9445126,
+      "common_scale_multiplier_uL_min_per_pL_s": 17787.64097667076,
+      "effective_calcium_uM": 0.12,
+      "ensemble_endpoint_cl_range_mM": [
+        43.326750865852325,
+        46.37754910931002
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.884092275637632,
+        6.897887134991393
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.207936498902793,
+        1.247567661084913
+      ],
+      "ensemble_max_ratio": 1.1059970081633799,
+      "ensemble_min_ratio": 1.044247056484105,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 9.030875225413126e-08,
+      "nkcc1_fully_activated_multiplier": 2.0,
+      "profile_id": "CA012_N1_M2P0",
+      "regulatory_member_count": 20,
+      "root_id": "G2_LOW_APICAL_K_HEAVY_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "CANDIDATE_ONLY_IF_EFFECTIVE_CA_AND_ASSAY_CONTEXT_CONVERSION_ARE_DEFENSIBLE"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 19792.806289242486,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 20511.72244034112,
+      "common_scale_implied_effective_cell_count": 329951754.70885235,
+      "common_scale_multiplier_uL_min_per_pL_s": 19797.10528253114,
+      "effective_calcium_uM": 0.1,
+      "ensemble_endpoint_cl_range_mM": [
+        43.93111163839873,
+        47.482836400754245
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.8699804952559,
+        6.894337222072409
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.2040529334988745,
+        1.2568904890698713
+      ],
+      "ensemble_max_ratio": 1.0721677349140974,
+      "ensemble_min_ratio": 1.016524598949522,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 7.564010440219704e-08,
+      "nkcc1_fully_activated_multiplier": 1.75,
+      "profile_id": "CA010_N1_M1P75",
+      "regulatory_member_count": 20,
+      "root_id": "G2_LOW_APICAL_MODERATE_NA_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "SOURCE_CENTERED_WT_PROFILE_REQUIRES_CA_DEFENSIBILITY_REVIEW"
+    },
+    {
+      "all_individual_shape_gates_pass": true,
+      "all_integrations_success": true,
+      "all_numerical_gates_pass": true,
+      "common_scale_feasible_intersection": true,
+      "common_scale_feasible_lower_uL_min_per_pL_s": 17508.07202375895,
+      "common_scale_feasible_upper_uL_min_per_pL_s": 17606.684756233117,
+      "common_scale_implied_effective_cell_count": 292622973.1666005,
+      "common_scale_multiplier_uL_min_per_pL_s": 17557.378389996033,
+      "effective_calcium_uM": 0.12,
+      "ensemble_endpoint_cl_range_mM": [
+        42.9563923899049,
+        46.35690743024136
+      ],
+      "ensemble_endpoint_ph_range": [
+        6.866489980846221,
+        6.890483347822176
+      ],
+      "ensemble_endpoint_volume_range_pL": [
+        1.1910449052824712,
+        1.2404987718593634
+      ],
+      "ensemble_max_ratio": 1.1043948911713073,
+      "ensemble_min_ratio": 1.0387328641094349,
+      "g5_joint_group_gate_pass": true,
+      "implied_cell_count_status": "WARNING_NO_PRIMARY_GEOMETRY_RANGE",
+      "max_abs_radau_bdf_ratio_difference": 9.132748934881363e-08,
+      "nkcc1_fully_activated_multiplier": 2.0,
+      "profile_id": "CA012_N1_M2P0",
+      "regulatory_member_count": 20,
+      "root_id": "G2_LOW_APICAL_MODERATE_NA_G10:M00",
+      "selected_reference": false,
+      "solver_count": 2,
+      "source_defensibility_status": "CANDIDATE_ONLY_IF_EFFECTIVE_CA_AND_ASSAY_CONTEXT_CONVERSION_ARE_DEFENSIBLE"
+    }
+  ],
+  "physical_time": {
+    "duration_s": 600.0,
+    "output_sample_step_s": 5.0,
+    "production_max_step_s": 2.0,
+    "stimulated_right_limit_s": 1e-06,
+    "time_grid_sha256": "094c77b7ef388da8872304df9eb7c8d6bee08820e9c51c0f8667113fcdd8df5c",
+    "unit": "s"
+  },
+  "profiles": {
+    "CA010_N1_M1P75": {
+      "calcium_evidence_status": "WT_FLOW_SHAPE_CALIBRATION_PROFILE; ACUTE_CA_NOT_MEASURED_IN_P15",
+      "effective_calcium_uM": 0.1,
+      "nkcc1_fully_activated_multiplier": 1.75,
+      "nkcc1_law": "N1_CCH_ALGEBRAIC_CAPACITY_ONLY",
+      "nkcc1_normalization": {
+        "capacity_multiplier_at_stimulated_endpoint": 1.75,
+        "resting_calcium_uM": 0.058,
+        "stimulated_calcium_uM": 0.1
+      },
+      "nkcc_gain_evidence_status": "P15_DIRECTION_AND_NOMINAL_GAIN_PROFILE",
+      "profile_id": "CA010_N1_M1P75",
+      "source_defensibility_status": "SOURCE_CENTERED_WT_PROFILE_REQUIRES_CA_DEFENSIBILITY_REVIEW",
+      "stimulus_interpretation": "WT_CALIBRATED_EFFECTIVE_CHANNEL_DRIVING_CA_COORDINATE; NOT_MEASURED_FREE_INTRACELLULAR_CA",
+      "stimulus_protocol": {
+        "arm": "CCH_IPR",
+        "beta_occupancy_on": 1.0,
+        "cch_dose_uM": 0.3,
+        "duration_s": 600.0,
+        "ipr_dose_uM": 5.0,
+        "onset_s": 0.0,
+        "resting_calcium_uM": 0.058,
+        "stimulated_calcium_uM": 0.1
+      }
+    },
+    "CA012_N1_M2P0": {
+      "calcium_evidence_status": "WT_FLOW_SHAPE_CALIBRATION_PROFILE; ACUTE_CA_NOT_MEASURED_IN_P15",
+      "effective_calcium_uM": 0.12,
+      "nkcc1_fully_activated_multiplier": 2.0,
+      "nkcc1_law": "N1_CCH_ALGEBRAIC_CAPACITY_ONLY",
+      "nkcc1_normalization": {
+        "capacity_multiplier_at_stimulated_endpoint": 2.0,
+        "resting_calcium_uM": 0.058,
+        "stimulated_calcium_uM": 0.12
+      },
+      "nkcc_gain_evidence_status": "SOURCE_CENTERED_MECHANISTIC_NKCC_DIAGNOSTIC_WITH_SPQ_CONTEXT_CAVEAT_NOT_POINT_FIT",
+      "profile_id": "CA012_N1_M2P0",
+      "source_defensibility_status": "CANDIDATE_ONLY_IF_EFFECTIVE_CA_AND_ASSAY_CONTEXT_CONVERSION_ARE_DEFENSIBLE",
+      "stimulus_interpretation": "WT_CALIBRATED_EFFECTIVE_CHANNEL_DRIVING_CA_COORDINATE; NOT_MEASURED_FREE_INTRACELLULAR_CA",
+      "stimulus_protocol": {
+        "arm": "CCH_IPR",
+        "beta_occupancy_on": 1.0,
+        "cch_dose_uM": 0.3,
+        "duration_s": 600.0,
+        "ipr_dose_uM": 5.0,
+        "onset_s": 0.0,
+        "resting_calcium_uM": 0.058,
+        "stimulated_calcium_uM": 0.12
+      }
+    }
+  },
+  "regulatory_models": {
+    "R0_G125_P21_PROSE_STATIC": {
+      "family": "R0",
+      "fully_activated_multiplier": 1.25,
+      "gain_label": "G125_P21_PROSE",
+      "kinetic_evidence_status": "STATIC_NEGATIVE_CONTROL",
+      "member_id": "R0_G125_P21_PROSE_STATIC",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.25
+        }
+      },
+      "regulatory_model_class": "R0Static",
+      "state_names": [],
+      "timing_label": "STATIC",
+      "timing_parameters": {}
+    },
+    "R0_G170_P21_FIGURE_VISUAL_STATIC": {
+      "family": "R0",
+      "fully_activated_multiplier": 1.7,
+      "gain_label": "G170_P21_FIGURE_VISUAL",
+      "kinetic_evidence_status": "STATIC_NEGATIVE_CONTROL",
+      "member_id": "R0_G170_P21_FIGURE_VISUAL_STATIC",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.7
+        }
+      },
+      "regulatory_model_class": "R0Static",
+      "state_names": [],
+      "timing_label": "STATIC",
+      "timing_parameters": {}
+    },
+    "R1_G125_P21_PROSE_TFAST": {
+      "family": "R1",
+      "fully_activated_multiplier": 1.25,
+      "gain_label": "G125_P21_PROSE",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R1_G125_P21_PROSE_TFAST",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.25
+        },
+        "tau_activation_s": 10.0
+      },
+      "regulatory_model_class": "R1EffectiveActivation",
+      "state_names": [
+        "ae4_effective_activation_fraction"
+      ],
+      "timing_label": "TFAST",
+      "timing_parameters": {
+        "tau_activation_s": 10.0
+      }
+    },
+    "R1_G125_P21_PROSE_TREFERENCE": {
+      "family": "R1",
+      "fully_activated_multiplier": 1.25,
+      "gain_label": "G125_P21_PROSE",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R1_G125_P21_PROSE_TREFERENCE",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.25
+        },
+        "tau_activation_s": 30.0
+      },
+      "regulatory_model_class": "R1EffectiveActivation",
+      "state_names": [
+        "ae4_effective_activation_fraction"
+      ],
+      "timing_label": "TREFERENCE",
+      "timing_parameters": {
+        "tau_activation_s": 30.0
+      }
+    },
+    "R1_G125_P21_PROSE_TSLOW": {
+      "family": "R1",
+      "fully_activated_multiplier": 1.25,
+      "gain_label": "G125_P21_PROSE",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R1_G125_P21_PROSE_TSLOW",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.25
+        },
+        "tau_activation_s": 120.0
+      },
+      "regulatory_model_class": "R1EffectiveActivation",
+      "state_names": [
+        "ae4_effective_activation_fraction"
+      ],
+      "timing_label": "TSLOW",
+      "timing_parameters": {
+        "tau_activation_s": 120.0
+      }
+    },
+    "R1_G170_P21_FIGURE_VISUAL_TFAST": {
+      "family": "R1",
+      "fully_activated_multiplier": 1.7,
+      "gain_label": "G170_P21_FIGURE_VISUAL",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R1_G170_P21_FIGURE_VISUAL_TFAST",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.7
+        },
+        "tau_activation_s": 10.0
+      },
+      "regulatory_model_class": "R1EffectiveActivation",
+      "state_names": [
+        "ae4_effective_activation_fraction"
+      ],
+      "timing_label": "TFAST",
+      "timing_parameters": {
+        "tau_activation_s": 10.0
+      }
+    },
+    "R1_G170_P21_FIGURE_VISUAL_TREFERENCE": {
+      "family": "R1",
+      "fully_activated_multiplier": 1.7,
+      "gain_label": "G170_P21_FIGURE_VISUAL",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R1_G170_P21_FIGURE_VISUAL_TREFERENCE",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.7
+        },
+        "tau_activation_s": 30.0
+      },
+      "regulatory_model_class": "R1EffectiveActivation",
+      "state_names": [
+        "ae4_effective_activation_fraction"
+      ],
+      "timing_label": "TREFERENCE",
+      "timing_parameters": {
+        "tau_activation_s": 30.0
+      }
+    },
+    "R1_G170_P21_FIGURE_VISUAL_TSLOW": {
+      "family": "R1",
+      "fully_activated_multiplier": 1.7,
+      "gain_label": "G170_P21_FIGURE_VISUAL",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R1_G170_P21_FIGURE_VISUAL_TSLOW",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.7
+        },
+        "tau_activation_s": 120.0
+      },
+      "regulatory_model_class": "R1EffectiveActivation",
+      "state_names": [
+        "ae4_effective_activation_fraction"
+      ],
+      "timing_label": "TSLOW",
+      "timing_parameters": {
+        "tau_activation_s": 120.0
+      }
+    },
+    "R2_G125_P21_PROSE_TFAST": {
+      "family": "R2",
+      "fully_activated_multiplier": 1.25,
+      "gain_label": "G125_P21_PROSE",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R2_G125_P21_PROSE_TFAST",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.25
+        },
+        "tau_activation_s": 10.0,
+        "tau_camp_s": 3.0
+      },
+      "regulatory_model_class": "R2CampActivation",
+      "state_names": [
+        "camp_effective_fraction",
+        "ae4_activation_fraction"
+      ],
+      "timing_label": "TFAST",
+      "timing_parameters": {
+        "tau_activation_s": 10.0,
+        "tau_camp_s": 3.0
+      }
+    },
+    "R2_G125_P21_PROSE_TREFERENCE": {
+      "family": "R2",
+      "fully_activated_multiplier": 1.25,
+      "gain_label": "G125_P21_PROSE",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R2_G125_P21_PROSE_TREFERENCE",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.25
+        },
+        "tau_activation_s": 30.0,
+        "tau_camp_s": 10.0
+      },
+      "regulatory_model_class": "R2CampActivation",
+      "state_names": [
+        "camp_effective_fraction",
+        "ae4_activation_fraction"
+      ],
+      "timing_label": "TREFERENCE",
+      "timing_parameters": {
+        "tau_activation_s": 30.0,
+        "tau_camp_s": 10.0
+      }
+    },
+    "R2_G125_P21_PROSE_TSLOW": {
+      "family": "R2",
+      "fully_activated_multiplier": 1.25,
+      "gain_label": "G125_P21_PROSE",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R2_G125_P21_PROSE_TSLOW",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.25
+        },
+        "tau_activation_s": 120.0,
+        "tau_camp_s": 30.0
+      },
+      "regulatory_model_class": "R2CampActivation",
+      "state_names": [
+        "camp_effective_fraction",
+        "ae4_activation_fraction"
+      ],
+      "timing_label": "TSLOW",
+      "timing_parameters": {
+        "tau_activation_s": 120.0,
+        "tau_camp_s": 30.0
+      }
+    },
+    "R2_G170_P21_FIGURE_VISUAL_TFAST": {
+      "family": "R2",
+      "fully_activated_multiplier": 1.7,
+      "gain_label": "G170_P21_FIGURE_VISUAL",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R2_G170_P21_FIGURE_VISUAL_TFAST",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.7
+        },
+        "tau_activation_s": 10.0,
+        "tau_camp_s": 3.0
+      },
+      "regulatory_model_class": "R2CampActivation",
+      "state_names": [
+        "camp_effective_fraction",
+        "ae4_activation_fraction"
+      ],
+      "timing_label": "TFAST",
+      "timing_parameters": {
+        "tau_activation_s": 10.0,
+        "tau_camp_s": 3.0
+      }
+    },
+    "R2_G170_P21_FIGURE_VISUAL_TREFERENCE": {
+      "family": "R2",
+      "fully_activated_multiplier": 1.7,
+      "gain_label": "G170_P21_FIGURE_VISUAL",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R2_G170_P21_FIGURE_VISUAL_TREFERENCE",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.7
+        },
+        "tau_activation_s": 30.0,
+        "tau_camp_s": 10.0
+      },
+      "regulatory_model_class": "R2CampActivation",
+      "state_names": [
+        "camp_effective_fraction",
+        "ae4_activation_fraction"
+      ],
+      "timing_label": "TREFERENCE",
+      "timing_parameters": {
+        "tau_activation_s": 30.0,
+        "tau_camp_s": 10.0
+      }
+    },
+    "R2_G170_P21_FIGURE_VISUAL_TSLOW": {
+      "family": "R2",
+      "fully_activated_multiplier": 1.7,
+      "gain_label": "G170_P21_FIGURE_VISUAL",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R2_G170_P21_FIGURE_VISUAL_TSLOW",
+      "model_parameters": {
+        "construct": "WT",
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.7
+        },
+        "tau_activation_s": 120.0,
+        "tau_camp_s": 30.0
+      },
+      "regulatory_model_class": "R2CampActivation",
+      "state_names": [
+        "camp_effective_fraction",
+        "ae4_activation_fraction"
+      ],
+      "timing_label": "TSLOW",
+      "timing_parameters": {
+        "tau_activation_s": 120.0,
+        "tau_camp_s": 30.0
+      }
+    },
+    "R3_G125_P21_PROSE_TFAST": {
+      "family": "R3",
+      "fully_activated_multiplier": 1.25,
+      "gain_label": "G125_P21_PROSE",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R3_G125_P21_PROSE_TFAST",
+      "model_parameters": {
+        "construct": "WT",
+        "forward_regulation_rate_s": 0.1,
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.25
+        },
+        "reverse_regulation_rate_s": 0.1,
+        "tau_pka_s": 3.0
+      },
+      "regulatory_model_class": "R3PkaRegulatedFraction",
+      "state_names": [
+        "pka_effective_activity_fraction",
+        "ae4_regulated_fraction"
+      ],
+      "timing_label": "TFAST",
+      "timing_parameters": {
+        "forward_regulation_rate_s": 0.1,
+        "reverse_regulation_rate_s": 0.1,
+        "tau_pka_s": 3.0
+      }
+    },
+    "R3_G125_P21_PROSE_TREFERENCE": {
+      "family": "R3",
+      "fully_activated_multiplier": 1.25,
+      "gain_label": "G125_P21_PROSE",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R3_G125_P21_PROSE_TREFERENCE",
+      "model_parameters": {
+        "construct": "WT",
+        "forward_regulation_rate_s": 0.03333333333333333,
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.25
+        },
+        "reverse_regulation_rate_s": 0.03333333333333333,
+        "tau_pka_s": 10.0
+      },
+      "regulatory_model_class": "R3PkaRegulatedFraction",
+      "state_names": [
+        "pka_effective_activity_fraction",
+        "ae4_regulated_fraction"
+      ],
+      "timing_label": "TREFERENCE",
+      "timing_parameters": {
+        "forward_regulation_rate_s": 0.03333333333333333,
+        "reverse_regulation_rate_s": 0.03333333333333333,
+        "tau_pka_s": 10.0
+      }
+    },
+    "R3_G125_P21_PROSE_TSLOW": {
+      "family": "R3",
+      "fully_activated_multiplier": 1.25,
+      "gain_label": "G125_P21_PROSE",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R3_G125_P21_PROSE_TSLOW",
+      "model_parameters": {
+        "construct": "WT",
+        "forward_regulation_rate_s": 0.008333333333333333,
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.25
+        },
+        "reverse_regulation_rate_s": 0.008333333333333333,
+        "tau_pka_s": 30.0
+      },
+      "regulatory_model_class": "R3PkaRegulatedFraction",
+      "state_names": [
+        "pka_effective_activity_fraction",
+        "ae4_regulated_fraction"
+      ],
+      "timing_label": "TSLOW",
+      "timing_parameters": {
+        "forward_regulation_rate_s": 0.008333333333333333,
+        "reverse_regulation_rate_s": 0.008333333333333333,
+        "tau_pka_s": 30.0
+      }
+    },
+    "R3_G170_P21_FIGURE_VISUAL_TFAST": {
+      "family": "R3",
+      "fully_activated_multiplier": 1.7,
+      "gain_label": "G170_P21_FIGURE_VISUAL",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R3_G170_P21_FIGURE_VISUAL_TFAST",
+      "model_parameters": {
+        "construct": "WT",
+        "forward_regulation_rate_s": 0.1,
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.7
+        },
+        "reverse_regulation_rate_s": 0.1,
+        "tau_pka_s": 3.0
+      },
+      "regulatory_model_class": "R3PkaRegulatedFraction",
+      "state_names": [
+        "pka_effective_activity_fraction",
+        "ae4_regulated_fraction"
+      ],
+      "timing_label": "TFAST",
+      "timing_parameters": {
+        "forward_regulation_rate_s": 0.1,
+        "reverse_regulation_rate_s": 0.1,
+        "tau_pka_s": 3.0
+      }
+    },
+    "R3_G170_P21_FIGURE_VISUAL_TREFERENCE": {
+      "family": "R3",
+      "fully_activated_multiplier": 1.7,
+      "gain_label": "G170_P21_FIGURE_VISUAL",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R3_G170_P21_FIGURE_VISUAL_TREFERENCE",
+      "model_parameters": {
+        "construct": "WT",
+        "forward_regulation_rate_s": 0.03333333333333333,
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.7
+        },
+        "reverse_regulation_rate_s": 0.03333333333333333,
+        "tau_pka_s": 10.0
+      },
+      "regulatory_model_class": "R3PkaRegulatedFraction",
+      "state_names": [
+        "pka_effective_activity_fraction",
+        "ae4_regulated_fraction"
+      ],
+      "timing_label": "TREFERENCE",
+      "timing_parameters": {
+        "forward_regulation_rate_s": 0.03333333333333333,
+        "reverse_regulation_rate_s": 0.03333333333333333,
+        "tau_pka_s": 10.0
+      }
+    },
+    "R3_G170_P21_FIGURE_VISUAL_TSLOW": {
+      "family": "R3",
+      "fully_activated_multiplier": 1.7,
+      "gain_label": "G170_P21_FIGURE_VISUAL",
+      "kinetic_evidence_status": "UNMEASURED_PREDECLARED_SENSITIVITY_NOT_FIT",
+      "member_id": "R3_G170_P21_FIGURE_VISUAL_TSLOW",
+      "model_parameters": {
+        "construct": "WT",
+        "forward_regulation_rate_s": 0.008333333333333333,
+        "gain": {
+          "basal_capacity_multiplier": 1.0,
+          "coupling_scale": 1.0,
+          "fully_activated_increment": 0.7
+        },
+        "reverse_regulation_rate_s": 0.008333333333333333,
+        "tau_pka_s": 30.0
+      },
+      "regulatory_model_class": "R3PkaRegulatedFraction",
+      "state_names": [
+        "pka_effective_activity_fraction",
+        "ae4_regulated_fraction"
+      ],
+      "timing_label": "TSLOW",
+      "timing_parameters": {
+        "forward_regulation_rate_s": 0.008333333333333333,
+        "reverse_regulation_rate_s": 0.008333333333333333,
+        "tau_pka_s": 30.0
+      }
+    }
+  },
+  "roots": {
+    "G2_ASYMMETRIC_APICAL_K_BIASED_G10:M00": {
+      "calibration": {
+        "ae4_carrier_amount_fmol_at_unit_rate_gauge": 0.14731846060466625,
+        "cell_other_impermeant_osmoles_fmol": 124.68305555975344,
+        "common_membrane_conductance_scale": 10.0,
+        "nhe1_capacity_fmol_s": 0.007385376188473507
+      },
+      "initial_core_state": [
+        18.878623444239025,
+        144.75581709749255,
+        65.13000000000001,
+        8.070557319447683,
+        20.442678335786724,
+        1.3000000000000003,
+        14.736490083756433,
+        0.5388853231200174,
+        14.047112631737551,
+        1.309001331266645,
+        1.228262775138899,
+        0.1016843515582563
+      ],
+      "initial_core_state_sha256": "bc0207102443133b948a97e660208cac74a6538c6ae549cde263c96b3a4af713",
+      "selected_reference": false,
+      "variant": {
+        "apical_k_fraction": 0.3,
+        "apical_pump_fraction": 0.1,
+        "cooperative_gate": false,
+        "mixed_bath_na_attempt_fraction": 0.1,
+        "regulatory_family": "R0_STATIC_NEGATIVE_CONTROL",
+        "variant_id": "G2_ASYMMETRIC_APICAL_K_BIASED_G10"
+      }
+    },
+    "G2_ASYMMETRIC_APICAL_K_HEAVY_G10:M00": {
+      "calibration": {
+        "ae4_carrier_amount_fmol_at_unit_rate_gauge": 0.24714767282610198,
+        "cell_other_impermeant_osmoles_fmol": 127.41256306288375,
+        "common_membrane_conductance_scale": 10.0,
+        "nhe1_capacity_fmol_s": 0.01067646507979844
+      },
+      "initial_core_state": [
+        19.430111490495882,
+        142.9373691746856,
+        65.13000000000271,
+        6.608044055310701,
+        19.175718459233945,
+        1.3000000000000602,
+        14.753378611951044,
+        0.5306510877913279,
+        14.056979140809268,
+        1.2926993821138912,
+        1.2270505589331033,
+        0.10169160196935574
+      ],
+      "initial_core_state_sha256": "bf3963a460fc364f35561fe1755b8bb9a66c4e9b6c3f02b3d2faf13f68f65c1a",
+      "selected_reference": false,
+      "variant": {
+        "apical_k_fraction": 0.3,
+        "apical_pump_fraction": 0.1,
+        "cooperative_gate": false,
+        "mixed_bath_na_attempt_fraction": 0.05,
+        "regulatory_family": "R0_STATIC_NEGATIVE_CONTROL",
+        "variant_id": "G2_ASYMMETRIC_APICAL_K_HEAVY_G10"
+      }
+    },
+    "G2_ASYMMETRIC_APICAL_MODERATE_NA_G10:M00": {
+      "calibration": {
+        "ae4_carrier_amount_fmol_at_unit_rate_gauge": 0.09531153939146594,
+        "cell_other_impermeant_osmoles_fmol": 120.11997463256479,
+        "common_membrane_conductance_scale": 10.0,
+        "nhe1_capacity_fmol_s": 0.0019133722193785286
+      },
+      "initial_core_state": [
+        18.000409251800917,
+        147.75208033856907,
+        65.13000000000002,
+        10.515524113614154,
+        22.56072738442513,
+        1.3,
+        14.707299242487661,
+        0.5534357295827436,
+        14.02970735879641,
+        1.3368444198072318,
+        1.231027613273994,
+        0.10167061886919862
+      ],
+      "initial_core_state_sha256": "43f0878fa22c659c716254fed4c09a497fd07998ed53a0587d9ab5dabedd9858",
+      "selected_reference": false,
+      "variant": {
+        "apical_k_fraction": 0.3,
+        "apical_pump_fraction": 0.1,
+        "cooperative_gate": false,
+        "mixed_bath_na_attempt_fraction": 0.2,
+        "regulatory_family": "R0_STATIC_NEGATIVE_CONTROL",
+        "variant_id": "G2_ASYMMETRIC_APICAL_MODERATE_NA_G10"
+      }
+    },
+    "G2_BALANCED_APICAL_K_BIASED_G10:M00": {
+      "calibration": {
+        "ae4_carrier_amount_fmol_at_unit_rate_gauge": 0.1501264265070657,
+        "cell_other_impermeant_osmoles_fmol": 124.71681310732373,
+        "common_membrane_conductance_scale": 10.0,
+        "nhe1_capacity_fmol_s": 0.007440980590414482
+      },
+      "initial_core_state": [
+        19.18380554451268,
+        144.43487028259776,
+        65.12999999999998,
+        8.05235934438533,
+        20.426913621165617,
+        1.3,
+        14.853386850556735,
+        0.4154437452481152,
+        14.039093436976788,
+        1.3103189911276751,
+        1.2297371588280614,
+        0.10164106693766255
+      ],
+      "initial_core_state_sha256": "9b944fec8bb210aa3526748c4ecee0bd051cf62f1463d85f20510f3c53a0db9e",
+      "selected_reference": true,
+      "variant": {
+        "apical_k_fraction": 0.1,
+        "apical_pump_fraction": 0.1,
+        "cooperative_gate": false,
+        "mixed_bath_na_attempt_fraction": 0.1,
+        "regulatory_family": "R0_STATIC_NEGATIVE_CONTROL",
+        "variant_id": "G2_BALANCED_APICAL_K_BIASED_G10"
+      }
+    },
+    "G2_BALANCED_APICAL_K_HEAVY_G10:M00": {
+      "calibration": {
+        "ae4_carrier_amount_fmol_at_unit_rate_gauge": 0.25225031468641934,
+        "cell_other_impermeant_osmoles_fmol": 127.4313633379654,
+        "common_membrane_conductance_scale": 10.0,
+        "nhe1_capacity_fmol_s": 0.010717544852175982
+      },
+      "initial_core_state": [
+        19.763983043742655,
+        142.59467306321758,
+        65.13000000000002,
+        6.597857439551655,
+        19.166893901015396,
+        1.3,
+        14.867385054592116,
+        0.40987672873232345,
+        14.048192570739953,
+        1.2946357711625636,
+        1.2290692125844878,
+        0.10164710268052501
+      ],
+      "initial_core_state_sha256": "2490d0f0191205e77f5ac7e2d6556422843e03d60e062f26a9bcac90a43661b8",
+      "selected_reference": false,
+      "variant": {
+        "apical_k_fraction": 0.1,
+        "apical_pump_fraction": 0.1,
+        "cooperative_gate": false,
+        "mixed_bath_na_attempt_fraction": 0.05,
+        "regulatory_family": "R0_STATIC_NEGATIVE_CONTROL",
+        "variant_id": "G2_BALANCED_APICAL_K_HEAVY_G10"
+      }
+    },
+    "G2_BALANCED_APICAL_MODERATE_NA_G10:M00": {
+      "calibration": {
+        "ae4_carrier_amount_fmol_at_unit_rate_gauge": 0.09692050768280884,
+        "cell_other_impermeant_osmoles_fmol": 120.16232210790157,
+        "common_membrane_conductance_scale": 10.0,
+        "nhe1_capacity_fmol_s": 0.001974798188888925
+      },
+      "initial_core_state": [
+        18.258106267379237,
+        147.47463564073794,
+        65.13000000000001,
+        10.49272840574284,
+        22.540979702172322,
+        1.3,
+        14.82908154841418,
+        0.4254244130749745,
+        14.02290383927592,
+        1.3372264764361956,
+        1.2316021222132374,
+        0.10162928119791387
+      ],
+      "initial_core_state_sha256": "9638429589089b4ed4b6d99099492b5b4e9ea51fdccb995d09fd5f67b3a21f82",
+      "selected_reference": false,
+      "variant": {
+        "apical_k_fraction": 0.1,
+        "apical_pump_fraction": 0.1,
+        "cooperative_gate": false,
+        "mixed_bath_na_attempt_fraction": 0.2,
+        "regulatory_family": "R0_STATIC_NEGATIVE_CONTROL",
+        "variant_id": "G2_BALANCED_APICAL_MODERATE_NA_G10"
+      }
+    },
+    "G2_LOW_APICAL_K_BIASED_G10:M00": {
+      "calibration": {
+        "ae4_carrier_amount_fmol_at_unit_rate_gauge": 0.15901451315117437,
+        "cell_other_impermeant_osmoles_fmol": 124.79448458672735,
+        "common_membrane_conductance_scale": 10.0,
+        "nhe1_capacity_fmol_s": 0.007583135783803347
+      },
+      "initial_core_state": [
+        19.843223766989937,
+        143.73898409979182,
+        65.13000000000001,
+        8.010262608187622,
+        20.390445660836903,
+        1.3,
+        14.665089221666666,
+        0.5750327948116251,
+        14.027556202564687,
+        1.2928904406404926,
+        1.2125658139136049,
+        0.10145259971525625
+      ],
+      "initial_core_state_sha256": "622feee88aa0af8e03e6b61fbf2a9334d51a1192a112af99297be47846e4db5b",
+      "selected_reference": false,
+      "variant": {
+        "apical_k_fraction": 0.03,
+        "apical_pump_fraction": 0.03,
+        "cooperative_gate": false,
+        "mixed_bath_na_attempt_fraction": 0.1,
+        "regulatory_family": "R0_STATIC_NEGATIVE_CONTROL",
+        "variant_id": "G2_LOW_APICAL_K_BIASED_G10"
+      }
+    },
+    "G2_LOW_APICAL_K_HEAVY_G10:M00": {
+      "calibration": {
+        "ae4_carrier_amount_fmol_at_unit_rate_gauge": 0.2676313500613563,
+        "cell_other_impermeant_osmoles_fmol": 127.47397009238352,
+        "common_membrane_conductance_scale": 10.0,
+        "nhe1_capacity_fmol_s": 0.010821051543104095
+      },
+      "initial_core_state": [
+        20.454619149130057,
+        141.88383758863583,
+        65.12999999999997,
+        6.574540327526188,
+        19.146694531821055,
+        1.3,
+        14.675587279104933,
+        0.572345883823604,
+        14.036080818346791,
+        1.277335684397977,
+        1.2118523445817468,
+        0.10145515194524958
+      ],
+      "initial_core_state_sha256": "7678766496a4e49448fa418c4694d2477ecc746f84f42aa489d0cbf93b7e740d",
+      "selected_reference": false,
+      "variant": {
+        "apical_k_fraction": 0.03,
+        "apical_pump_fraction": 0.03,
+        "cooperative_gate": false,
+        "mixed_bath_na_attempt_fraction": 0.05,
+        "regulatory_family": "R0_STATIC_NEGATIVE_CONTROL",
+        "variant_id": "G2_LOW_APICAL_K_HEAVY_G10"
+      }
+    },
+    "G2_LOW_APICAL_MODERATE_NA_G10:M00": {
+      "calibration": {
+        "ae4_carrier_amount_fmol_at_unit_rate_gauge": 0.10247006986325294,
+        "cell_other_impermeant_osmoles_fmol": 120.2615624753795,
+        "common_membrane_conductance_scale": 10.0,
+        "nhe1_capacity_fmol_s": 0.0021378283629521345
+      },
+      "initial_core_state": [
+        18.86075975698352,
+        146.82551586036723,
+        65.13000000000001,
+        10.439090111556439,
+        22.4945134114059,
+        1.3,
+        14.647037205665592,
+        0.5797386640744442,
+        14.012198320446023,
+        1.3198603583595505,
+        1.214577549294015,
+        0.10144693284955329
+      ],
+      "initial_core_state_sha256": "04f5063767b5f27489b00c3901e29d07f4c209cbd26b674fa4f7667e29e2a44a",
+      "selected_reference": false,
+      "variant": {
+        "apical_k_fraction": 0.03,
+        "apical_pump_fraction": 0.03,
+        "cooperative_gate": false,
+        "mixed_bath_na_attempt_fraction": 0.2,
+        "regulatory_family": "R0_STATIC_NEGATIVE_CONTROL",
+        "variant_id": "G2_LOW_APICAL_MODERATE_NA_G10"
+      }
+    }
+  },
+  "solver_specifications": {
+    "loose_radau": {
+      "amount_atol_fmol": 1e-08,
+      "label": "loose_radau",
+      "max_step_s": 5.0,
+      "method": "Radau",
+      "regulatory_atol_fraction": 1e-08,
+      "rtol": 1e-06,
+      "volume_atol_pL": 1e-10
+    },
+    "production_bdf": {
+      "amount_atol_fmol": 1e-10,
+      "label": "production_bdf",
+      "max_step_s": 2.0,
+      "method": "BDF",
+      "regulatory_atol_fraction": 1e-10,
+      "rtol": 1e-07,
+      "volume_atol_pL": 1e-12
+    },
+    "production_radau": {
+      "amount_atol_fmol": 1e-10,
+      "label": "production_radau",
+      "max_step_s": 2.0,
+      "method": "Radau",
+      "regulatory_atol_fraction": 1e-10,
+      "rtol": 1e-07,
+      "volume_atol_pL": 1e-12
+    },
+    "tight_radau": {
+      "amount_atol_fmol": 1e-11,
+      "label": "tight_radau",
+      "max_step_s": 1.0,
+      "method": "Radau",
+      "regulatory_atol_fraction": 1e-11,
+      "rtol": 1e-08,
+      "volume_atol_pL": 1e-13
+    }
+  },
+  "status": "PASS_PRE_REVEAL_ENSEMBLE_NONUNIQUE",
+  "supersession": {
+    "baseline_g5": "FAILED_FIXED_0P55_CA_STIMULUS_FLOW_SHAPE; PRESERVED_IN_dynamic_frozen_manifest.json",
+    "ca015_n1_m1p75": "FAILED_9_OF_9_ROOT_GROUPS; PRESERVED_IN_failed_groups_preserved",
+    "historical_ca_nkcc_profiles": "NO_NOMINAL_0P55_CA_NKCC_PROFILE_PASSED; OUT_OF_SCALE_PROBES_PRESERVED",
+    "regulatory_only_sustainment": "FAILED_TO_REPAIR_FLOW_SHAPE; PRESERVED_IN_regulatory_sustainment_summary.json",
+    "replacement": "JOINT_WT_CALIBRATED_EFFECTIVE_CA_PLUS_SOURCE_MOTIVATED_ALGEBRAIC_NKCC1_CAPACITY"
+  }
+}

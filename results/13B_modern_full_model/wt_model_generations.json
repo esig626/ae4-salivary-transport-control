@@ -1,0 +1,81 @@
+{
+  "generations": [
+    {
+      "decision": "REJECT",
+      "defect_addressed": "initial WT rest closure",
+      "generation_id": "G2a_PRE_AUDIT_WATER_PLACEHOLDERS",
+      "parent": "G1_CONSERVATION_EXPLICIT_CORE",
+      "reason": "dimensional audit found coefficients inconsistent with Palk/2018 conversion",
+      "water_coefficients_pL_s_mOsm": [
+        2e-05,
+        2e-05,
+        1e-05
+      ]
+    },
+    {
+      "calibration_data": [
+        "matched WT resting Cl",
+        "matched WT resting pH",
+        "historical-lineage 1.3-pL volume convention"
+      ],
+      "changed_equations": [],
+      "changed_parameters": [
+        "water.apical_hydraulic_pL_s_mOsm",
+        "water.basolateral_hydraulic_pL_s_mOsm",
+        "water.paracellular_hydraulic_pL_s_mOsm"
+      ],
+      "decision": "RETAIN_R0_REST_SCAFFOLD_ONLY_DYNAMIC_REGULATION_PENDING",
+      "defect_addressed": "water-permeability unit conversion and WT resting closure",
+      "generation_id": "G2b_CORRECTED_PALK_WATER_WT_REST",
+      "parent": "G2a_PRE_AUDIT_WATER_PLACEHOLDERS",
+      "passing_R0_root_ids": [
+        "G2_LOW_APICAL_K_HEAVY_G10:M00",
+        "G2_LOW_APICAL_K_BIASED_G10:M00",
+        "G2_LOW_APICAL_MODERATE_NA_G10:M00",
+        "G2_BALANCED_APICAL_K_HEAVY_G10:M00",
+        "G2_BALANCED_APICAL_K_BIASED_G10:M00",
+        "G2_BALANCED_APICAL_MODERATE_NA_G10:M00",
+        "G2_ASYMMETRIC_APICAL_K_HEAVY_G10:M00",
+        "G2_ASYMMETRIC_APICAL_K_BIASED_G10:M00",
+        "G2_ASYMMETRIC_APICAL_MODERATE_NA_G10:M00"
+      ],
+      "prohibited_data_used": [],
+      "water_coefficients_pL_s_mOsm": [
+        0.00432,
+        0.0515,
+        0.00026
+      ]
+    },
+    {
+      "calibration_data": [
+        "WT resting core only at beta=0"
+      ],
+      "changed_equations": [
+        "d(ae4_effective_activation_fraction)/dt=(beta-input-activation)/tau"
+      ],
+      "decision": "RETAIN_DYNAMIC_RESTING_SCAFFOLD_STIMULATION_VALIDATION_REQUIRED",
+      "defect_addressed": "mandatory dynamic beta/cAMP/PKA regulation of AE4",
+      "generation_id": "G3_R1_DYNAMIC_REGULATION",
+      "new_parameters": [
+        "tau_activation_s=30 sensitivity, not identified",
+        "fully_activated_increment=0.25 sensitivity, not fitted to secretion"
+      ],
+      "parent": "G2b_CORRECTED_PALK_WATER_WT_REST",
+      "passing_root_ids": [
+        "G3_R1_BALANCED_APICAL_K_BIASED_G10:M00"
+      ],
+      "prohibited_data_used": []
+    },
+    {
+      "decision": "REJECT_BASELINE_SHAPE; RETAIN_AS_NEGATIVE_CONTROL_FOR_WT_ONLY_REPAIR",
+      "defect_addressed": "WT CCh/IPR stimulation and physical-seconds dynamics",
+      "generation_id": "G5_FROZEN_WT_DYNAMIC_BASELINE",
+      "minute_wise_flow_shape_gate_pass": false,
+      "numerical_dynamic_gate_pass": true,
+      "parent": "G3_R1_DYNAMIC_REGULATION",
+      "pre_reveal_holdout_eligible": false,
+      "prohibited_data_used": [],
+      "regulatory_ensemble_member_count": 20
+    }
+  ]
+}

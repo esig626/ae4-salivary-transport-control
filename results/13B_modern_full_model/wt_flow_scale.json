@@ -1,0 +1,43 @@
+{
+  "absolute_flow_scale_gate_pass": false,
+  "calibration_statistic": "time_mean_0_to_600_s",
+  "effective_cell_count": 190216602.4105839,
+  "effective_cell_count_gate_pass": null,
+  "effective_cell_count_plausibility_status": "WARNING_UNASSESSED_NO_PRIMARY_GEOMETRY_RANGE",
+  "effective_cell_count_source_range": null,
+  "envelope": {
+    "lower_uL_min": 9.0,
+    "scale_target_uL_min": 9.5,
+    "source": "P15 Fig. 1A graphical approximation; n=6 glands",
+    "upper_uL_min": 10.0
+  },
+  "fit_uses": "WT_ONLY",
+  "minute_wise_envelope_feasibility": {
+    "compatible": false,
+    "envelope_max_min_ratio": 1.1111111111111112,
+    "feasible_multiplier_lower_uL_min_per_pL_s": 14149.504529368225,
+    "feasible_multiplier_upper_uL_min_per_pL_s": 9069.8515316822,
+    "model_max_min_ratio": 1.7333990136861817,
+    "sampled_max_flow_pL_s": 0.001102553880299878,
+    "sampled_min_flow_pL_s": 0.0006360646750082244,
+    "sampled_times_s": [
+      60.0,
+      120.0,
+      180.0,
+      240.0,
+      300.0,
+      360.0,
+      420.0,
+      480.0,
+      540.0,
+      600.0
+    ]
+  },
+  "minute_wise_shape_gate_status": "FAIL_DECLARED_GRAPHICAL_ENVELOPE",
+  "minute_wise_shape_status": "GRAPHICAL_ENVELOPE_ONLY_NOT_DIGITIZED",
+  "model_statistic_pL_s": 0.0008323844045514475,
+  "multiplier_uL_min_per_pL_s": 11412.996144635035,
+  "observation_scale_tier": "TIER_2_WT_OBSERVATION_SCALE",
+  "source": "P15 Fig. 1A graphical approximation; n=6 glands",
+  "target_uL_min": 9.5
+}

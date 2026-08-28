@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "task": "13B_modern_full_model_reconstruction",
+  "branch": "codex/task-13b-modern-full-model",
+  "repository_base_commit": "78be17254a167bd054448d089aafa247b1539e3f",
+  "local_materialization_commit": "e831a77df803478c6731d7b4c39857761fa616d1",
+  "created_utc": "2026-08-27T20:31:36Z",
+  "hash_algorithm": "sha256",
+  "freeze": {
+    "state": "EVIDENCE_TARGETS_FROZEN_PRE_OPTIMIZATION",
+    "files": [
+      {
+        "path": "analysis/13B_modern_full_model/evidence_ledger.md",
+        "sha256": "5f109786c52c09dc3c1e3cd230dee34e13dc34ac4e0d3c0041925ac69c223db7",
+        "access_class": "evidence_audit"
+      },
+      {
+        "path": "results/13B_modern_full_model/calibration_targets.csv",
+        "sha256": "24c86b1ed0353ab836f3526144d66a80e785da22e8ee8e0af8eb15ec75ca04a7",
+        "access_class": "available_for_calibration"
+      },
+      {
+        "path": "results/13B_modern_full_model/validation_targets.csv",
+        "sha256": "d9615c74c2c72296c2dd242483196853bee778b3eb286c3a81bbf503764287b0",
+        "access_class": "validation_only_with_conditional_rows_staged"
+      },
+      {
+        "path": "results/13B_modern_full_model/heldout_targets.csv",
+        "sha256": "939f684ab92371f35b68fb52fbac59ebcb654fb5bf9a657feb4fd543ae1a0587",
+        "access_class": "strict_holdout_sealed_from_optimization"
+      }
+    ]
+  },
+  "access_policy": {
+    "calibration_targets": "May be used only in the matching biological and assay context stated by each row.",
+    "validation_targets": "Must remain outside every fitting objective. Rows with role CONDITIONAL_LOCALIZATION remain sealed until a valid frozen WT model has failed the strict holdout.",
+    "heldout_targets": "Must not be read or used by parameter fitting, model-generation selection, branch selection, input-waveform construction, time-map calibration, regulatory-kinetic calibration, solver selection, or tolerance selection.",
+    "permitted_heldout_reveal": "One evaluation is permitted only after Generation G5 passes all WT gates and topology, equations, parameters, dynamic inputs, physical time map, root rules, solver settings, and production tolerances have immutable hashes.",
+    "post_reveal_rule": "No retuning to the heldout magnitude or time course. Any repair must be independently justified and must create a new frozen-model manifest before a separately labeled evaluation."
+  },
+  "required_frozen_model_manifest_fields": [
+    "equation_or_source_tree_hash",
+    "parameter_manifest_hash",
+    "initial_state_hash",
+    "input_waveform_hash",
+    "physical_time_map_hash",
+    "root_and_branch_rule_hash",
+    "solver_and_tolerance_hash",
+    "WT_gate_report_hash"
+  ],
+  "events": [
+    {
+      "event_id": "freeze-0001",
+      "timestamp_utc": "2026-08-27T20:31:36Z",
+      "actor_role": "primary_evidence_agent",
+      "action": "freeze_evidence_and_machine_readable_target_roles",
+      "reason": "Pre-register calibration, validation, conditional-localization, and strict-heldout roles before optimization.",
+      "heldout_values_revealed_to_model_generation": false,
+      "frozen_model_manifest": null
+    },
+    {
+      "event_id": "firewall-incident-0002",
+      "timestamp_utc": "2026-08-27T21:53:17Z",
+      "actor_role": "adversarial_pre_reveal_auditor",
+      "action": "record_unintentional_heldout_plaintext_exposure_during_adversarial_static_scan",
+      "reason": "A broad static-search glob unintentionally returned strict-heldout plaintext to one auditor. The auditor was immediately quarantined; the values were not communicated to the lead or substantive model-generation agents and were not used for evaluation, branch selection, model selection, parameter tuning, waveform construction, time-map calibration, or tolerance selection.",
+      "heldout_values_revealed_to_model_generation": false,
+      "frozen_model_manifest": null,
+      "containment": {
+        "auditor_quarantined": true,
+        "model_selection_contaminated": false,
+        "optimization_contaminated": false,
+        "authorized_reveal": false
+      }
+    },
+    {
+      "event_id": "firewall-incident-0003",
+      "timestamp_utc": "2026-08-28T04:29:53Z",
+      "actor_role": "replacement_adversarial_pre_reveal_auditor",
+      "action": "record_unintentional_heldout_plaintext_exposure_from_overbroad_legacy_test_scan",
+      "reason": "A replacement auditor's static scan included legacy Task 13 tests outside the intended modern-model allowlist and returned heldout plaintext. The auditor self-reported immediately, was barred from reveal authorization, and did not run, evaluate, select, or tune a Task 13B model using the values.",
+      "heldout_values_revealed_to_model_generation": false,
+      "frozen_model_manifest": null,
+      "containment": {
+        "auditor_quarantined_from_reveal_authorization": true,
+        "model_selection_contaminated": false,
+        "optimization_contaminated": false,
+        "authorized_reveal": false
+      }
+    },
+    {
+      "event_id": "no-reveal-final-0004",
+      "timestamp_utc": "2026-08-28T06:36:06Z",
+      "actor_role": "lead_synthesis",
+      "action": "close_task_without_heldout_reveal",
+      "reason": "The replacement native-source WT dynamic hierarchy had zero absolute one-SMG scientific passers; staged-release rules prohibit reveal without a valid WT denominator.",
+      "heldout_values_revealed_to_model_generation": false,
+      "frozen_model_manifest": "native_dynamic_contract_manifest.json",
+      "containment": {
+        "authorized_reveal": false,
+        "heldout_file_parsed": false,
+        "final_classification": "OUTCOME_4"
+      }
+    }
+  ],
+  "heldout_reveals": []
+}

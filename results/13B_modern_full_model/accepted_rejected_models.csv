@@ -1,0 +1,7 @@
+model_family,stage,rest_gate,dynamic_numerical_gate,absolute_wt_gate,decision
+historical_lineage_G5,superseded,pass,pass,fail,REJECTED_SUPERSEDED
+STRICT_NATIVE,H1,fail,not_run,not_run,REJECTED_WT_REST
+STRICT_NATIVE_HW_HWQ,diagnostic,fail,not_run,not_run,REJECTED_DIAGNOSTIC
+AN_ABS_AE4_NHE,production_and_stress,fail,not_run,not_run,REJECTED_WT_REST
+N_ABS_NKCC_scale4,production,pass,pass,fail,REJECTED_ABSOLUTE_ONE_SMG_SCALE
+N_ABS_NKCC_high_scale,diagnostic_stress,fail,not_run,not_run,REJECTED_DIAGNOSTIC

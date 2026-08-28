@@ -1,0 +1,90 @@
+{
+  "ae4_na_routing_fraction": {
+    "status": "mixed-bath model assumptions; pure-cation assays do not identify it",
+    "values": [
+      0.05,
+      0.1,
+      0.2
+    ]
+  },
+  "apical_k_fraction": {
+    "status": "model/source bracket; not a measured interval",
+    "values": [
+      0.2,
+      0.3,
+      0.4
+    ]
+  },
+  "apical_pump_fraction": {
+    "high": 0.094586,
+    "low": 0.056878,
+    "nominal": 0.075075,
+    "status": "derived parotid-to-mouse-SMG transfer sensitivity"
+  },
+  "calcium_gate": {
+    "formula": "Ca^eta/(Ca^eta+K_Ca^eta)",
+    "half_uM": 0.26,
+    "hill": 1.46
+  },
+  "diagnostic_stress_source_scales": [
+    12.0,
+    16.0,
+    24.0,
+    32.0
+  ],
+  "firewall": "WT-only; no AE4-null secretion datum is imported or evaluated",
+  "frozen_capacity_construction": {
+    "ae4_carrier_fmol": 0.1501264265070657,
+    "nhe1_capacity_fmol_s": 0.007440980590414482,
+    "nkcc1_capacity_fmol_s": 0.08
+  },
+  "g_cacc_max_S": 3.14e-08,
+  "g_cacc_topology": "whole-cell maximum assigned wholly apical",
+  "g_k_topology": "whole-cell maximum partitioned only; no background or common scale",
+  "g_k_total_max_S": 1.4e-08,
+  "hydraulic_diagnostic_modes": {
+    "HW": "common scalar on Pa, Pb, and Pt only",
+    "HWQ": "same scalar on Pa, Pb, Pt, and local lumen outflow_rate_s",
+    "eligibility": "diagnostic only for every H>1 row"
+  },
+  "hydraulic_diagnostic_scales": [
+    1.0,
+    2.5,
+    3.5,
+    5.0,
+    6.75,
+    8.0
+  ],
+  "production_source_scales": [
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0
+  ],
+  "root_fit": {
+    "continuous_nuisance": "OTHER intracellular impermeant osmoles only",
+    "coordinates": [
+      "na_i_mM",
+      "k_i_mM",
+      "tic_i_mM",
+      "ph_i",
+      "volume_i_pL",
+      "na_l_mM",
+      "k_l_mM",
+      "tic_l_mM",
+      "ph_l",
+      "volume_l_pL",
+      "cell_other_impermeant_osmoles_fmol"
+    ],
+    "equations": "ten independent charge-manifold steady RHS plus Vi=1.3 pL"
+  },
+  "source_classes": {
+    "AN_ABS_AE4_NHE": "one common scalar on AE4 carrier gauge and NHE1 capacity",
+    "N_ABS_NKCC": "one scalar on complete reversible NKCC1 capacity",
+    "STRICT_NATIVE": "literal source map; all absolute multipliers one"
+  }
+}
