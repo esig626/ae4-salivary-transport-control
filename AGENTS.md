@@ -4,185 +4,127 @@ These instructions apply to all work in this repository.
 
 ## Current scientific objective
 
-The active task is Task 13B. The executable prompt is `prompts/13B_modern_full_model_reconstruction_multiagent.md`.
+The active task is Task 13C. The executable prompt is `prompts/13C_calcium_input_sweep.md`.
 
-Task 13 established that modern state-resolved AE4 transport structure can add genuine transporter-level behavior, but no tested candidate produced a valid whole-cell WT calibration on the inherited seven-state chassis. It also showed that the current evidence does not identify a unique whole-cell correction from AE4-null Cl and pH alone.
+Task 13B produced a modern conservation-explicit WT model family with ten retained native-source WT resting roots. Those roots survived the required root confirmation and geometry checks. Their WT 600-second dynamics passed the numerical, conservation, solver, sustainment, co-stimulation, regulatory, and nearby-state gates. They failed only the absolute one-SMG WT secretion-scale gate. The strict AE4-null secretion magnitude and time course were not revealed.
 
-Task 13B therefore has one priority only.
+Task 13C asks one narrow question only.
 
-> Construct and validate a physiologically credible modern full salivary acinar-cell model before attempting any model reduction, GSPT, bifurcation analysis, identifiability analysis, or manuscript drafting.
+> Is the remaining absolute WT secretion deficit explained by the assumed stimulated calcium amplitude?
 
-Do not work on a three-ODE reduction in this task. Do not run continuation merely because it is available. The full model must work first.
+This is a one-variable sensitivity experiment on the frozen Task 13B WT models. It is not a reconstruction task.
 
-## Required interpretation of earlier tasks
+## Hard freeze
 
-Do not state or imply that AE4 itself is insufficient.
+Do not refit or recalibrate anything in Task 13C.
 
-The supported statement is narrower.
+Keep frozen exactly as inherited from Task 13B
 
-> The tested coarse-grained and state-resolved AE4 implementations did not yield a valid WT-calibrated whole-cell model on the inherited historical chassis over the tested source-supported domains.
+- all ten final WT resting roots;
+- all whole-cell equations;
+- all transporter capacities and source-class multipliers;
+- NKCC1 scale 4 in the retained `N_ABS_NKCC` family;
+- AE4 transport parameters and Na/K routing;
+- NHE1 and AE2 parameters;
+- pump and K-channel topology/fractions;
+- CaCC and K-channel maximum conductances;
+- hydraulic coefficients and lumen/outflow parameters;
+- bath composition and geometry;
+- cAMP/PKA regulatory equations, gains, and kinetic sensitivity members;
+- solver tolerances and numerical gates;
+- the one-SMG observation geometry and WT 9--10 uL/min gate.
 
-The biological evidence directly supports an important role for AE4 in intracellular chloride accumulation and stimulated saliva secretion. The failure is a model-reconstruction problem, not evidence against AE4 biology.
+The only variable that may change is the stimulated calcium input supplied to the existing calcium gate.
 
-## Evidence hierarchy
+Do not compensate for calcium by changing any other parameter.
 
-When sources disagree, use the following order.
+## Calcium sweep
 
-1. Conservation laws, charge balance, thermodynamic feasibility, dimensional consistency, and membrane orientation.
-2. Direct primary experimental measurements in salivary acinar cells or glands.
-3. Direct transporter-level measurements in heterologous expression systems, with assay context preserved.
-4. Structural and mutagenesis evidence that constrains molecular mechanism.
-5. Reproducible behavior of historical implementations.
-6. Published historical equations and parameter tables.
-7. New modeling decisions, which must be labelled and stress-tested.
+Use the predeclared stimulated calcium grid
 
-The 2018 article and archived code are historical model records, not ground truth. The old article must not be framed as wrong. This project is a source-informed revisit using later biology.
+`0.10, 0.15, 0.18, 0.20, 0.25, 0.30, 0.35, 0.40, 0.50 uM`.
 
-## Primary evidence that must be incorporated
+Keep resting calcium at the existing `0.058 uM`.
 
-At minimum use and audit the following primary sources.
+The primary arm is the matched Task 13B `CCH_IPR` WT stimulation protocol with beta input unchanged. A `CCH_ONLY` arm may be run as a contextual diagnostic because the later parotid measurements used 300 nM carbachol alone, but it is not a substitute for the SMG CCh+IPR WT gate.
 
-- Peña-Münzenmayer et al. 2015, JBC, DOI `10.1074/jbc.M114.612895`, for AE4-null saliva, resting chloride and pH phenotypes, AE2 comparisons, and the reported early-versus-sustained secretion pattern.
-- Peña-Münzenmayer et al. 2016, JGP, DOI `10.1085/jgp.201611571`, for direct Na and K transport, electroneutrality, reversal, cation dose response, Hill summaries, and source-discussed stoichiometries.
-- Peña-Münzenmayer et al. 2021, AJP Gastrointestinal and Liver Physiology, DOI `10.1152/ajpgi.00145.2021`, for beta-adrenergic activation of AE4, H89 sensitivity, PKAc activation, and the S173/S273 mutant evidence.
-- Catalán et al. 2025, AJP Cell Physiology, DOI `10.1152/ajpcell.00346.2024`, for cation coordination, Na/K-specific mutant behavior, and later transport-cycle hypotheses.
-- Almássy et al. 2018, Pflügers Archiv, DOI `10.1007/s00424-018-2109-0`, for apical as well as basolateral Na/K-ATPase localization, apical Ca-activated K current, and the associated whole-cell transport topology.
-- The 2018 AE4 mathematical model, DOI `10.1007/s11538-017-0370-6`, as historical mathematical lineage only.
+Do not introduce a calcium rise time, oscillation law, spatial gradient, or new calcium ODE in this task. Task 13C tests amplitude only.
 
-Do not promote proposed molecular cartoons, MD trajectories, or speculative stoichiometries to measured fact.
+## Source context for the sweep
 
-## Dynamic cAMP and PKA regulation is mandatory
+Use the following published results only to justify the sensitivity domain and interpret it. Preserve gland and protocol context.
 
-Task 13 treated PKA mainly through imposed activity changes and did not establish a physical activation time scale. Task 13B must explicitly investigate dynamic regulation.
+- Vera-Sigüenza et al. 2019, Bull Math Biol, DOI `10.1007/s11538-018-0534-z`: mouse parotid lobules stimulated with 300 nM CCh showed a cell-wide calcium response rising from about 72 nM to an oscillatory mean around 200 nM. The corresponding secretion model produced about 78 um^3/s mean flow from about 22 um^3/s at rest. The paper also showed that the spatio-temporal mean calcium was sufficient to reproduce mean secretion.
+- Vera-Sigüenza et al. 2020, Bull Math Biol, DOI `10.1007/s11538-020-00712-3`: the seven-cell parotid acinus at mean calcium around 0.18--0.20 uM produced about 481 um^3/s total, with representative individual cells around 68.7--69.7 um^3/s. The paper states that earlier dual-agonist CCh+IPR studies corresponded to calcium around 0.5 uM and that raising calcium to 0.5 uM reproduces the larger secretion increase in that model.
 
-The biological chain to represent is
+These parotid values are not direct matched-SMG calibration targets. They justify testing the calcium range. Do not claim that 0.20 or 0.50 uM is the measured SMG calcium for the exact 2015 protocol unless a primary source directly establishes that.
 
-`beta-adrenergic stimulation -> adenylate cyclase/cAMP -> PKA -> AE4 regulatory state -> AE4 transport`.
+## Holdout firewall
 
-The 2021 experiments establish regulation and S173 dependence, but they do not automatically establish a unique kinetic scheme, a direct phosphorylation rate, a physiological time constant, or a universal multiplicative gain.
+The AE4-null stimulated secretion magnitude and time course remain sealed.
 
-Therefore build the smallest dynamic regulatory models justified by the data and label all unmeasured kinetic choices. Compare nested alternatives such as
+Do not open, parse, digitize, evaluate, hash-decode, or use the held-out target values. Do not run AE4-null or AE2-null genotype trajectories in Task 13C.
 
-- an effective cAMP state driving a PKA activation state;
-- a single effective PKA/AE4 regulatory state if the upstream cAMP kinetics are not separately identifiable;
-- phosphorylation/dephosphorylation of an AE4 regulatory fraction;
-- state-specific modulation of the AE4 transport cycle versus a common capacity modulation.
-
-Do not choose a delay or time constant because it makes the AE4-null secretion curve look right.
-
-## Full-model reconstruction scope
-
-The model may need to exceed the inherited seven-state chassis. That is allowed and expected if required by conservation or new biology.
-
-The full modern model should explicitly decide how to represent
-
-- intracellular Na, K, Cl, HCO3, H/ pH, and CO2 or total inorganic carbon;
-- cell volume and osmotic water balance;
-- luminal Na, K, Cl, and any required bicarbonate/carbon species;
-- apical and basolateral membrane potentials or equivalent current constraints;
-- NKCC1;
-- NHE1;
-- AE2;
-- state-resolved or reduced-but-source-consistent AE4;
-- Na/K-ATPase with experimentally supported apical and basolateral topology;
-- Ca-activated K channels with experimentally supported apical and basolateral topology;
-- apical Cl current;
-- tight-junction/paracellular transport;
-- CO2/HCO3 chemistry and buffering;
-- dynamic beta/cAMP/PKA regulation of AE4;
-- the calcium stimulus/input used to drive secretion.
-
-Do not add complexity merely to improve fit. Every added state or flux must solve a documented closure, conservation, timing, or evidence problem.
-
-## Calibration and holdout firewall
-
-The AE4-null stimulated secretion magnitude and time course remain the decisive held-out validation.
-
-Do not fit to
-
-- the approximately 35 percent reduction in 10-minute saliva;
-- the 0.65 KO/WT total saliva ratio;
-- the observed early similarity followed by later divergence;
-- any digitized AE4-null secretion curve.
-
-The reconstruction should use WT data, transporter assays, resting ionic phenotypes, source-supported geometry/topology, and where necessary released knockout ionic data only according to the staged rules in the Task 13B prompt.
-
-A model that is tuned until it produces the desired KO secretion ratio has not explained that ratio.
-
-## Multi-agent standard
-
-Task 13B must be run as a real multi-agent scientific investigation. Independent roles must include at least
-
-1. primary experimental evidence and protocol extraction;
-2. cAMP/PKA regulatory biology and kinetic-model audit;
-3. AE4 transport-cycle and thermodynamic modeling;
-4. whole-cell epithelial transport and acid-base reconstruction;
-5. numerical calibration and root finding;
-6. dynamic simulation and timing calibration;
-7. adversarial scientific audit;
-8. independent numerical reproduction;
-9. lead synthesis and decision making.
-
-Agents must preserve disagreements and uncertainty rather than averaging them away.
-
-## Iteration requirement
-
-Do not stop after the first failed reconstruction.
-
-Proceed through successive model generations. Each generation must state
-
-- which defect from the previous generation is being addressed;
-- which equations or topology changed;
-- which parameters were newly introduced;
-- what independent evidence constrains them;
-- which gates improved or worsened;
-- whether the change is retained or reverted.
-
-Continue until a source-supported full model passes the declared physiology gates or until one experimentally unmeasured quantity is shown to be decision-critical and cannot be bounded from existing sources.
-
-A generic `STOP` is not acceptable.
+Task 13C ends at the WT calcium result.
 
 ## Numerical standard
 
-Every accepted model must satisfy
+Reuse the Task 13B production implementation and gates. Do not rewrite the model unless a minimal runner change is required to expose calcium as the sweep variable.
 
-- species and charge conservation where applicable;
-- thermodynamic sign and reversal checks;
+At minimum retain
+
 - positive physical states;
-- stable deterministic root finding with multistart or continuation as needed;
-- WT resting physiology before knockout predictions;
-- independent solver reproduction for dynamics;
-- sensitivity to tolerances and initial conditions;
-- explicit dimensional and time-scale ledgers.
+- charge/current/carbon/water accounting;
+- the same 600-second physical-time protocol;
+- the same one-SMG absolute flow-scale gate;
+- the same minute-wise flow-shape logic;
+- the same sustainment gate;
+- Radau/BDF crosscheck for confirmatory cases;
+- no first-passer pruning across the ten roots.
 
-Do not hide numerical failure behind normalized ratios.
+Task 13C should be computationally small. Do not launch a broad multi-agent reconstruction. One implementation/reproduction stream plus one independent audit is sufficient.
 
-## Claim discipline
+## Required outputs
 
-Separate throughout
+Create
 
-1. direct experimental fact;
-2. source-supported mechanistic constraint;
-3. exact model deduction;
-4. numerical model result;
-5. historical implementation evidence;
-6. new modeling assumption.
+- `analysis/13C_calcium_input_sweep/evidence_and_freeze.md`
+- `analysis/13C_calcium_input_sweep/final_answer.md`
+- `results/13C_calcium_input_sweep/calcium_screen.csv`
+- `results/13C_calcium_input_sweep/calcium_confirmatory.csv`
+- `results/13C_calcium_input_sweep/calcium_threshold.json`
+- `results/13C_calcium_input_sweep/frozen_manifest.json`
+- `results/13C_calcium_input_sweep/artifact_hashes.csv`
 
-Do not claim the old article was wrong. Do not claim AE4 itself is insufficient. Do not call a parameterized extension identified unless the data actually identify it.
+The final report must state for every tested calcium amplitude
 
-## Completion standard
+- per-cell flow range across the ten roots;
+- mean and minute-wise flow behavior;
+- existing one-SMG scale interval and whether it passes;
+- implied effective cell count where meaningful;
+- endpoint Cl, Na, K, pH, volume, and membrane potentials;
+- calcium-gate activation fraction;
+- numerical/conservation status.
 
-Task 13B is complete only with one of these substantive outcomes.
+## Completion classifications
 
-1. `FULL MODEL VALIDATED — HELD-OUT AE4 PHENOTYPE RECONSTRUCTED`
-2. `FULL MODEL VALIDATED — PHENOTYPE PARTIALLY RECONSTRUCTED; ONE SPECIFIC DYNAMIC OR FLUX DEFICIT REMAINS`
-3. `MULTIPLE FULL MODELS VALIDATED — PHENOTYPE MECHANISM NONUNIQUE`
-4. `FULL MODEL NOT IDENTIFIABLE FROM EXISTING DATA — ONE DECISION-CRITICAL MEASUREMENT SPECIFIED`
+End with exactly one of
 
-Outcomes 1 to 3 require a valid WT model and held-out knockout evaluation. Outcome 4 requires proof that the missing measurement changes the model-class decision, not merely that more data would be useful.
+1. `WT ABSOLUTE FLOW GATE PASSES WITH CALCIUM-ONLY CHANGE`
+2. `WT ABSOLUTE FLOW GATE PASSES ONLY AT HIGH CALCIUM EDGE — MATCHED-SMG CALCIUM REMAINS DECISION-CRITICAL`
+3. `CALCIUM-ONLY CHANGE INSUFFICIENT TO CLOSE WT ABSOLUTE FLOW DEFICIT`
+4. `CALCIUM SWEEP EXPOSES PHYSIOLOGICAL OR NUMERICAL FAILURE BEFORE FLOW CLOSURE`
 
-## Manuscript and reduction discipline
+Do not convert a WT pass into an AE4 phenotype claim. A genotype test is a later task.
 
-Do not draft a paper, reduce the system to three ODEs, apply GSPT, or perform a bifurcation study during Task 13B.
+## General discipline
 
-First freeze a validated full model. Reduction and dynamics are later tasks.
+Do not edit `archive/`.
+
+Do not merge to `main`.
+
+Do not draft a manuscript.
+
+Do not perform model reduction, GSPT, bifurcation analysis, or identifiability analysis.
+
+Do not state that the 2018 paper was wrong or that AE4 itself is insufficient.
