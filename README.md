@@ -1,6 +1,6 @@
 # AE4 Salivary Transport Control
 
-This repository develops a new analysis of salivary acinar cell transport control. The published AE4 secretion model is the scientific starting point. Older unpublished material is retained only as a historical archive and provenance record.
+This repository develops a new analysis of salivary acinar cell transport control. The published AE4 secretion model is the scientific starting point. Older unpublished material is retained only as a historical archive and provenance record. https://link.springer.com/article/10.1007/s11538-017-0370-6
 
 ## Central question
 
