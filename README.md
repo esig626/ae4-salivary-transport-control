@@ -1,6 +1,8 @@
 # AE4 Salivary Transport Control
 
-This repository develops a new analysis of salivary acinar cell transport control. The published AE4 secretion model is the scientific starting point. Older unpublished material is retained only as a historical archive and provenance record. https://link.springer.com/article/10.1007/s11538-017-0370-6
+This is the working repository for the **AE4 salivary transport project**. It contains the current work being developed in light of newer results, including the present identifiability and mechanism-discrimination analysis built from the published AE4 secretion model. The earlier AE4 project is also retained here under `archive/` as historical and provenance material, so the current work and the older project remain together while being kept clearly separate.
+
+The published AE4 model remains the scientific starting point: [A Mathematical Model Supports a Key Role for Ae4 (Slc4a9) in Salivary Gland Secretion](https://link.springer.com/article/10.1007/s11538-017-0370-6).
 
 ## Central question
 
@@ -46,4 +48,4 @@ No result from the historical material is automatically a result of this project
 
 ## Current status
 
-Repository structure established. Scientific validation has not yet begun.
+The project has moved beyond repository setup and the current work is focused on the identifiability and mechanism-discrimination programme described in `docs/QUICK_PAPER_PLAN.md`, motivated by the newer results. No result is treated as validated until it is entered in `docs/RESULTS_LEDGER.md`. The earlier AE4 project remains preserved under `archive/` for historical continuity and provenance.
