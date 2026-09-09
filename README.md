@@ -1,12 +1,14 @@
 # AE4 Salivary Transport Control
 
-This repository develops a new analysis of salivary acinar cell transport control. The published AE4 secretion model is the scientific starting point. Older unpublished material is retained only as a historical archive and provenance record.
+This is the working repository for the **AE4 salivary transport project**. It contains the current reconstruction, validation and mechanism analysis built from the published AE4 secretion model, while preserving the earlier AE4 project under `archive/` as historical and provenance material.
+
+The published AE4 model remains the scientific starting point: [A Mathematical Model Supports a Key Role for Ae4 (Slc4a9) in Salivary Gland Secretion](https://link.springer.com/article/10.1007/s11538-017-0370-6).
 
 ## Central question
 
 Why does loss of AE4 produce a substantial secretory phenotype while loss of AE2 produces little or no effect, and does that distinction survive a scale invariant analysis of transporter control?
 
-The project will separate three possibilities.
+The project separates three possibilities.
 
 1. The apparent AE4 dominance is a genuine structural property of the transport network.
 2. It is partly or largely an artefact of parameter scaling in the older sensitivity calculation.
@@ -27,32 +29,16 @@ The project will separate three possibilities.
 - `docs/` research plan, provenance, decisions, and result ledgers
 - `prompts/` reproducible Codex task prompts
 
-## Execution order
-
-1. Inventory the historical material and map every equation and parameter to a published source.
-2. Reconstruct and verify the published baseline model with newly written code.
-3. Reproduce the AE2 and AE4 knockout curves.
-4. Replace raw parameter derivatives with dimensionless control coefficients.
-5. Decompose secretion control through the steady state Jacobian and transport network.
-6. Test alternative AE4 sodium and potassium coupling mechanisms.
-7. Determine which mechanisms are identifiable from available observables.
-8. Generate prospective whole cell predictions for experimentally characterised AE4 variants.
-9. Perform robustness and uncertainty analyses.
-10. Freeze the validated result set before manuscript drafting.
-
 ## Scientific rule
 
-No result from the historical material is automatically a result of this project. New claims must be independently derived from published sources and newly written code, then entered in `docs/RESULTS_LEDGER.md` with a reproducibility pointer.
+No result from the historical material is automatically a result of this project. New claims must be independently derived from published sources and newly written code, then recorded with reproducibility and provenance.
 
 ## Current status
 
-Phase 12 has completed a multi-agent AE4 mechanism reconstruction on the best
-internally coherent historical seven-state comparison chassis. The controlling
-conclusion is **`AE4 ALONE INSUFFICIENT; MISSING PATHWAY LOCALIZED`**: changing
-AE4 kinetics, cation branching, cooperativity, stoichiometry, reversibility,
-saturation, and source-bounded PKA activation does not jointly recover WT
-resting physiology and the held-out knockout phenotypes. Exact balance analysis
-localizes a missing two-dimensional cation-homeostasis closure module. See
-`analysis/12_ae4_mechanism_reconstruction/README.md` for scope and
-reproducibility; this result does not constitute a recovered 2018 model or
-authorize manuscript drafting.
+Task 14, the scale free genotype holdout validation, is complete and merged to `main`. The scientific model state remained frozen at commit `2f54e7c4f87b6da746d3a8427c7bdca40a77c3de` during the blind experiment.
+
+All ten AE4 continuation branches reached 5% expression but the declared exact zero continuation failed numerically in every branch, so no valid exact AE4 null secretion trajectory was produced. All ten AE2 continuations succeeded, and AE2 deletion predicted only a 0.03% to 0.16% secretion increase. The blind checkpoint was committed before phenotype reveal at `607ac21279d821b95d44ba63f35df27078503cf6`.
+
+After reveal, the retained experiment reported 35 ± 4.7% lower total AE4 null secretion. Because no exact zero model trajectory existed, Task 14 did not establish either agreement or disagreement for the AE4 phenotype. The final classification was **`GENOTYPE CONTINUATION OR NUMERICS PREVENT A VALID HOLDOUT TEST`**. See `analysis/14_scale_free_genotype_holdout/` and `results/14_scale_free_genotype_holdout/` for the complete audit trail.
+
+The next planned diagnostic is a post reveal, frozen model calculation using the already valid 5% AE4 states. It is not a second blind holdout and must not be used to retune the model.
