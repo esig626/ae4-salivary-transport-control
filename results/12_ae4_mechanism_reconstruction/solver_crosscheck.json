@@ -1,0 +1,87 @@
+{
+  "C1": {
+    "absolute_endpoint_ratio_difference": 1.5842909206753575e-09,
+    "absolute_integrated_ratio_difference": 3.2763138868574515e-08,
+    "bdf_endpoint_ratio": 0.9985561402197577,
+    "bdf_integrated_ratio": 1.0056381560930046,
+    "mechanism_id": "C1",
+    "radau_endpoint_ratio": 0.9985561418040486,
+    "radau_integrated_ratio": 1.0056381233298657,
+    "right_limit_and_poststep_grid": "100+1e-7 then 0.1-unit spacing"
+  },
+  "independent_C6_112_PKA_F3_BDF": {
+    "ae4_ko_endpoint_flow": 0.001358119889,
+    "ae4_ko_endpoint_ratio": 1.12216869,
+    "ae4_ko_integrated_ratio": 1.13012679,
+    "provenance": "independent adversarial Agent-E BDF rerun",
+    "wt_endpoint_flow": 0.001210263574
+  },
+  "independent_representative_213_BDF_Radau": {
+    "BDF_tolerances": {
+      "atol": 1e-08,
+      "rtol": 1e-07
+    },
+    "Radau_tolerances": {
+      "atol": 1e-08,
+      "rtol": 1e-07
+    },
+    "capacity_points_per_core": 1,
+    "cores": [
+      "C6_213",
+      "C7_213",
+      "C8_213_SAT"
+    ],
+    "folds": [
+      1.0,
+      1.25,
+      1.6,
+      3.0,
+      10.0
+    ],
+    "maximum_thermodynamic_violation": 0.0,
+    "provenance": "independent numerical-reproducibility reviewer dual-solver crosscheck at one in-band point per core (15 rows total); the reviewer also ran BDF over all 30 positive AE4-specific F=1.25/F=3 frozen-grid combinations, while this production run supplies the matching full Radau grid",
+    "reported_upper_bound_absolute_endpoint_ratio_difference": 3e-10,
+    "reported_upper_bound_absolute_integrated_ratio_difference": 3e-09,
+    "reported_upper_bound_conservation_residual": 4.98e-14
+  },
+  "independent_source_positive_30_BDF_vs_production_Radau": {
+    "BDF_tolerances": {
+      "atol": 1e-08,
+      "rtol": 1e-07
+    },
+    "Radau_tolerances": {
+      "atol": 1e-08,
+      "rtol": 1e-07
+    },
+    "all_BDF_endpoint_ratios_above_one": true,
+    "all_BDF_integrated_ratios_above_one": true,
+    "capacity_points_per_core": 5,
+    "cores": [
+      "C6_213",
+      "C7_213",
+      "C8_213_SAT"
+    ],
+    "folds": [
+      1.25,
+      3.0
+    ],
+    "maximum_absolute_endpoint_ratio_difference": 1.3592778014270834e-09,
+    "maximum_absolute_integrated_ratio_difference": 3.370460355256455e-09,
+    "maximum_production_Radau_conservation_residual": 4.973799150320701e-14,
+    "maximum_thermodynamic_violation": 0.0,
+    "minimum_BDF_endpoint_ratio": 1.013777757953735,
+    "minimum_BDF_integrated_ratio": 1.0209390004383792,
+    "provenance": "independent numerical-reproducibility reviewer BDF rerun of all five frozen capacity points for three cores and the two positive AE4-specific folds (30 rows), compared with the production Radau grid",
+    "row_count": 30
+  },
+  "round2_gentle_upper_envelope": {
+    "absolute_endpoint_ratio_difference": 1.3088485850687448e-10,
+    "absolute_integrated_ratio_difference": 7.591399286965839e-09,
+    "bdf_endpoint_ratio": 0.9985236402975431,
+    "bdf_integrated_ratio": 1.0056037987341069,
+    "interpretation": "diagnostic pure-Na/energetic-bias boundary; not source-admissible",
+    "mechanism_id": "R2_0462_C8_112_SAT_fNa1_Keq100_sat100_B21",
+    "radau_endpoint_ratio": 0.998523640428428,
+    "radau_integrated_ratio": 1.0056037911427076
+  }
+}

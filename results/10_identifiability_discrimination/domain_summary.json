@@ -1,0 +1,22 @@
+{
+  "parameter_domain": {
+    "G2": [
+      0.0,
+      1.0
+    ],
+    "G4": [
+      0.0,
+      1.0
+    ]
+  },
+  "grid_points": 1681,
+  "minimum_state_ratio_over_grid": 0.9070000081886231,
+  "maximum_Q_star_over_grid": 1.0,
+  "minimum_Q_star_over_grid": 0.9532643412071645,
+  "q_equivalence_points": 99,
+  "q_equivalence_reference": {
+    "G2": 0.5,
+    "G4": 0.5
+  },
+  "scope": "affine stoichiometric diagnostic; global statements apply only to this diagnostic map"
+}

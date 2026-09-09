@@ -1,0 +1,199 @@
+{
+  "calibration_branch": {
+    "boundary_hits": [],
+    "branch_id": "G2_BALANCED_APICAL_K_BIASED_G10:M00",
+    "charge_residuals_fmol": {
+      "cell": 1.4210854715202004e-14,
+      "lumen": 4.440892098500626e-16
+    },
+    "conservation_residuals": {
+      "ae4_charge_fmol_s": 0.0,
+      "apical_current_A": -3.2311742677852644e-27,
+      "basolateral_current_A": 4.8467614016778965e-27,
+      "buffer_site_accounting_fmol_s": 0.0,
+      "carbon_accounting_fmol_s": -3.2526065174565133e-19,
+      "cell_bulk_charge_rate_fmol_s": 0.0,
+      "cell_speciation_alkalinity_mM": 8.544276397515205e-13,
+      "homeostasis_charge_fmol_s": 1.3877787807814457e-17,
+      "lumen_bulk_charge_rate_minus_outflow_fmol_s": -2.927345865710862e-17,
+      "lumen_speciation_alkalinity_mM": -1.580957587066223e-13,
+      "water_volume_accounting_pL_s": 0.0
+    },
+    "coordinates": [
+      14.756773495778985,
+      111.10374637122905,
+      6.194122572604099,
+      6.909999999999942,
+      1.3,
+      146.13568410951905,
+      4.087361120509596,
+      12.891629639536415,
+      7.276453648930862,
+      0.10164106693766255
+    ],
+    "current_residuals_A": {
+      "apical": -3.2311742677852644e-27,
+      "basolateral": 4.8467614016778965e-27
+    },
+    "gate_failures": [],
+    "independent_jacobian_nullity": 0,
+    "independent_jacobian_rank": 13,
+    "independent_jacobian_singular_values": [
+      224336.29929954238,
+      22505.838896171907,
+      1569.405491051997,
+      220.94067622143908,
+      111.85835948093022,
+      25.64787539342107,
+      21.354118284313678,
+      17.34007333152726,
+      11.188218564957465,
+      9.146750146690856,
+      3.448823523278771,
+      2.100803596998636,
+      1.2484726490104332
+    ],
+    "member_start_ids": [
+      "preferred",
+      "lower_quartile",
+      "upper_quartile",
+      "latin_000",
+      "latin_001",
+      "latin_002",
+      "latin_003"
+    ],
+    "observables": {
+      "cl_i_mM": 50.09999999999999,
+      "cl_l_mM": 138.12422340654,
+      "hco3_i_mM": 5.361534946245705,
+      "k_i_mM": 111.10374637122904,
+      "k_l_mM": 4.087361120509596,
+      "na_i_mM": 14.756773495778983,
+      "na_l_mM": 146.13568410951905,
+      "osm_bath_mOsm": 301.1615928036609,
+      "osm_cell_mOsm": 301.1675755990919,
+      "osm_lumen_mOsm": 301.2388982761051,
+      "ph_i": 6.91,
+      "ph_l": 7.276453648930775,
+      "rest_outflow_pL_s": 0.0003282133875325083,
+      "tic_i_mM": 6.1941225726041,
+      "tic_l_mM": 12.891629639536413,
+      "v_apical_mV": -62.21746076776481,
+      "v_basolateral_mV": -72.6637953275747,
+      "v_transepithelial_mV": -10.446334559809895,
+      "volume_i_pL": 1.3,
+      "volume_l_pL": 0.10164106693766255
+    },
+    "omitted_raw_rhs": [
+      -4.163336342344337e-17,
+      0.0
+    ],
+    "parameters": {
+      "ae4_carrier_amount_fmol_at_unit_rate_gauge": 0.1501264265070657,
+      "cell_other_impermeant_osmoles_fmol": 124.71681310732373,
+      "common_membrane_conductance_scale": 10.0,
+      "nhe1_capacity_fmol_s": 0.007440980590414482
+    },
+    "passes_numerical_gate": true,
+    "passes_wt_gate": true,
+    "raw_rhs": [
+      5.551115123125783e-17,
+      -1.3877787807814457e-17,
+      8.326672684688674e-17,
+      -8.53267109746092e-17,
+      -4.163336342344337e-17,
+      -3.6374982886888674e-17,
+      -1.8735013540549517e-16,
+      -1.0191500421363742e-17,
+      -1.734723475976807e-16,
+      1.734723475976807e-17,
+      0.0,
+      8.348356728138384e-18
+    ],
+    "representative_start_id": "latin_000",
+    "scaled_independent_rhs": [
+      1.1102230246251565e-15,
+      -2.7755575615628914e-16,
+      1.6653345369377348e-15,
+      -4.26633554873046e-15,
+      -3.6374982886888674e-13,
+      -9.367506770274758e-15,
+      -5.095750210681871e-16,
+      -8.673617379884035e-15,
+      8.673617379884035e-16,
+      8.348356728138384e-14
+    ],
+    "state": [
+      19.18380554451268,
+      144.43487028259776,
+      65.12999999999998,
+      8.05235934438533,
+      20.426913621165617,
+      1.3,
+      14.853386850556735,
+      0.4154437452481152,
+      14.039093436976788,
+      1.3103189911276751,
+      1.2297371588280614,
+      0.10164106693766255
+    ]
+  },
+  "construction": {
+    "calibration": {
+      "ae4_carrier_amount_fmol_at_unit_rate_gauge": 0.1501264265070657,
+      "cell_other_impermeant_osmoles_fmol": 124.71681310732373,
+      "common_membrane_conductance_scale": 10.0,
+      "nhe1_capacity_fmol_s": 0.007440980590414482
+    },
+    "resting_calcium_uM": 0.058,
+    "root_coordinates": [
+      14.756773495778985,
+      111.10374637122905,
+      6.194122572604099,
+      6.909999999999942,
+      1.3,
+      146.13568410951905,
+      4.087361120509596,
+      12.891629639536415,
+      7.276453648930862,
+      0.10164106693766255
+    ],
+    "root_id": "G2_BALANCED_APICAL_K_BIASED_G10:M00",
+    "root_state": [
+      19.18380554451268,
+      144.43487028259776,
+      65.12999999999998,
+      8.05235934438533,
+      20.426913621165617,
+      1.3,
+      14.853386850556735,
+      0.4154437452481152,
+      14.039093436976788,
+      1.3103189911276751,
+      1.2297371588280614,
+      0.10164106693766255
+    ],
+    "variant": {
+      "apical_k_fraction": 0.1,
+      "apical_pump_fraction": 0.1,
+      "cooperative_gate": false,
+      "mixed_bath_na_attempt_fraction": 0.1,
+      "regulatory_family": "R0_STATIC_NEGATIVE_CONTROL",
+      "variant_id": "G2_BALANCED_APICAL_K_BIASED_G10"
+    }
+  },
+  "fixed_parameter_root_geometry": {
+    "distinct_root_count": 1,
+    "passing_root_ids": [
+      "G2_BALANCED_APICAL_K_BIASED_G10:B00"
+    ],
+    "start_count": 33
+  },
+  "selection_rule": "Prefer the predeclared balanced-apical, K-biased, G=10 slice; then maximize converged-start membership and minimize the dimensionless residual.",
+  "status": "R0_WT_RESTING_REFERENCE_ONLY_NOT_FINAL_FULL_MODEL",
+  "unresolved_profile_axes": [
+    "native mixed-bath Na/K routing",
+    "apical pump/K topology fractions",
+    "common membrane conductance scale"
+  ]
+}

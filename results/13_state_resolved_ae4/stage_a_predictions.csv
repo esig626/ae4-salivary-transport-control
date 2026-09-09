@@ -1,0 +1,6 @@
+model_id,gauge_id,transporter_conditional_pass,wt_gate_pass,ae4_null_vector_field_id,ae4_null_cl_i_mM,ae4_null_pH_i,ae4_null_volume_pL,ae4_null_root_max_abs_raw_rhs,secretion_prediction_status,ae4_ko_endpoint_flow_ratio,ae4_ko_integrated_flow_ratio,early_late_status,strict_secretion_used_in_fit
+SR2_SHARED_123,slow_common,true,false,AE4_NULL_COMMON,48.782215,7.378474,2.97418,5.772149e-14,not_admissible_after_WT_gate_failure,,,,false
+SR5_COORDINATION_112,unit_common,true,false,AE4_NULL_COMMON,48.782215,7.378474,2.97418,5.772149e-14,not_admissible_after_WT_gate_failure,,,,false
+SR5_COORDINATION_112,fast_common,true,false,AE4_NULL_COMMON,48.782215,7.378474,2.97418,5.772149e-14,not_admissible_after_WT_gate_failure,,,,false
+SR6_PKA_EDGE_112,unit_common,true,false,AE4_NULL_COMMON,48.782215,7.378474,2.97418,5.772149e-14,not_admissible_after_WT_gate_failure,,,,false
+SR6_PKA_EDGE_112,fast_common,true,false,AE4_NULL_COMMON,48.782215,7.378474,2.97418,5.772149e-14,not_admissible_after_WT_gate_failure,,,,false

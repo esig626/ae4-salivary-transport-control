@@ -1,0 +1,229 @@
+[
+  {
+    "ablation_id": "FIX_ae4_carrier_amount_fmol_at_unit_rate_gauge_AT_PREFIT_PREFERRED",
+    "active_fitted_parameters": [
+      "nhe1_capacity_fmol_s",
+      "cell_other_impermeant_osmoles_fmol"
+    ],
+    "boundary_hits": [
+      "nhe1_capacity_fmol_s"
+    ],
+    "coordinates": [
+      9.062865678979703,
+      117.99834762271742,
+      6.64544906006593,
+      6.910754664254812,
+      1.287929919065679,
+      145.04806533055518,
+      5.318211324257693,
+      16.145833462577464,
+      7.57304203506139,
+      0.1014013498608247
+    ],
+    "cost": 0.3309454151604589,
+    "dimensionless_residual_vector": [
+      0.09747896268841705,
+      0.4805193850084047,
+      0.6231588538978646,
+      0.0067542508857423075,
+      -3.4831244990042934e-06,
+      -0.08578725972377826,
+      0.004970185477543563,
+      0.09190076394715828,
+      0.002811126375808909,
+      -4.500650544305221e-05,
+      0.09242652243013083,
+      0.010780917925869358,
+      -0.09284677641785422
+    ],
+    "exact_root": false,
+    "fitted_parameter_values": {
+      "cell_other_impermeant_osmoles_fmol": 120.97294748649952,
+      "nhe1_capacity_fmol_s": 1.0000000000000023e-06
+    },
+    "held_fixed_unit": "fmol",
+    "held_fixed_value": 0.05,
+    "interpretation_scope": "generation-local necessity relative to the declared pre-fit preferred value; not a structural or global identifiability result",
+    "max_abs_dimensionless_residual": 0.6231588538978646,
+    "nfev": 452,
+    "normalized_jacobian_column_count": 12,
+    "normalized_jacobian_rank": 11,
+    "normalized_jacobian_singular_values": [
+      236323.06409131482,
+      22517.81042776726,
+      1547.218864025393,
+      148.93957168227828,
+      67.21424241637389,
+      29.556012537492016,
+      25.556826838581394,
+      12.839834429000884,
+      9.703058008542044,
+      8.20672499139038,
+      0.9897524984133534,
+      0.00012974100530945473
+    ],
+    "optimizer_success": true,
+    "removed_fit_parameter": "ae4_carrier_amount_fmol_at_unit_rate_gauge",
+    "representative_start_id": "upper_quartile",
+    "start_design": {
+      "count": 3,
+      "kind": "reference_anchor_plus_two_noncollinear_quartile_starts",
+      "seed": 13201
+    },
+    "target_residuals_native": {
+      "cl_i_mM": 0.13863978364519625,
+      "ph_i_dimensionless_p_scale": 0.0007546642548108551,
+      "volume_i_pL": -0.012070080934321048
+    }
+  },
+  {
+    "ablation_id": "FIX_nhe1_capacity_fmol_s_AT_PREFIT_PREFERRED",
+    "active_fitted_parameters": [
+      "ae4_carrier_amount_fmol_at_unit_rate_gauge",
+      "cell_other_impermeant_osmoles_fmol"
+    ],
+    "boundary_hits": [],
+    "coordinates": [
+      14.573078567014617,
+      111.28440470564765,
+      6.191424341328186,
+      6.909955224184528,
+      1.300003334032092,
+      146.11558331452514,
+      4.125263062597474,
+      13.051513455758041,
+      7.302569809278913,
+      0.10163877505543627
+    ],
+    "cost": 0.0002789311239923481,
+    "dimensionless_residual_vector": [
+      -0.012205879103189265,
+      -0.012146027218425393,
+      0.012655242132457167,
+      0.004590559756289468,
+      -2.611170828170639e-09,
+      -0.004493469383309509,
+      -0.004449493698473791,
+      0.004472620512812123,
+      0.0044397896629010895,
+      -3.388593821773006e-08,
+      9.617902695898313e-05,
+      -0.0006396545059088915,
+      2.564640070739771e-05
+    ],
+    "exact_root": false,
+    "fitted_parameter_values": {
+      "ae4_carrier_amount_fmol_at_unit_rate_gauge": 0.1492232330041571,
+      "cell_other_impermeant_osmoles_fmol": 124.72446678089942
+    },
+    "held_fixed_unit": "fmol s^-1",
+    "held_fixed_value": 0.005,
+    "interpretation_scope": "generation-local necessity relative to the declared pre-fit preferred value; not a structural or global identifiability result",
+    "max_abs_dimensionless_residual": 0.012655242132457167,
+    "nfev": 527,
+    "normalized_jacobian_column_count": 12,
+    "normalized_jacobian_rank": 12,
+    "normalized_jacobian_singular_values": [
+      238630.9029787169,
+      22522.055335782923,
+      1568.4398267969057,
+      220.26602080030167,
+      113.48667236039327,
+      33.76330465844167,
+      25.64141018459831,
+      17.83330892172092,
+      11.007966436546683,
+      10.351513136141332,
+      5.031172065777893,
+      1.3939835804246583
+    ],
+    "optimizer_success": true,
+    "removed_fit_parameter": "nhe1_capacity_fmol_s",
+    "representative_start_id": "upper_quartile",
+    "start_design": {
+      "count": 3,
+      "kind": "reference_anchor_plus_two_noncollinear_quartile_starts",
+      "seed": 13202
+    },
+    "target_residuals_native": {
+      "cl_i_mM": 0.0001442685404384747,
+      "ph_i_dimensionless_p_scale": -4.477581541362241e-05,
+      "volume_i_pL": 3.334032091961703e-06
+    }
+  },
+  {
+    "ablation_id": "FIX_cell_other_impermeant_osmoles_fmol_AT_PREFIT_PREFERRED",
+    "active_fitted_parameters": [
+      "ae4_carrier_amount_fmol_at_unit_rate_gauge",
+      "nhe1_capacity_fmol_s"
+    ],
+    "boundary_hits": [],
+    "coordinates": [
+      13.868927454950528,
+      116.5234711135292,
+      6.264456080235728,
+      6.911939280570579,
+      1.2251811882042987,
+      145.99078071999443,
+      4.13180224755175,
+      12.145660943370405,
+      7.14659990671036,
+      0.10161563037880308
+    ],
+    "cost": 0.1728000634582124,
+    "dimensionless_residual_vector": [
+      1.6653345369377348e-14,
+      0.0076945003064052275,
+      0.03841753616064869,
+      -0.0267380318322052,
+      -5.576582874514471e-05,
+      0.02301327604703647,
+      0.02629663516835464,
+      -0.022603997536410972,
+      -0.026039536964027287,
+      -5.4230177189140694e-05,
+      0.0945433870459264,
+      0.02770400815237701,
+      -0.5755293215053952
+    ],
+    "exact_root": false,
+    "fitted_parameter_values": {
+      "ae4_carrier_amount_fmol_at_unit_rate_gauge": 0.13394946255653037,
+      "nhe1_capacity_fmol_s": 0.008236674062471338
+    },
+    "held_fixed_unit": "fmol osmoles",
+    "held_fixed_value": 110.0,
+    "interpretation_scope": "generation-local necessity relative to the declared pre-fit preferred value; not a structural or global identifiability result",
+    "max_abs_dimensionless_residual": 0.5755293215053952,
+    "nfev": 325,
+    "normalized_jacobian_column_count": 12,
+    "normalized_jacobian_rank": 12,
+    "normalized_jacobian_singular_values": [
+      187388.92365956825,
+      22445.78849993995,
+      1572.7150326535002,
+      205.8472755930366,
+      109.44114415012473,
+      32.73137754971173,
+      25.631203862870755,
+      17.73230038707625,
+      12.439087833310849,
+      5.587386190110926,
+      1.7199062386985486,
+      0.9290741669321438
+    ],
+    "optimizer_success": true,
+    "removed_fit_parameter": "cell_other_impermeant_osmoles_fmol",
+    "representative_start_id": "upper_quartile",
+    "start_design": {
+      "count": 3,
+      "kind": "reference_anchor_plus_two_noncollinear_quartile_starts",
+      "seed": 13203
+    },
+    "target_residuals_native": {
+      "cl_i_mM": 0.14181508056888958,
+      "ph_i_dimensionless_p_scale": 0.0019392805706663907,
+      "volume_i_pL": -0.07481881179570138
+    }
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "classification": "WT_RESTING_ROOTS_FOUND_WITH_DYNAMIC_REGULATION_WT_STIMULATION_FLOW_SHAPE_FAILED",
+  "confirm_starts_per_passing_profile": 7,
+  "dynamic_R1_rest": {
+    "passing_root_count": 1,
+    "passing_root_ids": [
+      "G3_R1_BALANCED_APICAL_K_BIASED_G10:M00"
+    ],
+    "reference_root_id": "G3_R1_BALANCED_APICAL_K_BIASED_G10:M00"
+  },
+  "final_full_model_validated": false,
+  "heldout_access": "NONE",
+  "parallel_workers": 4,
+  "passing_root_count": 9,
+  "passing_root_ids": [
+    "G2_LOW_APICAL_K_HEAVY_G10:M00",
+    "G2_LOW_APICAL_K_BIASED_G10:M00",
+    "G2_LOW_APICAL_MODERATE_NA_G10:M00",
+    "G2_BALANCED_APICAL_K_HEAVY_G10:M00",
+    "G2_BALANCED_APICAL_K_BIASED_G10:M00",
+    "G2_BALANCED_APICAL_MODERATE_NA_G10:M00",
+    "G2_ASYMMETRIC_APICAL_K_HEAVY_G10:M00",
+    "G2_ASYMMETRIC_APICAL_K_BIASED_G10:M00",
+    "G2_ASYMMETRIC_APICAL_MODERATE_NA_G10:M00"
+  ],
+  "reason": "The frozen 20-member R0-R3 ensemble passes numerical dynamics but fails the predeclared scale-free WT minute-flow-shape gate; heldout reveal remains ineligible.",
+  "screen_starts_per_profile": 3,
+  "selected_dynamic_reference_root_id": "G3_R1_BALANCED_APICAL_K_BIASED_G10:M00",
+  "selected_fixed_parameter_geometry_starts": 33,
+  "selected_reference_root_id": "G2_BALANCED_APICAL_K_BIASED_G10:M00",
+  "three_parameter_ablation_exact_root_count": 0,
+  "variant_profiles": 45,
+  "wt_dynamic_gate": {
+    "artifact": "wt_dynamic_gate.json",
+    "effective_cell_count": 190216602.4105839,
+    "effective_cell_count_gate_pass": null,
+    "minute_wise_flow_shape_gate_pass": false,
+    "numerical_dynamic_gate_pass": true,
+    "pre_reveal_holdout_eligible": false,
+    "status": "FAIL"
+  }
+}
