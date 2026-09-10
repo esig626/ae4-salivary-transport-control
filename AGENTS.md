@@ -4,7 +4,7 @@ These instructions apply to all work in this repository.
 
 ## Current scientific objective
 
-The active prepared task is Task 16. The executable prompt is:
+The active task is Task 16. The executable prompt is:
 
 `prompts/16_wt_constrained_ae4_chloride_allocation.md`
 
@@ -14,25 +14,41 @@ Work on branch:
 
 Tracking issue: #10.
 
-## Mandatory prerequisite
+## Task 15 status and explicit override
 
-Task 16 was prepared while Task 15 was still running.
+Task 15 completed its scientific audit locally but its large audit package did not successfully advance the remote Task 15 branch before the Codex session froze. Do not wait for that remote push and do not rerun Task 15.
 
-Do not begin Task 16 scientific calculations until the completed final commit from
+The Task 15 scientific result is accepted for purposes of Task 16:
 
-`codex/task-15-ae4-sign-slip-audit`
+- no clerical or algebraic AE4 sign error was found;
+- no whole-cell AE4 source-mapping error was found;
+- the 0.05 AE4 expression factor is applied exactly once to the whole-cell AE4 source;
+- AE4 net loads chloride at every audited frozen trajectory point;
+- the Na and K AE4 branches oppose each other throughout the audited trajectories;
+- WT branch cancellation is 96.32% to 99.22%, median 98.24%;
+- 5% AE4 branch cancellation is 60.55% to 88.48%, median 75.87%;
+- the large mixed-cation slip/cancellation is a property of the current model architecture and is not established native physiology;
+- Task 15 did not establish that slip causes the wrong secretion phenotype;
+- all 187 frozen scientific inputs were confirmed unchanged;
+- the scientific model and `archive/` were unchanged.
 
-has been fetched, verified, and incorporated into the Task 16 branch.
+These conclusions are diagnostic context only. They do not alter any scientific model parameter or equation.
 
-Record the final Task 15 SHA and classification in the Task 16 manifest.
+**This section explicitly supersedes the `Mandatory Task 15 prerequisite` section in the Task 16 prompt.** Do not require a final Task 15 remote SHA, do not require Task 15 artifacts to be present on the Task 16 branch, and do not stop because the Task 15 branch itself did not finish pushing.
 
-If Task 15 finds a clerical/algebraic AE4 sign error, a whole-cell AE4 source-mapping or expression-scaling error, or net reverse AE4 transport in the frozen physiological states, stop Task 16. The chloride-allocation hypothesis is then not the correct next step.
+Base Task 16 scientific calculations on the unchanged completed Task 14B scientific state, commit:
+
+`4d4403f279fc36aec940c9e4759486d02f07e3f6`
+
+plus the accepted Task 15 diagnostic conclusions above.
+
+Where Task 16 needs chloride partition, AE4 branch cancellation, or flux values numerically, evaluate those quantities directly from the unchanged baseline model or hash-valid saved Task 14/14B trajectories. Do not rerun the entire Task 15 audit.
 
 ## Scientific state motivating Task 16
 
 Task 14B found that reducing AE4 expression to 5% increased total 0 to 600 s secretion in all 30 root/calcium cases by 8.23% to 21.66%, despite the observed AE4-loss phenotype having the opposite direction.
 
-Preliminary Task 15 work has found no simple sign/source-scaling error and has identified large opposing Na/K AE4 branch currents with small net productive Cl loading. Task 15 must finish before this preliminary result is treated as final.
+Task 15 then established that this is not explained by a simple sign or source-scaling mistake. It also found very large opposing Na/K AE4 branch currents with small net productive Cl loading.
 
 Task 16 tests a conservative hypothesis before changing the AE4 microscopic architecture:
 
