@@ -440,8 +440,11 @@ def freeze():
     for d in decisions:
         if d.get("trajectory_path"):
             hashes[d["trajectory_path"]] = sha256_file(REPO / d["trajectory_path"])
-    source = Path(__file__)
-    hashes[relative(source)] = sha256_file(source)
+    for source in (Path(__file__), Path(__file__).with_name("task16_wt_diagnostics.py"),
+            REPO / "tests/test_task16_wt_allocation.py"):
+        hashes[relative(source)] = sha256_file(source)
+    for source in (REPO / "analysis/16_wt_chloride_allocation").glob("*.md"):
+        hashes[relative(source)] = sha256_file(source)
     value = {"manifest_id": "TASK16_WT_ONLY_FROZEN_CANDIDATES_V1", "created_utc": now(),
         "baseline_commit": BASE, "contract_sha256": digest, "wt_only": True,
         "pre_freeze_head": git("rev-parse", "HEAD"), "expected_root_share_calcium_count": 90,
