@@ -114,23 +114,21 @@ Define inherited AE4 positive-loading share
 
 If either AE4 or NKCC1 is not positive-loading in a root, flag the root and do not force the allocation formula onto it.
 
-## Stage B: predeclare the allocation panel
+## Stage B: predeclare the three-point allocation panel
 
 Before solving any modified WT equilibrium, write and commit a machine-readable allocation contract.
 
-Use the same target-share panel for every eligible root:
+Use **exactly three scientific allocation conditions** for every eligible root:
 
 - inherited baseline share;
-- `0.025`;
-- `0.05`;
 - `0.10`;
-- `0.20`;
-- `0.30`;
-- `0.40`.
+- `0.30`.
+
+No other target share is part of Task 16. Do not evaluate `0.025`, `0.05`, `0.20`, `0.40`, midpoint refinements, threshold searches, or phenotype-guided additional shares.
+
+The rationale is deliberately sparse and predeclared: baseline anchors the inherited model, `0.10` tests a moderate AE4 contribution, and `0.30` tests a substantially larger contribution while NKCC1 still carries 70% of the reference AE4+NKCC1 positive-loading pool.
 
 These values are **sensitivity coordinates**, not measured physiological fractions and not phenotype-fit targets.
-
-Do not add or remove a share value after looking at any 5% AE4 phenotype result.
 
 For each eligible root and each non-baseline target share `f`, derive scales at the original WT reference state by keeping the AE4+NKCC1 positive Cl-loading sum fixed:
 
@@ -148,11 +146,19 @@ Implement `mu_NKCC1` by scaling the complete NKCC1 capacity.
 
 This construction is a reference-state partition transformation. It does not assert that the realized share after re-equilibration remains exactly `f`.
 
-Require both capacity scales to be finite and nonnegative. Record their magnitudes transparently. Do not impose an arbitrary hidden upper bound simply because a large scale looks uncomfortable; let WT physiological constraints determine admissibility and discuss implausibly large scales separately.
+Require both capacity scales to be finite and nonnegative. Record their magnitudes transparently. Do not impose a hidden upper bound merely because a scale looks large; let WT physiological constraints determine admissibility and discuss implausibly large scales separately.
+
+### Computational-budget rule
+
+Task 16 is intentionally sparse. Do not create additional scientific share points to aid continuation or interpretation.
+
+Numerical continuation may use internal solver steps if required to reach the fixed `0.10` or `0.30` endpoint, but those internal points are not candidate models and must not trigger WT dynamics or genotype simulations.
+
+Where the baseline WT roots/trajectories from the inherited state remain hash-valid and exactly applicable, reuse them instead of recomputing them. Only the two modified allocation endpoints require new scientific candidate evaluation.
 
 ## Stage C: WT-only continuation and admissibility
 
-For each original root, continue the WT resting equilibrium from the inherited allocation toward increasing target AE4 shares in the predeclared order.
+For each original root, continue the WT resting equilibrium from the inherited allocation to the two declared modified endpoints `0.10` and `0.30`.
 
 No AE4-loss phenotype may be used in continuation, root selection or acceptance.
 
@@ -182,9 +188,11 @@ Also report actual AE4 Na/K branch cancellation, gross branch turnover and net p
 
 ## Stage D: WT dynamic validation only
 
-Before any reduced-AE4 simulation, run the WT dynamic protocol for every WT-rest-admissible candidate at all three fixed calcium values `0.10`, `0.25`, `0.50 uM`.
+Before any reduced-AE4 simulation, run the WT dynamic protocol for every WT-rest-admissible modified candidate at all three fixed calcium values `0.10`, `0.25`, `0.50 uM`.
 
-Use production Radau and inherited numerical/conservation standards. Use BDF confirmation according to a predeclared representative rule if the existing framework requires it.
+Reuse the inherited baseline WT trajectories when their hashes and scientific inputs match exactly.
+
+Use production Radau and inherited numerical/conservation standards. Use BDF confirmation only according to a predeclared minimal representative rule if the existing framework requires it; do not cross-check every candidate unnecessarily.
 
 Candidate WT dynamic admissibility must be based only on WT evidence and inherited numerical/physiological gates.
 
@@ -196,11 +204,9 @@ Record, but do not silently veto on, changes in per-cell WT secretion relative t
 
 ## Stage E: freeze the WT-admissible candidate set
 
-This is the critical firewall.
-
 Before running any new 5% AE4 or AE2 genotype simulation under the reallocated candidates:
 
-1. write the full candidate table;
+1. write the full three-condition candidate table;
 2. identify every WT-admissible candidate using only Stages A-D;
 3. retain every admissible root/share/calcium combination according to the predeclared rules;
 4. write a frozen-candidate manifest with hashes of all parameter payloads, roots, WT trajectories and selection decisions;
@@ -214,7 +220,7 @@ No candidate may be dropped after genotype evaluation because its result is inco
 
 Only after the WT-admissible checkpoint is pushed may the reallocated models be evaluated for genotype discrimination.
 
-For every frozen WT-admissible model family:
+For every frozen WT-admissible **modified** model family at target shares `0.10` and `0.30`:
 
 ### AE4 near-loss
 
@@ -230,9 +236,11 @@ For every valid 5% state and each calcium value, run production Radau and comput
 
 `D_AE4_5pct = 1 - R_AE4_5pct`.
 
+The inherited baseline genotype result from Task 14B may be reused rather than recomputed when hashes and scientific inputs match exactly.
+
 ### AE2 loss
 
-Also evaluate exact AE2 deletion or the inherited validated AE2 deletion procedure for the same frozen candidate set, without changing any other parameter.
+Evaluate matched AE2 deletion for the same frozen modified candidate set using the inherited validated deletion procedure, without changing any other parameter.
 
 Report
 
@@ -244,7 +252,7 @@ No genotype-specific rescaling is allowed.
 
 ## Stage G: interpretation after the frozen test
 
-After all frozen genotype results exist, report how the 5% AE4 effect varies with the **realized WT AE4 chloride-loading share**.
+After all frozen genotype results exist, report how the 5% AE4 effect varies across the three predeclared conditions: baseline, target `0.10`, and target `0.30`.
 
 At minimum show:
 
@@ -262,7 +270,7 @@ At minimum show:
 
 Analyze whether increasing WT AE4 productive chloride share changes the sign of the 5% AE4 secretion phenotype.
 
-If a sign change occurs, report where it occurs in the predeclared panel. Do not call that share "the correct value" merely because it gives the desired phenotype.
+If a sign change occurs between the sparse tested points, report only that it occurs somewhere between the tested conditions. **Do not refine the share axis in Task 16.**
 
 Only after all results are frozen may the experimental approximately 35% reduction be shown as contextual magnitude. It is not an acceptance band, optimization target or ranking criterion.
 
@@ -270,15 +278,17 @@ Detailed minute-by-minute phenotype shape remains diagnostic only, not an accept
 
 ## What this task can and cannot establish
 
-Task 16 can establish whether **simple capacity allocation** between the existing AE4 mechanism and NKCC1 can reconcile WT physiology with the direction of the AE4-loss secretion effect.
+Task 16 can establish whether **simple capacity allocation** between the existing AE4 mechanism and NKCC1 can reconcile WT physiology with the direction of the AE4-loss secretion effect at the sparse tested allocations.
 
 It cannot establish that a particular AE4 share is measured in vivo unless supported independently by experiment.
 
 It cannot justify changing the AE4 Na/K routing or eliminating cation slip. Those are separate mechanism questions.
 
-If no WT-admissible allocation produces reduced secretion after 5% AE4, the next task should examine the AE4 mixed-cation architecture itself rather than continuing to scale capacity.
+If neither WT-admissible modified allocation produces reduced secretion after 5% AE4, the next task should examine the AE4 mixed-cation architecture itself rather than continuing to scale capacity.
 
-If only extreme allocation factors survive or if increasing AE4 share creates pathological Na/K slip, state that plainly.
+If only the `0.30` allocation changes the direction, report that fact without searching for a threshold.
+
+If increasing AE4 share creates pathological Na/K slip or requires extreme capacity multipliers, state that plainly.
 
 ## Required classifications
 
@@ -314,8 +324,8 @@ Create at minimum:
 The final answer must state plainly:
 
 - the inherited AE4 share of positive AE4+NKCC1 WT Cl loading;
-- how much AE4/NKCC1 capacity reallocation is required to realize larger shares;
-- which target shares remain WT-admissible;
+- how much AE4/NKCC1 capacity reallocation is required at `0.10` and `0.30`;
+- which of the three conditions remain WT-admissible;
 - whether those allocations worsen or reduce the Task 15 Na/K cancellation problem;
 - whether 5% AE4 then decreases or increases secretion;
 - whether AE2 remains comparatively neutral;
