@@ -4,75 +4,138 @@ These instructions apply to all work in this repository.
 
 ## Current scientific objective
 
-The active task is Task 17. Execute:
+The active task is Task 18. Execute:
 
-`prompts/17_fixed_wt_flux_repartition.md`
+`prompts/18_fixed_wt_inverse_transporter_rebalance.md`
 
 Work only on branch:
 
-`codex/task-17-fixed-wt-flux-repartition`
+`codex/task-18-fixed-wt-inverse-rebalance`
 
-Task 17 supersedes Task 16's moving-state allocation experiment.
+Tracking issue: #13.
 
-## Scientific baseline
+Task 18 supersedes Task 17's inherited-capacity feasibility experiment.
 
-Use completed Task 14B scientific state:
+## Scientific inheritance
 
-`4d4403f279fc36aec940c9e4759486d02f07e3f6`
+Repository inheritance is completed Task 17 commit:
 
-Task 15 established that AE4 signs and source mapping are correct, WT AE4 net loads chloride, and the model has large opposing Na/K branch cancellation. Task 16 changed AE4/NKCC1 capacities while freezing all other parameters and allowed WT state variables to move. Its failure does not answer the Task 17 question.
+`fb2afcf3e23af1d19b297280ad67953370f7c9a9`
 
-## Fixed-WT rule
+The unchanged production scientific model baseline remains completed Task 14B commit:
 
-For every inherited accepted WT root, the complete WT resting state is immutable.
+`4d4403f279fc36aec940c9e4759486d02f07e3f6`.
 
-Do not optimize, continue, or alter any WT state coordinate.
+Task 17 correctly kept the WT conserved states fixed, but it still treated inherited capacity assumptions such as total K conductance 14 nS as hard feasibility constraints. Task 18 removes that mistake.
 
-The Task 17 intervention changes only the decomposition of transport fluxes supporting that same state.
+## Fixed WT means fixed conserved state
+
+For every inherited accepted WT root, keep all conserved intracellular and luminal amounts and both volumes exactly unchanged, together with the inherited resting regulatory coordinate.
+
+Do not perform a new WT state search, state continuation, state fitting, rounding or reconstruction.
+
+Algebraic membrane voltages may reclose self-consistently under the rebalanced capacities. Report their changes. Do not treat historical voltage targets as immutable laws.
+
+## Chloride allocation
 
 Use exactly three conditions:
 
 - inherited baseline;
-- AE4 positive chloride-loading share 0.10;
-- AE4 positive chloride-loading share 0.30.
+- AE4 positive basolateral chloride-loading share 0.10;
+- AE4 positive basolateral chloride-loading share 0.30.
 
-No other share values or refinements are allowed.
+No additional share values or threshold searches are allowed.
 
-## Chloride repartition
+For each root, identify the actual positive basolateral intracellular chloride-loading pool from the production flux ledger.
 
-Increase AE4's positive chloride-loading contribution by scaling its complete coupled transporter, never the chloride source alone.
+At each target, increase AE4 by scaling the complete coupled transporter so it carries the declared share of that inherited positive-loading pool.
 
-Reduce all other positive basolateral chloride-loading pathways proportionally so the total positive basolateral chloride-loading pool at the unchanged WT state remains exactly the inherited total.
+Reduce every other positive basolateral chloride-loading pathway proportionally so the total positive-loading pool remains equal to the inherited WT value.
 
-Negative chloride counterfluxes are not part of the positive-loading share denominator.
+Do not scale AE4 chloride independently of its Na/K/HCO3/TIC/alkalinity coupling.
 
-Do not alter apical CaCC simply to absorb the repartition.
+Negative chloride counterfluxes are not part of the positive-loading denominator.
 
-## Rebalance all other equations at the same state
+## Rebalance the rest of the network
 
-Because AE4 and the other chloride loaders have different stoichiometries, the chloride repartition will perturb Na, K, carbon and alkalinity balances.
+The changed AE4 contribution perturbs Na, K, carbon, alkalinity and current balance even though the WT conserved state is fixed.
 
-Restore those balances by solving only for existing, biologically legitimate WT nuisance/capacity parameters. The net source of every conserved species at the unchanged WT state must remain exactly the inherited steady-state source, i.e. zero within inherited tolerances.
+Restore all complete production steady-state equations by adjusting existing uncertain capacity-like parameters in the current topology.
 
-Before choosing balancing axes, compute the fixed-state source/sensitivity matrix and its rank. Use the smallest full-rank set of existing parameters that were previously unmeasured or treated as WT calibration/nuisance degrees of freedom. Do not select parameters using genotype outcomes.
+At minimum allow the solver to consider:
 
-Do not change AE4 stoichiometry, AE4 Na/K routing, AE4 thermodynamic ratios, calcium values, regulation, bath composition, geometry, or genotype-specific parameters.
+- total K conductance and its membrane allocation;
+- CaCC conductance/capacity;
+- apical and basolateral Na/K pump capacities;
+- NHE1 capacity;
+- neutral CO2 exchange capacities;
+- non-Cl paracellular Na, K and HCO3 capacities;
+- paracellular Cl capacity only if required to preserve fixed chloride balance under voltage reclosure;
+- any other already-existing active capacity multiplier required for full source rank.
 
-## Phenotype firewall
+Do not add a transporter, background current or new mechanism.
 
-The known AE4-loss phenotype must not be used to construct or select fixed-WT parameterizations.
+## Hard constraints versus reference values
 
-First solve, verify, freeze, commit and push every fixed-WT feasible baseline/0.10/0.30 parameterization.
+Hard constraints are structural physics and the fixed WT state:
 
-Only after that checkpoint may AE4 expression be reduced to 0.05 and AE2 loss evaluated.
+- exact fixed WT conserved state;
+- full resting RHS equal to zero within inherited numerical tolerances;
+- target AE4 positive-loading share;
+- preserved total positive basolateral chloride-loading pool;
+- existing stoichiometry, topology, source signs and thermodynamic structure;
+- nonnegative physical capacities/permeabilities;
+- fractions in [0,1];
+- bath, chemistry and geometry;
+- charge, current, carbon, alkalinity, water and lumen accounting;
+- finite physical model quantities.
 
-## Numerical discipline
+The following are **reference values, not hard feasibility walls**:
 
-A fixed-WT candidate is valid only if the exact inherited WT state remains a steady state under the modified flux decomposition, with inherited charge, current, carbon, water and numerical tolerances satisfied.
+- 14 nS total K conductance;
+- 31.4 nS CaCC maximum conductance;
+- old NHE1 parameter bounds;
+- old AE4 carrier bounds;
+- old common-conductance bounds;
+- previous pump capacities;
+- previous paracellular capacities;
+- previous CO2 exchange capacities;
+- capacity values imported from parotid or another preparation as modeling assumptions.
 
-Do not reject a target solely because one local solver fails. Distinguish structural rank deficiency, bound incompatibility and numerical failure.
+Report departures from those values; do not reject a mathematically and physically valid fixed-WT solution merely for exceeding them.
 
-Do not rerun expensive baseline simulations when hash-valid inherited outputs can be reused.
+## Canonical solution rule
+
+Before genotype evaluation, solve the fixed-WT inverse problem for every root/share using no genotype information.
+
+If multiple parameterizations satisfy the hard constraints, choose one canonical solution by:
+
+1. minimizing the largest absolute log-fold change among adjustable positive capacities relative to baseline;
+2. then minimizing the sum of squared log-fold changes.
+
+Use independent positive membrane capacities where this avoids arbitrary penalties on partition fractions.
+
+Do not use the known AE4-loss phenotype or Task 14B secretion result in feasibility, optimization, ranking or root selection.
+
+A local optimizer failure is not an infeasibility proof. Preserve full rank/nullspace information and distinguish structural infeasibility from numerical nonconvergence.
+
+## Freeze before genotype evaluation
+
+First complete, verify, commit and push the entire WT inverse solution set.
+
+Only after that frozen WT checkpoint may genotype results be accessed.
+
+For every feasible modified parameterization:
+
+- run matched WT dynamics at calcium 0.10, 0.25 and 0.50 uM;
+- reduce AE4 expression to 0.05 with all Task 18 parameters otherwise frozen;
+- evaluate AE2 loss with the same frozen parameters;
+- do not refit either genotype;
+- do not attempt exact AE4 zero.
+
+Reuse hash-valid baseline trajectories wherever scientifically identical.
+
+Absolute whole-gland mapping remains nonblocking. Detailed AE4-loss time-course shape remains diagnostic only.
 
 ## General discipline
 
@@ -84,4 +147,4 @@ Do not draft manuscript text.
 
 Do not perform unrelated model reduction, GSPT or identifiability work.
 
-Commit and push completed Task 17 work only to `codex/task-17-fixed-wt-flux-repartition`.
+Commit and push completed Task 18 work only to `codex/task-18-fixed-wt-inverse-rebalance`.
