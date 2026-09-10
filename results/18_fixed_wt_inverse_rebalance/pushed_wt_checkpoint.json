@@ -1,0 +1,8 @@
+{
+  "branch": "codex/task-18-fixed-wt-inverse-rebalance",
+  "checkpoint_sha": "2cdcfb3f3ab606b2c6cb84f3149f840bee1f72e0",
+  "checkpoint_tree_sha": "a2ff64402ef6a6b53bd7808697c2ba363cc8aa38",
+  "remote_manifest_git_blob_sha": "e41e2264b2ca5bcedda7ad9e5fd26d9ac0cb9cb8",
+  "remote_ref_verified_utc": "2026-09-10T11:53:33Z",
+  "genotype_evaluation_allowed_after_this_receipt": true
+}
