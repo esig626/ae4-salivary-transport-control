@@ -94,29 +94,31 @@ Do not alter the AE4 mixed-cation mechanism or suppress slip in Task 16. If simp
 
 ## WT allocation panel
 
-Use the predeclared positive AE4+NKCC1 loading-share panel from the Task 16 prompt:
+Use exactly three scientific allocation conditions:
 
 - inherited baseline;
-- 0.025;
-- 0.05;
 - 0.10;
-- 0.20;
-- 0.30;
-- 0.40.
+- 0.30.
 
-These are sensitivity coordinates, not measured physiological fractions.
+Do not evaluate 0.025, 0.05, 0.20, 0.40, midpoint refinements, threshold searches, or any additional phenotype-guided share.
+
+These are sensitivity coordinates, not measured physiological fractions. Baseline anchors the inherited model, 0.10 tests a moderate AE4 loading share, and 0.30 tests a substantially larger share while NKCC1 remains dominant at the reference allocation.
 
 At each original WT root, derive AE4 and NKCC1 scales from the inherited positive Cl-loading sources so that the AE4+NKCC1 Cl-loading sum is preserved at the reference state before re-equilibration.
 
 Do not hide or fold a negative AE2 counterflux into the positive-loading share denominator.
 
+Numerical continuation may use internal steps to reach the fixed 0.10 or 0.30 endpoint, but those internal points are not scientific candidates and must not trigger WT dynamics or genotype simulations.
+
+Reuse hash-valid inherited baseline WT and genotype trajectories rather than recomputing them. Only the two modified allocation endpoints require new candidate calculations.
+
 ## WT-only admissibility
 
-Continue each WT root through the allocation panel without genotype information.
+Continue each WT root only to the two modified allocation endpoints without genotype information.
 
 Use only inherited WT physiological and numerical gates to decide admissibility. Preserve positivity, WT Cl/pH/Na/K constraints, physical domains, current closure, charge/carbon/water consistency and root-rank/residual requirements.
 
-Then run WT dynamics for every WT-rest-admissible candidate at all three calcium values and apply only inherited WT/numerical gates.
+Then run WT dynamics for every WT-rest-admissible modified candidate at all three calcium values and apply only inherited WT/numerical gates.
 
 The unresolved absolute one-SMG scale remains a nonblocking observation diagnostic.
 
@@ -135,7 +137,7 @@ No candidate may be dropped after seeing its genotype result.
 
 ## Post-freeze genotype evaluation
 
-For each frozen candidate:
+For each frozen modified candidate at target share 0.10 or 0.30:
 
 - continue AE4 expression from 1.0 to 0.05 using the candidate parameters;
 - do not reuse the old Task 14B 5% state after capacities change;
@@ -143,6 +145,8 @@ For each frozen candidate:
 - run production Radau at all retained calcium values;
 - evaluate matched AE2 loss as specified in the Task 16 prompt;
 - report paired WT-relative total secretion and AE4-versus-AE2 contrast.
+
+Reuse the inherited baseline genotype result when its hashes and scientific inputs match exactly.
 
 Only after these results are frozen may the experimental approximately 35% reduction be shown as context. Do not treat it as an exact target or acceptance band.
 
@@ -155,6 +159,8 @@ The central question is whether increasing AE4's WT productive chloride share, w
 Do not call one convenient root/share/calcium combination a successful repair.
 
 Report robustness across the complete WT-admissible ensemble, both routing families and all retained calcium values.
+
+If a sign change occurs between baseline, 0.10 and 0.30, report only the sparse result. Do not refine the share axis in Task 16.
 
 If increasing AE4 capacity mainly magnifies the Task 15 Na/K slip and cannot produce a WT-admissible phenotype correction, state that clearly. That would motivate revisiting the mixed-cation architecture rather than further capacity scaling.
 
