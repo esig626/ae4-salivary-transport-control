@@ -4,149 +4,178 @@ These instructions apply to all work in this repository.
 
 ## Current scientific objective
 
-The active task is Task 14. The executable prompt is
+The active task is Task 15. The executable prompt is
 
-`prompts/14_scale_free_genotype_holdout_validation.md`.
+`prompts/15_ae4_sign_and_mixed_cation_slip_audit.md`.
 
-Task 13B produced a modern conservation explicit WT model family with ten retained native WT roots. Task 13C then tested whether increasing only stimulated calcium could close the inherited absolute one SMG WT flow discrepancy. It could not. The controlling completed Task 13C commit is
+Work on branch
 
-`2f54e7c4f87b6da746d3a8427c7bdca40a77c3de`.
+`codex/task-15-ae4-sign-slip-audit`.
 
-Task 14 asks the central genotype question with the model frozen:
+The controlling completed Task 14B commit is
 
-> Does exact AE4 deletion predict the held out WT relative secretion phenotype and its time structure, while exact AE2 deletion produces a much smaller secretion effect?
+`4d4403f279fc36aec940c9e4759486d02f07e3f6`.
 
-This is a blind prediction and validation task. It is not a calibration task and not a reconstruction task.
+Task 15 asks a narrow diagnostic question:
 
-## Scientific interpretation fixed for Task 14
+> Are the modern AE4 and whole-cell transport signs correct, and does the current reversible shared Na/K AE4 architecture generate a large mixed-cation slip mode under the frozen physiological states?
 
-The Task 13B and Task 13C absolute whole gland secretion discrepancy remains recorded, but the inherited 9 to 10 uL/min one SMG mapping is now a nonblocking observation scale diagnostic.
+This is not a calibration task, not a repair task, and not a new blind holdout.
 
-Do not delete, hide or rewrite that discrepancy.
+## Scientific state entering Task 15
 
-Do not use it to veto genotype prediction.
+Task 14 retained all ten WT roots, calcium values 0.10, 0.25 and 0.50 uM, and regulatory member `R1_G125_P21_PROSE_TREFERENCE` with the model frozen. Exact AE4 continuation reached 5% expression in all ten roots but failed at zero; AE2 exact deletion succeeded.
 
-A common multiplicative cellular to gland scale cancels from null to WT secretion ratios. The primary Task 14 quantities are therefore paired WT relative secretion measures, not absolute whole gland flow.
+Task 14B then used the already validated connected 5% AE4 resting states and the frozen Task 14 WT trajectories. Across all 30 root/calcium pairs, 5% AE4 increased total 0 to 600 s secretion by 8.23% to 21.66%, median 17.82%. The effect was opposite to the experimentally observed AE4-loss direction. All 30 trajectories passed numerical checks.
 
-Do not rescale WT and null separately. Do not fit an observation scale after phenotype reveal.
+The AE4 phenotype is now known and cannot be treated as unseen again.
+
+## Why Task 15 exists
+
+Before adding compensation, changing regulation, changing transport laws, or fitting anything, audit the possibility that the wrong-direction phenotype arises from an incorrect sign convention or from an unsupported property of the current AE4 architecture.
+
+The modern AE4 module declares positive branch flux as chloride loading:
+
+`Cl_o + C_i + 2 HCO3_i <-> Cl_i + C_o + 2 HCO3_o`, with `C = Na or K`.
+
+Preliminary inspection shows that representative frozen WT states have positive net AE4 chloride loading but large opposing Na and K branch currents. The current shared-carrier graph therefore permits a model-generated Na/K cation-slip cycle. Task 15 must quantify this rigorously across every retained case and determine whether any actual sign or source-mapping error exists.
+
+Do not treat the preliminary inspection as the final result. Reproduce it independently in the Task 15 artifacts.
 
 ## Hard freeze
 
-The Task 14 branch begins exactly from the completed Task 13C commit above.
+Base the Task 15 audit exactly on completed Task 14B commit `4d4403f279fc36aec940c9e4759486d02f07e3f6`.
 
-Keep frozen exactly as inherited:
+Do not modify any scientific model equation or parameter.
 
-* all ten retained WT root payloads;
-* all whole cell equations;
-* all transporter capacities and source multipliers;
-* NKCC1 family, source scale and kinetics;
-* AE4 carrier model, rates, stoichiometry and Na K routing;
-* AE2 and NHE1;
-* pump and K channel capacities and membrane fractions;
-* CaCC and calcium gate;
-* paracellular pathways;
-* acid base and carbon chemistry;
-* hydraulic parameters, lumen parameters and outflow law;
-* geometry and bath composition;
-* beta input and regulatory gains and kinetics;
-* resting OTHER osmoles;
-* solver and conservation tolerances;
-* exact genotype deletion semantics.
+Keep exactly as inherited:
 
-No model parameter may be optimised or changed in Task 14.
+- all ten retained WT roots;
+- all whole-cell equations;
+- all transporter capacities and source multipliers;
+- AE4 carrier graph, stoichiometry, rates and Na/K routing;
+- AE2, NKCC1 and NHE1 laws;
+- Na/K pump and K-channel topology;
+- CaCC and calcium gate;
+- paracellular pathways;
+- acid-base and carbon chemistry;
+- hydraulic and lumen outflow laws;
+- bath and geometry;
+- beta/cAMP/PKA regulatory member and parameters;
+- calcium inputs 0.10, 0.25 and 0.50 uM;
+- the saved Task 14 WT trajectories;
+- the saved Task 14B 5% AE4 trajectories;
+- solver and conservation tolerances.
 
-No genotype specific compensation is permitted.
+No root or calcium value may be dropped.
 
-## Calcium panel
+Do not attempt exact AE4 zero.
 
-The exact matched SMG calcium amplitude remains uncertain. Carry forward exactly the three already evaluated calcium values
+## Diagnostic-only rule
 
-`0.10, 0.25, 0.50 uM`.
+Task 15 may add audit code, tests, tables and reports only.
 
-Use all three as a fixed sensitivity panel.
+Do not:
 
-Do not add a new calcium value and do not choose the best calcium after holdout reveal.
+- flip any sign in production code;
+- replace the AE4 cycle;
+- suppress Na/K slip;
+- impose a no-slip constraint;
+- retune the mixed-bath Na/K routing;
+- change stoichiometry;
+- fit to the known 35% secretion reduction;
+- introduce genotype-specific compensation;
+- rerun calibration;
+- choose a root or calcium value because it agrees better with experiment.
 
-The preferred dynamic regulatory member is
+If a clerical, algebraic, source-mapping or expression-scaling error is found, document it precisely and stop before repair. The repair belongs in a later task.
 
-`R1_G125_P21_PROSE_TREFERENCE`.
+If signs are correct but large opposing Na/K branch currents are present, quantify them and classify them as a property of the current model architecture. Do not claim that such a slip cycle is established native physiology unless direct evidence supports it.
 
-The primary protocol remains WT or null `CCH_IPR`, 0.3 uM CCh plus 5 uM IPR, over 600 s with the inherited beta input.
+## Sign audit requirements
 
-## Genotype resting states
+Construct a complete sign truth table for AE4, NKCC1, NHE1, AE2, CaCC, K channels, pumps, paracellular transport and water/outflow.
 
-Do not evaluate deletion dynamics from the WT resting state.
+For each component identify the positive mathematical direction, biological direction, cell source sign, lumen source sign where applicable, and the exact source/RHS code path.
 
-For every retained WT root, continue AE4 expression and AE2 expression independently from one to exact zero using the existing target free continuation framework.
+Conservation alone is not evidence of correct orientation. A reversed electroneutral cycle can conserve charge perfectly.
 
-Fit zero model parameters during continuation.
+Independently derive the AE4 source vector from the declared reaction and verify the implementation and whole-cell insertion.
 
-Keep the connected branch by the predeclared numerical distance rule only.
+Explicitly audit genotype expression scaling. The raw AE4 diagnostic branch currents may be reported before expression scaling, whereas the whole-cell source is scaled by genotype expression. Distinguish these quantities and prove that the 5% state applies the 0.05 factor exactly once.
 
-Require exact deleted transporter flux at zero expression and retain alternate mathematical roots for audit.
+## Reversal and direction tests
 
-## Blind holdout firewall
+Use constructed concentration states, independent of phenotype agreement, to verify:
 
-Before the blind prediction checkpoint is committed and pushed, do not inspect the exact held out AE4 secretion magnitude or time course.
+- global AE4 equilibrium gives zero flux;
+- positive Na-cycle affinity produces the declared positive Na branch and source signs;
+- reversed Na gradients reverse those signs;
+- the corresponding K tests;
+- affinity, branch flux and entropy production are thermodynamically consistent;
+- 5% expression preserves sign and scales the actual whole-cell AE4 source by 0.05;
+- no second sign inversion occurs in the whole-cell RHS.
 
-Do not open, parse, digitise, search history for, or otherwise recover concealed phenotype values.
+Add equivalent minimal direction tests for other secretion-relevant transport and water components if existing tests do not already prove them.
 
-Do not use exact target values in code, tests, thresholds, root selection or calcium selection.
+Do not change production equations to make a test pass.
 
-Before simulation create the machine readable prediction contract required by the prompt.
+## Full-ensemble slip audit
 
-Generate and save all blind predictions, tests and hashes. Then commit and push the blind checkpoint.
+Evaluate the frozen model on every saved WT and 5% AE4 trajectory time point without regenerating the ODE trajectories.
 
-Only after that pushed commit exists may the held out phenotype be opened for one time evaluation.
+For each root, calcium, genotype state and time record AE4 Na/K affinities, actual expression-scaled Na and K branch fluxes, net AE4 Cl source, source vector, entropy production, regulation gain, expression scale and relevant intracellular/bath state.
 
-After reveal, no model change is permitted.
+Use
 
-## Primary prediction quantities
+`branch_turnover = abs(J_na) + abs(J_k)`
 
-For every valid root and calcium value report matched WT relative quantities for AE4 null and AE2 null.
+`productive_fraction = abs(J_na + J_k) / branch_turnover`
 
-At minimum report
+`cancellation_fraction = 1 - productive_fraction`
 
-* total 0 to 600 s secretion ratio;
-* minute specific flow ratios;
-* minute specific cumulative secretion ratios;
-* early 0 to 180 s integrated ratio;
-* sustained 180 to 600 s integrated ratio;
-* the change from early to sustained ratio;
-* AE4 effect, AE2 effect and their contrast;
-* resting and endpoint intracellular Cl, pH, Na, K and volume differences.
+when branch turnover is nonzero.
 
-Absolute cellular and mapped gland flows remain secondary diagnostics only.
+When `J_na * J_k < 0`, record
 
-All ten roots and all three calcium values remain in the report regardless of agreement.
+`slip_pair_magnitude = min(abs(J_na), abs(J_k))`.
 
-No best root or best calcium selection is allowed after reveal.
+Positive `J_na + J_k` means net AE4 chloride loading under the declared sign convention. Negative means net chloride unloading.
 
-## Numerical standard
+Summarize the fraction of time with opposing branch directions, fraction of time with net loading/unloading, cancellation fraction, productive fraction, integrated branch turnover, and integrated net Cl source for every case and ensemble-wide.
 
-Use production Radau for the primary blind dynamic prediction.
+## Evidence discipline
 
-Use BDF confirmation according to the target independent representative rule in the Task 14 prompt.
+Use the retained repository evidence for the 2016 and 2025 AE4 experiments.
 
-Preserve positivity, exact deletion, current closure, charge consistency, carbon and water conservation and the inherited numerical tolerances.
+The data establish Na-supported and K-supported AE4 transport, reversibility in manipulated gradients, mutation-dependent cation specificity, and macroscopic electroneutrality. They do not automatically establish a large simultaneous opposing Na/K cycle in a physiological mixed bath.
 
-Parallel execution across roots is encouraged, with numerical library thread counts limited to avoid oversubscription.
+Compare with the 2018 AE4 model only at the level of sign and cation-coupling structure. Determine whether it permitted independent opposite-sign Na and K cycles or instead partitioned one net AE4 exchange direction.
 
-Any continuation or solver anomaly must be resolved or recorded before holdout reveal without phenotype information.
+## Required output
 
-## Post reveal discipline
+Create the artifacts specified in the Task 15 prompt under:
 
-Compare the frozen blind predictions with the held out data at the resolution actually supported by the experiment.
+`results/15_ae4_sign_slip_audit/`
 
-Experimental uncertainty is evidence, not a universal biological law.
+and
 
-Where uncertainty intervals are reported, use them. Where they are absent, report residuals without inventing intervals.
+`analysis/15_ae4_sign_slip_audit/`.
 
-Do not fit a scale, time shift, gain, offset or smoothing parameter.
+The final answer must state plainly:
 
-Do not change a parameter, root, calcium input, regulation rule, topology or mechanism after reveal.
+1. whether any sign is actually wrong;
+2. whether AE4 is net loading or unloading chloride in the frozen WT states;
+3. whether Na and K branches oppose one another;
+4. how large the cancellation/slip is;
+5. whether that mixed-bath behavior is experimentally established or merely permitted by the model;
+6. whether Task 16 should repair a sign error, test a no-slip/alternative AE4 architecture, or look elsewhere.
 
-If the prediction fails, diagnose the failure and stop. Any repair belongs in a later independently designed task.
+## Classification
+
+Choose exactly one classification from the Task 15 prompt.
+
+Do not blur a sign error and an unsupported architecture into the same conclusion.
 
 ## General discipline
 
@@ -154,10 +183,8 @@ Do not edit `archive/`.
 
 Do not merge to `main`.
 
-Do not draft a manuscript.
+Do not draft manuscript text.
 
-Do not perform model reduction, GSPT, bifurcation analysis or a new identifiability study.
+Do not perform new calibration, genotype fitting, model reduction, GSPT or a new identifiability study.
 
-Do not state that the 2018 paper was wrong merely because the absolute gland scale remains unresolved.
-
-Do not state that AE4 is mechanistically validated unless the blind genotype comparison supports that conclusion.
+Commit and push the completed Task 15 audit to `codex/task-15-ae4-sign-slip-audit`.
