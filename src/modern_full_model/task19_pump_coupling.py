@@ -182,8 +182,12 @@ def diagnostics(model, state, expression, time_s=0.0):
         "pump_basolateral_fmol_s": m.pump_basolateral_fmol_s,
         "pump_total_capacity_fmol_s": model.parameters.membranes.nak_capacity_fmol_s,
         "apical_pump_capacity_fraction": model.parameters.membranes.apical_pump_fraction,
-        "ae4_na_branch_fmol_s": a.diagnostics["j_na_fmol_s"],
-        "ae4_k_branch_fmol_s": a.diagnostics["j_k_fmol_s"],
+        # The production evaluator's diagnostic branch currents precede the
+        # genotype multiplier. Actual branches equal minus conserved cation sources.
+        "ae4_na_branch_fmol_s": -a.na_cell_fmol_s,
+        "ae4_k_branch_fmol_s": -a.k_cell_fmol_s,
+        "ae4_na_branch_before_expression_fmol_s": a.diagnostics["j_na_fmol_s"],
+        "ae4_k_branch_before_expression_fmol_s": a.diagnostics["j_k_fmol_s"],
         "ae4_net_cl_source_fmol_s": a.cl_cell_fmol_s,
         "ae4_na_source_fmol_s": a.na_cell_fmol_s, "ae4_k_source_fmol_s": a.k_cell_fmol_s,
         "ae4_hco3_source_fmol_s": a.hco3_cell_fmol_s,
