@@ -4,120 +4,137 @@ These instructions apply to all work in this repository.
 
 ## Current scientific objective
 
-The active task is Task 21. Execute:
+The active task is Task 22. Execute:
 
-`prompts/21_pooled_ae4_wt_physiology_recalibration.md`
+`prompts/22_physiologically_constrained_wt_recalibration.md`
 
 Work only on branch:
 
-`codex/task-21-pooled-ae4-wt-physiology-recalibration`
+`codex/task-22-physiological-wt-domain`
 
-Tracking issue: #21.
+Tracking issue: #23.
 
-Repository inheritance is merged Task 20 on `main`, merge commit:
+Repository inheritance is Task 21 final commit:
 
-`3f41579ef81f1e73cc37dc1ce4ab3380f98c4659`.
+`db734f52b8d71d670fcf793beab922967212bdd6`
+
+Task 21 PR #22 remains unmerged. Task 22 intentionally continues from that final state.
 
 ## Scientific premise
 
-Task 20 established that the exact legacy WT states are thermodynamically incompatible with positive chloride loading under the pooled-cation 1:1:2 no-slip AE4 law. Those exact states were generated under the legacy independent Na/K branch mechanism and are no longer hard biological targets.
+Task 21 did not disprove pooled/no-slip AE4. It found resting states with measured WT intracellular Cl and pH, positive pooled AE4 affinity and positive chloride loading, but the WT optimisation was underconstrained and escaped to absurd luminal concentrations, oversized lumen volumes and million-fold capacity changes.
 
-Task 21 therefore recalibrates the pooled/no-slip model against WT physiology rather than preserving the legacy WT state byte-for-byte.
+Task 22 closes those calibration loopholes and retries WT before any genotype calculation.
 
-## AE4 mechanism
+## AE4 mechanism freeze
 
-Use the Task 20 `POOLED_CATION_112_NO_SLIP` implementation unchanged.
+Use `POOLED_CATION_112_NO_SLIP` unchanged.
 
-Do not:
+Do not reintroduce independent Na/K branches or slip. Do not alter the 1:1:2 working stoichiometry. Do not add pathways, transporters, currents, buffers or compartments.
 
-- reintroduce independent Na/K branches;
-- permit an opposing Na/K slip cycle;
-- change the 1:1:2 working stoichiometry in this task;
-- add a fitted cation-selectivity mechanism;
-- add a new transporter or pathway.
+## Predeclare the complete physiology domain
 
-The pooled mechanism must retain one scalar net cycle with Na and K following the same net cycle direction.
+Before any new optimisation result is inspected, create, commit and push the Task 22 physiology contract.
 
-## WT data and physiology
+Retain intracellular screens:
 
-Primary measured WT targets:
+- Cl 47.10 to 53.10 mM;
+- pH 6.77 to 7.05;
+- Na 2 to 60 mM;
+- K 60 to 200 mM;
+- cell volume 0.3 to 5.0 pL.
 
-- resting intracellular chloride `50.10 ± 1.50 mM`;
-- resting pH `6.91 ± 0.07`.
+Add luminal screens:
 
-Use ±2 reported SEM screening bands:
+- Na 100 to 200 mM;
+- K 1 to 30 mM;
+- Cl 80 to 180 mM;
+- pH 6.8 to 8.0;
+- TIC 1 to 80 mM;
+- lumen volume 0.02 to 0.50 pL.
 
-- chloride `[47.10, 53.10] mM`;
-- pH `[6.77, 7.05]`.
+Require model-computed cell and lumen osmolarity each to lie within 0.80 to 1.20 times bath osmolarity.
 
-Before optimisation, predeclare broad physiological envelopes for intracellular Na, intracellular K and cell volume from the repository provenance/source ledger and existing physiological references. Record the source and rationale. Do not derive these bounds from genotype behaviour.
+These broad luminal ranges are physiology/model screens, not exact mouse-SMG measurements. Primary acinar saliva is approximately isotonic/plasma-like; document the source basis.
 
-The legacy WT Na/K/volume values are starting points or provenance references only, not exact targets.
+## Capacity domain
 
-## WT calibration
+For every adjustable positive capacity/conductance with a positive inherited reference, require candidate/reference in [0.01, 100].
 
-Allow the full WT conserved state to re-equilibrate.
+Fractions remain in [0,1].
 
-Allow existing uncertain capacities/conductances to recalibrate as needed, including AE4, NKCC1, NHE1, pumps, K conductance, CaCC, CO2 exchange and paracellular capacities.
+Do not silently activate a zero-reference pathway. Any justified nonzero absolute domain for an already-existing zero-reference coordinate must be declared before optimisation.
 
-Historical capacity values and old calibration boxes are reference values, not hard feasibility walls.
+Do not widen capacity bounds after seeing failures.
 
-Every accepted WT solution must satisfy:
+## Anti-pathology screen
 
-- full production steady-state closure;
+Use the same signed-ledger definition of the positive basolateral chloride-loading pool as the prior tasks.
+
+No individual absolute resting transporter/source flux may exceed 100 times that positive loading pool.
+
+This is a broad anti-cancellation/numerical-conditioning screen, not a fitted biological constant.
+
+## WT admissibility
+
+Every accepted WT solution must simultaneously satisfy:
+
+- intracellular and luminal physiology screens;
+- cell and lumen osmotic consistency;
+- full resting production RHS closure;
 - membrane-current closure;
-- all conservation identities;
-- chloride and pH screening bands;
-- predeclared Na/K/volume physiological envelopes;
-- finite physical states and capacities;
-- positive pooled AE4 affinity for productive chloride loading;
-- strictly positive pooled AE4 chloride flux;
-- pooled no-slip invariant;
-- valid production dynamics at calcium 0.10, 0.25 and 0.50 uM.
+- state-charge closure;
+- all conservation/bookkeeping identities;
+- finite physical states and bounded capacities;
+- positive pooled AE4 affinity and positive chloride loading;
+- pooled no-slip Na/K signs;
+- anti-cancellation screen;
+- valid 600 s production dynamics at calcium 0.10, 0.25 and 0.50 uM;
+- all existing dynamic conservation/current/state-charge gates.
 
-Do not impose the Task 18 10% or 30% chloride-share conditions.
+Do not relax scientific or numerical acceptance tolerances to obtain feasibility.
 
-Do not match the pooled AE4 flux to the legacy AE4 flux.
+Purely numerical improvements such as scaling, continuation, higher internal precision or analytic Jacobians are allowed if equations, bounds and gates remain unchanged.
 
-## WT-only objective and root discipline
+## Search and objective
 
-Use WT information only.
+Use all ten inherited WT roots and all Task 21 resting witnesses as numerical seeds. Additional WT-only starts are allowed for robustness.
 
-Rank admissible WT solutions by:
+Rank admissible solutions using WT information only:
 
-1. fit to measured WT chloride and pH using their reported SEM scales;
-2. minimum largest absolute log-fold capacity departure from inherited references;
-3. minimum summed squared log-fold capacity departure.
+1. fit to measured WT Cl and pH;
+2. minimum largest absolute log-fold capacity departure;
+3. minimum summed squared log-fold departure.
 
-Do not penalise state movement away from the legacy WT state beyond the declared physiological constraints.
-
-Use all ten inherited WT roots as independent numerical seeds. Deduplicate identical solutions and retain every distinct admissible WT calibration. Do not select solutions using later genotype results.
+Retain every distinct admissible WT solution. Do not use genotype behaviour for selection.
 
 ## Phenotype firewall
 
-Before any AE4-loss or AE2-loss calculation:
+Before any Task 22 genotype calculation OR historical genotype regression test:
 
-1. freeze the physiology contract;
-2. complete the entire WT calibration ensemble;
-3. run and validate all WT dynamics;
-4. write all WT states, parameters and flux ledgers;
-5. commit and push the complete WT set;
-6. record and remotely verify the WT checkpoint SHA.
+1. complete the WT search;
+2. validate all admissible WT dynamics;
+3. write all states/parameters/flux ledgers;
+4. commit and push the complete WT evidence set;
+5. remotely verify the WT checkpoint SHA and manifest.
 
-Only after this checkpoint may genotype outputs be evaluated.
+If the WT ensemble is empty, stop before genotype evaluation.
 
 ## Held-out genotype tests
 
-For every frozen WT calibration:
+Only after a non-empty frozen WT checkpoint:
 
-- reduce AE4 expression to 0.05 with all other calibrated parameters fixed;
-- evaluate matched AE2 loss using existing project semantics;
-- allow each genotype state to re-equilibrate only through the production equations;
-- do not refit or compensate any capacity;
+- reduce AE4 expression to 0.05 with every other calibrated parameter frozen;
+- evaluate matched AE2 loss with no refit;
+- find connected genotype resting states through the production equations only;
 - run calcium 0.10, 0.25 and 0.50 uM;
-- report matched secretion ratios and resting-state shifts.
+- report matched secretion ratios and resting-state changes.
 
-The approximately 35% experimental AE4-loss secretion deficit is held-out context only after all genotype results are frozen. Never fit to it.
+The approximately 35% experimental AE4-loss deficit is held-out context only after all genotype results are frozen.
+
+## Failure classification
+
+If no WT succeeds, preserve all attempts and distinguish numerical nonconvergence, physiological-bound conflict, capacity-bound conflict, thermodynamic conflict, dynamic/conservation failure and genuine structural impossibility. Do not widen Task 22 bounds post hoc.
 
 ## General discipline
 
@@ -125,8 +142,6 @@ Do not edit `archive/`.
 
 Do not draft manuscript text.
 
-Do not perform unrelated model reduction, GSPT or identifiability work.
+Commit and push completed Task 22 work only to `codex/task-22-physiological-wt-domain`.
 
-Commit and push completed Task 21 work only to `codex/task-21-pooled-ae4-wt-physiology-recalibration`.
-
-After completion, open a PR to `main` but do not merge automatically. Report the Task 21 scientific result before merge.
+Open a PR to `main` when complete but do not merge automatically. Report the Task 22 scientific result first.
