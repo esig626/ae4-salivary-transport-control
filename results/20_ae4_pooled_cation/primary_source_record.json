@@ -1,0 +1,13 @@
+{
+  "doi": "10.1085/jgp.201611571",
+  "pmcid": "PMC4845690",
+  "full_text_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4845690/fullTextXML",
+  "sha256": "6b13788cac9a66edc331a183f7589a17cc4ac69f1c76fa3dfc27dbec8804b3e0",
+  "read_anchors": [
+    "Abstract",
+    "Results: Figs 3, 4, 8, 9, 10",
+    "Discussion: pooled Na+K and Hill-interpretation paragraphs"
+  ],
+  "repository_ledger": "analysis/13_state_resolved_ae4/evidence_freeze.md#2016-transporter-mechanism",
+  "primary_text_successfully_read": true
+}

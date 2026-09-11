@@ -4,125 +4,110 @@ These instructions apply to all work in this repository.
 
 ## Current scientific objective
 
-The active task is Task 19. Execute:
+The active task is Task 20. Execute:
 
-`prompts/19_ae4_loss_nak_pump_coupling.md`
+`prompts/20_ae4_pooled_cation_no_slip.md`
 
 Work only on branch:
 
-`codex/task-19-ae4-loss-nak-pump-coupling`
+`codex/task-20-ae4-pooled-cation-no-slip`
 
-Tracking issue: #17.
+Tracking issue: #19.
 
-Repository inheritance is merged Task 18 on `main`, merge commit:
+Repository inheritance is completed and merged Task 19 on `main`, merge commit:
 
-`52a56cc8e8788cdb5cae60dcbaa75257de2878dd`.
+`e98789b276607807f7c9c88ff53605008a19cb66`.
 
-## Scientific question
+## Why Task 20 exists
 
-Task 18 showed that changing WT chloride allocation does not repair the wrong-direction AE4-loss phenotype. Task 19 tests one narrow alternative mechanism:
+The current physiological AE4 model permits independent Na and K branch fluxes. In the frozen WT ensemble those branches run in opposite directions and cancel by roughly 97–99%, leaving very small productive chloride transport.
 
-> Does reducing effective Na/K-ATPase support together with AE4 near-loss make AE4 loss secretion-limiting?
+Tasks 18 and 19 showed that neither chloride-load redistribution nor Na/K-pump impairment repairs the wrong-direction AE4-loss phenotype.
 
-This is a diagnostic sufficiency test, not evidence that AE4 experimentally regulates the pump.
+The 2016 AE4 experiments establish cation transport capability, electroneutrality and reversibility, but do not establish simultaneous independent opposing Na/K cycles in physiological mixed solution. Their physiological working model treats Na/K as a nonselective pooled cation pathway.
 
-## Primary model scope
+Task 20 therefore tests a less committal pooled-cation architecture.
 
-Use the inherited baseline chloride-allocation model only.
+## Mechanism rule
 
-Do not use Task 18's 0.10 or 0.30 rebalanced WT parameterizations in the primary Task 19 factorial panel. Those conditions require large capacity shifts and would confound this mechanism diagnostic.
+Do not delete the legacy `SR2_SHARED_112_QSS` model.
 
-Retain all ten inherited roots, both AE4 routing families, and calcium 0.10, 0.25 and 0.50 uM.
+Add a separate pooled-cation AE4 mechanism with:
 
-## Fixed factorial panel
+- one scalar net cycle flux;
+- pooled Na+K thermodynamic activity;
+- the current 1:1:2 Cl:cation:HCO3 stoichiometry retained only as a working-model assumption;
+- electroneutrality and reversible local detailed balance;
+- donor-side Na/K partitioning of the one net cation flux;
+- no independent Na/K slip loop.
 
-Use exactly:
+At every state the Na and K AE4 net sources must have the same sign or one must be zero.
 
-AE4 expression:
+The primary WT pooled-cation selectivity is equal Na/K weighting. Do not introduce a fitted cation-selectivity parameter in the whole-cell phenotype test.
 
-- 1.0
-- 0.05
+## Evidence discipline
 
-Na/K-pump capacity scale:
+Do not claim that 1:1:2 stoichiometry, equal microscopic Na/K use, or donor-side partitioning are experimentally identified facts. They are the declared coarse-grained mechanism being tested.
 
-- 1.0
-- 0.50
-- 0.10
+The direct evidence to preserve is qualitative:
 
-No intermediate pump scales, threshold searches or phenotype-guided refinement.
+- Na transport support;
+- K transport support;
+- Cl/HCO3 exchange;
+- electroneutrality;
+- reversibility;
+- broad monovalent-cation permissiveness.
 
-Reuse exact hash-valid scale-1.0 results wherever possible.
+Do not map the 2016 Hill coefficients to transported-ion count.
 
-## Pump intervention
+## Whole-cell scope
 
-Scale the complete Na/K-ATPase capacity while preserving:
+Retain all ten inherited WT conserved states as fixed physiological targets.
 
-- 3Na:2K stoichiometry;
-- pump law and direction;
-- apical/basolateral pump partition;
-- every non-pump parameter.
+Use exactly two pooled-model WT loading conditions:
 
-If total capacity plus fraction is used, scale total capacity and keep the fraction fixed. If separate effective capacities are used, multiply both by the same declared scale.
+1. `P0`: pooled AE4 net chloride loading matched to the inherited legacy AE4 net chloride flux for that root;
+2. `P10`: pooled AE4 carries 10% of the inherited positive basolateral chloride-loading pool.
 
-Do not change pump affinity constants or topology.
+Do not run a new 30% condition.
 
-## Hard freeze outside AE4 expression and pump scale
+For each condition use the Task 18 fixed-WT inverse-rebalancing method. Old conductances and capacity boxes are reference values, not hard laws. Keep the exact WT conserved state fixed and solve existing uncertain capacities needed for full steady-state closure.
 
-Do not modify:
+Use the Task 18 minimal-deviation objective and no genotype information.
 
-- AE4 transport law, routing or thermodynamics;
-- chloride allocation;
-- NKCC1;
-- AE2;
-- NHE1;
-- CaCC;
-- K channels;
-- paracellular pathways;
-- acid-base chemistry;
-- water/lumen transport;
-- bath;
-- geometry;
-- regulation;
-- calcium inputs;
-- solver or conservation tolerances.
+## Phenotype firewall
 
-Do not refit any capacity after changing AE4 expression or pump scale.
+Before AE4-loss or AE2-loss evaluation:
 
-## Mandatory controls
+- finish all pooled-model WT inverse solutions;
+- verify exact fixed-state preservation and full production closure;
+- verify the pooled no-slip invariant;
+- commit and push a frozen WT checkpoint.
 
-Pump impairment alone can reduce secretion. Therefore for pump scales 0.50 and 0.10, evaluate both AE4 expression 1.0 and AE4 expression 0.05.
+Only after that checkpoint may genotype outcomes be accessed.
 
-Do not call the mechanism successful merely because `Q(AE4=0.05,pump<1)` is below normal WT flow.
+## Genotype evaluation
 
-Report:
+For each feasible pooled-model WT parameterization:
 
-- matched AE4 effect at each pump scale;
-- pump-only effect in AE4-intact cells;
-- pump effect in AE4-low cells;
-- AE4 × pump interaction;
-- coupled-hypothesis comparison against normal WT.
+- run WT dynamics at calcium 0.10, 0.25 and 0.50 uM;
+- reduce AE4 expression from 1.0 to 0.05 with all other parameters frozen;
+- evaluate matched AE2 loss;
+- do not refit either genotype;
+- do not attempt exact AE4 zero.
 
-Use the exact definitions in the Task 19 prompt.
+The approximately 35% experimental AE4-loss deficit is context only after results are frozen.
 
-## Numerical/root discipline
+Report resting Cl, pH, Na, K and major compensating fluxes as secondary diagnostics.
 
-Use connected resting-state continuation from the inherited root.
+## Comparator discipline
 
-For each pump scale below 1, first continue the AE4-intact state to the target pump capacity, then continue AE4 expression to 0.05 at fixed pump scale.
+Reuse hash-valid legacy-model results rather than recomputing them:
 
-Internal continuation points are numerical only, not extra scientific pump conditions.
+- legacy inherited allocation;
+- legacy 10% AE4-loading results from Task 18.
 
-Do not rescue failed roots by changing any other parameter or jumping to a disconnected root.
-
-## Interpretation discipline
-
-The experimental approximately 35% AE4-loss secretion reduction is context only after the complete factorial results are frozen.
-
-Do not choose a pump scale based on closeness to experiment.
-
-Do not fit a continuous AE4-to-pump coupling law in Task 19.
-
-A real mechanism signal requires distinguishing an AE4 × pump interaction from the trivial effect of pump inhibition itself.
+The key comparison is whether removing independent Na/K slip changes the AE4-loss phenotype direction at matched productive chloride loading.
 
 ## General discipline
 
@@ -132,6 +117,6 @@ Do not draft manuscript text.
 
 Do not perform unrelated calibration, model reduction, GSPT or identifiability work.
 
-Commit and push completed Task 19 work to `codex/task-19-ae4-loss-nak-pump-coupling`.
+Commit and push completed Task 20 work only to `codex/task-20-ae4-pooled-cation-no-slip`.
 
-After Task 19 is complete and the required tests pass, open a pull request to `main` and merge the completed task using a merge commit. If a genuine scientific/code failure or merge conflict is exposed, report it rather than forcing the merge.
+After completion, open a PR to `main` but do not merge automatically. Report the Task 20 scientific result before merge.
