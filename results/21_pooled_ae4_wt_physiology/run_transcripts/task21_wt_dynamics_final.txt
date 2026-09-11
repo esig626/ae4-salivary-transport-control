@@ -1,0 +1,1 @@
+Distinct WT witnesses: 7 replay-valid: 6

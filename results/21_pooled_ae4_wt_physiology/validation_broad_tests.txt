@@ -1,0 +1,1282 @@
+.F.............................................................. [ 10%]
+.....................................................................FF............ [ 24%]
+........F............FFF.F.FFF.......................................... [ 36%]
+.....................................FEEEEEE.EEE....F...F....F..F............................................................................................ [ 61%]
+.................F................................................... [ 73%]
+............................... [ 78%]
+............................................F...........F........F.F.... [ 90%]
+..........................................................s              [100%]
+==================================== ERRORS ====================================
+_ ERROR at setup of TestFrozenGenotypeContract.test_contract_is_exact_r3_g125_reference_timing _
+
+cls = <class 'test_modern_genotype_evaluation.TestFrozenGenotypeContract'>
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        repository = Path(__file__).resolve().parents[1]
+>       roots = load_retained_wt_roots(
+            repository / "results" / "13B_modern_full_model"
+        )
+
+tests/test_modern_genotype_evaluation.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/run_g5_cross_root_profile.py:217: in load_retained_wt_roots
+    selected = json.loads(selected_path.read_text(encoding="utf-8"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of TestFrozenGenotypeContract.test_default_expression_grid_is_predeclared_one_to_exact_zero _
+
+cls = <class 'test_modern_genotype_evaluation.TestFrozenGenotypeContract'>
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        repository = Path(__file__).resolve().parents[1]
+>       roots = load_retained_wt_roots(
+            repository / "results" / "13B_modern_full_model"
+        )
+
+tests/test_modern_genotype_evaluation.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/run_g5_cross_root_profile.py:217: in load_retained_wt_roots
+    selected = json.loads(selected_path.read_text(encoding="utf-8"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of TestFrozenGenotypeContract.test_dynamic_clone_preserves_every_parameter_and_other _
+
+cls = <class 'test_modern_genotype_evaluation.TestFrozenGenotypeContract'>
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        repository = Path(__file__).resolve().parents[1]
+>       roots = load_retained_wt_roots(
+            repository / "results" / "13B_modern_full_model"
+        )
+
+tests/test_modern_genotype_evaluation.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/run_g5_cross_root_profile.py:217: in load_retained_wt_roots
+    selected = json.loads(selected_path.read_text(encoding="utf-8"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of TestChargeManifoldGenotypeContinuation.test_ae2_continuation_solves_ten_for_ten_with_no_parameter_fit _
+
+cls = <class 'test_modern_genotype_evaluation.TestChargeManifoldGenotypeContinuation'>
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        repository = Path(__file__).resolve().parents[1]
+>       roots = load_retained_wt_roots(
+            repository / "results" / "13B_modern_full_model"
+        )
+
+tests/test_modern_genotype_evaluation.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/run_g5_cross_root_profile.py:217: in load_retained_wt_roots
+    selected = json.loads(selected_path.read_text(encoding="utf-8"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of TestChargeManifoldGenotypeContinuation.test_ae4_deletion_removes_every_conserved_ae4_source_exactly _
+
+cls = <class 'test_modern_genotype_evaluation.TestChargeManifoldGenotypeContinuation'>
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        repository = Path(__file__).resolve().parents[1]
+>       roots = load_retained_wt_roots(
+            repository / "results" / "13B_modern_full_model"
+        )
+
+tests/test_modern_genotype_evaluation.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/run_g5_cross_root_profile.py:217: in load_retained_wt_roots
+    selected = json.loads(selected_path.read_text(encoding="utf-8"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of TestChargeManifoldGenotypeContinuation.test_connected_null_root_has_exact_zero_ae2_flux_and_fixed_other _
+
+cls = <class 'test_modern_genotype_evaluation.TestChargeManifoldGenotypeContinuation'>
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        repository = Path(__file__).resolve().parents[1]
+>       roots = load_retained_wt_roots(
+            repository / "results" / "13B_modern_full_model"
+        )
+
+tests/test_modern_genotype_evaluation.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/run_g5_cross_root_profile.py:217: in load_retained_wt_roots
+    selected = json.loads(selected_path.read_text(encoding="utf-8"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of TestTargetFreeDynamicEvaluation.test_cross_solver_disagreement_above_existing_contract_tolerance_fails _
+
+cls = <class 'test_modern_genotype_evaluation.TestTargetFreeDynamicEvaluation'>
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        repository = Path(__file__).resolve().parents[1]
+>       roots = load_retained_wt_roots(
+            repository / "results" / "13B_modern_full_model"
+        )
+
+tests/test_modern_genotype_evaluation.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/run_g5_cross_root_profile.py:217: in load_retained_wt_roots
+    selected = json.loads(selected_path.read_text(encoding="utf-8"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of TestTargetFreeDynamicEvaluation.test_module_has_no_target_file_reader_or_phenotype_gate _
+
+cls = <class 'test_modern_genotype_evaluation.TestTargetFreeDynamicEvaluation'>
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        repository = Path(__file__).resolve().parents[1]
+>       roots = load_retained_wt_roots(
+            repository / "results" / "13B_modern_full_model"
+        )
+
+tests/test_modern_genotype_evaluation.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/run_g5_cross_root_profile.py:217: in load_retained_wt_roots
+    selected = json.loads(selected_path.read_text(encoding="utf-8"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of TestTargetFreeDynamicEvaluation.test_short_ae2_pair_runs_with_radau_and_bdf_and_generic_ratios _
+
+cls = <class 'test_modern_genotype_evaluation.TestTargetFreeDynamicEvaluation'>
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        repository = Path(__file__).resolve().parents[1]
+>       roots = load_retained_wt_roots(
+            repository / "results" / "13B_modern_full_model"
+        )
+
+tests/test_modern_genotype_evaluation.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/run_g5_cross_root_profile.py:217: in load_retained_wt_roots
+    selected = json.loads(selected_path.read_text(encoding="utf-8"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+=================================== FAILURES ===================================
+______ ForensicInventoryTests.test_archive_ledger_accounts_for_every_file ______
+
+self = <forensics.test_forensic_inventory.ForensicInventoryTests testMethod=test_archive_ledger_accounts_for_every_file>
+
+    def test_archive_ledger_accounts_for_every_file(self) -> None:
+        with (RESULTS / "archive_hashes.csv").open(newline="", encoding="utf-8") as handle:
+            rows = list(csv.DictReader(handle))
+        actual = {
+            str(path.relative_to(ARCHIVE))
+            for path in ARCHIVE.rglob("*")
+            if path.is_file()
+        }
+        recorded = {row["path"] for row in rows}
+        self.assertEqual(len(rows), 67)
+        self.assertEqual(len(recorded), 67)
+>       self.assertEqual(recorded, actual)
+E       AssertionError: Items in the first set but not the second:
+E       'Ae4_Basis.log'
+E       'A Mathematical Model Supports a Key Role for Ae4 (Slc4a9) in Salivary Gland Secretion.pdf'
+
+tests/forensics/test_forensic_inventory.py:47: AssertionError
+_ TestPreRevealFirewall.test_calibration_ledger_contains_no_ae4_null_secretion_row _
+
+self = <test_modern_adversarial.TestPreRevealFirewall testMethod=test_calibration_ledger_contains_no_ae4_null_secretion_row>
+
+    def test_calibration_ledger_contains_no_ae4_null_secretion_row(self) -> None:
+>       with (RESULTS / "calibration_targets.csv").open(
+            newline="", encoding="utf-8"
+        ) as handle:
+
+tests/test_modern_adversarial.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/calibration_targets.csv')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/calibration_targets.csv'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestPreRevealFirewall.test_sealed_heldout_artifact_is_byte_identical_to_freeze _
+
+self = <test_modern_adversarial.TestPreRevealFirewall testMethod=test_sealed_heldout_artifact_is_byte_identical_to_freeze>
+
+    def test_sealed_heldout_artifact_is_byte_identical_to_freeze(self) -> None:
+        # Deliberately hash opaque bytes; do not parse or print target values.
+        self.assertEqual(
+>           _sha256(RESULTS / "heldout_targets.csv"),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            SEALED_HELDOUT_SHA256,
+        )
+
+tests/test_modern_adversarial.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_modern_adversarial.py:30: in _sha256
+    with path.open("rb") as handle:
+         ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/heldout_targets.csv')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/heldout_targets.csv'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestCalciumFreeze.test_freeze_loader_and_complete_worker_do_not_access_target_paths _
+
+self = <test_modern_calcium_fast_screen.TestCalciumFreeze testMethod=test_freeze_loader_and_complete_worker_do_not_access_target_paths>
+
+    def test_freeze_loader_and_complete_worker_do_not_access_target_paths(self):
+        original = Path.open
+        opened = []
+    
+        def guarded(path, *args, **kwargs):
+            name = str(path)
+            opened.append(name)
+            if any(x in name.lower() for x in ("heldout", "held_out", "phenotype", "reveal_log", "archive")):
+                raise AssertionError("Forbidden file access")
+            return original(path, *args, **kwargs)
+    
+        with patch.object(Path, "open", guarded), \
+             patch.object(screen.NativeRootRecord, "__repr__", return_value="FROZEN_WT"):
+            manifest, _ = screen.load_freeze()
+            screen.load_reference(manifest)
+            request = screen.primary_requests(manifest)[0]
+>           replay_worker((manifest, request))
+
+tests/test_modern_calcium_fast_screen.py:114: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_modern_calcium_fast_screen.py:26: in replay_worker
+    payload = json.loads(screen.cache_path(request).read_text())
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_modern_calcium_fast_screen.py:107: in guarded
+    return original(path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/trajectories/N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA05_P1_H1_B00_ca0.25_loose_radau.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/trajectories/N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA05_P1_H1_B00_ca0.25_loose_radau.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestCalciumSavedExecution.test_all_twenty_saved_trajectory_reductions_are_serial_parallel_identical _
+
+self = <test_modern_calcium_fast_screen.TestCalciumSavedExecution testMethod=test_all_twenty_saved_trajectory_reductions_are_serial_parallel_identical>
+
+    def test_all_twenty_saved_trajectory_reductions_are_serial_parallel_identical(self):
+>       serial = screen.run_requests(self.manifest, self.requests, 1, worker=reduction_worker)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_modern_calcium_fast_screen.py:198: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/run_calcium_fast_screen.py:346: in run_requests
+    return [worker(job) for job in jobs]
+            ^^^^^^^^^^^
+tests/test_modern_calcium_fast_screen.py:35: in reduction_worker
+    payload = json.loads(screen.cache_path(request).read_text())
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/trajectories/N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA05_P1_H1_B00_ca0.25_loose_radau.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/trajectories/N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA05_P1_H1_B00_ca0.25_loose_radau.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestCalciumSavedExecution.test_artifact_inventory_has_no_extra_trajectories __
+
+self = <test_modern_calcium_fast_screen.TestCalciumSavedExecution testMethod=test_artifact_inventory_has_no_extra_trajectories>
+
+    def test_artifact_inventory_has_no_extra_trajectories(self):
+>       decision = json.loads((screen.OUTPUT / "confirmation_decisions.json").read_text())
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_modern_calcium_fast_screen.py:249: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/confirmation_decisions.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/confirmation_decisions.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestCalciumSavedExecution.test_complete_screen_has_only_allowed_inputs_and_matching_parameter_hashes _
+
+self = <test_modern_calcium_fast_screen.TestCalciumSavedExecution testMethod=test_complete_screen_has_only_allowed_inputs_and_matching_parameter_hashes>
+
+    def test_complete_screen_has_only_allowed_inputs_and_matching_parameter_hashes(self):
+        rows = []
+        for request in self.requests:
+>           saved = json.loads(screen.cache_path(request).read_text())
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_modern_calcium_fast_screen.py:205: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/trajectories/N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA05_P1_H1_B00_ca0.25_loose_radau.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/trajectories/N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA05_P1_H1_B00_ca0.25_loose_radau.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestCalciumSavedExecution.test_negative_classification_requires_successful_crosscheck _
+
+self = <test_modern_calcium_fast_screen.TestCalciumSavedExecution testMethod=test_negative_classification_requires_successful_crosscheck>
+
+    def test_negative_classification_requires_successful_crosscheck(self):
+>       rows = report.read_rows(screen.OUTPUT / "calcium_screen.csv")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_modern_calcium_fast_screen.py:264: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/report_calcium_fast_screen.py:25: in read_rows
+    with path.open(newline="") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/calcium_screen.csv')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/calcium_screen.csv'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestCalciumSavedExecution.test_report_requires_complete_screen_and_selected_confirmations _
+
+self = <test_modern_calcium_fast_screen.TestCalciumSavedExecution testMethod=test_report_requires_complete_screen_and_selected_confirmations>
+
+    def test_report_requires_complete_screen_and_selected_confirmations(self):
+>       rows = report.read_rows(screen.OUTPUT / "calcium_screen.csv")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_modern_calcium_fast_screen.py:255: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/report_calcium_fast_screen.py:25: in read_rows
+    with path.open(newline="") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/calcium_screen.csv')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/calcium_screen.csv'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestCalciumSavedExecution.test_reports_regenerate_deterministically_without_a_solver _
+
+self = <test_modern_calcium_fast_screen.TestCalciumSavedExecution testMethod=test_reports_regenerate_deterministically_without_a_solver>
+
+    def test_reports_regenerate_deterministically_without_a_solver(self):
+        paths = list(report.ANALYSIS.glob("*.md")) + [screen.OUTPUT / "assessment.json"]
+>       before = {p: p.read_bytes() for p in paths}
+                     ^^^^^^^^^^^^^^
+
+tests/test_modern_calcium_fast_screen.py:273: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/assessment.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/assessment.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestCalciumSavedExecution.test_saved_confirmation_exactly_matches_the_predeclared_rule _
+
+self = <test_modern_calcium_fast_screen.TestCalciumSavedExecution testMethod=test_saved_confirmation_exactly_matches_the_predeclared_rule>
+
+    def test_saved_confirmation_exactly_matches_the_predeclared_rule(self):
+>       saved = json.loads((screen.OUTPUT / "confirmation_decisions.json").read_text())
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_modern_calcium_fast_screen.py:218: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/confirmation_decisions.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13C_calcium_fast_screen/confirmation_decisions.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestFrozenRootIntake.test_exactly_nine_rest_passing_roots_are_reconstructed __
+
+self = <test_modern_g5_cross_root_profile.TestFrozenRootIntake testMethod=test_exactly_nine_rest_passing_roots_are_reconstructed>
+
+    def test_exactly_nine_rest_passing_roots_are_reconstructed(self) -> None:
+        repository = Path(__file__).resolve().parents[1]
+>       roots = load_retained_wt_roots(
+            repository / "results" / "13B_modern_full_model"
+        )
+
+tests/test_modern_g5_cross_root_profile.py:90: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/run_g5_cross_root_profile.py:217: in load_retained_wt_roots
+    selected = json.loads(selected_path.read_text(encoding="utf-8"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestIndependentChargeManifold.test_every_frozen_retained_r0_root_is_independently_reproduced _
+
+self = <test_modern_independent.TestIndependentChargeManifold testMethod=test_every_frozen_retained_r0_root_is_independently_reproduced>
+
+    def test_every_frozen_retained_r0_root_is_independently_reproduced(self) -> None:
+        repository = Path(__file__).resolve().parents[1]
+        results = repository / "results" / "13B_modern_full_model"
+        with (results / "wt_root_table.csv").open(newline="", encoding="utf-8") as handle:
+            retained = [
+                row
+                for row in csv.DictReader(handle)
+                if row["status"] == "WT_REST_PASS_R0_CONTROL_ONLY"
+            ]
+        state_records: dict[str, dict[str, float]] = defaultdict(dict)
+        with (results / "wt_root_states.csv").open(newline="", encoding="utf-8") as handle:
+            for row in csv.DictReader(handle):
+                state_records[row["root_id"]][row["state_name"]] = float(row["value"])
+        parameter_records: dict[str, dict[str, float]] = defaultdict(dict)
+>       with (results / "wt_parameter_candidates.csv").open(
+            newline="", encoding="utf-8"
+        ) as handle:
+
+tests/test_modern_independent.py:279: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_parameter_candidates.csv')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_parameter_candidates.csv'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestIndependentChargeManifold.test_selected_wt_candidate_manifest_has_the_frozen_digest _
+
+self = <test_modern_independent.TestIndependentChargeManifold testMethod=test_selected_wt_candidate_manifest_has_the_frozen_digest>
+
+    def test_selected_wt_candidate_manifest_has_the_frozen_digest(self) -> None:
+        path = (
+            Path(__file__).resolve().parents[1]
+            / "results"
+            / "13B_modern_full_model"
+            / "wt_selected_candidate.json"
+        )
+>       digest = hashlib.sha256(path.read_bytes()).hexdigest()
+                                ^^^^^^^^^^^^^^^^^
+
+tests/test_modern_independent.py:358: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestFrozenIndependentR1Dynamics.test_selected_root_r1_reference_600_seconds_is_independently_reproduced _
+
+self = <test_modern_independent.TestFrozenIndependentR1Dynamics testMethod=test_selected_root_r1_reference_600_seconds_is_independently_reproduced>
+
+    def test_selected_root_r1_reference_600_seconds_is_independently_reproduced(self) -> None:
+        repository = Path(__file__).resolve().parents[1]
+        selected_path = (
+            repository
+            / "results"
+            / "13B_modern_full_model"
+            / "wt_selected_candidate.json"
+        )
+>       selected = json.loads(selected_path.read_text(encoding="utf-8"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_modern_independent.py:526: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestIndependentN2Sustainment.test_two_frozen_n2_profiles_are_independently_reproduced _
+
+self = <test_modern_independent.TestIndependentN2Sustainment testMethod=test_two_frozen_n2_profiles_are_independently_reproduced>
+
+    def test_two_frozen_n2_profiles_are_independently_reproduced(self) -> None:
+>       construction, (parameters, ae4) = self._frozen_construction()
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_modern_independent.py:692: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_modern_independent.py:641: in _frozen_construction
+    ).read_text(encoding="utf-8")
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/39eca83ca4ad/ae4-task21/results/13B_modern_full_model/wt_selected_candidate.json'
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ TestNativeSourceMap.test_scale_one_alias_artifact_covers_all_licensed_contexts _
+
+self = <test_modern_native_source_panel.TestNativeSourceMap testMethod=test_scale_one_alias_artifact_covers_all_licensed_contexts>
+
+    def test_scale_one_alias_artifact_covers_all_licensed_contexts(self) -> None:
+        repository = Path(__file__).resolve().parents[1]
+>       rows = scale_one_identity_rows(
+            repository / "results" / "13B_modern_full_model"
+        )
+
+tests/test_modern_native_source_panel.py:609: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/run_native_source_panel.py:1276: in scale_one_identity_rows
+    pumps = _licensed_pump_contexts(output)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/modern_full_model/run_native_source_panel.py:1530: in _licensed_pump_contexts
+    strict_pump_one = _require_exact_members(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+rows_by_id = {}
+members = (NativeSourcePanelMember(panel_id='STRICT_NATIVE_S1_PLOW_KLOW_AE4NA05_P1_H1', topology_id='PLOW_KLOW', routing_id='AE4...0, hydraulic_mode='H1', eligibility='PRODUCTION_PRE_REVEAL', parent_panel_id='ROOT_GENERATION_NATIVE_SOURCE_MAP'), ...)
+context = 'strict H=1,pump=1 rest screen'
+
+    def _require_exact_members(
+        rows_by_id: Mapping[str, Mapping[str, Any]],
+        members: Sequence[NativeSourcePanelMember],
+        *,
+        context: str,
+    ) -> tuple[Mapping[str, Any], ...]:
+        expected_by_id = {member.panel_id: member for member in members}
+        missing = sorted(set(expected_by_id) - set(rows_by_id))
+        if missing:
+>           raise RuntimeError(f"{context} is missing canonical panels: {missing}")
+E           RuntimeError: strict H=1,pump=1 rest screen is missing canonical panels: ['STRICT_NATIVE_S1_PHIGH_KHIGH_AE4NA05_P1_H1', 'STRICT_NATIVE_S1_PHIGH_KHIGH_AE4NA10_P1_H1', 'STRICT_NATIVE_S1_PHIGH_KHIGH_AE4NA20_P1_H1', 'STRICT_NATIVE_S1_PHIGH_KLOW_AE4NA05_P1_H1', 'STRICT_NATIVE_S1_PHIGH_KLOW_AE4NA10_P1_H1', 'STRICT_NATIVE_S1_PHIGH_KLOW_AE4NA20_P1_H1', 'STRICT_NATIVE_S1_PLOW_KHIGH_AE4NA05_P1_H1', 'STRICT_NATIVE_S1_PLOW_KHIGH_AE4NA10_P1_H1', 'STRICT_NATIVE_S1_PLOW_KHIGH_AE4NA20_P1_H1', 'STRICT_NATIVE_S1_PLOW_KLOW_AE4NA05_P1_H1', 'STRICT_NATIVE_S1_PLOW_KLOW_AE4NA10_P1_H1', 'STRICT_NATIVE_S1_PLOW_KLOW_AE4NA20_P1_H1', 'STRICT_NATIVE_S1_PNOM_KMID_AE4NA05_P1_H1', 'STRICT_NATIVE_S1_PNOM_KMID_AE4NA10_P1_H1', 'STRICT_NATIVE_S1_PNOM_KMID_AE4NA20_P1_H1']
+
+src/modern_full_model/run_native_source_panel.py:1507: RuntimeError
+__ PostFreezeTests.test_pushed_freeze_precedes_results_and_remains_unchanged ___
+
+self = <test_task16_postfreeze.PostFreezeTests testMethod=test_pushed_freeze_precedes_results_and_remains_unchanged>
+
+    def test_pushed_freeze_precedes_results_and_remains_unchanged(self):
+>       freeze, receipt = post.checked_checkpoint()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task16_postfreeze.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/task16_postfreeze.py:30: in checked_checkpoint
+    task.git("merge-base", "--is-ancestor", receipt["checkpoint_commit"], "HEAD")
+src/modern_full_model/task16_wt_allocation.py:51: in git
+    return subprocess.check_output(["git", *args], cwd=REPO, text=True).strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py:466: in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['git', 'merge-base', '--is-ancestor', 'f5df88448b1a669c7c7b3986d83ac17360b0338d', 'HEAD'],)
+kwargs = {'stdout': -1, 'cwd': PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21'), 'text': True}
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['git', 'merge-base', '--is-ancestor', 'f5df88448b1a669c7c7b3986d83ac17360b0338d', 'HEAD']' returned non-zero exit status 128.
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py:571: CalledProcessError
+----------------------------- Captured stderr call -----------------------------
+error: Could not read 3d5b231314956e77729744de7203dadc83515dcb
+error: could not parse commit 3d5b231314956e77729744de7203dadc83515dcb
+__ AllocationTests.test_wt_contract_generation_never_reads_genotype_outcomes ___
+
+self = <test_task16_wt_allocation.AllocationTests testMethod=test_wt_contract_generation_never_reads_genotype_outcomes>
+
+    def test_wt_contract_generation_never_reads_genotype_outcomes(self):
+        original_read = Path.read_text
+        def guarded_read(path, *args, **kwargs):
+            s = str(path)
+            forbidden = ("ae2_null_blind_predictions.csv", "ae4_5pct_results.csv", "allocation_vs_genotype.csv")
+            if any(x in s for x in forbidden) or ("14B_five_percent_ae4_check/trajectories" in s):
+                raise AssertionError("WT contract attempted to read genotype outcome")
+            return original_read(path, *args, **kwargs)
+        ledger = (task.OUT / "baseline_input_hashes.json").read_bytes()
+        with TemporaryDirectory() as tmp, patch.object(task, "OUT", Path(tmp)), patch.object(Path, "read_text", guarded_read):
+            (Path(tmp)/"baseline_input_hashes.json").write_bytes(ledger)
+>           task.prepare()
+
+tests/test_task16_wt_allocation.py:127: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def prepare():
+        if (OUT / "allocation_contract.json").exists():
+            raise FileExistsError("Allocation contract is immutable")
+>       assert git("branch", "--show-current") == BRANCH
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError
+
+src/modern_full_model/task16_wt_allocation.py:135: AssertionError
+_ PostFreezeTests.test_every_root_condition_calcium_and_no_ineligible_predictions _
+
+self = <test_task17_postfreeze.PostFreezeTests testMethod=test_every_root_condition_calcium_and_no_ineligible_predictions>
+
+    def test_every_root_condition_calcium_and_no_ineligible_predictions(self):
+>       freeze,_=checked_checkpoint()
+                 ^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task17_postfreeze.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/task17_postfreeze.py:25: in checked_checkpoint
+    task.git('merge-base','--is-ancestor',receipt['checkpoint_sha'],'HEAD')
+src/modern_full_model/task17_fixed_wt.py:50: in git
+    return subprocess.check_output(['git', *args], cwd=REPO, text=True).strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py:466: in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['git', 'merge-base', '--is-ancestor', '0fe0d9a09020f7311c63a665b3f8a8adbed68ce6', 'HEAD'],)
+kwargs = {'stdout': -1, 'cwd': PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21'), 'text': True}
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['git', 'merge-base', '--is-ancestor', '0fe0d9a09020f7311c63a665b3f8a8adbed68ce6', 'HEAD']' returned non-zero exit status 128.
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py:571: CalledProcessError
+----------------------------- Captured stderr call -----------------------------
+error: Could not read 3d5b231314956e77729744de7203dadc83515dcb
+error: could not parse commit 3d5b231314956e77729744de7203dadc83515dcb
+_______ PostFreezeTests.test_pushed_checkpoint_precedes_genotype_access ________
+
+self = <test_task17_postfreeze.PostFreezeTests testMethod=test_pushed_checkpoint_precedes_genotype_access>
+
+    def test_pushed_checkpoint_precedes_genotype_access(self):
+>       freeze,receipt=checked_checkpoint()
+                       ^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task17_postfreeze.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/modern_full_model/task17_postfreeze.py:25: in checked_checkpoint
+    task.git('merge-base','--is-ancestor',receipt['checkpoint_sha'],'HEAD')
+src/modern_full_model/task17_fixed_wt.py:50: in git
+    return subprocess.check_output(['git', *args], cwd=REPO, text=True).strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py:466: in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['git', 'merge-base', '--is-ancestor', '0fe0d9a09020f7311c63a665b3f8a8adbed68ce6', 'HEAD'],)
+kwargs = {'stdout': -1, 'cwd': PosixPath('/workspace/scratch/39eca83ca4ad/ae4-task21'), 'text': True}
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['git', 'merge-base', '--is-ancestor', '0fe0d9a09020f7311c63a665b3f8a8adbed68ce6', 'HEAD']' returned non-zero exit status 128.
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py:571: CalledProcessError
+----------------------------- Captured stderr call -----------------------------
+error: Could not read 3d5b231314956e77729744de7203dadc83515dcb
+error: could not parse commit 3d5b231314956e77729744de7203dadc83515dcb
+=============================== warnings summary ===============================
+tests/test_modern_ae4.py::test_parameters
+  /workspace/scratch/39eca83ca4ad/test-deps/_pytest/python.py:171: PytestReturnNotNoneWarning: Test functions should return None, but tests/test_modern_ae4.py::test_parameters returned <class 'modern_full_model.transporters.AE4Parameters'>.
+  Did you mean to use `assert` instead of `return`?
+  See https://docs.pytest.org/en/stable/how-to/assert.html#return-not-none for more information.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/forensics/test_forensic_inventory.py::ForensicInventoryTests::test_archive_ledger_accounts_for_every_file
+FAILED tests/test_modern_adversarial.py::TestPreRevealFirewall::test_calibration_ledger_contains_no_ae4_null_secretion_row
+FAILED tests/test_modern_adversarial.py::TestPreRevealFirewall::test_sealed_heldout_artifact_is_byte_identical_to_freeze
+FAILED tests/test_modern_calcium_fast_screen.py::TestCalciumFreeze::test_freeze_loader_and_complete_worker_do_not_access_target_paths
+FAILED tests/test_modern_calcium_fast_screen.py::TestCalciumSavedExecution::test_all_twenty_saved_trajectory_reductions_are_serial_parallel_identical
+FAILED tests/test_modern_calcium_fast_screen.py::TestCalciumSavedExecution::test_artifact_inventory_has_no_extra_trajectories
+FAILED tests/test_modern_calcium_fast_screen.py::TestCalciumSavedExecution::test_complete_screen_has_only_allowed_inputs_and_matching_parameter_hashes
+FAILED tests/test_modern_calcium_fast_screen.py::TestCalciumSavedExecution::test_negative_classification_requires_successful_crosscheck
+FAILED tests/test_modern_calcium_fast_screen.py::TestCalciumSavedExecution::test_report_requires_complete_screen_and_selected_confirmations
+FAILED tests/test_modern_calcium_fast_screen.py::TestCalciumSavedExecution::test_reports_regenerate_deterministically_without_a_solver
+FAILED tests/test_modern_calcium_fast_screen.py::TestCalciumSavedExecution::test_saved_confirmation_exactly_matches_the_predeclared_rule
+FAILED tests/test_modern_g5_cross_root_profile.py::TestFrozenRootIntake::test_exactly_nine_rest_passing_roots_are_reconstructed
+FAILED tests/test_modern_independent.py::TestIndependentChargeManifold::test_every_frozen_retained_r0_root_is_independently_reproduced
+FAILED tests/test_modern_independent.py::TestIndependentChargeManifold::test_selected_wt_candidate_manifest_has_the_frozen_digest
+FAILED tests/test_modern_independent.py::TestFrozenIndependentR1Dynamics::test_selected_root_r1_reference_600_seconds_is_independently_reproduced
+FAILED tests/test_modern_independent.py::TestIndependentN2Sustainment::test_two_frozen_n2_profiles_are_independently_reproduced
+FAILED tests/test_modern_native_source_panel.py::TestNativeSourceMap::test_scale_one_alias_artifact_covers_all_licensed_contexts
+FAILED tests/test_task16_postfreeze.py::PostFreezeTests::test_pushed_freeze_precedes_results_and_remains_unchanged
+FAILED tests/test_task16_wt_allocation.py::AllocationTests::test_wt_contract_generation_never_reads_genotype_outcomes
+FAILED tests/test_task17_postfreeze.py::PostFreezeTests::test_every_root_condition_calcium_and_no_ineligible_predictions
+FAILED tests/test_task17_postfreeze.py::PostFreezeTests::test_pushed_checkpoint_precedes_genotype_access
+ERROR tests/test_modern_genotype_evaluation.py::TestFrozenGenotypeContract::test_contract_is_exact_r3_g125_reference_timing
+ERROR tests/test_modern_genotype_evaluation.py::TestFrozenGenotypeContract::test_default_expression_grid_is_predeclared_one_to_exact_zero
+ERROR tests/test_modern_genotype_evaluation.py::TestFrozenGenotypeContract::test_dynamic_clone_preserves_every_parameter_and_other
+ERROR tests/test_modern_genotype_evaluation.py::TestChargeManifoldGenotypeContinuation::test_ae2_continuation_solves_ten_for_ten_with_no_parameter_fit
+ERROR tests/test_modern_genotype_evaluation.py::TestChargeManifoldGenotypeContinuation::test_ae4_deletion_removes_every_conserved_ae4_source_exactly
+ERROR tests/test_modern_genotype_evaluation.py::TestChargeManifoldGenotypeContinuation::test_connected_null_root_has_exact_zero_ae2_flux_and_fixed_other
+ERROR tests/test_modern_genotype_evaluation.py::TestTargetFreeDynamicEvaluation::test_cross_solver_disagreement_above_existing_contract_tolerance_fails
+ERROR tests/test_modern_genotype_evaluation.py::TestTargetFreeDynamicEvaluation::test_module_has_no_target_file_reader_or_phenotype_gate
+ERROR tests/test_modern_genotype_evaluation.py::TestTargetFreeDynamicEvaluation::test_short_ae2_pair_runs_with_radau_and_bdf_and_generic_ratios
+21 failed, 576 passed, 1 skipped, 1 warning, 9 errors, 244 subtests passed in 44.19s

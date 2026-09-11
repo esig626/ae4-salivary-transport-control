@@ -1,0 +1,84 @@
+N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA20_P2_H1:B00 minimax legacy Iteration limit reached [0.3401778057898519, 11.287911740835638, 395.5375154845224] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA20_P2_H1:B00 minimax legacy Iteration limit reached [2.403997204800432e-08, 15.514382674054895, 755.4177687001572] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs']
+N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA05_P1_H1:B00 minimax legacy Iteration limit reached [0.016550194091766657, 8.794264318307484, 299.4655025726418] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA20_P2_H1:B00 minimax expanded Positive directional derivative for linesearch [0.004123453166353628, 9.607941880673785, 324.81515238996565] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA05_P1_H1:B00 minimax legacy Positive directional derivative for linesearch [1.8320946069596933e-11, 27.398370909831375, 2093.636363752984] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs']
+N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA05_P1_H1:B00 minimax expanded Positive directional derivative for linesearch [0.01800091706762794, 9.109937505391372, 334.98485659908334] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA20_P2_H1:B00 minimax expanded Iteration limit reached [0.02489548197139793, 10.918503945479447, 426.3606605890716] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA20_P2_H1:B00 minimax high_carbon_na Positive directional derivative for linesearch [0.0013000325012011258, 11.618078326514881, 1067.512170516917] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs']
+N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA05_P1_H1:B00 minimax expanded Positive directional derivative for linesearch [2.0194839173657902e-28, 19.949667972520754, 1304.9622002259591] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs']
+N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA05_P1_H1:B00 minimax high_carbon_na Iteration limit reached [0.0, 39.999880580911544, 9796.658692027866] ['na_i_mM', 'max_abs_scaled_independent_rhs']
+N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA20_P2_H1:B00 minimax high_carbon_na Iteration limit reached [0.0, 39.13735680138881, 11507.59100653762] ['max_abs_scaled_independent_rhs']
+N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA05_P1_H1:B00 minimax high_carbon_na Iteration limit reached [1.5361721126148944, 10.187221349061863, 1120.0645647023186] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA20_P2_H1:B00 minimax high_carbon_k Iteration limit reached [0.040727900123018676, 11.003130328548135, 1284.017614521872] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA05_P1_H1:B00 minimax high_carbon_k Iteration limit reached [0.0, 38.88929759992592, 10592.732820055424] ['max_abs_scaled_independent_rhs']
+N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA20_P2_H1:B00 minimax high_carbon_k Iteration limit reached [0.0, 21.93195613314487, 2902.1416586127425] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs']
+N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA05_P1_H1:B00 minimax high_carbon_k Iteration limit reached [0.005223073188662823, 13.77869045740194, 1496.3657174156638] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA20_P2_H1:B00 minimax legacy Iteration limit reached [0.5294044601332208, 10.940486056885511, 465.95876692773686] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PLOW_KLOW_AE4NA05_P1_H1:B00 minimax legacy Iteration limit reached [0.0, 13.150584462714844, 557.9390920164676] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs']
+N_ABS_NKCC_S4_PNOM_KMID_AE4NA05_P1_H1:B00 minimax legacy Positive directional derivative for linesearch [0.07257645506002997, 8.28362844009333, 322.1882950833763] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PLOW_KLOW_AE4NA20_P2_H1:B00 minimax legacy Iteration limit reached [0.00013438834237997427, 11.857007201066937, 476.90842681833345] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PLOW_KLOW_AE4NA05_P1_H1:B00 minimax expanded Positive directional derivative for linesearch [2.0194839173657902e-28, 17.781250733012534, 1310.4971908285936] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs']
+N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA20_P2_H1:B00 minimax expanded Iteration limit reached [1.2736909400766931, 9.160739233095159, 351.96351758552936] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PLOW_KLOW_AE4NA20_P2_H1:B00 minimax expanded Iteration limit reached [1.2420928207134976, 8.844675411017391, 321.36275060404193] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PNOM_KMID_AE4NA05_P1_H1:B00 minimax expanded Iteration limit reached [0.020433911082025222, 12.902681907330468, 609.9350851635389] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA20_P2_H1:B00 minimax high_carbon_na Positive directional derivative for linesearch [8.797545230684324e-09, 18.002128171900484, 1683.6980730274836] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PLOW_KLOW_AE4NA05_P1_H1:B00 minimax high_carbon_na Iteration limit reached [0.003512176807097685, 18.890096657389353, 1402.2979670149434] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PLOW_KLOW_AE4NA05_P1_H1:B00 minimax high_carbon_k Positive directional derivative for linesearch [0.008283188673029258, 13.295443372857298, 1614.9037509591094] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs']
+N_ABS_NKCC_S4_PNOM_KMID_AE4NA05_P1_H1:B00 minimax high_carbon_na Iteration limit reached [3.5901936308725164e-26, 26.39222761613385, 3514.251611062906] ['max_abs_scaled_independent_rhs']
+N_ABS_NKCC_S4_PNOM_KMID_AE4NA05_P1_H1:B00 minimax high_carbon_k Singular matrix C in LSQ subproblem [0.0, 40.0, 19065.310383940614] ['max_abs_scaled_independent_rhs']
+N_ABS_NKCC_S4_PNOM_KMID_AE4NA20_P2_H1:B00 minimax legacy Iteration limit reached [7.951289518176291e-05, 12.704139589541052, 698.6666508571113] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA20_P2_H1:B00 minimax high_carbon_k Iteration limit reached [0.015192470087677368, 11.302899998363163, 1184.1102230714828] ['na_i_mM', 'max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PNOM_KMID_AE4NA20_P2_H1:B00 minimax expanded Iteration limit reached [0.5516540474851507, 11.030641560844968, 463.41646654973124] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs', 'nonpositive_affinity', 'nonpositive_AE4_loading']
+N_ABS_NKCC_S4_PNOM_KMID_AE4NA20_P2_H1:B00 minimax high_carbon_na Iteration limit reached [0.2792253045689635, 9.936061053909066, 648.3129791768288] ['max_abs_scaled_independent_rhs', 'max_abs_omitted_rhs']
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/process.py", line 264, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/process.py", line 213, in _process_chunk
+    return [fn(*args) for args in chunk]
+            ^^^^^^^^^
+  File "/workspace/scratch/39eca83ca4ad/ae4-task21/src/modern_full_model/task21_refine.py", line 24, in refine_seed
+    fit=minimize(lambda x:x[27],x,method='SLSQP',bounds=list(zip(np.r_[lower,0.],np.r_[upper,40.])),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_minimize.py", line 796, in minimize
+    res = _minimize_slsqp(fun, x0, args, jac, bounds,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_slsqp_py.py", line 525, in _minimize_slsqp
+    _eval_constraint(d, x, cons, m, meq)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_slsqp_py.py", line 580, in _eval_constraint
+    temp = np.atleast_1d(con['fun'](x, *con['args'])).ravel()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/39eca83ca4ad/ae4-task21/src/modern_full_model/task21_refine.py", line 19, in eq
+    d=p.fast(x[:27])
+      ^^^^^^^^^^^^^^
+  File "/workspace/scratch/39eca83ca4ad/ae4-task21/src/modern_full_model/task21_calibration.py", line 152, in fast
+    ka = (self.gate*cap['K_apical']+mp.g_apical_background_S)*(va-thermal*math.log(li['k']/ci['k']))*cf
+                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: math domain error
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/scratch/39eca83ca4ad/ae4-task21/src/modern_full_model/task21_refine.py", line 43, in <module>
+    list(pool.map(refine_seed,sorted(manifest['roots'])))
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/process.py", line 636, in _chain_from_iterable_of_lists
+    for element in iterable:
+                   ^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: math domain error
