@@ -1,0 +1,7 @@
+WT checkpoint and manifest remotely verified: 2b73ee293d135809904ea2a5aec08724a6520b9c
+Exact remote/local complete tree: b0778882322027621ce4e7c04188b8168372e055
+WT evidence files verified: 54
+Inherited source hashes verified: 79
+Archive tree unchanged: ba31f58b023e28030515d033893fcb52348abb61
+Expected genotype prohibition: STOP_NO_ADMISSIBLE_WT: genotype evaluation prohibited
+No genotype calculation or historical genotype regression invoked.

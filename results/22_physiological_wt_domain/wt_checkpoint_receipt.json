@@ -1,0 +1,11 @@
+{
+  "checkpoint_sha": "2b73ee293d135809904ea2a5aec08724a6520b9c",
+  "remote_branch": "codex/task-22-physiological-wt-domain",
+  "remote_ref_verified": true,
+  "remote_verified_utc": "2026-09-11T10:11:25.377Z",
+  "remote_blob_sha": "0cb675ad1ae68136eef91cf6106d97af4069017a",
+  "remote_tree_sha": "b0778882322027621ce4e7c04188b8168372e055",
+  "verification_method": "Authenticated remote GET of branch ref, immutable commit, and WT manifest; complete tree SHA equals staged local tree; every manifest content hash checked locally.",
+  "retained_WT_count": 0,
+  "genotype_evaluation_authorized": false
+}
