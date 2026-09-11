@@ -1,0 +1,19 @@
+test_01_global_equilibrium_is_zero (test_task20_pooled_ae4.PooledAssayTests.test_01_global_equilibrium_is_zero) ... ok
+test_02_complete_gradient_reversal_reverses_cycle (test_task20_pooled_ae4.PooledAssayTests.test_02_complete_gradient_reversal_reverses_cycle) ... ok
+test_03_positive_cycle_has_declared_sources (test_task20_pooled_ae4.PooledAssayTests.test_03_positive_cycle_has_declared_sources) ... ok
+test_04_no_opposed_cation_sources_across_broad_states (test_task20_pooled_ae4.PooledAssayTests.test_04_no_opposed_cation_sources_across_broad_states) ... ok
+test_05_absolute_cation_transport_equals_productive_cycle (test_task20_pooled_ae4.PooledAssayTests.test_05_absolute_cation_transport_equals_productive_cycle) ... ok
+test_06_exact_stoichiometric_charge_and_float_residual (test_task20_pooled_ae4.PooledAssayTests.test_06_exact_stoichiometric_charge_and_float_residual) ... ok
+test_07_detailed_balance_and_nonnegative_entropy (test_task20_pooled_ae4.PooledAssayTests.test_07_detailed_balance_and_nonnegative_entropy) ... ok
+test_08_pure_and_near_pure_na_support_transport (test_task20_pooled_ae4.PooledAssayTests.test_08_pure_and_near_pure_na_support_transport) ... ok
+test_09_pure_and_near_pure_k_support_transport (test_task20_pooled_ae4.PooledAssayTests.test_09_pure_and_near_pure_k_support_transport) ... ok
+test_10_cation_removal_renormalizes_donor_partition (test_task20_pooled_ae4.PooledAssayTests.test_10_cation_removal_renormalizes_donor_partition) ... ok
+test_11_zero_cl_flux_cannot_hide_na_k_exchange (test_task20_pooled_ae4.PooledAssayTests.test_11_zero_cl_flux_cannot_hide_na_k_exchange) ... ok
+test_12_legacy_selection_retains_exact_production_outputs (test_task20_pooled_ae4.PooledAssayTests.test_12_legacy_selection_retains_exact_production_outputs) ... ok
+test_invalid_activities_and_capacities_are_rejected (test_task20_pooled_ae4.PooledAssayTests.test_invalid_activities_and_capacities_are_rejected) ... ok
+test_regulation_scales_only_active_capacity (test_task20_pooled_ae4.PooledAssayTests.test_regulation_scales_only_active_capacity) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.062s
+
+OK
