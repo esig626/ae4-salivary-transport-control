@@ -1,0 +1,13 @@
+test_accepted_payloads_satisfy_every_resting_balance (test_task17_fixed_wt.FixedWTTests.test_accepted_payloads_satisfy_every_resting_balance) ... ok
+test_complete_ae4_scaling_and_exact_positive_pool (test_task17_fixed_wt.FixedWTTests.test_complete_ae4_scaling_and_exact_positive_pool) ... ok
+test_every_state_is_bitwise_inherited_without_state_solver (test_task17_fixed_wt.FixedWTTests.test_every_state_is_bitwise_inherited_without_state_solver) ... ok
+test_exact_panel_and_all_187_frozen_inputs (test_task17_fixed_wt.FixedWTTests.test_exact_panel_and_all_187_frozen_inputs) ... ok
+test_no_frozen_manifest_payload_changes (test_task17_fixed_wt.FixedWTTests.test_no_frozen_manifest_payload_changes) ... skipped 'Freeze follows pre-freeze tests'
+test_pathway_ledger_full_rhs_and_electrical_closure (test_task17_fixed_wt.FixedWTTests.test_pathway_ledger_full_rhs_and_electrical_closure) ... ok
+test_rank_and_complete_null_family_against_production_rhs (test_task17_fixed_wt.FixedWTTests.test_rank_and_complete_null_family_against_production_rhs) ... ok
+test_rejections_are_certified_bounds_not_solver_failures (test_task17_fixed_wt.FixedWTTests.test_rejections_are_certified_bounds_not_solver_failures) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.739s
+
+OK (skipped=1)

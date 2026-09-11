@@ -4,149 +4,138 @@ These instructions apply to all work in this repository.
 
 ## Current scientific objective
 
-The active task is Task 14. The executable prompt is
+The active task is Task 18. Execute:
 
-`prompts/14_scale_free_genotype_holdout_validation.md`.
+`prompts/18_fixed_wt_inverse_transporter_rebalance.md`
 
-Task 13B produced a modern conservation explicit WT model family with ten retained native WT roots. Task 13C then tested whether increasing only stimulated calcium could close the inherited absolute one SMG WT flow discrepancy. It could not. The controlling completed Task 13C commit is
+Work only on branch:
 
-`2f54e7c4f87b6da746d3a8427c7bdca40a77c3de`.
+`codex/task-18-fixed-wt-inverse-rebalance`
 
-Task 14 asks the central genotype question with the model frozen:
+Tracking issue: #13.
 
-> Does exact AE4 deletion predict the held out WT relative secretion phenotype and its time structure, while exact AE2 deletion produces a much smaller secretion effect?
+Task 18 supersedes Task 17's inherited-capacity feasibility experiment.
 
-This is a blind prediction and validation task. It is not a calibration task and not a reconstruction task.
+## Scientific inheritance
 
-## Scientific interpretation fixed for Task 14
+Repository inheritance is completed Task 17 commit:
 
-The Task 13B and Task 13C absolute whole gland secretion discrepancy remains recorded, but the inherited 9 to 10 uL/min one SMG mapping is now a nonblocking observation scale diagnostic.
+`fb2afcf3e23af1d19b297280ad67953370f7c9a9`
 
-Do not delete, hide or rewrite that discrepancy.
+The unchanged production scientific model baseline remains completed Task 14B commit:
 
-Do not use it to veto genotype prediction.
+`4d4403f279fc36aec940c9e4759486d02f07e3f6`.
 
-A common multiplicative cellular to gland scale cancels from null to WT secretion ratios. The primary Task 14 quantities are therefore paired WT relative secretion measures, not absolute whole gland flow.
+Task 17 correctly kept the WT conserved states fixed, but it still treated inherited capacity assumptions such as total K conductance 14 nS as hard feasibility constraints. Task 18 removes that mistake.
 
-Do not rescale WT and null separately. Do not fit an observation scale after phenotype reveal.
+## Fixed WT means fixed conserved state
 
-## Hard freeze
+For every inherited accepted WT root, keep all conserved intracellular and luminal amounts and both volumes exactly unchanged, together with the inherited resting regulatory coordinate.
 
-The Task 14 branch begins exactly from the completed Task 13C commit above.
+Do not perform a new WT state search, state continuation, state fitting, rounding or reconstruction.
 
-Keep frozen exactly as inherited:
+Algebraic membrane voltages may reclose self-consistently under the rebalanced capacities. Report their changes. Do not treat historical voltage targets as immutable laws.
 
-* all ten retained WT root payloads;
-* all whole cell equations;
-* all transporter capacities and source multipliers;
-* NKCC1 family, source scale and kinetics;
-* AE4 carrier model, rates, stoichiometry and Na K routing;
-* AE2 and NHE1;
-* pump and K channel capacities and membrane fractions;
-* CaCC and calcium gate;
-* paracellular pathways;
-* acid base and carbon chemistry;
-* hydraulic parameters, lumen parameters and outflow law;
-* geometry and bath composition;
-* beta input and regulatory gains and kinetics;
-* resting OTHER osmoles;
-* solver and conservation tolerances;
-* exact genotype deletion semantics.
+## Chloride allocation
 
-No model parameter may be optimised or changed in Task 14.
+Use exactly three conditions:
 
-No genotype specific compensation is permitted.
+- inherited baseline;
+- AE4 positive basolateral chloride-loading share 0.10;
+- AE4 positive basolateral chloride-loading share 0.30.
 
-## Calcium panel
+No additional share values or threshold searches are allowed.
 
-The exact matched SMG calcium amplitude remains uncertain. Carry forward exactly the three already evaluated calcium values
+For each root, identify the actual positive basolateral intracellular chloride-loading pool from the production flux ledger.
 
-`0.10, 0.25, 0.50 uM`.
+At each target, increase AE4 by scaling the complete coupled transporter so it carries the declared share of that inherited positive-loading pool.
 
-Use all three as a fixed sensitivity panel.
+Reduce every other positive basolateral chloride-loading pathway proportionally so the total positive-loading pool remains equal to the inherited WT value.
 
-Do not add a new calcium value and do not choose the best calcium after holdout reveal.
+Do not scale AE4 chloride independently of its Na/K/HCO3/TIC/alkalinity coupling.
 
-The preferred dynamic regulatory member is
+Negative chloride counterfluxes are not part of the positive-loading denominator.
 
-`R1_G125_P21_PROSE_TREFERENCE`.
+## Rebalance the rest of the network
 
-The primary protocol remains WT or null `CCH_IPR`, 0.3 uM CCh plus 5 uM IPR, over 600 s with the inherited beta input.
+The changed AE4 contribution perturbs Na, K, carbon, alkalinity and current balance even though the WT conserved state is fixed.
 
-## Genotype resting states
+Restore all complete production steady-state equations by adjusting existing uncertain capacity-like parameters in the current topology.
 
-Do not evaluate deletion dynamics from the WT resting state.
+At minimum allow the solver to consider:
 
-For every retained WT root, continue AE4 expression and AE2 expression independently from one to exact zero using the existing target free continuation framework.
+- total K conductance and its membrane allocation;
+- CaCC conductance/capacity;
+- apical and basolateral Na/K pump capacities;
+- NHE1 capacity;
+- neutral CO2 exchange capacities;
+- non-Cl paracellular Na, K and HCO3 capacities;
+- paracellular Cl capacity only if required to preserve fixed chloride balance under voltage reclosure;
+- any other already-existing active capacity multiplier required for full source rank.
 
-Fit zero model parameters during continuation.
+Do not add a transporter, background current or new mechanism.
 
-Keep the connected branch by the predeclared numerical distance rule only.
+## Hard constraints versus reference values
 
-Require exact deleted transporter flux at zero expression and retain alternate mathematical roots for audit.
+Hard constraints are structural physics and the fixed WT state:
 
-## Blind holdout firewall
+- exact fixed WT conserved state;
+- full resting RHS equal to zero within inherited numerical tolerances;
+- target AE4 positive-loading share;
+- preserved total positive basolateral chloride-loading pool;
+- existing stoichiometry, topology, source signs and thermodynamic structure;
+- nonnegative physical capacities/permeabilities;
+- fractions in [0,1];
+- bath, chemistry and geometry;
+- charge, current, carbon, alkalinity, water and lumen accounting;
+- finite physical model quantities.
 
-Before the blind prediction checkpoint is committed and pushed, do not inspect the exact held out AE4 secretion magnitude or time course.
+The following are **reference values, not hard feasibility walls**:
 
-Do not open, parse, digitise, search history for, or otherwise recover concealed phenotype values.
+- 14 nS total K conductance;
+- 31.4 nS CaCC maximum conductance;
+- old NHE1 parameter bounds;
+- old AE4 carrier bounds;
+- old common-conductance bounds;
+- previous pump capacities;
+- previous paracellular capacities;
+- previous CO2 exchange capacities;
+- capacity values imported from parotid or another preparation as modeling assumptions.
 
-Do not use exact target values in code, tests, thresholds, root selection or calcium selection.
+Report departures from those values; do not reject a mathematically and physically valid fixed-WT solution merely for exceeding them.
 
-Before simulation create the machine readable prediction contract required by the prompt.
+## Canonical solution rule
 
-Generate and save all blind predictions, tests and hashes. Then commit and push the blind checkpoint.
+Before genotype evaluation, solve the fixed-WT inverse problem for every root/share using no genotype information.
 
-Only after that pushed commit exists may the held out phenotype be opened for one time evaluation.
+If multiple parameterizations satisfy the hard constraints, choose one canonical solution by:
 
-After reveal, no model change is permitted.
+1. minimizing the largest absolute log-fold change among adjustable positive capacities relative to baseline;
+2. then minimizing the sum of squared log-fold changes.
 
-## Primary prediction quantities
+Use independent positive membrane capacities where this avoids arbitrary penalties on partition fractions.
 
-For every valid root and calcium value report matched WT relative quantities for AE4 null and AE2 null.
+Do not use the known AE4-loss phenotype or Task 14B secretion result in feasibility, optimization, ranking or root selection.
 
-At minimum report
+A local optimizer failure is not an infeasibility proof. Preserve full rank/nullspace information and distinguish structural infeasibility from numerical nonconvergence.
 
-* total 0 to 600 s secretion ratio;
-* minute specific flow ratios;
-* minute specific cumulative secretion ratios;
-* early 0 to 180 s integrated ratio;
-* sustained 180 to 600 s integrated ratio;
-* the change from early to sustained ratio;
-* AE4 effect, AE2 effect and their contrast;
-* resting and endpoint intracellular Cl, pH, Na, K and volume differences.
+## Freeze before genotype evaluation
 
-Absolute cellular and mapped gland flows remain secondary diagnostics only.
+First complete, verify, commit and push the entire WT inverse solution set.
 
-All ten roots and all three calcium values remain in the report regardless of agreement.
+Only after that frozen WT checkpoint may genotype results be accessed.
 
-No best root or best calcium selection is allowed after reveal.
+For every feasible modified parameterization:
 
-## Numerical standard
+- run matched WT dynamics at calcium 0.10, 0.25 and 0.50 uM;
+- reduce AE4 expression to 0.05 with all Task 18 parameters otherwise frozen;
+- evaluate AE2 loss with the same frozen parameters;
+- do not refit either genotype;
+- do not attempt exact AE4 zero.
 
-Use production Radau for the primary blind dynamic prediction.
+Reuse hash-valid baseline trajectories wherever scientifically identical.
 
-Use BDF confirmation according to the target independent representative rule in the Task 14 prompt.
-
-Preserve positivity, exact deletion, current closure, charge consistency, carbon and water conservation and the inherited numerical tolerances.
-
-Parallel execution across roots is encouraged, with numerical library thread counts limited to avoid oversubscription.
-
-Any continuation or solver anomaly must be resolved or recorded before holdout reveal without phenotype information.
-
-## Post reveal discipline
-
-Compare the frozen blind predictions with the held out data at the resolution actually supported by the experiment.
-
-Experimental uncertainty is evidence, not a universal biological law.
-
-Where uncertainty intervals are reported, use them. Where they are absent, report residuals without inventing intervals.
-
-Do not fit a scale, time shift, gain, offset or smoothing parameter.
-
-Do not change a parameter, root, calcium input, regulation rule, topology or mechanism after reveal.
-
-If the prediction fails, diagnose the failure and stop. Any repair belongs in a later independently designed task.
+Absolute whole-gland mapping remains nonblocking. Detailed AE4-loss time-course shape remains diagnostic only.
 
 ## General discipline
 
@@ -154,10 +143,8 @@ Do not edit `archive/`.
 
 Do not merge to `main`.
 
-Do not draft a manuscript.
+Do not draft manuscript text.
 
-Do not perform model reduction, GSPT, bifurcation analysis or a new identifiability study.
+Do not perform unrelated model reduction, GSPT or identifiability work.
 
-Do not state that the 2018 paper was wrong merely because the absolute gland scale remains unresolved.
-
-Do not state that AE4 is mechanistically validated unless the blind genotype comparison supports that conclusion.
+Commit and push completed Task 18 work only to `codex/task-18-fixed-wt-inverse-rebalance`.

@@ -1,0 +1,28 @@
+{
+  "case": "N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA05_P1_H1:B00__share_0.30",
+  "purpose": "Independent search seeds for the largest Task 18 minimax departure",
+  "genotype_information_used": false,
+  "searches": [
+    {
+      "seed": 281002,
+      "max_abs_log_fold": 6.030796351271702,
+      "sum_squared_log_fold": 211.58081801751624
+    },
+    {
+      "seed": 382003,
+      "max_abs_log_fold": 6.030796351271703,
+      "sum_squared_log_fold": 211.57899054104956
+    },
+    {
+      "seed": 483004,
+      "max_abs_log_fold": 6.030796351271811,
+      "sum_squared_log_fold": 211.58081801588918
+    },
+    {
+      "seed": 584005,
+      "max_abs_log_fold": 6.030796351271705,
+      "sum_squared_log_fold": 211.58081711122614
+    }
+  ],
+  "conclusion": "All four searches recover the same minimax value. The narrow paracellular reversal interval, rather than a historical capacity bound, produces the extreme solution."
+}

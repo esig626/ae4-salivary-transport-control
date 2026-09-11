@@ -1,0 +1,47 @@
+{
+  "ae2_increase_percent_range": [
+    0.03179501472343471,
+    0.160080127286788
+  ],
+  "ae4_to_ae2_effect_magnitude_ratio_median": 196.02673674192334,
+  "ae4_to_ae2_effect_magnitude_ratio_range": [
+    112.0037653712976,
+    449.3422882857473
+  ],
+  "all_pairs_increase_secretion": true,
+  "calcium_selected_by_agreement": false,
+  "comparison_only": true,
+  "decrease_pair_count": 0,
+  "direction_consistent_across_all_roots_calcium_and_routing_families": true,
+  "experimental_context": "Approximately 35% AE4 null reduction; context only, with no fitted target or exact acceptance band. Five percent residual AE4 is not literal genetic zero.",
+  "family_median_increase_differences": [
+    {
+      "AE4NA05_minus_AE4NA20_median_increase_percentage_points": 4.695607135731471,
+      "calcium_uM": 0.1
+    },
+    {
+      "AE4NA05_minus_AE4NA20_median_increase_percentage_points": 1.988079946644028,
+      "calcium_uM": 0.25
+    },
+    {
+      "AE4NA05_minus_AE4NA20_median_increase_percentage_points": 0.9522624883533162,
+      "calcium_uM": 0.5
+    }
+  ],
+  "increase_pair_count": 30,
+  "model_retuned": false,
+  "new_simulations_for_interpretation": 0,
+  "overall_increase_percent_median": 17.81906073567845,
+  "overall_increase_percent_range": [
+    8.228691712173974,
+    21.663007090904806
+  ],
+  "pair_table_sha256": "92bdaf07b0b657cbba4843d1e466d0f23d0b6d417b9fadf60cf8d4161b4d35b3",
+  "roots_pruned": false,
+  "routing_interpretation": "Both routing families increase secretion at every calcium. AE4NA05 has the larger median increase, most clearly at 0.10 uM; there is no disagreement in direction.",
+  "scientific_interpretation": "The AE4 effect is substantial and much larger than the essentially neutral AE2 effect, but all AE4 predictions increase secretion. This frozen 5% AE4 panel does not reproduce the direction of the general experimental secretion loss phenotype.",
+  "source_task14_commit": "a2fde97e30d79601e7455d9f1d77d8d67609cb49",
+  "summary_sha256": "cc15b0c7620bb72aaeb1bebabbdea234af1f467c90d5880747008ccbe6c7217e",
+  "time_trace_role": "Diagnostic only; no detailed time signature acceptance criterion.",
+  "unchanged_pair_count": 0
+}

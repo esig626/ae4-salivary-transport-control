@@ -1,0 +1,288 @@
+{"root_id": "N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA20_P2_H1:B00", "calcium_uM": 0.1, "ae4_5pct_to_wt_total_ratio": 1.0822869171217397, "ae4_5pct_reduction_percent": -8.228691712173974, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA20_P2_H1:B00", "calcium_uM": 0.1, "ae4_5pct_to_wt_total_ratio": 1.0920737751638214, "ae4_5pct_reduction_percent": -9.207377516382142, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA05_P1_H1:B00", "calcium_uM": 0.1, "ae4_5pct_to_wt_total_ratio": 1.1509540065104833, "ae4_5pct_reduction_percent": -15.09540065104833, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA05_P1_H1:B00", "calcium_uM": 0.1, "ae4_5pct_to_wt_total_ratio": 1.1405212997324823, "ae4_5pct_reduction_percent": -14.052129973248228, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA05_P1_H1:B00", "calcium_uM": 0.1, "ae4_5pct_to_wt_total_ratio": 1.163179701753124, "ae4_5pct_reduction_percent": -16.317970175312404, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PLOW_KLOW_AE4NA05_P1_H1:B00", "calcium_uM": 0.1, "ae4_5pct_to_wt_total_ratio": 1.151854570491648, "ae4_5pct_reduction_percent": -15.185457049164807, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PLOW_KLOW_AE4NA20_P2_H1:B00", "calcium_uM": 0.1, "ae4_5pct_to_wt_total_ratio": 1.112948508750198, "ae4_5pct_reduction_percent": -11.294850875019801, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA20_P2_H1:B00", "calcium_uM": 0.1, "ae4_5pct_to_wt_total_ratio": 1.1249328872849826, "ae4_5pct_reduction_percent": -12.493288728498264, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PNOM_KMID_AE4NA05_P1_H1:B00", "calcium_uM": 0.1, "ae4_5pct_to_wt_total_ratio": 1.1530741422631607, "ae4_5pct_reduction_percent": -15.307414226316073, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PNOM_KMID_AE4NA20_P2_H1:B00", "calcium_uM": 0.1, "ae4_5pct_to_wt_total_ratio": 1.1048984991343334, "ae4_5pct_reduction_percent": -10.489849913433336, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA20_P2_H1:B00", "calcium_uM": 0.25, "ae4_5pct_to_wt_total_ratio": 1.1624427276202534, "ae4_5pct_reduction_percent": -16.244272762025336, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA05_P1_H1:B00", "calcium_uM": 0.25, "ae4_5pct_to_wt_total_ratio": 1.1915446001085646, "ae4_5pct_reduction_percent": -19.154460010856454, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA05_P1_H1:B00", "calcium_uM": 0.25, "ae4_5pct_to_wt_total_ratio": 1.1799146304033774, "ae4_5pct_reduction_percent": -17.99146304033774, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA05_P1_H1:B00", "calcium_uM": 0.25, "ae4_5pct_to_wt_total_ratio": 1.202714141279223, "ae4_5pct_reduction_percent": -20.271414127922306, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA20_P2_H1:B00", "calcium_uM": 0.25, "ae4_5pct_to_wt_total_ratio": 1.1951479530489553, "ae4_5pct_reduction_percent": -19.51479530489553, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA20_P2_H1:B00", "calcium_uM": 0.25, "ae4_5pct_to_wt_total_ratio": 1.1454294969719807, "ae4_5pct_reduction_percent": -14.542949697198072, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PLOW_KLOW_AE4NA05_P1_H1:B00", "calcium_uM": 0.25, "ae4_5pct_to_wt_total_ratio": 1.1906391213243976, "ae4_5pct_reduction_percent": -19.063912132439764, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PLOW_KLOW_AE4NA20_P2_H1:B00", "calcium_uM": 0.25, "ae4_5pct_to_wt_total_ratio": 1.1764665843101916, "ae4_5pct_reduction_percent": -17.64665843101916, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PNOM_KMID_AE4NA05_P1_H1:B00", "calcium_uM": 0.25, "ae4_5pct_to_wt_total_ratio": 1.1923765353191946, "ae4_5pct_reduction_percent": -19.237653531919463, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PNOM_KMID_AE4NA20_P2_H1:B00", "calcium_uM": 0.25, "ae4_5pct_to_wt_total_ratio": 1.1716638006421243, "ae4_5pct_reduction_percent": -17.166380064212426, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA05_P1_H1:B00", "calcium_uM": 0.5, "ae4_5pct_to_wt_total_ratio": 1.202402859067373, "ae4_5pct_reduction_percent": -20.2402859067373, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA05_P1_H1:B00", "calcium_uM": 0.5, "ae4_5pct_to_wt_total_ratio": 1.1919794550991794, "ae4_5pct_reduction_percent": -19.197945509917936, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA20_P2_H1:B00", "calcium_uM": 0.5, "ae4_5pct_to_wt_total_ratio": 1.1669683146007646, "ae4_5pct_reduction_percent": -16.696831460076456, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PHIGH_KHIGH_AE4NA20_P2_H1:B00", "calcium_uM": 0.5, "ae4_5pct_to_wt_total_ratio": 1.1840010802406804, "ae4_5pct_reduction_percent": -18.40010802406804, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA05_P1_H1:B00", "calcium_uM": 0.5, "ae4_5pct_to_wt_total_ratio": 1.2133051855608012, "ae4_5pct_reduction_percent": -21.330518556080126, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PLOW_KLOW_AE4NA20_P2_H1:B00", "calcium_uM": 0.5, "ae4_5pct_to_wt_total_ratio": 1.1982261557958525, "ae4_5pct_reduction_percent": -19.822615579585246, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA20_P2_H1:B00", "calcium_uM": 0.5, "ae4_5pct_to_wt_total_ratio": 1.216630070909048, "ae4_5pct_reduction_percent": -21.663007090904806, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PLOW_KLOW_AE4NA05_P1_H1:B00", "calcium_uM": 0.5, "ae4_5pct_to_wt_total_ratio": 1.202562880594413, "ae4_5pct_reduction_percent": -20.256288059441307, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PNOM_KMID_AE4NA05_P1_H1:B00", "calcium_uM": 0.5, "ae4_5pct_to_wt_total_ratio": 1.2034807467128519, "ae4_5pct_reduction_percent": -20.34807467128519, "numerical_gate_pass": true}
+{"root_id": "N_ABS_NKCC_S4_PNOM_KMID_AE4NA20_P2_H1:B00", "calcium_uM": 0.5, "ae4_5pct_to_wt_total_ratio": 1.19304025571088, "ae4_5pct_reduction_percent": -19.30402557108799, "numerical_gate_pass": true}
+{
+  "source_task14_commit": "a2fde97e30d79601e7455d9f1d77d8d67609cb49",
+  "ae4_expression": 0.05,
+  "root_count": 10,
+  "calcium_uM": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "trajectory_count": 30,
+  "valid_trajectory_count": 30,
+  "all_numerical_gates_pass": true,
+  "all_pairs_reduce_secretion": false,
+  "criterion": "Descriptive total 0 to 600 s secretion comparison. Time traces and the inherited absolute gland scale are diagnostics only; experimental magnitude is context only.",
+  "overall_ratio_range": [
+    1.0822869171217397,
+    1.216630070909048
+  ],
+  "overall_ratio_median": 1.1781906073567845,
+  "overall_reduction_percent_range": [
+    -21.663007090904806,
+    -8.228691712173974
+  ],
+  "overall_reduction_percent_median": -17.81906073567845,
+  "overall": {
+    "pair_count": 30,
+    "valid_count": 30,
+    "all_pairs_reduce_secretion": false,
+    "ratio_min": 1.0822869171217397,
+    "ratio_median": 1.1781906073567845,
+    "ratio_max": 1.216630070909048,
+    "reduction_percent_min": -21.663007090904806,
+    "reduction_percent_median": -17.81906073567845,
+    "reduction_percent_max": -8.228691712173974,
+    "ae2_reduction_percent_min": -0.160080127286788,
+    "ae2_reduction_percent_median": -0.08683585378330694,
+    "ae2_reduction_percent_max": -0.03179501472343471,
+    "ae4_to_ae2_effect_magnitude_ratio_min": 112.0037653712976,
+    "ae4_to_ae2_effect_magnitude_ratio_median": 196.02673674192334,
+    "ae4_to_ae2_effect_magnitude_ratio_max": 449.3422882857473
+  },
+  "per_calcium": [
+    {
+      "calcium_uM": 0.1,
+      "pair_count": 10,
+      "valid_count": 10,
+      "all_pairs_reduce_secretion": false,
+      "ratio_min": 1.0822869171217397,
+      "ratio_median": 1.1327270935087324,
+      "ratio_max": 1.163179701753124,
+      "reduction_percent_min": -16.317970175312404,
+      "reduction_percent_median": -13.272709350873246,
+      "reduction_percent_max": -8.228691712173974,
+      "ae2_reduction_percent_min": -0.13919277856357937,
+      "ae2_reduction_percent_median": -0.0820686895037337,
+      "ae2_reduction_percent_max": -0.03179501472343471,
+      "ae4_to_ae2_effect_magnitude_ratio_min": 112.0037653712976,
+      "ae4_to_ae2_effect_magnitude_ratio_median": 188.01867103920472,
+      "ae4_to_ae2_effect_magnitude_ratio_max": 323.02306426849157
+    },
+    {
+      "calcium_uM": 0.25,
+      "pair_count": 10,
+      "valid_count": 10,
+      "all_pairs_reduce_secretion": false,
+      "ratio_min": 1.1454294969719807,
+      "ratio_median": 1.1852768758638876,
+      "ratio_max": 1.202714141279223,
+      "reduction_percent_min": -20.271414127922306,
+      "reduction_percent_median": -18.52768758638875,
+      "reduction_percent_max": -14.542949697198072,
+      "ae2_reduction_percent_min": -0.15598183303151547,
+      "ae2_reduction_percent_median": -0.0949020523484223,
+      "ae2_reduction_percent_max": -0.0392643527121983,
+      "ae4_to_ae2_effect_magnitude_ratio_min": 125.24753721720612,
+      "ae4_to_ae2_effect_magnitude_ratio_median": 250.17283389981355,
+      "ae4_to_ae2_effect_magnitude_ratio_max": 422.7929137040328
+    },
+    {
+      "calcium_uM": 0.5,
+      "pair_count": 10,
+      "valid_count": 10,
+      "all_pairs_reduce_secretion": false,
+      "ratio_min": 1.1669683146007646,
+      "ratio_median": 1.2003145074316128,
+      "ratio_max": 1.216630070909048,
+      "reduction_percent_min": -21.663007090904806,
+      "reduction_percent_median": -20.031450743161272,
+      "reduction_percent_max": -16.696831460076456,
+      "ae2_reduction_percent_min": -0.160080127286788,
+      "ae2_reduction_percent_median": -0.09854599887855198,
+      "ae2_reduction_percent_max": -0.041646420393726125,
+      "ae4_to_ae2_effect_magnitude_ratio_min": 128.94780836265232,
+      "ae4_to_ae2_effect_magnitude_ratio_median": 267.08388808251937,
+      "ae4_to_ae2_effect_magnitude_ratio_max": 449.3422882857473
+    }
+  ],
+  "per_routing_family": [
+    {
+      "routing_family": "AE4NA05",
+      "pair_count": 15,
+      "valid_count": 15,
+      "all_pairs_reduce_secretion": false,
+      "ratio_min": 1.1405212997324823,
+      "ratio_median": 1.1915446001085646,
+      "ratio_max": 1.2133051855608012,
+      "reduction_percent_min": -21.330518556080126,
+      "reduction_percent_median": -19.154460010856454,
+      "reduction_percent_max": -14.052129973248228,
+      "ae2_reduction_percent_min": -0.160080127286788,
+      "ae2_reduction_percent_median": -0.14931326104588027,
+      "ae2_reduction_percent_max": -0.1254612282601819,
+      "ae4_to_ae2_effect_magnitude_ratio_min": 112.0037653712976,
+      "ae4_to_ae2_effect_magnitude_ratio_median": 127.89452046245428,
+      "ae4_to_ae2_effect_magnitude_ratio_max": 133.24901046502737
+    },
+    {
+      "routing_family": "AE4NA20",
+      "pair_count": 15,
+      "valid_count": 15,
+      "all_pairs_reduce_secretion": false,
+      "ratio_min": 1.0822869171217397,
+      "ratio_median": 1.1669683146007646,
+      "ratio_max": 1.216630070909048,
+      "reduction_percent_min": -21.663007090904806,
+      "reduction_percent_median": -16.696831460076456,
+      "reduction_percent_max": -8.228691712173974,
+      "ae2_reduction_percent_min": -0.048210479306431964,
+      "ae2_reduction_percent_median": -0.04173674815157735,
+      "ae2_reduction_percent_max": -0.03179501472343471,
+      "ae4_to_ae2_effect_magnitude_ratio_min": 258.8044630188193,
+      "ae4_to_ae2_effect_magnitude_ratio_median": 399.63191293433596,
+      "ae4_to_ae2_effect_magnitude_ratio_max": 449.3422882857473
+    }
+  ],
+  "per_calcium_and_routing_family": [
+    {
+      "calcium_uM": 0.1,
+      "routing_family": "AE4NA05",
+      "pair_count": 5,
+      "valid_count": 5,
+      "all_pairs_reduce_secretion": false,
+      "ratio_min": 1.1405212997324823,
+      "ratio_median": 1.151854570491648,
+      "ratio_max": 1.163179701753124,
+      "reduction_percent_min": -16.317970175312404,
+      "reduction_percent_median": -15.185457049164807,
+      "reduction_percent_max": -14.052129973248228,
+      "ae2_reduction_percent_min": -0.13919277856357937,
+      "ae2_reduction_percent_median": -0.13223665626935777,
+      "ae2_reduction_percent_max": -0.1254612282601819,
+      "ae4_to_ae2_effect_magnitude_ratio_min": 112.0037653712976,
+      "ae4_to_ae2_effect_magnitude_ratio_median": 114.83545846949566,
+      "ae4_to_ae2_effect_magnitude_ratio_max": 117.23287905959009
+    },
+    {
+      "calcium_uM": 0.1,
+      "routing_family": "AE4NA20",
+      "pair_count": 5,
+      "valid_count": 5,
+      "all_pairs_reduce_secretion": false,
+      "ratio_min": 1.0822869171217397,
+      "ratio_median": 1.1048984991343334,
+      "ratio_max": 1.1249328872849826,
+      "reduction_percent_min": -12.493288728498264,
+      "reduction_percent_median": -10.489849913433336,
+      "reduction_percent_max": -8.228691712173974,
+      "ae2_reduction_percent_min": -0.038676150747285476,
+      "ae2_reduction_percent_median": -0.03547521787987673,
+      "ae2_reduction_percent_max": -0.03179501472343471,
+      "ae4_to_ae2_effect_magnitude_ratio_min": 258.8044630188193,
+      "ae4_to_ae2_effect_magnitude_ratio_median": 295.69515116026076,
+      "ae4_to_ae2_effect_magnitude_ratio_max": 323.02306426849157
+    },
+    {
+      "calcium_uM": 0.25,
+      "routing_family": "AE4NA05",
+      "pair_count": 5,
+      "valid_count": 5,
+      "all_pairs_reduce_secretion": false,
+      "ratio_min": 1.1799146304033774,
+      "ratio_median": 1.1915446001085646,
+      "ratio_max": 1.202714141279223,
+      "reduction_percent_min": -20.271414127922306,
+      "reduction_percent_median": -19.154460010856454,
+      "reduction_percent_max": -17.99146304033774,
+      "ae2_reduction_percent_min": -0.15598183303151547,
+      "ae2_reduction_percent_median": -0.15020287739817562,
+      "ae2_reduction_percent_max": -0.14364724001827422,
+      "ae4_to_ae2_effect_magnitude_ratio_min": 125.24753721720612,
+      "ae4_to_ae2_effect_magnitude_ratio_median": 127.89452046245428,
+      "ae4_to_ae2_effect_magnitude_ratio_max": 129.96009685196194
+    },
+    {
+      "calcium_uM": 0.25,
+      "routing_family": "AE4NA20",
+      "pair_count": 5,
+      "valid_count": 5,
+      "all_pairs_reduce_secretion": false,
+      "ratio_min": 1.1454294969719807,
+      "ratio_median": 1.1716638006421243,
+      "ratio_max": 1.1951479530489553,
+      "reduction_percent_min": -19.51479530489553,
+      "reduction_percent_median": -17.166380064212426,
+      "reduction_percent_max": -14.542949697198072,
+      "ae2_reduction_percent_min": -0.046156864678570386,
+      "ae2_reduction_percent_median": -0.04295547855066584,
+      "ae2_reduction_percent_max": -0.0392643527121983,
+      "ae4_to_ae2_effect_magnitude_ratio_min": 370.38557094766514,
+      "ae4_to_ae2_effect_magnitude_ratio_median": 399.63191293433596,
+      "ae4_to_ae2_effect_magnitude_ratio_max": 422.7929137040328
+    },
+    {
+      "calcium_uM": 0.5,
+      "routing_family": "AE4NA05",
+      "pair_count": 5,
+      "valid_count": 5,
+      "all_pairs_reduce_secretion": false,
+      "ratio_min": 1.1919794550991794,
+      "ratio_median": 1.202562880594413,
+      "ratio_max": 1.2133051855608012,
+      "reduction_percent_min": -21.330518556080126,
+      "reduction_percent_median": -20.256288059441307,
+      "reduction_percent_max": -19.197945509917936,
+      "ae2_reduction_percent_min": -0.160080127286788,
+      "ae2_reduction_percent_median": -0.1549579244631616,
+      "ae2_reduction_percent_max": -0.148881518450672,
+      "ae4_to_ae2_effect_magnitude_ratio_min": 128.94780836265232,
+      "ae4_to_ae2_effect_magnitude_ratio_median": 131.31354683395085,
+      "ae4_to_ae2_effect_magnitude_ratio_max": 133.24901046502737
+    },
+    {
+      "calcium_uM": 0.5,
+      "routing_family": "AE4NA20",
+      "pair_count": 5,
+      "valid_count": 5,
+      "all_pairs_reduce_secretion": false,
+      "ratio_min": 1.1669683146007646,
+      "ratio_median": 1.19304025571088,
+      "ratio_max": 1.216630070909048,
+      "reduction_percent_min": -21.663007090904806,
+      "reduction_percent_median": -19.30402557108799,
+      "reduction_percent_max": -16.696831460076456,
+      "ae2_reduction_percent_min": -0.048210479306431964,
+      "ae2_reduction_percent_median": -0.04514216046573871,
+      "ae2_reduction_percent_max": -0.041646420393726125,
+      "ae4_to_ae2_effect_magnitude_ratio_min": 400.9187657000113,
+      "ae4_to_ae2_effect_magnitude_ratio_median": 427.6274190673496,
+      "ae4_to_ae2_effect_magnitude_ratio_max": 449.3422882857473
+    }
+  ],
+  "numerical_maxima": {
+    "max_dimensionless_conservation_ratio": 0.002277289468111121,
+    "max_abs_cell_charge_fmol": 6.394884621840902e-13,
+    "max_abs_lumen_charge_fmol": 5.945244296867713e-14
+  },
+  "failed_cases": []
+}
