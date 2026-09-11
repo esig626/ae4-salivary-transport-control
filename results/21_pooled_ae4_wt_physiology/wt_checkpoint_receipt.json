@@ -1,0 +1,11 @@
+{
+  "branch": "codex/task-21-pooled-ae4-wt-physiology-recalibration",
+  "checkpoint_sha": "317b2781ac094a3e9d7001ab7da6cf1b7cd02e40",
+  "checkpoint_tree_sha": "e24a1b07f2070b2cf8853fa2a14a628652bf6488",
+  "remote_manifest_blob_sha": "7132903e6b1425348eb850c3abe82a6b23b5e212",
+  "remote_ref_verified_utc": "2026-09-11T07:46:43.842Z",
+  "remote_ref_verified": true,
+  "retained_WT_solutions": 0,
+  "task21_genotype_evaluations_before_checkpoint": 0,
+  "legacy_test_ordering_deviation": "results/21_pooled_ae4_wt_physiology/validation_scope_deviation.json"
+}
