@@ -4,147 +4,134 @@ These instructions apply to all work in this repository.
 
 ## Current scientific objective
 
-The active task is Task 18. Execute:
+The active task is Task 19. Execute:
 
-`prompts/18_fixed_wt_inverse_transporter_rebalance.md`
+`prompts/19_ae4_loss_nak_pump_coupling.md`
 
 Work only on branch:
 
-`codex/task-18-fixed-wt-inverse-rebalance`
+`codex/task-19-ae4-loss-nak-pump-coupling`
 
-Tracking issue: #13.
+Tracking issue: #17.
 
-Task 18 supersedes Task 17's inherited-capacity feasibility experiment.
+Repository inheritance is merged Task 18 on `main`, merge commit:
 
-## Scientific inheritance
+`52a56cc8e8788cdb5cae60dcbaa75257de2878dd`.
 
-Repository inheritance is completed Task 17 commit:
+## Scientific question
 
-`fb2afcf3e23af1d19b297280ad67953370f7c9a9`
+Task 18 showed that changing WT chloride allocation does not repair the wrong-direction AE4-loss phenotype. Task 19 tests one narrow alternative mechanism:
 
-The unchanged production scientific model baseline remains completed Task 14B commit:
+> Does reducing effective Na/K-ATPase support together with AE4 near-loss make AE4 loss secretion-limiting?
 
-`4d4403f279fc36aec940c9e4759486d02f07e3f6`.
+This is a diagnostic sufficiency test, not evidence that AE4 experimentally regulates the pump.
 
-Task 17 correctly kept the WT conserved states fixed, but it still treated inherited capacity assumptions such as total K conductance 14 nS as hard feasibility constraints. Task 18 removes that mistake.
+## Primary model scope
 
-## Fixed WT means fixed conserved state
+Use the inherited baseline chloride-allocation model only.
 
-For every inherited accepted WT root, keep all conserved intracellular and luminal amounts and both volumes exactly unchanged, together with the inherited resting regulatory coordinate.
+Do not use Task 18's 0.10 or 0.30 rebalanced WT parameterizations in the primary Task 19 factorial panel. Those conditions require large capacity shifts and would confound this mechanism diagnostic.
 
-Do not perform a new WT state search, state continuation, state fitting, rounding or reconstruction.
+Retain all ten inherited roots, both AE4 routing families, and calcium 0.10, 0.25 and 0.50 uM.
 
-Algebraic membrane voltages may reclose self-consistently under the rebalanced capacities. Report their changes. Do not treat historical voltage targets as immutable laws.
+## Fixed factorial panel
 
-## Chloride allocation
+Use exactly:
 
-Use exactly three conditions:
+AE4 expression:
 
-- inherited baseline;
-- AE4 positive basolateral chloride-loading share 0.10;
-- AE4 positive basolateral chloride-loading share 0.30.
+- 1.0
+- 0.05
 
-No additional share values or threshold searches are allowed.
+Na/K-pump capacity scale:
 
-For each root, identify the actual positive basolateral intracellular chloride-loading pool from the production flux ledger.
+- 1.0
+- 0.50
+- 0.10
 
-At each target, increase AE4 by scaling the complete coupled transporter so it carries the declared share of that inherited positive-loading pool.
+No intermediate pump scales, threshold searches or phenotype-guided refinement.
 
-Reduce every other positive basolateral chloride-loading pathway proportionally so the total positive-loading pool remains equal to the inherited WT value.
+Reuse exact hash-valid scale-1.0 results wherever possible.
 
-Do not scale AE4 chloride independently of its Na/K/HCO3/TIC/alkalinity coupling.
+## Pump intervention
 
-Negative chloride counterfluxes are not part of the positive-loading denominator.
+Scale the complete Na/K-ATPase capacity while preserving:
 
-## Rebalance the rest of the network
+- 3Na:2K stoichiometry;
+- pump law and direction;
+- apical/basolateral pump partition;
+- every non-pump parameter.
 
-The changed AE4 contribution perturbs Na, K, carbon, alkalinity and current balance even though the WT conserved state is fixed.
+If total capacity plus fraction is used, scale total capacity and keep the fraction fixed. If separate effective capacities are used, multiply both by the same declared scale.
 
-Restore all complete production steady-state equations by adjusting existing uncertain capacity-like parameters in the current topology.
+Do not change pump affinity constants or topology.
 
-At minimum allow the solver to consider:
+## Hard freeze outside AE4 expression and pump scale
 
-- total K conductance and its membrane allocation;
-- CaCC conductance/capacity;
-- apical and basolateral Na/K pump capacities;
-- NHE1 capacity;
-- neutral CO2 exchange capacities;
-- non-Cl paracellular Na, K and HCO3 capacities;
-- paracellular Cl capacity only if required to preserve fixed chloride balance under voltage reclosure;
-- any other already-existing active capacity multiplier required for full source rank.
+Do not modify:
 
-Do not add a transporter, background current or new mechanism.
+- AE4 transport law, routing or thermodynamics;
+- chloride allocation;
+- NKCC1;
+- AE2;
+- NHE1;
+- CaCC;
+- K channels;
+- paracellular pathways;
+- acid-base chemistry;
+- water/lumen transport;
+- bath;
+- geometry;
+- regulation;
+- calcium inputs;
+- solver or conservation tolerances.
 
-## Hard constraints versus reference values
+Do not refit any capacity after changing AE4 expression or pump scale.
 
-Hard constraints are structural physics and the fixed WT state:
+## Mandatory controls
 
-- exact fixed WT conserved state;
-- full resting RHS equal to zero within inherited numerical tolerances;
-- target AE4 positive-loading share;
-- preserved total positive basolateral chloride-loading pool;
-- existing stoichiometry, topology, source signs and thermodynamic structure;
-- nonnegative physical capacities/permeabilities;
-- fractions in [0,1];
-- bath, chemistry and geometry;
-- charge, current, carbon, alkalinity, water and lumen accounting;
-- finite physical model quantities.
+Pump impairment alone can reduce secretion. Therefore for pump scales 0.50 and 0.10, evaluate both AE4 expression 1.0 and AE4 expression 0.05.
 
-The following are **reference values, not hard feasibility walls**:
+Do not call the mechanism successful merely because `Q(AE4=0.05,pump<1)` is below normal WT flow.
 
-- 14 nS total K conductance;
-- 31.4 nS CaCC maximum conductance;
-- old NHE1 parameter bounds;
-- old AE4 carrier bounds;
-- old common-conductance bounds;
-- previous pump capacities;
-- previous paracellular capacities;
-- previous CO2 exchange capacities;
-- capacity values imported from parotid or another preparation as modeling assumptions.
+Report:
 
-Report departures from those values; do not reject a mathematically and physically valid fixed-WT solution merely for exceeding them.
+- matched AE4 effect at each pump scale;
+- pump-only effect in AE4-intact cells;
+- pump effect in AE4-low cells;
+- AE4 × pump interaction;
+- coupled-hypothesis comparison against normal WT.
 
-## Canonical solution rule
+Use the exact definitions in the Task 19 prompt.
 
-Before genotype evaluation, solve the fixed-WT inverse problem for every root/share using no genotype information.
+## Numerical/root discipline
 
-If multiple parameterizations satisfy the hard constraints, choose one canonical solution by:
+Use connected resting-state continuation from the inherited root.
 
-1. minimizing the largest absolute log-fold change among adjustable positive capacities relative to baseline;
-2. then minimizing the sum of squared log-fold changes.
+For each pump scale below 1, first continue the AE4-intact state to the target pump capacity, then continue AE4 expression to 0.05 at fixed pump scale.
 
-Use independent positive membrane capacities where this avoids arbitrary penalties on partition fractions.
+Internal continuation points are numerical only, not extra scientific pump conditions.
 
-Do not use the known AE4-loss phenotype or Task 14B secretion result in feasibility, optimization, ranking or root selection.
+Do not rescue failed roots by changing any other parameter or jumping to a disconnected root.
 
-A local optimizer failure is not an infeasibility proof. Preserve full rank/nullspace information and distinguish structural infeasibility from numerical nonconvergence.
+## Interpretation discipline
 
-## Freeze before genotype evaluation
+The experimental approximately 35% AE4-loss secretion reduction is context only after the complete factorial results are frozen.
 
-First complete, verify, commit and push the entire WT inverse solution set.
+Do not choose a pump scale based on closeness to experiment.
 
-Only after that frozen WT checkpoint may genotype results be accessed.
+Do not fit a continuous AE4-to-pump coupling law in Task 19.
 
-For every feasible modified parameterization:
-
-- run matched WT dynamics at calcium 0.10, 0.25 and 0.50 uM;
-- reduce AE4 expression to 0.05 with all Task 18 parameters otherwise frozen;
-- evaluate AE2 loss with the same frozen parameters;
-- do not refit either genotype;
-- do not attempt exact AE4 zero.
-
-Reuse hash-valid baseline trajectories wherever scientifically identical.
-
-Absolute whole-gland mapping remains nonblocking. Detailed AE4-loss time-course shape remains diagnostic only.
+A real mechanism signal requires distinguishing an AE4 × pump interaction from the trivial effect of pump inhibition itself.
 
 ## General discipline
 
 Do not edit `archive/`.
 
-Do not merge to `main`.
-
 Do not draft manuscript text.
 
-Do not perform unrelated model reduction, GSPT or identifiability work.
+Do not perform unrelated calibration, model reduction, GSPT or identifiability work.
 
-Commit and push completed Task 18 work only to `codex/task-18-fixed-wt-inverse-rebalance`.
+Commit and push completed Task 19 work to `codex/task-19-ae4-loss-nak-pump-coupling`.
+
+After Task 19 is complete and the required tests pass, open a pull request to `main` and merge the completed task using a merge commit. If a genuine scientific/code failure or merge conflict is exposed, report it rather than forcing the merge.
