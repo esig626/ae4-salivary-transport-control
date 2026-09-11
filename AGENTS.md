@@ -4,110 +4,120 @@ These instructions apply to all work in this repository.
 
 ## Current scientific objective
 
-The active task is Task 20. Execute:
+The active task is Task 21. Execute:
 
-`prompts/20_ae4_pooled_cation_no_slip.md`
+`prompts/21_pooled_ae4_wt_physiology_recalibration.md`
 
 Work only on branch:
 
-`codex/task-20-ae4-pooled-cation-no-slip`
+`codex/task-21-pooled-ae4-wt-physiology-recalibration`
 
-Tracking issue: #19.
+Tracking issue: #21.
 
-Repository inheritance is completed and merged Task 19 on `main`, merge commit:
+Repository inheritance is merged Task 20 on `main`, merge commit:
 
-`e98789b276607807f7c9c88ff53605008a19cb66`.
+`3f41579ef81f1e73cc37dc1ce4ab3380f98c4659`.
 
-## Why Task 20 exists
+## Scientific premise
 
-The current physiological AE4 model permits independent Na and K branch fluxes. In the frozen WT ensemble those branches run in opposite directions and cancel by roughly 97–99%, leaving very small productive chloride transport.
+Task 20 established that the exact legacy WT states are thermodynamically incompatible with positive chloride loading under the pooled-cation 1:1:2 no-slip AE4 law. Those exact states were generated under the legacy independent Na/K branch mechanism and are no longer hard biological targets.
 
-Tasks 18 and 19 showed that neither chloride-load redistribution nor Na/K-pump impairment repairs the wrong-direction AE4-loss phenotype.
+Task 21 therefore recalibrates the pooled/no-slip model against WT physiology rather than preserving the legacy WT state byte-for-byte.
 
-The 2016 AE4 experiments establish cation transport capability, electroneutrality and reversibility, but do not establish simultaneous independent opposing Na/K cycles in physiological mixed solution. Their physiological working model treats Na/K as a nonselective pooled cation pathway.
+## AE4 mechanism
 
-Task 20 therefore tests a less committal pooled-cation architecture.
+Use the Task 20 `POOLED_CATION_112_NO_SLIP` implementation unchanged.
 
-## Mechanism rule
+Do not:
 
-Do not delete the legacy `SR2_SHARED_112_QSS` model.
+- reintroduce independent Na/K branches;
+- permit an opposing Na/K slip cycle;
+- change the 1:1:2 working stoichiometry in this task;
+- add a fitted cation-selectivity mechanism;
+- add a new transporter or pathway.
 
-Add a separate pooled-cation AE4 mechanism with:
+The pooled mechanism must retain one scalar net cycle with Na and K following the same net cycle direction.
 
-- one scalar net cycle flux;
-- pooled Na+K thermodynamic activity;
-- the current 1:1:2 Cl:cation:HCO3 stoichiometry retained only as a working-model assumption;
-- electroneutrality and reversible local detailed balance;
-- donor-side Na/K partitioning of the one net cation flux;
-- no independent Na/K slip loop.
+## WT data and physiology
 
-At every state the Na and K AE4 net sources must have the same sign or one must be zero.
+Primary measured WT targets:
 
-The primary WT pooled-cation selectivity is equal Na/K weighting. Do not introduce a fitted cation-selectivity parameter in the whole-cell phenotype test.
+- resting intracellular chloride `50.10 ± 1.50 mM`;
+- resting pH `6.91 ± 0.07`.
 
-## Evidence discipline
+Use ±2 reported SEM screening bands:
 
-Do not claim that 1:1:2 stoichiometry, equal microscopic Na/K use, or donor-side partitioning are experimentally identified facts. They are the declared coarse-grained mechanism being tested.
+- chloride `[47.10, 53.10] mM`;
+- pH `[6.77, 7.05]`.
 
-The direct evidence to preserve is qualitative:
+Before optimisation, predeclare broad physiological envelopes for intracellular Na, intracellular K and cell volume from the repository provenance/source ledger and existing physiological references. Record the source and rationale. Do not derive these bounds from genotype behaviour.
 
-- Na transport support;
-- K transport support;
-- Cl/HCO3 exchange;
-- electroneutrality;
-- reversibility;
-- broad monovalent-cation permissiveness.
+The legacy WT Na/K/volume values are starting points or provenance references only, not exact targets.
 
-Do not map the 2016 Hill coefficients to transported-ion count.
+## WT calibration
 
-## Whole-cell scope
+Allow the full WT conserved state to re-equilibrate.
 
-Retain all ten inherited WT conserved states as fixed physiological targets.
+Allow existing uncertain capacities/conductances to recalibrate as needed, including AE4, NKCC1, NHE1, pumps, K conductance, CaCC, CO2 exchange and paracellular capacities.
 
-Use exactly two pooled-model WT loading conditions:
+Historical capacity values and old calibration boxes are reference values, not hard feasibility walls.
 
-1. `P0`: pooled AE4 net chloride loading matched to the inherited legacy AE4 net chloride flux for that root;
-2. `P10`: pooled AE4 carries 10% of the inherited positive basolateral chloride-loading pool.
+Every accepted WT solution must satisfy:
 
-Do not run a new 30% condition.
+- full production steady-state closure;
+- membrane-current closure;
+- all conservation identities;
+- chloride and pH screening bands;
+- predeclared Na/K/volume physiological envelopes;
+- finite physical states and capacities;
+- positive pooled AE4 affinity for productive chloride loading;
+- strictly positive pooled AE4 chloride flux;
+- pooled no-slip invariant;
+- valid production dynamics at calcium 0.10, 0.25 and 0.50 uM.
 
-For each condition use the Task 18 fixed-WT inverse-rebalancing method. Old conductances and capacity boxes are reference values, not hard laws. Keep the exact WT conserved state fixed and solve existing uncertain capacities needed for full steady-state closure.
+Do not impose the Task 18 10% or 30% chloride-share conditions.
 
-Use the Task 18 minimal-deviation objective and no genotype information.
+Do not match the pooled AE4 flux to the legacy AE4 flux.
+
+## WT-only objective and root discipline
+
+Use WT information only.
+
+Rank admissible WT solutions by:
+
+1. fit to measured WT chloride and pH using their reported SEM scales;
+2. minimum largest absolute log-fold capacity departure from inherited references;
+3. minimum summed squared log-fold capacity departure.
+
+Do not penalise state movement away from the legacy WT state beyond the declared physiological constraints.
+
+Use all ten inherited WT roots as independent numerical seeds. Deduplicate identical solutions and retain every distinct admissible WT calibration. Do not select solutions using later genotype results.
 
 ## Phenotype firewall
 
-Before AE4-loss or AE2-loss evaluation:
+Before any AE4-loss or AE2-loss calculation:
 
-- finish all pooled-model WT inverse solutions;
-- verify exact fixed-state preservation and full production closure;
-- verify the pooled no-slip invariant;
-- commit and push a frozen WT checkpoint.
+1. freeze the physiology contract;
+2. complete the entire WT calibration ensemble;
+3. run and validate all WT dynamics;
+4. write all WT states, parameters and flux ledgers;
+5. commit and push the complete WT set;
+6. record and remotely verify the WT checkpoint SHA.
 
-Only after that checkpoint may genotype outcomes be accessed.
+Only after this checkpoint may genotype outputs be evaluated.
 
-## Genotype evaluation
+## Held-out genotype tests
 
-For each feasible pooled-model WT parameterization:
+For every frozen WT calibration:
 
-- run WT dynamics at calcium 0.10, 0.25 and 0.50 uM;
-- reduce AE4 expression from 1.0 to 0.05 with all other parameters frozen;
-- evaluate matched AE2 loss;
-- do not refit either genotype;
-- do not attempt exact AE4 zero.
+- reduce AE4 expression to 0.05 with all other calibrated parameters fixed;
+- evaluate matched AE2 loss using existing project semantics;
+- allow each genotype state to re-equilibrate only through the production equations;
+- do not refit or compensate any capacity;
+- run calcium 0.10, 0.25 and 0.50 uM;
+- report matched secretion ratios and resting-state shifts.
 
-The approximately 35% experimental AE4-loss deficit is context only after results are frozen.
-
-Report resting Cl, pH, Na, K and major compensating fluxes as secondary diagnostics.
-
-## Comparator discipline
-
-Reuse hash-valid legacy-model results rather than recomputing them:
-
-- legacy inherited allocation;
-- legacy 10% AE4-loading results from Task 18.
-
-The key comparison is whether removing independent Na/K slip changes the AE4-loss phenotype direction at matched productive chloride loading.
+The approximately 35% experimental AE4-loss secretion deficit is held-out context only after all genotype results are frozen. Never fit to it.
 
 ## General discipline
 
@@ -115,8 +125,8 @@ Do not edit `archive/`.
 
 Do not draft manuscript text.
 
-Do not perform unrelated calibration, model reduction, GSPT or identifiability work.
+Do not perform unrelated model reduction, GSPT or identifiability work.
 
-Commit and push completed Task 20 work only to `codex/task-20-ae4-pooled-cation-no-slip`.
+Commit and push completed Task 21 work only to `codex/task-21-pooled-ae4-wt-physiology-recalibration`.
 
-After completion, open a PR to `main` but do not merge automatically. Report the Task 20 scientific result before merge.
+After completion, open a PR to `main` but do not merge automatically. Report the Task 21 scientific result before merge.
