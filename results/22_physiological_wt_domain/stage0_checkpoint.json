@@ -1,0 +1,8 @@
+{
+  "checkpoint_sha": "a1ec05b706dfaf4c1574abe3b33ea39f0195d472",
+  "remote_branch": "codex/task-22-physiological-wt-domain",
+  "remote_ref_verified": true,
+  "remote_verified_utc": "2026-09-11T09:46:57.423Z",
+  "remote_blob_sha": "30e9fb69cf6212b3afb54e7e498ed52e517ab442",
+  "verification_method": "Authenticated GitHub GET branch ref, commit and immutable file by checkpoint SHA"
+}
