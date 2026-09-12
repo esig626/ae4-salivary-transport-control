@@ -1,44 +1,13 @@
-# OS and editor files
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
-*~
-.vscode/
-.idea/
-
-# Python
 __pycache__/
 *.py[cod]
-.pytest_cache/
 .venv/
-venv/
-.env
-
-# MATLAB
-*.asv
-*.m~
-slprj/
-codegen/
-
-# LaTeX build products
-*.aux
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls
-*.log
-*.out
-*.synctex.gz
-*.toc
-*.lof
-*.lot
-
-# Generated analysis products
-results/tmp/
-figures/tmp/
-*.tmp
-
-# Large local raw data
-raw_data/
-data/raw/
+.pytest_cache/
+.DS_Store
+local_cache/
+*.npz
+*.npy
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.bundle

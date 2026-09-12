@@ -1,4 +1,0 @@
-{"root_id": "N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA20_P2_H1:B00", "calcium_uM": 0.1, "architecture": "routing_only", "ae4_expression": 0.05, "valid": true, "total_0_600_pL": 0.9617118542943011, "wall_seconds": 0.6228852799977176}
-{"root_id": "N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA05_P1_H1:B00", "calcium_uM": 0.5, "architecture": "routing_only", "ae4_expression": 1.0, "valid": true, "total_0_600_pL": 0.9544979790646878, "wall_seconds": 0.6321136219994514}
-{"root_id": "N_ABS_NKCC_S4_PHIGH_KLOW_AE4NA20_P2_H1:B00", "calcium_uM": 0.1, "architecture": "routing_only", "ae4_expression": 1.0, "valid": true, "total_0_600_pL": 0.9292951825348734, "wall_seconds": 0.6882135160012695}
-{"root_id": "N_ABS_NKCC_S4_PLOW_KHIGH_AE4NA05_P1_H1:B00", "calcium_uM": 0.5, "architecture": "routing_only", "ae4_expression": 0.05, "valid": true, "total_0_600_pL": 1.0340558355692862, "wall_seconds": 0.7437656090005476}

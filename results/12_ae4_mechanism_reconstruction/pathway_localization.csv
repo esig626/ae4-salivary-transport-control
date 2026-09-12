@@ -1,8 +1,0 @@
-pathway,correction_vector,signature,absolute_cosine_alignment,best_one_component_residual_fraction,historical_vs_published_mismatch,rank
-NaK_ATPase,"[-0.03217931476674193, 0.03217931476674193, 0.0, 0.0]","[-3.0, 2.0, 0.0, 0.0]",0.9805806756909202,0.19611613513818404,historical M basis recovered but published density/whole-cell scale unresolved,1
-CaKC_K_efflux,"[-0.03217931476674193, 0.03217931476674193, 0.0, 0.0]","[0.0, -1.0, 0.0, 0.0]",0.7071067811865475,0.7071067811865475,historical gates/conductance differ materially from the published values,2
-NHE1,"[-0.03217931476674193, 0.03217931476674193, 0.0, 0.0]","[1.0, 0.0, 0.0, 0.0]",0.7071067811865475,0.7071067811865475,historical first-power proton law differs from published squared law,3
-volume_dilution_at_WT,"[-0.03217931476674193, 0.03217931476674193, 0.0, 0.0]","[-25.0, -120.0, -50.0, -10.0]",0.5059924592267421,0.8625379013154574,historical water coefficients are fitted and not the published permeability set,4
-AE2,"[-0.03217931476674193, 0.03217931476674193, 0.0, 0.0]","[0.0, 0.0, 1.0, -1.0]",0.0,1.0,historical 1e-4 mM constant conflicts with the printed 1e4 mM value,5
-NKCC1,"[-0.03217931476674193, 0.03217931476674193, 0.0, 0.0]","[1.0, 1.0, 2.0, 0.0]",0.0,1.0,"coefficient convention corrected, but density/whole-cell scale remains unresolved",6
-buffer_acid_base,"[-0.03217931476674193, 0.03217931476674193, 0.0, 0.0]","[0.0, 0.0, 0.0, 1.0]",0.0,1.0,historical CO2 QSS/sign and fitted buffer scaling differ from published dynamics,7

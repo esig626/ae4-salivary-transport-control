@@ -1,18 +1,11 @@
-"""Task 13B modern full salivary acinar-cell model.
+"""Essential salivary transport modules for the Task 28 clean phase.
 
-Scientific modules are intentionally separable: conserved states, finite
-acid-base chemistry, membrane/current closure, water balance, AE4 transport,
-dynamic cAMP/PKA regulation, and integrated model assembly.
+The imported equations are an auditable reference, not an already repaired
+model. Historical task labels inside imported modules are provenance only.
 """
 
 __all__ = (
-    "acid_base",
-    "camp_pka",
-    "membranes",
-    "model",
-    "parameters",
-    "states",
-    "transporters",
-    "vbeta_diagnostic",
-    "water",
+    "acid_base", "ae4_routing_only", "camp_pka", "membranes", "model",
+    "nkcc_stimulation", "parameters", "states", "transporters",
+    "validation", "water",
 )

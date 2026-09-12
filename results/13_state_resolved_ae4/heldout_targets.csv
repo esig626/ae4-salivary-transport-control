@@ -1,5 +1,0 @@
-target_id,stage,quantity,read_before_model_freeze
-E15-06,VAL-A/LOC-B,AE4-null resting Cl,False
-E15-07_KO,VAL-A/LOC-B,AE4-null resting pH,False
-E15-02,STRICT,10-min secretion ratio,False
-E15-03,STRICT,secretion time course,False

@@ -1,0 +1,28 @@
+{
+  "repository": "esig626/ae4-salivary-transport-control",
+  "source_commit": "b9d4e769747e636ad79d44a23c64c729f31b506d",
+  "new_branch": "codex/task-28-transport-relationships",
+  "archived_main": "archive/pre-phase2-main-20260913",
+  "archived_task27": "archive/pre-phase2-task27-20260913",
+  "hash_type": "Git SHA1 of blob header plus exact file bytes",
+  "files": [
+    {"path":"src/modern_full_model/acid_base.py","source_path":"src/modern_full_model/acid_base.py","git_blob_sha":"669bd8554329ffcb5c9c70bce891415cda233fec","kind":"code"},
+    {"path":"src/modern_full_model/ae4_routing_only.py","source_path":"src/modern_full_model/ae4_routing_only.py","git_blob_sha":"f7ceb851df9e0cb8f4d8a9cb1c540055aa342d54","kind":"code"},
+    {"path":"src/modern_full_model/camp_pka.py","source_path":"src/modern_full_model/camp_pka.py","git_blob_sha":"e0fe3fdf2837d97ee8e235fe1a72dc9854c594b8","kind":"code"},
+    {"path":"src/modern_full_model/membranes.py","source_path":"src/modern_full_model/membranes.py","git_blob_sha":"30cd25bdba1599361136211b52320ff41a6aaf76","kind":"code"},
+    {"path":"src/modern_full_model/model.py","source_path":"src/modern_full_model/model.py","git_blob_sha":"14b1912b0c58b0fb3ae18ff639eeb6a726081c46","kind":"code"},
+    {"path":"src/modern_full_model/nkcc_stimulation.py","source_path":"src/modern_full_model/nkcc_stimulation.py","git_blob_sha":"6a8ace8dacffe153fbb3d8bbd7188dd0c28f4fd7","kind":"code"},
+    {"path":"src/modern_full_model/parameters.py","source_path":"src/modern_full_model/parameters.py","git_blob_sha":"95647f091187d0b6aa9e34180bcd8f5b92267185","kind":"code"},
+    {"path":"src/modern_full_model/states.py","source_path":"src/modern_full_model/states.py","git_blob_sha":"0a2d351830e1004bccd55c4ce609e640634eca03","kind":"code"},
+    {"path":"src/modern_full_model/transporters.py","source_path":"src/modern_full_model/transporters.py","git_blob_sha":"66738cf1963ee5bcb72cb0ebef809266df83d157","kind":"code"},
+    {"path":"src/modern_full_model/validation.py","source_path":"src/modern_full_model/validation.py","git_blob_sha":"62e88ea22fe132a4f656963fa48959f366fad79d","kind":"code"},
+    {"path":"src/modern_full_model/water.py","source_path":"src/modern_full_model/water.py","git_blob_sha":"911d70765f9da1d1bdae5cedf7405b4fb7f2a3af","kind":"code"},
+    {"path":"requirements.txt","source_path":"requirements-analysis.txt","git_blob_sha":"471f776f67541bcaadd042782a1c0a438d0009f3","kind":"reference"},
+    {"path":"reference/native_wt_contract.json","source_path":"results/13B_modern_full_model/native_dynamic_contract_manifest.json","git_blob_sha":"8198b25c48e83d197d72a888121da731a9133b29","kind":"reference"},
+    {"path":"reference/routing_numerical_contract.json","source_path":"results/ae4_routing_re_equilibrated/contract.json","git_blob_sha":"5e65527944347afe4b36db640822f56e70c41246","kind":"reference"},
+    {"path":"reference/routed_rest_reference.csv","source_path":"results/ae4_routing_re_equilibrated/resting_states.csv","git_blob_sha":"9c29f4157c53c714747b9e8ccc60dd6caacaf7a9","kind":"reference"},
+    {"path":"reference/R09_wt_rest.json","source_path":"results/ae4_routing_re_equilibrated/resting_states/N_ABS_NKCC_S4_PNOM_KMID_AE4NA05_P1_H1:B00_ca0.25_e1.00_rest.json","git_blob_sha":"b1d469b59853e1302ed74ab48ba0f4eb9d602018","kind":"reference"},
+    {"path":"reference/R10_wt_rest.json","source_path":"results/ae4_routing_re_equilibrated/resting_states/N_ABS_NKCC_S4_PNOM_KMID_AE4NA20_P2_H1:B00_ca0.25_e1.00_rest.json","git_blob_sha":"cc323374c4e3e76f5b9293f8535fee179e6b803e","kind":"reference"},
+    {"path":"reference/2018_model_concordance.md","source_path":"analysis/11_forensic_reconstruction/paper_code_concordance.md","git_blob_sha":"b704dd050d20436f8455ad0c7a4df580c80d8da0","kind":"reference"}
+  ]
+}

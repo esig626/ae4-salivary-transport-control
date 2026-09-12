@@ -1,9 +1,0 @@
-target_id,stage,quantity,used
-E16-03,CAL-T,direct Na transport,True
-E16-04,CAL-T,electroneutrality/voltage independence,True
-E16-05,CAL-T,direct K transport,True
-E16-07,CAL-T,"Na/K EC50, Hill, Rmin/Rmax",True
-E21-03,CAL-T,approximately 25% recombinant forskolin response,True
-E25-04,CAL-T,double-mutant Na collapse/K retention,True
-E15-05,CAL-WT,WT resting Cl,True
-E15-07_WT,CAL-WT,WT resting pH gate,False

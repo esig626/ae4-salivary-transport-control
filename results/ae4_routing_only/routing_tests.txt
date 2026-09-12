@@ -1,8 +1,0 @@
-test_forward_reverse_zero_and_asymmetric_cations (test_ae4_routing_only.RoutingTests.test_forward_reverse_zero_and_asymmetric_cations) ... ok
-test_only_na_and_k_amount_rhs_change_at_all_ten_frozen_roots (test_ae4_routing_only.RoutingTests.test_only_na_and_k_amount_rhs_change_at_all_ten_frozen_roots) ... ok
-test_zero_capacity_and_zero_regulation_stop_both_cations (test_ae4_routing_only.RoutingTests.test_zero_capacity_and_zero_regulation_stop_both_cations) ... ok
-
-----------------------------------------------------------------------
-Ran 3 tests in 0.052s
-
-OK
