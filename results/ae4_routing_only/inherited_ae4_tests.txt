@@ -1,0 +1,14 @@
+test_common_capacity_regulation_scales_flux_without_moving_reversal (test_modern_ae4.QssAndCouplingTests.test_common_capacity_regulation_scales_flux_without_moving_reversal) ... ok
+test_double_mutant_logic_collapses_na_and_retains_k (test_modern_ae4.QssAndCouplingTests.test_double_mutant_logic_collapses_na_and_retains_k) ... ok
+test_fast_sr5_gate_changes_conductance_not_affinity (test_modern_ae4.QssAndCouplingTests.test_fast_sr5_gate_changes_conductance_not_affinity) ... ok
+test_mixed_bath_attempt_fraction_is_explicit (test_modern_ae4.QssAndCouplingTests.test_mixed_bath_attempt_fraction_is_explicit) ... ok
+test_qss_closes_carrier_charge_and_entropy (test_modern_ae4.QssAndCouplingTests.test_qss_closes_carrier_charge_and_entropy) ... ok
+test_qss_timescale_is_reported_not_assumed (test_modern_ae4.QssAndCouplingTests.test_qss_timescale_is_reported_not_assumed) ... ok
+test_each_branch_source_is_electroneutral_and_carbon_complete (test_modern_ae4.SourceAndThermodynamicTests.test_each_branch_source_is_electroneutral_and_carbon_complete) ... ok
+test_reversal_has_zero_branch_affinity_and_current_at_global_equilibrium (test_modern_ae4.SourceAndThermodynamicTests.test_reversal_has_zero_branch_affinity_and_current_at_global_equilibrium) ... ok
+test_salivary_affinities_reproduce_task13_audit (test_modern_ae4.SourceAndThermodynamicTests.test_salivary_affinities_reproduce_task13_audit) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK
