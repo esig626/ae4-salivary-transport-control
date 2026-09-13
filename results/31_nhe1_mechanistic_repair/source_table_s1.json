@@ -1,0 +1,85 @@
+{
+  "doi": "10.1016/j.bpj.2009.08.053",
+  "pmcid": "PMC2776256",
+  "document": "Document S1. One figure and three tables",
+  "filename": "mmc1.pdf",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/2776256/bin/mmc1.pdf",
+  "original_supplement_endpoint": "http://www.biophysj.org/biophysj/supplemental/S0006-3495(09)01444-1",
+  "retrieved_utc_date": "2026-09-13",
+  "file_bytes": 231386,
+  "sha256": "3fdff54677a5c3347045de9e3d1efd52b62cbc2455400a37db1595e9f2fc146c",
+  "table": "S1",
+  "pdf_page_1_based": 5,
+  "selection": "eight-state ion-exchange model; Mod2; n_H=3; m_H=1",
+  "values": [
+    {
+      "symbol": "k1+",
+      "value": 10.5,
+      "unit": "ms^-1"
+    },
+    {
+      "symbol": "k1-",
+      "value": 0.201,
+      "unit": "ms^-1"
+    },
+    {
+      "symbol": "k2+",
+      "value": 15.8,
+      "unit": "ms^-1"
+    },
+    {
+      "symbol": "k2-",
+      "value": 183,
+      "unit": "ms^-1"
+    },
+    {
+      "symbol": "K_H_i",
+      "value": 0.000605,
+      "unit": "mM"
+    },
+    {
+      "symbol": "K_H_o",
+      "value": 0.00162,
+      "unit": "mM"
+    },
+    {
+      "symbol": "K_Na_i",
+      "value": 16.2,
+      "unit": "mM"
+    },
+    {
+      "symbol": "K_Na_o",
+      "value": 195,
+      "unit": "mM"
+    },
+    {
+      "symbol": "n_H",
+      "value": 3,
+      "unit": "dimensionless"
+    },
+    {
+      "symbol": "m_H",
+      "value": 1,
+      "unit": "dimensionless"
+    },
+    {
+      "symbol": "K_i",
+      "value": 3.07e-05,
+      "unit": "mM"
+    },
+    {
+      "symbol": "K_o",
+      "value": 4.8e-07,
+      "unit": "mM"
+    },
+    {
+      "symbol": "N",
+      "value": 489900,
+      "unit": "molecules/cell"
+    }
+  ],
+  "verification": "pdftotext transcription cross-checked against rendered PDF page 5",
+  "recorded_before_production_use": true,
+  "normalization_note": "N is recorded only as the source cell normalization; it is not imported as salivary density.",
+  "rounding_policy": "Preserve all Table S1 printed constants exactly, including k2-=183 ms^-1; separately quantify the rounding discrepancy against Eq. 6. No kinetic shape refit."
+}
