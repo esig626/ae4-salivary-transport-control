@@ -7,5 +7,5 @@ model. Historical task labels inside imported modules are provenance only.
 __all__ = (
     "acid_base", "ae4_routing_only", "camp_pka", "membranes", "model",
     "nkcc_stimulation", "parameters", "states", "transporters",
-    "validation", "water",
+    "task30_nhe1_repair", "validation", "water",
 )
