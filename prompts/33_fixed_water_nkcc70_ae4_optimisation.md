@@ -5,7 +5,7 @@ Branch: `codex/task-33-fixed-water-nkcc70-ae4-optimisation`
 
 ## Purpose
 
-Stop re-diagnosing already established defects. Build one WT parameterisation in which the existing routed AE4 mechanism has a substantial productive chloride-loading role, while preserving the mechanistic NHE1 repair and the accepted WT water throughput. Then freeze the WT parameterisation and test only AE4 expression 0.05 and 0.0.
+Stop re-diagnosing already established defects. Build one WT parameterisation in which the existing routed AE4 mechanism has a substantial productive chloride-loading role, while preserving the mechanistic NHE1 repair, the accepted WT resting water throughput, and a genuinely calcium-activated secretion response. Then freeze the WT parameterisation and test only AE4 expression 0.05 and 0.0.
 
 This is a bounded WT optimisation task. The 5% and 0% genotype outcomes are strictly held out until the WT solution is frozen.
 
@@ -24,7 +24,7 @@ Do not change:
 
 Do not introduce a new transporter, pH clamp, hidden acid/base source, genotype-specific parameter, or signalling rescue.
 
-## WT physiological guardrails and fixed water target
+## WT physiological guardrails and fixed resting water target
 
 Use R09 only for optimisation.
 
@@ -44,13 +44,39 @@ Also require:
 - cell volume `< 3 pL`;
 - all existing charge, current, carbon, conservation and water closure gates.
 
-Hold the WT resting ductal/luminal outflow target fixed to the accepted Task 31 value:
+Hold the WT **resting** ductal/luminal outflow target fixed to the accepted Task 31 value:
 
-`q_out_WT = 0.0010757073853493032 pL/s`.
+`q_out_rest_WT = 0.0010757073853493032 pL/s`.
 
-Keep all water-law parameters fixed. The optimiser must meet this water-throughput target through ionic/osmotic balance, not by changing water permeability or the outflow law. Report the achieved absolute and relative error.
+Keep all water-law parameters fixed. The optimiser must meet this resting throughput through ionic/osmotic balance, not by changing water permeability or the outflow law. Report the achieved absolute and relative error.
 
-Do not create a new water target from the genotype results.
+Do not create a new water target from genotype results.
+
+## Mandatory WT calcium-activated secretion gate
+
+A stationary WT fit is **not sufficient**. Before the WT parameterisation can be frozen, the same candidate must show that the standard central calcium stimulus actually activates secretion.
+
+For a WT candidate that has already passed all stationary constraints, run the existing standard central stimulation at:
+
+- `Ca = 0.25 uM`;
+- `t = 0--600 s`;
+- all existing stimulus/regulatory equations unchanged.
+
+Use the fixed resting outflow above as the no-stimulus reference. No separate no-stimulus integration is needed because the accepted stationary state defines the resting reference.
+
+The WT candidate passes the dynamic activation gate only if all of the following hold:
+
+1. the stimulated integration completes numerically and remains physically admissible;
+2. time-mean `q_out` over `60--600 s` is at least `1.10 * q_out_rest_WT`;
+3. cumulative ductal secretion over `0--600 s` is at least `1.10 * (600 s * q_out_rest_WT)`;
+4. the stimulated response is not merely a single numerical spike followed by sustained secretion below rest: `q_out(600 s) >= q_out_rest_WT`;
+5. concentrations and compartment volumes remain finite and positive.
+
+The 10% activation margin is a modelling guardrail to exclude a trivially non-responsive or numerically indistinguishable secretory system. It is **not** fitted to the AE4-null phenotype and is not claimed as a measured fold-change.
+
+Do not alter calcium amplitude, stimulus equations, water parameters, or the 10% gate after seeing results.
+
+Only stationary-feasible WT candidates may be dynamically tested. Maximum WT dynamic gate evaluations are specified below. If no candidate passes within the predeclared budget, Task 33 stops.
 
 ## NKCC1 70% WT chloride-loading constraint
 
@@ -89,9 +115,11 @@ The contract must declare:
 - objective/constraint definitions and weights;
 - the single optimisation algorithm;
 - the single allowed deterministic restart rule;
-- all numerical counters and stop conditions.
+- all numerical counters and stop conditions;
+- the stationary-feasibility gate before dynamics;
+- the WT calcium-activation gate exactly as written above.
 
-Once written, **the contract is immutable for the rest of Task 33**. Do not change bounds, free parameters, objective weights, algorithm, chloride range, water target or NKCC1 target after seeing results.
+Once written, **the contract is immutable for the rest of Task 33**. Do not change bounds, free parameters, objective weights, algorithm, chloride range, water target, NKCC1 target, calcium input or dynamic activation gate after seeing results.
 
 Use the smallest defensible free set needed. The only parameters that may be considered are these existing uncertain magnitude parameters:
 
@@ -124,14 +152,15 @@ Do not widen these bounds during the task. A feasible solution sitting on a boun
 Treat the following as hard feasibility constraints before any soft objective:
 
 1. full stationary amount/current/charge/carbon/water closure;
-2. fixed WT `q_out` target;
+2. fixed WT resting `q_out` target;
 3. NKCC1 positive chloride-loading share `0.70 +/- 0.01`;
 4. `45 <= Cl_i <= 65 mM`;
 5. `6.84 <= pH_i <= 6.98`;
 6. positive, non-negligible AE4 loading;
-7. `Na_i <= 30 mM`, positive concentrations and cell volume `<3 pL`.
+7. `Na_i <= 30 mM`, positive concentrations and cell volume `<3 pL`;
+8. after stationary feasibility is established, the mandatory WT Ca = 0.25 uM dynamic activation gate above.
 
-Among feasible WT solutions only, minimise weighted log-deviation of free parameters from Task 31 and state deviation from the accepted Task 31 R09 WT state.
+Among WT candidates that pass both stationary and dynamic gates, minimise weighted log-deviation of free parameters from Task 31 and state deviation from the accepted Task 31 R09 WT state.
 
 Do not target knockout chloride, knockout pH, knockout secretion, or a desired 5%/WT or 0%/WT secretion ratio.
 
@@ -142,11 +171,12 @@ These are hard stops, not suggestions.
 - Maximum **one** local constrained optimisation run.
 - Maximum **one** deterministic restart, and only from that run's own best feasible/least-infeasible point.
 - Maximum **20 distinct WT parameter vectors** evaluated in total, including the initial vector and restart evaluations.
+- Maximum **3 WT dynamic activation integrations**, and only for stationary-feasible candidate vectors.
 - Never enumerate a Cartesian product of parameter values.
 - Never perform one-at-a-time factor sweeps across all parameters.
 - Never try multiple optimiser families.
 - Never loop over alternative free-parameter subsets.
-- Never widen parameter bounds, chloride range or target tolerances after a failure.
+- Never widen parameter bounds, chloride range, water target, NKCC1 tolerance or calcium activation threshold after a failure.
 - Never launch a second-stage search because a genotype result is disappointing.
 - No random search, Latin hypercube, multistart cloud, global/evolutionary/Bayesian optimisation, pairwise scan, factorial design, Shapley analysis or automatic singles-to-pairs escalation.
 
@@ -155,24 +185,26 @@ Numerical ceilings across the whole task:
 - at most 30 stationary solver calls total;
 - at most 40,000 stationary residual evaluations total;
 - at most 20 WT parameter-vector evaluations total;
-- at most 20 minutes numerical execution for WT optimisation;
+- at most 3 pre-freeze WT dynamic integrations total;
+- at most 20 minutes numerical execution for WT optimisation plus its dynamic gate checks;
 - one worker and one BLAS thread.
 
-If no feasible WT solution has been obtained when **any** one of those ceilings is reached, STOP TASK 33 and report `WT_OPTIMISATION_FAILED_WITHIN_PREDECLARED_BOUNDS`. Do not diagnose another mechanism, alter the contract or keep searching.
+If no WT solution has passed **both stationary and calcium-activation gates** when any one of those ceilings is reached, STOP TASK 33 and report `WT_OPTIMISATION_FAILED_WITHIN_PREDECLARED_BOUNDS`. Do not diagnose another mechanism, alter the contract or keep searching.
 
 ## Freeze before genotype release
 
-When one WT parameterisation passes all hard constraints:
+When one WT parameterisation passes all stationary hard constraints **and** the WT calcium-activation gate:
 
 1. write all free parameter values and the complete WT state/flux ledger;
-2. record achieved `q_out`, chloride, pH and NKCC1-share residuals;
-3. record AE4 and AE2 signed chloride contributions and AE4 positive-pool share;
-4. hash the frozen parameter payload;
-5. checkpoint/publish the frozen WT text artifacts through the connected GitHub integration.
+2. record achieved resting `q_out`, chloride, pH and NKCC1-share residuals;
+3. record WT dynamic mean q_out, q_out(600 s), cumulative 600 s secretion and all activation ratios relative to rest;
+4. record AE4 and AE2 signed chloride contributions and AE4 positive-pool share;
+5. hash the frozen parameter payload;
+6. checkpoint/publish the frozen WT text artifacts through the connected GitHub integration.
 
 Only after that freeze may AE4 expression be changed.
 
-Run the standard central WT stimulation once after freeze at Ca = 0.25 uM to 600 s to establish the frozen WT secretion denominator. Do not tune after this trajectory.
+The already accepted pre-freeze WT dynamic gate trajectory becomes the frozen WT secretion denominator. Do not rerun it merely to create another copy.
 
 ## Genotype tests: exactly 5% and 0%
 
@@ -185,7 +217,7 @@ For each genotype:
 
 1. solve its own REST state from the frozen WT model;
 2. report admissibility, pH, Na, K, Cl, TIC/HCO3, cell/lumen volumes, voltages, osmolarities and major transporter/water fluxes;
-3. if and only if REST is admissible, run the standard central stimulation at Ca = 0.25 uM to 600 s;
+3. if and only if REST is admissible, run the same standard central stimulation at Ca = 0.25 uM to 600 s;
 4. report cumulative ductal secretion and ratio to the frozen WT trajectory;
 5. decompose replacement of lost AE4 chloride loading into NKCC1, AE2, altered apical delivery, paracellular return, ionic storage and water/osmotic effects.
 
@@ -195,13 +227,13 @@ Do not refit after seeing either genotype.
 
 If 5% fails to produce an admissible REST, report that result and continue only to the predeclared 0% REST test. If 0% also fails, stop. Do not create intermediate AE4 levels to bridge the solver.
 
-Maximum post-freeze dynamic integrations: exactly one WT reference plus at most one 5% and one 0% trajectory, for **3 integrations total**. No solver-method trajectory duplications.
+Maximum post-freeze genotype dynamic integrations: at most one 5% and one 0% trajectory, for **2 additional integrations total**. No solver-method trajectory duplications.
 
 ## Interpretation
 
 The question is direct:
 
-> With WT water throughput fixed, mechanistic NHE1 frozen, NKCC1 constrained to 70% of positive WT chloride loading, and WT chloride kept within a broad physiological 45--65 mM range, can the existing AE4 architecture carry a meaningful share of productive chloride loading and does reducing AE4 to 5% or 0% reduce secretion without genotype fitting?
+> With WT resting water throughput fixed, mechanistic NHE1 frozen, NKCC1 constrained to 70% of positive WT chloride loading, WT chloride kept within 45--65 mM, and Ca = 0.25 uM required to produce a real stimulated secretion response, can the existing AE4 architecture carry a meaningful share of productive chloride loading and does reducing AE4 to 5% or 0% reduce secretion without genotype fitting?
 
 Report the result exactly as obtained, including neutral, wrong-direction, boundary-dependent or non-closing outcomes. A disappointing outcome does not license another search inside this task.
 
@@ -219,9 +251,10 @@ At minimum include:
 - `frozen_wt_parameters.json` if WT succeeds;
 - `wt_state.json`;
 - `wt_flux_ledger.csv`;
+- `wt_dynamic_activation.json`;
 - `genotype_rest_states.csv` if WT succeeds;
 - `genotype_flux_ledger.csv` if WT succeeds;
-- `secretion_comparison.csv` if dynamics run;
+- `secretion_comparison.csv` if genotype dynamics run;
 - `verification.json`;
 - `final_answer.md`.
 
