@@ -17,7 +17,17 @@ This task is an implementation task. Stop diagnosing the existing NHE1 defect an
 - Maximum numerical budget: 12 stationary solver calls total, 10,000 stationary residual evaluations, 8 scalar NHE1-activity evaluations total, 6 stimulated integrations total, one worker, one BLAS thread, 30 minutes numerical execution.
 - If an admissible WT and exact-null REST are obtained, run only the central Ca=0.25 uM stimulation for WT/null in R09/R10. Do not tune after seeing secretion.
 - If the new NHE1 law fails under this bounded implementation, stop and report failure. Do not invent a second NHE1 family or start another diagnostic/search task.
-- Git authentication is not a scientific prerequisite. Try ordinary Git once at the start. If unavailable, continue computation and do not attempt credential recovery, manual Git objects, Base64 or alternative publication machinery.
 - Do not merge or modify `main`.
+
+## GitHub publication in ChatGPT Work
+
+Use the connected GitHub integration for publication. Do not depend on ordinary shell Git authentication.
+
+- Do not run `gh auth`, request a PAT, configure SSH, or stop because `git push` asks for credentials.
+- Shell Git is allowed for local `status` and `diff` inspection only.
+- At the end of the task, publish all completed source edits, focused tests, and compact UTF-8 result/report files directly to `codex/task-30-nhe1-model-repair` through the connected GitHub integration.
+- Open or update a PR only through the connected GitHub integration if the task requests one.
+- Do not use manual Git objects, Base64 upload loops, archives, or binary trajectory publication as a workaround.
+- A publication problem must never trigger scientific recomputation.
 
 Success means a working NHE1 implementation plus properly re-equilibrated WT/null states and, if those rests are admissible, a small matched dynamic check. It does not require matching the secretion phenotype.
