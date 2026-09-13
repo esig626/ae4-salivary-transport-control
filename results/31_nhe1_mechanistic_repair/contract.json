@@ -1,0 +1,95 @@
+{
+  "ae4_expression": [
+    1.0,
+    0.0
+  ],
+  "backgrounds": [
+    "R09",
+    "R10"
+  ],
+  "branch": "codex/task-31-nhe1-mechanistic-repair",
+  "calibration": {
+    "amount_bounds_fmol": [
+      1e-08,
+      0.1
+    ],
+    "background": "R09",
+    "diagnostic_interval": [
+      6.84,
+      6.98
+    ],
+    "freeze_before_null": true,
+    "genotype": "WT",
+    "implemented_and_executed": true,
+    "initial_amount_fmol": 0.0001,
+    "method": "bounded safeguarded secant in log carrier amount",
+    "method_required": "bounded one-dimensional root/secant/bracketing, no grid or multistart",
+    "parameter": "nhe1_cha_carrier_amount_fmol",
+    "ph_root_tolerance": 1e-05,
+    "recalibrate_R10": false,
+    "target_ph": 6.91
+  },
+  "dynamic_calcium_uM": 0.25,
+  "dynamic_gate": "matched WT and exact-null REST pair admissible",
+  "dynamic_protocol": "existing 600 s CCh + IPR",
+  "implementation_status": "SOURCE_FIXED_CHA_MODEL",
+  "inherited_gate_source": "reference/routing_numerical_contract.json",
+  "limits": {
+    "blas_threads": 1,
+    "numerical_execution_seconds": 1800,
+    "scalar_density_evaluations": 6,
+    "scientific_workers": 1,
+    "stationary_residual_evaluations": 24000,
+    "stationary_solver_calls": 16,
+    "stimulated_integrations": 4
+  },
+  "model_family": "cha_2009_eight_state_mod2",
+  "per_solve_residual_ceiling": 2400,
+  "per_solve_residual_ceiling_required": true,
+  "post_run_new_test": "one additional wall-time-stop checkpoint test; no completed tests or calculations rerun",
+  "prepared_head": "e0793a2bde656d6a1fdcded6d9b3c4cd6de4d50c",
+  "prohibited": [
+    "other transporter changes",
+    "second NHE family",
+    "combinatorial or multidimensional searches",
+    "grids",
+    "multistart",
+    "phenotype fitting",
+    "chloride-allocation search",
+    "merge to main"
+  ],
+  "reference_model_retained": "vera_siguenza_2018_eq26",
+  "remote_publication": "connected GitHub contents integration; UTF-8 files only",
+  "repository": "esig626/ae4-salivary-transport-control",
+  "rest_diagnostics": {
+    "WT_cl_mM": [
+      48.6,
+      51.6
+    ],
+    "WT_ph": [
+      6.84,
+      6.98
+    ],
+    "chloride_is_observation_only": true,
+    "na_ceiling_mM": 30,
+    "null_cl_mM": [
+      34.9,
+      38.1
+    ],
+    "null_ph": [
+      6.87,
+      6.91
+    ],
+    "volume_ceiling_pL": 3
+  },
+  "scientific_workers": 1,
+  "stationary_runner_completed": true,
+  "status": "COMPLETED_BOUNDED_IMPLEMENTATION_TEST_NULL_REST_NOT_CLOSED",
+  "task": 31,
+  "tests_before_whole_cell": {
+    "earlier_passed_not_rerun": 24,
+    "earlier_source_skip_completed": true,
+    "new_continuation_tests_passed": 3,
+    "new_source_tests_passed": 3
+  }
+}
