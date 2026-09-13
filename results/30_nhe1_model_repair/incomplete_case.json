@@ -1,0 +1,10 @@
+{
+  "accepted_state_available": false,
+  "background": "R09",
+  "genotype": "AE4_NULL",
+  "label": "exact_ae4_null_from_repaired_wt",
+  "note": "The solver call began from the repaired WT state but did not return before the global residual evaluation limit was exhausted. No intermediate optimiser point is treated as a stationary result.",
+  "stationary_residual_evaluations_at_stop": 10000,
+  "status": "INCOMPLETE_AT_NUMERICAL_BUDGET",
+  "stop_reason": "stationary residual evaluation limit exhausted"
+}
