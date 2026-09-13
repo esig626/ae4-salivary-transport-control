@@ -1,33 +1,32 @@
-# Active phase: Task 30
+# Active phase: Task 31
 
-Work only on `codex/task-30-nhe1-model-repair`.
-Read and execute `prompts/30_nhe1_model_repair.md`.
+Work only on `codex/task-31-nhe1-mechanistic-repair`.
+Read and execute `prompts/31_nhe1_mechanistic_repair.md`.
 
-This task is an implementation task. Stop diagnosing the existing NHE1 defect and replace it with a transporter-specific NHE1 model based on the published 2018 salivary secretion model.
+This is an implementation task. Move forward from Task 30 and implement one mechanistic NHE1 model with explicit ion-exchange kinetics and intracellular proton-dependent regulation. Do not spend the task re-diagnosing the generic tanh law or rebuilding historical comparison panels.
 
 ## Hard restrictions
 
 - No combinatorial, factorial, pairwise, grid, random, global, Bayesian, evolutionary or high-dimensional search.
-- No automatic escalation to other transporters if NHE1 repair fails.
-- Do not alter AE4, AE2, NKCC1, pump, K, CaCC, CO2, paracellular or water laws in this task.
+- No automatic escalation to another transporter or second NHE1 family if this repair fails.
+- Do not alter AE4, AE2, NKCC1, Na/K pump, K, CaCC, CO2, paracellular or water laws.
 - Do not fit to the 30-35% AE4-null secretion phenotype.
-- Use only R09 and R10 for new calculations.
-- Implement one new NHE1 law: the published 2018 Eq. 26 law, with its stated parameters and units. Preserve the current law as a selectable historical comparator, not as the active repair.
-- One optional WT-only scalar calibration of NHE1 activity per background is allowed only if the published activity value prevents a physiologically reasonable WT rest. No knockout information may enter that calibration.
-- Maximum numerical budget: 12 stationary solver calls total, 10,000 stationary residual evaluations, 8 scalar NHE1-activity evaluations total, 6 stimulated integrations total, one worker, one BLAS thread, 30 minutes numerical execution.
-- If an admissible WT and exact-null REST are obtained, run only the central Ca=0.25 uM stimulation for WT/null in R09/R10. Do not tune after seeing secretion.
-- If the new NHE1 law fails under this bounded implementation, stop and report failure. Do not invent a second NHE1 family or start another diagnostic/search task.
+- Use only R09 and R10 for new whole-cell calculations.
+- Implement the Cha et al. 2009 mechanistic NHE kinetic model as the preferred new NHE1 law, transferring only the NHE mechanism and source-supported kinetic constants. Do not import cardiac-cell background mechanisms or transporter density.
+- If an absolute salivary NHE1 density/activity scale is required, calibrate ONE shared scalar on WT R09 only, then freeze it and apply unchanged to R10 and both exact-null genotypes.
+- Maximum six scalar density evaluations, 16 stationary solver calls, 24,000 stationary residual evaluations, four stimulated integrations, one worker, one BLAS thread, and 30 minutes numerical execution.
+- Do not run dynamics unless the matched WT and exact-null REST pair is admissible.
+- If the model fails under these bounds, stop and report the implementation outcome. Do not start another diagnostic or search task.
 - Do not merge or modify `main`.
 
 ## GitHub publication in ChatGPT Work
 
-Use the connected GitHub integration for publication. Do not depend on ordinary shell Git authentication.
+Use the connected GitHub integration for all remote writes.
 
-- Do not run `gh auth`, request a PAT, configure SSH, or stop because `git push` asks for credentials.
-- Shell Git is allowed for local `status` and `diff` inspection only.
-- At the end of the task, publish all completed source edits, focused tests, and compact UTF-8 result/report files directly to `codex/task-30-nhe1-model-repair` through the connected GitHub integration.
-- Open or update a PR only through the connected GitHub integration if the task requests one.
+- Do not run `gh auth`, request a PAT, configure SSH, or depend on `git push` credentials.
+- Shell Git is allowed only for local status/diff inspection.
+- Publish completed source edits, focused tests, and compact UTF-8 result/report files directly to `codex/task-31-nhe1-mechanistic-repair` through the connected GitHub integration.
 - Do not use manual Git objects, Base64 upload loops, archives, or binary trajectory publication as a workaround.
 - A publication problem must never trigger scientific recomputation.
 
-Success means a working NHE1 implementation plus properly re-equilibrated WT/null states and, if those rests are admissible, a small matched dynamic check. It does not require matching the secretion phenotype.
+Success means a working mechanistic NHE1 implementation and a properly tested WT/exact-AE4-null resting model. Matching the secretion phenotype is not required in this task.
