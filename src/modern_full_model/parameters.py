@@ -232,6 +232,15 @@ class HomeostasisParameters:
         units="mM",
         note="Vera-Siguenza et al. (2018), Eq. 26 sodium saturation constant",
     )
+    nhe1_cha_carrier_amount_fmol: float | None = _pfield(
+        None,
+        provenance=Provenance.NEW_MODELING_DECISION,
+        units="fmol of NHE1 carriers",
+        note=(
+            "Cha 2009 amount conversion N/Avogadro; no cardiac density imported. "
+            "None until the single WT R09 salivary amount is calibrated."
+        ),
+    )
     ae2_capacity_fmol_s: float = _pfield(
         0.005,
         provenance=Provenance.NEW_MODELING_DECISION,
@@ -575,7 +584,12 @@ class FullModelParameters:
             if value < 0.0:
                 raise ValueError(f"{name} must be nonnegative")
 
-        supported_nhe1_models = {"legacy_tanh", "vera_siguenza_2018_eq26"}
+        cha_amount = self.homeostasis.nhe1_cha_carrier_amount_fmol
+        if cha_amount is not None and (not math.isfinite(cha_amount) or cha_amount < 0.0):
+            raise ValueError("homeostasis.nhe1_cha_carrier_amount_fmol must be finite and nonnegative")
+        supported_nhe1_models = {
+            "legacy_tanh", "vera_siguenza_2018_eq26", "cha_2009_eight_state_mod2"
+        }
         if self.homeostasis.nhe1_model not in supported_nhe1_models:
             raise ValueError(
                 "homeostasis.nhe1_model must be one of "
