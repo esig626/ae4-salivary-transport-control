@@ -1,0 +1,133 @@
+{
+  "all_other_materialized_inputs_byte_unchanged": true,
+  "archive_changes_requested": false,
+  "budget_limits_respected": true,
+  "density_calibration_performed": true,
+  "dynamics_reason": "Neither matched WT/exact-null REST pair admissible.",
+  "dynamics_run": 0,
+  "equation_level_checks_pass": true,
+  "main_modified": false,
+  "matched_rest_admissible": {
+    "R09": false,
+    "R10": false
+  },
+  "modified_existing_files": [
+    "src/modern_full_model/membranes.py",
+    "src/modern_full_model/parameters.py"
+  ],
+  "numerical_failure_scope": "Two local 2400-evaluation ceilings; no accepted exact-null REST found. This does not prove root nonexistence.",
+  "other_production_parameters_unchanged": true,
+  "other_transporter_laws_unchanged": true,
+  "physiological_repair_success": false,
+  "prepared_head": "e0793a2bde656d6a1fdcded6d9b3c4cd6de4d50c",
+  "printed_parameter_equation_reconstruction_pass": true,
+  "printed_parameter_thermodynamic_consistency_exact": false,
+  "production_model_operational": true,
+  "publication_branch": "codex/task-31-nhe1-mechanistic-repair",
+  "publication_note": "The 28 payload files were verified before publishing this verification record and final report. No shell Git authentication, manual Git object writes, binary upload, PR merge or main write was used.",
+  "published_constants_verified": true,
+  "published_turnover_restriction_pass": false,
+  "recovered_publication_errors": {
+    "errors": [
+      "ReadTimeout",
+      "Internal error"
+    ],
+    "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/d961b83eaa5d274bd0443ac6d94495fa6bc4ac3e62b532630d6df5eac6870336.json",
+    "recomputation": false,
+    "resolved": true
+  },
+  "remote_payload_verification": {
+    "checked_head": "0f4bc85c0bc09054490886defda45fc0c1827be6",
+    "comparison": "content SHA, type and mode; all other prepared-tree files unchanged",
+    "content_mismatches": [],
+    "payload_files_verified": 28,
+    "unexpected_file_changes": []
+  },
+  "remote_publication_status": "PUBLISHED_CONNECTED_GITHUB_CONTENTS_API",
+  "remote_publication_succeeded": true,
+  "rest_cases": [
+    {
+      "admissible": true,
+      "background": "R09",
+      "chloride_context_pass": false,
+      "exact_ae4_zero": true,
+      "genotype": "WT",
+      "max_abs_scaled_independent_rhs": 5.104423828061755e-12,
+      "numerical_pass": true,
+      "ordinary_na_pass": true,
+      "ph_diagnostic_pass": true,
+      "volume_pass": true
+    },
+    {
+      "admissible": false,
+      "background": "R10",
+      "chloride_context_pass": false,
+      "exact_ae4_zero": true,
+      "genotype": "WT",
+      "max_abs_scaled_independent_rhs": 1.6985111234157912e-11,
+      "numerical_pass": true,
+      "ordinary_na_pass": true,
+      "ph_diagnostic_pass": false,
+      "volume_pass": true
+    },
+    {
+      "admissible": false,
+      "background": "R09",
+      "chloride_context_pass": false,
+      "exact_ae4_zero": true,
+      "genotype": "AE4_NULL",
+      "max_abs_scaled_independent_rhs": 0.022150766584518866,
+      "numerical_pass": false,
+      "ordinary_na_pass": true,
+      "ph_diagnostic_pass": false,
+      "volume_pass": true
+    },
+    {
+      "admissible": false,
+      "background": "R10",
+      "chloride_context_pass": false,
+      "exact_ae4_zero": true,
+      "genotype": "AE4_NULL",
+      "max_abs_scaled_independent_rhs": 0.013101464654098893,
+      "numerical_pass": false,
+      "ordinary_na_pass": true,
+      "ph_diagnostic_pass": false,
+      "volume_pass": true
+    }
+  ],
+  "scalar_density_evaluations": 5,
+  "scientific_recomputation_due_to_publication_failure": false,
+  "secretion_ratio": null,
+  "selected_rest_cases": 4,
+  "single_frozen_density_across_all_four_selected_cases": true,
+  "source_pdf_sha256": "3fdff54677a5c3347045de9e3d1efd52b62cbc2455400a37db1595e9f2fc146c",
+  "source_rounding_caveat": "Printed k2-=183 retained; Eq6 from other printed entries gives183.60748; reconstructed turnover2.52121ms^-1 exceeds stated2.5 upper bound by0.8485%.",
+  "source_sha256": {
+    "src/modern_full_model/membranes.py": "ce8dc517be7e264f1c2b5af88f25b898eb4a6517dca384c928b91dcbff76d539",
+    "src/modern_full_model/nhe1_cha2009.py": "de76dccffadb75fcaecee90402161af1db48f5db88ea152164f504a974d0e5c1",
+    "src/modern_full_model/parameters.py": "5a3037ec9849e8202134c664b2a87205f73e2e17edde781ee4fef0bc57b1a39b",
+    "src/modern_full_model/task31_nhe1_repair.py": "976b62f8aadf87dbb5badb156d40ea974b53eee0e21acd8fd7a08d64543e07d4",
+    "tests/test_task31_continuation.py": "0daebfcff4ea3f2b5e3473ddeab4c110d21844d7c72f8c5c8960049cd17e41f8",
+    "tests/test_task31_nhe1.py": "b43bdcffd4303267c3151ceb1fd6f022a6946842f659b6adbe457b3baeec8493"
+  },
+  "source_table_s1_record": "source_table_s1.json",
+  "stationary_calls": 8,
+  "status": "COMPLETED_BOUNDED_IMPLEMENTATION_TEST_NULL_REST_NOT_CLOSED",
+  "task_complete": true,
+  "tests": {
+    "earlier_log_retained": "analysis/31_nhe1_mechanistic_repair/focused_test.log",
+    "earlier_passed": 24,
+    "earlier_run": 25,
+    "earlier_skip_resolved_by_source_reconstruction": true,
+    "earlier_skipped": 1,
+    "earlier_tests_rerun": false,
+    "logs": [
+      "analysis/31_nhe1_mechanistic_repair/source_reconstruction_test.log",
+      "analysis/31_nhe1_mechanistic_repair/continuation_test.log"
+    ],
+    "new_continuation_tests_passed": 4,
+    "new_source_tests_passed": 3,
+    "new_tests_failed": 0,
+    "note": "These are execution counts across stages, not a claim that the full historical suite was rerun on the final source."
+  }
+}
