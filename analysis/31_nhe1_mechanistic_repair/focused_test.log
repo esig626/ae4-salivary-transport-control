@@ -1,0 +1,30 @@
+test_essential_imports (test_phase28_setup.Phase28SetupTests.test_essential_imports) ... ok
+test_git_blob_hash (test_phase28_setup.Phase28SetupTests.test_git_blob_hash) ... ok
+test_reference_inputs (test_phase28_setup.Phase28SetupTests.test_reference_inputs) ... ok
+test_acidification_increases_forward_activity_at_fixed_sodium (test_task30_nhe1.PublishedNhe1EquationTests.test_acidification_increases_forward_activity_at_fixed_sodium) ... ok
+test_ae4_genotype_does_not_enter_nhe1_evaluator (test_task30_nhe1.PublishedNhe1EquationTests.test_ae4_genotype_does_not_enter_nhe1_evaluator) ... ok
+test_clean_seed_homeostasis_payload_is_backward_compatible (test_task30_nhe1.PublishedNhe1EquationTests.test_clean_seed_homeostasis_payload_is_backward_compatible) ... ok
+test_finite_bound_and_activity_scale (test_task30_nhe1.PublishedNhe1EquationTests.test_finite_bound_and_activity_scale) ... ok
+test_legacy_comparator_remains_selectable (test_task30_nhe1.PublishedNhe1EquationTests.test_legacy_comparator_remains_selectable) ... ok
+test_source_stoichiometry_and_zero_charge (test_task30_nhe1.PublishedNhe1EquationTests.test_source_stoichiometry_and_zero_charge) ... ok
+test_task30_builder_selects_only_published_nhe1_fields (test_task30_nhe1.PublishedNhe1EquationTests.test_task30_builder_selects_only_published_nhe1_fields) ... ok
+test_three_independently_calculated_fixed_states (test_task30_nhe1.PublishedNhe1EquationTests.test_three_independently_calculated_fixed_states) ... ok
+test_amount_conversion_and_shared_activity_scale (test_task31_nhe1.ChaEquationTests.test_amount_conversion_and_shared_activity_scale) ... ok
+test_extracellular_protons_suppress_mod2 (test_task31_nhe1.ChaEquationTests.test_extracellular_protons_suppress_mod2) ... ok
+test_finite_saturation_and_extreme_positive_concentrations (test_task31_nhe1.ChaEquationTests.test_finite_saturation_and_extreme_positive_concentrations) ... ok
+test_forward_and_reverse_use_same_cycle (test_task31_nhe1.ChaEquationTests.test_forward_and_reverse_use_same_cycle) ... ok
+test_independent_orientation_balance (test_task31_nhe1.ChaEquationTests.test_independent_orientation_balance) ... ok
+test_independent_rational_eight_state_equation (test_task31_nhe1.ChaEquationTests.test_independent_rational_eight_state_equation) ... ok
+test_intracellular_acid_activation_and_alkaline_suppression (test_task31_nhe1.ChaEquationTests.test_intracellular_acid_activation_and_alkaline_suppression) ... ok
+test_invalid_inputs_rejected (test_task31_nhe1.ChaEquationTests.test_invalid_inputs_rejected) ... ok
+test_microscopic_reversibility_and_zero_at_equilibrium (test_task31_nhe1.ChaEquationTests.test_microscopic_reversibility_and_zero_at_equilibrium) ... ok
+test_missing_density_never_defaults_to_cardiac_amount (test_task31_nhe1.ChaEquationTests.test_missing_density_never_defaults_to_cardiac_amount) ... ok
+test_na_h_stoichiometry_zero_carbon_and_charge_both_directions (test_task31_nhe1.ChaEquationTests.test_na_h_stoichiometry_zero_carbon_and_charge_both_directions) ... ok
+test_production_refuses_missing_source_constants (test_task31_nhe1.ChaEquationTests.test_production_refuses_missing_source_constants) ... ok
+test_published_turnover_and_figure_reconstruction (test_task31_nhe1.ChaEquationTests.test_published_turnover_and_figure_reconstruction) ... skipped 'Cha Table S1 unavailable: no source-value reconstruction or physiological validation claimed'
+test_task30_reference_remains_selectable (test_task31_nhe1.ChaEquationTests.test_task30_reference_remains_selectable) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.027s
+
+OK (skipped=1)
