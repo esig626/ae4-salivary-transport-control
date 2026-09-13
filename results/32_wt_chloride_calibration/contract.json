@@ -1,0 +1,86 @@
+{
+  "ae4_bounds": [
+    1e-06,
+    1000000.0
+  ],
+  "ae4_stop": "measured WT chloride interval; centre is root target",
+  "blas_threads": 1,
+  "branch": "codex/task-32-wt-chloride-calibration",
+  "cached_anchor": "accepted Task31 R09 WT; no new solve or scalar count",
+  "calibration_data": {
+    "background": "R09",
+    "cl_centre_mM": 50.1,
+    "cl_interval_mM": [
+      48.6,
+      51.6
+    ],
+    "genotype": "WT",
+    "ph_centre": 6.91,
+    "ph_interval": [
+      6.84,
+      6.98
+    ]
+  },
+  "dynamics": "only admissible matched R09 WT/exact-null; at most two 0-600 s CCh+IPR, Ca=0.25 uM integrations",
+  "freeze_gate": "WT intervals, full closure, numerical/conservation/current/rank/positive gates; Na<=30 mM, volume<3 pL",
+  "frozen_laws": [
+    "Cha kinetics",
+    "AE4 topology and stoichiometry and donor routing",
+    "AE2",
+    "NKCC1",
+    "pump",
+    "K",
+    "CaCC",
+    "CO2",
+    "paracellular",
+    "water",
+    "bath",
+    "hydraulic",
+    "regulatory"
+  ],
+  "genotype_expression": {
+    "WT": 1.0,
+    "exact_null": 0.0
+  },
+  "limits": {
+    "ae4_scalar_evaluations": 6,
+    "nhe1_scalar_evaluations": 4,
+    "stationary_residual_evaluations": 30000,
+    "stationary_solver_calls": 18,
+    "stimulated_integrations": 2
+  },
+  "nhe1_bounds_fmol": [
+    1e-08,
+    0.1
+  ],
+  "nhe1_stop": "6.91 +/- 1e-5 when a correction is required",
+  "null_continuation": "direct expression=0 first; if unclosed, bounded 0.5,0.25,0.125,0 from last closed state",
+  "null_gate": "same closure gates and ordinary Na/volume; no experimental pH or chloride gate",
+  "numerical_seconds_limit": 1800,
+  "prepared_head": "6027f68dfcf8113c13d726b91d0b38cd0349ef47",
+  "r10": "only after an accepted R09 matched pair; frozen R09 scalars; no recalibration",
+  "repository": "esig626/ae4-salivary-transport-control",
+  "scalar_method": "directional factor-ten bracket discovery; safeguarded log false-position only inside a sign bracket",
+  "scalars": {
+    "ae4": "dimensionless multiplier of inherited AE4 carrier_amount_fmol",
+    "nhe1": "effective carrier amount (fmol)"
+  },
+  "scientific_source": "Task 31 frozen Cha eight-state/Mod2",
+  "sequence": [
+    "AE4 with frozen Task31 NHE1",
+    "NHE1 only if pH outside interval",
+    "one chloride check from same stationary state",
+    "at most one final AE4 correction",
+    "simultaneous WT acceptance",
+    "write and hash freeze",
+    "exact-null evaluation"
+  ],
+  "stationary_method": "inherited bounded least_squares in 10 physical state coordinates; no parameter optimiser",
+  "unclosed_scalar_endpoint": "stop; no phenotype residual sign assigned",
+  "validation_only": [
+    "null chloride",
+    "null pH",
+    "secretion"
+  ],
+  "workers": 1
+}
