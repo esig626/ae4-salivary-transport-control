@@ -3,36 +3,47 @@
 Work only on `codex/task-33-fixed-water-nkcc70-ae4-optimisation`.
 Read and execute `prompts/33_fixed_water_nkcc70_ae4_optimisation.md`.
 
-This is the direct WT allocation/optimisation task. Do not re-diagnose AE4 routing, NHE1, the 50 mM chloride target, or the previously established NKCC1-dominant allocation.
+This is the direct WT allocation/optimisation task. Do not re-diagnose AE4 routing, NHE1, the 50 mM chloride point target, or the previously established NKCC1-dominant allocation.
 
 ## Fixed scientific decisions
 
 - Freeze the Task 31 Cha et al. 2009 eight-state + Mod2 NHE1 implementation and its R09 WT-calibrated carrier amount `2.339370005697548e-05 fmol`.
 - Keep the existing routed AE4 topology and working stoichiometry unchanged.
-- Keep all water-law parameters unchanged and fix the WT resting outflow target at the accepted Task 31 R09 value `0.0010757073853493032 pL/s`.
-- At the final WT baseline, constrain NKCC1 to exactly 70% of the positive basolateral chloride-loading pool.
-- Do not impose WT chloride = 50.1 mM. Approximately 60 mM is not itself a failure.
+- Keep all water-law parameters unchanged and fix the WT resting outflow target at `0.0010757073853493032 pL/s`.
+- Constrain final WT NKCC1 to `0.70 +/- 0.01` of the positive basolateral chloride-loading pool.
+- Use a hard WT intracellular chloride guardrail `45 <= Cl_i <= 65 mM`. This is a range, not a point target, and it must not be widened during the task.
+- Require WT `6.84 <= pH_i <= 6.98`, `Na_i <= 30 mM`, positive concentrations and cell volume `< 3 pL`.
 - Optimise WT parameters only. The 5% and 0% AE4 outcomes are held out until the WT parameter payload is frozen.
-- After freeze, test exactly AE4 expression 0.05 and 0.00. No other expression levels or genotypes.
+- After freeze, test exactly AE4 expression 0.05 and 0.00. No other expression levels, backgrounds or genotypes.
 
-## Optimisation restrictions
+## Absolute anti-combinatorial rules
 
-- One bounded low-dimensional local WT optimisation is authorised.
-- No Cartesian grids, exhaustive pair searches, random/global/evolutionary/Bayesian optimisation, Shapley analysis, or automatic expansion of the free parameter set.
-- Free only the predeclared existing uncertain magnitude parameters listed in the Task 33 prompt, and eliminate variables algebraically where possible.
-- Do not use knockout chloride, knockout pH, knockout secretion, or the 0.65 secretion ratio during optimisation.
+- One bounded low-dimensional local WT optimisation only.
+- Before numerical optimisation, write and checkpoint the immutable optimisation contract with the exact free parameters, bounds, objective, algorithm and restart rule.
+- Maximum 20 distinct WT parameter vectors total.
+- Maximum one deterministic restart, from the first run's own best point only.
+- No Cartesian grids, factor sweeps, pairwise scans, factorial designs, random search, multistart clouds, Latin hypercube, global/evolutionary/Bayesian optimisation, Shapley analysis, or automatic singles-to-pairs escalation.
+- Do not try multiple optimiser families.
+- Do not loop over alternative parameter subsets.
+- Do not change bounds, targets, objective weights, chloride range or free parameters after seeing a failure.
+- Do not enlarge the search because 5% or 0% gives the wrong phenotype.
+- Free only the predeclared existing uncertain magnitude parameters in the Task 33 prompt and eliminate variables algebraically where possible.
+- Do not use knockout chloride, knockout pH, knockout secretion, or the 0.65 secretion ratio during WT optimisation.
 - Do not alter NHE1 density, water parameters, CO2, paracellular parameters, stimulus/regulation, AE4 topology/stoichiometry, or membrane allocation fractions.
 - Do not merge or modify `main`.
 
-## Compute budget
+## Hard stop budget
 
-- At most 40 stationary solves total.
-- At most 60,000 stationary residual evaluations total.
-- At most one deterministic continuation/restart from the optimiser's own last feasible point.
-- At most 2 pre-freeze WT stimulated integrations if needed for target verification.
-- After freeze, at most 4 total genotype integrations covering 5% and 0% only.
-- One worker, one BLAS thread, 45 minutes numerical execution.
-- Stop at the first exhausted limit. Do not enlarge the search.
+- At most 30 stationary solves total.
+- At most 40,000 stationary residual evaluations total.
+- At most 20 distinct WT parameter vectors total.
+- At most 20 minutes numerical execution for WT optimisation.
+- One worker and one BLAS thread.
+- After freeze, at most one WT reference trajectory plus one 5% and one 0% trajectory, all at Ca=0.25 uM, for 3 integrations total.
+
+STOP immediately when any limit is reached. If no feasible WT solution exists within these predeclared bounds, report `WT_OPTIMISATION_FAILED_WITHIN_PREDECLARED_BOUNDS` and end the task. Do not diagnose another mechanism and do not keep searching.
+
+If the 5% or 0% resting state fails after freeze, report it. Do not insert intermediate AE4 expression levels to help the solver.
 
 ## GitHub publication in ChatGPT Work
 
@@ -40,7 +51,7 @@ Use the connected GitHub integration for all remote writes. Do not depend on she
 
 - Do not run `gh auth`, request a PAT, configure SSH, or depend on `git push` credentials.
 - Shell Git is allowed only for local status/diff inspection.
-- Publish completed source edits, focused tests, frozen WT checkpoint, and compact UTF-8 outputs directly to `codex/task-33-fixed-water-nkcc70-ae4-optimisation`.
+- Publish completed source edits, focused tests, frozen WT checkpoint and compact UTF-8 outputs directly to `codex/task-33-fixed-water-nkcc70-ae4-optimisation`.
 - Publication failure must never trigger scientific recomputation.
 
-The task ends after reporting the frozen WT solution and the 5% and 0% outcomes. Do not launch another repair from inside Task 33.
+The task ends after reporting either the bounded WT failure or the frozen WT plus 5% and 0% outcomes. Do not launch another repair from inside Task 33.
