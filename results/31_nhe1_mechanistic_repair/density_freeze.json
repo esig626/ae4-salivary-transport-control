@@ -1,0 +1,22 @@
+{
+  "calibration_background": "R09",
+  "calibration_ph": 6.910000223494689,
+  "carrier_amount_fmol": 2.339370005697548e-05,
+  "carrier_count": 14088.015464032636,
+  "frozen_before_R10_and_exact_null": true,
+  "genotype": "WT",
+  "kinetics": {
+    "k1_minus_per_ms": 0.201,
+    "k1_plus_per_ms": 10.5,
+    "k2_minus_table_per_ms": 183.0,
+    "k2_plus_per_ms": 15.8,
+    "k_h_i_mM": 0.000605,
+    "k_h_o_mM": 0.00162,
+    "k_na_i_mM": 16.2,
+    "k_na_o_mM": 195.0,
+    "modifier_k_i_mM": 3.07e-05,
+    "modifier_k_o_mM": 4.8e-07
+  },
+  "kinetics_sha256": "b83773bcef96393c8b082dfbd9f5317989e314b391705da24b7371f740657db5",
+  "relative_to_source_N_489900": 0.028756920726745534
+}
