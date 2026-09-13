@@ -1,0 +1,16 @@
+test_all_limits_stop_before_new_case (test_task32_calibration.Task32Tests.test_all_limits_stop_before_new_case) ... ok
+test_capacity_scaling_changes_only_existing_carrier_amount (test_task32_calibration.Task32Tests.test_capacity_scaling_changes_only_existing_carrier_amount) ... ok
+test_completed_execution_is_read_only_and_preserves_counters (test_task32_calibration.Task32Tests.test_completed_execution_is_read_only_and_preserves_counters) ... ok
+test_failed_calibration_cannot_write_a_parameter_freeze (test_task32_calibration.Task32Tests.test_failed_calibration_cannot_write_a_parameter_freeze) ... ok
+test_null_gate_has_no_phenotype_targets_and_strict_volume (test_task32_calibration.Task32Tests.test_null_gate_has_no_phenotype_targets_and_strict_volume) ... ok
+test_positive_activity_required (test_task32_calibration.Task32Tests.test_positive_activity_required) ... ok
+test_scalar_interpolation_requires_actual_sign_bracket (test_task32_calibration.Task32Tests.test_scalar_interpolation_requires_actual_sign_bracket) ... ok
+test_sequence_allows_only_one_nhe1_and_one_final_ae4 (test_task32_calibration.Task32Tests.test_sequence_allows_only_one_nhe1_and_one_final_ae4) ... ok
+test_signed_counterflux_excluded_from_positive_denominator (test_task32_calibration.Task32Tests.test_signed_counterflux_excluded_from_positive_denominator) ... ok
+test_simultaneous_acceptance_skips_nhe1_and_final_ae4 (test_task32_calibration.Task32Tests.test_simultaneous_acceptance_skips_nhe1_and_final_ae4) ... ok
+test_unclosed_endpoint_cannot_supply_bracket_sign (test_task32_calibration.Task32Tests.test_unclosed_endpoint_cannot_supply_bracket_sign) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.012s
+
+OK
