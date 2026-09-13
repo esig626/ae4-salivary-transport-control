@@ -1,0 +1,10 @@
+{
+  "accepted_wt": null,
+  "calibration_accepted": false,
+  "exact_null_evaluated": false,
+  "frozen_parameters_sha256": null,
+  "r10_evaluated": false,
+  "stimulated_integrations": 0,
+  "stop_reason": "unclosed WT scalar endpoint; no valid residual sign for AE4_initial",
+  "validation_status": "blocked_by_failed_WT_calibration"
+}
