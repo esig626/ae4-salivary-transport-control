@@ -1,0 +1,21 @@
+{
+  "task": 34,
+  "stop_code": "NHE_STIM_TARGET_NOT_QUANTIFIABLE",
+  "limits": {
+    "maximum_distinct_gain_evaluations": 6,
+    "maximum_dynamic_integrations": 4,
+    "maximum_stationary_optimisation_runs": 0,
+    "maximum_workers": 1,
+    "maximum_blas_threads": 1,
+    "maximum_numerical_execution_seconds": 900
+  },
+  "used": {
+    "distinct_gain_evaluations": 0,
+    "bracketed_scalar_solves": 0,
+    "stationary_optimisation_runs": 0,
+    "dynamic_integrations": 0,
+    "wt_numerical_retries": 0,
+    "numerical_execution_seconds": 0
+  },
+  "stop_stage": "primary_source_observable_assessment"
+}

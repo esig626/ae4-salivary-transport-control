@@ -1,0 +1,41 @@
+{
+  "task": 34,
+  "status": "NHE_STIM_TARGET_NOT_QUANTIFIABLE",
+  "branch": "codex/task-34-stimulated-nhe1-alkalinity-ae4",
+  "prepared_head_verified": "b763b37583adec84eb677169fb0fb45484815465",
+  "primary_source": {
+    "doi": "10.1074/jbc.M114.612895",
+    "pmcid": "PMC4409235",
+    "figure": "2C/D",
+    "control_n": 13,
+    "figure_image_sha256": "9b4c95983ff33c806994ec3d6f81a597e44842e2ddf1783dfca5a8073f84c61a",
+    "plotted_central_per_s": 0.00059,
+    "plotted_standard_error_per_s": 0.00005,
+    "plotted_observable": "normalised_BCECF_F_over_F0_slope",
+    "absolute_pH_slope_reported": false,
+    "optical_to_pH_conversion_reported": false
+  },
+  "checks": {
+    "primary_paper_inspected": true,
+    "figure_value_digitised": true,
+    "defensible_model_pH_target_recovered": false,
+    "mechanism_implemented": false,
+    "gain_calibrated": false,
+    "mandatory_code_path_tests": "not_run_due_to_prior_source_stop",
+    "wt_dynamics": "not_run_due_to_prior_source_stop",
+    "ae4_expression_0_05": "not_run_due_to_prior_source_stop",
+    "ae4_expression_0_00": "not_run_due_to_prior_source_stop",
+    "resting_model_source_changed": false,
+    "water_law_source_changed": false,
+    "ae4_regulation_source_changed": false,
+    "nhe1_kinetic_source_changed": false
+  },
+  "omitted_conditional_outputs": [
+    "frozen_gain.json",
+    "wt_dynamic_summary.csv",
+    "chloride_allocation.csv",
+    "expression_comparison.csv",
+    "flux_integrals.csv"
+  ],
+  "omission_reason": "These outputs are conditional on identifying a source supported gain and running dynamics. The mandated source stop occurred first."
+}

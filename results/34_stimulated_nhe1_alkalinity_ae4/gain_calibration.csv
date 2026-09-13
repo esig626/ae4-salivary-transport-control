@@ -1,0 +1,2 @@
+record_type,evaluation_index,G_NHE_stim,source_observable,source_central_per_s,source_se_per_s,source_graphical_low_per_s,source_graphical_high_per_s,source_conservative_low_per_s,source_conservative_high_per_s,model_dpH_dt_per_s,status
+source_only,,,normalised_BCECF_F_over_F0_slope,5.9e-4,5.0e-5,5.4e-4,6.4e-4,5.3e-4,6.5e-4,,NHE_STIM_TARGET_NOT_QUANTIFIABLE
