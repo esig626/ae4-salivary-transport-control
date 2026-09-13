@@ -80,6 +80,69 @@ def _bounded_reversible_flux(
     return capacity_fmol_s * math.tanh(log_activity_ratio / width)
 
 
+NHE1_LEGACY_TANH = "legacy_tanh"
+NHE1_VERA_SIGUENZA_2018 = "vera_siguenza_2018_eq26"
+
+
+def evaluate_nhe1_legacy_tanh(
+    environment: "HomeostasisEnvironment",
+    parameters: FullModelParameters,
+    *,
+    activity_scale: float = 1.0,
+) -> float:
+    """Evaluate the retained generic reversible NHE1 comparator in fmol/s."""
+
+    e = environment
+    _positive(e.na_i_mM, e.h_i_mM, e.na_e_mM, e.h_e_mM)
+    if not math.isfinite(activity_scale) or activity_scale < 0.0:
+        raise ValueError("NHE1 activity scale must be finite and nonnegative")
+    affinity = math.log((e.na_e_mM * e.h_i_mM) / (e.na_i_mM * e.h_e_mM))
+    return _bounded_reversible_flux(
+        parameters.homeostasis.nhe1_capacity_fmol_s * activity_scale,
+        affinity,
+        parameters.homeostasis.thermodynamic_saturation_log_width,
+    )
+
+
+def evaluate_nhe1_vera_siguenza_2018(
+    environment: "HomeostasisEnvironment",
+    parameters: FullModelParameters,
+    *,
+    activity_scale: float = 1.0,
+) -> float:
+    """Evaluate Vera-Sigüenza et al. (2018), Eq. 26, in fmol/s.
+
+    Proton concentrations and ``K_H`` are in mM.  Positive flux is one Na
+    entering the cell while one H leaves it.  The squared proton saturation
+    factors are retained exactly as printed in the paper.
+    """
+
+    e = environment
+    p = parameters.homeostasis
+    _positive(
+        e.na_i_mM,
+        e.h_i_mM,
+        e.na_e_mM,
+        e.h_e_mM,
+        p.nhe1_published_k_h_mM,
+        p.nhe1_published_k_na_mM,
+    )
+    if not math.isfinite(activity_scale) or activity_scale < 0.0:
+        raise ValueError("NHE1 activity scale must be finite and nonnegative")
+    if not math.isfinite(p.nhe1_published_g_fmol_s) or p.nhe1_published_g_fmol_s < 0.0:
+        raise ValueError("published NHE1 activity must be finite and nonnegative")
+
+    k_h = p.nhe1_published_k_h_mM
+    k_na = p.nhe1_published_k_na_mM
+    forward = (e.h_i_mM / (e.h_i_mM + k_h)) ** 2 * (
+        e.na_e_mM / (e.na_e_mM + k_na)
+    )
+    reverse = (e.na_i_mM / (e.na_i_mM + k_na)) * (
+        e.h_e_mM / (e.h_e_mM + k_h)
+    ) ** 2
+    return p.nhe1_published_g_fmol_s * activity_scale * (forward - reverse)
+
+
 @dataclass(frozen=True)
 class HomeostasisEnvironment:
     na_i_mM: float
@@ -100,6 +163,7 @@ class HomeostasisFluxes:
 
     nkcc1_inward_fmol_s: float
     nhe1_inward_fmol_s: float
+    nhe1_model: str
     ae2_inward_fmol_s: float
     na_cell_fmol_s: float
     k_cell_fmol_s: float
@@ -118,13 +182,12 @@ def evaluate_homeostasis(
     nhe1_scale: float = 1.0,
     ae2_scale: float = 1.0,
 ) -> HomeostasisFluxes:
-    """Evaluate reversible NKCC1, NHE1, and AE2 coarse laws.
+    """Evaluate NKCC1, selected NHE1, and AE2 laws.
 
     Positive directions are NKCC1 influx (Na + K + 2Cl), NHE1 Na influx/H
     extrusion, and AE2 Cl influx/HCO3 extrusion.  The log-activity affinities
-    are exact ideal-solution deductions.  The bounded ``tanh`` rate law and
-    capacities are explicit modeling decisions pending transporter-specific
-    WT calibration.
+    are exact ideal-solution deductions.  NKCC1 and AE2 retain the bounded
+    ``tanh`` law.  NHE1 is selected explicitly in ``HomeostasisParameters``.
     """
 
     e = environment
@@ -159,11 +222,17 @@ def evaluate_homeostasis(
         affinity_nkcc,
         width,
     )
-    j_nhe = _bounded_reversible_flux(
-        parameters.homeostasis.nhe1_capacity_fmol_s * nhe1_scale,
-        affinity_nhe,
-        width,
-    )
+    nhe1_model = parameters.homeostasis.nhe1_model
+    if nhe1_model == NHE1_LEGACY_TANH:
+        j_nhe = evaluate_nhe1_legacy_tanh(
+            environment, parameters, activity_scale=nhe1_scale
+        )
+    elif nhe1_model == NHE1_VERA_SIGUENZA_2018:
+        j_nhe = evaluate_nhe1_vera_siguenza_2018(
+            environment, parameters, activity_scale=nhe1_scale
+        )
+    else:  # FullModelParameters validates this, but retain a local guard.
+        raise ValueError(f"unsupported NHE1 model {nhe1_model!r}")
     j_ae2 = _bounded_reversible_flux(
         parameters.homeostasis.ae2_capacity_fmol_s * ae2_scale,
         affinity_ae2,
@@ -180,6 +249,7 @@ def evaluate_homeostasis(
     return HomeostasisFluxes(
         nkcc1_inward_fmol_s=j_nkcc,
         nhe1_inward_fmol_s=j_nhe,
+        nhe1_model=nhe1_model,
         ae2_inward_fmol_s=j_ae2,
         na_cell_fmol_s=na_source,
         k_cell_fmol_s=k_source,
@@ -423,6 +493,8 @@ def cation_topology_source_directions() -> np.ndarray:
 
 
 __all__ = (
+    "NHE1_LEGACY_TANH",
+    "NHE1_VERA_SIGUENZA_2018",
     "ElectricalEnvironment",
     "FMOL_PER_MOL",
     "HomeostasisEnvironment",
@@ -431,6 +503,8 @@ __all__ = (
     "cation_topology_source_directions",
     "current_to_fmol_s",
     "evaluate_homeostasis",
+    "evaluate_nhe1_legacy_tanh",
+    "evaluate_nhe1_vera_siguenza_2018",
     "evaluate_membrane_closure",
     "hill_activation",
     "nernst_voltage_V",
