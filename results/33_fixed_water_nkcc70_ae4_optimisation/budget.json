@@ -1,0 +1,22 @@
+{
+  "blas_threads": 1,
+  "deterministic_restarts": 0,
+  "distinct_wt_parameter_vectors": 19,
+  "hard_wt_parameter_vector_ceiling": 20,
+  "limits_respected": true,
+  "numerical_wt_wall_seconds": 2.5587904099957086,
+  "optimiser_calls": 1,
+  "optimiser_vector_ceiling": 19,
+  "per_solve_residual_ceiling": 1600,
+  "postfreeze_dynamic_ceiling": 2,
+  "postfreeze_genotype_dynamic_integrations": 0,
+  "prefreeze_dynamic_ceiling": 3,
+  "prefreeze_wt_dynamic_integrations": 0,
+  "scientific_workers": 1,
+  "stationary_residual_evaluation_ceiling": 40000,
+  "stationary_residual_evaluations": 6552,
+  "stationary_solver_call_ceiling": 30,
+  "stationary_solver_calls": 19,
+  "wt_accepted": false,
+  "wt_wall_seconds_ceiling": 1200.0
+}

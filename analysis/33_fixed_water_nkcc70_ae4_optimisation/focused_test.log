@@ -1,0 +1,10 @@
+test_contract_is_the_checkpointed_immutable_file (tests.test_task33_fixed_water_optimisation.Task33StructuralTests.test_contract_is_the_checkpointed_immutable_file) ... ok
+test_declared_transform_and_initial_vector (tests.test_task33_fixed_water_optimisation.Task33StructuralTests.test_declared_transform_and_initial_vector) ... ok
+test_nhe1_water_and_allocation_fractions_are_frozen (tests.test_task33_fixed_water_optimisation.Task33StructuralTests.test_nhe1_water_and_allocation_fractions_are_frozen) ... ok
+test_only_six_predeclared_magnitudes_change (tests.test_task33_fixed_water_optimisation.Task33StructuralTests.test_only_six_predeclared_magnitudes_change) ... ok
+test_only_two_held_out_ae4_levels_are_declared (tests.test_task33_fixed_water_optimisation.Task33StructuralTests.test_only_two_held_out_ae4_levels_are_declared) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.007s
+
+OK
