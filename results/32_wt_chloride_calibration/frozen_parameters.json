@@ -1,0 +1,6 @@
+{
+  "accepted_parameters": null,
+  "exact_null_evaluated": false,
+  "reason": "unclosed WT scalar endpoint; no valid residual sign for AE4_initial",
+  "status": "not_frozen_calibration_failed"
+}
