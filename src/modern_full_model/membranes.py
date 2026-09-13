@@ -28,6 +28,11 @@ from typing import Mapping
 import numpy as np
 
 from .parameters import FullModelParameters
+from .nhe1_cha2009 import (
+    NHE1_CHA_2009,
+    cha_nhe1_flux_fmol_s,
+    published_cha_kinetics,
+)
 
 
 FMOL_PER_MOL = 1.0e15
@@ -143,6 +148,26 @@ def evaluate_nhe1_vera_siguenza_2018(
     return p.nhe1_published_g_fmol_s * activity_scale * (forward - reverse)
 
 
+def evaluate_nhe1_cha_2009(
+    environment: "HomeostasisEnvironment",
+    parameters: FullModelParameters,
+    *,
+    activity_scale: float = 1.0,
+) -> float:
+    """Select verified Cha Table S1/Eq. 3/Mod2 and require a salivary amount."""
+    kinetics = published_cha_kinetics()
+    amount = parameters.homeostasis.nhe1_cha_carrier_amount_fmol
+    if amount is None:
+        raise ValueError("Task 31 salivary NHE1 amount has not been calibrated")
+    e = environment
+    return cha_nhe1_flux_fmol_s(
+        na_i_mM=e.na_i_mM, h_i_mM=e.h_i_mM,
+        na_o_mM=e.na_e_mM, h_o_mM=e.h_e_mM,
+        kinetics=kinetics, carrier_amount_fmol=amount,
+        activity_scale=activity_scale,
+    )
+
+
 @dataclass(frozen=True)
 class HomeostasisEnvironment:
     na_i_mM: float
@@ -229,6 +254,10 @@ def evaluate_homeostasis(
         )
     elif nhe1_model == NHE1_VERA_SIGUENZA_2018:
         j_nhe = evaluate_nhe1_vera_siguenza_2018(
+            environment, parameters, activity_scale=nhe1_scale
+        )
+    elif nhe1_model == NHE1_CHA_2009:
+        j_nhe = evaluate_nhe1_cha_2009(
             environment, parameters, activity_scale=nhe1_scale
         )
     else:  # FullModelParameters validates this, but retain a local guard.
@@ -495,6 +524,7 @@ def cation_topology_source_directions() -> np.ndarray:
 __all__ = (
     "NHE1_LEGACY_TANH",
     "NHE1_VERA_SIGUENZA_2018",
+    "NHE1_CHA_2009",
     "ElectricalEnvironment",
     "FMOL_PER_MOL",
     "HomeostasisEnvironment",
@@ -505,6 +535,7 @@ __all__ = (
     "evaluate_homeostasis",
     "evaluate_nhe1_legacy_tanh",
     "evaluate_nhe1_vera_siguenza_2018",
+    "evaluate_nhe1_cha_2009",
     "evaluate_membrane_closure",
     "hill_activation",
     "nernst_voltage_V",
