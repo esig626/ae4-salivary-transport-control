@@ -1,0 +1,20 @@
+{
+  "accepted_identical_cases_rerun": 0,
+  "ae4_scalar_evaluations": 2,
+  "blas_threads": 1,
+  "limits": {
+    "ae4_scalar_evaluations": 6,
+    "nhe1_scalar_evaluations": 4,
+    "stationary_residual_evaluations": 30000,
+    "stationary_solver_calls": 18,
+    "stimulated_integrations": 2
+  },
+  "limits_respected": true,
+  "nhe1_scalar_evaluations": 0,
+  "numerical_wall_seconds": 0.9697793220002495,
+  "per_solve_residual_ceiling": 2400,
+  "scientific_workers": 1,
+  "stationary_residual_evaluations": 3283,
+  "stationary_solver_calls": 2,
+  "stimulated_integrations": 0
+}
