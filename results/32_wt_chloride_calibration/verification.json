@@ -1,0 +1,232 @@
+{
+  "budget_file_sha256": "b89d21ada1b5f619533ef3510ece65c743a1469a55bf2aac36af249ffc486d5c",
+  "calibration_accepted": false,
+  "cases_file_sha256": "4e95ea21f7ff4e57c5d25b11ce227dcd765b019164d1e797e3672296645d592a",
+  "checks": {
+    "AE4_initial_1_closure_flag_consistent": true,
+    "AE4_initial_1_state_hash_valid": true,
+    "AE4_initial_2_closure_flag_consistent": true,
+    "AE4_initial_2_state_hash_valid": true,
+    "all_new_cases_WT_R09": true,
+    "all_new_cases_keep_Task31_NHE1_amount": true,
+    "all_task_limits_respected": true,
+    "cache_has_no_Task32_residual_charge": true,
+    "failed_calibration_not_frozen": true,
+    "no_R10_evaluation": true,
+    "no_exact_null_evaluation": true,
+    "no_knockout_or_secretion_fit": true,
+    "no_scalar_bracket_claimed_from_unclosed_candidate": true,
+    "no_stimulated_integrations": true,
+    "residual_counter_equals_saved_new_cases": true,
+    "solver_counter_equals_saved_new_cases": true
+  },
+  "focused_tests": {
+    "failed": 0,
+    "log": "analysis/32_wt_chloride_calibration/focused_tests.log",
+    "passed": 11,
+    "scientific_stationary_solves": 0,
+    "stimulated_integrations": 0
+  },
+  "frozen_parameters_sha256": null,
+  "input_integrity": {
+    "all_prepared_files_unchanged": true,
+    "checked_files": [
+      {
+        "actual_blob_sha": "b11a9d77acdeaa3924154d2dff731a77441359ca",
+        "expected_prepared_blob_sha": "b11a9d77acdeaa3924154d2dff731a77441359ca",
+        "pass": true,
+        "path": "AGENTS.md"
+      },
+      {
+        "actual_blob_sha": "dff4f7ab2cec5d68c7107e61927ac855a9e426cc",
+        "expected_prepared_blob_sha": "dff4f7ab2cec5d68c7107e61927ac855a9e426cc",
+        "pass": true,
+        "path": "prompts/32_wt_chloride_calibration.md"
+      },
+      {
+        "actual_blob_sha": "b1d469b59853e1302ed74ab48ba0f4eb9d602018",
+        "expected_prepared_blob_sha": "b1d469b59853e1302ed74ab48ba0f4eb9d602018",
+        "pass": true,
+        "path": "reference/R09_wt_rest.json"
+      },
+      {
+        "actual_blob_sha": "cc323374c4e3e76f5b9293f8535fee179e6b803e",
+        "expected_prepared_blob_sha": "cc323374c4e3e76f5b9293f8535fee179e6b803e",
+        "pass": true,
+        "path": "reference/R10_wt_rest.json"
+      },
+      {
+        "actual_blob_sha": "8198b25c48e83d197d72a888121da731a9133b29",
+        "expected_prepared_blob_sha": "8198b25c48e83d197d72a888121da731a9133b29",
+        "pass": true,
+        "path": "reference/native_wt_contract.json"
+      },
+      {
+        "actual_blob_sha": "5e65527944347afe4b36db640822f56e70c41246",
+        "expected_prepared_blob_sha": "5e65527944347afe4b36db640822f56e70c41246",
+        "pass": true,
+        "path": "reference/routing_numerical_contract.json"
+      },
+      {
+        "actual_blob_sha": "471f776f67541bcaadd042782a1c0a438d0009f3",
+        "expected_prepared_blob_sha": "471f776f67541bcaadd042782a1c0a438d0009f3",
+        "pass": true,
+        "path": "requirements.txt"
+      },
+      {
+        "actual_blob_sha": "d499be26024ad55ed1bcbe60744dc6db6ccd29a6",
+        "expected_prepared_blob_sha": "d499be26024ad55ed1bcbe60744dc6db6ccd29a6",
+        "pass": true,
+        "path": "results/31_nhe1_mechanistic_repair/calibration.json"
+      },
+      {
+        "actual_blob_sha": "560b985c04dc4e56863def712d8bc113f9a0cb28",
+        "expected_prepared_blob_sha": "560b985c04dc4e56863def712d8bc113f9a0cb28",
+        "pass": true,
+        "path": "results/31_nhe1_mechanistic_repair/density_freeze.json"
+      },
+      {
+        "actual_blob_sha": "6dded7fac89a2a7bef4a9377504cf55343fbe294",
+        "expected_prepared_blob_sha": "6dded7fac89a2a7bef4a9377504cf55343fbe294",
+        "pass": true,
+        "path": "scripts/check_phase28_inputs.py"
+      },
+      {
+        "actual_blob_sha": "2d3f01f0c77959b43d3066098ea0ea8701a53eab",
+        "expected_prepared_blob_sha": "2d3f01f0c77959b43d3066098ea0ea8701a53eab",
+        "pass": true,
+        "path": "scripts/run_task30_nhe1_repair.py"
+      },
+      {
+        "actual_blob_sha": "3cef0cd91fa99d39745e9e7275e9a4499ea46a57",
+        "expected_prepared_blob_sha": "3cef0cd91fa99d39745e9e7275e9a4499ea46a57",
+        "pass": true,
+        "path": "src/modern_full_model/__init__.py"
+      },
+      {
+        "actual_blob_sha": "669bd8554329ffcb5c9c70bce891415cda233fec",
+        "expected_prepared_blob_sha": "669bd8554329ffcb5c9c70bce891415cda233fec",
+        "pass": true,
+        "path": "src/modern_full_model/acid_base.py"
+      },
+      {
+        "actual_blob_sha": "f7ceb851df9e0cb8f4d8a9cb1c540055aa342d54",
+        "expected_prepared_blob_sha": "f7ceb851df9e0cb8f4d8a9cb1c540055aa342d54",
+        "pass": true,
+        "path": "src/modern_full_model/ae4_routing_only.py"
+      },
+      {
+        "actual_blob_sha": "e0fe3fdf2837d97ee8e235fe1a72dc9854c594b8",
+        "expected_prepared_blob_sha": "e0fe3fdf2837d97ee8e235fe1a72dc9854c594b8",
+        "pass": true,
+        "path": "src/modern_full_model/camp_pka.py"
+      },
+      {
+        "actual_blob_sha": "8fd2f35804121f11635764231d0669ddd4ffbb64",
+        "expected_prepared_blob_sha": "8fd2f35804121f11635764231d0669ddd4ffbb64",
+        "pass": true,
+        "path": "src/modern_full_model/membranes.py"
+      },
+      {
+        "actual_blob_sha": "14b1912b0c58b0fb3ae18ff639eeb6a726081c46",
+        "expected_prepared_blob_sha": "14b1912b0c58b0fb3ae18ff639eeb6a726081c46",
+        "pass": true,
+        "path": "src/modern_full_model/model.py"
+      },
+      {
+        "actual_blob_sha": "6090805662155915e894804e1a4dbf2acb594241",
+        "expected_prepared_blob_sha": "6090805662155915e894804e1a4dbf2acb594241",
+        "pass": true,
+        "path": "src/modern_full_model/nhe1_cha2009.py"
+      },
+      {
+        "actual_blob_sha": "6a8ace8dacffe153fbb3d8bbd7188dd0c28f4fd7",
+        "expected_prepared_blob_sha": "6a8ace8dacffe153fbb3d8bbd7188dd0c28f4fd7",
+        "pass": true,
+        "path": "src/modern_full_model/nkcc_stimulation.py"
+      },
+      {
+        "actual_blob_sha": "7cf42ee2305985186595ee90c8be637c7f2ed5bf",
+        "expected_prepared_blob_sha": "7cf42ee2305985186595ee90c8be637c7f2ed5bf",
+        "pass": true,
+        "path": "src/modern_full_model/parameters.py"
+      },
+      {
+        "actual_blob_sha": "0a2d351830e1004bccd55c4ce609e640634eca03",
+        "expected_prepared_blob_sha": "0a2d351830e1004bccd55c4ce609e640634eca03",
+        "pass": true,
+        "path": "src/modern_full_model/states.py"
+      },
+      {
+        "actual_blob_sha": "2219945085de0bdd3a97daec8a098370fbda7a26",
+        "expected_prepared_blob_sha": "2219945085de0bdd3a97daec8a098370fbda7a26",
+        "pass": true,
+        "path": "src/modern_full_model/task30_nhe1_repair.py"
+      },
+      {
+        "actual_blob_sha": "5129f12bc8198c97aa22fa738f28b4c82ed0723a",
+        "expected_prepared_blob_sha": "5129f12bc8198c97aa22fa738f28b4c82ed0723a",
+        "pass": true,
+        "path": "src/modern_full_model/task31_nhe1_repair.py"
+      },
+      {
+        "actual_blob_sha": "66738cf1963ee5bcb72cb0ebef809266df83d157",
+        "expected_prepared_blob_sha": "66738cf1963ee5bcb72cb0ebef809266df83d157",
+        "pass": true,
+        "path": "src/modern_full_model/transporters.py"
+      },
+      {
+        "actual_blob_sha": "62e88ea22fe132a4f656963fa48959f366fad79d",
+        "expected_prepared_blob_sha": "62e88ea22fe132a4f656963fa48959f366fad79d",
+        "pass": true,
+        "path": "src/modern_full_model/validation.py"
+      },
+      {
+        "actual_blob_sha": "911d70765f9da1d1bdae5cedf7405b4fb7f2a3af",
+        "expected_prepared_blob_sha": "911d70765f9da1d1bdae5cedf7405b4fb7f2a3af",
+        "pass": true,
+        "path": "src/modern_full_model/water.py"
+      },
+      {
+        "actual_blob_sha": "9d16c9b0146e52a57ff3794bc7b190c8219c1811",
+        "expected_prepared_blob_sha": "9d16c9b0146e52a57ff3794bc7b190c8219c1811",
+        "pass": true,
+        "path": "tests/test_phase28_setup.py"
+      },
+      {
+        "actual_blob_sha": "cf71c7466f3cc7a5d5a70579166198e0e876710b",
+        "expected_prepared_blob_sha": "cf71c7466f3cc7a5d5a70579166198e0e876710b",
+        "pass": true,
+        "path": "tests/test_task30_nhe1.py"
+      },
+      {
+        "actual_blob_sha": "eddadcdae3b224bca7960ff73e0b1c37bb45eafe",
+        "expected_prepared_blob_sha": "eddadcdae3b224bca7960ff73e0b1c37bb45eafe",
+        "pass": true,
+        "path": "tests/test_task31_continuation.py"
+      },
+      {
+        "actual_blob_sha": "f88b672402208d19777b45e5e843dbaccb417e1e",
+        "expected_prepared_blob_sha": "f88b672402208d19777b45e5e843dbaccb417e1e",
+        "pass": true,
+        "path": "tests/test_task31_nhe1.py"
+      }
+    ],
+    "prepared_head": "6027f68dfcf8113c13d726b91d0b38cd0349ef47"
+  },
+  "last_closed_candidate": "AE4_initial_1",
+  "numerical_execution": "one worker, one BLAS thread; model diagnostics use saved states; no rerun",
+  "pass": true,
+  "read_scope": "Task32 instructions, prepared source and tests, WT background contracts, Task31 WT density_freeze and calibration only; no historical null result file",
+  "stationary_gates": {
+    "boundary_hits": 0,
+    "bulk_charge_fmol": 1e-09,
+    "conservation_normalized": 1.0,
+    "current_A": 1e-18,
+    "independent_rank": 10,
+    "omitted_rhs_fmol_s": 1e-09,
+    "regulatory_s_inv": 1e-10,
+    "scaled_independent_rhs": 1e-07
+  },
+  "unclosed_candidate_is_phenotype": false
+}
