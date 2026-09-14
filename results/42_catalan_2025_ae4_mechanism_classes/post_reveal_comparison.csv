@@ -1,0 +1,8 @@
+class_id,affinity_direction,wt_600s_status,ae4_5pct_total_deficit_pct,ae4_null_total_deficit_pct,ae4_null_early_deficit_pct,ae4_null_late_deficit_pct,ae4_null_nkcc1_compensation_pct,comparison_to_approx_35pct_phenotype
+C0,opposed,PASS,3.417577608,3.857486297,1.370455407,4.163529849,23.16344951,far_below
+C1,supported,PASS,-10.12395524,-10.76401702,0.261358043,-12.32275463,95.48207056,opposite_direction
+C2,supported,WT_PH_FAIL,,,,,,unavailable_wt_failed
+C3a,supported,PASS,-0.758729628,-0.724292467,1.049093257,-0.952855333,37.58872798,opposite_direction
+C3b,opposed,PASS,6.861908006,7.667255646,1.677376096,8.375881551,11.30431823,far_below
+C4a,supported,WT_PH_FAIL,,,,,,unavailable_wt_failed
+C4b,opposed,WT_PH_FAIL,,,,,,unavailable_wt_failed
