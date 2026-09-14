@@ -1,87 +1,44 @@
-# Active phase: Task 40 equal Na/K AE4 cation routing
+# Repository state after Task 40
 
-Work only on `codex/task-40-ae4-equal-cation-routing`.
-Read `analysis/40_ae4_equal_cation_routing/source_contract.md` first, then execute `prompts/40_ae4_equal_cation_routing.md`.
+`main` is the canonical scientific lineage.
 
-Task 40 tests exactly one scientific change to the completed Task 39 model: replace donor-concentration-weighted AE4 cation routing with a fixed 50:50 Na/K split while preserving the inherited net AE4 cycle law and every other mechanism.
+The production model is consolidated through Task 40. There is currently no active numbered task branch and no instruction to continue work on a completed task branch.
 
-## Frozen parent
+Before starting new scientific work:
 
-Parent scientific lineage is merged Task 39 at:
+1. Read `README.md` for the current scientific interpretation.
+2. Read `docs/MODERN_LINEAGE_CONSOLIDATION.md` for the modern lineage repair and consolidation history.
+3. Read the most recent task report under `analysis/40_ae4_equal_cation_routing/` and its machine readable outputs under `results/40_ae4_equal_cation_routing/`.
+4. Create a new branch from current `main` for any new numbered scientific task.
 
-`afd101448763439f369f2682c467f069ea18a442`
+## Canonical current result
 
-Keep fixed:
+Task 40 tests fixed 50:50 Na/K routing of the inherited AE4 cation component while preserving the total AE4 cycle and every other inherited scientific mechanism.
 
-- Palk/Benjamin NKCC1 law and `alpha_eff`;
-- inherited NKCC1 stimulation multiplier;
-- Cha NHE1 kinetics/carrier amount/stimulation;
-- electrogenic 1 Na : 2 HCO3 NBC and its capacity/current/recruitment;
-- total AE4 net cycle law, capacity, expression scaling, 1 Cl : 1 cation : 2 HCO3 stoichiometry, and beta/cAMP/PKA regulation;
-- AE2, pump, K channels, CaCC, CO2/acid-base, paracellular transport, water, bath, geometry and standard stimulus.
+One WT resting solve and all three 600 s trajectories passed the declared numerical, physiological and conservation gates without retries or tuning.
 
-## Fixed Task 40 AE4 routing
+At 600 s, AE4 loss gives final cumulative secretion deficits of about 3.42% at AE4 = 0.05 and 3.86% at AE4 = 0.00. NKCC1 compensation is about +20.82% and +23.16%, respectively. The current model therefore remains far from the held out experimental secretion reduction of about 35%.
 
-Let `J4` be the inherited AE4 net chloride source, positive inward.
+This is a negative model result, not permission to tune to the held out phenotype.
 
-Use exactly:
+## Scientific constraints
 
-- `S_Na = -0.5 J4`
-- `S_K = -0.5 J4`
-- `S_Cl = +J4`
-- `S_TIC = -2 J4`
-- `S_TA = -2 J4`.
+* Treat the approximately 35% experimental AE4 loss secretion reduction as held out phenotype information, not a calibration target.
+* Do not reinterpret a failed or weak genotype phenotype as permission for post hoc parameter fitting.
+* Preserve exact provenance for any source fixed transporter law, parameter or experimental quantity.
+* Keep genotype specific compensation separate from constitutive WT model calibration unless a future task explicitly introduces and sources such regulation.
+* Preserve conservation, charge accounting, resting closure and the declared production protocol unless a future task explicitly changes one of them.
+* Distinguish numerical failure, structural failure and biological mismatch in all reports.
 
-Do not change `J4` itself. Do not route by donor concentrations. Do not test another Na/K fraction.
+## Repository constraints
 
-The charge-equivalent source must remain zero and total cation source must remain `-J4`.
+* `archive/` is historical and provenance material. Do not rewrite or delete it.
+* Do not delete earlier numbered analyses or results merely because later tasks supersede their interpretation.
+* New scientific changes should be made on a new branch from current `main`, with a task specific prompt, tests, compact results and a final report.
+* Keep temporary computation products out of the repository unless they are required for reproducibility or audit.
+* Use the connected GitHub integration for remote writes. Do not add PATs, SSH credentials or local authentication material to the repository.
+* Do not merge a new scientific branch until its declared checks and result audit are complete.
 
-## Algebraic preflight
+## Current main lineage
 
-At the accepted Task 31 R09 state:
-
-- donor-weighted Na fraction = `0.09062450161183984`
-- `J4 = 0.004937067441546469 fmol/s`
-- expected change in Na source = `-0.0020211144444590447 fmol/s`
-- expected change in K source = `+0.0020211144444590447 fmol/s`
-- direct Cl/TIC/TA AE4 sources unchanged
-- charge perturbation zero.
-
-Exact Task 31 REST nesting is therefore not expected.
-
-## Execution order
-
-1. Implement and source-test the 50:50 routed AE4 evaluator.
-2. Reproduce the algebraic preflight independently.
-3. Perform exactly one intended WT resting-state solve from the accepted Task 31 R09 state as the sole initial guess. One purely numerical retry is allowed; no calibration, multistart or root search family.
-4. If the WT rest is admissible, freeze it.
-5. From that same frozen WT rest run exactly three standard 600 s trajectories: WT, AE4=0.05, AE4=0.00.
-6. Compare Na/K/Cl, NKCC1 compensation, AE2, NBC/NHE1/pump/channel responses, and secretion against Task 40 WT and Task 39 compensation.
-7. Report held-out phenotype context without fitting.
-
-## No search
-
-No optimisation, routing-fraction sweep, alternate split, R10, genotype-specific rest, alternate NKCC1/NBC/NHE1/AE4 mechanism, parameter retuning, stimulus changes, new transporter, or phenotype fitting.
-
-The 50:50 split is the only routing hypothesis in this task.
-
-## Compute limits
-
-- one intended WT stationary solve;
-- at most one purely numerical stationary retry;
-- three intended production integrations if WT rest passes;
-- at most one purely numerical integration retry across the task;
-- zero optimisation calls;
-- zero parameter sweeps;
-- one worker;
-- one BLAS thread;
-- maximum 15 minutes numerical execution.
-
-## Publication
-
-Use the connected GitHub integration for remote writes.
-Do not use shell Git authentication, PATs, SSH configuration or `gh auth`.
-Do not merge or modify `main`.
-Publish compact UTF-8 source, tests and result files only.
-
-Stop at the first declared scientific failure or after the Task 40 final report.
+The latest scientific merge is Task 40, PR #32. Repository housekeeping after that merge updates only top level project guidance and does not alter the Task 40 scientific outputs.
