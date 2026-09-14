@@ -1,0 +1,50 @@
+{
+  "ae4_routing_model": "SR2_NET_CHLORIDE_EQUAL_NA_K_CATION_ROUTING",
+  "branch": "codex/task-40-ae4-equal-cation-routing",
+  "frozen_rest_state_sha256": "a0b96ef16e5967de4dfe2bdabb882f2a28d478e211f920bc19cd735a5a143acb",
+  "frozen_utc": "2026-09-14T04:18:25.174826+00:00",
+  "prepared_head": "a6a58ebabcd2aedb1702b52dfdd86359c60cec32",
+  "rest_parameter_hashes": {
+    "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+    "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+    "nkcc1_core": "80c412da616a723120032cbff5ecd6184bb32782ec68e6a0d6de6195f5082249",
+    "regulation": "8c9ca55e1e72cc32376748755d90453c0bbca4f41b85d3ba1cc4debb8e542638",
+    "stimulus": "c9b55210206366a9f3996239683abbacff7eec54d80de7d3492fa90a2e254047",
+    "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+  },
+  "scientific_parent": "afd101448763439f369f2682c467f069ea18a442",
+  "stimulus_parameter_hashes": {
+    "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+    "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+    "nkcc1_core": "80c412da616a723120032cbff5ecd6184bb32782ec68e6a0d6de6195f5082249",
+    "regulation": "4d560edc26dbb7b9538c0447b9c8d60401804911a0bb40620d9892923ba7ab4b",
+    "stimulus": "93eba70092faaa9497c80ce30d979726a77b092cf04c0ff4cd106d3774a2c4f4",
+    "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+  },
+  "task40_execution_files": [
+    {
+      "path": "analysis/40_ae4_equal_cation_routing/run_case.py",
+      "sha256": "e474bcf1504e318ab0289a5266fbc96d7dc54832498fd0cde4acf078b6a9180a"
+    },
+    {
+      "path": "analysis/40_ae4_equal_cation_routing/run_preflight.py",
+      "sha256": "2893cfc01686ca37f972dfcb90db6d8a3569e96e24764ac126026922a6263073"
+    },
+    {
+      "path": "analysis/40_ae4_equal_cation_routing/run_rest.py",
+      "sha256": "e500b2c3fd131717a489da479e9c0373ce1303fe6eb8582945930a697d42a383"
+    },
+    {
+      "path": "analysis/40_ae4_equal_cation_routing/validation_common.py",
+      "sha256": "d6876eb527d6cbcbf3574eff35a5abc2e80f979c057aacbaef7785864b938616"
+    },
+    {
+      "path": "src/modern_full_model/ae4_equal_cation_routing.py",
+      "sha256": "fbb6fd25f69d3e5f57ad995a465710670b7a3704f0cf797a0a6c018910fa3293"
+    },
+    {
+      "path": "tests/test_task40_equal_cation_routing.py",
+      "sha256": "d1edc8dd698687587dad2313069af2690c80d2c637770b1bebdc1c6bac80f919"
+    }
+  ]
+}

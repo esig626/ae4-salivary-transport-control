@@ -1,0 +1,32 @@
+{
+  "blas_threads": 1,
+  "calibration_calls": 0,
+  "completed_cases": [
+    "wt",
+    "ae4_5pct",
+    "ae4_null"
+  ],
+  "focused_test_runs": 2,
+  "genotype_specific_rest_solves": 0,
+  "implementation_correction_rounds": 1,
+  "integration_attempts": 3,
+  "limits_respected": true,
+  "maximum_numerical_execution_seconds": 900,
+  "no_further_scientific_execution": true,
+  "numerical_execution_seconds": 6.943258034998507,
+  "numerical_retries": 0,
+  "optimisation_calls": 0,
+  "parameter_sweeps": 0,
+  "scientific_workers": 1,
+  "source_tests_pass": true,
+  "started_cases": [
+    "wt",
+    "ae4_5pct",
+    "ae4_null"
+  ],
+  "stationary_numerical_retries": 0,
+  "stationary_residual_evaluations": 98,
+  "stationary_solves": 1,
+  "status": "TASK40_EQUAL_ROUTING_VALIDATION_COMPLETE",
+  "wt_rest_pass": true
+}

@@ -1,0 +1,280 @@
+{
+  "all_files_utf8": true,
+  "all_three_case_initial_state_hashes_match_frozen_rest": true,
+  "audit_self_excluded_from_file_hashes": true,
+  "branch": "codex/task-40-ae4-equal-cation-routing",
+  "budget": {
+    "blas_threads": 1,
+    "calibration_calls": 0,
+    "completed_cases": [
+      "wt",
+      "ae4_5pct",
+      "ae4_null"
+    ],
+    "focused_test_runs": 2,
+    "genotype_specific_rest_solves": 0,
+    "implementation_correction_rounds": 1,
+    "integration_attempts": 3,
+    "limits_respected": true,
+    "maximum_numerical_execution_seconds": 900,
+    "no_further_scientific_execution": true,
+    "numerical_execution_seconds": 6.943258034998507,
+    "numerical_retries": 0,
+    "optimisation_calls": 0,
+    "parameter_sweeps": 0,
+    "scientific_workers": 1,
+    "source_tests_pass": true,
+    "started_cases": [
+      "wt",
+      "ae4_5pct",
+      "ae4_null"
+    ],
+    "stationary_numerical_retries": 0,
+    "stationary_residual_evaluations": 98,
+    "stationary_solves": 1,
+    "status": "TASK40_EQUAL_ROUTING_VALIDATION_COMPLETE",
+    "wt_rest_pass": true
+  },
+  "existing_prepared_files_modified": [],
+  "expected_parent_head": "a6a58ebabcd2aedb1702b52dfdd86359c60cec32",
+  "expected_parent_tree": "4d60236e5d75f044098c302f6a9e0c1e52df63f1",
+  "frozen_execution_files_verified_unchanged": 6,
+  "main_modification_requested": false,
+  "merge_requested": false,
+  "new_files": [
+    {
+      "bytes": 2525,
+      "git_blob_sha1": "944c4f5c0ae58f42497d637e329787727ccc6c8a",
+      "path": "analysis/40_ae4_equal_cation_routing/ae4_5pct_execution.log",
+      "sha256": "e18f4e0aef4244609de0f58d04c2be3454f083e99117c2b2365c3c9bd61f18a3"
+    },
+    {
+      "bytes": 2569,
+      "git_blob_sha1": "7465f8eda11d789f91d8b1c038aaba09813b9430",
+      "path": "analysis/40_ae4_equal_cation_routing/ae4_null_execution.log",
+      "sha256": "b5be9c5a95d716fdd98280126e31c5aa5bd89f248f2a6a58f8eebcb3d4c83481"
+    },
+    {
+      "bytes": 18624,
+      "git_blob_sha1": "92367fda624c8c43cb4485558e2418d252a5895d",
+      "path": "analysis/40_ae4_equal_cation_routing/final_answer.md",
+      "sha256": "5211ceb43ee1e21d5a7648ae075bd562c859a848795e050d95eed9b0bc74c2fe"
+    },
+    {
+      "bytes": 1626,
+      "git_blob_sha1": "365db9fdfab88f59e5373943127f9422bf7077ac",
+      "path": "analysis/40_ae4_equal_cation_routing/focused_test_1.log",
+      "sha256": "f135479150e7b35bdf70f832184085298da1c32c1a00c45081e712661d0539f8"
+    },
+    {
+      "bytes": 872,
+      "git_blob_sha1": "b1b4d7a8279ee8237702af7d32a0b22f890958a4",
+      "path": "analysis/40_ae4_equal_cation_routing/focused_test_2.log",
+      "sha256": "0ae59421e73c46f4931479db665d6829b7bc55f6e65bffa92b10afb3e0d31d4d"
+    },
+    {
+      "bytes": 22759,
+      "git_blob_sha1": "2027de6507683b06564ff8829da7f0699a01b65e",
+      "path": "analysis/40_ae4_equal_cation_routing/parent_source_manifest.json",
+      "sha256": "218e63fdf76a456b9ed25dd45c8ad96730aa8838abdf7c21699eae5a3755f70d"
+    },
+    {
+      "bytes": 14821,
+      "git_blob_sha1": "e3e127b00864b9b6b3e2d165f72eae97805aa37d",
+      "path": "analysis/40_ae4_equal_cation_routing/run_case.py",
+      "sha256": "e474bcf1504e318ab0289a5266fbc96d7dc54832498fd0cde4acf078b6a9180a"
+    },
+    {
+      "bytes": 3196,
+      "git_blob_sha1": "cb7923f574402d0727fe4537d2b31525d5d389ef",
+      "path": "analysis/40_ae4_equal_cation_routing/run_preflight.py",
+      "sha256": "2893cfc01686ca37f972dfcb90db6d8a3569e96e24764ac126026922a6263073"
+    },
+    {
+      "bytes": 9345,
+      "git_blob_sha1": "8f72985bab1eb026e7cf4bc3e7d90dec71ecae1d",
+      "path": "analysis/40_ae4_equal_cation_routing/run_rest.py",
+      "sha256": "e500b2c3fd131717a489da479e9c0373ce1303fe6eb8582945930a697d42a383"
+    },
+    {
+      "bytes": 775,
+      "git_blob_sha1": "49d0bbab6aebe32a77b8545d1ab3d67fa4874344",
+      "path": "analysis/40_ae4_equal_cation_routing/source_correction.md",
+      "sha256": "97a418421546b099f7398958fd95b2148ec55a829abcedb7acf5d88154a827d5"
+    },
+    {
+      "bytes": 9856,
+      "git_blob_sha1": "7f7c770f0d4a893419cbbb067b55564af46efd38",
+      "path": "analysis/40_ae4_equal_cation_routing/summarize_results.py",
+      "sha256": "35e2429f5e753a0d346b6c9af4aebf20fceb6b9e78ba529414a7878bcbc67f05"
+    },
+    {
+      "bytes": 4424,
+      "git_blob_sha1": "067c26bf360866370cfd4058bb51d71748ed9902",
+      "path": "analysis/40_ae4_equal_cation_routing/validation_common.py",
+      "sha256": "d6876eb527d6cbcbf3574eff35a5abc2e80f979c057aacbaef7785864b938616"
+    },
+    {
+      "bytes": 18195,
+      "git_blob_sha1": "2f9087537af8dfb55fd199d2ede4a163adc1739c",
+      "path": "analysis/40_ae4_equal_cation_routing/write_report.py",
+      "sha256": "a8fee05372c91b068c09af8cb934dd0ad840de4882634efefdbdc72c95e1afd5"
+    },
+    {
+      "bytes": 2456,
+      "git_blob_sha1": "46e0063cc5544460b19b000cfe69d5b29599c3be",
+      "path": "analysis/40_ae4_equal_cation_routing/wt_execution.log",
+      "sha256": "929f6fcf67d8a4d9d9293bf2199b7d998428632ad5020a9b2e17818cd0a58231"
+    },
+    {
+      "bytes": 938,
+      "git_blob_sha1": "cfbecbcbe4d27ef0d43a149fd7ecc63f8f3132e7",
+      "path": "results/40_ae4_equal_cation_routing/ae4_5pct_integrated_fluxes.csv",
+      "sha256": "a6dbd837db589caa3e735719c3f3b7205f502abcb23ce9e636b4d1eea6696abf"
+    },
+    {
+      "bytes": 7924,
+      "git_blob_sha1": "8819a742e321a1acd5d4525bdbe7b7d37ac7b67e",
+      "path": "results/40_ae4_equal_cation_routing/ae4_5pct_timeseries.csv",
+      "sha256": "72daa79474d3ba900a1b61941139a463c537ba98cfb2a07d91fe4700a494757c"
+    },
+    {
+      "bytes": 10405,
+      "git_blob_sha1": "8fc7d05c03d95d1673e43a60da7e2413222acaec",
+      "path": "results/40_ae4_equal_cation_routing/ae4_5pct_verification.json",
+      "sha256": "9dd48f894a0cdbaa760deaad4744cac8af5b2dfd94834c51927c2895457d3c89"
+    },
+    {
+      "bytes": 845,
+      "git_blob_sha1": "acaf7b8d8144e820e05d406b1eb35dd0ad21a7c8",
+      "path": "results/40_ae4_equal_cation_routing/ae4_null_integrated_fluxes.csv",
+      "sha256": "1db67b1da054723cd08d70a9ec0f3d1817288a61a74cb8012becd9d55b4d0359"
+    },
+    {
+      "bytes": 6574,
+      "git_blob_sha1": "360a3645e847f8d05fe81494396414b0af4b26a4",
+      "path": "results/40_ae4_equal_cation_routing/ae4_null_timeseries.csv",
+      "sha256": "2ddd71525ebb1409c98466dab4f27680b7577f655300118340827f0d90ae2cbf"
+    },
+    {
+      "bytes": 10129,
+      "git_blob_sha1": "b8ff106eb5137c1a06a250387eb7afb4768a9c09",
+      "path": "results/40_ae4_equal_cation_routing/ae4_null_verification.json",
+      "sha256": "b86a43236cbf67e41c0faa840436eb7713822e8a372abfb502f0fa6a7573e77e"
+    },
+    {
+      "bytes": 807,
+      "git_blob_sha1": "582c0f0ebbcbe36c5ba940c9292827bdae8333c1",
+      "path": "results/40_ae4_equal_cation_routing/budget.json",
+      "sha256": "be8665b5af4323e39f542444aae434e8adb7a9996e58e39c539c4c43a9ee60a6"
+    },
+    {
+      "bytes": 8927,
+      "git_blob_sha1": "c400995bf1e3bb41229c01327c45a6c018e37954",
+      "path": "results/40_ae4_equal_cation_routing/comparison_summary.json",
+      "sha256": "001e1a759eb079b6a90bcbca5040dfc8f267a2d75f407933b4b125ddd9724f9e"
+    },
+    {
+      "bytes": 1260,
+      "git_blob_sha1": "b38d04b013d5e9a43de119e9fc0d6caf48ded10d",
+      "path": "results/40_ae4_equal_cation_routing/conservation_summary.csv",
+      "sha256": "489d825c544ca9ff864c9d2a0bf032b2bea6f529af21c34b875464b92e28f50b"
+    },
+    {
+      "bytes": 3730,
+      "git_blob_sha1": "64df6da7abd3690a1c8832cc3e2c2b81ddf782e7",
+      "path": "results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv",
+      "sha256": "ceb9683d66144135712861d1b509908f8d76dbb6b6e6d7b8b5fb6405102d84b0"
+    },
+    {
+      "bytes": 2490,
+      "git_blob_sha1": "d4ef3bda62e9d70525e92c633d9b053941ad0893",
+      "path": "results/40_ae4_equal_cation_routing/frozen_inputs.json",
+      "sha256": "b61905264d7f22bd3efd3f1da214ad86a99e0250aebaad798f22af3ba8500b44"
+    },
+    {
+      "bytes": 3512,
+      "git_blob_sha1": "b3c71ce43a708b518ae92acb65fb36fe0d5eb477",
+      "path": "results/40_ae4_equal_cation_routing/integrated_flux_comparison.csv",
+      "sha256": "0ab0452e56eb90edd3241f76a884e8a07a56d6036a50172b92c3f10b54f3a110"
+    },
+    {
+      "bytes": 8873,
+      "git_blob_sha1": "aa00583e90552611db852dff424f87816ddd9a3f",
+      "path": "results/40_ae4_equal_cation_routing/intracellular_comparison.csv",
+      "sha256": "bc50283ffca40832da7ecf92c9335291188afef1005eaa867dda940fbe456e3a"
+    },
+    {
+      "bytes": 359,
+      "git_blob_sha1": "4f60c107a0d4589a76dd2fcaa2b2af8815015cc7",
+      "path": "results/40_ae4_equal_cation_routing/nkcc1_compensation_comparison.csv",
+      "sha256": "7dcb02e0f3da88cf12d26f7a9e914df11fb044f3d72c76a277a425f2228ebbf3"
+    },
+    {
+      "bytes": 400,
+      "git_blob_sha1": "587fcc3fcb90518b03cac8e521ee5e0bfa683473",
+      "path": "results/40_ae4_equal_cation_routing/report_verification.json",
+      "sha256": "e16d525b74b0ca508b5768ba2fc66a2c7ddbb48d441ad6bb944c785baa6b5de3"
+    },
+    {
+      "bytes": 3595,
+      "git_blob_sha1": "f6cbdb02d4641cc278bd953a83becb14dd50f905",
+      "path": "results/40_ae4_equal_cation_routing/source_verification.json",
+      "sha256": "61a54b718c81f5ddd6d7b1d412c6f5d932b9e97094a85737cecea4084b1a6a28"
+    },
+    {
+      "bytes": 923,
+      "git_blob_sha1": "31cca652a786f95a24254ff870a3e286e149c1ae",
+      "path": "results/40_ae4_equal_cation_routing/wt_integrated_fluxes.csv",
+      "sha256": "03e5f92b646f2033d394826ccb56ef26235b057e1afe52162465971c8ea9d057"
+    },
+    {
+      "bytes": 18678,
+      "git_blob_sha1": "fb90994dc9c8de4b62317b37555b10af91c4b5bb",
+      "path": "results/40_ae4_equal_cation_routing/wt_rest.json",
+      "sha256": "30c5a4663c95ae9f0b96f7022de8e339bfa092d66b6823ffc58f10494515c3e2"
+    },
+    {
+      "bytes": 928,
+      "git_blob_sha1": "666e2794ecdd4beaae1fc94fc3a176807ac40973",
+      "path": "results/40_ae4_equal_cation_routing/wt_rest_core_comparison.csv",
+      "sha256": "072b5b2098dc2a2b5dacfe4d353b26b8a8e2ec6fbe1a44a632734a8153f9e993"
+    },
+    {
+      "bytes": 1734,
+      "git_blob_sha1": "40183c6b4ceb1b4cd891c67a22cc4850ff01c99a",
+      "path": "results/40_ae4_equal_cation_routing/wt_rest_flux_comparison.csv",
+      "sha256": "3a835b8e19e851b3d9ee476bd7fae7deab22c154465cdc830b0354d325a2ec39"
+    },
+    {
+      "bytes": 7650,
+      "git_blob_sha1": "e99a1c666c9bb26440c820db382d1724958a0c47",
+      "path": "results/40_ae4_equal_cation_routing/wt_timeseries.csv",
+      "sha256": "cd99c120be48fcb152b8514335fc3cf3c96282bbf3fc8e4815d870452e5a9dc4"
+    },
+    {
+      "bytes": 10305,
+      "git_blob_sha1": "64349120e5cbd71446259c1d6f7e452ed377b64b",
+      "path": "results/40_ae4_equal_cation_routing/wt_verification.json",
+      "sha256": "58524722660696633526c417569c7d9f17043d498452a3aaa2a22a01a4928e72"
+    },
+    {
+      "bytes": 2852,
+      "git_blob_sha1": "7adb78d9ac34bc5b7119002fd11532c36a453e65",
+      "path": "src/modern_full_model/ae4_equal_cation_routing.py",
+      "sha256": "fbb6fd25f69d3e5f57ad995a465710670b7a3704f0cf797a0a6c018910fa3293"
+    },
+    {
+      "bytes": 7887,
+      "git_blob_sha1": "72cc7bd698c0dd936edd7ddbe26e5dfecde7fed0",
+      "path": "tests/test_task40_equal_cation_routing.py",
+      "sha256": "d1edc8dd698687587dad2313069af2690c80d2c637770b1bebdc1c6bac80f919"
+    }
+  ],
+  "parent_files_verified_unchanged": 150,
+  "publication_channel": "connected GitHub integration",
+  "report_links_resolve": true,
+  "repository": "esig626/ae4-salivary-transport-control",
+  "scientific_parent": "afd101448763439f369f2682c467f069ea18a442",
+  "status": "TASK40_EQUAL_ROUTING_VALIDATION_COMPLETE"
+}
