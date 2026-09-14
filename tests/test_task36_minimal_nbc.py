@@ -21,7 +21,7 @@ from src.modern_full_model.nbc_minimal import (
     nhe1_stimulation_multiplier,
     normalized_secretory_activation,
 )
-from src.modern_full_model.task31_nhe1_mechanistic import (
+from src.modern_full_model.task31_nhe1_repair import (
     load_background,
     task31_parameters,
 )
