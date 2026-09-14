@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=2.7cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{authblk}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,array,multirow}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[round,authoryear]{natbib}
+\usepackage{lineno}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\hypersetup{colorlinks=true,allcolors=black}
+\graphicspath{{figures/}}
+\setstretch{1.35}
+\linenumbers
+
+\newcommand{\Na}{\mathrm{Na}^{+}}
+\newcommand{\K}{\mathrm{K}^{+}}
+\newcommand{\Cl}{\mathrm{Cl}^{-}}
+\newcommand{\HCO}{\mathrm{HCO}_{3}^{-}}
+\newcommand{\COthree}{\mathrm{CO}_{3}^{2-}}
+\newcommand{\Ca}{\mathrm{Ca}^{2+}}
+\newcommand{\Hion}{\mathrm{H}^{+}}
+\newcommand{\pHi}{\mathrm{pH}_{i}}
+\newcommand{\AeFour}{\mathrm{AE4}}
+\newcommand{\AeTwo}{\mathrm{AE2}}
+\newcommand{\Nkcc}{\mathrm{NKCC1}}
+\newcommand{\Nhe}{\mathrm{NHE1}}
+\newcommand{\Nbc}{\mathrm{NBC}}
+\newcommand{\Cacc}{\mathrm{CaCC}}
+\newcommand{\Nak}{\mathrm{NaK}\text{-}\mathrm{ATPase}}
+\newcommand{\TIC}{\mathrm{TIC}}
+\newcommand{\TA}{\mathrm{TA}}
+
+\title{AE4 Control of Salivary Secretion Nearly a Decade Later:\\
+Acid--Base Constraints, Transporter Compensation and Mechanism Discrimination}
+
+\author[1]{El{\'i}as Vera-Sig{\"u}enza\thanks{Corresponding author: author details to be confirmed before submission.}}
+% TODO: confirm final author list, order and affiliations before submission.
+\affil[1]{Information Theory, Probability and Statistics Unit, Okinawa Institute of Science and Technology, Okinawa, Japan}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Nearly a decade ago, we developed a mathematical model to explain why deletion of the cation dependent chloride/bicarbonate exchanger AE4 impairs salivary secretion whereas deletion of AE2 does not. The model reproduced the reported gland phenotype and suggested that the monovalent cation dependence of AE4 was central to its control of fluid secretion. Since then, experiments have established cAMP dependent regulation of AE4 and have identified molecular determinants that distinguish sodium supported from potassium supported transport. Here we reconstruct the salivary acinar cell model using source constrained transporter laws, conserved amount coordinates, explicit total inorganic carbon and alkalinity balances, and complete membrane current and water accounting. This reconstruction exposes a hidden limitation of the original model. A substantial productive AE4 chloride flux cannot be maintained by the original acid--base architecture without an additional source of intracellular alkalinity. A stimulus recruited electrogenic sodium/bicarbonate cotransporter supplies that missing degree of freedom and permits AE4 to carry approximately 20\% of positive stimulated chloride loading while maintaining physiological pH. However, once wild type physiology is repaired, loss of AE4 is strongly compensated by NKCC1 and causes only a 3--4\% secretion deficit. We then test seven fixed stoichiometric source classes motivated by recent AE4 experiments. None recovers the approximately 35\% knockout phenotype without parameter fitting. Several carbonate classes fail the wild type pH gate during stimulation, while the remaining classes either produce little deficit or increase secretion. Finally, an inverse construction shows that strong AE4 dependent recruitment of apical chloride conductance can reproduce the phenotype magnitude, but with an incorrect early time course and an unvalidated biological dependency. We conclude that the original model identified the correct biological actor but an incomplete network mechanism. AE4 stoichiometry matters, but acid--base supply, transporter compensation and stimulus dependent regulation jointly determine its control of secretion.
+\end{abstract}
+
+\noindent\textbf{Keywords:} salivary gland; acinar cell; AE4; SLC4A9; bicarbonate; intracellular pH; NKCC1; mathematical physiology; mechanism discrimination
+
+
+\input{sections/introduction}
+\input{sections/model_core}
+\input{sections/model_system}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\end{document}
