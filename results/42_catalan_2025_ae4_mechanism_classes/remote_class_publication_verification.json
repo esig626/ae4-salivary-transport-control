@@ -1,0 +1,738 @@
+{
+  "status": "ALL_SEVEN_CLASS_PUBLICATIONS_VERIFIED",
+  "remote_commit_sha": "1436b2af0344e63406b3ed7759f08ed7ff18458a",
+  "remote_tree_sha": "eec46d236a0039730599e09bc614bbc687576315",
+  "all_original_remote_files_unchanged": true,
+  "original_file_count": 1400,
+  "only_task42_files_added": true,
+  "scientific_files_verified": [
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/execution_notes.md",
+      "git_blob_sha1": "a6d48d0ee44b7a961453249ae0d61ef2ebdba404"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/focused_tests.log",
+      "git_blob_sha1": "217679997000a5780a0123b9c25879f9e20c9b27"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/parent_source_manifest.json",
+      "git_blob_sha1": "4636a999694ec2cb28cacc60459025455743f41c"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/preflight_execution.log",
+      "git_blob_sha1": "3c6561d480d13bf242654269cf4dd665a50353ef"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/run_case.py",
+      "git_blob_sha1": "4e962d849cb879d4f2f7acdccb56e74bf4e65310"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/run_panel.py",
+      "git_blob_sha1": "1bb31d9488bb9de0e74b9d3a9a39c74d29fb5245"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/run_preflight.py",
+      "git_blob_sha1": "8c8f23064b106bbf0e3540f5697c4e0914f80dea"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/run_rest.py",
+      "git_blob_sha1": "1ac51d1cf0c9674bd67e79fae44a532d43827395"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/source_and_balance_audit.md",
+      "git_blob_sha1": "16bb76c8c6042962b193028a989f44586db51fc0"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/summarise_predictions.py",
+      "git_blob_sha1": "a8fbdcf8afb59bc0eff2f9a084c81e2ca96cd7a3"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/validation_common.py",
+      "git_blob_sha1": "adff5202d1288c2a7404455beb9f791399b71e9d"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/verify_saved_predictions.py",
+      "git_blob_sha1": "fd1f469e2d76caab78224130fd3c5bba7812bfbc"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/ae4_5pct_all_window_integrals.csv",
+      "git_blob_sha1": "40efb4f71b2a70da6f1616bfb13b1894e36c237f"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/ae4_5pct_console.log",
+      "git_blob_sha1": "8a282b79390dbbbc43e71bc49fd6ccc12a51f051"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/ae4_5pct_execution.log",
+      "git_blob_sha1": "e700259837649b2b676cc632761f61528926827e"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/ae4_5pct_integrated_fluxes.csv",
+      "git_blob_sha1": "c8c2920b6e5cd8b6c1122460cda610c57c919318"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/ae4_5pct_timeseries.csv",
+      "git_blob_sha1": "8d0b682a811cde0fa3957637017baa5194627108"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/ae4_5pct_verification.json",
+      "git_blob_sha1": "588c5e4291780e9152824eda185c2de22ee86d97"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/ae4_null_all_window_integrals.csv",
+      "git_blob_sha1": "2e47e1553e3482f94724441750ef8cac76d5b7cc"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/ae4_null_console.log",
+      "git_blob_sha1": "f0f199b287713143a14086f308a22c2edb7d6d2b"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/ae4_null_execution.log",
+      "git_blob_sha1": "724fe13b05a7303b1684941482539221d704f736"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/ae4_null_integrated_fluxes.csv",
+      "git_blob_sha1": "e0c65a4e656304539bec1e04265fb8973424fc1e"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/ae4_null_timeseries.csv",
+      "git_blob_sha1": "bc5f0d293e7e11d3cd1bcc7eadf02b177ec5bc46"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/ae4_null_verification.json",
+      "git_blob_sha1": "6805787e36afe89367c3451ef60d9e5c39d38c9e"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/budget.json",
+      "git_blob_sha1": "609aa5b07bb08b4b07d51dcc389f6affd9b10c6e"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/class_report.md",
+      "git_blob_sha1": "4ff139565d39a4260185faa3faaa7b66b0034292"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/class_summary.csv",
+      "git_blob_sha1": "1727f4b4db2cafd9ae85a7ac98ca55a285a00253"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/frozen_inputs.json",
+      "git_blob_sha1": "acd1d9b4ddbe5b5baa62eb16ef7e4f4904543ebd"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/rest_execution.log",
+      "git_blob_sha1": "50fd4d9846315b3c1f8da4194f82a176ce41e02e"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/wt_all_window_integrals.csv",
+      "git_blob_sha1": "05d570f91047982aa6831347cecaa3f9341d7e52"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/wt_console.log",
+      "git_blob_sha1": "e0422c5e0338fcf398c66ad2ce858f6002146fbf"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/wt_execution.log",
+      "git_blob_sha1": "b3ea5955fc997b2d95388f4aa7f5ead02378eabe"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/wt_integrated_fluxes.csv",
+      "git_blob_sha1": "a3d2047577f98b995c14946708c3e5dea7fd8c63"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/wt_rest.json",
+      "git_blob_sha1": "78865870deddfb5b376ec3ff5b09cabbfc3e2b92"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/wt_timeseries.csv",
+      "git_blob_sha1": "d39f80fd8c7a78a3ef3934a586145f5a2bd5f1ec"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C0/wt_verification.json",
+      "git_blob_sha1": "b276715e0de15d04606fbe002088797ed306e8e5"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/ae4_5pct_all_window_integrals.csv",
+      "git_blob_sha1": "6d3faf70242b02016caa42fc6c3cf62778d65ceb"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/ae4_5pct_console.log",
+      "git_blob_sha1": "b6276cbb1c15cb1653e01b9fb77c8ab2bb18c05b"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/ae4_5pct_execution.log",
+      "git_blob_sha1": "93ccfe9e6555ff581a4b81893bd53744c6b3e6bc"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/ae4_5pct_integrated_fluxes.csv",
+      "git_blob_sha1": "3e1c443d828dfa01abad131e97164e68c4f335b7"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/ae4_5pct_timeseries.csv",
+      "git_blob_sha1": "06135c698b97ae61d0d47903821de96bed201b50"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/ae4_5pct_verification.json",
+      "git_blob_sha1": "e1e1a5de8955e1d8ec80e10abed08fccaad60a8f"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/ae4_null_all_window_integrals.csv",
+      "git_blob_sha1": "0bcd44431c0f8f1af12c550e27a2ffb77bc7d448"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/ae4_null_console.log",
+      "git_blob_sha1": "54029d0ced04458472c8e98c25920c9565ac83ce"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/ae4_null_execution.log",
+      "git_blob_sha1": "437aedc8a16fc03f70b816e920044cbd6c383c0d"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/ae4_null_integrated_fluxes.csv",
+      "git_blob_sha1": "82a5c1811aedb1dad56e29cd514dc8cbc8e4d954"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/ae4_null_timeseries.csv",
+      "git_blob_sha1": "7c57ab9e8d47358afa863e4f7fdf249171129491"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/ae4_null_verification.json",
+      "git_blob_sha1": "23354ec9466e660f8d217664218c4e886d5ec737"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/budget.json",
+      "git_blob_sha1": "66781edf5edba8bd1cb7f17e86bae0ed01cad138"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/class_report.md",
+      "git_blob_sha1": "a03cfd7d276ab3966421199486ae2213c21dc1e8"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/class_summary.csv",
+      "git_blob_sha1": "72be418124438ddca0e5ea8a2bdf1031f674a08f"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/frozen_inputs.json",
+      "git_blob_sha1": "b1ffc85d469fe30a58261782559aab40a447e9d4"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/rest_execution.log",
+      "git_blob_sha1": "a22ef7cda5676490f9521fd5cb2510b92fffdeb3"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/wt_all_window_integrals.csv",
+      "git_blob_sha1": "47b8ee866e502bacf0d74f2b5537e62bff9ee8d7"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/wt_console.log",
+      "git_blob_sha1": "589044588e33088d93275942520563d0841b7817"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/wt_execution.log",
+      "git_blob_sha1": "e13eb5200f501860e48d49dcb79cc8a7a973ec7f"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/wt_integrated_fluxes.csv",
+      "git_blob_sha1": "c68b984fdef598ea0d5c7e799b2a5b95a594033d"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/wt_rest.json",
+      "git_blob_sha1": "a4c145cc24c77657b96a27494e99ec9b8f6c5058"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/wt_timeseries.csv",
+      "git_blob_sha1": "7e19b2c91c70f9b564b53e6a60058038bd5846f1"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C1/wt_verification.json",
+      "git_blob_sha1": "a50f85773dc0be67303f46ccb61c6f368a39b9bb"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/ae4_5pct_all_window_integrals.csv",
+      "git_blob_sha1": "91f0d00c3879456c1d2f489157a67940d37a0e8b"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/ae4_5pct_console.log",
+      "git_blob_sha1": "ba1a5f300ef4c9f5f65740fe34e74ebbd2d86415"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/ae4_5pct_execution.log",
+      "git_blob_sha1": "e9c0078f3e3a7b0f490e0f1209296ed02d2581c8"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/ae4_5pct_integrated_fluxes.csv",
+      "git_blob_sha1": "78a3fb9933ef605fa450b6f7e6ed3456035050c1"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/ae4_5pct_timeseries.csv",
+      "git_blob_sha1": "93f1dc33ea19ae6eb4211c4753a4959bdfd8483e"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/ae4_5pct_verification.json",
+      "git_blob_sha1": "fb6113b0463b55cc707d04f1595d84293d81e8e1"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/ae4_null_all_window_integrals.csv",
+      "git_blob_sha1": "6b53f7ccff2efa21709b3e20170c5822febe4bde"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/ae4_null_console.log",
+      "git_blob_sha1": "5d6cea2b01b5c3d923df7a89b58a3b3b86441730"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/ae4_null_execution.log",
+      "git_blob_sha1": "e46f35737e3be8c3fe8ab66cc7a869b1699ac0c8"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/ae4_null_integrated_fluxes.csv",
+      "git_blob_sha1": "b1e77c52e1198df19e8f348685319ab666e0e8e4"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/ae4_null_timeseries.csv",
+      "git_blob_sha1": "5f5319c04d6da34de41c89c29183fa71361baa86"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/ae4_null_verification.json",
+      "git_blob_sha1": "30bd6f7f31fd4acc5b198446f7caf099c36fd9db"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/budget.json",
+      "git_blob_sha1": "662de7786f8520d70e8e571192932fe2322ca72c"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/class_report.md",
+      "git_blob_sha1": "dd876440b95959ece640f5b646d0b8cbd03be29c"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/class_summary.csv",
+      "git_blob_sha1": "6f2ba7df81e096e7cb0a788b0eb7cac81f337339"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/frozen_inputs.json",
+      "git_blob_sha1": "e1055fdbbcb75aa4b3abafe4af9ac11825096046"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/rest_execution.log",
+      "git_blob_sha1": "1f33f5c7ea853bcf25b0f27d02cb798e925c1fac"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/wt_console.log",
+      "git_blob_sha1": "1a80280df0b054980103f888d8678eb4845d4291"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/wt_execution.log",
+      "git_blob_sha1": "6d16f5e419f8e354988cc5af8ce7d1fcb73ea94b"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/wt_rest.json",
+      "git_blob_sha1": "733960c105f91f6dd6e4f633f6647daebfdcee55"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/wt_timeseries.csv",
+      "git_blob_sha1": "e839bdd81e3fbc12887db7007d048e7b49ef7a66"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C2/wt_verification.json",
+      "git_blob_sha1": "fe3b8be47183b51e510b1e432a972abdb6fe9f82"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/ae4_5pct_all_window_integrals.csv",
+      "git_blob_sha1": "d0f239a4ff306ae2e62045c2d62ac93821e9b420"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/ae4_5pct_console.log",
+      "git_blob_sha1": "35f03917f61f0a18dc319ef54628486a2aae62d2"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/ae4_5pct_execution.log",
+      "git_blob_sha1": "a01c604d1827cdf3da70b0ca10e8dd055498db18"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/ae4_5pct_integrated_fluxes.csv",
+      "git_blob_sha1": "cee7ce0d3bddec3bc9dd30acf6352f6d5e3cf527"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/ae4_5pct_timeseries.csv",
+      "git_blob_sha1": "ff2bcd9762708a17bea0fec5ea372e2a3ae2c7a1"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/ae4_5pct_verification.json",
+      "git_blob_sha1": "dd9ce270d6119494fe707b0cf4b06b457ac56900"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/ae4_null_all_window_integrals.csv",
+      "git_blob_sha1": "ee85ffedc41520aa70150ebc41734f2b12e70ce8"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/ae4_null_console.log",
+      "git_blob_sha1": "3c5018aebb9575ace3d18ecf0e55c779ca229590"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/ae4_null_execution.log",
+      "git_blob_sha1": "458f8cb08d8cdbc2479aa837026b888dfa5ea1dd"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/ae4_null_integrated_fluxes.csv",
+      "git_blob_sha1": "ca0cf8906e6b31c5ad9821d450a9629e4be9cccf"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/ae4_null_timeseries.csv",
+      "git_blob_sha1": "0e938516f42577c8e60f722fd26ca58ba37c84d2"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/ae4_null_verification.json",
+      "git_blob_sha1": "c1f6854ba7f0c1fbb0af958f9716866f999b98bd"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/budget.json",
+      "git_blob_sha1": "23075c40f650eab19e2e35bb1418970990aeca85"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/class_report.md",
+      "git_blob_sha1": "78ec21f7999772733dc1a8b400b542dd4e078467"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/class_summary.csv",
+      "git_blob_sha1": "0bc495bf9c95630d626d6b25e45938a0e9ceefb3"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/frozen_inputs.json",
+      "git_blob_sha1": "ec7857b2c08cbbb68ead2537501497dcb936f758"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/rest_execution.log",
+      "git_blob_sha1": "0c10f129637872d4cffdac272aaa2462bacd9e47"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/wt_all_window_integrals.csv",
+      "git_blob_sha1": "3990420c7397af60472e5578949c44a588c28688"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/wt_console.log",
+      "git_blob_sha1": "3739d2c76d292e00a412225bf0dce75fb5830c4b"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/wt_execution.log",
+      "git_blob_sha1": "ef2ad19f89794705b0f1d36b399bbe0a0a8a9fdd"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/wt_integrated_fluxes.csv",
+      "git_blob_sha1": "c86e9c915201d367aa067bea6c00bdadd8b7d4d7"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/wt_rest.json",
+      "git_blob_sha1": "da9cb250e4fba2945b2cb779abffffc83fdaa0e1"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/wt_timeseries.csv",
+      "git_blob_sha1": "849998e3f8909b07b1d78e226030be27f6d7d56a"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3a/wt_verification.json",
+      "git_blob_sha1": "6397e30c89af8116eb8ba0499a05917efee13b38"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/ae4_5pct_all_window_integrals.csv",
+      "git_blob_sha1": "547904bb626e75436f954004be66760ccfd4f47c"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/ae4_5pct_console.log",
+      "git_blob_sha1": "481a48158e6365198562c018ff4d3ba28d628017"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/ae4_5pct_execution.log",
+      "git_blob_sha1": "2b11e7e3c3c8ddb7bb3062c219bf9fbb7bfcef0d"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/ae4_5pct_integrated_fluxes.csv",
+      "git_blob_sha1": "8574598f941750d28cedb640058784a84fc10626"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/ae4_5pct_timeseries.csv",
+      "git_blob_sha1": "a88187f26d45c02e2bdf4227d0c9b18199de56a4"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/ae4_5pct_verification.json",
+      "git_blob_sha1": "d985074e79edb6cd7bf3f4fd39e1f6897923ab31"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/ae4_null_all_window_integrals.csv",
+      "git_blob_sha1": "9b51d85021d307a81efd769f628c9e710f3db10d"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/ae4_null_console.log",
+      "git_blob_sha1": "16e0bf69aa1be27ba65fb8bece1c6a5223b1193e"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/ae4_null_execution.log",
+      "git_blob_sha1": "8368fdfb8df6dd30455472b985b5db0e086b0dc7"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/ae4_null_integrated_fluxes.csv",
+      "git_blob_sha1": "c73203f26208cd792f7e2b95b8b418625f3f3343"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/ae4_null_timeseries.csv",
+      "git_blob_sha1": "58123a08492667a087661b1467e55c52bcef6223"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/ae4_null_verification.json",
+      "git_blob_sha1": "34b50987391a8f62ab23c62bde10a39403cf99dc"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/budget.json",
+      "git_blob_sha1": "d70612f40f89e6814865d8e1d3454a50bf427669"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/class_report.md",
+      "git_blob_sha1": "3091d11e4f42b95807265d311771733c62a928b9"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/class_summary.csv",
+      "git_blob_sha1": "7fcf71d68a33228d07ec38c4ff376b9a080dc2f0"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/frozen_inputs.json",
+      "git_blob_sha1": "dec1c8ea7fe80df0094cc7edf8c65a8e30439d97"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/rest_execution.log",
+      "git_blob_sha1": "dffb28a8e52fca4a25c28526202475a6ac7ddf64"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/wt_all_window_integrals.csv",
+      "git_blob_sha1": "0d9d5ff4a2488e033a011f44d85d240edc46e3df"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/wt_console.log",
+      "git_blob_sha1": "e71b3481d9f6af2543c995764047b1fcd54b4d34"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/wt_execution.log",
+      "git_blob_sha1": "c1703eb26a2d00e4ff4513b185da08a3ea529207"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/wt_integrated_fluxes.csv",
+      "git_blob_sha1": "16dae8d22a951873727a8adebde0aaa1afc7ff5f"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/wt_rest.json",
+      "git_blob_sha1": "b4c8400966917d723f7a1a3a7f29563556781776"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/wt_timeseries.csv",
+      "git_blob_sha1": "ec86d4b657edb8a4b02b6b3cfa33e3082d8fd061"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C3b/wt_verification.json",
+      "git_blob_sha1": "88e2931d20d02fde1e261197cd028ed5c1e9c01d"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/ae4_5pct_all_window_integrals.csv",
+      "git_blob_sha1": "6accc10bfccb9fb2ee04635b2010ce4737f81190"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/ae4_5pct_console.log",
+      "git_blob_sha1": "8a33a498a617445b032afca12175823fc45cb9f0"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/ae4_5pct_execution.log",
+      "git_blob_sha1": "c88bab45dd6e48cda800d6c63ef1b8325c8cd2de"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/ae4_5pct_integrated_fluxes.csv",
+      "git_blob_sha1": "85d88cafc09e3ec431d52c054cbfedf42fb954bd"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/ae4_5pct_timeseries.csv",
+      "git_blob_sha1": "9739801205026cd5e4b610584f534407e67b78c3"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/ae4_5pct_verification.json",
+      "git_blob_sha1": "845a76f36e80b7a773b0b97400f18a75b014e3e0"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/ae4_null_all_window_integrals.csv",
+      "git_blob_sha1": "6e24a6d28831521a29d0d62b5f6ee65dac148491"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/ae4_null_console.log",
+      "git_blob_sha1": "9f74beb7c71cd6f7f3aee8b9b1534ec99d01f6d5"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/ae4_null_execution.log",
+      "git_blob_sha1": "4fc88444947ba4add76aec9513e82dc9f3a8b1f3"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/ae4_null_integrated_fluxes.csv",
+      "git_blob_sha1": "0b8ef6234e0267c06de51d8d2cf62a3bdbcb1433"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/ae4_null_timeseries.csv",
+      "git_blob_sha1": "97f3446640587de32857d93e05807b5bf75521cd"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/ae4_null_verification.json",
+      "git_blob_sha1": "23f05c039946a3a7867251ccd56432fdbec7a650"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/budget.json",
+      "git_blob_sha1": "4b69fd6ab409f3e93ce008aa2249fe9744f76dbf"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/class_report.md",
+      "git_blob_sha1": "885615a60a018ff39fc228242eb0fe79fd557587"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/class_summary.csv",
+      "git_blob_sha1": "2fbb674eb157f8618099bd7f24044876a78d4f26"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/frozen_inputs.json",
+      "git_blob_sha1": "274571a527b2319857c5d9ae2661468345109e63"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/rest_execution.log",
+      "git_blob_sha1": "28f78166dccfa6932f34a69e0e26a50b57049b40"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/wt_console.log",
+      "git_blob_sha1": "f0429755ec7524c1457639e7b16ab3e90a0e2232"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/wt_execution.log",
+      "git_blob_sha1": "bbb5e8825fe5f02afa16d666ef8b5ce4d0491164"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/wt_rest.json",
+      "git_blob_sha1": "0cfb5dcbce76061d20ee697e594f97179fd9198c"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/wt_timeseries.csv",
+      "git_blob_sha1": "906d4eb03cd4b2847ed679809b8f23aa6eccd4dd"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4a/wt_verification.json",
+      "git_blob_sha1": "1c17d0ba569880dd3300a5b40cb5ad064cca4033"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/ae4_5pct_all_window_integrals.csv",
+      "git_blob_sha1": "cbb7df13f389336dd216e2a8667c561dcc995bdb"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/ae4_5pct_console.log",
+      "git_blob_sha1": "97466e4ac4897ee0c41c1ef1adeaba3463aa2bbf"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/ae4_5pct_execution.log",
+      "git_blob_sha1": "62e5af9aeee30624ca55c7994bb700d1df1a10f9"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/ae4_5pct_integrated_fluxes.csv",
+      "git_blob_sha1": "58ef81b8054b78b66751247d078dbaa2e475ccb0"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/ae4_5pct_timeseries.csv",
+      "git_blob_sha1": "de6da82eceff9016e1572616a26e4c0bf905fc52"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/ae4_5pct_verification.json",
+      "git_blob_sha1": "2178fdf85b7dbb0944b33fa82c49d8ac85402c69"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/ae4_null_all_window_integrals.csv",
+      "git_blob_sha1": "e46321effd1ec2a38f014c47202313686973b168"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/ae4_null_console.log",
+      "git_blob_sha1": "63d1a90658ae0ff052394c7946dceffefd9d8eb1"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/ae4_null_execution.log",
+      "git_blob_sha1": "ccdb108689fcd26367bcba74f6943915d6bf1bbd"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/ae4_null_integrated_fluxes.csv",
+      "git_blob_sha1": "36c5b530a4eb4a2a1c92ebfc7d9de446af70023a"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/ae4_null_timeseries.csv",
+      "git_blob_sha1": "a5025fd7f7cb41bc89b83876c0897c77d0bf71b8"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/ae4_null_verification.json",
+      "git_blob_sha1": "1547aa31a3a8273ce46367fa6c0f9484a6eb4f6b"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/budget.json",
+      "git_blob_sha1": "60a8aa4ad2e6f0f89c75a7ca92afa4dc93380c60"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/class_report.md",
+      "git_blob_sha1": "2248baabc641d3e630c1bc137f7100891f295fd4"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/class_summary.csv",
+      "git_blob_sha1": "f883b8b93aed030fe357a4a738cb4915aae97244"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/frozen_inputs.json",
+      "git_blob_sha1": "ee2a2ab45b91dbadc3d5d484bb3cb5eeb53381ed"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/rest_execution.log",
+      "git_blob_sha1": "10a17a8cf1acb0091e0d156dd25552f5f1b72805"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/wt_console.log",
+      "git_blob_sha1": "080d8cbe65bfb1e5762d586f66cbfc7bf497078b"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/wt_execution.log",
+      "git_blob_sha1": "ac1ebdb30475c936de9fc96341ed70bac1ee6cba"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/wt_rest.json",
+      "git_blob_sha1": "66788869b84863e9f113d5bd60db37fa95535134"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/wt_timeseries.csv",
+      "git_blob_sha1": "7ce382b53345ef10e512352af934ae56508bed0c"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/C4b/wt_verification.json",
+      "git_blob_sha1": "d3c130dfe80453b1f30c4c1bfc83c4fb6f925f04"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/panel_started.json",
+      "git_blob_sha1": "af2d54a56b312f45a341e1384d31f7172a583ec6"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/preflight.json",
+      "git_blob_sha1": "ac401aceb54d5183092c79e9c49c3cc8c52ab1da"
+    },
+    {
+      "path": "results/42_catalan_2025_ae4_mechanism_classes/thermodynamic_affinities.csv",
+      "git_blob_sha1": "b1adba174e83bfc1c326d18d225bc6c2aaa8d47e"
+    },
+    {
+      "path": "src/modern_full_model/ae4_catalan2025.py",
+      "git_blob_sha1": "bb331a3d2dac612341a23193672897eb3eab79b9"
+    },
+    {
+      "path": "tests/test_task42_catalan2025.py",
+      "git_blob_sha1": "346737cbc10a90bd366398ff5972b083a70c4803"
+    }
+  ],
+  "class_checkpoint_shas": {
+    "source_checks": "945a470008db5c3095aaefd82113ef518ccdab71",
+    "wt_rests": "72b5c3373f2a303a8f73fa840b993d67d7204e0f",
+    "C0": "7ae6797b05aa6f075ac9db542b9a09977427c63b",
+    "C1": "7a8db3263ca4087065b84dcd52029baceb81ccdb",
+    "C2": "daefc9ab811f5eb2dc39f01da0a0adac17ac82e1",
+    "C3a": "f9d13361922ca90aa86829383fd5702464e1b4af",
+    "C3b": "0f9539873a70978fce43cfbbf5d8086bd97f19bd",
+    "C4a": "24fbc4905fc75d0ff3c01dfa64e12a1570309fb3",
+    "C4b": "1436b2af0344e63406b3ed7759f08ed7ff18458a"
+  },
+  "interpretation_unlocked": false
+}
