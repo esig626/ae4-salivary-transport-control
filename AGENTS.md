@@ -1,49 +1,37 @@
-# Active phase: Task 42 Catalán 2025 AE4 mechanism class discrimination
+# Active phase: manuscript development
 
-Work only on:
+The scientific execution through Tasks 41 and 42 is complete and merged to `main`.
 
-`codex/task-42-catalan-2025-ae4-mechanism-classes`
+Current manuscript work belongs on:
 
-Read first:
+`codex/manuscript-ae4-decade-reassessment`
 
-1. `analysis/42_catalan_2025_ae4_mechanism_classes/source_contract.md`
-2. `prompts/42_catalan_2025_ae4_mechanism_classes.md`
-3. `analysis/40_ae4_equal_cation_routing/final_answer.md`
+Start with:
 
-Then execute Task 42 exactly as written.
-
-## Repository protection
-
-The branch was created from current `main` at `fe51473d7cc201e2e04007aa62fbc1b45098732e`.
-
-Task 41 is separately preserved in draft PR #33 at `86f135e075aa91a70a752b650d7bb894353fee04`.
-
-Do not modify, merge, cherry pick, force push, close or overwrite Task 41 or its branch as part of Task 42.
-
-Do not edit `main`.
-
-Do not edit or delete `archive/`, earlier numbered analyses, earlier results, manuscript material or historical branches.
-
-Task 42 should add only its own source, tests, analysis, compact results and documentation.
+1. `manuscript/README.md`
+2. `manuscript/FIGURE_PLAN.md`
+3. `manuscript/main.tex`
+4. `manuscript/REVISION_CHECKLIST.md`
+5. the final reports for Tasks 37, 40, 41 and 42
 
 ## Scientific protection
 
-Task 40 is the scientific parent.
+- Do not rerun, tune or reinterpret Tasks 37, 40, 41 or 42 merely to improve the manuscript narrative.
+- Task 41 is target-selected and must remain labelled as a constructive comparison rather than independent validation.
+- Task 42 does not falsify Catalán et al. (2025); it tests source stoichiometries under the inherited Task 40 scalar kinetic law.
+- Preserve the pre-reveal Task 42 checkpoint and all failed mechanism classes.
+- Preserve the distinction between source-derived experimental facts, model deductions and hypotheses.
+- Do not invent a historical reason for omitting NBC from the 2018 model. State only what the published model supports unless archival notes establish more.
 
-Task 41's AE4 dependent CaCC recruitment is explicitly forbidden in Task 42. Task 41 is a post freeze comparison only.
+## Repository protection
 
-The approximately 35% AE4 loss secretion phenotype is held out until every predeclared Catalán 2025 mechanism class has either failed its WT gate or produced frozen genotype predictions.
+- Do not edit or delete `archive/`, earlier numbered analyses, earlier results or frozen provenance records.
+- Manuscript changes should remain under `manuscript/`, apart from deliberate updates to top-level project guidance.
+- Keep figures reproducible from `manuscript/make_figures.py`.
+- Do not commit auxiliary LaTeX build files or logs.
+- Use British English.
+- Use BibTeX, `cleveref`, `equation` and `align`; number only equations that are referenced.
 
-No optimisation, no parameter sweep, no cation fraction tuning, no genotype specific resting solve and no phenotype based selection.
+## Publication state
 
-The first stage keeps the inherited Task 40 scalar AE4 cycle law fixed and changes only the source stoichiometry according to the source contract. This limitation must be stated in the final interpretation.
-
-## Publication
-
-Use the connected GitHub integration for remote writes.
-
-Publish only to the Task 42 branch.
-
-Do not merge to `main`.
-
-Open a draft PR only after all predeclared classes and the final report are complete.
+The current manuscript is a first complete draft for author editing, not a submission-ready final article. Do not claim that the final author list, funding, parameter supplement or journal formatting has been settled.
