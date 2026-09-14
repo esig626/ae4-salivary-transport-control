@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "global_attempt": 2,
+      "initial_state_sha256": "d94a5a160f3da74a7ffdec17cee844919fa5f7d3b770bccf9d43777c1e6373bd",
+      "last_solver_time_s": 600.0,
+      "nfev": 2336,
+      "njev": 2,
+      "nlu": 598,
+      "solver": {
+        "amount_atol_fmol": 1e-10,
+        "label": "production_radau",
+        "max_step_s": 2.0,
+        "method": "Radau",
+        "regulatory_atol_fraction": 1e-10,
+        "rtol": 1e-07,
+        "volume_atol_pL": 1e-12
+      },
+      "solver_status": "finished",
+      "stopped_by_scientific_gate": false,
+      "wall_seconds": 1.5572346580011072
+    }
+  ],
+  "budget": {
+    "algebraic_design_residual_calls": 48568,
+    "algebraic_design_solver_calls": 7,
+    "algebraic_least_squares_solver_calls": 2,
+    "blas_threads": 1,
+    "completed_cases": [
+      "wt",
+      "ae4_5pct"
+    ],
+    "genotype_specific_rest_solves": 0,
+    "integration_attempts": 2,
+    "limits_respected": true,
+    "no_further_scientific_execution": false,
+    "numerical_execution_seconds": 42.48770234000949,
+    "numerical_retries": 0,
+    "parameter_selection_uses_target": true,
+    "scientific_workers": 1,
+    "selected_production_parameters": {
+      "cycle_capacity_fmol_s": 0.11825332823371645
+    },
+    "source_tests_pass": true,
+    "started_cases": [
+      "wt",
+      "ae4_5pct"
+    ],
+    "stationary_solves": 1,
+    "status": "AE4_5PCT_PASS",
+    "unselected_algebraic_candidates_simulated": 0,
+    "wt_rest_pass": true
+  },
+  "case": "ae4_5pct",
+  "chloride_partition": {
+    "definition": "Integrate max(J_Cl,0) for NKCC1, AE4 and AE2 separately, then normalize their sum.",
+    "nkcc1_context_band": [
+      0.65,
+      0.75
+    ],
+    "nkcc1_within_context": false,
+    "positive_loading_pool_fmol": 134.30991019431843,
+    "positive_shares": {
+      "ae2": 0.007644955274976037,
+      "ae4": 0.04146769540255882,
+      "nkcc1": 0.9508873493224651
+    },
+    "validation_only": true,
+    "window_s": [
+      60,
+      600
+    ]
+  },
+  "error": null,
+  "first_failure": null,
+  "secretion": {
+    "activation_checks": {
+      "cumulative_0_600_gt_1p10_rest": true,
+      "endpoint_at_least_rest": true,
+      "mean_60_600_gt_1p10_rest": true
+    },
+    "activation_required": false,
+    "cumulative_0_600_pL": 0.7401935470007625,
+    "endpoint_pL_s": 0.001074134912678418,
+    "mean_60_600_pL_s": 0.0011981685551427624,
+    "q_rest_pL_s": 0.000986443658562211,
+    "quadrature": "Trapezoidal on integer seconds plus t=0 and 1e-6; identical to Tasks 37-38."
+  },
+  "status": "PASS"
+}

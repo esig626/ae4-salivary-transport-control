@@ -1,0 +1,9 @@
+{
+  "solver_success": false,
+  "root_calls": 1,
+  "actual_residual_calls": null,
+  "status": "NUMERICAL_DOMAIN_EXCEPTION",
+  "exception": "ValueError: rest coordinates must be positive",
+  "explanation": "The default hybr trust region stepped outside the positive-volume water manifold. No design root was returned, no parameter selected, and no trajectory run. The original residual counter was not persisted before this exception.",
+  "production_trajectories_run": 0
+}

@@ -1,0 +1,87 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "global_attempt": 1,
+      "initial_state_sha256": "a0b96ef16e5967de4dfe2bdabb882f2a28d478e211f920bc19cd735a5a143acb",
+      "last_solver_time_s": 600.0,
+      "nfev": 2336,
+      "njev": 2,
+      "nlu": 594,
+      "solver": {
+        "amount_atol_fmol": 1e-10,
+        "label": "production_radau",
+        "max_step_s": 2.0,
+        "method": "Radau",
+        "regulatory_atol_fraction": 1e-10,
+        "rtol": 1e-07,
+        "volume_atol_pL": 1e-12
+      },
+      "solver_status": "finished",
+      "stopped_by_scientific_gate": false,
+      "wall_seconds": 1.6018824910024705
+    }
+  ],
+  "budget": {
+    "algebraic_design_residual_calls": 0,
+    "algebraic_design_solver_calls": 0,
+    "blas_threads": 1,
+    "completed_cases": [
+      "wt"
+    ],
+    "genotype_specific_rest_solves": 0,
+    "integration_attempts": 1,
+    "limits_respected": true,
+    "no_further_scientific_execution": false,
+    "numerical_execution_seconds": 2.0593310559997917,
+    "numerical_retries": 0,
+    "parameter_selection_uses_target": true,
+    "scientific_workers": 1,
+    "selected_production_parameters": {
+      "null_stimulated_fraction": 0.10511872843288446
+    },
+    "source_tests_pass": true,
+    "started_cases": [
+      "wt"
+    ],
+    "stationary_solves": 0,
+    "status": "WT_PASS",
+    "wt_rest_pass": true
+  },
+  "case": "wt",
+  "chloride_partition": {
+    "definition": "Integrate max(J_Cl,0) for NKCC1, AE4 and AE2 separately, then normalize their sum.",
+    "nkcc1_context_band": [
+      0.65,
+      0.75
+    ],
+    "nkcc1_within_context": false,
+    "positive_loading_pool_fmol": 197.92767905893515,
+    "positive_shares": {
+      "ae2": 0.0,
+      "ae4": 0.2074267841520685,
+      "nkcc1": 0.7925732158479315
+    },
+    "validation_only": true,
+    "window_s": [
+      60,
+      600
+    ]
+  },
+  "error": null,
+  "first_failure": null,
+  "secretion": {
+    "activation_checks": {
+      "cumulative_0_600_gt_1p10_rest": true,
+      "endpoint_at_least_rest": true,
+      "mean_60_600_gt_1p10_rest": true
+    },
+    "activation_required": true,
+    "cumulative_0_600_pL": 0.992524544081835,
+    "endpoint_pL_s": 0.0016021248621457846,
+    "mean_60_600_pL_s": 0.0016366136311001798,
+    "q_rest_pL_s": 0.0010776814707374822,
+    "quadrature": "Trapezoidal on integer seconds plus t=0 and 1e-6; identical to Tasks 37-38."
+  },
+  "status": "PASS"
+}

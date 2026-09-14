@@ -1,0 +1,34 @@
+{
+  "all_algebraic_solver_calls": 17,
+  "blas_threads": 1,
+  "branch": "codex/task-40-ae4-equal-cation-routing",
+  "completed_600s_trajectories": 8,
+  "completed_utc": "2026-09-14T05:29:57.068097+00:00",
+  "final_deficits_percent": {
+    "ae4_5pct": 23.163365263893244,
+    "ae4_null": 30.26115064458511
+  },
+  "genotype_specific_rest_solves": 0,
+  "integration_numerical_retries": 0,
+  "least_squares_equation_solver_calls": 2,
+  "new_WT_rest_solves": 1,
+  "no_further_scientific_execution": true,
+  "original_Task40_results_preserved": true,
+  "production_integration_attempts": 9,
+  "recorded_algebraic_residual_evaluations": 51151,
+  "recorded_numerical_seconds": 59.91614289901372,
+  "routing_fractions_tested_in_followup": [
+    0.5
+  ],
+  "scientific_parent_commit": "76f3144a4e662eb12d6da26c83ebf6f2ff47a59d",
+  "scientific_trajectory_stops": 1,
+  "scientific_workers": 1,
+  "selected_b": 0.10511872843288446,
+  "selected_candidate": "08",
+  "selected_model": "AE4-dependent stimulated CaCC recruitment",
+  "single_scientific_agent": true,
+  "status": "TASK41_TARGET_REACHED_REPORT_COMPLETE",
+  "target_selected_not_independent_validation": true,
+  "timing_limitation": "Initial candidate-2 domain exception was not timed in a saved result; residual count also unavailable.",
+  "unrecorded_residual_count_calls": 1
+}

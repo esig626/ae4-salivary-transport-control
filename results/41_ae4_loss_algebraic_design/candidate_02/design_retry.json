@@ -1,0 +1,261 @@
+{
+  "actual_residual_calls": 245,
+  "cacc_conductance_factor": 744436204.8633032,
+  "capacity_fmol_s": 0.1301409857258126,
+  "constraints": {
+    "null_pH": 7.28,
+    "null_sustained_flow_deficit": 0.33
+  },
+  "max_abs_scaled_residual": 0.07455268973841234,
+  "production_trajectories_run": 0,
+  "root_calls": 1,
+  "solver_message": "The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations.",
+  "solver_options": {
+    "eps": 1e-08,
+    "factor": 0.1,
+    "maxfev": 2500,
+    "xtol": 1e-10
+  },
+  "solver_success": false,
+  "states": [
+    {
+      "case": "wt",
+      "conservation_ratios": {
+        "ae4_charge_fmol_s": 0.0,
+        "apical_current_A": 6174.906086091787,
+        "basolateral_current_A": 3.2311742677852644e-07,
+        "buffer_site_accounting_fmol_s": 0.0,
+        "carbon_accounting_fmol_s": 9.540979117872439e-08,
+        "cell_bulk_charge_rate_fmol_s": 6399.839179715982,
+        "cell_speciation_alkalinity_mM": 0.002653877118063974,
+        "homeostasis_charge_fmol_s": 2.42861286636753e-07,
+        "lumen_bulk_charge_rate_minus_outflow_fmol_s": 6399.839178206773,
+        "lumen_speciation_alkalinity_mM": 0.00016653345369377348,
+        "water_volume_accounting_pL_s": 0.0
+      },
+      "coordinates": [
+        15.795491414365069,
+        109.72044899480014,
+        7.986475247888646,
+        7.021966262795756,
+        1.2424012882503828,
+        121.07722175286824,
+        29.283660251841543,
+        3.689200505058724,
+        6.672343246517512,
+        0.10718719375146608
+      ],
+      "failures": [
+        {
+          "absolute_tolerance": 1e-10,
+          "gate": "cell_bulk_charge_rate_fmol_s",
+          "value": 6.399839179715983e-07
+        },
+        {
+          "absolute_tolerance": 1e-10,
+          "gate": "lumen_bulk_charge_rate_minus_outflow_fmol_s",
+          "value": -6.399839178206773e-07
+        },
+        {
+          "absolute_tolerance": 1e-20,
+          "gate": "apical_current_A",
+          "value": -6.174906086091787e-17
+        }
+      ],
+      "observables": {
+        "ae2_cl_inward_signed_fmol_s": -0.00032976953540587,
+        "ae2_positive_cl_loading_fmol_s": 0.0,
+        "ae4_cl_inward_fmol_s": 0.08176740666221342,
+        "ae4_k_branch_export_fmol_s": 0.04088370333110671,
+        "ae4_k_cell_source_fmol_s": -0.04088370333110671,
+        "ae4_na_branch_export_fmol_s": 0.04088370333110671,
+        "ae4_na_cell_source_fmol_s": -0.04088370333110671,
+        "ae4_ta_cell_source_fmol_s": -0.16353481332442685,
+        "ae4_tic_cell_source_fmol_s": -0.16353481332442685,
+        "cacc_cl_export_fmol_s": 0.3432329058579799,
+        "cl_i_mM": 43.16895226682289,
+        "hco3_i_mM": 7.129441269972479,
+        "k_i_mM": 109.72044899480015,
+        "na_i_mM": 15.795491414365069,
+        "nbc_activation": 1.0,
+        "nbc_current_A": 7.578958506899101e-12,
+        "nbc_cycle_inward_fmol_s": 0.07855036968181917,
+        "nbc_hco3_inward_fmol_s": 0.15710073936363833,
+        "nhe1_inward_fmol_s": 0.007906235503333664,
+        "nhe1_multiplier": 2.3,
+        "nkcc1_activity_multiplier": 1.75,
+        "nkcc1_cl_inward_fmol_s": 0.2602819714516252,
+        "nkcc1_cycle_inward_fmol_s": 0.1301409857258126,
+        "nkcc1_x_i_mM4": 3229711.5335461614,
+        "osm_lumen_mOsm": 301.50015876690946,
+        "paracellular_cl_return_fmol_s": 0.13155220781995883,
+        "ph_i": 7.021966262795586,
+        "pump_total_cycles_fmol_s": 0.058923130499773824,
+        "q_out_pL_s": 0.0014374387502932157,
+        "tic_i_mM": 7.986475247888646,
+        "time_s": 600.0,
+        "v_apical_V": -0.0328301758275339,
+        "v_basolateral_V": -0.07943422636825534,
+        "v_transepithelial_V": -0.04660405054072144,
+        "volume_i_pL": 1.2424012882503828
+      },
+      "rhs": [
+        -0.0010555039194627414,
+        0.0013447777017844276,
+        -0.0015132972795472988,
+        -7.863141376870941e-05,
+        0.0018019310779510134,
+        2.1634170149775755e-15,
+        0.00018119465209781582,
+        0.0003092105540773854,
+        -0.00026975530768297284,
+        0.00038551078454589303,
+        0.0007608004977759895,
+        -2.207435623180487e-16,
+        0.0
+      ],
+      "state_vector": [
+        19.624338881755023,
+        136.3168271785501,
+        53.63316190872004,
+        9.922407136556648,
+        24.246241945640254,
+        1.2424012882503828,
+        12.977927626913912,
+        3.1388333651662457,
+        15.804759892442616,
+        0.395435049323736,
+        0.31200109963754324,
+        0.10718719375146608,
+        1.0
+      ]
+    },
+    {
+      "case": "ae4_null",
+      "conservation_ratios": {
+        "ae4_charge_fmol_s": 0.0,
+        "apical_current_A": 895.3070549683522,
+        "basolateral_current_A": 8.077935669463161e-06,
+        "buffer_site_accounting_fmol_s": 0.0,
+        "carbon_accounting_fmol_s": 0.0,
+        "cell_bulk_charge_rate_fmol_s": 927.9203718728576,
+        "cell_speciation_alkalinity_mM": 0.0010373923942097463,
+        "homeostasis_charge_fmol_s": 2.979387569990166e-06,
+        "lumen_bulk_charge_rate_minus_outflow_fmol_s": 927.9203746484152,
+        "lumen_speciation_alkalinity_mM": 5.329070518200751e-06,
+        "water_volume_accounting_pL_s": 0.0
+      },
+      "coordinates": [
+        11.486105311066757,
+        115.71375415002628,
+        19.625370704607732,
+        7.315243458052177,
+        1.235266422728413,
+        128.38484941978166,
+        21.904675490228726,
+        5.604692301814236,
+        6.855872089368195,
+        0.10535124443932518
+      ],
+      "failures": [
+        {
+          "gate": "cl_i_mM",
+          "inclusive": true,
+          "lower": 30.0,
+          "upper": 80.0,
+          "value": 29.120240962755744
+        },
+        {
+          "gate": "ph_i",
+          "inclusive": true,
+          "lower": 6.6,
+          "upper": 7.3,
+          "value": 7.315243458052247
+        },
+        {
+          "absolute_tolerance": 1e-10,
+          "gate": "cell_bulk_charge_rate_fmol_s",
+          "value": 9.279203718728576e-08
+        },
+        {
+          "absolute_tolerance": 1e-10,
+          "gate": "lumen_bulk_charge_rate_minus_outflow_fmol_s",
+          "value": -9.279203746484152e-08
+        },
+        {
+          "absolute_tolerance": 1e-20,
+          "gate": "apical_current_A",
+          "value": -8.953070549683522e-18
+        }
+      ],
+      "observables": {
+        "ae2_cl_inward_signed_fmol_s": 0.002710177598947316,
+        "ae2_positive_cl_loading_fmol_s": 0.002710177598947316,
+        "ae4_cl_inward_fmol_s": 0.0,
+        "ae4_k_branch_export_fmol_s": -0.0,
+        "ae4_k_cell_source_fmol_s": 0.0,
+        "ae4_na_branch_export_fmol_s": -0.0,
+        "ae4_na_cell_source_fmol_s": 0.0,
+        "ae4_ta_cell_source_fmol_s": 0.0,
+        "ae4_tic_cell_source_fmol_s": 0.0,
+        "cacc_cl_export_fmol_s": 0.2629993778778952,
+        "cl_i_mM": 29.120240962755744,
+        "hco3_i_mM": 18.48041210944557,
+        "k_i_mM": 115.71375415002628,
+        "na_i_mM": 11.486105311066757,
+        "nbc_activation": 1.0,
+        "nbc_current_A": 2.136635938270979e-13,
+        "nbc_cycle_inward_fmol_s": 0.0022144671022260856,
+        "nbc_hco3_inward_fmol_s": 0.004428934204452171,
+        "nhe1_inward_fmol_s": 0.0008772533387008467,
+        "nhe1_multiplier": 2.3,
+        "nkcc1_activity_multiplier": 1.75,
+        "nkcc1_cl_inward_fmol_s": 0.2602819714516252,
+        "nkcc1_cycle_inward_fmol_s": 0.1301409857258126,
+        "nkcc1_x_i_mM4": 1127061.7377228872,
+        "osm_lumen_mOsm": 301.4136730022515,
+        "paracellular_cl_return_fmol_s": 0.10632114946797595,
+        "ph_i": 7.315243458052247,
+        "pump_total_cycles_fmol_s": 0.04449794273595686,
+        "q_out_pL_s": 0.0010702488878650358,
+        "tic_i_mM": 19.625370704607732,
+        "time_s": 600.0,
+        "v_apical_V": -0.04299988832999449,
+        "v_basolateral_V": -0.08021848426303323,
+        "v_transepithelial_V": -0.03721859593303874,
+        "volume_i_pL": 1.235266422728413
+      },
+      "rhs": [
+        -0.0002611220411308235,
+        0.0028499959500507543,
+        -7.2288273229581534e-06,
+        0.00014170159758596784,
+        0.0025960099442057017,
+        2.500170209751573e-16,
+        -0.0007630344625593755,
+        -0.00043442831777151455,
+        0.0009361926874896231,
+        -0.00013133609230402132,
+        -0.0021335626757830527,
+        1.0083080204115191e-16,
+        0.0
+      ],
+      "state_vector": [
+        14.188400218683256,
+        142.937315149378,
+        35.971255883052685,
+        24.242561464999785,
+        43.09269727906372,
+        1.235266422728413,
+        13.525503653529373,
+        2.3076848219351818,
+        15.330655757654839,
+        0.5904613086956357,
+        0.502532717809719,
+        0.10535124443932518,
+        1.0
+      ]
+    }
+  ],
+  "wall_seconds": 0.4418209260002186
+}

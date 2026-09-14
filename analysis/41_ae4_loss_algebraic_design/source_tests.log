@@ -1,0 +1,8 @@
+test_production_matches_selected_inverse_equations (task41_tests.CapacityTests.test_production_matches_selected_inverse_equations) ... ok
+test_signed_cap_and_nkcc1_expression_scaling (task41_tests.CapacityTests.test_signed_cap_and_nkcc1_expression_scaling) ... ok
+test_whole_model_isolated_source_and_nonrouting_invariance (task41_tests.CapacityTests.test_whole_model_isolated_source_and_nonrouting_invariance) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.021s
+
+OK

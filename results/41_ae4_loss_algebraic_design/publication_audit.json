@@ -1,0 +1,878 @@
+{
+  "artifact_policy": "UTF-8 source, tests, Markdown, JSON, CSV, logs and SVG. PNG is a local preview of the published SVG.",
+  "base_commit": "76f3144a4e662eb12d6da26c83ebf6f2ff47a59d",
+  "base_tree": "ac130d6d97bf1d6b6b8b94996e469abb0d58d35a",
+  "branch": "codex/task-40-ae4-equal-cation-routing",
+  "changed_parent_files": [],
+  "files_excluding_this_audit": [
+    {
+      "bytes": 568,
+      "git_blob_sha1": "f20ecf3c43ed1a87eb7ad21e99a71888f5224e29",
+      "path": "analysis/41_ae4_loss_algebraic_design/README.md",
+      "sha256": "8e5c5733d25d8ef0fd050364fd53fe79e2edd95c9bcc59b167a6b99a74c92969"
+    },
+    {
+      "bytes": 2564,
+      "git_blob_sha1": "ba7c2950b2b6831e5d34c1867d91bc7e6f833381",
+      "path": "analysis/41_ae4_loss_algebraic_design/ae4_5pct_execution.log",
+      "sha256": "3d1414de69a965172c3b2b224efa7de31c08fac5c729bc3fc1bf92ae9007dcdd"
+    },
+    {
+      "bytes": 5244,
+      "git_blob_sha1": "7c14f47f3ff9708671f6173d85522a9231db4628",
+      "path": "analysis/41_ae4_loss_algebraic_design/ae4_null_execution.log",
+      "sha256": "223df27c327850e30e8ed651c80892e20317d183602abee2c1cdcb3836a26346"
+    },
+    {
+      "bytes": 4130,
+      "git_blob_sha1": "bf9270f742dcd5c6eb41a4ba02674cce0940d27a",
+      "path": "analysis/41_ae4_loss_algebraic_design/attempt_ledger.md",
+      "sha256": "12b026a2e30f010335178232c69e486e8edc3f5687784f4df153ff64bfd09fac"
+    },
+    {
+      "bytes": 3386,
+      "git_blob_sha1": "2e5eed431f0d322e63287aea6d4eaa771dc1fc9e",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_02/design.py",
+      "sha256": "aca081ec2678357426bb6a67e2f64c47d48cbc9395ceedd9bbac5c8ed92ea203"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_02/design_execution.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1186,
+      "git_blob_sha1": "893f639a11a5d8182bdeef915e5661bcba2589ed",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_02/design_intent.md",
+      "sha256": "02f0b8f975b33cd51d5f5c7738a0dcda8ed9d765aa85020d788f2eb1769a5e11"
+    },
+    {
+      "bytes": 8855,
+      "git_blob_sha1": "2e8a790d9da53f5df39470d937a5438e4434281e",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_02/design_retry_execution.log",
+      "sha256": "dab173d8c2acdb22fc232420d8e1ec814f6e5f5800849f219502cfc2f683e6e2"
+    },
+    {
+      "bytes": 7259,
+      "git_blob_sha1": "09f19d66aa371bf58a35d20fd6c291d35de1e078",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_03/ae4_only_execution.log",
+      "sha256": "3693cebcd290e3031a1291c77fc88fd9561c09627a452fc6c9acdc8005c746c9"
+    },
+    {
+      "bytes": 813,
+      "git_blob_sha1": "8a4e488698f06bf57ec2abb28c10a2d51f83e220",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_03/ae4_only_intent.md",
+      "sha256": "6a05f61d59c15c83e129ea36cfa1af8790e3cccb892615e0368affe2fa793b7d"
+    },
+    {
+      "bytes": 3269,
+      "git_blob_sha1": "1d6dc2876e61e0dcdacb49fba2674d7e311c96cd",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_03/design.py",
+      "sha256": "d7b37d5a1637fd2590062c7a825569c5c39ebc87744738c6d971a38e13e83473"
+    },
+    {
+      "bytes": 3069,
+      "git_blob_sha1": "c4fd74381c0f9246a9f2edc4516ab23fd2cedd04",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_03/design_ae4_only.py",
+      "sha256": "e99aac7983d8903397810e14808940fa3315e9ce34f10925a7bd5c85c98550a8"
+    },
+    {
+      "bytes": 7754,
+      "git_blob_sha1": "d4b173db795a45bd383b76a1fd7a60ccf0c7f6e3",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_03/design_execution.log",
+      "sha256": "735b5688a7228455656ecaf71b88d0c8119c7c67464baf064ebe4987cb907d29"
+    },
+    {
+      "bytes": 1288,
+      "git_blob_sha1": "1a8a24d95c4145ea10c59073f37906ce10a6be17",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_03/design_intent.md",
+      "sha256": "7d80591c23568632f40c3596419c458f52b4925512f5a54a372ff56017a24e15"
+    },
+    {
+      "bytes": 3353,
+      "git_blob_sha1": "5b0d9a5c448a249c897a5aa92c1900207f5cae9e",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_04/design.py",
+      "sha256": "0ce9b309569bb7924e7e4d4fa9904392d75b6f6d54e5d8110e1e5c10020108cb"
+    },
+    {
+      "bytes": 7705,
+      "git_blob_sha1": "4e2fdfbf9e52b59c3f0c75aa6b26a9edd0866b41",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_04/design_execution.log",
+      "sha256": "096ca392286ffd7ef93ebfee09a4ef0a67ef8424f1e836b74aa1a123077a7d83"
+    },
+    {
+      "bytes": 1133,
+      "git_blob_sha1": "c26b5f8c3e175c0cdbb22573428490c714797a85",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_04/design_intent.md",
+      "sha256": "f052d19336295dbf4c739e97f544d1eb5a7006edc92ccd176469849175040bb9"
+    },
+    {
+      "bytes": 3605,
+      "git_blob_sha1": "bb9e778eb50d0b0d19bf7a46b2c6b0aa749f21b4",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_05/design.py",
+      "sha256": "2c4faa0f0c50c086ac77c9fe80427589f95b17f9d922a7f0ae17e753d4fc2c6c"
+    },
+    {
+      "bytes": 7718,
+      "git_blob_sha1": "06cfe69247cedb169756465afa1f6d838e75ac83",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_05/design_execution.log",
+      "sha256": "7a7bfa24bc18649a881eb45f47e677e57f268d1178b9aa473405bf2829add1fe"
+    },
+    {
+      "bytes": 1274,
+      "git_blob_sha1": "ac96e3f7f5e5d34da3e1d034834a504db6c04a6f",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_05/design_intent.md",
+      "sha256": "d3e5efcb6beca138aebb28bf8eaff9d2fe2755bd2bc6ef76800490e280b734a0"
+    },
+    {
+      "bytes": 3295,
+      "git_blob_sha1": "4a8993db245ade06fb4a14969bba72f301f7f7cc",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_06/design.py",
+      "sha256": "dd15830cdae37b6ed3ffd7bf8fce2e9af42a5ffdf376ec81ab34e919fdbb4ce3"
+    },
+    {
+      "bytes": 7744,
+      "git_blob_sha1": "b0be893969cabb24624e2f540b6e7e7ab0c25666",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_06/design_execution.log",
+      "sha256": "fbfa04a17a32ff1d8030bebed7589ea0ccfeec20e2ecbf64678f0f544e3a7568"
+    },
+    {
+      "bytes": 1581,
+      "git_blob_sha1": "6963dd3e2180d9804ab309e6b81432d7e85a1be4",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_06/design_intent.md",
+      "sha256": "53b10f2569cad0f7574ad911701613422c631d6f83e4c729a5801454896a45e2"
+    },
+    {
+      "bytes": 2467,
+      "git_blob_sha1": "70130873bbf41849705a6236342a31b6ec187e68",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/ae4_5pct_console.log",
+      "sha256": "0862cbe2ba43dd88226ee7381d07e649ecfbd8aa0a6a0bbb079697df753d8bff"
+    },
+    {
+      "bytes": 2467,
+      "git_blob_sha1": "07328518a80a99b6213935141fa5c3f5e246c1cd",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/ae4_5pct_execution.log",
+      "sha256": "934aa5894c765f955d98cdb9fb81b91b34255d710610c96c011bb41cf82df82c"
+    },
+    {
+      "bytes": 2510,
+      "git_blob_sha1": "b19c5f8c4b0c48304c1ecea3e7ebca35bc310087",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/ae4_null_console.log",
+      "sha256": "be38a91e10ebfbeb2eb4b031bb3a6be074ec6458a2238e204e005fb6e748141a"
+    },
+    {
+      "bytes": 2510,
+      "git_blob_sha1": "5317e3b0ca54405a7eecd616e2e3508fca519885",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/ae4_null_execution.log",
+      "sha256": "719b41b8b91b15bc25858a05cab0d3e48d00fdeed43c03a117334698a202ec62"
+    },
+    {
+      "bytes": 1955,
+      "git_blob_sha1": "2cf44a6625fdabf86febe9c568de47b188374d33",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/candidate_common.py",
+      "sha256": "b7251e0b5cd0943a06ca90042484884b0bcc7808659df6c5bdf8a109df38dcbe"
+    },
+    {
+      "bytes": 3471,
+      "git_blob_sha1": "ec40d78458aa576cc57ae2ab804fdaf972462b07",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/design.py",
+      "sha256": "f16129c0e1264103a67c3ef18e54b5ba5989ab98d8546e0fe2ec8144ab918059"
+    },
+    {
+      "bytes": 8154,
+      "git_blob_sha1": "792fc2f927c22074de9c3dd9f109c5d18d641d13",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/design_execution.log",
+      "sha256": "e49605e7eed027dede3791f4ac3cff810bcb0d28eadf5ed5f8c840b543257230"
+    },
+    {
+      "bytes": 1693,
+      "git_blob_sha1": "1fd39db113e509880e93269e49185aaa72c85081",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/design_intent.md",
+      "sha256": "b420096b239c21ec107d9a934333089dd9c46e3c2344bba62489279d41236cf6"
+    },
+    {
+      "bytes": 3088,
+      "git_blob_sha1": "2f103f002579f9b88e5177340b54e0235f14fcf7",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/freeze.py",
+      "sha256": "89a07aef4678089dd953b4e63f94eebe420fa3186e0c4f9fb27c02c9a2581a5e"
+    },
+    {
+      "bytes": 650,
+      "git_blob_sha1": "1e95bf9f703e347656f347413b3a6b5604c2a3ae",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/freeze_execution.log",
+      "sha256": "fc59a878444bfea09d25d9f1a1c1fe5ac0cfc9f4521ef40e496472bb01019297"
+    },
+    {
+      "bytes": 15354,
+      "git_blob_sha1": "d945df6b6228c20ec56e9caa916870fe437523f1",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/run_case.py",
+      "sha256": "d86ad3c793d8cd3f7c7bbb6f4c04537ea450613113b614f64e417582952438eb"
+    },
+    {
+      "bytes": 480,
+      "git_blob_sha1": "740c52842bd77e26e13ca177d5c2e8011cc879e2",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/source_tests.log",
+      "sha256": "3e23ab98de0aaf8d1d5fd3893c12672d656a02b4c7157ff6f0e46b4b324d6298"
+    },
+    {
+      "bytes": 2400,
+      "git_blob_sha1": "d675c62ac838940753ed84893337f831c22376dd",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/wt_console.log",
+      "sha256": "531ab3d09fd053009862edfe587b44df9283503ffbb534fa86c2db35a2ac41ba"
+    },
+    {
+      "bytes": 2400,
+      "git_blob_sha1": "4c626681455a3830d418a4ce19b56d6f0c4025a1",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/wt_execution.log",
+      "sha256": "3def2e1fd9c56600906e149f7c083bd295cc228a1917e3eb314d25a318c14cd0"
+    },
+    {
+      "bytes": 2467,
+      "git_blob_sha1": "2ab3c327ec908151a9c02943f5233f65e87a7521",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/ae4_5pct_console.log",
+      "sha256": "1abffe691602c8f73efca2966f0f49c98540c59ff833a6ed03a1a6d91b7b7eb6"
+    },
+    {
+      "bytes": 2467,
+      "git_blob_sha1": "5e442a2728fd9adbf004e21e33982acdca51cde4",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/ae4_5pct_execution.log",
+      "sha256": "feb50074a53a1ba401991edd79b58185aad177130b664e7dd11d95d1fe81be32"
+    },
+    {
+      "bytes": 2513,
+      "git_blob_sha1": "d8336a0378b5561930c7b5c186facf4a0de2fcd4",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/ae4_null_console.log",
+      "sha256": "4246377e31014f4a697b46b1550e83067e7589eb7a3eb4ff325e484976a0616c"
+    },
+    {
+      "bytes": 2513,
+      "git_blob_sha1": "3738ddcabdf453d9e46a746b652701764bd01cbc",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/ae4_null_execution.log",
+      "sha256": "14d56d77d4b5fe2f84a7a35f51c45a7b5c8852bdb33f24b6eeec8d154fbb2e9d"
+    },
+    {
+      "bytes": 1966,
+      "git_blob_sha1": "48361b3533620a4646679be6be2eeaaac3f96820",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/candidate8_common.py",
+      "sha256": "c3923d46238f06b2b405566cf9edf7ae8f08f8f07f6f2fd44a8a638a6ac2f407"
+    },
+    {
+      "bytes": 1807,
+      "git_blob_sha1": "96b243e7d5adf3585f7255f684dc1eca6269d653",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/candidate8_design.py",
+      "sha256": "02bc1c7c3b3191082c663c768ddaa5fc2728bd50eb7efdf6973ecd8880618478"
+    },
+    {
+      "bytes": 851,
+      "git_blob_sha1": "81f26bb749368b8f83e579e1ece08a6d74b0636b",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/design_execution.log",
+      "sha256": "1c31296f520871a1afe5d2a733457ccc53bf4bc6bda105b6188d68f23f0cfd11"
+    },
+    {
+      "bytes": 1181,
+      "git_blob_sha1": "01c759fdb26785b5cd6ccabe34681eb27470612d",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/design_intent.md",
+      "sha256": "7f6dec88c3d9ee3558fec1c6873632ec3e94c0922677ed3e8a6e335f77559482"
+    },
+    {
+      "bytes": 3711,
+      "git_blob_sha1": "f7aa78fd083dc6a62923b295e2cd7095540e5a1d",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/freeze.py",
+      "sha256": "6c4d0cef085f46dd65654c6d3b8a207ee8934fcb203490e6c6f91f4a7c701912"
+    },
+    {
+      "bytes": 650,
+      "git_blob_sha1": "48792296be73b69865645a823195854f82940106",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/freeze_execution.log",
+      "sha256": "0ab952def53a48c8e5c4015250e746cb61b0576fcef6f072fc43915c825da363"
+    },
+    {
+      "bytes": 15355,
+      "git_blob_sha1": "4fec758446a9405b0286a37a30b80b3fe3dc4b4b",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/run_case.py",
+      "sha256": "be13891ed6c8cd5f12a3d9f92dda12d8cff7efa6da1b49c5ed164a33b7cbaabe"
+    },
+    {
+      "bytes": 480,
+      "git_blob_sha1": "4e0dbc5bc6d05d89044ffe24f96a7c9e9bc52d8d",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/source_tests.log",
+      "sha256": "5cc438f87098c5d6744e53157a282666721d905eee8dc77b46811d35d8582b4a"
+    },
+    {
+      "bytes": 2399,
+      "git_blob_sha1": "66f8492ddb85fac2e28375198139f4c7d279f949",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/wt_console.log",
+      "sha256": "c1f49e7acaa535b8fa8a00efb23cc28c96ee7183122129d8dd7d40850fde5fa6"
+    },
+    {
+      "bytes": 2399,
+      "git_blob_sha1": "5e2a42c251a70e207be19d5635b3604d28bce6cd",
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/wt_execution.log",
+      "sha256": "9130ba29178d0dc08f8283eec86c0105b1635bb2e5321d3433ac1a3efd5e8301"
+    },
+    {
+      "bytes": 4388,
+      "git_blob_sha1": "79e3c6563cb8beb7e72cfbae38fcfdfd654c6372",
+      "path": "analysis/41_ae4_loss_algebraic_design/constrain_design.py",
+      "sha256": "3fa76bea0ce170d33a718120a1f8f98318907c1e8715973f8b914b0e4ddc68bc"
+    },
+    {
+      "bytes": 1435,
+      "git_blob_sha1": "8fe96722dbf83dc7deaaaaf39bf7ef337f42d6f3",
+      "path": "analysis/41_ae4_loss_algebraic_design/design_decision.md",
+      "sha256": "debe9a5fb3dc59f74a1eb9e3f1c82fe8b7b1466c6a3158412a1f8b58ccc2364e"
+    },
+    {
+      "bytes": 11164,
+      "git_blob_sha1": "c7b44aa6babb6952761e637d1b861ea53e219f80",
+      "path": "analysis/41_ae4_loss_algebraic_design/final_answer.md",
+      "sha256": "b6e9d587083c83414266331ec72b715882093ed8309294ae0ca72fafa6f2a188"
+    },
+    {
+      "bytes": 5572,
+      "git_blob_sha1": "f01960cf991b172e136d72b8ab0a8836be28b6a3",
+      "path": "analysis/41_ae4_loss_algebraic_design/inverse_balance.py",
+      "sha256": "866947bbc632a428d4b5849753fc9fb21701fc301c2a375f6f58d0737cf419a5"
+    },
+    {
+      "bytes": 2945,
+      "git_blob_sha1": "81dc2c13f9986ab3414c1e1b69e6f466239439d5",
+      "path": "analysis/41_ae4_loss_algebraic_design/prepare_publication.py",
+      "sha256": "62229d52de7a61e097566e09dcf7aacfb738837d6c921c1047057bbc696f86a4"
+    },
+    {
+      "bytes": 5592,
+      "git_blob_sha1": "91f81e71489409e319464dbe9d02225c19160de2",
+      "path": "analysis/41_ae4_loss_algebraic_design/reduced_inverse.py",
+      "sha256": "c264624646b3990645e622ca978296826c99e1b775fa73cd93d9abcdaca5caad"
+    },
+    {
+      "bytes": 15082,
+      "git_blob_sha1": "1ae7b0117c1dd3d812e6c5e12e2c45943ab74b33",
+      "path": "analysis/41_ae4_loss_algebraic_design/run_case.py",
+      "sha256": "0dc5d2641a6f50edcdc92131b1b1bb9dc3d0cf4360d75caa999365d0e978d533"
+    },
+    {
+      "bytes": 4784,
+      "git_blob_sha1": "3e1956b291ff6a38ef9a1ab186226c2accc11ab1",
+      "path": "analysis/41_ae4_loss_algebraic_design/run_rest.py",
+      "sha256": "66b96bab0114bcade41d30d9342ca5278092130f42de1d3867d4c11035a591a9"
+    },
+    {
+      "bytes": 2409,
+      "git_blob_sha1": "59327e6ef67aec84bba2e43c7a020cea7ac776a3",
+      "path": "analysis/41_ae4_loss_algebraic_design/scope.md",
+      "sha256": "483bf0ff52fcf5b262101866b0195c78fe077c03292314aa884db5cd2c5aae43"
+    },
+    {
+      "bytes": 202,
+      "git_blob_sha1": "f11feea5068168315bb1d1162f664f1c757e0c56",
+      "path": "analysis/41_ae4_loss_algebraic_design/selected_driver_test.log",
+      "sha256": "39f73db901c2137faf5ef91e72f4e2455fe4aefc8d9ec4b672cc86e3842c8041"
+    },
+    {
+      "bytes": 516,
+      "git_blob_sha1": "890a6dae0ddb231142325bf0a80e15034353040d",
+      "path": "analysis/41_ae4_loss_algebraic_design/source_tests.log",
+      "sha256": "85a9c82083ae0104ca825fbc68a35ee01ec00f8cb0d58641e800eb8bf7434e1c"
+    },
+    {
+      "bytes": 9116,
+      "git_blob_sha1": "a2a42406002aa96df77d990c046a7cd8dcf59e81",
+      "path": "analysis/41_ae4_loss_algebraic_design/summarize_final.py",
+      "sha256": "db32c286ea72472ae1fdcc3a2df0c7d4fdc39461d521af4d1afd143fdf0d16ae"
+    },
+    {
+      "bytes": 9526,
+      "git_blob_sha1": "7bdf5f17dec65a44193be96fad178ffbd4e8c852",
+      "path": "analysis/41_ae4_loss_algebraic_design/summary_execution.log",
+      "sha256": "e5129f67a281951d3175cdbcd15259f3dfd85c383977dc2bdc9ca272ce74f28e"
+    },
+    {
+      "bytes": 2078,
+      "git_blob_sha1": "387ba3d23006ec26f89fc30d22f612a77a76917e",
+      "path": "analysis/41_ae4_loss_algebraic_design/validation_common.py",
+      "sha256": "7e72a1d0d9813903da3bcfee793c3b7ba7d476ffbe4a108adc6e2b7c3978e4f4"
+    },
+    {
+      "bytes": 20558,
+      "git_blob_sha1": "e0986faee6441e9c5be856c0d73bb8199e9f06d5",
+      "path": "analysis/41_ae4_loss_algebraic_design/write_final_report.py",
+      "sha256": "485a6292f0d89c048d8b7413995946748b0d70ee236ef65f9a63bcd1396dfb2a"
+    },
+    {
+      "bytes": 2497,
+      "git_blob_sha1": "36051cef0cfa44111cbdb63110a7f8a6e4f5e533",
+      "path": "analysis/41_ae4_loss_algebraic_design/wt_execution.log",
+      "sha256": "ef752b47bfa06a970aafc7d6caf34ad2c17b516f007e7d4cc84865ce1d93455c"
+    },
+    {
+      "bytes": 427834,
+      "git_blob_sha1": "df093dd153a12671a2911014826425ed497f78e0",
+      "path": "results/41_ae4_loss_algebraic_design/ae4_5pct_dense_timeseries.csv",
+      "sha256": "2350ae4ee6e1c7f4b0416d72dfbd679bc3b09ff14aa6ba073f201d72a5232097"
+    },
+    {
+      "bytes": 944,
+      "git_blob_sha1": "63859bb6b900fc765708356869f58ec8944947ee",
+      "path": "results/41_ae4_loss_algebraic_design/ae4_5pct_integrated_fluxes.csv",
+      "sha256": "5733fd7f1a313e280bda27b94a6e7cb07e1cb5946051640d531afbeecb1d0328"
+    },
+    {
+      "bytes": 8486,
+      "git_blob_sha1": "cc27e89a4ad0021378fde86364a68eca194373c4",
+      "path": "results/41_ae4_loss_algebraic_design/ae4_5pct_timeseries.csv",
+      "sha256": "d0c19d334c8ca91e7aecffa7ae174df21205eb564ee221dedbad56ac0fc3535c"
+    },
+    {
+      "bytes": 10837,
+      "git_blob_sha1": "f52a2d7897d007ea1a9d598e4922233a7bdd16a2",
+      "path": "results/41_ae4_loss_algebraic_design/ae4_5pct_verification.json",
+      "sha256": "f2722f1610c980985880e37553fa42d03bf08959186f0900b5a9c919dfd97bc1"
+    },
+    {
+      "bytes": 330266,
+      "git_blob_sha1": "6f42335d88f94dc0262b7c11bfe809f549037559",
+      "path": "results/41_ae4_loss_algebraic_design/ae4_null_dense_timeseries.csv",
+      "sha256": "16a6e8e9ae2b5ef7a0e9e0355a845a0d303dabcbd0ce5fba17c6b04eaea79979"
+    },
+    {
+      "bytes": 6959,
+      "git_blob_sha1": "4fa1ac8091f3f1c48b5219db5b754c5a502ef732",
+      "path": "results/41_ae4_loss_algebraic_design/ae4_null_timeseries.csv",
+      "sha256": "513fece89dc44388aefa62787393e1e97e59a146605b3694e9c4b60ae426a0fc"
+    },
+    {
+      "bytes": 13239,
+      "git_blob_sha1": "08daf9eb65aaee42d0f32309c6e6ca74fa1e0698",
+      "path": "results/41_ae4_loss_algebraic_design/ae4_null_verification.json",
+      "sha256": "ec42873da4022e960cc50af12b7201ae20b88e474336f1f52bd5e23c02cf1e7d"
+    },
+    {
+      "bytes": 825,
+      "git_blob_sha1": "0c52f85b5fa5fc46b9da31beb45f2f2106664cd4",
+      "path": "results/41_ae4_loss_algebraic_design/budget.json",
+      "sha256": "ce5079c560bb6860c2ba4bdba47b6b13266c257020cbdec945cd824a0a3186b5"
+    },
+    {
+      "bytes": 472,
+      "git_blob_sha1": "8163019a059e9aed3bf80c6103e53eda325f05a4",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_02/design.json",
+      "sha256": "800a79b789e7020ecdfd84b96ff681992be2ecd5155ab1a62ff52cd5db59965d"
+    },
+    {
+      "bytes": 8855,
+      "git_blob_sha1": "574f0e634a8d98ab9d6e4472927fec9f2a7c9eb8",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_02/design_retry.json",
+      "sha256": "f3bef9a74c2c2b659ce50e8b1e14760aa0f241ddeb4129900419617fefc45617"
+    },
+    {
+      "bytes": 7259,
+      "git_blob_sha1": "053f5999fe6900ca3e396898fc5d77c0c3c90d14",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_03/ae4_only_design.json",
+      "sha256": "6981a2e951d863ca71ad8f3b8272155f301ee6368adcf3db821a59824c8c85b2"
+    },
+    {
+      "bytes": 7754,
+      "git_blob_sha1": "4458ebc9c5f27880885797e631c8414d98fd1802",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_03/design.json",
+      "sha256": "920cb1968338e8b4c023cfe649f1f445f54e1a64461bff38bf78c94c28610197"
+    },
+    {
+      "bytes": 7705,
+      "git_blob_sha1": "347749294fabcc63181bf7b07060f227e911d349",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_04/design.json",
+      "sha256": "6193b7f375561749acf9bc0630f12cb64695cbd534545f54d7d9b5bbc21235e8"
+    },
+    {
+      "bytes": 7718,
+      "git_blob_sha1": "2ac886994f721ab39559f5334d744f37878022ca",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_05/design.json",
+      "sha256": "35ed20a3baa553e54c6c5f9c368ebf52b9e000fb9e27b97c671bb9f85c305f86"
+    },
+    {
+      "bytes": 7744,
+      "git_blob_sha1": "d32ef067d69ff89063e7273a0aef8d66a33f8a28",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_06/design.json",
+      "sha256": "0301e711f4cf5faaa2c501acf3eef211b64d4b32a097b483300362a852417985"
+    },
+    {
+      "bytes": 426805,
+      "git_blob_sha1": "43cae23ac78bfe17a6eea491dae1daec7766a642",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/ae4_5pct_dense_timeseries.csv",
+      "sha256": "cebac11e738af9032d7c1750f4f42ae87a7cdb09b222cbd4d33c2bf77438c0dc"
+    },
+    {
+      "bytes": 939,
+      "git_blob_sha1": "31ed75c0916449ad2b28ac5ab33e51b010cb6295",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/ae4_5pct_integrated_fluxes.csv",
+      "sha256": "fd1198090d1f13dfb97d1da462e836f05ab08b9c8bdd151423c9b37ef7fd6dc8"
+    },
+    {
+      "bytes": 8403,
+      "git_blob_sha1": "904588a966fc98a5092c769e4f8a931a5805f99e",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/ae4_5pct_timeseries.csv",
+      "sha256": "d961bcca990967b82d64eed41d2154ae10d35dd6d016e59576b7947a127187de"
+    },
+    {
+      "bytes": 10808,
+      "git_blob_sha1": "f4c5f4305f07ff12053cc20a68312f5ba3c285cd",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/ae4_5pct_verification.json",
+      "sha256": "a66e1d7e1354698e23918a2d8b6f556f39ee248c231a6a08dd67c5c1e7f8e5a8"
+    },
+    {
+      "bytes": 353710,
+      "git_blob_sha1": "53f6f8a8947e444f5399f0f5dc7a45d8b92aaf86",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/ae4_null_dense_timeseries.csv",
+      "sha256": "45d7a790c1fbd1a005f425121f2b3a4379c0b693bf740b47bcc0d3e6767bf1e3"
+    },
+    {
+      "bytes": 850,
+      "git_blob_sha1": "0154f9bec5940c9bd2d4b1912d383b36019fa27c",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/ae4_null_integrated_fluxes.csv",
+      "sha256": "a13667fe507a496e7d7e2a4edcde1c8cb8d0e0b02e47a4a18cb090cc86b54186"
+    },
+    {
+      "bytes": 7070,
+      "git_blob_sha1": "7f2970b14ca206bf5ec20bf0be44934bd1c9849a",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/ae4_null_timeseries.csv",
+      "sha256": "0832826f9a46f5098bb53fc444a71e4000ab497e0a70c440dd7012d6ca959dbc"
+    },
+    {
+      "bytes": 10535,
+      "git_blob_sha1": "d7204695a0bb46bda0358c8de51276dcc2c7094c",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/ae4_null_verification.json",
+      "sha256": "649d23ed0f9118cec2cd115a1cbe7d6ae1a82db22a9a9e444e19dfb2af942eca"
+    },
+    {
+      "bytes": 753,
+      "git_blob_sha1": "25690fdf8fa4c9ef32d93ec9fe8ea45973d77b74",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/budget.json",
+      "sha256": "d2032a9196bcce13c4246a4af69d1f1480007c58ef9e1d739262d73d73e855cd"
+    },
+    {
+      "bytes": 8154,
+      "git_blob_sha1": "d26979319b576459be82ca5c7c63a5939294f0d6",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/design.json",
+      "sha256": "5ba6041bc939d663017130d08309eba5e54cfaaf460ffa19279ce698e9f18172"
+    },
+    {
+      "bytes": 2896,
+      "git_blob_sha1": "09768faffc1039452b4473d199c7301e5c1f6f67",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/frozen_inputs.json",
+      "sha256": "4547d6148b5c64d2d7836698a0948134abbf32b23e5c3841671449c86f6a40bd"
+    },
+    {
+      "bytes": 394229,
+      "git_blob_sha1": "d26923e6e5b6323824933ce0a99b13abcafaa1d2",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/wt_dense_timeseries.csv",
+      "sha256": "41a6b6f7dba10230c2ceaabcb50d30baf2498e181513f6221b7d47b5e8ecee7a"
+    },
+    {
+      "bytes": 923,
+      "git_blob_sha1": "31cca652a786f95a24254ff870a3e286e149c1ae",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/wt_integrated_fluxes.csv",
+      "sha256": "03e5f92b646f2033d394826ccb56ef26235b057e1afe52162465971c8ea9d057"
+    },
+    {
+      "bytes": 19126,
+      "git_blob_sha1": "332c45e03f9f843eccec2f7d497c5dced1e38667",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/wt_rest.json",
+      "sha256": "d5250fc39da565e1bb0b35270f91f7afbcdfa4ec3e9aa96996ff1e29b93cfc93"
+    },
+    {
+      "bytes": 7846,
+      "git_blob_sha1": "64bc5f8de76c7216b34a2296b58220f664288bd9",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/wt_timeseries.csv",
+      "sha256": "4a378a1c69db9ab7e8584a5a285ef83d09727a5f55608fe972ef4a313cee3a1a"
+    },
+    {
+      "bytes": 10685,
+      "git_blob_sha1": "98bf3b70bc8362da1e76394ee023eea6b59b7c70",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/wt_verification.json",
+      "sha256": "b0865f982bb82f58a67c2c1e720fb494efba44a9575ada9b4561937f791bc72d"
+    },
+    {
+      "bytes": 426953,
+      "git_blob_sha1": "61a51b69e374f636c533415fcc618ddcf2e954eb",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_5pct_dense_timeseries.csv",
+      "sha256": "f6b7f7129625e7ecafa1a58e856ab87583ee6bfdba375855d6c83c7c569f4825"
+    },
+    {
+      "bytes": 939,
+      "git_blob_sha1": "9e5ed07e0c088091f33d4615731b8c803c1782a0",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_5pct_integrated_fluxes.csv",
+      "sha256": "1d5183d152b5f12cecccc776556fad0c123bce1d61eb0401e135d4340b1f38c0"
+    },
+    {
+      "bytes": 8414,
+      "git_blob_sha1": "c88595551b4788ae25a8a4dce40bb0824a9812f8",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_5pct_timeseries.csv",
+      "sha256": "43be0fd0460f16efde906dfdaf24bb5d1fedd8415c9ec87403da88bdb00304b2"
+    },
+    {
+      "bytes": 10795,
+      "git_blob_sha1": "41548af6bb23a7539c590b565617352cce297a03",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_5pct_verification.json",
+      "sha256": "1bb1857bab2a0e67c15153558bbf794728ee98dcfd3f3d4b0db11681070a3995"
+    },
+    {
+      "bytes": 354260,
+      "git_blob_sha1": "b388eee0f154734bcd46b4cc4da9d1b17776f88d",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_null_dense_timeseries.csv",
+      "sha256": "cc3312f49a24afb2d9216dce56be91ef82a84541edaef845384c38e0ce4b62f0"
+    },
+    {
+      "bytes": 851,
+      "git_blob_sha1": "0d96161aeaed1885772068eb27793b96ccaf27ec",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_null_integrated_fluxes.csv",
+      "sha256": "2f87e08ca09b6d784b85da15a826191b9b679d2a8a6e3ae54097a21f9434e11d"
+    },
+    {
+      "bytes": 7064,
+      "git_blob_sha1": "9e58467cc9ac2545f6072e51d68d431fb5704e80",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_null_timeseries.csv",
+      "sha256": "72478d183c9ef6e5877d9d4ec92d64be9b9ec18e1b613e3d98528bcc71afe1a5"
+    },
+    {
+      "bytes": 10545,
+      "git_blob_sha1": "b30bd19655e42ff80413af0c2dc97720bcb3a9e3",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_null_verification.json",
+      "sha256": "06c8ab0d2d194bc1abc16f05d5f3b66105024897dda132256e8e1f401e1787c9"
+    },
+    {
+      "bytes": 752,
+      "git_blob_sha1": "6e156e83c1ec502ee65b76419c0402f43a5a51e0",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/budget.json",
+      "sha256": "ab4aaa6f60f30bb5d35b0fbbee6621cc5dd42ca9489dc090b24f3feed55273ab"
+    },
+    {
+      "bytes": 851,
+      "git_blob_sha1": "202786ad0e4fb11695e70ce6237e5a348ab156db",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/design.json",
+      "sha256": "e6ebc4b96b5a6abfa6d18e0328bd011aa45a63b524cc869999019d0cac8ab455"
+    },
+    {
+      "bytes": 2897,
+      "git_blob_sha1": "3c578d7962c7ed6c2526299430fbe3c158e17721",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/frozen_inputs.json",
+      "sha256": "a07070b5b0a6887d12a9f3794cf55f83d74422799606296bccc60aa13792abe4"
+    },
+    {
+      "bytes": 394229,
+      "git_blob_sha1": "d26923e6e5b6323824933ce0a99b13abcafaa1d2",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/wt_dense_timeseries.csv",
+      "sha256": "41a6b6f7dba10230c2ceaabcb50d30baf2498e181513f6221b7d47b5e8ecee7a"
+    },
+    {
+      "bytes": 923,
+      "git_blob_sha1": "31cca652a786f95a24254ff870a3e286e149c1ae",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/wt_integrated_fluxes.csv",
+      "sha256": "03e5f92b646f2033d394826ccb56ef26235b057e1afe52162465971c8ea9d057"
+    },
+    {
+      "bytes": 19126,
+      "git_blob_sha1": "a6e7632bb059a5990e110d1f6cae65a5d013f292",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/wt_rest.json",
+      "sha256": "3f1540a8c072502149b33a9ee824e590ad18fdbfa9c4501977b52fcbdfe7893a"
+    },
+    {
+      "bytes": 7846,
+      "git_blob_sha1": "64bc5f8de76c7216b34a2296b58220f664288bd9",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/wt_timeseries.csv",
+      "sha256": "4a378a1c69db9ab7e8584a5a285ef83d09727a5f55608fe972ef4a313cee3a1a"
+    },
+    {
+      "bytes": 10685,
+      "git_blob_sha1": "c5c784be2e3b0eaaf9a0a290982a8a64756f50aa",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/wt_verification.json",
+      "sha256": "b0995043c561e2183c626738028feb4b5942c0de9f2344c19e3931ed5e7dd0f2"
+    },
+    {
+      "bytes": 6983,
+      "git_blob_sha1": "1ac1af51f378eb959e23d4c5f64cf1551d52f9aa",
+      "path": "results/41_ae4_loss_algebraic_design/capacity_design.json",
+      "sha256": "29518c79c7c700fb7ee3eeac6e4dec56e45df596879dae48fefc970ef38dbd38"
+    },
+    {
+      "bytes": 1325,
+      "git_blob_sha1": "cdc248676e2db3116e7dda30c426c7cc00ef19c2",
+      "path": "results/41_ae4_loss_algebraic_design/completion.json",
+      "sha256": "086ee0bd836d72a21ad9b494ec2fc589bebd561bf5438c3ceabe1ff9f991db10"
+    },
+    {
+      "bytes": 5683,
+      "git_blob_sha1": "d472829bc2e9ec717a7a842cbd975fc2a0f3b936",
+      "path": "results/41_ae4_loss_algebraic_design/constrained_design.json",
+      "sha256": "6c6e5d20f288cbb99088b7565de3f1a66ee5bbe7fcbb975752473779e075a116"
+    },
+    {
+      "bytes": 5812,
+      "git_blob_sha1": "7bfde1f2f2e7cda9c6b46e1fc60a7e835e16cc53",
+      "path": "results/41_ae4_loss_algebraic_design/constrained_design_retry.json",
+      "sha256": "a5aa5bdf3c76500a568a820565273ffc2b242daf6512ac2828ceb154a3bf7978"
+    },
+    {
+      "bytes": 5661,
+      "git_blob_sha1": "df8106b5af99967a756733936ca389af5a14667e",
+      "path": "results/41_ae4_loss_algebraic_design/constrained_design_scaled.json",
+      "sha256": "a1ce1c6ca42151ab4d295bcd3341b0cb719725a77b4537107f1e873783c62e1a"
+    },
+    {
+      "bytes": 519,
+      "git_blob_sha1": "ed6dfa6591b5ce3c95d530663cbe622553b493b8",
+      "path": "results/41_ae4_loss_algebraic_design/design_intent.json",
+      "sha256": "1f7a6434a7ab10be23704f0931be74b6a1588539c4087dabdd8d4b3a87008cfd"
+    },
+    {
+      "bytes": 616,
+      "git_blob_sha1": "4842e651ceb1b97c296fc8a5bb32ff8afa86d8ef",
+      "path": "results/41_ae4_loss_algebraic_design/final_cell_chloride_balance.csv",
+      "sha256": "179b0574477f46e8016beed1823509293103de2ddd20d407579879bfd26c60cb"
+    },
+    {
+      "bytes": 2620,
+      "git_blob_sha1": "3f72fa413e674449d5726b01296ca6b84579c55e",
+      "path": "results/41_ae4_loss_algebraic_design/final_conservation_summary.csv",
+      "sha256": "042789d7f2b09ebafedfd1aabb258ab4b4d3392da291b4aa81ece71d7675c725"
+    },
+    {
+      "bytes": 3249,
+      "git_blob_sha1": "fbc14310f14a20e94907c03392d893006d23d18c",
+      "path": "results/41_ae4_loss_algebraic_design/final_cumulative_deficit.csv",
+      "sha256": "48ff92581e0691f59781e4e76470276f70c1888eca2132ae319df8aff2278166"
+    },
+    {
+      "bytes": 3795,
+      "git_blob_sha1": "ef40054be18b47bcb93b10676820f481641a59a7",
+      "path": "results/41_ae4_loss_algebraic_design/final_flux_comparison.csv",
+      "sha256": "6aaa0f34751d4fbf437fb4b5f8a17ca023bcd68f76811db243cc2aff43dd8ed8"
+    },
+    {
+      "bytes": 2889,
+      "git_blob_sha1": "fc89fc9ae819fc235e5ce15f474fba6dc34c9525",
+      "path": "results/41_ae4_loss_algebraic_design/final_intracellular_comparison.csv",
+      "sha256": "ca27b268c3dcc6e7bf9fed279830a90bf1b2a77f42c2aebcfb12e7ba7ef29642"
+    },
+    {
+      "bytes": 1229,
+      "git_blob_sha1": "268bce796c36c572fec55bb8790ae5d2ea193dea",
+      "path": "results/41_ae4_loss_algebraic_design/final_secretion_comparison.csv",
+      "sha256": "19672a0e6d97dd2fcad58fdbe730aa98fe822b7511a51c877e6a75927ff561f6"
+    },
+    {
+      "bytes": 10228,
+      "git_blob_sha1": "a3be71e5674575fb1efe44b27b8a34b700d00e10",
+      "path": "results/41_ae4_loss_algebraic_design/final_summary.json",
+      "sha256": "adb43b7775beb2ad1e88dcf1a15bce29c84981a1a32eb8486c78db025f143cf8"
+    },
+    {
+      "bytes": 86688,
+      "git_blob_sha1": "0af9e66492712edf4e002cea7538f2aaed30c733",
+      "path": "results/41_ae4_loss_algebraic_design/final_trajectories.svg",
+      "sha256": "f5534106ec7b8c78c866656a8bb8c9cacb3f8eff9529f2c3e884725c8702d7c4"
+    },
+    {
+      "bytes": 3192,
+      "git_blob_sha1": "76c7cbc45cab0ba619192dc0e45c03c9f0ade17d",
+      "path": "results/41_ae4_loss_algebraic_design/frozen_inputs.json",
+      "sha256": "407f49752cbaf8bd16d0dcbd432d05ec47f5bdd303a2be32a20749043caeb651"
+    },
+    {
+      "bytes": 5280,
+      "git_blob_sha1": "140408debdb11dff7c88593b702bd7f07f1dd46e",
+      "path": "results/41_ae4_loss_algebraic_design/reduced_capacity_design.json",
+      "sha256": "81bb2c1fc48786e65676ec7bb11c11f5b7ed25b6664ac14f412af678120318a7"
+    },
+    {
+      "bytes": 426,
+      "git_blob_sha1": "b3e80ba853a72d5ea2031ad0186be8cd29540be8",
+      "path": "results/41_ae4_loss_algebraic_design/report_verification.json",
+      "sha256": "a681d33ce261690b13a4d3efbb7f5ac9f7b185cc972ce86bf4e2715481e6de9a"
+    },
+    {
+      "bytes": 5373,
+      "git_blob_sha1": "6044ccf86c82ce255c84eae785c7aab9dc9c6e59",
+      "path": "results/41_ae4_loss_algebraic_design/two_parameter_design.json",
+      "sha256": "5089a00733eac8ab9a43d670f050b0aa85a2584112a3ff324de8511cfd0c50f4"
+    },
+    {
+      "bytes": 5358,
+      "git_blob_sha1": "268ed14ee8a5f7e9c28b9edf55934285297a73e8",
+      "path": "results/41_ae4_loss_algebraic_design/two_parameter_design_scaled.json",
+      "sha256": "677fb54568b9f45617a36b4fc86b2ed2c8a2c85f60285bcdfda5ff6d9ed85039"
+    },
+    {
+      "bytes": 412224,
+      "git_blob_sha1": "5ad7b5006537f735b25b2bd35beb96be7063c891",
+      "path": "results/41_ae4_loss_algebraic_design/wt_dense_timeseries.csv",
+      "sha256": "b09e90367d2eea5818bb484dbfedf34416c3d0d3744efdcbd792aa5b36873ec5"
+    },
+    {
+      "bytes": 928,
+      "git_blob_sha1": "012e3c1cc69295707b47e56f59e0fa34f07b5d36",
+      "path": "results/41_ae4_loss_algebraic_design/wt_integrated_fluxes.csv",
+      "sha256": "f6b77029e346a98bde727e8c57792689c865c490e600549fb1b8e6f48da6e190"
+    },
+    {
+      "bytes": 12126,
+      "git_blob_sha1": "80f57d095e792198dec6b6f3a33a2b6e72f71e6c",
+      "path": "results/41_ae4_loss_algebraic_design/wt_rest.json",
+      "sha256": "fd131f6f439056afc8eae0fcbf758be9ef030333c22d1fec2e37b1a893ccb4a4"
+    },
+    {
+      "bytes": 8246,
+      "git_blob_sha1": "6655b0d60333d7abb1ed75f83238c51bdaaf07a0",
+      "path": "results/41_ae4_loss_algebraic_design/wt_timeseries.csv",
+      "sha256": "999103f7061ea86f395e4ed909093f9adcbb8eb78139da591bfc8c8887bde56e"
+    },
+    {
+      "bytes": 10747,
+      "git_blob_sha1": "17da2adec149ce135e4b901f9addb1c187439902",
+      "path": "results/41_ae4_loss_algebraic_design/wt_verification.json",
+      "sha256": "b42a2e8c50c71a002b7e37a647e19fdc4874aad1358ff029cd4cc5153dbaa714"
+    },
+    {
+      "bytes": 3272,
+      "git_blob_sha1": "0c4a3b2434847cfa7ec53330b2d95a74fc0e9eab",
+      "path": "src/modern_full_model/ae4_cacc_recruitment.py",
+      "sha256": "1adb937058a0bc1fa27cc789b99f2491d7d99d7b7c6e3dec4356ee12158c55aa"
+    },
+    {
+      "bytes": 2835,
+      "git_blob_sha1": "669ba9f2ea35d6b7fa002d7ae8c5d81cadc6fe03",
+      "path": "src/modern_full_model/nkcc1_capacity_limited.py",
+      "sha256": "5d0e5bdfbca6a874bfe055f162bf925ef4db70d415692271248f351c14bed0e8"
+    },
+    {
+      "bytes": 1544,
+      "git_blob_sha1": "a08333f2be066d493d617a7c31b4fdcbfd078c42",
+      "path": "src/modern_full_model/task41_selected.py",
+      "sha256": "56d55bbb196a5df2a86434f44a8be098eaa41345c0fbffa187dd72ccb44f7d67"
+    },
+    {
+      "bytes": 3055,
+      "git_blob_sha1": "dc58a9802e3ab8ea7233feab54359c229332bbcb",
+      "path": "tests/test_task41_ae4_cacc_recruitment.py",
+      "sha256": "6eb028e1e13d4eb848a2dcf49d40db042c900d47cb17bbb1b3e3a34cd8c90e34"
+    },
+    {
+      "bytes": 2839,
+      "git_blob_sha1": "176e89291a4f2cc492bb85f74c9139cb183a4623",
+      "path": "tests/test_task41_nkcc1_capacity.py",
+      "sha256": "816147caa792ca423021d6f2bc94b15bee99b77144979590acabc157ac7f394b"
+    },
+    {
+      "bytes": 1119,
+      "git_blob_sha1": "e4354bd2273291f34cac65c8185e2a750f84c9cf",
+      "path": "tests/test_task41_selected_driver.py",
+      "sha256": "69f0c95a631782282e47f823da53bc3d0025d10d4b21a441ef766e5eeb2c2c06"
+    }
+  ],
+  "local_parent_files_compared_with_remote_blobs": 189,
+  "main_observed_before_publication": "fe51473d7cc201e2e04007aa62fbc1b45098732e",
+  "remote_write_method": "Connected GitHub integration; Git trees/commit/non-forced branch update",
+  "repository": "esig626/ae4-salivary-transport-control",
+  "scope": "New Task 41 files only; preserve every parent blob; no main merge"
+}

@@ -1,0 +1,8 @@
+test_inverse_rhs_current_and_chloride_identities (recruitment_tests.RecruitmentTests.test_inverse_rhs_current_and_chloride_identities) ... ok
+test_rest_wt_and_expression_law (recruitment_tests.RecruitmentTests.test_rest_wt_and_expression_law) ... ok
+test_wt_exact_nesting_and_no_output_scaling (recruitment_tests.RecruitmentTests.test_wt_exact_nesting_and_no_output_scaling) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.024s
+
+OK
