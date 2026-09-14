@@ -1,0 +1,8 @@
+test_production_uses_exact_table_s1_and_requires_salivary_amount (test_task31_nhe1.ChaEquationTests.test_production_uses_exact_table_s1_and_requires_salivary_amount) ... ok
+test_published_turnover_and_figure_reconstruction (test_task31_nhe1.ChaEquationTests.test_published_turnover_and_figure_reconstruction) ... ok
+test_printed_rounding_cycle_reversal_is_explicit (test_task31_nhe1.ChaEquationTests.test_printed_rounding_cycle_reversal_is_explicit) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

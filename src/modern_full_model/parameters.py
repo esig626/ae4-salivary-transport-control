@@ -186,7 +186,12 @@ class GeometryParameters:
 
 @dataclass(frozen=True)
 class HomeostasisParameters:
-    """Reversible coarse laws for NKCC1, NHE1, AE2, and CO2 exchange."""
+    """NKCC1, selectable NHE1, AE2, and CO2 exchange laws.
+
+    ``nhe1_model`` defaults to the historical coarse law so inherited clean
+    seed payloads remain behaviourally reproducible.  Task 30 model builders
+    must explicitly select ``vera_siguenza_2018_eq26``.
+    """
 
     nkcc1_capacity_fmol_s: float = _pfield(
         0.08,
@@ -196,9 +201,45 @@ class HomeostasisParameters:
     )
     nhe1_capacity_fmol_s: float = _pfield(
         0.02,
-        provenance=Provenance.NEW_MODELING_DECISION,
+        provenance=Provenance.HISTORICAL_IMPLEMENTATION,
         units="fmol s^-1",
-        note="placeholder capacity; calibrated only against WT acid-base evidence",
+        note="capacity used only by the selectable historical tanh comparator",
+    )
+    nhe1_model: str = _pfield(
+        "legacy_tanh",
+        provenance=Provenance.HISTORICAL_IMPLEMENTATION,
+        units="model identifier",
+        note=(
+            "legacy default preserves clean seed payloads; Task 30 explicitly "
+            "selects vera_siguenza_2018_eq26"
+        ),
+    )
+    nhe1_published_g_fmol_s: float = _pfield(
+        0.0305,
+        provenance=Provenance.PUBLISHED_MODEL,
+        units="fmol s^-1",
+        note="Vera-Siguenza et al. (2018), Eq. 26, model-derived G_NHE1",
+    )
+    nhe1_published_k_h_mM: float = _pfield(
+        4.5e-4,
+        provenance=Provenance.PUBLISHED_MODEL,
+        units="mM",
+        note="Vera-Siguenza et al. (2018), Eq. 26 proton saturation constant",
+    )
+    nhe1_published_k_na_mM: float = _pfield(
+        15.0,
+        provenance=Provenance.PUBLISHED_MODEL,
+        units="mM",
+        note="Vera-Siguenza et al. (2018), Eq. 26 sodium saturation constant",
+    )
+    nhe1_cha_carrier_amount_fmol: float | None = _pfield(
+        None,
+        provenance=Provenance.NEW_MODELING_DECISION,
+        units="fmol of NHE1 carriers",
+        note=(
+            "Cha 2009 amount conversion N/Avogadro; no cardiac density imported. "
+            "None until the single WT R09 salivary amount is calibrated."
+        ),
     )
     ae2_capacity_fmol_s: float = _pfield(
         0.005,
@@ -466,6 +507,12 @@ class FullModelParameters:
             "homeostasis.thermodynamic_saturation_log_width": (
                 self.homeostasis.thermodynamic_saturation_log_width
             ),
+            "homeostasis.nhe1_published_k_h_mM": (
+                self.homeostasis.nhe1_published_k_h_mM
+            ),
+            "homeostasis.nhe1_published_k_na_mM": (
+                self.homeostasis.nhe1_published_k_na_mM
+            ),
             "membranes.nak_na_half_mM": self.membranes.nak_na_half_mM,
             "membranes.nak_k_half_mM": self.membranes.nak_k_half_mM,
             "membranes.calcium_half_uM": self.membranes.calcium_half_uM,
@@ -501,6 +548,9 @@ class FullModelParameters:
                 self.homeostasis.nkcc1_capacity_fmol_s
             ),
             "homeostasis.nhe1_capacity_fmol_s": self.homeostasis.nhe1_capacity_fmol_s,
+            "homeostasis.nhe1_published_g_fmol_s": (
+                self.homeostasis.nhe1_published_g_fmol_s
+            ),
             "homeostasis.ae2_capacity_fmol_s": self.homeostasis.ae2_capacity_fmol_s,
             "homeostasis.co2_basolateral_permeability_fmol_s_mM": (
                 self.homeostasis.co2_basolateral_permeability_fmol_s_mM
@@ -533,6 +583,18 @@ class FullModelParameters:
         for name, value in nonnegative.items():
             if value < 0.0:
                 raise ValueError(f"{name} must be nonnegative")
+
+        cha_amount = self.homeostasis.nhe1_cha_carrier_amount_fmol
+        if cha_amount is not None and (not math.isfinite(cha_amount) or cha_amount < 0.0):
+            raise ValueError("homeostasis.nhe1_cha_carrier_amount_fmol must be finite and nonnegative")
+        supported_nhe1_models = {
+            "legacy_tanh", "vera_siguenza_2018_eq26", "cha_2009_eight_state_mod2"
+        }
+        if self.homeostasis.nhe1_model not in supported_nhe1_models:
+            raise ValueError(
+                "homeostasis.nhe1_model must be one of "
+                f"{sorted(supported_nhe1_models)}"
+            )
 
         for name in ("apical_pump_fraction", "apical_k_fraction"):
             value = getattr(self.membranes, name)

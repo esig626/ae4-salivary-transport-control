@@ -1,0 +1,25 @@
+{
+  "additional_scientific_parameter_evaluations": 0,
+  "blas_threads": 1,
+  "completed_cases": [
+    "ae4_5pct",
+    "ae4_null"
+  ],
+  "integration_attempts": 2,
+  "intended_perturbation_integrations": 2,
+  "limits_respected": true,
+  "maximum_numerical_execution_seconds": 600,
+  "no_further_scientific_execution": true,
+  "numerical_execution_seconds": 2.872438933000012,
+  "numerical_retries": 0,
+  "optimisation_calls": 0,
+  "parameter_sweeps": 0,
+  "scientific_workers": 1,
+  "started_cases": [
+    "ae4_5pct",
+    "ae4_null"
+  ],
+  "stationary_solves": 0,
+  "status": "AE4_PERTURBATION_VALIDATION_COMPLETE",
+  "wt_integrations": 0
+}

@@ -1,0 +1,12 @@
+{
+  "accepted_identical_cases_rerun": 0,
+  "blas_threads": 1,
+  "limits_respected": true,
+  "numerical_wall_seconds": 2.309463856000548,
+  "per_solve_residual_ceiling": 2400,
+  "scalar_density_evaluations": 5,
+  "scientific_workers": 1,
+  "stationary_residual_evaluations": 8297,
+  "stationary_solver_calls": 8,
+  "stimulated_integrations": 0
+}

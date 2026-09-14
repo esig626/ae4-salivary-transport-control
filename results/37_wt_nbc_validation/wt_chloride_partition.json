@@ -1,0 +1,22 @@
+{
+  "ae4_share_fold_vs_rest": 10.620218061504639,
+  "nkcc1_context_band": [
+    0.65,
+    0.75
+  ],
+  "nkcc1_within_context": false,
+  "note": "No predeclared numerical gate defines substantial AE4 loading; assess reported share and fold change directly.",
+  "positive_loading_pool_fmol": 194.83694832438582,
+  "positive_shares": {
+    "ae2": 0.0,
+    "ae4": 0.20075211449322614,
+    "nkcc1": 0.7992478855067738
+  },
+  "rest_ae4_share": 0.018902824153950018,
+  "status": "COMPUTED",
+  "validation_only": true,
+  "window_s": [
+    60,
+    600
+  ]
+}

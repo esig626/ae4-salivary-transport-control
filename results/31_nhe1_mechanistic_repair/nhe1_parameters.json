@@ -1,0 +1,51 @@
+{
+  "amount_units": "fmol of carriers = N / Avogadro * 1e15",
+  "cardiac_density_imported": false,
+  "carrier_amount_fmol": 2.339370005697548e-05,
+  "carrier_count": 14088.015464032636,
+  "extracellular_modifier_hill": 1,
+  "intracellular_modifier_hill": 3,
+  "k2_minus_definition": "Exact printed Table S1: 183 ms^-1",
+  "k2_minus_per_ms": 183.0,
+  "kinetic_constants": {
+    "k1_minus_per_ms": 0.201,
+    "k1_plus_per_ms": 10.5,
+    "k2_minus_table_per_ms": 183.0,
+    "k2_plus_per_ms": 15.8,
+    "k_h_i_mM": 0.000605,
+    "k_h_o_mM": 0.00162,
+    "k_na_i_mM": 16.2,
+    "k_na_o_mM": 195.0,
+    "modifier_k_i_mM": 3.07e-05,
+    "modifier_k_o_mM": 4.8e-07
+  },
+  "kinetics_sha256": "b83773bcef96393c8b082dfbd9f5317989e314b391705da24b7371f740657db5",
+  "model": "cha_2009_eight_state_mod2",
+  "primary_doi": "10.1016/j.bpj.2009.08.053",
+  "relative_normalization_units": "carrier-count ratio per cell, not per membrane area",
+  "relative_to_source_cell_density": 0.028756920726745534,
+  "rounding_audit": {
+    "k2_minus_eq6_per_ms": 183.6074807146718,
+    "printed_kinetics_retained": true,
+    "relative_discrepancy": 0.003319566746840419
+  },
+  "salivary_density_calibrated": true,
+  "source_N_carriers": 489900,
+  "source_kinetic_constants_verified": true,
+  "source_normalization": "per-carrier turnover, ms^-1, converted to s^-1 with 1000",
+  "source_pdf_sha256": "3fdff54677a5c3347045de9e3d1efd52b62cbc2455400a37db1595e9f2fc146c",
+  "source_reconstruction": {
+    "independent_exact_arithmetic_equation_check_pass": true,
+    "inside_reported_interval": false,
+    "relative_excess_over_upper_limit": 0.008485017511806303,
+    "reported_turnover_interval_per_ms": [
+      2.3,
+      2.5
+    ],
+    "turnover_per_ms": 2.521212543779516
+  },
+  "source_selection": "eight-state exchange, Mod2, n_H=3, m_H=1",
+  "source_table_record": "source_table_s1.json",
+  "status": "CALIBRATED_R09_WT_FROZEN_ALL_CASES",
+  "test_fixtures_are_not_source_parameters": true
+}

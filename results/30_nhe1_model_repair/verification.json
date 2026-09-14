@@ -1,0 +1,31 @@
+{
+  "admissible_exact_null_backgrounds": [],
+  "admissible_wt_backgrounds": [
+    "R09"
+  ],
+  "all_dynamic_cases_valid": false,
+  "all_selected_rest_capacity_pass": true,
+  "all_selected_rest_nhe1_model_correct": true,
+  "artifact_and_parameter_isolation_checks_passed": true,
+  "background_count": 2,
+  "budget_limits_respected": true,
+  "dynamic_case_count": 0,
+  "focused_unit_test_count": 8,
+  "focused_unit_tests_passed_before_whole_cell_runs": true,
+  "full_unit_test_count": 11,
+  "full_unit_tests_passed_after_run": true,
+  "inherited_payload_hashes": {
+    "R09": {
+      "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+      "whole_cell": "3fea661073f649b34cae8fb164fae53e15a5bec58998850af71574f8e24d6d30"
+    },
+    "R10": {
+      "ae4": "49ec92ce13600c33d7b0b57232678b1604f35861c23ea0d24b201c5b6ba089a7",
+      "whole_cell": "a7b4789da3671f71c7347bbc8a8a183ec5d06a26d7e325b5c8833a6f3cbb2b9d"
+    }
+  },
+  "published_equation_machine_precision_cases": 3,
+  "run_status": "STOPPED_AT_NUMERICAL_BUDGET",
+  "selected_rest_count": 1,
+  "stop_reason": "stationary residual evaluation limit exhausted"
+}

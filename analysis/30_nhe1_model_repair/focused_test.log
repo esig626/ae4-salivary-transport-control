@@ -1,0 +1,15 @@
+Command: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 PYTHONPATH=src python -m unittest tests/test_task30_nhe1.py -v
+
+test_acidification_increases_forward_activity_at_fixed_sodium (tests.test_task30_nhe1.PublishedNhe1EquationTests.test_acidification_increases_forward_activity_at_fixed_sodium) ... ok
+test_ae4_genotype_does_not_enter_nhe1_evaluator (tests.test_task30_nhe1.PublishedNhe1EquationTests.test_ae4_genotype_does_not_enter_nhe1_evaluator) ... ok
+test_clean_seed_homeostasis_payload_is_backward_compatible (tests.test_task30_nhe1.PublishedNhe1EquationTests.test_clean_seed_homeostasis_payload_is_backward_compatible) ... ok
+test_finite_bound_and_activity_scale (tests.test_task30_nhe1.PublishedNhe1EquationTests.test_finite_bound_and_activity_scale) ... ok
+test_legacy_comparator_remains_selectable (tests.test_task30_nhe1.PublishedNhe1EquationTests.test_legacy_comparator_remains_selectable) ... ok
+test_source_stoichiometry_and_zero_charge (tests.test_task30_nhe1.PublishedNhe1EquationTests.test_source_stoichiometry_and_zero_charge) ... ok
+test_task30_builder_selects_only_published_nhe1_fields (tests.test_task30_nhe1.PublishedNhe1EquationTests.test_task30_builder_selects_only_published_nhe1_fields) ... ok
+test_three_independently_calculated_fixed_states (tests.test_task30_nhe1.PublishedNhe1EquationTests.test_three_independently_calculated_fixed_states) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.009s
+
+OK

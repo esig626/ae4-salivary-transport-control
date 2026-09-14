@@ -1,0 +1,11 @@
+quantity,value,unit,window_start_s,window_end_s
+positive_nkcc1_cl_loading,193.2992594987557,fmol,60,600
+positive_ae4_cl_loading,4.183594921662063,fmol,60,600
+positive_ae2_cl_loading,0.37735632360901394,fmol,60,600
+signed_ae2_cl_flux,0.37602929269932667,fmol,60,600
+nbc_cycles,8.477231655952792,fmol,60,600
+nbc_bicarbonate_equivalent_influx,16.954463311905585,fmol,60,600
+nhe1_flux,1.9108577903273787,fmol,60,600
+cacc_cl_export,202.18577174523114,fmol,60,600
+paracellular_cl_return,74.84928993243945,fmol,60,600
+water_outflow,0.8639005292669328,pL,60,600
