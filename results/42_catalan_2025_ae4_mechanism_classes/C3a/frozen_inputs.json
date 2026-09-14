@@ -1,0 +1,62 @@
+{
+  "ae4_routing_model": "CATALAN_2025_SOURCE_C3a",
+  "branch": "codex/task-42-catalan-2025-ae4-mechanism-classes",
+  "frozen_rest_state_sha256": "3e782c342c1cbd16c655d2ed15af8536c45c2dfa2271ad7e370a81274288f77e",
+  "frozen_utc": "2026-09-14T09:38:14.166450+00:00",
+  "prepared_head": "a3c53ce07b875a3daf4e26ded0ce9f1d55a1d76f",
+  "rest_parameter_hashes": {
+    "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+    "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+    "nkcc1_core": "80c412da616a723120032cbff5ecd6184bb32782ec68e6a0d6de6195f5082249",
+    "regulation": "8c9ca55e1e72cc32376748755d90453c0bbca4f41b85d3ba1cc4debb8e542638",
+    "stimulus": "c9b55210206366a9f3996239683abbacff7eec54d80de7d3492fa90a2e254047",
+    "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+  },
+  "scientific_parent": "fe51473d7cc201e2e04007aa62fbc1b45098732e",
+  "stimulus_parameter_hashes": {
+    "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+    "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+    "nkcc1_core": "80c412da616a723120032cbff5ecd6184bb32782ec68e6a0d6de6195f5082249",
+    "regulation": "4d560edc26dbb7b9538c0447b9c8d60401804911a0bb40620d9892923ba7ab4b",
+    "stimulus": "93eba70092faaa9497c80ce30d979726a77b092cf04c0ff4cd106d3774a2c4f4",
+    "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+  },
+  "task42_execution_files": [
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/run_case.py",
+      "sha256": "44c552090b754048c26885dffbf44549360ac051376b0420b12512aea8ad1d32"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/run_panel.py",
+      "sha256": "82b15525558c304fa63bdef89b2106230b44f1837ece8c9ccd1dbf0b731a54ad"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/run_preflight.py",
+      "sha256": "1a48a8c6c5ec859891bedfc574e45033f3fd2a20ab424d31365be4446b1dbdf4"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/run_rest.py",
+      "sha256": "6cd40d7e7d3cc1fb78358f4a3524e1ed4ea38df648ea4db8e9fe803b82023dab"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/summarise_predictions.py",
+      "sha256": "5177bb6b2c6d8a97fb591777596211d0b78a7c209bfe47b74dc39ec4b4191cdd"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/validation_common.py",
+      "sha256": "0849154841c32a0fe25eea5c4919eaa9b00f77d73bc4074d0d7876f509441885"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/verify_saved_predictions.py",
+      "sha256": "51f607f82a2ff23beb476e914067d7150991bf9a31ad10be606dc7bca9c1c8a8"
+    },
+    {
+      "path": "src/modern_full_model/ae4_catalan2025.py",
+      "sha256": "f3b488f6c0075d68178167b0145543af3f04e4db889002c11cde782fa868da11"
+    },
+    {
+      "path": "tests/test_task42_catalan2025.py",
+      "sha256": "49d0e81057729adc02d4a017d764fe0a65e63611af4c8b67673ceae03be4c3c2"
+    }
+  ]
+}

@@ -5,15 +5,16 @@
   "genotype_rest_solves": 0,
   "integration_attempts": 0,
   "no_further_scientific_execution": false,
-  "numerical_execution_seconds": 0.0,
+  "numerical_execution_seconds": 0.4730355829997279,
   "numerical_retries": 0,
   "optimisation_calls": 0,
   "parameter_sweeps": 0,
   "source_tests_pass": true,
   "started_cases": [],
   "stationary_numerical_retries": 0,
-  "stationary_residual_evaluations": 0,
-  "stationary_solves": 0,
-  "status": "PREFLIGHT_FROZEN",
-  "workers": 1
+  "stationary_residual_evaluations": 122,
+  "stationary_solves": 1,
+  "status": "WT_REST_FROZEN",
+  "workers": 1,
+  "wt_rest_pass": true
 }

@@ -1,4 +1,10 @@
 {
   "branch": "codex/task-42-catalan-2025-ae4-mechanism-classes",
-  "checkpoints": {}
+  "checkpoints": {
+    "source_checks": {
+      "sha": "945a470008db5c3095aaefd82113ef518ccdab71",
+      "tree_sha": "f9220df2c8638342678a284ce490c9bd1cbc61e6",
+      "confirmed_utc": "2026-09-14T09:38:03.211578+00:00"
+    }
+  }
 }
