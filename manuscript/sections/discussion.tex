@@ -1,0 +1,44 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{What survived from the original model}
+
+The broad conclusion of the 2018 study survives. AE4 is not interchangeable with AE2, and its cation dependence is biologically important. Subsequent experiments have strengthened rather than weakened that premise. AE4 is activated by cAMP dependent protein kinase in salivary acinar cells \citep{PenaMunzenmayer2021}, and molecular experiments now distinguish sodium supported from potassium supported transport \citep{Catalan2025}. The original model therefore identified the correct biological actor and anticipated that cation coupling would matter.
+
+What does not survive is the simple network explanation. In the original model, removing AE4 raised intracellular sodium and potassium, reduced NHE1 and pump activity, produced little NKCC1 compensation and reduced secretion by approximately 24\%. In the reconstructed model, the same qualitative route is not robust. Once NHE1, NKCC1, NBC, charge closure and acid--base balance are represented more carefully, loss of AE4 changes NBC and NHE1 sodium entry and activates strong NKCC1 compensation. Equal cation routing produces only a 3--4\% deficit. The explicit cancellation in \cref{eq:cacc-identity,eq:cacc-steady} shows why altering the AE4 sodium/potassium split cannot by itself determine sustained secretion.
+
+This is not a failure of the original study. The 2018 model answered the question that could be posed with the available evidence. The present analysis asks a harder one: which mechanistic explanation remains after a decade of new measurements and after the model is required to satisfy several datasets simultaneously? The answer is that the original phenotype was reproduced for an incomplete network reason.
+
+\subsection{The bicarbonate transporter that was missing after all}
+
+The strongest structural result is the role of inward bicarbonate supply. The 2018 model explicitly included no additional proton or bicarbonate transport pathway beyond CO$_2$, NHE1, AE2 and AE4. That simplification was enough to support the original calibration because AE4 was not required to carry a large sustained share of chloride loading. When the reconstructed model imposed a substantial productive AE4 flux, the omission became consequential.
+
+Every positive AE4 cycle exports base. Without another inward base pathway, \cref{eq:alkalinity-balance} forces NHE1 or AE2 to compensate. Source constrained NHE1 cannot supply arbitrarily large alkalinity while maintaining sodium and pH, and positive AE2 chloride loading consumes rather than supplies bicarbonate. The model therefore either suppresses AE4 or leaves the physiological domain. NBC solves exactly this problem: it supplies bicarbonate equivalents without adding chloride and allows AE4 to remain a material secondary chloride loader.
+
+The role of NBC is therefore indirect but essential. It is not introduced because NBC itself is assumed to generate a large osmotic flux. It changes which chloride loading configurations are compatible with acid--base homeostasis. This provides a broader modelling lesson. A transporter that appears secondary in a flow balance can be structurally necessary because it closes a conserved chemical balance. In this case, pH is not an output to be checked after the secretion calculation. It is a mechanism discriminator.
+
+The Task 42 carbonate classes make this point particularly clearly. All three obtained admissible resting states, but their wild type stimulated trajectories crossed the pH floor before 600 seconds. Resting data alone therefore did not identify the failure. The secretory protocol exposed an acid--base incompatibility that would have been invisible in a model that tracked bicarbonate as an isolated species or omitted carbonate alkalinity.
+
+\subsection{How the 2025 experiments and the whole cell model fit together}
+
+The experiments of \citet{Catalan2025} show that AE4 transport requires a permeant monovalent cation and that sodium and potassium are not coordinated identically. Those observations are fully compatible with the present results. Our calculations do not test whether the measured molecular interactions occur. They test the whole cell consequences of several stoichiometric cycles that were proposed to explain them.
+
+This distinction matters. A transporter can support a cycle in a heterologous assay without that cycle alone determining gland level secretion. The whole cell response also depends on the available electrochemical gradients, pH regulation, pump support, membrane current, paracellular return, intracellular stores and compensatory NKCC1 flux. In C1, for example, the proposed sodium and chloride inward cycle is thermodynamically supported, but deleting AE4 relieves a network constraint and drives such strong NKCC1 compensation that secretion increases. The molecular mechanism is not contradicted; it is simply insufficient as a whole cell explanation under the inherited kinetics.
+
+The 2025 experiments also leave class specific kinetics unresolved. Task 42 deliberately retained the same scalar $J_4(\mathbf{x})$ for all source classes to isolate stoichiometric effects. A future model should replace that first stage assumption with kinetic laws derived from the distinct sodium and potassium coordination states, including the mutant hierarchy reported by \citet{Catalan2025}. The present source class panel establishes a useful boundary: stoichiometry alone cannot account for the gland phenotype.
+
+\subsection{What additional biology is suggested}
+
+The constructive CaCC result identifies one class of missing coupling but should not be mistaken for its discovery. Reducing stimulated chloride exit together with chloride loading can generate a large secretion deficit without depleting the cell. The strength required is substantial and the predicted early time course is wrong. Direct measurements of sustained apical chloride conductance in AE4 deficient cells would therefore provide a decisive test.
+
+Other regulatory possibilities remain. AE4 is activated by beta adrenergic/cAMP/PKA signalling \citep{PenaMunzenmayer2021}. Loss of AE4 may alter the sustained response of transport complexes, membrane microdomains, channel recruitment or pump support without changing the initial calcium activated conductance. The experimental observation that early secretion is relatively preserved but later secretion diverges points towards a slow regulatory or resource dependent process rather than a simple instantaneous conductance multiplier.
+
+The modern model now offers a way to discriminate those possibilities. Any proposed amendment must preserve the validated wild type acid--base state, the measured cation dependence of AE4, realistic NKCC1 and NHE1 responses, the temporal secretion phenotype and the ionic trajectories. A scalar fit to total secretion is no longer sufficient.
+
+\subsection{Limitations}
+
+The model is a well stirred single cell representation with an imposed calcium input. Previous spatial and multicellular studies suggest that total secretion can often be approximated by a reduced single cell model \citep{VeraSiguenza2019Fluid,VeraSiguenza2020}, but this does not mean that spatial organisation is irrelevant to transporter regulation. The interstitial bath is fixed, hydrostatic pressure is neglected, and ductal modification is not modelled.
+
+Several capacities remain model quantities rather than direct abundance measurements. The stimulus recruited NBC is a structural surrogate and is not assigned to a specific SLC4 isoform. The Task 42 source classes share one inherited scalar AE4 kinetic law. The Task 41 CaCC coupling was selected against the target and has been validated only over 600 seconds. The reported physiological gates are pointwise numerical checks at solver endpoints and dense output samples, not formal enclosures between them.
+
+Finally, the experimental secretion reduction is an organ level measurement, whereas the model predicts one cell and converts neither gland architecture nor cell number in the present comparisons. We use relative secretion, for which a common multiplicative gland scale cancels. This is appropriate for genotype ratios but does not validate absolute gland flow.
