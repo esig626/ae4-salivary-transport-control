@@ -1,0 +1,90 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "global_attempt": 1,
+      "initial_state_sha256": "879a650761e9044691ab6b2a9b1bfc3be8f951ece176925117596cc2baa31abe",
+      "last_solver_time_s": 600.0,
+      "nfev": 2336,
+      "njev": 2,
+      "nlu": 594,
+      "solver": {
+        "amount_atol_fmol": 1e-10,
+        "label": "production_radau",
+        "max_step_s": 2.0,
+        "method": "Radau",
+        "regulatory_atol_fraction": 1e-10,
+        "rtol": 1e-07,
+        "volume_atol_pL": 1e-12
+      },
+      "solver_status": "finished",
+      "stopped_by_scientific_gate": false,
+      "wall_seconds": 1.5929004040008294
+    }
+  ],
+  "budget": {
+    "blas_threads": 1,
+    "completed_cases": [
+      "wt"
+    ],
+    "direct_rest_nesting_runs": 1,
+    "focused_test_runs": 2,
+    "implementation_correction_rounds": 1,
+    "integration_attempts": 1,
+    "limits_respected": true,
+    "maximum_integration_attempts": 4,
+    "maximum_intended_integrations": 3,
+    "maximum_numerical_execution_seconds": 900,
+    "no_further_scientific_execution": false,
+    "numerical_execution_seconds": 2.7736816719989292,
+    "numerical_retries": 0,
+    "optimisation_calls": 0,
+    "parameter_sweeps": 0,
+    "rest_nesting_pass": true,
+    "root_scope": "No stationary/resting root solves. Inherited acid-base speciation and NBC current-closure brentq evaluations are unchanged.",
+    "scientific_workers": 1,
+    "source_tests_pass": true,
+    "started_cases": [
+      "wt"
+    ],
+    "stationary_solves": 0,
+    "status": "WT_PASS"
+  },
+  "case": "wt",
+  "chloride_partition": {
+    "definition": "Integrate max(J_Cl,0) for NKCC1, AE4 and AE2 separately, then normalize their sum.",
+    "nkcc1_context_band": [
+      0.65,
+      0.75
+    ],
+    "nkcc1_within_context": false,
+    "positive_loading_pool_fmol": 185.77067558143062,
+    "positive_shares": {
+      "ae2": 0.0,
+      "ae4": 0.21790112438386097,
+      "nkcc1": 0.7820988756161391
+    },
+    "validation_only": true,
+    "window_s": [
+      60,
+      600
+    ]
+  },
+  "error": null,
+  "first_failure": null,
+  "secretion": {
+    "activation_checks": {
+      "cumulative_0_600_gt_1p10_rest": true,
+      "endpoint_at_least_rest": true,
+      "mean_60_600_gt_1p10_rest": true
+    },
+    "activation_required": true,
+    "cumulative_0_600_pL": 0.9586988999857675,
+    "endpoint_pL_s": 0.0015147790173042882,
+    "mean_60_600_pL_s": 0.0015751713956176385,
+    "q_rest_pL_s": 0.0010757073853493032,
+    "quadrature": "Trapezoidal on integer seconds plus t=0 and 1e-6; identical to Tasks 37-38.",
+    "ratio_to_task37_WT_cumulative": 0.9713310056842968
+  },
+  "status": "PASS"
+}

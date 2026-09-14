@@ -1,0 +1,23 @@
+{
+  "derived_from": "Accepted Task 31 R09 WT REST only; literal division, no fit",
+  "frozen_utc": "2026-09-14T03:40:06.817508+00:00",
+  "payload": {
+    "alpha_eff_fmol_s": 0.017334746894096052,
+    "coefficients_mM": {
+      "a1": 157.5,
+      "a2": 2.0096e-05,
+      "a3": 1.0306,
+      "a4": 1.3852e-06
+    },
+    "law": "palk_benjamin_2010_eq17",
+    "rest_concentrations_mM": [
+      11.636125748680639,
+      116.76320932871538,
+      60.30496692587399
+    ],
+    "rest_cycle_fmol_s": 0.1281222023866353,
+    "shape_rest": 7.391062769440939,
+    "x_rest_mM4": 4941065.334966328
+  },
+  "sha256": "c6e9739ed6b14651b5be49f70410cc0944f904ca0bf9f9a12d3caa49b5a1689f"
+}

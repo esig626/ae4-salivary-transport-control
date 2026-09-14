@@ -1,0 +1,224 @@
+{
+  "budget": {
+    "blas_threads": 1,
+    "completed_cases": [
+      "wt",
+      "ae4_5pct",
+      "ae4_null"
+    ],
+    "direct_rest_nesting_runs": 1,
+    "focused_test_runs": 2,
+    "implementation_correction_rounds": 1,
+    "integration_attempts": 3,
+    "limits_respected": true,
+    "maximum_integration_attempts": 4,
+    "maximum_intended_integrations": 3,
+    "maximum_numerical_execution_seconds": 900,
+    "no_further_scientific_execution": true,
+    "numerical_execution_seconds": 6.5078440489996865,
+    "numerical_retries": 0,
+    "optimisation_calls": 0,
+    "parameter_sweeps": 0,
+    "rest_nesting_pass": true,
+    "root_scope": "No stationary/resting root solves. Inherited acid-base speciation and NBC current-closure brentq evaluations are unchanged.",
+    "scientific_workers": 1,
+    "source_tests_pass": true,
+    "started_cases": [
+      "wt",
+      "ae4_5pct",
+      "ae4_null"
+    ],
+    "stationary_solves": 0,
+    "status": "PALK_NKCC1_FULL_VALIDATION_COMPLETE"
+  },
+  "chloride_partitions": {
+    "ae4_5pct": {
+      "definition": "Integrate max(J_Cl,0) for NKCC1, AE4 and AE2 separately, then normalize their sum.",
+      "nkcc1_context_band": [
+        0.65,
+        0.75
+      ],
+      "nkcc1_within_context": false,
+      "positive_loading_pool_fmol": 193.1098550297012,
+      "positive_shares": {
+        "ae2": 0.0022551079049281213,
+        "ae4": 0.02225801959533084,
+        "nkcc1": 0.975486872499741
+      },
+      "validation_only": true,
+      "window_s": [
+        60,
+        600
+      ]
+    },
+    "ae4_null": {
+      "definition": "Integrate max(J_Cl,0) for NKCC1, AE4 and AE2 separately, then normalize their sum.",
+      "nkcc1_context_band": [
+        0.65,
+        0.75
+      ],
+      "nkcc1_within_context": false,
+      "positive_loading_pool_fmol": 193.89552369838955,
+      "positive_shares": {
+        "ae2": 0.0026367146422963286,
+        "ae4": 0.0,
+        "nkcc1": 0.9973632853577036
+      },
+      "validation_only": true,
+      "window_s": [
+        60,
+        600
+      ]
+    },
+    "wt": {
+      "definition": "Integrate max(J_Cl,0) for NKCC1, AE4 and AE2 separately, then normalize their sum.",
+      "nkcc1_context_band": [
+        0.65,
+        0.75
+      ],
+      "nkcc1_within_context": false,
+      "positive_loading_pool_fmol": 185.77067558143062,
+      "positive_shares": {
+        "ae2": 0.0,
+        "ae4": 0.21790112438386097,
+        "nkcc1": 0.7820988756161391
+      },
+      "validation_only": true,
+      "window_s": [
+        60,
+        600
+      ]
+    }
+  },
+  "held_out_validation": {
+    "comparison_scope": "The 24% value is a historical model flow-rate deficit; protocols and whole-gland/whole-cell observables differ. Both present cumulative and endpoint results are reported.",
+    "experimental_null_deficit_percent": 35,
+    "full_2018_model_reproduction_claimed": false,
+    "original_2018_model_flow_deficit_percent": 24,
+    "predicted_null_cumulative_deficit_percent": 0.6273201314711652,
+    "predicted_null_endpoint_flow_deficit_percent": -2.7129271290519563,
+    "used_for_fitting": false
+  },
+  "perturbations": {
+    "ae4_5pct": {
+      "Palk_reduces_relative_compensation": false,
+      "compensation_change_percentage_points": 5.524158655964186,
+      "cumulative_deficit_percent": 0.4821618751477019,
+      "cumulative_ratio": 0.995178381248523,
+      "endpoint_X_ratio": 0.9279968497478573,
+      "endpoint_differences": {
+        "cl_i_mM": 0.5697549325934759,
+        "hco3_i_mM": 7.202752556121442,
+        "k_i_mM": 5.842289919579713,
+        "na_i_mM": -2.869535907547764,
+        "nkcc1_x_i_mM4": -416311.0361367604,
+        "ph_i": 0.16653523841327988,
+        "tic_i_mM": 7.512802150258599,
+        "volume_i_pL": 0.14495467438357656
+      },
+      "endpoint_flow_deficit_percent": -2.59268596236244,
+      "endpoint_flow_ratio": 1.0259268596236244,
+      "flux_ratios": {
+        "cacc_cl_export": 0.9921337857465415,
+        "nbc_bicarbonate_equivalent_influx": 0.22590421204351097,
+        "nbc_current_charge": 0.22590421204351094,
+        "nbc_cycles": 0.22590421204351097,
+        "nhe1_flux": 0.4748598214900004,
+        "nkcc1_cycles": 1.2965433592917452,
+        "paracellular_cl_return": 0.9873964430620434,
+        "positive_ae2_cl_loading": null,
+        "positive_ae4_cl_loading": 0.10618283745297108,
+        "positive_nkcc1_cl_loading": 1.2965433592917452,
+        "pump_cycles": 0.9705206394476823,
+        "signed_ae2_cl_flux": -1.0754291916945742,
+        "water_outflow": 0.9958944867313398
+      },
+      "integrated_positive_nkcc1_loading_ratio": 1.2965433592917452,
+      "largest_tabulated_cumulative_deficit_time_and_percent": [
+        180.0,
+        2.1540141136086377
+      ],
+      "largest_tabulated_flow_deficit_time_and_percent": [
+        120.0,
+        2.9416547151369876
+      ],
+      "mean_flow_deficit_percent": 0.4105513268660155,
+      "mean_flow_ratio_60_600": 0.9958944867313398,
+      "most_negative_tabulated_Cl_difference_time_and_mM": [
+        120.0,
+        -2.2168285384469257
+      ],
+      "nkcc1_compensation_percent": 29.654335929174525,
+      "task38_nkcc1_compensation_percent": 24.13017727321034,
+      "time_grid_caveat": "Extrema and crossings in these comparisons use the published 60-second readouts; quadratures retain the one-second grid."
+    },
+    "ae4_null": {
+      "Palk_reduces_relative_compensation": false,
+      "compensation_change_percentage_points": 6.20695714989208,
+      "cumulative_deficit_percent": 0.6273201314711652,
+      "cumulative_ratio": 0.9937267986852883,
+      "endpoint_X_ratio": 0.9194170866779106,
+      "endpoint_differences": {
+        "cl_i_mM": 0.5446809288195809,
+        "hco3_i_mM": 8.278620382126821,
+        "k_i_mM": 6.450838435456305,
+        "na_i_mM": -3.11073183393302,
+        "nkcc1_x_i_mM4": -465917.89418324083,
+        "ph_i": 0.18680251233699607,
+        "tic_i_mM": 8.619288822568997,
+        "volume_i_pL": 0.16628209015683604
+      },
+      "endpoint_flow_deficit_percent": -2.7129271290519563,
+      "endpoint_flow_ratio": 1.0271292712905196,
+      "flux_ratios": {
+        "cacc_cl_export": 0.9903219465577643,
+        "nbc_bicarbonate_equivalent_influx": 0.14164727849357986,
+        "nbc_current_charge": 0.1416472784935799,
+        "nbc_cycles": 0.14164727849357986,
+        "nhe1_flux": 0.43991834918352085,
+        "nkcc1_cycles": 1.3310131250873785,
+        "paracellular_cl_return": 0.985362709542744,
+        "positive_ae2_cl_loading": null,
+        "positive_ae4_cl_loading": 0.0,
+        "positive_nkcc1_cl_loading": 1.3310131250873785,
+        "pump_cycles": 0.9680308114972188,
+        "signed_ae2_cl_flux": -1.2635375555572892,
+        "water_outflow": 0.9943525292335197
+      },
+      "integrated_positive_nkcc1_loading_ratio": 1.3310131250873785,
+      "largest_tabulated_cumulative_deficit_time_and_percent": [
+        240.0,
+        2.361760662179635
+      ],
+      "largest_tabulated_flow_deficit_time_and_percent": [
+        120.0,
+        3.234828754838115
+      ],
+      "mean_flow_deficit_percent": 0.56474707664802,
+      "mean_flow_ratio_60_600": 0.9943525292335198,
+      "most_negative_tabulated_Cl_difference_time_and_mM": [
+        120.0,
+        -2.4248401789133567
+      ],
+      "nkcc1_compensation_percent": 33.10131250873785,
+      "task38_nkcc1_compensation_percent": 26.894355358845768,
+      "time_grid_caveat": "Extrema and crossings in these comparisons use the published 60-second readouts; quadratures retain the one-second grid."
+    }
+  },
+  "scientific_hypothesis": "NOT_SUPPORTED_IN_FROZEN_TASK38_ARCHITECTURE",
+  "status": "PALK_NKCC1_FULL_VALIDATION_COMPLETE",
+  "wt": {
+    "activation_checks": {
+      "cumulative_0_600_gt_1p10_rest": true,
+      "endpoint_at_least_rest": true,
+      "mean_60_600_gt_1p10_rest": true
+    },
+    "activation_required": true,
+    "cumulative_0_600_pL": 0.9586988999857675,
+    "endpoint_pL_s": 0.0015147790173042882,
+    "mean_60_600_pL_s": 0.0015751713956176385,
+    "q_rest_pL_s": 0.0010757073853493032,
+    "quadrature": "Trapezoidal on integer seconds plus t=0 and 1e-6; identical to Tasks 37-38.",
+    "ratio_to_task37_WT_cumulative": 0.9713310056842968
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "accepted_solver_steps": 333,
+  "ae4_expression": 0.0,
+  "branch": "codex/task-39-palk-nkcc1-full-validation",
+  "case": "ae4_null",
+  "checked_state_count": 934,
+  "chloride_partition": {
+    "definition": "Integrate max(J_Cl,0) for NKCC1, AE4 and AE2 separately, then normalize their sum.",
+    "nkcc1_context_band": [
+      0.65,
+      0.75
+    ],
+    "nkcc1_within_context": false,
+    "positive_loading_pool_fmol": 193.89552369838955,
+    "positive_shares": {
+      "ae2": 0.0026367146422963286,
+      "ae4": 0.0,
+      "nkcc1": 0.9973632853577036
+    },
+    "validation_only": true,
+    "window_s": [
+      60,
+      600
+    ]
+  },
+  "complete_600_s": true,
+  "conservation_tolerances": {
+    "ae4_charge_fmol_s": 1e-10,
+    "apical_current_A": 1e-20,
+    "basolateral_current_A": 1e-20,
+    "buffer_site_accounting_fmol_s": 1e-10,
+    "carbon_accounting_fmol_s": 1e-10,
+    "cell_bulk_charge_rate_fmol_s": 1e-10,
+    "cell_speciation_alkalinity_mM": 1e-09,
+    "homeostasis_charge_fmol_s": 1e-10,
+    "lumen_bulk_charge_rate_minus_outflow_fmol_s": 1e-10,
+    "lumen_speciation_alkalinity_mM": 1e-09,
+    "water_volume_accounting_pL_s": 1e-12
+  },
+  "core_state_sha256": "d77c1907e3e7124061721d606148a733f858cce2ef591c4e9f16e5cb7fc2469d",
+  "first_failure": null,
+  "genotype": {
+    "ae2_expression": 1.0,
+    "ae4_expression": 0.0,
+    "name": "WT",
+    "nhe1_expression": 1.0,
+    "nkcc1_expression": 1.0
+  },
+  "initial_state_bitwise_identical_to_task31_and_task37": true,
+  "initial_state_sha256": "879a650761e9044691ab6b2a9b1bfc3be8f951ece176925117596cc2baa31abe",
+  "initial_state_vector": [
+    16.854068042069564,
+    169.12287795271675,
+    87.3472870434283,
+    8.215105181295272,
+    20.56789674541318,
+    1.4484260832245268,
+    13.13912701277791,
+    2.70611880567707,
+    15.376247504630147,
+    0.5411740288686584,
+    0.46899831382483304,
+    0.10537853692674652,
+    0.0
+  ],
+  "integration_attempts": [
+    {
+      "attempt": 1,
+      "global_attempt": 3,
+      "initial_state_sha256": "879a650761e9044691ab6b2a9b1bfc3be8f951ece176925117596cc2baa31abe",
+      "last_solver_time_s": 600.0,
+      "nfev": 2336,
+      "njev": 2,
+      "nlu": 594,
+      "solver": {
+        "amount_atol_fmol": 1e-10,
+        "label": "production_radau",
+        "max_step_s": 2.0,
+        "method": "Radau",
+        "regulatory_atol_fraction": 1e-10,
+        "rtol": 1e-07,
+        "volume_atol_pL": 1e-12
+      },
+      "solver_status": "finished",
+      "stopped_by_scientific_gate": false,
+      "wall_seconds": 1.3759949979994417
+    }
+  ],
+  "last_checked_state_vector": [
+    26.584653214082383,
+    172.50156423255265,
+    78.66175746230125,
+    25.361748525757854,
+    42.36269777839493,
+    1.5199982318152012,
+    12.666264718361925,
+    3.528347987380362,
+    15.88874925491154,
+    0.4152034361604206,
+    0.3058634508307925,
+    0.10777936934104962,
+    0.9999999979388463
+  ],
+  "last_checked_time_s": 600.0,
+  "max_abs_conservation_residuals": {
+    "ae4_charge_fmol_s": 0.0,
+    "apical_current_A": 2.6818746422617694e-25,
+    "basolateral_current_A": 2.4880041861946536e-23,
+    "buffer_site_accounting_fmol_s": 0.0,
+    "carbon_accounting_fmol_s": 2.7755575615628914e-17,
+    "cell_bulk_charge_rate_fmol_s": 2.588901315547787e-13,
+    "cell_speciation_alkalinity_mM": 6.0680349633912556e-12,
+    "homeostasis_charge_fmol_s": 6.938893903907228e-17,
+    "lumen_bulk_charge_rate_minus_outflow_fmol_s": 2.7599450502791e-15,
+    "lumen_speciation_alkalinity_mM": 5.915268275202834e-13,
+    "water_volume_accounting_pL_s": 2.168404344971009e-19
+  },
+  "max_conservation_ratios": {
+    "ae4_charge_fmol_s": 0.0,
+    "apical_current_A": 2.6818746422617694e-05,
+    "basolateral_current_A": 0.0024880041861946537,
+    "buffer_site_accounting_fmol_s": 0.0,
+    "carbon_accounting_fmol_s": 2.7755575615628914e-07,
+    "cell_bulk_charge_rate_fmol_s": 0.002588901315547787,
+    "cell_speciation_alkalinity_mM": 0.006068034963391256,
+    "homeostasis_charge_fmol_s": 6.938893903907228e-07,
+    "lumen_bulk_charge_rate_minus_outflow_fmol_s": 2.7599450502791e-05,
+    "lumen_speciation_alkalinity_mM": 0.0005915268275202834,
+    "water_volume_accounting_pL_s": 2.168404344971009e-07
+  },
+  "maxima": {
+    "ae2_cl_inward_signed_fmol_s": 0.0011381233223152912,
+    "ae4_cl_inward_fmol_s": 0.0,
+    "cacc_cl_export_fmol_s": 0.6112129595550981,
+    "cl_i_mM": 60.30496692587399,
+    "hco3_i_mM": 15.502861819989093,
+    "k_i_mM": 116.76320932871538,
+    "na_i_mM": 17.568126692492886,
+    "nbc_activation": 1.0,
+    "nbc_current_A": 9.72040157116086e-12,
+    "nbc_cycle_inward_fmol_s": 0.10074486305412181,
+    "nbc_hco3_inward_fmol_s": 0.20148972610824362,
+    "nhe1_inward_fmol_s": 0.01814833512597652,
+    "nhe1_multiplier": 2.3,
+    "nkcc1_activity_multiplier": 1.75,
+    "nkcc1_cl_inward_fmol_s": 0.4484277083532235,
+    "nkcc1_cycle_inward_fmol_s": 0.22421385417661174,
+    "nkcc1_x_i_mM4": 5531228.545693557,
+    "osm_lumen_mOsm": 301.8599543601184,
+    "paracellular_cl_return_fmol_s": 0.14785497736771222,
+    "ph_i": 7.222392146492072,
+    "pump_total_cycles_fmol_s": 0.06237428026173682,
+    "q_out_pL_s": 0.0020963490272468605,
+    "tic_i_mM": 16.685380281969493,
+    "v_apical_V": -0.027106402224541214,
+    "v_basolateral_V": -0.06710109365819839,
+    "v_transepithelial_V": -0.03556979852719381,
+    "volume_i_pL": 1.5199982318152012
+  },
+  "minima": {
+    "ae2_cl_inward_signed_fmol_s": -0.001983554393538192,
+    "ae4_cl_inward_fmol_s": 0.0,
+    "cacc_cl_export_fmol_s": 0.2591979178212792,
+    "cl_i_mM": 51.73435981195343,
+    "hco3_i_mM": 4.909374551508538,
+    "k_i_mM": 112.76954835340908,
+    "na_i_mM": 11.636125748680639,
+    "nbc_activation": 0.0,
+    "nbc_current_A": 0.0,
+    "nbc_cycle_inward_fmol_s": 0.0,
+    "nbc_hco3_inward_fmol_s": 0.0,
+    "nhe1_inward_fmol_s": 0.0015726670011398203,
+    "nhe1_multiplier": 1.0,
+    "nkcc1_activity_multiplier": 1.0,
+    "nkcc1_cl_inward_fmol_s": 0.2562444047732706,
+    "nkcc1_cycle_inward_fmol_s": 0.1281222023866353,
+    "nkcc1_x_i_mM4": 4941065.334966328,
+    "osm_lumen_mOsm": 301.4149586650029,
+    "paracellular_cl_return_fmol_s": 0.10223670463621282,
+    "ph_i": 6.910000223494689,
+    "pump_total_cycles_fmol_s": 0.04518845453329205,
+    "q_out_pL_s": 0.0010757073853493032,
+    "tic_i_mM": 5.671746232991451,
+    "v_apical_V": -0.031531295131004576,
+    "v_basolateral_V": -0.08034476282182752,
+    "v_transepithelial_V": -0.05302015059627469,
+    "volume_i_pL": 1.4483536335583662
+  },
+  "monitoring": "Every accepted solver endpoint plus dense output at each integer second; first detected failed sample stops all further stepping.",
+  "nbc_parameters": {
+    "capacity_fmol_s": 0.11570913197464398,
+    "fully_recruited_calcium_uM": 0.25,
+    "log_width": 2.0,
+    "nhe1_stimulated_multiplier": 2.3,
+    "resting_calcium_uM": 0.058
+  },
+  "nhe1_carrier_amount_fmol": 2.339370005697548e-05,
+  "nkcc1_kinetics": {
+    "alpha_eff_fmol_s": 0.017334746894096052,
+    "law": "palk_benjamin_2010_eq17"
+  },
+  "only_genotype_difference": {
+    "ae4_expression": 0.0
+  },
+  "onset_convention": "Inherited protocol is REST at exactly t=0 and active for 0<t<=600; inherited production integration starts at 1e-6 s with the unchanged saved state.",
+  "parameter_hashes": {
+    "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+    "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+    "nkcc1_core": "80c412da616a723120032cbff5ecd6184bb32782ec68e6a0d6de6195f5082249",
+    "regulation": "4d560edc26dbb7b9538c0447b9c8d60401804911a0bb40620d9892923ba7ab4b",
+    "stimulus": "93eba70092faaa9497c80ce30d979726a77b092cf04c0ff4cd106d3774a2c4f4",
+    "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+  },
+  "prepared_head": "4aa1a1454dfb042d55523d103f10f27d3de77132",
+  "scientific_parameters_unchanged": true,
+  "secretion": {
+    "activation_checks": {
+      "cumulative_0_600_gt_1p10_rest": true,
+      "endpoint_at_least_rest": true,
+      "mean_60_600_gt_1p10_rest": true
+    },
+    "activation_required": false,
+    "cumulative_0_600_pL": 0.9526847887859642,
+    "endpoint_pL_s": 0.0015558738682099227,
+    "mean_60_600_pL_s": 0.001566275661208692,
+    "q_rest_pL_s": 0.0010757073853493032,
+    "quadrature": "Trapezoidal on integer seconds plus t=0 and 1e-6; identical to Tasks 37-38.",
+    "ratio_to_task37_WT_cumulative": 0.9652376507424179
+  },
+  "software_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "solver_exception": null,
+  "source_fields_note": "minimal_nbc_charge_source_fmol_s=-J_NBC and minimal_nbc_carbon_source_fmol_s=2*J_NBC are nonzero physical sources, not conservation errors.",
+  "started_utc": "2026-09-14T03:41:38.516783+00:00",
+  "state_names": [
+    "na_i_fmol",
+    "k_i_fmol",
+    "cl_i_fmol",
+    "tic_i_fmol",
+    "alk_i_fmol",
+    "volume_i_pL",
+    "na_l_fmol",
+    "k_l_fmol",
+    "cl_l_fmol",
+    "tic_l_fmol",
+    "alk_l_fmol",
+    "volume_l_pL",
+    "ae4_effective_activation_fraction"
+  ],
+  "status": "PASS",
+  "stimulus": {
+    "arm": "CCH_IPR",
+    "beta_occupancy_on": 1.0,
+    "cch_dose_uM": 0.3,
+    "duration_s": 600.0,
+    "ipr_dose_uM": 5.0,
+    "onset_s": 0.0,
+    "resting_calcium_uM": 0.058,
+    "stimulated_calcium_uM": 0.25
+  },
+  "thread_pools": [
+    {
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "version": "0.3.30"
+    },
+    {
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "version": "0.3.30"
+    }
+  ]
+}

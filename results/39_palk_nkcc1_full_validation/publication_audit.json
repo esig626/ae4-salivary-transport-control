@@ -1,0 +1,226 @@
+{
+  "blas_threads": 1,
+  "branch": "codex/task-39-palk-nkcc1-full-validation",
+  "completed_cases": [
+    "wt",
+    "ae4_5pct",
+    "ae4_null"
+  ],
+  "concurrent_lineage_rebase": {
+    "all_scientific_prepared_blobs_match": true,
+    "all_task_instructions_match": true,
+    "differing_or_absent_non_scientific_paths": [
+      ".gitignore",
+      "ARCHIVE_INDEX.md",
+      "README.md"
+    ],
+    "matching_prepared_blobs": 114,
+    "publication_strategy": "Apply only Task 39 files to current tree; preserve rebased history and all unrelated files. No recomputation."
+  },
+  "frozen_execution_files_checked": 123,
+  "inherited_prepared_files_unchanged": 113,
+  "integration_attempts": 3,
+  "numerical_retries": 0,
+  "only_existing_source_files_modified": [
+    "src/modern_full_model/membranes.py",
+    "src/modern_full_model/model.py",
+    "src/modern_full_model/nbc_minimal.py",
+    "src/modern_full_model/nkcc_stimulation.py"
+  ],
+  "optimisation_calls": 0,
+  "prepared_head": "4aa1a1454dfb042d55523d103f10f27d3de77132",
+  "publication_files_excluding_this_audit": [
+    {
+      "bytes": 2691,
+      "path": "analysis/39_palk_nkcc1_full_validation/ae4_5pct_execution.log",
+      "sha256": "04f97fbe4b238f9fbaa52b23e81352e9f0b2fad3e8673b98fa54dc93ea8ff17e"
+    },
+    {
+      "bytes": 2736,
+      "path": "analysis/39_palk_nkcc1_full_validation/ae4_null_execution.log",
+      "sha256": "51862acc9fa1091bdec662ba53dd7e4fbc5947e64776d63085fc80b23d9ffe0c"
+    },
+    {
+      "bytes": 13862,
+      "path": "analysis/39_palk_nkcc1_full_validation/final_answer.md",
+      "sha256": "550d2999d57a84311638bcb74d3033a0db8c29389e8888931ae0b2ce487d2e8c"
+    },
+    {
+      "bytes": 1094,
+      "path": "analysis/39_palk_nkcc1_full_validation/focused_test.log",
+      "sha256": "2cd3012769ff35e13952f11185303ec02aa2c2d122ba139c49d168db980cdc42"
+    },
+    {
+      "bytes": 1662,
+      "path": "analysis/39_palk_nkcc1_full_validation/initial_test_assertion.log",
+      "sha256": "88b19210f3752f47ff64c8e16817c4c39a573cb39219583938cb647e1aaf22ff"
+    },
+    {
+      "bytes": 14381,
+      "path": "analysis/39_palk_nkcc1_full_validation/run_case.py",
+      "sha256": "9b2f082fa92578fe97a8289ea059f31dd1fc7859e637c54ef6e6a37ef6c17274"
+    },
+    {
+      "bytes": 9853,
+      "path": "analysis/39_palk_nkcc1_full_validation/run_preflight.py",
+      "sha256": "cb42d43eb0a13c8f63b8a06dd05bb4810ac5de710ec148752c90ebfeea3f6e87"
+    },
+    {
+      "bytes": 5633,
+      "path": "analysis/39_palk_nkcc1_full_validation/source_equation_verification.md",
+      "sha256": "5eee67f12e273e974d1c7a3c2769b2c8ddc96b7e910fbe45bfd660bb8d7f880a"
+    },
+    {
+      "bytes": 7116,
+      "path": "analysis/39_palk_nkcc1_full_validation/summarize_results.py",
+      "sha256": "bd35b0054ae5894ca03a757e6daabdf63f04b163770d7f59ad2e81edeacd4320"
+    },
+    {
+      "bytes": 4196,
+      "path": "analysis/39_palk_nkcc1_full_validation/validation_common.py",
+      "sha256": "f3ce46e1d91e077ff683cba6efa40c98f31d2cf6f8dfdc28a180d6f651cdfc45"
+    },
+    {
+      "bytes": 2629,
+      "path": "analysis/39_palk_nkcc1_full_validation/wt_execution.log",
+      "sha256": "1bdfa5d7f7bfb4542b276a2846033940b950a80f5fe5b9260f283c769ed02d9f"
+    },
+    {
+      "bytes": 685,
+      "path": "results/39_palk_nkcc1_full_validation/ae4_5pct_integrated_fluxes.csv",
+      "sha256": "aff91b3d766541bc79aacd22cdab185be8c0a9e5e44e12c585268b5bbc97bc27"
+    },
+    {
+      "bytes": 6095,
+      "path": "results/39_palk_nkcc1_full_validation/ae4_5pct_timeseries.csv",
+      "sha256": "bc2b6c5397fc48fb1c415bb5f830252f12efd39dd5b7d9da94dd1786ef145865"
+    },
+    {
+      "bytes": 9634,
+      "path": "results/39_palk_nkcc1_full_validation/ae4_5pct_verification.json",
+      "sha256": "2e99e4278e1afe28a16a0a9bdc1247f6854daf2ec8e5ad15a3a0c6aa7e158396"
+    },
+    {
+      "bytes": 674,
+      "path": "results/39_palk_nkcc1_full_validation/ae4_null_integrated_fluxes.csv",
+      "sha256": "ac09687210fd6b6e53bd7120cc561c42a97dc17cab5047339d3137821f5d254f"
+    },
+    {
+      "bytes": 5918,
+      "path": "results/39_palk_nkcc1_full_validation/ae4_null_timeseries.csv",
+      "sha256": "56cb530a2086887fa3b605b483cae3cd81008fc3957cb8414a030d76f7f6defd"
+    },
+    {
+      "bytes": 9548,
+      "path": "results/39_palk_nkcc1_full_validation/ae4_null_verification.json",
+      "sha256": "a272c5c17c99867d4d3b4bba1c18c3be96c7e8875b4eef78a0ad374712b84289"
+    },
+    {
+      "bytes": 671,
+      "path": "results/39_palk_nkcc1_full_validation/alpha_eff_freeze.json",
+      "sha256": "d28168ac5d278b4520773936b12dcb693aa569f9f81e6d56607e5f7c1214d8de"
+    },
+    {
+      "bytes": 917,
+      "path": "results/39_palk_nkcc1_full_validation/budget.json",
+      "sha256": "fe7c14634d27cc316c3e22d6d074eb0f977f9c67534ec579c589e623745dd090"
+    },
+    {
+      "bytes": 8173,
+      "path": "results/39_palk_nkcc1_full_validation/comparison_summary.json",
+      "sha256": "2ce245457d75225fe3bbc4eaf28e447363c540ec7566d5c4a385c0b924e81439"
+    },
+    {
+      "bytes": 2860,
+      "path": "results/39_palk_nkcc1_full_validation/flow_and_cumulative_comparison.csv",
+      "sha256": "b12930dd3323ddd3b366b461d0b2d54913e34f8011cc6a0f1ac998d8c86c53ba"
+    },
+    {
+      "bytes": 41331,
+      "path": "results/39_palk_nkcc1_full_validation/frozen_inputs.json",
+      "sha256": "0873b1713288880decb43e4296bf0a3c8ab2dd79fcb105a47e201f349446d664"
+    },
+    {
+      "bytes": 1315,
+      "path": "results/39_palk_nkcc1_full_validation/initial_test_assertion.json",
+      "sha256": "a6ace2eb6d5115f5675e71782d1b740473797815030e0bf5d27798ba8d177cec"
+    },
+    {
+      "bytes": 2204,
+      "path": "results/39_palk_nkcc1_full_validation/integrated_flux_comparison.csv",
+      "sha256": "8c2028f101a5c083980e03ffd4fcfe2af17d46f5b9b28053b842b4384eafffda"
+    },
+    {
+      "bytes": 8892,
+      "path": "results/39_palk_nkcc1_full_validation/intracellular_comparison.csv",
+      "sha256": "3c4a39b48c4d228479bf1885c9101f8f256cc42c7ac6eb64c91af1218b55ae8e"
+    },
+    {
+      "bytes": 546,
+      "path": "results/39_palk_nkcc1_full_validation/nkcc1_compensation_comparison.csv",
+      "sha256": "d79aab5a8e2a68aeebac384b9c2f3ad66454e0893165682dd6747e01c6807068"
+    },
+    {
+      "bytes": 5473,
+      "path": "results/39_palk_nkcc1_full_validation/rest_nesting.json",
+      "sha256": "179bd25f78f0044f8bf1851bc684488a790479a7abec4207a79848a33e9bc155"
+    },
+    {
+      "bytes": 1278,
+      "path": "results/39_palk_nkcc1_full_validation/source_verification.json",
+      "sha256": "d1e0dfb91696c14a169586a6208033221f976e77d57bb80c9ce925079145957c"
+    },
+    {
+      "bytes": 672,
+      "path": "results/39_palk_nkcc1_full_validation/wt_integrated_fluxes.csv",
+      "sha256": "e143d16c97bd9ec3da3d015499c1d2012dd69f91759bd2033eac62530e060c72"
+    },
+    {
+      "bytes": 6056,
+      "path": "results/39_palk_nkcc1_full_validation/wt_timeseries.csv",
+      "sha256": "cecf552e497d2e418a9152840d7e70283fa21ca25c8196d57a7f84644a3dddd5"
+    },
+    {
+      "bytes": 9584,
+      "path": "results/39_palk_nkcc1_full_validation/wt_verification.json",
+      "sha256": "0f46f1b0bfe465337e31a97bb83195e4adedb875e8469951ccad1c7fef11bd5f"
+    },
+    {
+      "bytes": 18664,
+      "path": "src/modern_full_model/membranes.py",
+      "sha256": "c4200328179cd70156590dd10eb0859505ff03d2005652fd1ae2c9b692f85fea"
+    },
+    {
+      "bytes": 32460,
+      "path": "src/modern_full_model/model.py",
+      "sha256": "a391600986aed9204cddb3aede884f6c420a5d9ba7de232d255900ec9e84027c"
+    },
+    {
+      "bytes": 29655,
+      "path": "src/modern_full_model/nbc_minimal.py",
+      "sha256": "48230ad9b6c0bbb017d8545d0c46ca6fc83eb0d6ade57f1ced96da7fd28bcfaf"
+    },
+    {
+      "bytes": 2637,
+      "path": "src/modern_full_model/nkcc1_palk2010.py",
+      "sha256": "2b4b58450589dbf2b4765c35dbeee9062815574903490654864640c2fffd60a6"
+    },
+    {
+      "bytes": 21305,
+      "path": "src/modern_full_model/nkcc_stimulation.py",
+      "sha256": "c272da41b93dea37986e293fdb0936f994dade13b4a65e093057575f58788475"
+    },
+    {
+      "bytes": 5397,
+      "path": "tests/test_task39_palk_nkcc1.py",
+      "sha256": "0812e02a4144e51eb9fa8072fc7e4200422daeeaefe03e040801c8ba11a21433"
+    }
+  ],
+  "publication_parent_head": "8c10ac041c36a9feff1b538930daf7ea32e730f0",
+  "publication_parent_tree_sha": "446ceae62b911689280d0708f5a5b1e181e3d651",
+  "review": "Post-run hash and saved-result integrity review only. No scientific recomputation.",
+  "scientific_workers": 1,
+  "stationary_solves": 0,
+  "status": "PASS",
+  "sweeps": 0
+}

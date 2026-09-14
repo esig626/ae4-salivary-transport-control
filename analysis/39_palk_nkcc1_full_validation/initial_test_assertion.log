@@ -1,0 +1,20 @@
+test_M_to_mM_fourth_order_conversion (test_task39_palk_nkcc1.PalkSourceTests.test_M_to_mM_fourth_order_conversion) ... FAIL
+test_N1_inherited_rest_and_stimulus_exact (test_task39_palk_nkcc1.PalkSourceTests.test_N1_inherited_rest_and_stimulus_exact) ... ok
+test_activity_scales_complete_flux_preserving_reversal (test_task39_palk_nkcc1.PalkSourceTests.test_activity_scales_complete_flux_preserving_reversal) ... ok
+test_actual_homeostasis_source_signature_both_directions (test_task39_palk_nkcc1.PalkSourceTests.test_actual_homeostasis_source_signature_both_directions) ... ok
+test_generic_comparator_retained_without_other_flux_changes (test_task39_palk_nkcc1.PalkSourceTests.test_generic_comparator_retained_without_other_flux_changes) ... ok
+test_literal_eq17_and_algebraic_rest_scale (test_task39_palk_nkcc1.PalkSourceTests.test_literal_eq17_and_algebraic_rest_scale) ... ok
+test_reversal_and_unclipped_reverse (test_task39_palk_nkcc1.PalkSourceTests.test_reversal_and_unclipped_reverse) ... ok
+
+======================================================================
+FAIL: test_M_to_mM_fourth_order_conversion (test_task39_palk_nkcc1.PalkSourceTests.test_M_to_mM_fourth_order_conversion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/151bc0a63791/ae4-salivary-transport-control/tests/test_task39_palk_nkcc1.py", line 45, in test_M_to_mM_fourth_order_conversion
+    self.assertEqual(A4_MM,1.3852e6*1e-12)
+AssertionError: 1.3852e-06 != 1.3851999999999999e-06
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+FAILED (failures=1)

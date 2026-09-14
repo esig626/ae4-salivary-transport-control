@@ -1,0 +1,32 @@
+{
+  "blas_threads": 1,
+  "completed_cases": [
+    "wt",
+    "ae4_5pct",
+    "ae4_null"
+  ],
+  "direct_rest_nesting_runs": 1,
+  "focused_test_runs": 2,
+  "implementation_correction_rounds": 1,
+  "integration_attempts": 3,
+  "limits_respected": true,
+  "maximum_integration_attempts": 4,
+  "maximum_intended_integrations": 3,
+  "maximum_numerical_execution_seconds": 900,
+  "no_further_scientific_execution": true,
+  "numerical_execution_seconds": 6.5078440489996865,
+  "numerical_retries": 0,
+  "optimisation_calls": 0,
+  "parameter_sweeps": 0,
+  "rest_nesting_pass": true,
+  "root_scope": "No stationary/resting root solves. Inherited acid-base speciation and NBC current-closure brentq evaluations are unchanged.",
+  "scientific_workers": 1,
+  "source_tests_pass": true,
+  "started_cases": [
+    "wt",
+    "ae4_5pct",
+    "ae4_null"
+  ],
+  "stationary_solves": 0,
+  "status": "PALK_NKCC1_FULL_VALIDATION_COMPLETE"
+}

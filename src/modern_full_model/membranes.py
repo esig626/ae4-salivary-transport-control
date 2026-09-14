@@ -28,6 +28,10 @@ from typing import Mapping
 import numpy as np
 
 from .parameters import FullModelParameters
+from .nkcc1_palk2010 import (
+    Nkcc1Kinetics, PALK_NKCC1, A1, A2_MM,
+    intracellular_product_mM4, palk_cycle_flux_fmol_s,
+)
 from .nhe1_cha2009 import (
     NHE1_CHA_2009,
     cha_nhe1_flux_fmol_s,
@@ -206,13 +210,15 @@ def evaluate_homeostasis(
     nkcc1_scale: float = 1.0,
     nhe1_scale: float = 1.0,
     ae2_scale: float = 1.0,
+    nkcc1_kinetics: Nkcc1Kinetics = Nkcc1Kinetics(),
 ) -> HomeostasisFluxes:
     """Evaluate NKCC1, selected NHE1, and AE2 laws.
 
     Positive directions are NKCC1 influx (Na + K + 2Cl), NHE1 Na influx/H
     extrusion, and AE2 Cl influx/HCO3 extrusion.  The log-activity affinities
-    are exact ideal-solution deductions.  NKCC1 and AE2 retain the bounded
-    ``tanh`` law.  NHE1 is selected explicitly in ``HomeostasisParameters``.
+    are exact ideal-solution deductions for the generic laws. NKCC1 also
+    supports the source-fixed Palk law; its affinity diagnostic uses that
+    law's numerator reversal. AE2 and all NHE1 choices are unchanged.
     """
 
     e = environment
@@ -242,11 +248,20 @@ def evaluate_homeostasis(
         (e.cl_e_mM * e.hco3_i_mM) / (e.cl_i_mM * e.hco3_e_mM)
     )
     width = parameters.homeostasis.thermodynamic_saturation_log_width
-    j_nkcc = _bounded_reversible_flux(
-        parameters.homeostasis.nkcc1_capacity_fmol_s * nkcc1_scale,
-        affinity_nkcc,
-        width,
-    )
+    if nkcc1_kinetics.law == PALK_NKCC1:
+        j_nkcc = palk_cycle_flux_fmol_s(
+            e.na_i_mM, e.k_i_mM, e.cl_i_mM,
+            alpha_eff_fmol_s=nkcc1_kinetics.alpha_eff_fmol_s,
+            activity_multiplier=nkcc1_scale,
+        )
+        affinity_nkcc = math.log(A1 / (A2_MM * intracellular_product_mM4(
+            e.na_i_mM, e.k_i_mM, e.cl_i_mM)))
+    else:
+        j_nkcc = _bounded_reversible_flux(
+            parameters.homeostasis.nkcc1_capacity_fmol_s * nkcc1_scale,
+            affinity_nkcc,
+            width,
+        )
     nhe1_model = parameters.homeostasis.nhe1_model
     if nhe1_model == NHE1_LEGACY_TANH:
         j_nhe = evaluate_nhe1_legacy_tanh(
