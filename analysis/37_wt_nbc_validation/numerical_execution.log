@@ -1,0 +1,54 @@
+Task 37 WT-only. Production continuous stiff solver; one worker, one BLAS thread.
+
+{
+  "status": "WT_NBC_VALIDATION_PASS_PARTITION_OUTSIDE_CONTEXT",
+  "attempts": [
+    {
+      "attempt": 1,
+      "solver": {
+        "label": "production_radau",
+        "method": "Radau",
+        "rtol": 1e-07,
+        "amount_atol_fmol": 1e-10,
+        "volume_atol_pL": 1e-12,
+        "regulatory_atol_fraction": 1e-10,
+        "max_step_s": 2.0
+      },
+      "initial_state_sha256": "879a650761e9044691ab6b2a9b1bfc3be8f951ece176925117596cc2baa31abe",
+      "solver_status": "finished",
+      "last_solver_time_s": 600.0,
+      "nfev": 2336,
+      "njev": 2,
+      "nlu": 594,
+      "wall_seconds": 1.5436776100000316,
+      "stopped_by_gate": false
+    }
+  ],
+  "first_failure": null,
+  "budget": {
+    "blas_threads": 1,
+    "direct_rest_nesting_runs": 1,
+    "environment_preflight_attempts": 1,
+    "focused_test_runs": 2,
+    "focused_tests_pass": true,
+    "focused_tests_passed_count": 9,
+    "genotype_integrations": 0,
+    "implementation_correction_rounds": 1,
+    "numerical_execution_seconds": 3.7408571969999684,
+    "numerical_retries": 0,
+    "optimisation_calls": 0,
+    "rest_nesting_pass": true,
+    "scientific_workers": 1,
+    "stationary_solves": 0,
+    "wt_integration_attempts": 1,
+    "status": "WT_NBC_VALIDATION_PASS_PARTITION_OUTSIDE_CONTEXT",
+    "maximum_numerical_execution_seconds": 600,
+    "intended_wt_integrations": 1,
+    "completed_wt_integrations": 1,
+    "parameter_sweeps": 0,
+    "genotype_tests": 0,
+    "scientific_parameters_changed": 0,
+    "limits_respected": true,
+    "no_further_scientific_execution": true
+  }
+}

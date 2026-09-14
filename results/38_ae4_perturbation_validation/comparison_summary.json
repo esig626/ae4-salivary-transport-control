@@ -1,0 +1,156 @@
+{
+  "5pct_vs_null": {
+    "5pct_minus_null_cumulative_pL": 0.0026755782642244874,
+    "5pct_minus_null_percentage_points_of_wt": 0.2710832489966064,
+    "endpoint_ph_null_minus_5pct": 0.020100129358517904,
+    "equivalence_threshold": null,
+    "max_abs_chloride_difference_on_60s_grid_mM": 0.3464428776311621,
+    "max_abs_flow_difference_on_60s_grid_pL_s": 6.871042903389048e-06,
+    "null_to_5pct_cumulative_ratio": 0.9972459715493134
+  },
+  "frozen_wt_cumulative_0_600_pL": 0.986995055625111,
+  "held_out_context": {
+    "approximate_experimental_null_deficit_percent": 35,
+    "predicted_null_deficit_percent": 1.8395478271246435,
+    "used_for_fitting": false
+  },
+  "perturbations": {
+    "ae4_5pct": {
+      "chloride_partition": {
+        "definition": "Integrate max(J_Cl, 0) separately for NKCC1, AE4 and AE2; sum these three only.",
+        "positive_loading_pool_fmol": 197.86021074402677,
+        "positive_shares": {
+          "ae2": 0.0019071865039970196,
+          "ae4": 0.02114419521706874,
+          "nkcc1": 0.9769486182789343
+        },
+        "window_s": [
+          60,
+          600
+        ]
+      },
+      "endpoint": {
+        "ae2_cl_inward_signed_fmol_s": 0.0008596761539318067,
+        "ae4_cl_inward_fmol_s": 0.00814382583917713,
+        "cacc_cl_export_fmol_s": 0.3713968166844446,
+        "cl_i_mM": 53.35498272256787,
+        "cumulative_outflow_0_t_pL": 0.9715143877897571,
+        "hco3_i_mM": 14.232080496877508,
+        "k_i_mM": 112.49090059955309,
+        "na_i_mM": 18.410978773888154,
+        "nbc_activation": 1.0,
+        "nbc_current_A": 8.633976258169802e-13,
+        "nbc_cycle_inward_fmol_s": 0.008948485814850715,
+        "nhe1_inward_fmol_s": 0.0018825294901147467,
+        "nhe1_multiplier": 2.3,
+        "nkcc1_cl_inward_fmol_s": 0.3625415916054061,
+        "osm_lumen_mOsm": 301.5351192778893,
+        "paracellular_cl_return_fmol_s": 0.1375901368009734,
+        "ph_i": 7.197501375554141,
+        "q_out_pL_s": 0.0015850324002205708,
+        "tic_i_mM": 15.380337737791173,
+        "time_s": 600.0,
+        "v_apical_V": -0.029527045157227098,
+        "v_basolateral_V": -0.07845227988439137,
+        "v_transepithelial_V": -0.04892523472716427,
+        "volume_i_pL": 1.5233288784186167
+      },
+      "largest_tabulated_flow_deficit_percent": 3.5553387024133576,
+      "nbc_cycles_change_percent": -77.07401053637594,
+      "nhe1_flux_change_percent": -51.06208346711125,
+      "nkcc1_positive_loading_change_percent": 24.13017727321034,
+      "secretion": {
+        "cumulative_0_600_pL": 0.9715143877897561,
+        "endpoint_pL_s": 0.0015850324002205708,
+        "frozen_wt_cumulative_0_600_pL": 0.986995055625111,
+        "mean_60_600_pL_s": 0.0015998157949387644,
+        "quadrature": "Trapezoidal on integer-second output plus t=0 and 1e-6; identical to Task 37.",
+        "ratio_to_frozen_wt": 0.9843153542187196,
+        "wt_secretion_thresholds_for_context_only": {
+          "cumulative_0_600_gt_1p10_rest": true,
+          "endpoint_at_least_rest": true,
+          "mean_60_600_gt_1p10_rest": true
+        }
+      }
+    },
+    "ae4_null": {
+      "chloride_partition": {
+        "definition": "Integrate max(J_Cl, 0) separately for NKCC1, AE4 and AE2; sum these three only.",
+        "positive_loading_pool_fmol": 198.0597669632278,
+        "positive_shares": {
+          "ae2": 0.0023025670831218416,
+          "ae4": 0.0,
+          "nkcc1": 0.9976974329168782
+        },
+        "window_s": [
+          60,
+          600
+        ]
+      },
+      "endpoint": {
+        "ae2_cl_inward_signed_fmol_s": 0.0010406275460691254,
+        "ae4_cl_inward_fmol_s": 0.0,
+        "cacc_cl_export_fmol_s": 0.37097212782150624,
+        "cl_i_mM": 53.1661515348275,
+        "cumulative_outflow_0_t_pL": 0.9688388095255317,
+        "hco3_i_mM": 15.287801370178185,
+        "k_i_mM": 113.1259813855321,
+        "na_i_mM": 18.09832307581057,
+        "nbc_activation": 1.0,
+        "nbc_current_A": 1.6089590735789144e-13,
+        "nbc_cycle_inward_fmol_s": 0.0016675685705033715,
+        "nhe1_inward_fmol_s": 0.0016059854658771256,
+        "nhe1_multiplier": 2.3,
+        "nkcc1_cl_inward_fmol_s": 0.37183245635691436,
+        "osm_lumen_mOsm": 301.53519140238257,
+        "paracellular_cl_return_fmol_s": 0.13736340034752217,
+        "ph_i": 7.2176015049126585,
+        "q_out_pL_s": 0.0015837997004513494,
+        "tic_i_mM": 16.466567935498233,
+        "time_s": 600.0,
+        "v_apical_V": -0.02961543312521603,
+        "v_basolateral_V": -0.07845684344271786,
+        "v_transepithelial_V": -0.04884141031750183,
+        "volume_i_pL": 1.5418437184289635
+      },
+      "largest_tabulated_flow_deficit_percent": 3.906116703960527,
+      "nbc_cycles_change_percent": -85.52327389035119,
+      "nhe1_flux_change_percent": -54.57561984002175,
+      "nkcc1_positive_loading_change_percent": 26.894355358845768,
+      "secretion": {
+        "cumulative_0_600_pL": 0.9688388095255316,
+        "endpoint_pL_s": 0.0015837997004513494,
+        "frozen_wt_cumulative_0_600_pL": 0.986995055625111,
+        "mean_60_600_pL_s": 0.0015950199656109077,
+        "quadrature": "Trapezoidal on integer-second output plus t=0 and 1e-6; identical to Task 37.",
+        "ratio_to_frozen_wt": 0.9816045217287536,
+        "wt_secretion_thresholds_for_context_only": {
+          "cumulative_0_600_gt_1p10_rest": true,
+          "endpoint_at_least_rest": true,
+          "mean_60_600_gt_1p10_rest": true
+        }
+      }
+    }
+  },
+  "status": "AE4_PERTURBATION_VALIDATION_COMPLETE",
+  "wt_cumulative_resolution": {
+    "60s_quadrature_minus_frozen_total_at_600_pL": 7.768267670882345e-05,
+    "caveat": "Endpoint discrepancy is a resolution diagnostic, not a bound on intermediate errors. No WT trajectory was rerun.",
+    "estimated_from_frozen_60s_flow_at_s": [
+      120,
+      180,
+      240,
+      300,
+      360,
+      420,
+      480,
+      540
+    ],
+    "exact_stored_quadrature_available_at_s": [
+      0,
+      60,
+      600
+    ],
+    "frozen_wt_cumulative_0_60_pL": 0.10882505318850222
+  }
+}

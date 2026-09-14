@@ -1,0 +1,129 @@
+{
+  "ae4_routing_model": "SR2_NET_CHLORIDE_DONOR_CATION_ROUTING",
+  "backgrounds": [
+    "R09",
+    "R10"
+  ],
+  "branch": "codex/task-30-nhe1-model-repair",
+  "diagnostic_screens": {
+    "cell_volume_upper_pL": 3.0,
+    "chloride_is_not_an_acceptance_gate": true,
+    "na_i_upper_mM": 30.0,
+    "exact_null_ph_centre": 6.89,
+    "ph_half_width": 0.1,
+    "wt_ph_centre": 6.91
+  },
+  "dynamic_protocol": {
+    "arm": "CCH_IPR",
+    "calcium_uM": 0.25,
+    "duration_s": 600.0,
+    "run_only_after_admissible_wt_and_null_rest": true,
+    "solver": {
+      "amount_atol_fmol": 1e-10,
+      "label": "production_radau",
+      "max_step_s": 2.0,
+      "method": "Radau",
+      "regulatory_atol_fraction": 1e-10,
+      "rtol": 1e-07,
+      "volume_atol_pL": 1e-12
+    }
+  },
+  "git": {
+    "authentication_succeeded": false,
+    "commit_or_push_attempted": false,
+    "ordinary_authentication_attempts": 1
+  },
+  "nhe1": {
+    "active_model": "vera_siguenza_2018_eq26",
+    "equation": "G*((H_i/(H_i+K_H))**2*(Na_e/(Na_e+K_Na))-(Na_i/(Na_i+K_Na))*(H_e/(H_e+K_H))**2)",
+    "extra_ph_gate": false,
+    "g_nhe1_fmol_s": 0.0305,
+    "genotype_dependent": false,
+    "historical_comparator": "legacy_tanh",
+    "k_h_mM": 0.00045,
+    "k_na_mM": 15.0,
+    "source": "Vera-Siguenza et al. 2018 Eq. 26, PMCID PMC5792321"
+  },
+  "optional_g_calibration": {
+    "maximum_evaluations_per_background": 4,
+    "target_ph": 6.91,
+    "used_only_if_published_value_fails_wt": true,
+    "wt_only": true
+  },
+  "other_transporter_parameters_unchanged": true,
+  "prepared_head": "60b7798b3c01dbb1b3be9efd831aafdfcd4c0eb7",
+  "prohibited_operations_performed": [],
+  "repository": "esig626/ae4-salivary-transport-control",
+  "rest_solver": {
+    "charge_tolerance_fmol": 1e-09,
+    "coordinate_names": [
+      "na_i_mM",
+      "k_i_mM",
+      "tic_i_mM",
+      "ph_i",
+      "volume_i_pL",
+      "na_l_mM",
+      "k_l_mM",
+      "tic_l_mM",
+      "ph_l",
+      "volume_l_pL"
+    ],
+    "current_tolerance_A": 1e-18,
+    "independent_rhs_scales": [
+      0.05,
+      0.05,
+      0.05,
+      0.02,
+      0.0001,
+      0.02,
+      0.02,
+      0.02,
+      0.02,
+      0.0001
+    ],
+    "independent_rows": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11
+    ],
+    "lower": [
+      4.0,
+      60.0,
+      1.0,
+      6.2,
+      0.5,
+      20.0,
+      0.05,
+      0.2,
+      5.0,
+      0.02
+    ],
+    "method": "direct bounded charge-manifold least_squares",
+    "omitted_charge_rows": [
+      4,
+      10
+    ],
+    "omitted_row_tolerance": 1e-09,
+    "root_scaled_tolerance": 1e-07,
+    "upper": [
+      60.0,
+      210.0,
+      100.0,
+      8.0,
+      3.0,
+      280.0,
+      60.0,
+      100.0,
+      9.0,
+      0.8
+    ]
+  },
+  "task": 30
+}

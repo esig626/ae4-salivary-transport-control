@@ -1,0 +1,41 @@
+Initial prepared-head focused check. The historical 70/30 expression-prediction test is excluded: Task 37 permits WT only.
+Command: ['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python', '-m', 'pytest', '-v', 'tests/test_task36_minimal_nbc.py', 'tests/test_task31_nhe1.py::ChaEquationTests::test_independent_rational_eight_state_equation', 'tests/test_task31_nhe1.py::ChaEquationTests::test_amount_conversion_and_shared_activity_scale', 'tests/test_task31_nhe1.py::ChaEquationTests::test_production_uses_exact_table_s1_and_requires_salivary_amount', '-k', 'not 70_30']
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python: No module named pytest
+
+exit_code=1
+elapsed_seconds=0.011743246999913026
+
+Initial focused test import using standard-library unittest (same original test bodies; no pytest fixtures).
+Traceback (most recent call last):
+  File "/workspace/scratch/f7644ca5db8d/ae4-salivary-transport-control/analysis/37_wt_nbc_validation/run_focused_tests.py", line 23, in <module>
+    nbc = load_test_file("test_task36_minimal_nbc")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/f7644ca5db8d/ae4-salivary-transport-control/analysis/37_wt_nbc_validation/run_focused_tests.py", line 18, in load_test_file
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/workspace/scratch/f7644ca5db8d/ae4-salivary-transport-control/tests/test_task36_minimal_nbc.py", line 24, in <module>
+    from src.modern_full_model.task31_nhe1_mechanistic import (
+ModuleNotFoundError: No module named 'src.modern_full_model.task31_nhe1_mechanistic'
+
+exit_code=1
+
+Only permitted correction: stale test import task31_nhe1_mechanistic -> existing task31_nhe1_repair. No model equation or parameter changed.
+One focused rerun:
+unittest.case.FunctionTestCase (test_stoichiometry_is_one_na_two_bicarbonate_and_electrogenic) ... ok
+unittest.case.FunctionTestCase (test_voltage_enters_affinity_with_correct_reversal_sign) ... ok
+unittest.case.FunctionTestCase (test_rest_is_exact_zero_nbc_and_unit_nhe1_multiplier) ... ok
+unittest.case.FunctionTestCase (test_central_stimulus_is_full_nbc_and_source_fixed_2p3_nhe1) ... ok
+unittest.case.FunctionTestCase (test_reference_resting_current_closure_is_exactly_nested) ... ok
+unittest.case.FunctionTestCase (test_stimulated_reference_current_closure_hits_derived_cycle_scale) ... ok
+test_independent_rational_eight_state_equation (test_task31_nhe1.ChaEquationTests.test_independent_rational_eight_state_equation) ... ok
+test_amount_conversion_and_shared_activity_scale (test_task31_nhe1.ChaEquationTests.test_amount_conversion_and_shared_activity_scale) ... ok
+test_production_uses_exact_table_s1_and_requires_salivary_amount (test_task31_nhe1.ChaEquationTests.test_production_uses_exact_table_s1_and_requires_salivary_amount) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.008s
+
+OK
+
+exit_code=0

@@ -1,0 +1,401 @@
+{
+  "prepared_head": "7aaa53414714bae459227b4b972c63d49e13b79e",
+  "prepared_tree_sha": "d3e17198e16ff0c3a8cd06b1472a23d621880370",
+  "frozen_wt_commit": "2ba0e4e0c2a9e940aa96ed86c3c72456afd0e3aa",
+  "branch": "codex/task-38-ae4-perturbation-validation",
+  "prepared_files": [
+    {
+      "path": ".gitignore",
+      "git_blob_sha": "335f58a4d64a7cb0ec3b1162792f02187411c5f5"
+    },
+    {
+      "path": "AGENTS.md",
+      "git_blob_sha": "1c01fd204dc82c2cb9a6bc80b4b712af895f1772"
+    },
+    {
+      "path": "ARCHIVE_INDEX.md",
+      "git_blob_sha": "659a972fd48261c85f662ffd9f0d38767e18e05a"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "9ef63de078704a22fefd8200403102f956a2a19d"
+    },
+    {
+      "path": "analysis/30_nhe1_model_repair/final_answer.md",
+      "git_blob_sha": "e38ed1a821fa647ea07d6db92d29d011f9c3dabc"
+    },
+    {
+      "path": "analysis/30_nhe1_model_repair/focused_test.log",
+      "git_blob_sha": "1f0f585b58023be9262140eea1f992d1c5c9ff7e"
+    },
+    {
+      "path": "analysis/30_nhe1_model_repair/nhe1_law_comparison.md",
+      "git_blob_sha": "dbadb8eccf74d83b576887d37f7a19b203d375e4"
+    },
+    {
+      "path": "analysis/31_nhe1_mechanistic_repair/continuation_test.log",
+      "git_blob_sha": "fdce7acc6c273f35be054648e5df95e21a4c5f70"
+    },
+    {
+      "path": "analysis/31_nhe1_mechanistic_repair/final_answer.md",
+      "git_blob_sha": "a80628e18a1b1e3c81b4df885270ae8ddcd85842"
+    },
+    {
+      "path": "analysis/31_nhe1_mechanistic_repair/focused_test.log",
+      "git_blob_sha": "7061823be1706d7b5fbeee251f71cdcff8a6c7c7"
+    },
+    {
+      "path": "analysis/31_nhe1_mechanistic_repair/nhe1_source_and_equations.md",
+      "git_blob_sha": "ec27f3ee861e5e491c7b162f94cc851a9692640d"
+    },
+    {
+      "path": "analysis/31_nhe1_mechanistic_repair/numerical_execution.log",
+      "git_blob_sha": "ba476c26d429d9d7d185e07f2424bac8acf2152c"
+    },
+    {
+      "path": "analysis/31_nhe1_mechanistic_repair/source_reconstruction_test.log",
+      "git_blob_sha": "ea88c5a50c8d6c96f96eee4a9f976edfaa97e4b8"
+    },
+    {
+      "path": "analysis/36_minimal_nahco3_alkalinity/design.md",
+      "git_blob_sha": "9190a52b837cc4c281a7be43253c29392b638c6d"
+    },
+    {
+      "path": "analysis/36_minimal_nahco3_alkalinity/manual_verification.md",
+      "git_blob_sha": "23b15f1e2f32ad856c80ef117f219e1d3f068e10"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/final_answer.md",
+      "git_blob_sha": "83008ea8512571d002d67c636127ed1b4d6ed0a5"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/focused_test.log",
+      "git_blob_sha": "53597a7fb658a046c09dc5b065659e14e06a7c1f"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/numerical_execution.log",
+      "git_blob_sha": "2207580083a242411657903c6d87bb8b71a82f8c"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/run_focused_tests.py",
+      "git_blob_sha": "a04ede9bf5679601ede3ce20807935528dbc288e"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/run_phase_a.py",
+      "git_blob_sha": "be7d245cc1a2e8c3a122cb03c51beec4f85193bb"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/run_wt.py",
+      "git_blob_sha": "3d69c029f1d1ae53bcbc9d3c26b9c41bf1d4f9a3"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/validation_common.py",
+      "git_blob_sha": "20d8d2fc8bbbc82284fda352bbe3dd3d0a853bb2"
+    },
+    {
+      "path": "prompts/28_transport_relationship_repair.md",
+      "git_blob_sha": "a036aa8799cca29b2d51e7b65e4f313ecd8676b5"
+    },
+    {
+      "path": "prompts/29_exact_null_feasibility_audit.md",
+      "git_blob_sha": "f50049ec07b507164c04f95b3a0dd1618f47ba5e"
+    },
+    {
+      "path": "prompts/30_nhe1_model_repair.md",
+      "git_blob_sha": "8381eacbbcc991e1b832dff454219776ce4760ca"
+    },
+    {
+      "path": "prompts/31_nhe1_mechanistic_repair.md",
+      "git_blob_sha": "267b6a5a99523efa0dfe312f972dd810c1996e18"
+    },
+    {
+      "path": "prompts/37_wt_nbc_validation.md",
+      "git_blob_sha": "6af1429f1bc68920829f40ee4c47ab83dbf62832"
+    },
+    {
+      "path": "prompts/38_ae4_perturbation_validation.md",
+      "git_blob_sha": "e5df2f3fba5c899052a6d4c14ffd0f1c2c4fbf54"
+    },
+    {
+      "path": "reference/2018_model_concordance.md",
+      "git_blob_sha": "b704dd050d20436f8455ad0c7a4df580c80d8da0"
+    },
+    {
+      "path": "reference/R09_wt_rest.json",
+      "git_blob_sha": "b1d469b59853e1302ed74ab48ba0f4eb9d602018"
+    },
+    {
+      "path": "reference/R10_wt_rest.json",
+      "git_blob_sha": "cc323374c4e3e76f5b9293f8535fee179e6b803e"
+    },
+    {
+      "path": "reference/import_manifest.json",
+      "git_blob_sha": "47fe22869fa74be28b923aabb119269cf2887810"
+    },
+    {
+      "path": "reference/native_wt_contract.json",
+      "git_blob_sha": "8198b25c48e83d197d72a888121da731a9133b29"
+    },
+    {
+      "path": "reference/routed_rest_reference.csv",
+      "git_blob_sha": "9c29f4157c53c714747b9e8ccc60dd6caacaf7a9"
+    },
+    {
+      "path": "reference/routing_numerical_contract.json",
+      "git_blob_sha": "5e65527944347afe4b36db640822f56e70c41246"
+    },
+    {
+      "path": "reference/sources.md",
+      "git_blob_sha": "feaca09993cfe0e67e41548f94f2829da60faef4"
+    },
+    {
+      "path": "reference/task28_partial_handoff.md",
+      "git_blob_sha": "5f8afa9e3787c55dd33dde91497aebbbf6465906"
+    },
+    {
+      "path": "reference/task29_final_answer.md",
+      "git_blob_sha": "bf319d1e369c45c537cf5425c236f7ab4e4eab65"
+    },
+    {
+      "path": "reference/task30_handoff.md",
+      "git_blob_sha": "06823ec63d618fff853f2281c92e181275c04fb3"
+    },
+    {
+      "path": "requirements.txt",
+      "git_blob_sha": "471f776f67541bcaadd042782a1c0a438d0009f3"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/budget.json",
+      "git_blob_sha": "96d8e25a1d68d1213943d3e741ef753d6687482a"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/contract.json",
+      "git_blob_sha": "a0c8c3c8db65752e56a7d30fa6297ab07a7e8390"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/flux_ledger.csv",
+      "git_blob_sha": "8741934204b2222caf8f98975b3432349daf5ffd"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/incomplete_case.json",
+      "git_blob_sha": "b6377d1c98f6fb0d7e171a412afa3b3ffee87ff3"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/resting_attempts/R09_wt_g_evaluation_1.json",
+      "git_blob_sha": "e7fb4e38845ce89b84fdd5e1adacd3aa1da3e587"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/resting_attempts/R09_wt_g_evaluation_2.json",
+      "git_blob_sha": "37d089cfd3384531fb796588a790907d2450e6a9"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/resting_attempts/R09_wt_g_evaluation_3.json",
+      "git_blob_sha": "e3251428a417f5dd36b1cfe935df7c177b1378f7"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/resting_states.csv",
+      "git_blob_sha": "8069ae33f12007b10c7ffebeb8a2e321f2686229"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/verification.json",
+      "git_blob_sha": "31dbbb98f57f5bf8140af09177c77511b259469a"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/budget.json",
+      "git_blob_sha": "5c1b95c343b8aba9a71ab14cdf6337cbda55af88"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/calibration.json",
+      "git_blob_sha": "d499be26024ad55ed1bcbe60744dc6db6ccd29a6"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/contract.json",
+      "git_blob_sha": "e30f17822bf563f1103c526c7c9159b610f64687"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/density_freeze.json",
+      "git_blob_sha": "560b985c04dc4e56863def712d8bc113f9a0cb28"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/execution_summary.json",
+      "git_blob_sha": "c13d3d034645b6279ae694e8f469cebb049e6943"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/flux_ledger.csv",
+      "git_blob_sha": "8cdf7bd90acf44695d2756fcd2adcc8a6ebb88e6"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/nhe1_parameters.json",
+      "git_blob_sha": "d18d99fb02c6b30122100f51bd1d55e262706bef"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/185f5cee3bcec7a023cf82e4092872114f2292732ad9c4bab68ecf4e062f76e3.json",
+      "git_blob_sha": "db93804918512e3c4ad5c02ae1e15bf2682ab0ee"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/4ac4b74f3b56397f6a169611dfed9c1660e2f64ca42cac3bcd37dec84331b111.json",
+      "git_blob_sha": "fb9e3c2dfd5f70ff90964cdc823da59945b1ceb5"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/5a70eeb7a6479f21828fca069de5f60a575edc9b8e18961e3c24ccef734b06ee.json",
+      "git_blob_sha": "a04b6ecaa4c466d3fe2a18a944772f8f1debd8a3"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/7c0aa512bbd240e267a04715fd96f8c48cb280101c2dbd0584c1a9e0e19eace7.json",
+      "git_blob_sha": "6799f291bbb3622d9f6ed523615b79f268ab75e4"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/7eb1f1368bb53dd8469bd4b2d1ad764b8b61e908e879fa2ba52477b7cfb47e8b.json",
+      "git_blob_sha": "d9c70e6a8d15770dae266c7b7b9de5d275e8a58e"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/ac3184559ce5f6ed95640e0c3005c264c3b7c4616f274eb6fb52579398a6154f.json",
+      "git_blob_sha": "a2f01534684ead13ea2c90ebf908dc14dee5cabf"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/cf6377e0e2165d91ae1bb2060fa77606ae2234e637b3e5804c59a78a16204080.json",
+      "git_blob_sha": "bfafda7b43f2add633da8b40c911795295d81494"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/d961b83eaa5d274bd0443ac6d94495fa6bc4ac3e62b532630d6df5eac6870336.json",
+      "git_blob_sha": "c9af9d212e83edd808fdb427e6ae92182c41a853"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/resting_states.csv",
+      "git_blob_sha": "54f1b4e5c033698df77280159eabf782ddd92bae"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/source_table_s1.json",
+      "git_blob_sha": "bab19ba0c0fa0e698c16d7eb1a719bc90b5ee782"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/verification.json",
+      "git_blob_sha": "9743d60510af8ab79ae8b5bb304c3bb0de112cb2"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/budget.json",
+      "git_blob_sha": "62e2254bd38a5b473c5f61c41efcdb25aeb700a5"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/rest_nesting.json",
+      "git_blob_sha": "9da445533dfe62dbce264dbfb6b639a4e3ff162c"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/source_verification.json",
+      "git_blob_sha": "14e5e35bbb61ce6a4e910eb9d2d8f42f5ee86ca7"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/wt_chloride_partition.json",
+      "git_blob_sha": "694a83315e3ff031b398ec07ed4925bcad0e9e68"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/wt_integrated_fluxes.csv",
+      "git_blob_sha": "c29cc28b87bb773456971fc29ebec1898a059d6f"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/wt_timeseries.csv",
+      "git_blob_sha": "17780fcb8a6e7f3c8ecc07b3aa33ff2ed01f0a3a"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/wt_verification.json",
+      "git_blob_sha": "8e11ac9da0662acbcb04474f40a95711042ff9c9"
+    },
+    {
+      "path": "scripts/check_phase28_inputs.py",
+      "git_blob_sha": "6dded7fac89a2a7bef4a9377504cf55343fbe294"
+    },
+    {
+      "path": "scripts/run_task30_nhe1_repair.py",
+      "git_blob_sha": "2d3f01f0c77959b43d3066098ea0ea8701a53eab"
+    },
+    {
+      "path": "src/modern_full_model/__init__.py",
+      "git_blob_sha": "3cef0cd91fa99d39745e9e7275e9a4499ea46a57"
+    },
+    {
+      "path": "src/modern_full_model/acid_base.py",
+      "git_blob_sha": "669bd8554329ffcb5c9c70bce891415cda233fec"
+    },
+    {
+      "path": "src/modern_full_model/ae4_routing_only.py",
+      "git_blob_sha": "f7ceb851df9e0cb8f4d8a9cb1c540055aa342d54"
+    },
+    {
+      "path": "src/modern_full_model/camp_pka.py",
+      "git_blob_sha": "e0fe3fdf2837d97ee8e235fe1a72dc9854c594b8"
+    },
+    {
+      "path": "src/modern_full_model/membranes.py",
+      "git_blob_sha": "8fd2f35804121f11635764231d0669ddd4ffbb64"
+    },
+    {
+      "path": "src/modern_full_model/model.py",
+      "git_blob_sha": "14b1912b0c58b0fb3ae18ff639eeb6a726081c46"
+    },
+    {
+      "path": "src/modern_full_model/nbc_minimal.py",
+      "git_blob_sha": "c4bf124d497b74d68c1cbe09cf47c04c933bd244"
+    },
+    {
+      "path": "src/modern_full_model/nhe1_cha2009.py",
+      "git_blob_sha": "6090805662155915e894804e1a4dbf2acb594241"
+    },
+    {
+      "path": "src/modern_full_model/nkcc_stimulation.py",
+      "git_blob_sha": "6a8ace8dacffe153fbb3d8bbd7188dd0c28f4fd7"
+    },
+    {
+      "path": "src/modern_full_model/parameters.py",
+      "git_blob_sha": "7cf42ee2305985186595ee90c8be637c7f2ed5bf"
+    },
+    {
+      "path": "src/modern_full_model/states.py",
+      "git_blob_sha": "0a2d351830e1004bccd55c4ce609e640634eca03"
+    },
+    {
+      "path": "src/modern_full_model/task30_nhe1_repair.py",
+      "git_blob_sha": "2219945085de0bdd3a97daec8a098370fbda7a26"
+    },
+    {
+      "path": "src/modern_full_model/task31_nhe1_repair.py",
+      "git_blob_sha": "5129f12bc8198c97aa22fa738f28b4c82ed0723a"
+    },
+    {
+      "path": "src/modern_full_model/transporters.py",
+      "git_blob_sha": "66738cf1963ee5bcb72cb0ebef809266df83d157"
+    },
+    {
+      "path": "src/modern_full_model/validation.py",
+      "git_blob_sha": "62e88ea22fe132a4f656963fa48959f366fad79d"
+    },
+    {
+      "path": "src/modern_full_model/water.py",
+      "git_blob_sha": "911d70765f9da1d1bdae5cedf7405b4fb7f2a3af"
+    },
+    {
+      "path": "tests/test_phase28_setup.py",
+      "git_blob_sha": "9d16c9b0146e52a57ff3794bc7b190c8219c1811"
+    },
+    {
+      "path": "tests/test_task30_nhe1.py",
+      "git_blob_sha": "cf71c7466f3cc7a5d5a70579166198e0e876710b"
+    },
+    {
+      "path": "tests/test_task31_continuation.py",
+      "git_blob_sha": "eddadcdae3b224bca7960ff73e0b1c37bb45eafe"
+    },
+    {
+      "path": "tests/test_task31_nhe1.py",
+      "git_blob_sha": "f88b672402208d19777b45e5e843dbaccb417e1e"
+    },
+    {
+      "path": "tests/test_task36_minimal_nbc.py",
+      "git_blob_sha": "489685da37bc271e5c60e580b58d1430ba87bdca"
+    }
+  ],
+  "differences_from_frozen_wt": [
+    "AGENTS.md",
+    "prompts/38_ae4_perturbation_validation.md"
+  ],
+  "model_and_reference_files_identical_to_frozen_wt": true
+}

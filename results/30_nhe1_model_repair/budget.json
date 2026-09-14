@@ -1,0 +1,17 @@
+{
+  "blas_threads": 1,
+  "limits_respected": true,
+  "maximum_numerical_wall_seconds": 1800.0,
+  "maximum_scalar_g_nhe1_evaluations": 8,
+  "maximum_stationary_residual_evaluations": 10000,
+  "maximum_stationary_solver_calls": 12,
+  "maximum_stimulated_integrations": 4,
+  "measurement_note": "The recorded numerical wall time covers the three completed WT solver calls. The fourth call was interrupted by the residual evaluation ceiling before the reporting timer was finalised; the run nevertheless completed far below the 1800 second ceiling.",
+  "numerical_wall_seconds": 0.6563125680004305,
+  "numerical_wall_seconds_includes_interrupted_call": false,
+  "scalar_g_nhe1_evaluations": 3,
+  "stationary_residual_evaluations": 10000,
+  "stationary_solver_calls": 4,
+  "stimulated_integrations": 0,
+  "workers": 1
+}

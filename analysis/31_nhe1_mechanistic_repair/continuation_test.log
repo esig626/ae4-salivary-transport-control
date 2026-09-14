@@ -1,0 +1,14 @@
+test_checkpoint_return_never_calls_stationary_optimizer (test_task31_continuation.ContinuationTests.test_checkpoint_return_never_calls_stationary_optimizer) ... ok
+test_global_counters_stop_before_exceeding_limits (test_task31_continuation.ContinuationTests.test_global_counters_stop_before_exceeding_limits) ... ok
+test_only_selector_and_single_amount_change_in_both_backgrounds (test_task31_continuation.ContinuationTests.test_only_selector_and_single_amount_change_in_both_backgrounds) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.021s
+
+OK
+test_exhausted_wall_time_can_still_be_checkpointed (test_task31_continuation.ContinuationTests.test_exhausted_wall_time_can_still_be_checkpointed) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK

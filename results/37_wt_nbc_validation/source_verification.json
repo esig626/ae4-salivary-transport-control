@@ -1,0 +1,114 @@
+{
+  "branch": "codex/task-37-wt-nbc-validation",
+  "correction": "One test import: task31_nhe1_mechanistic -> task31_nhe1_repair. No production code or parameter was changed.",
+  "initial_snapshot_blobs_verified": 82,
+  "model_source_files_unchanged": true,
+  "modified_existing_files": [
+    "tests/test_task36_minimal_nbc.py"
+  ],
+  "prepared_head": "d925785512a33b241ec24843660ff3ef88458549",
+  "source_audit": [
+    {
+      "path": "src/modern_full_model/__init__.py",
+      "prepared_blob_sha": "3cef0cd91fa99d39745e9e7275e9a4499ea46a57",
+      "published_blob_sha": "3cef0cd91fa99d39745e9e7275e9a4499ea46a57",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/acid_base.py",
+      "prepared_blob_sha": "669bd8554329ffcb5c9c70bce891415cda233fec",
+      "published_blob_sha": "669bd8554329ffcb5c9c70bce891415cda233fec",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/ae4_routing_only.py",
+      "prepared_blob_sha": "f7ceb851df9e0cb8f4d8a9cb1c540055aa342d54",
+      "published_blob_sha": "f7ceb851df9e0cb8f4d8a9cb1c540055aa342d54",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/camp_pka.py",
+      "prepared_blob_sha": "e0fe3fdf2837d97ee8e235fe1a72dc9854c594b8",
+      "published_blob_sha": "e0fe3fdf2837d97ee8e235fe1a72dc9854c594b8",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/membranes.py",
+      "prepared_blob_sha": "8fd2f35804121f11635764231d0669ddd4ffbb64",
+      "published_blob_sha": "8fd2f35804121f11635764231d0669ddd4ffbb64",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/model.py",
+      "prepared_blob_sha": "14b1912b0c58b0fb3ae18ff639eeb6a726081c46",
+      "published_blob_sha": "14b1912b0c58b0fb3ae18ff639eeb6a726081c46",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/nbc_minimal.py",
+      "prepared_blob_sha": "c4bf124d497b74d68c1cbe09cf47c04c933bd244",
+      "published_blob_sha": "c4bf124d497b74d68c1cbe09cf47c04c933bd244",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/nhe1_cha2009.py",
+      "prepared_blob_sha": "6090805662155915e894804e1a4dbf2acb594241",
+      "published_blob_sha": "6090805662155915e894804e1a4dbf2acb594241",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/nkcc_stimulation.py",
+      "prepared_blob_sha": "6a8ace8dacffe153fbb3d8bbd7188dd0c28f4fd7",
+      "published_blob_sha": "6a8ace8dacffe153fbb3d8bbd7188dd0c28f4fd7",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/parameters.py",
+      "prepared_blob_sha": "7cf42ee2305985186595ee90c8be637c7f2ed5bf",
+      "published_blob_sha": "7cf42ee2305985186595ee90c8be637c7f2ed5bf",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/states.py",
+      "prepared_blob_sha": "0a2d351830e1004bccd55c4ce609e640634eca03",
+      "published_blob_sha": "0a2d351830e1004bccd55c4ce609e640634eca03",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/task30_nhe1_repair.py",
+      "prepared_blob_sha": "2219945085de0bdd3a97daec8a098370fbda7a26",
+      "published_blob_sha": "2219945085de0bdd3a97daec8a098370fbda7a26",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/task31_nhe1_repair.py",
+      "prepared_blob_sha": "5129f12bc8198c97aa22fa738f28b4c82ed0723a",
+      "published_blob_sha": "5129f12bc8198c97aa22fa738f28b4c82ed0723a",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/transporters.py",
+      "prepared_blob_sha": "66738cf1963ee5bcb72cb0ebef809266df83d157",
+      "published_blob_sha": "66738cf1963ee5bcb72cb0ebef809266df83d157",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/validation.py",
+      "prepared_blob_sha": "62e88ea22fe132a4f656963fa48959f366fad79d",
+      "published_blob_sha": "62e88ea22fe132a4f656963fa48959f366fad79d",
+      "unchanged": true
+    },
+    {
+      "path": "src/modern_full_model/water.py",
+      "prepared_blob_sha": "911d70765f9da1d1bdae5cedf7405b4fb7f2a3af",
+      "published_blob_sha": "911d70765f9da1d1bdae5cedf7405b4fb7f2a3af",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_task36_minimal_nbc.py",
+      "prepared_blob_sha": "9059d2fc6ab345e86c5c843870730aac4755c867",
+      "published_blob_sha": "489685da37bc271e5c60e580b58d1430ba87bdca",
+      "unchanged": false
+    }
+  ]
+}
