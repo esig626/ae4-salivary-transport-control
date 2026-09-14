@@ -1,0 +1,50 @@
+{
+  "branch": "codex/task-42-catalan-2025-ae4-mechanism-classes",
+  "checkpoints": {
+    "source_checks": {
+      "sha": "945a470008db5c3095aaefd82113ef518ccdab71",
+      "tree_sha": "f9220df2c8638342678a284ce490c9bd1cbc61e6",
+      "confirmed_utc": "2026-09-14T09:38:03.211578+00:00"
+    },
+    "wt_rests": {
+      "sha": "72b5c3373f2a303a8f73fa840b993d67d7204e0f",
+      "tree_sha": "c698629af394acceec29316a14c3d246d7f5c063",
+      "confirmed_utc": "2026-09-14T09:38:36.507649+00:00"
+    },
+    "C0": {
+      "sha": "7ae6797b05aa6f075ac9db542b9a09977427c63b",
+      "tree_sha": "3f18ac93795f7c596e099de2c0db9f6d52b22446",
+      "confirmed_utc": "2026-09-14T09:39:06.312854+00:00"
+    },
+    "C1": {
+      "sha": "7a8db3263ca4087065b84dcd52029baceb81ccdb",
+      "tree_sha": "9d6d7dc3378b455494827259fe2f6bdb37e0a784",
+      "confirmed_utc": "2026-09-14T09:39:38.609369+00:00"
+    },
+    "C2": {
+      "sha": "daefc9ab811f5eb2dc39f01da0a0adac17ac82e1",
+      "tree_sha": "6b1eae95a822266ae2d77c935c1816ff81db6dd7",
+      "confirmed_utc": "2026-09-14T09:40:41.360295+00:00"
+    },
+    "C3a": {
+      "sha": "f9d13361922ca90aa86829383fd5702464e1b4af",
+      "tree_sha": "3d2317eef509859524c7116f387b28e9194b3101",
+      "confirmed_utc": "2026-09-14T09:41:18.569003+00:00"
+    },
+    "C3b": {
+      "sha": "0f9539873a70978fce43cfbbf5d8086bd97f19bd",
+      "tree_sha": "105bf2f50fc489e0828c798c6dff62bd84dba565",
+      "confirmed_utc": "2026-09-14T09:41:49.185912+00:00"
+    },
+    "C4a": {
+      "sha": "24fbc4905fc75d0ff3c01dfa64e12a1570309fb3",
+      "tree_sha": "1243b4039051606837fef73c3abed2a1dfaddd0c",
+      "confirmed_utc": "2026-09-14T09:42:18.077271+00:00"
+    },
+    "C4b": {
+      "sha": "1436b2af0344e63406b3ed7759f08ed7ff18458a",
+      "tree_sha": "eec46d236a0039730599e09bc614bbc687576315",
+      "confirmed_utc": "2026-09-14T09:42:50.626614+00:00"
+    }
+  }
+}

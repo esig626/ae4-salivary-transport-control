@@ -1,0 +1,479 @@
+{
+  "acid_base_parameters": {
+    "carbon_pka1": 6.1,
+    "carbon_pka2": 10.3,
+    "cell_buffer_pka": 7.0,
+    "lumen_buffer_pka": 7.0,
+    "ph_lower": 3.0,
+    "ph_upper": 11.0,
+    "water_pkw": 14.0
+  },
+  "branch": "codex/task-42-catalan-2025-ae4-mechanism-classes",
+  "classes": [
+    {
+      "affinity_kJ_mol": -5.432531166831335,
+      "affinity_over_rt": -2.10666876439727,
+      "chemical_delta_g_over_rt": 2.10666876439727,
+      "class_id": "C0",
+      "electrical_delta_g_over_rt": 0.0,
+      "exact_charge_equivalents": "0",
+      "forward_direction": "opposed",
+      "inherited_j4_fmol_s": 0.004933930166208064,
+      "scalar_direction_agrees_at_reference": false,
+      "source_coefficients_na_k_cl_tic_ta": [
+        -0.5,
+        -0.5,
+        1.0,
+        -2.0,
+        -2.0
+      ],
+      "species_terms": {
+        "cl": {
+          "chemical_delta_g_over_rt": -0.7337259302353606,
+          "coefficient": 1.0,
+          "electrical_delta_g_over_rt": 2.509008963203275
+        },
+        "co3": {
+          "chemical_delta_g_over_rt": -0.0,
+          "coefficient": 0.0,
+          "electrical_delta_g_over_rt": 0.0
+        },
+        "hco3": {
+          "chemical_delta_g_over_rt": 3.1496670269427303,
+          "coefficient": -2.0,
+          "electrical_delta_g_over_rt": -5.01801792640655
+        },
+        "k": {
+          "chemical_delta_g_over_rt": -1.576255920921893,
+          "coefficient": -0.5,
+          "electrical_delta_g_over_rt": 1.2545044816016375
+        },
+        "na": {
+          "chemical_delta_g_over_rt": 1.266983588611793,
+          "coefficient": -0.5,
+          "electrical_delta_g_over_rt": 1.2545044816016375
+        }
+      }
+    },
+    {
+      "affinity_kJ_mol": 12.494907497980234,
+      "affinity_over_rt": 4.8453714358313675,
+      "chemical_delta_g_over_rt": -4.8453714358313675,
+      "class_id": "C1",
+      "electrical_delta_g_over_rt": 0.0,
+      "exact_charge_equivalents": "0",
+      "forward_direction": "supported",
+      "inherited_j4_fmol_s": 0.004933930166208064,
+      "scalar_direction_agrees_at_reference": true,
+      "source_coefficients_na_k_cl_tic_ta": [
+        1.0,
+        -1.0,
+        1.0,
+        -1.0,
+        -1.0
+      ],
+      "species_terms": {
+        "cl": {
+          "chemical_delta_g_over_rt": -0.7337259302353606,
+          "coefficient": 1.0,
+          "electrical_delta_g_over_rt": 2.509008963203275
+        },
+        "co3": {
+          "chemical_delta_g_over_rt": -0.0,
+          "coefficient": 0.0,
+          "electrical_delta_g_over_rt": 0.0
+        },
+        "hco3": {
+          "chemical_delta_g_over_rt": 1.5748335134713651,
+          "coefficient": -1.0,
+          "electrical_delta_g_over_rt": -2.509008963203275
+        },
+        "k": {
+          "chemical_delta_g_over_rt": -3.152511841843786,
+          "coefficient": -1.0,
+          "electrical_delta_g_over_rt": 2.509008963203275
+        },
+        "na": {
+          "chemical_delta_g_over_rt": -2.533967177223586,
+          "coefficient": 1.0,
+          "electrical_delta_g_over_rt": -2.509008963203275
+        }
+      }
+    },
+    {
+      "affinity_kJ_mol": 17.720727567692016,
+      "affinity_over_rt": 6.871880179386998,
+      "chemical_delta_g_over_rt": -6.871880179386998,
+      "class_id": "C2",
+      "electrical_delta_g_over_rt": 0.0,
+      "exact_charge_equivalents": "0",
+      "forward_direction": "supported",
+      "inherited_j4_fmol_s": 0.004933930166208064,
+      "scalar_direction_agrees_at_reference": true,
+      "source_coefficients_na_k_cl_tic_ta": [
+        1.0,
+        -2.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "species_terms": {
+        "cl": {
+          "chemical_delta_g_over_rt": -0.7337259302353606,
+          "coefficient": 1.0,
+          "electrical_delta_g_over_rt": 2.509008963203275
+        },
+        "co3": {
+          "chemical_delta_g_over_rt": 2.700836611759521,
+          "coefficient": -1.0,
+          "electrical_delta_g_over_rt": -5.01801792640655
+        },
+        "hco3": {
+          "chemical_delta_g_over_rt": -0.0,
+          "coefficient": 0.0,
+          "electrical_delta_g_over_rt": 0.0
+        },
+        "k": {
+          "chemical_delta_g_over_rt": -6.305023683687572,
+          "coefficient": -2.0,
+          "electrical_delta_g_over_rt": 5.01801792640655
+        },
+        "na": {
+          "chemical_delta_g_over_rt": -2.533967177223586,
+          "coefficient": 1.0,
+          "electrical_delta_g_over_rt": -2.509008963203275
+        }
+      }
+    },
+    {
+      "affinity_kJ_mol": 1.8994175055681322,
+      "affinity_over_rt": 0.7365707451364162,
+      "chemical_delta_g_over_rt": -0.7365707451364162,
+      "class_id": "C3a",
+      "electrical_delta_g_over_rt": 0.0,
+      "exact_charge_equivalents": "0",
+      "forward_direction": "supported",
+      "inherited_j4_fmol_s": 0.004933930166208064,
+      "scalar_direction_agrees_at_reference": true,
+      "source_coefficients_na_k_cl_tic_ta": [
+        0.0,
+        -1.0,
+        1.0,
+        -2.0,
+        -2.0
+      ],
+      "species_terms": {
+        "cl": {
+          "chemical_delta_g_over_rt": -0.7337259302353606,
+          "coefficient": 1.0,
+          "electrical_delta_g_over_rt": 2.509008963203275
+        },
+        "co3": {
+          "chemical_delta_g_over_rt": -0.0,
+          "coefficient": 0.0,
+          "electrical_delta_g_over_rt": 0.0
+        },
+        "hco3": {
+          "chemical_delta_g_over_rt": 3.1496670269427303,
+          "coefficient": -2.0,
+          "electrical_delta_g_over_rt": -5.01801792640655
+        },
+        "k": {
+          "chemical_delta_g_over_rt": -3.152511841843786,
+          "coefficient": -1.0,
+          "electrical_delta_g_over_rt": 2.509008963203275
+        },
+        "na": {
+          "chemical_delta_g_over_rt": -0.0,
+          "coefficient": 0.0,
+          "electrical_delta_g_over_rt": -0.0
+        }
+      }
+    },
+    {
+      "affinity_kJ_mol": -12.764479839230804,
+      "affinity_over_rt": -4.949908273930956,
+      "chemical_delta_g_over_rt": 4.949908273930956,
+      "class_id": "C3b",
+      "electrical_delta_g_over_rt": 0.0,
+      "exact_charge_equivalents": "0",
+      "forward_direction": "opposed",
+      "inherited_j4_fmol_s": 0.004933930166208064,
+      "scalar_direction_agrees_at_reference": false,
+      "source_coefficients_na_k_cl_tic_ta": [
+        -1.0,
+        0.0,
+        1.0,
+        -2.0,
+        -2.0
+      ],
+      "species_terms": {
+        "cl": {
+          "chemical_delta_g_over_rt": -0.7337259302353606,
+          "coefficient": 1.0,
+          "electrical_delta_g_over_rt": 2.509008963203275
+        },
+        "co3": {
+          "chemical_delta_g_over_rt": -0.0,
+          "coefficient": 0.0,
+          "electrical_delta_g_over_rt": 0.0
+        },
+        "hco3": {
+          "chemical_delta_g_over_rt": 3.1496670269427303,
+          "coefficient": -2.0,
+          "electrical_delta_g_over_rt": -5.01801792640655
+        },
+        "k": {
+          "chemical_delta_g_over_rt": 0.0,
+          "coefficient": 0.0,
+          "electrical_delta_g_over_rt": -0.0
+        },
+        "na": {
+          "chemical_delta_g_over_rt": 2.533967177223586,
+          "coefficient": -1.0,
+          "electrical_delta_g_over_rt": 2.509008963203275
+        }
+      }
+    },
+    {
+      "affinity_kJ_mol": 3.0568302228930784,
+      "affinity_over_rt": 1.1854011603196253,
+      "chemical_delta_g_over_rt": -1.1854011603196253,
+      "class_id": "C4a",
+      "electrical_delta_g_over_rt": 0.0,
+      "exact_charge_equivalents": "0",
+      "forward_direction": "supported",
+      "inherited_j4_fmol_s": 0.004933930166208064,
+      "scalar_direction_agrees_at_reference": true,
+      "source_coefficients_na_k_cl_tic_ta": [
+        0.0,
+        -1.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "species_terms": {
+        "cl": {
+          "chemical_delta_g_over_rt": -0.7337259302353606,
+          "coefficient": 1.0,
+          "electrical_delta_g_over_rt": 2.509008963203275
+        },
+        "co3": {
+          "chemical_delta_g_over_rt": 2.700836611759521,
+          "coefficient": -1.0,
+          "electrical_delta_g_over_rt": -5.01801792640655
+        },
+        "hco3": {
+          "chemical_delta_g_over_rt": -0.0,
+          "coefficient": 0.0,
+          "electrical_delta_g_over_rt": 0.0
+        },
+        "k": {
+          "chemical_delta_g_over_rt": -3.152511841843786,
+          "coefficient": -1.0,
+          "electrical_delta_g_over_rt": 2.509008963203275
+        },
+        "na": {
+          "chemical_delta_g_over_rt": -0.0,
+          "coefficient": 0.0,
+          "electrical_delta_g_over_rt": -0.0
+        }
+      }
+    },
+    {
+      "affinity_kJ_mol": -11.607067121905855,
+      "affinity_over_rt": -4.501077858747746,
+      "chemical_delta_g_over_rt": 4.501077858747746,
+      "class_id": "C4b",
+      "electrical_delta_g_over_rt": 0.0,
+      "exact_charge_equivalents": "0",
+      "forward_direction": "opposed",
+      "inherited_j4_fmol_s": 0.004933930166208064,
+      "scalar_direction_agrees_at_reference": false,
+      "source_coefficients_na_k_cl_tic_ta": [
+        -1.0,
+        0.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "species_terms": {
+        "cl": {
+          "chemical_delta_g_over_rt": -0.7337259302353606,
+          "coefficient": 1.0,
+          "electrical_delta_g_over_rt": 2.509008963203275
+        },
+        "co3": {
+          "chemical_delta_g_over_rt": 2.700836611759521,
+          "coefficient": -1.0,
+          "electrical_delta_g_over_rt": -5.01801792640655
+        },
+        "hco3": {
+          "chemical_delta_g_over_rt": -0.0,
+          "coefficient": 0.0,
+          "electrical_delta_g_over_rt": 0.0
+        },
+        "k": {
+          "chemical_delta_g_over_rt": 0.0,
+          "coefficient": 0.0,
+          "electrical_delta_g_over_rt": -0.0
+        },
+        "na": {
+          "chemical_delta_g_over_rt": 2.533967177223586,
+          "coefficient": -1.0,
+          "electrical_delta_g_over_rt": 2.509008963203275
+        }
+      }
+    }
+  ],
+  "concentrations_i_mM": {
+    "alkalinity": 14.194120217840048,
+    "cl": 60.57229665283094,
+    "co2": 0.760775811435637,
+    "co3": 0.002010123919709818,
+    "hco3": 4.92311254096896,
+    "k": 116.97377381898451,
+    "na": 11.504825605191392,
+    "tic": 5.685898476324307
+  },
+  "concentrations_o_mM": {
+    "cl": 126.16159280366088,
+    "co3": 0.029935138274566613,
+    "hco3": 23.778325541863886,
+    "k": 5.0,
+    "na": 145.0
+  },
+  "constants": {
+    "faraday_C_mol": 96485.33212,
+    "gas_constant_J_mol_K": 8.31446261815324,
+    "temperature_K": 310.15
+  },
+  "execution_files": [
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/run_case.py",
+      "sha256": "44c552090b754048c26885dffbf44549360ac051376b0420b12512aea8ad1d32"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/run_panel.py",
+      "sha256": "82b15525558c304fa63bdef89b2106230b44f1837ece8c9ccd1dbf0b731a54ad"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/run_preflight.py",
+      "sha256": "1a48a8c6c5ec859891bedfc574e45033f3fd2a20ab424d31365be4446b1dbdf4"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/run_rest.py",
+      "sha256": "6cd40d7e7d3cc1fb78358f4a3524e1ed4ea38df648ea4db8e9fe803b82023dab"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/summarise_predictions.py",
+      "sha256": "5177bb6b2c6d8a97fb591777596211d0b78a7c209bfe47b74dc39ec4b4191cdd"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/validation_common.py",
+      "sha256": "0849154841c32a0fe25eea5c4919eaa9b00f77d73bc4074d0d7876f509441885"
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/verify_saved_predictions.py",
+      "sha256": "51f607f82a2ff23beb476e914067d7150991bf9a31ad10be606dc7bca9c1c8a8"
+    },
+    {
+      "path": "src/modern_full_model/ae4_catalan2025.py",
+      "sha256": "f3b488f6c0075d68178167b0145543af3f04e4db889002c11cde782fa868da11"
+    },
+    {
+      "path": "tests/test_task42_catalan2025.py",
+      "sha256": "49d0e81057729adc02d4a017d764fe0a65e63611af4c8b67673ceae03be4c3c2"
+    }
+  ],
+  "execution_note": "Fresh execution from verified remote parent inputs; previous Task 42 scripts were reviewed and adapted for incremental publication; no previous Task 42 numerical outputs were reused.",
+  "firewall_note": "The required repository instructions and Task 40 report contain a phenotype reference. No held out experimental source or Task 41 content is inspected in this execution. No target value enters the implementation, gates, execution or reporting. All seven classes and all parameters are fixed by the supplied contract. Stop before phenotype reveal.",
+  "frozen_utc": "2026-09-14T09:35:20.978077+00:00",
+  "numerical_solves_so_far": 0,
+  "prepared_head": "a3c53ce07b875a3daf4e26ded0ce9f1d55a1d76f",
+  "reference_observables": {
+    "bath_acid_base": {
+      "alkalinity_residual_mM": -3.552713678800501e-15,
+      "buffer_h_mM": 0.0,
+      "buffer_minus_mM": 0.0,
+      "co2_mM": 1.19173931986155,
+      "co3_mM": 0.029935138274566613,
+      "h_mM": 3.981071705534986e-05,
+      "hco3_mM": 23.778325541863886,
+      "oh_mM": 0.00025118864315095714,
+      "ph": 7.399999999999999,
+      "total_alkalinity_mM": 23.83840719633912,
+      "total_carbon_mM": 25.0
+    },
+    "cell_acid_base": {
+      "alkalinity_residual_mM": 2.327027459614328e-13,
+      "buffer_h_mM": 11.375158079427852,
+      "buffer_minus_mM": 9.267028710488518,
+      "co2_mM": 0.760775811435637,
+      "co3_mM": 0.002010123919709818,
+      "h_mM": 0.00012274870872638313,
+      "hco3_mM": 4.92311254096896,
+      "oh_mM": 8.146725211008788e-05,
+      "ph": 6.9109830678074875,
+      "total_alkalinity_mM": 14.194120217840048,
+      "total_carbon_mM": 5.685898476324307
+    },
+    "cell_concentrations_mM": {
+      "alkalinity": 14.194120217840048,
+      "cl": 60.57229665283094,
+      "co2": 0.760775811435637,
+      "co3": 0.002010123919709818,
+      "hco3": 4.92311254096896,
+      "k": 116.97377381898451,
+      "na": 11.504825605191392,
+      "tic": 5.685898476324307
+    },
+    "lumen_acid_base": {
+      "alkalinity_residual_mM": 1.7763568394002505e-15,
+      "buffer_h_mM": 5.232919059142376e-09,
+      "buffer_minus_mM": 4.255790611210293e-09,
+      "co2_mM": 0.6869363932810721,
+      "co3_mM": 0.0018087935271866083,
+      "h_mM": 0.00012295997470735998,
+      "hco3_mM": 4.4376470793967915,
+      "oh_mM": 8.132727762672052e-05,
+      "ph": 6.910236234841876,
+      "total_alkalinity_mM": 4.441223038009873,
+      "total_carbon_mM": 5.12639226620505
+    },
+    "lumen_concentrations_mM": {
+      "alkalinity": 4.441223038009873,
+      "cl": 145.9239041626896,
+      "co2": 0.6869363932810721,
+      "co3": 0.0018087935271866083,
+      "hco3": 4.4376470793967915,
+      "k": 25.799541688356236,
+      "na": 124.56558551234325,
+      "tic": 5.12639226620505
+    },
+    "osmolarities_mOsm": {
+      "bath": 301.1615928036609,
+      "cell": 301.1812371814472,
+      "lumen": 301.41542362959416
+    }
+  },
+  "reference_state_vector": [
+    16.720358732745492,
+    170.0020085218768,
+    88.0318019635695,
+    8.263511808402752,
+    20.628803085107954,
+    1.4533343925874602,
+    13.127768668225414,
+    2.7189726089909274,
+    15.378687854537976,
+    0.5402623164056106,
+    0.4680534226783657,
+    0.10538840735368742,
+    0.0
+  ],
+  "source_tests_pass": true,
+  "status": "PREFLIGHT_PASS",
+  "task40_reference_sha256": "a0b96ef16e5967de4dfe2bdabb882f2a28d478e211f920bc19cd735a5a143acb",
+  "v_basolateral_V": -0.06705742727215
+}

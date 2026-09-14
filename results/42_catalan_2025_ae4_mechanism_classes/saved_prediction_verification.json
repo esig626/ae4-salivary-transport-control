@@ -1,0 +1,167 @@
+{
+  "status": "SAVED_PREDICTIONS_VERIFIED",
+  "predictions": [
+    {
+      "class": "C0",
+      "case": "wt",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C0",
+      "case": "ae4_5pct",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C0",
+      "case": "ae4_null",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C1",
+      "case": "wt",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C1",
+      "case": "ae4_5pct",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C1",
+      "case": "ae4_null",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C2",
+      "case": "wt",
+      "status": "TASK42_SOURCE_CLASS_WT_FAILED",
+      "checked_states": 319,
+      "last_checked_time_s": 190.0
+    },
+    {
+      "class": "C2",
+      "case": "ae4_5pct",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C2",
+      "case": "ae4_null",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C3a",
+      "case": "wt",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C3a",
+      "case": "ae4_5pct",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C3a",
+      "case": "ae4_null",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C3b",
+      "case": "wt",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C3b",
+      "case": "ae4_5pct",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C3b",
+      "case": "ae4_null",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C4a",
+      "case": "wt",
+      "status": "TASK42_SOURCE_CLASS_WT_FAILED",
+      "checked_states": 367,
+      "last_checked_time_s": 222.0
+    },
+    {
+      "class": "C4a",
+      "case": "ae4_5pct",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C4a",
+      "case": "ae4_null",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C4b",
+      "case": "wt",
+      "status": "TASK42_SOURCE_CLASS_WT_FAILED",
+      "checked_states": 509,
+      "last_checked_time_s": 317.0
+    },
+    {
+      "class": "C4b",
+      "case": "ae4_5pct",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    },
+    {
+      "class": "C4b",
+      "case": "ae4_null",
+      "status": "PASS",
+      "checked_states": 934,
+      "last_checked_time_s": 600.0
+    }
+  ],
+  "stationary_solves": 7,
+  "production_integrations": 21,
+  "source_test_count": 7,
+  "numerical_retries": 0,
+  "all_execution_hashes_match_preflight": true,
+  "interpretation_unlocked": false,
+  "checks": [
+    "All seven classes recorded, including failures",
+    "Each class starts its rest solve from Task 40",
+    "Genotypes share their class WT rest and unchanged scientific parameters",
+    "Only AE4 expression differs between genotypes",
+    "Inherited gates and retry limits preserved",
+    "Successful window integrals and source identities reconcile",
+    "Incomplete trajectories retain failure records"
+  ]
+}

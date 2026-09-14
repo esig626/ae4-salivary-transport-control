@@ -1,0 +1,29 @@
+{
+  "blas_threads": 1,
+  "class_id": "C3a",
+  "completed_cases": [
+    "wt",
+    "ae4_5pct",
+    "ae4_null"
+  ],
+  "genotype_rest_solves": 0,
+  "integration_attempts": 3,
+  "limits_respected": true,
+  "no_further_scientific_execution": true,
+  "numerical_execution_seconds": 6.69160694799848,
+  "numerical_retries": 0,
+  "optimisation_calls": 0,
+  "parameter_sweeps": 0,
+  "source_tests_pass": true,
+  "started_cases": [
+    "wt",
+    "ae4_5pct",
+    "ae4_null"
+  ],
+  "stationary_numerical_retries": 0,
+  "stationary_residual_evaluations": 78,
+  "stationary_solves": 1,
+  "status": "TASK42_SOURCE_CLASS_VALIDATION_COMPLETE",
+  "workers": 1,
+  "wt_rest_pass": true
+}

@@ -1,44 +1,49 @@
-# Repository state after Task 40
+# Active phase: Task 42 Catalán 2025 AE4 mechanism class discrimination
 
-`main` is the canonical scientific lineage.
+Work only on:
 
-The production model is consolidated through Task 40. There is currently no active numbered task branch and no instruction to continue work on a completed task branch.
+`codex/task-42-catalan-2025-ae4-mechanism-classes`
 
-Before starting new scientific work:
+Read first:
 
-1. Read `README.md` for the current scientific interpretation.
-2. Read `docs/MODERN_LINEAGE_CONSOLIDATION.md` for the modern lineage repair and consolidation history.
-3. Read the most recent task report under `analysis/40_ae4_equal_cation_routing/` and its machine readable outputs under `results/40_ae4_equal_cation_routing/`.
-4. Create a new branch from current `main` for any new numbered scientific task.
+1. `analysis/42_catalan_2025_ae4_mechanism_classes/source_contract.md`
+2. `prompts/42_catalan_2025_ae4_mechanism_classes.md`
+3. `analysis/40_ae4_equal_cation_routing/final_answer.md`
 
-## Canonical current result
+Then execute Task 42 exactly as written.
 
-Task 40 tests fixed 50:50 Na/K routing of the inherited AE4 cation component while preserving the total AE4 cycle and every other inherited scientific mechanism.
+## Repository protection
 
-One WT resting solve and all three 600 s trajectories passed the declared numerical, physiological and conservation gates without retries or tuning.
+The branch was created from current `main` at `fe51473d7cc201e2e04007aa62fbc1b45098732e`.
 
-At 600 s, AE4 loss gives final cumulative secretion deficits of about 3.42% at AE4 = 0.05 and 3.86% at AE4 = 0.00. NKCC1 compensation is about +20.82% and +23.16%, respectively. The current model therefore remains far from the held out experimental secretion reduction of about 35%.
+Task 41 is separately preserved in draft PR #33 at `86f135e075aa91a70a752b650d7bb894353fee04`.
 
-This is a negative model result, not permission to tune to the held out phenotype.
+Do not modify, merge, cherry pick, force push, close or overwrite Task 41 or its branch as part of Task 42.
 
-## Scientific constraints
+Do not edit `main`.
 
-* Treat the approximately 35% experimental AE4 loss secretion reduction as held out phenotype information, not a calibration target.
-* Do not reinterpret a failed or weak genotype phenotype as permission for post hoc parameter fitting.
-* Preserve exact provenance for any source fixed transporter law, parameter or experimental quantity.
-* Keep genotype specific compensation separate from constitutive WT model calibration unless a future task explicitly introduces and sources such regulation.
-* Preserve conservation, charge accounting, resting closure and the declared production protocol unless a future task explicitly changes one of them.
-* Distinguish numerical failure, structural failure and biological mismatch in all reports.
+Do not edit or delete `archive/`, earlier numbered analyses, earlier results, manuscript material or historical branches.
 
-## Repository constraints
+Task 42 should add only its own source, tests, analysis, compact results and documentation.
 
-* `archive/` is historical and provenance material. Do not rewrite or delete it.
-* Do not delete earlier numbered analyses or results merely because later tasks supersede their interpretation.
-* New scientific changes should be made on a new branch from current `main`, with a task specific prompt, tests, compact results and a final report.
-* Keep temporary computation products out of the repository unless they are required for reproducibility or audit.
-* Use the connected GitHub integration for remote writes. Do not add PATs, SSH credentials or local authentication material to the repository.
-* Do not merge a new scientific branch until its declared checks and result audit are complete.
+## Scientific protection
 
-## Current main lineage
+Task 40 is the scientific parent.
 
-The latest scientific merge is Task 40, PR #32. Repository housekeeping after that merge updates only top level project guidance and does not alter the Task 40 scientific outputs.
+Task 41's AE4 dependent CaCC recruitment is explicitly forbidden in Task 42. Task 41 is a post freeze comparison only.
+
+The approximately 35% AE4 loss secretion phenotype is held out until every predeclared Catalán 2025 mechanism class has either failed its WT gate or produced frozen genotype predictions.
+
+No optimisation, no parameter sweep, no cation fraction tuning, no genotype specific resting solve and no phenotype based selection.
+
+The first stage keeps the inherited Task 40 scalar AE4 cycle law fixed and changes only the source stoichiometry according to the source contract. This limitation must be stated in the final interpretation.
+
+## Publication
+
+Use the connected GitHub integration for remote writes.
+
+Publish only to the Task 42 branch.
+
+Do not merge to `main`.
+
+Open a draft PR only after all predeclared classes and the final report are complete.

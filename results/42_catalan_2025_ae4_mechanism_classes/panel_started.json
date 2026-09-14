@@ -1,0 +1,15 @@
+{
+  "class_order": [
+    "C0",
+    "C1",
+    "C2",
+    "C3a",
+    "C3b",
+    "C4a",
+    "C4b"
+  ],
+  "preflight_sha256": "707f0c7176655f0ef966376f4d7164a49f0ae1e9462da3c760599744e9dbd06a",
+  "source_checks_remote_sha": "945a470008db5c3095aaefd82113ef518ccdab71",
+  "started_utc": "2026-09-14T09:38:11.998765+00:00",
+  "workers": 1
+}

@@ -1,0 +1,12 @@
+test_affinity_electrical_cancellation_and_reversal (__main__.SourceClassTests.test_affinity_electrical_cancellation_and_reversal) ... ok
+test_c0_full_rhs_is_bitwise_identical_to_task40 (__main__.SourceClassTests.test_c0_full_rhs_is_bitwise_identical_to_task40) ... ok
+test_carbonate_reaches_full_model_tic_and_ta_separately (__main__.SourceClassTests.test_carbonate_reaches_full_model_tic_and_ta_separately) ... ok
+test_carbonate_speciation_uses_the_inherited_pka (__main__.SourceClassTests.test_carbonate_speciation_uses_the_inherited_pka) ... ok
+test_every_class_changes_only_declared_cellular_sources (__main__.SourceClassTests.test_every_class_changes_only_declared_cellular_sources) ... ok
+test_predeclared_panel_exact_charge_and_reversal (__main__.SourceClassTests.test_predeclared_panel_exact_charge_and_reversal) ... ok
+test_reference_file_hashes (__main__.SourceClassTests.test_reference_file_hashes) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.102s
+
+OK

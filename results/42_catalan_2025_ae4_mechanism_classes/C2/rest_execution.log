@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "admissible": true,
+  "actual_root_residual_evaluations": 126,
+  "failed_gates": [],
+  "wall_seconds": 0.4576547489996301
+}
