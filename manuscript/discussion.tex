@@ -1,0 +1,73 @@
+\section{Discussion}
+\label{sec:discussion}
+
+Nearly a decade ago, the first AE4 secretion model did two useful things. It showed that the apparently paradoxical AE4 and AE2 knockout experiments could be represented in one quantitative cell model, and it identified cation coupling as a plausible reason why AE4 could not be replaced by AE2 \citep{VeraSiguenza2018}. The present reconstruction does not erase those conclusions. Instead, it separates the parts that survive from the parts that depended on the original model architecture.
+
+\subsection{The right transporter, but an incomplete network mechanism}
+
+The strongest conclusion of the 2018 work survives: AE4 is not simply a redundant copy of AE2. Experiments published since then have strengthened that point. AE4 requires a permeant monovalent cation, sodium and potassium do not interact with the transporter identically, and beta-adrenergic signalling regulates its activity through cAMP and PKA \citep{Pena2016,Pena2021,Catalan2025}. The original model therefore identified the correct biological actor and emphasised a property, cation dependence, that subsequent molecular work has confirmed.
+
+What does not survive is the simple causal chain in which the AE4 cation split itself determines the gland phenotype. Once the surrounding acid--base system, NKCC1 law and NHE1 law are reconstructed, equal sodium and potassium routing gives only a 3--4\% secretion deficit. The exact balance in \cref{eq:cacc-steady-identity} explains why. Under equal routing, the explicit AE4 term disappears from the sustained apical chloride balance. AE4 still changes intracellular states and thereby affects the pump, NHE1 and other fluxes, but the sodium--potassium split is not an independent control knob for secretion.
+
+This distinction matters beyond the present model. A transporter can be biologically essential without appearing explicitly in a reduced steady balance. Its influence may be mediated through the state that determines other transporters, through regulatory coupling or through the availability of a conserved substrate. Conversely, reproducing a knockout phenotype does not prove that the omitted terms have been represented correctly. The 2018 agreement with flow was therefore informative but not mechanistically unique.
+
+\subsection{The transporter we removed turns out to be structurally necessary}
+
+The most consequential revision is the inward bicarbonate pathway. The 2018 model stated explicitly that no other proton or bicarbonate transport mechanism was included. That simplification was sufficient for the original calibration, but it becomes restrictive once AE4 is required to carry a substantial stimulated chloride load. Every original AE4 cycle exports two bicarbonates. In conserved coordinates, that is a loss of two carbon units and two alkalinity equivalents. NHE1 replaces alkalinity but not carbon, and the flux compatible with the measured sodium and pH state is not large enough to support the desired AE4 load.
+
+The NBC-like pathway supplies the missing degree of freedom. It imports one sodium and two bicarbonates, enters the membrane-current closure because it is electrogenic, and is recruited only during stimulation. The reconstructed wild type can then assign approximately 20\% of positive chloride loading to AE4 while keeping pH within the physiological interval. In plain terms, the pathway matters not because it secretes chloride itself, but because it supplies the bicarbonate that AE4 spends.
+
+We do not know why NBC was removed during development of the original model, and it would be unhelpful to manufacture a retrospective explanation. The original paper used a minimal acid--base architecture. The present result shows where that minimality stops being harmless. This is a useful example of why model improvement is not always achieved by adding more detail everywhere. One particular omitted process becomes necessary because it closes a conserved balance that the original variables obscured.
+
+The NBC implementation should nevertheless be interpreted carefully. It is an electrogenic $1\Na:2\HCO$ structural surrogate and not a claim that one specific NBC isoform, abundance or kinetic law has been identified in mouse submandibular acinar cells. Its capacity was derived from a wild-type feasibility calculation, not measured directly. Experiments that resolve sodium--bicarbonate transport during combined cholinergic and beta-adrenergic stimulation would therefore be especially valuable.
+
+\subsection{pH is a mechanism discriminator, not merely a calibration target}
+
+The Task 42 panel provides the clearest demonstration of the role of pH. All seven AE4 source classes were electroneutral and admitted an acceptable resting state. Three nevertheless failed during stimulation because pH crossed the lower physiological bound. The failures were confined to carbonate-export classes, for which one transported carbon unit removes two alkalinity equivalents. Resting admissibility and electroneutrality were therefore insufficient to establish physiological viability.
+
+This result is directly relevant to the mechanism proposals of \citet{Catalan2025}. Their experiments establish distinct sodium- and potassium-dependent behaviour and identify residues involved in cation and bicarbonate transport. They do not resolve the complete stoichiometric cycle in the salivary acinar cell. Our whole-cell tests are compatible with those experiments: none disputes the cation dependence or mutant hierarchy. Instead, they show that some proposed source classes have acid--base consequences that become apparent only when the transporter is embedded in a secreting cell.
+
+The result also illustrates why the Catalán classes cannot simply replace the Task 40 source law and be judged by a single flow number. C1 is thermodynamically supported at the reference state, but AE4 deletion increases secretion because NKCC1 nearly doubles its compensatory chloride loading. C3a is also supported but produces almost no secretion phenotype. C3b gives the largest valid deficit, but its proposed forward direction is opposed at the reference state. The molecular mechanism and the whole-cell network must therefore be considered together.
+
+\subsection{Compensation, stored chloride and sustained secretion}
+
+The reconstructed model repeatedly compensates for AE4 loss through NKCC1. This compensation is not a numerical curiosity. NKCC1 responds to the intracellular sodium, potassium and chloride state, and reduced AE4 loading changes all three. A static comparison of transporter capacities therefore does not determine the integrated chloride supply.
+
+Stored intracellular chloride adds a second layer. Restricting NKCC1 can reduce sustained loading, but the cell may continue secreting for several minutes by releasing its existing chloride pool. A model may therefore reach the desired cumulative secretion deficit only by approaching an unphysiological chloride state. This is precisely what occurred in the finite-capacity tests. The phenotype cannot be assessed from one steady algebraic balance while ignoring the finite intracellular reservoir.
+
+The experimental temporal pattern is particularly informative. AE4-deficient glands initially secrete at a rate close to wild type and diverge during sustained stimulation \citep{Pena2015}. C0 and C3b reproduce the direction of this timing but not its magnitude. The Task 41 CaCC construction reproduces the magnitude but not the timing, because its deficit is already large early. A successful mechanism must satisfy both constraints. It must preserve the initial use of stored chloride while producing a sustained loading or regulatory shortfall that compensation does not erase.
+
+\subsection{What the constructive CaCC model does and does not show}
+
+The AE4-dependent CaCC recruitment law in \cref{eq:cacc-coupling} was selected using the requested 20--35\% secretion range. It is therefore not a prediction and should not be compared with the Task 42 classes as though all models were tested on equal terms. Its purpose is different. It proves that a substantial secretion loss can be generated without forcing intracellular chloride below the physiological range, provided that AE4 loss also reduces sustained apical chloride exit strongly enough to weaken NKCC1 compensation.
+
+The required dependency is large. The null retains only about 10.5\% of the parent stimulated CaCC conductance. Such a strong relationship should be experimentally visible. Time-resolved measurements of TMEM16A/CaCC current under combined cholinergic and beta-adrenergic stimulation therefore provide a direct test. If sustained CaCC recruitment is close to wild type in AE4-deficient cells, the construction is falsified. If initial current is preserved but sustained recruitment declines sharply, the missing coupling becomes biologically plausible.
+
+Other failures remain. The model does not reproduce higher intracellular sodium after AE4 loss, mutant cells end with larger volume, and long-time pH has not been validated beyond 600 s. The constructive model should therefore be viewed as a local statement about network architecture: some reduction in sustained chloride exit can reconcile secretion magnitude with chloride retention, but the particular AE4--CaCC law is not established.
+
+\subsection{A ten-year reassessment rather than a replacement}
+
+The present work is best understood as a reassessment of the original explanation, not a repudiation of the original paper. The 2018 model was built with the information and computational architecture available at the time. It correctly highlighted AE4 and its cation dependence. The new model adds constraints that were previously absent: conserved carbon and alkalinity, a finite buffer, electrogenic bicarbonate entry, source-fixed NHE1 and NKCC1 laws, beta/cAMP/PKA regulation and molecularly motivated AE4 source classes.
+
+With those constraints, the original phenotype is harder to reproduce. That is scientific progress rather than failure. A less constrained model can agree with one observation for several reasons. A more constrained model reveals which reasons remain possible. Here, the biological importance of AE4 remains, but the original cation-routing explanation is insufficient. The missing mechanism lies in the interaction between acid--base supply, compensatory chloride loading and sustained regulation.
+
+\subsection{Experimental predictions and next steps}
+
+The model identifies several measurements that would discriminate the remaining possibilities.
+
+First, stimulated sodium--bicarbonate transport should be quantified in acinar cells under the same combined stimulation used for secretion. The model predicts that a substantial inward bicarbonate-equivalent flux is required if AE4 contributes materially to chloride loading while pH remains near neutral.
+
+Second, NKCC1 activity should be measured through time rather than only as an endpoint or isolated uptake rate. The competing models predict markedly different integrated compensation after AE4 loss.
+
+Third, intracellular sodium, chloride, pH and volume should be recorded together. These variables discriminate models that produce similar total secretion by very different internal routes.
+
+Fourth, apical chloride conductance should be resolved into its early and sustained components in AE4-deficient cells. This is the direct test of the constructive CaCC coupling.
+
+Finally, the Catalán mechanism classes require class-specific kinetic laws. Task 42 deliberately preserved the inherited scalar $J_4$ to isolate source stoichiometry. A molecular model that couples the newly identified residues to rate constants, affinities and regulation could change the whole-cell conclusions. The present negative result applies to stoichiometric source substitution under the inherited kinetics, not to every mechanistic realisation compatible with the 2025 experiments.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The original AE4 model identified the correct biological problem: AE4 is not interchangeable with AE2, and its cation dependence matters. Nearly a decade later, however, a conservation-explicit reconstruction shows that cation stoichiometry alone does not explain the secretion phenotype. An inward bicarbonate pathway is required for substantial wild-type AE4 chloride loading without loss of pH control. Once that pathway and modern NKCC1 and NHE1 laws are included, the network compensates strongly for AE4 loss. None of the source classes proposed from the 2025 molecular experiments recovers the approximately 35\% deficit under the inherited whole-cell kinetics, and several are rejected by stimulated pH rather than by secretion alone.
+
+A target-selected reduction in stimulated CaCC recruitment can reconstruct the phenotype magnitude, but not its complete ionic and temporal signature. The decisive unresolved question is therefore no longer simply what AE4 transports. It is how AE4 transport, acid--base supply and sustained apical chloride exit are regulated together during secretion.

@@ -1,0 +1,107 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=28mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{natbib}
+\usepackage{siunitx}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{xcolor}
+
+\crefname{equation}{equation}{equations}
+\Crefname{equation}{Equation}{Equations}
+\crefname{figure}{figure}{figures}
+\Crefname{figure}{Figure}{Figures}
+\crefname{table}{table}{tables}
+\Crefname{table}{Table}{Tables}
+\crefname{section}{section}{sections}
+\Crefname{section}{Section}{Sections}
+
+\newcommand{\Na}{\mathrm{Na}^{+}}
+\newcommand{\K}{\mathrm{K}^{+}}
+\newcommand{\Cl}{\mathrm{Cl}^{-}}
+\newcommand{\HCO}{\mathrm{HCO}_{3}^{-}}
+\newcommand{\COthree}{\mathrm{CO}_{3}^{2-}}
+\newcommand{\Ca}{\mathrm{Ca}^{2+}}
+\newcommand{\Ae}{\mathrm{AE4}}
+\newcommand{\NKCC}{\mathrm{NKCC1}}
+\newcommand{\NHE}{\mathrm{NHE1}}
+\newcommand{\NBC}{\mathrm{NBC}}
+\newcommand{\CaCC}{\mathrm{CaCC}}
+\newcommand{\TIC}{\mathrm{TIC}}
+\newcommand{\TA}{\mathrm{TA}}
+\newcommand{\dd}{\mathrm{d}}
+
+\title{AE4 control of salivary secretion nearly a decade later:\\
+acid--base balance, transporter stoichiometry and missing network regulation}
+
+% TODO: confirm the complete author list, order and affiliations with all contributors.
+\author{Elías Vera-Sigüenza}
+\date{Draft of \today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Nearly a decade ago, we constructed a mathematical model to explain why deletion of the cation-dependent chloride--bicarbonate exchanger AE4 impairs salivary secretion, whereas deletion of AE2 has little effect. That model reproduced a substantial AE4-null secretory deficit and suggested that AE4's monovalent-cation coupling was the essential distinction. Here we return to that mechanism using a conservation-explicit model reconstructed from the intervening experimental and modelling literature. The new model evolves intracellular and luminal sodium, potassium, chloride, total inorganic carbon, total alkalinity and volume. It includes finite carbonate buffering, source-fixed NKCC1 and NHE1 kinetics, electrogenic sodium--bicarbonate cotransport, beta-adrenergic regulation of AE4 and explicit current, charge, carbon and water closure.
+
+The reconstruction changes the interpretation of the original result. An inward sodium--bicarbonate pathway is required for AE4 to carry a substantial stimulated chloride load without producing an acid--base contradiction. In the reconstructed wild type, NKCC1 and AE4 supply 79.9\% and 20.1\% of positive chloride loading, respectively, while pH remains physiological. However, replacing the original concentration-weighted AE4 cation routing by equal sodium and potassium routing produces only a 3.86\% secretion deficit after complete AE4 loss because NKCC1 compensation replaces most of the missing chloride input. We then test seven source classes permitted by the molecular experiments of Catalán et al. (2025), with all predictions frozen before comparison with the held-out phenotype. None recovers the approximately 35\% experimental deficit. Several carbonate classes instead fail the wild-type pH gate during stimulation.
+
+Finally, an inverse construction shows that an additional AE4-dependent reduction in stimulated CaCC recruitment can produce a 30.3\% null deficit while retaining the declared 600-s physiological gates. This coupling was selected against the target and is not independent validation. The combined results show that the biological importance of AE4 survives the decade, but transporter stoichiometry alone does not explain it. Acid--base supply and sustained network regulation are the missing parts of the original mechanism.
+\end{abstract}
+
+\noindent\textbf{Keywords:} salivary secretion; AE4; SLC4A9; acid--base balance; sodium--bicarbonate cotransport; NKCC1; mathematical physiology
+
+\section{Introduction}
+\label{sec:introduction}
+
+Saliva is produced by the acinar cells of the major salivary glands. Its functions extend from lubrication and digestion to the protection of the oral cavity, and a sustained reduction in flow has substantial clinical consequences. The central physical mechanism has been understood for many years: chloride is accumulated above electrochemical equilibrium in the acinar cell, released across the apical membrane after stimulation, and accompanied by cation and water movement into the lumen \citep{Silva1977,Gin2007,Palk2010,Melvin2005}. The biological difficulty lies not in stating this picture, but in accounting quantitatively for the many transport processes that maintain it.
+
+In 2015, Peña-Münzenmayer et al. reported an initially surprising result. Deletion of the cation-dependent chloride--bicarbonate exchanger AE4 reduced stimulated salivary secretion by approximately 35\%, whereas deletion of the more widely expressed exchanger AE2 had little effect \citep{Pena2015}. The experiment also showed a lower resting intracellular chloride concentration and slower chloride reuptake in AE4-deficient acinar cells. The early secretion response was comparatively well preserved, while the difference between wild type and knockout developed during sustained stimulation. These findings raised a straightforward question: why should AE4 be so important when NKCC1 remains the dominant chloride-loading pathway and AE2 can, at least superficially, perform the same chloride--bicarbonate exchange?
+
+Our 2018 model was built to answer that question \citep{VeraSiguenza2018}. It extended earlier single-cell secretion models by adding AE2, NHE1 and a cation-dependent AE4 cycle. The model reproduced a negligible AE2-null effect and an approximately 24\% reduction in secretion after AE4 deletion. It attributed the distinction to AE4's ability to couple chloride and bicarbonate exchange to monovalent-cation transport. In the model, loss of AE4 increased intracellular sodium and potassium, limited NHE1 and pump activity, reduced chloride accumulation and lowered secretion. The result gave mathematical support to the experimental conclusion that AE4, rather than AE2, supplies the physiologically important bicarbonate-dependent chloride-loading pathway.
+
+That explanation was useful, but it was also incomplete. The 2018 model used a deliberately compact acid--base system. Intracellular bicarbonate was supplied only through carbon dioxide hydration, while NHE1 extruded protons and AE2 and AE4 exported bicarbonate. No additional proton or bicarbonate transporter was included. AE4 was represented as a $1\Cl:1$ monovalent cation:$2\HCO$ cycle, with the sodium and potassium components assigned according to their intracellular concentrations. The model also reached its reduced knockout flow within about two minutes, considerably faster than the roughly ten-minute experimental development of the phenotype. Most importantly, the original agreement with the organ-level flow deficit did not establish that the proposed intracellular mechanism was unique.
+
+A decade of experiments has changed what can reasonably be asked of the model. AE4 has been shown to be an electroneutral cation-dependent chloride--bicarbonate exchanger, with both sodium and potassium supporting transport \citep{Pena2016}. Beta-adrenergic stimulation activates AE4 through the cAMP/PKA pathway, with the S173 region implicated in the response \citep{Pena2021}. More recently, Catalán et al. identified molecular determinants that distinguish sodium-supported from potassium-supported transport and proposed several possible whole-cycle stoichiometries \citep{Catalan2025}. These experiments constrain AE4 much more strongly than was possible in 2018, but they do not determine a complete kinetic law for the secreting acinar cell.
+
+There have also been important developments in the surrounding secretion model. Apical potassium channels and sodium--potassium pumps alter the cation topology of secretion \citep{Almassy2018}. Spatial and multicellular work has shown when the well-stirred cell approximation is adequate and when calcium and volume feedback cannot be separated \citep{VeraSiguenza2019a,Pages2019,VeraSiguenza2020,Sneyd2021}. These results make it possible to return to the AE4 problem with a more explicit accounting of conserved quantities, current closure and transporter provenance.
+
+The aim of the present study is therefore not to reproduce the 2018 answer with newer code. We ask instead which parts of the original mechanism survive reconstruction. First, we rebuild the model in conserved sodium, potassium, chloride, total inorganic carbon and total alkalinity coordinates. This exposes a previously hidden acid--base restriction: substantial productive AE4 chloride loading consumes alkalinity faster than the original NHE1--CO$_2$ cycle can replace it. We show that a stimulus-recruited electrogenic sodium--bicarbonate pathway supplies the missing degree of freedom and permits AE4 to carry a substantial fraction of wild-type chloride loading while maintaining pH. Second, we test whether the original cation-routing argument survives the reconstructed network. Third, we use the mechanism classes proposed by Catalán et al. as a finite, predeclared panel and freeze their predictions before comparison with the held-out secretion phenotype. Finally, we use an explicitly target-selected construction to identify the strength and type of additional coupling that would be required if stoichiometry alone is insufficient.
+
+The story that emerges is both more modest and more informative than the original one. AE4 remains a distinct and important component of the secretory network. However, its cation stoichiometry does not by itself determine the knockout phenotype. The decisive constraints lie in acid--base supply, NKCC1 compensation and the regulation of sustained apical chloride exit.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\textwidth]{figures/fig01_model_evolution.pdf}
+    \caption{Evolution from the 2018 model to the conservation-explicit reconstruction. The original model tracked explicit bicarbonate, protons and carbon dioxide, but included no sodium--bicarbonate cotransporter. The reconstructed model evolves total inorganic carbon (TIC) and total alkalinity (TA), recovers pH algebraically, includes an electrogenic NBC-like input and uses source-fixed NKCC1 and NHE1 laws together with beta/cAMP/PKA regulation of AE4.}
+    \label{fig:model-evolution}
+\end{figure}
+
+\input{model}
+\input{results}
+\input{discussion}
+
+\section*{Data and code availability}
+All model source, frozen prediction checkpoints, compact trajectories, verification records and figure-building scripts are contained in the accompanying public repository. The manuscript figures are regenerated from \texttt{manuscript/data/figure\_source\_values.csv} by \texttt{manuscript/scripts/build\_figures.py}. The Task 42 mechanism-class predictions were committed before the held-out phenotype comparison.
+
+\section*{Author contributions}
+To be completed after the author list has been agreed.
+
+\section*{Funding}
+To be completed before submission.
+
+\section*{Competing interests}
+The author declares no competing interests. This statement must be confirmed by all authors before submission.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

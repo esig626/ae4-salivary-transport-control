@@ -1,67 +1,62 @@
 # AE4 Salivary Transport Control
 
-This is the working repository for the **AE4 salivary transport project**. It contains the current reconstruction, validation and mechanism analysis built from the published AE4 secretion model, while preserving the earlier AE4 project under `archive/` as historical and provenance material.
+This repository contains a source-audited reconstruction of the AE4 salivary secretion model, its finite mechanism tests, and the manuscript now being prepared for the *Bulletin of Mathematical Biology*. The earlier project is retained under `archive/` as historical and provenance material.
 
-The published AE4 model remains the scientific starting point: [A Mathematical Model Supports a Key Role for Ae4 (Slc4a9) in Salivary Gland Secretion](https://link.springer.com/article/10.1007/s11538-017-0370-6).
+The scientific starting point is [A Mathematical Model Supports a Key Role for Ae4 (Slc4a9) in Salivary Gland Secretion](https://doi.org/10.1007/s11538-017-0370-6).
 
-## Central question
+## Scientific question
 
-Why does loss of AE4 produce a substantial secretory phenotype while loss of AE2 produces little or no effect, and can a mechanistically constrained transport model reproduce that distinction without fitting the held out genotype phenotype?
+Why does loss of AE4 produce a substantial secretory phenotype while loss of AE2 produces little or no effect, and which parts of the mechanism proposed in 2018 survive a conservation-explicit reconstruction using the intervening experimental literature?
 
-The project separates three possibilities.
+## Current conclusions
 
-1. The apparent AE4 dominance is a genuine structural property of the transport network.
-2. It is partly or largely an artefact of parameter scaling or transporter allocation in the older model.
-3. The phenotype depends on transport structure or whole cell coupling that is absent from the current model.
+The rebuilt model gives a coherent wild type and passes the declared charge, current, carbon, water, positivity and physiology checks over the 600 s production protocol.
+
+The main findings are:
+
+1. **Acid-base supply constrains AE4.** Once AE4 is required to carry a substantial stimulated chloride load, the original NHE1/CO2 architecture cannot replace the bicarbonate and alkalinity exported by AE4. A stimulus-recruited electrogenic NBC-like pathway supplies the missing degree of freedom. In the validated wild type, positive chloride loading over 60-600 s is 79.9248% NKCC1, 20.0752% AE4 and 0% AE2.
+2. **Equal AE4 cation routing is insufficient.** With the total AE4 cycle fixed and its cation source split equally between sodium and potassium, complete AE4 loss reduces cumulative secretion by only 3.8575%. NKCC1 compensation rises by 23.16%.
+3. **Catalán 2025 stoichiometry alone is insufficient.** Seven predeclared source classes were frozen before phenotype comparison. None recovers the approximately 35% AE4-null secretion phenotype under the inherited scalar AE4 kinetic law. Three carbonate classes fail the stimulated wild-type pH gate.
+4. **A constructive regulatory coupling can recover the magnitude.** A target-selected AE4-dependent reduction in stimulated CaCC recruitment gives 23.16% loss at 5% AE4 and 30.26% in the null while passing the declared 600 s gates. This is a modelling hypothesis, not independent biological validation, and it does not reproduce the complete sodium or temporal phenotype.
+
+The resulting interpretation is narrow but useful: the biological importance of AE4 survives the decade, but cation stoichiometry alone does not explain the knockout. Acid-base supply, NKCC1 compensation and sustained regulation of apical chloride exit remain the decisive unresolved mechanisms.
+
+## Manuscript
+
+The first complete article draft is under `manuscript/`.
+
+Working title:
+
+> **AE4 control of salivary secretion nearly a decade later: acid-base balance, transporter stoichiometry and missing network regulation**
+
+The manuscript is organised around six figures and includes the full reconstructed model, BibTeX references, `cleveref` cross-references, a claim ledger and deterministic figure-building code.
+
+Build it with:
+
+```bash
+bash manuscript/build.sh
+```
+
+The author list, affiliations, funding and contribution statements still require agreement before submission.
 
 ## Repository map
 
-* `archive/` immutable historical material and provenance notes
-* `literature/` published sources, evidence tables and literature audit
-* `model/` canonical equations, parameters, observables and source mapping
-* `src/` newly written reusable model and analysis code
-* `analysis/` numbered research analyses in execution order
-* `tests/` regression, conservation and reproducibility tests
-* `data/` curated or derived data that may legally be version controlled
-* `results/` machine readable outputs used for figures and tables
-* `figures/` publication figures and their source notes
-* `manuscript/` the new manuscript only
-* `docs/` research plan, provenance, decisions and result ledgers
-* `prompts/` reproducible Codex task prompts
+- `archive/`: immutable historical material and provenance notes
+- `literature/`: published sources and evidence tables
+- `model/`: canonical equations, observables and source mapping
+- `src/`: reusable model and analysis code
+- `analysis/`: numbered scientific analyses in execution order
+- `tests/`: regression, conservation and reproducibility tests
+- `results/`: machine-readable outputs used for figures and tables
+- `figures/`: project figures outside the article draft
+- `manuscript/`: article source, figures, data and build scripts
+- `docs/`: research plans, decisions and result ledgers
+- `prompts/`: reproducible scientific task prompts
 
-## Scientific rule
+## Scientific rules
 
-No result from the historical material is automatically a result of this project. New claims must be independently derived from published sources and newly written code, then recorded with reproducibility and provenance.
-
-The approximately 35% experimental AE4 loss secretion reduction is treated as held out phenotype information. It is not a calibration target.
-
-## Current production state
-
-The modern production lineage is consolidated on `main` through **Task 40**.
-
-Tasks 30 to 38 repaired the modern whole cell model and consolidated the active lineage. Task 39 replaced the NKCC1 concentration response core with the source fixed Palk and Benjamin steady law. Task 40 then tested a literal equal Na/K routing rule for AE4 while preserving the inherited total AE4 cycle and every other scientific mechanism.
-
-Task 40 used one WT resting solve and froze that state for WT, 5% AE4 and exact AE4 null 600 s trajectories. All focused tests, numerical gates, physiology gates and conservation checks passed without retries, parameter tuning or genotype specific resting solves.
-
-The final Task 40 results are:
-
-| Quantity | AE4 = 0.05 | AE4 = 0.00 |
-| --- | ---: | ---: |
-| Na_i difference from WT at 600 s | -0.138 mM | -0.093 mM |
-| NKCC1 compensation | +20.82% | +23.16% |
-| Final cumulative secretion ratio | 0.965824 | 0.961425 |
-| Final cumulative secretion deficit | 3.4176% | 3.8575% |
-
-Na_i rises transiently after AE4 loss but is below WT by 600 s. Intracellular chloride remains lower by about 1.89 mM and 2.20 mM. NBC and NHE1 activity decrease substantially, integrated Na/K pump activity increases slightly, and CaCC export and paracellular return decrease. AE2 supplies less than 0.27% of positive chloride loading.
-
-The secretion deficit persists but decreases late in the simulation. The exact null deficit remains far below the held out experimental reduction of about 35%.
-
-## Current interpretation
-
-The present model is now a stable mechanistic reference chassis, but it does **not** reproduce the magnitude of the held out AE4 loss secretion phenotype.
-
-This negative result has survived multiple changes that were plausible candidates for hidden rescue or failure, including transporter allocation, resting re equilibration, NHE1 repair, electrogenic NBC repair, source fixed NKCC1 kinetics and equal AE4 cation routing. In the current model, compensation remains too effective, principally through NKCC1 and the associated ionic rebalancing.
-
-The result should therefore be read as a localisation result, not as proof that AE4 biology is unimportant. The remaining discrepancy points to missing or misrepresented coupling outside the tested AE4 routing and transporter response structures.
-
-The complete Task 40 audit trail is in `analysis/40_ae4_equal_cation_routing/` and `results/40_ae4_equal_cation_routing/`.
+- Historical outputs are not automatically results of the reconstructed project.
+- The approximately 35% experimental AE4-loss secretion reduction is not a calibration target unless a task is explicitly labelled target-selected.
+- Numerical failure, physiological failure and biological mismatch are reported separately.
+- Failed mechanism classes are retained rather than removed after comparison.
+- `archive/` is not rewritten.

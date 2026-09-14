@@ -33,6 +33,9 @@ codegen/
 *.toc
 *.lof
 *.lot
+manuscript/main.pdf
+manuscript/figures/fig*.pdf
+manuscript/figures/fig*.png
 
 # Generated analysis products
 results/tmp/

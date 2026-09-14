@@ -1,0 +1,255 @@
+\section{Model}
+\label{sec:model}
+
+The reconstructed model describes one acinar cell, a finite luminal compartment and an infinite extracellular bath. It retains the well-stirred approximation used in the original AE4 model, but replaces several concentration equations by conserved amount balances. This change is essential for acid--base chemistry, because internal protonation reactions may redistribute carbon species without creating carbon or alkalinity. A schematic comparison is shown in \cref{fig:model-evolution}.
+
+\subsection{Compartments, amounts and concentrations}
+
+Let $n_{s,i}$ and $n_{s,l}$ denote the intracellular and luminal amounts of ion $s\in\{\Na,\K,\Cl\}$. The cell and lumen volumes are $V_i$ and $V_l$, and concentrations are obtained from
+\begin{equation}
+    [s]_r=\frac{n_{s,r}}{V_r}, \qquad r\in\{i,l\}.
+    \label{eq:amount-concentration}
+\end{equation}
+The numerical units are fmol for amount, pL for volume and mM for concentration, so the conversion in \cref{eq:amount-concentration} is exact. The bath concentrations remain constant.
+
+Rather than evolve free bicarbonate and proton concentrations independently, we evolve the total inorganic carbon amount $n_{T,r}$ and total alkalinity amount $n_{A,r}$ in each finite compartment. The complete core state is therefore
+\begin{equation}
+\begin{aligned}
+    y={}&(n_{\mathrm{Na},i},n_{\mathrm{K},i},n_{\mathrm{Cl},i},n_{T,i},n_{A,i},V_i,\\
+       &n_{\mathrm{Na},l},n_{\mathrm{K},l},n_{\mathrm{Cl},l},n_{T,l},n_{A,l},V_l),
+\end{aligned}
+\label{eq:state-vector}
+\end{equation}
+augmented by the regulatory states described below. This amount formulation makes dilution, charge accounting and water transport explicit.
+
+\subsection{Carbonate chemistry and intracellular pH}
+\label{sec:acid-base}
+
+Total inorganic carbon is the sum of dissolved carbon dioxide, bicarbonate and carbonate,
+\begin{equation*}
+    T=[\mathrm{CO}_2]+[\HCO]+[\COthree].
+\end{equation*}
+We include one finite monoprotic non-carbonate buffer with total concentration $B_T=[\mathrm{BH}]+[\mathrm{B}^{-}]$. Total alkalinity is
+\begin{equation}
+    A=[\HCO]+2[\COthree]+[\mathrm{B}^{-}]+[\mathrm{OH}^{-}]-[\mathrm{H}^{+}].
+    \label{eq:total-alkalinity}
+\end{equation}
+For fixed $T$, $A$, $B_T$ and volume, pH is recovered by solving \cref{eq:total-alkalinity} together with the two carbonate dissociation equilibria, water ionisation and the buffer equilibrium. If $K_1$, $K_2$ and $H=[\mathrm H^+]$ denote the carbonate equilibrium constants and proton concentration, the carbon fractions are
+\begin{align*}
+    \alpha_{\mathrm{CO}_2}&=\frac{H^2}{H^2+K_1H+K_1K_2},\\
+    \alpha_{\HCO}&=\frac{K_1H}{H^2+K_1H+K_1K_2},\\
+    \alpha_{\COthree}&=\frac{K_1K_2}{H^2+K_1H+K_1K_2}.
+\end{align*}
+Thus $[\mathrm{CO}_2]=T\alpha_{\mathrm{CO}_2}$, $[\HCO]=T\alpha_{\HCO}$ and $[\COthree]=T\alpha_{\COthree}$. Fast internal hydration and protonation reactions conserve both $T$ and $A$. External species fluxes are mapped to these coordinates. One bicarbonate adds one unit of carbon and one equivalent of alkalinity, one carbonate adds one unit of carbon and two equivalents of alkalinity, and proton extrusion raises alkalinity by one equivalent.
+
+This formulation is the first material departure from the 2018 acid--base model. There, carbon dioxide hydration produced free bicarbonate and protons, NHE1 removed protons, and AE2 and AE4 exported bicarbonate. No additional bicarbonate uptake pathway was present \citep{VeraSiguenza2018}. In the present model, the same biological processes are retained but their effects are expressed in conserved coordinates, which reveals directly whether a proposed transporter can support sustained AE4 activity without violating alkalinity balance.
+
+\subsection{Whole-cell amount balances}
+
+We use positive fluxes in the directions specified below. $J_N$ is the inward NKCC1 cycle flux, $J_H$ is the inward-sodium/outward-proton NHE1 flux, $J_2$ is the inward-chloride/outward-bicarbonate AE2 flux, $J_B$ is the inward electrogenic NBC cycle flux, and $S^4_s$ is the AE4 source for species or conserved quantity $s$. $P_a$ and $P_b$ are apical and basolateral sodium--potassium pump cycle rates. $J_{K,a}$ and $J_{K,b}$ are potassium effluxes from cell to lumen and bath, and $J_{Cl,a}$ is apical chloride efflux. With these conventions, the intracellular balances are
+\begin{equation}
+\begin{aligned}
+\dot n_{\mathrm{Na},i}={}&J_N+J_H+J_B+S^4_{\mathrm{Na}}-3(P_a+P_b),\\
+\dot n_{\mathrm{K},i}={}&J_N+S^4_{\mathrm K}+2(P_a+P_b)-J_{K,a}-J_{K,b},\\
+\dot n_{\mathrm{Cl},i}={}&2J_N+J_2+S^4_{\mathrm{Cl}}-J_{Cl,a},\\
+\dot n_{T,i}={}&J_{\mathrm{CO}_2,b}+J_{\mathrm{CO}_2,a}-J_2+S^4_T+2J_B,\\
+\dot n_{A,i}={}&J_H-J_2+S^4_A+2J_B,\\
+\dot V_i={}&q_b-q_a.
+\end{aligned}
+\label{eq:cell-balances}
+\end{equation}
+Here $J_{\mathrm{CO}_2,b}$ is carbon dioxide transport from bath to cell and $J_{\mathrm{CO}_2,a}$ is transport from lumen to cell. The corresponding luminal balances are
+\begin{equation}
+\begin{aligned}
+\dot n_{\mathrm{Na},l}={}&3P_a-J^p_{\mathrm{Na}}-q_{\mathrm{out}}[\Na]_l,\\
+\dot n_{\mathrm{K},l}={}&-2P_a+J_{K,a}-J^p_{\mathrm K}-q_{\mathrm{out}}[\K]_l,\\
+\dot n_{\mathrm{Cl},l}={}&J_{Cl,a}-J^p_{\mathrm{Cl}}-q_{\mathrm{out}}[\Cl]_l,\\
+\dot n_{T,l}={}&-J^p_{\HCO}-J_{\mathrm{CO}_2,a}-q_{\mathrm{out}}T_l,\\
+\dot n_{A,l}={}&-J^p_{\HCO}-q_{\mathrm{out}}A_l,\\
+\dot V_l={}&q_a+q_t-q_{\mathrm{out}}.
+\end{aligned}
+\label{eq:lumen-balances}
+\end{equation}
+The paracellular fluxes $J^p_s$ are positive from lumen to bath. The lumen is finite, and therefore secretion removes both water and dissolved solutes through the outflow terms in \cref{eq:lumen-balances}.
+
+\subsection{Basolateral chloride loading and pH regulation}
+
+\subsubsection{NKCC1}
+
+NKCC1 transports one sodium, one potassium and two chloride ions inward per cycle. We use the two-state Palk--Benjamin steady flux \citep{Benjamin1997,Palk2010}, corrected to the concentration units used here,
+\begin{equation}
+    J_N=\alpha_N m_N(t)
+    \frac{a_1-a_2[\Na]_i[\K]_i[\Cl]_i^2}
+         {a_3+a_4[\Na]_i[\K]_i[\Cl]_i^2}.
+    \label{eq:nkcc1}
+\end{equation}
+The factor $\alpha_N$ is fixed from the accepted wild-type resting state. The activity multiplier $m_N(t)$ is one at rest and rises algebraically with the normalised calcium stimulus to 1.75 at full activation. This modifies capacity, not stoichiometry or reversal.
+
+\subsubsection{NHE1}
+
+NHE1 exchanges one extracellular sodium for one intracellular proton. We use the eight-state reduction of \citet{Cha2009}. Let
+\begin{align*}
+ a&=k_1^+\frac{[\Na]_e}{[\Na]_e+K_{Na,o}}
+       \frac{K_{H,o}}{[\mathrm H^+]_e+K_{H,o}},\\
+ b&=k_2^+\frac{[\mathrm H^+]_i}{[\mathrm H^+]_i+K_{H,i}}
+       \frac{K_{Na,i}}{[\Na]_i+K_{Na,i}},\\
+ c&=k_1^-\frac{[\Na]_i}{[\Na]_i+K_{Na,i}}
+       \frac{K_{H,i}}{[\mathrm H^+]_i+K_{H,i}},\\
+ d&=k_2^-\frac{[\mathrm H^+]_e}{[\mathrm H^+]_e+K_{H,o}}
+       \frac{K_{Na,o}}{[\Na]_e+K_{Na,o}}.
+\end{align*}
+The exchanger flux is
+\begin{equation}
+    J_H=N_H m_H(t) M_2\frac{ab-cd}{a+b+c+d},
+    \qquad
+    M_2=\left[1+\left(1+\frac{[\mathrm H^+]_e}{K_{M,o}}\right)
+    \left(\frac{K_{M,i}}{[\mathrm H^+]_i}\right)^3\right]^{-1}.
+    \label{eq:nhe1}
+\end{equation}
+$N_H$ is the wild-type carrier amount obtained from the resting pH reconstruction, while $m_H(t)$ rises from one at rest to 2.3 under full stimulation. One positive cycle adds one sodium amount and one alkalinity equivalent to the cell.
+
+\subsubsection{AE2}
+
+AE2 is represented by a reversible chloride--bicarbonate exchange law,
+\begin{equation*}
+    J_2=G_2\tanh\!\left(\frac{A_2}{w}\right),
+    \qquad
+    A_2=\log\!\left(\frac{[\Cl]_e[\HCO]_i}{[\Cl]_i[\HCO]_e}\right),
+\end{equation*}
+where positive flux imports chloride and exports bicarbonate. It contributes $+J_2$ to intracellular chloride and $-J_2$ to both TIC and TA.
+
+\subsubsection{Stimulus-recruited sodium--bicarbonate cotransport}
+\label{sec:nbc}
+
+The reconstructed model includes a minimal electrogenic NBC-like pathway,
+\begin{equation*}
+    [\Na]_e+2[\HCO]_e \rightleftharpoons [\Na]_i+2[\HCO]_i.
+\end{equation*}
+This is a structural pathway rather than an assignment to a particular salivary SLC4 isoform. Its inward affinity and flux are
+\begin{equation}
+\begin{aligned}
+    A_B&=\log\!\left(
+       \frac{[\Na]_e[\HCO]_e^2}{[\Na]_i[\HCO]_i^2}
+       \right)+\frac{V_b}{V_T},\\
+    J_B&=u(t)G_B\tanh\!\left(\frac{A_B}{w_B}\right).
+\end{aligned}
+\label{eq:nbc}
+\end{equation}
+Here $V_T=RT/F$, and $V_b=\phi_i-\phi_e$ is the basolateral potential. The activation $u(t)$ is exactly zero at the resting calcium concentration and one at the standard stimulated calcium input. Thus the accepted resting model is an exact nesting limit. Each inward cycle adds one sodium amount, two units of TIC and two alkalinity equivalents. It carries one net negative charge into the cell, so the conventional current is $I_B=FJ_B$ in the cell-to-bath current convention and is included in basolateral current closure.
+
+The need for \cref{eq:nbc} follows directly from \cref{eq:cell-balances}. Without NBC, the sustained alkalinity balance is
+\begin{equation*}
+    0=J_H-J_2+S_A^4.
+\end{equation*}
+For the original AE4 stoichiometry, $S_A^4=-2J_4$. Substantial AE4 chloride loading therefore requires either a comparably large NHE1 flux or another inward source of alkalinity. The NHE1 flux compatible with the measured pH and sodium state is too small to supply that requirement. With NBC, the sustained balance becomes
+\begin{equation}
+    0=J_H+2J_B-J_2+S_A^4,
+    \label{eq:alkalinity-balance}
+\end{equation}
+which supplies precisely the missing degree of freedom without importing chloride directly.
+
+\subsection{AE4 transport and regulation}
+
+The parent AE4 flux is a reversible two-conformation, shared-carrier quasi-steady model. It has one common chloride transition and separate sodium- and potassium-loaded return transitions. For cation $c\in\{\Na,\K\}$, the forward affinity of the original $1\Cl:1c:2\HCO$ cycle is
+\begin{equation}
+    A_{4,c}=\log\!\left(\frac{[\Cl]_e}{[\Cl]_i}\right)
+           +\log\!\left(\frac{[c]_i}{[c]_e}\right)
+           +2\log\!\left(\frac{[\HCO]_i}{[\HCO]_e}\right).
+    \label{eq:ae4-affinity}
+\end{equation}
+The effective forward and reverse rates are constructed symmetrically, $k^+=\bar k\exp(A/2)$ and $k^-=\bar k\exp(-A/2)$, so local detailed balance and the exact reversal condition are preserved. If $p_o$ and $p_i$ are the two carrier occupancies, the cation branch fluxes are
+\begin{align*}
+    J_{4,\Na}&=N_4m_4(t)(k_{\Na}^{+}p_i-k_{\Na}^{-}p_o),\\
+    J_{4,\K}&=N_4m_4(t)(k_{\K}^{+}p_i-k_{\K}^{-}p_o),
+\end{align*}
+and the total chloride-loading cycle is $J_4=J_{4,\Na}+J_{4,\K}$.
+
+Beta-adrenergic regulation is represented by one effective activation fraction $x_4$,
+\begin{equation}
+    \dot x_4=\frac{\beta(t)-x_4}{\tau_4},
+    \qquad m_4(t)=1+g_4x_4,
+    \label{eq:ae4-regulation}
+\end{equation}
+with $\tau_4=30$ s and $g_4=0.25$. This is the smallest dynamic representation consistent with the experimentally established beta/cAMP/PKA direction of regulation \citep{Pena2021}; it does not assert that the intermediate kinetics have been measured.
+
+For the equal-routing model, the total scalar cycle $J_4$ is retained but its cation source is divided equally between sodium and potassium. The conserved-coordinate source is
+\begin{equation}
+    \left(S^4_{\mathrm{Na}},S^4_{\mathrm K},S^4_{\mathrm{Cl}},S^4_T,S^4_A\right)
+    =\left(-\tfrac12,-\tfrac12,1,-2,-2\right)J_4.
+    \label{eq:equal-routing-source}
+\end{equation}
+This modification isolates cation routing from total AE4 chloride loading. It is not claimed to be a microscopic AE4 mechanism.
+
+\subsection{Catalán 2025 mechanism classes}
+\label{sec:catalan-classes}
+
+Catalán et al. experimentally constrained the residues and cation dependence of human AE4, and proposed several possible electroneutral transport cycles \citep{Catalan2025}. The exact stoichiometries remain hypotheses. We therefore test a finite panel by keeping the inherited scalar $J_4(y,t)$ fixed and changing only the transported source vector. This first-stage construction asks what the proposed stoichiometries do to the whole-cell balances; it does not replace the missing class-specific kinetic law.
+
+\begin{table}[t]
+\centering
+\caption{Predeclared AE4 source classes. Each row gives $(S_{\mathrm{Na}}^4,S_{\mathrm K}^4,S_{\mathrm{Cl}}^4,S_T^4,S_A^4)/J_4$.}
+\label{tab:mechanism-classes}
+\footnotesize
+\begin{tabularx}{\textwidth}{lXXl}
+\toprule
+Class & Proposed cycle & Source vector & Affinity \\
+\midrule
+C0 & equal-routing $1:1:2$ control & $(-1/2,-1/2,1,-2,-2)$ & opposed \\
+C1 & $\Cl+\Na$ in, $\K+\HCO$ out & $(1,-1,1,-1,-1)$ & supported \\
+C2 & $\Cl+\Na$ in, $2\K+\COthree$ out & $(1,-2,1,-1,-2)$ & supported \\
+C3a & $\Cl$ in, $\K+2\HCO$ out & $(0,-1,1,-2,-2)$ & supported \\
+C3b & $\Cl$ in, $\Na+2\HCO$ out & $(-1,0,1,-2,-2)$ & opposed \\
+C4a & $\Cl$ in, $\K+\COthree$ out & $(0,-1,1,-1,-2)$ & supported \\
+C4b & $\Cl$ in, $\Na+\COthree$ out & $(-1,0,1,-1,-2)$ & opposed \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The carbonate classes distinguish carbon from alkalinity: outward transport of one $\COthree$ removes one unit of TIC and two equivalents of TA. Representing carbonate as bicarbonate would therefore violate both the chemistry and charge balance. All seven source vectors in \cref{tab:mechanism-classes} are exactly electroneutral and reverse consistently when $J_4$ changes sign.
+
+\subsection{Membrane currents and voltage closure}
+
+The apical and basolateral membrane potentials are $V_a=\phi_i-\phi_l$ and $V_b=\phi_i-\phi_e$. The transepithelial potential is $V_t=V_b-V_a$. For ion $s$ of valence $z_s$, the Nernst potential between the named compartments is
+\begin{equation*}
+    E_s=\frac{V_T}{z_s}\log\!\left(\frac{[s]_{\mathrm{out}}}{[s]_{\mathrm{in}}}\right).
+\end{equation*}
+Calcium-activated potassium and chloride conductances use a Hill gate
+\begin{equation*}
+    h_{Ca}=\frac{[\Ca]_i^r}{[\Ca]_i^r+K_{Ca}^r},
+\end{equation*}
+and Ohmic currents $I=Gh_{Ca}(V-E)$. Total pump capacity is partitioned between apical and basolateral membranes. For either membrane side $r$,
+\begin{equation*}
+    P_r=P_{r,\max}
+    \frac{[\Na]_i^3}{[\Na]_i^3+K_{Na}^3}
+    \frac{[\K]_r^2}{[\K]_r^2+K_K^2}.
+\end{equation*}
+Each cycle exports three intracellular sodium ions and imports two potassium ions from the corresponding external compartment.
+
+Paracellular currents are linear,
+\begin{equation*}
+    I_s^p=G_s^p(V_t-E_s^p),
+\end{equation*}
+with positive direction from lumen to bath. Membrane capacitance is fast relative to secretion, so voltages satisfy quasi-steady current closure,
+\begin{equation}
+\begin{aligned}
+    I_a-I_p&=0,\\
+    I_b+I_B+I_p&=0,
+\end{aligned}
+\label{eq:current-closure}
+\end{equation}
+where $I_B$ is omitted at rest because the NBC increment is then exactly zero. The voltage system is solved at every right-hand-side evaluation. Source-charge identities are checked independently against \cref{eq:current-closure}.
+
+\subsection{Water transport and luminal outflow}
+
+Water follows osmotic differences between the three compartments,
+\begin{align*}
+    q_b&=L_b(\Pi_i-\Pi_e), & q_a&=L_a(\Pi_l-\Pi_i),\\
+    q_t&=L_t(\Pi_l-\Pi_e), & q_{\mathrm{out}}&=k_{\mathrm{out}}\max(V_l-V_{\mathrm{dead}},0).
+\end{align*}
+The osmolarities include sodium, potassium, chloride, total inorganic carbon and the fixed intracellular osmolyte pool. The resulting volume equations are already included in \cref{eq:cell-balances,eq:lumen-balances}. The outflow law is a finite-lumen compliance closure. It is used consistently across all comparisons and is not interpreted as an independently measured ductal pressure law.
+
+\subsection{Stimulus, genotypes and numerical protocol}
+
+The standard production stimulus combines muscarinic and beta-adrenergic activation for 600 s. Intracellular calcium is prescribed by the experimental protocol, as in the original single-cell model, while the beta input drives \cref{eq:ae4-regulation}. Wild type has AE4 expression $e_4=1$, the reduced-expression case has $e_4=0.05$, and the null has $e_4=0$. Unless explicitly stated, all genotypes begin from the same frozen wild-type resting state and all non-AE4 parameters remain fixed.
+
+The system is integrated with an implicit Radau method. The numerical gates require positive amounts and volumes, intracellular sodium, potassium, chloride and pH within the predeclared physiological ranges, exact source-charge bookkeeping, current closure, carbon accounting and water conservation. The Catalán mechanism panel was fixed before calculation. All seven class predictions were committed at checkpoint \texttt{4cb75308...} before comparison with the held-out AE4 secretion phenotype. No class was tuned, discarded or rescued on the basis of its secretion prediction.
