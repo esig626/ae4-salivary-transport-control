@@ -1,0 +1,62 @@
+figure,series,x,value,unit,source,notes
+2,WT chloride loading,NKCC1,79.9248,percent,results/37_wt_nbc_validation/wt_chloride_partition.json,Positive chloride loading integrated over 60-600 s
+2,WT chloride loading,AE4,20.0752,percent,results/37_wt_nbc_validation/wt_chloride_partition.json,Positive chloride loading integrated over 60-600 s
+2,WT chloride loading,AE2,0.0,percent,results/37_wt_nbc_validation/wt_chloride_partition.json,Positive chloride loading integrated over 60-600 s
+3,Task 40 AE4 5%,60,1.280122111,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 5%,120,2.490336216,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 5%,180,3.161540623,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 5%,240,3.501228139,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 5%,300,3.649544375,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 5%,360,3.687123704,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 5%,420,3.660401551,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 5%,480,3.596699266,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 5%,540,3.512423329,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 5%,600,3.417577608,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 null,60,1.370455407,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 null,120,2.696045367,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 null,180,3.451989870,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 null,240,3.850192870,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 null,300,4.037770116,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 null,360,4.100713699,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 null,420,4.089365787,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 null,480,4.033890716,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 null,540,3.952762836,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 40 AE4 null,600,3.857486297,percent,results/40_ae4_equal_cation_routing/flow_and_cumulative_comparison.csv,Cumulative secretion deficit
+3,Task 41 AE4 5%,60,28.82,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 5%,120,26.82,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 5%,180,26.03,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 5%,240,25.47,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 5%,300,25.00,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 5%,360,24.57,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 5%,420,24.17,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 5%,480,23.81,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 5%,540,23.47,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 5%,600,23.16,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 null,60,37.05,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 null,120,34.49,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 null,180,33.48,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 null,240,32.80,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 null,300,32.25,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 null,360,31.77,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 null,420,31.34,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 null,480,30.94,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 null,540,30.59,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+3,Task 41 AE4 null,600,30.26,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Cumulative secretion deficit
+4,Task 39,AE4 5%,29.65,percent,analysis/39_palk_nkcc1_full_validation/final_answer.md,NKCC1 compensation over 60-600 s
+4,Task 39,AE4 null,33.10,percent,analysis/39_palk_nkcc1_full_validation/final_answer.md,NKCC1 compensation over 60-600 s
+4,Task 40,AE4 5%,20.82,percent,analysis/40_ae4_equal_cation_routing/final_answer.md,NKCC1 compensation over 60-600 s
+4,Task 40,AE4 null,23.16,percent,analysis/40_ae4_equal_cation_routing/final_answer.md,NKCC1 compensation over 60-600 s
+4,Task 41,AE4 5%,5.68,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,NKCC1 compensation over 60-600 s
+4,Task 41,AE4 null,2.79,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,NKCC1 compensation over 60-600 s
+5,Task 42 null phenotype,C0,3.857486297,percent,results/42_catalan_2025_ae4_mechanism_classes/mechanism_comparison.csv,Valid WT trajectory; affinity opposed
+5,Task 42 null phenotype,C1,-10.76401702,percent,results/42_catalan_2025_ae4_mechanism_classes/mechanism_comparison.csv,Valid WT trajectory; affinity supported
+5,Task 42 null phenotype,C2,,percent,results/42_catalan_2025_ae4_mechanism_classes/mechanism_comparison.csv,WT pH gate failed at 190 s
+5,Task 42 null phenotype,C3a,-0.7242924673,percent,results/42_catalan_2025_ae4_mechanism_classes/mechanism_comparison.csv,Valid WT trajectory; affinity supported
+5,Task 42 null phenotype,C3b,7.667255646,percent,results/42_catalan_2025_ae4_mechanism_classes/mechanism_comparison.csv,Valid WT trajectory; affinity opposed
+5,Task 42 null phenotype,C4a,,percent,results/42_catalan_2025_ae4_mechanism_classes/mechanism_comparison.csv,WT pH gate failed at 222 s
+5,Task 42 null phenotype,C4b,,percent,results/42_catalan_2025_ae4_mechanism_classes/mechanism_comparison.csv,WT pH gate failed at 317 s
+6,Ten-year synthesis,2018 model,24.0,percent,Vera-Siguenza et al. 2018,Reported model AE4-null flow reduction
+6,Ten-year synthesis,Task 40,3.857486297,percent,analysis/40_ae4_equal_cation_routing/final_answer.md,Equal-routing null deficit
+6,Ten-year synthesis,Task 42,7.667255646,percent,analysis/42_catalan_2025_ae4_mechanism_classes/final_answer.md,Largest valid class deficit; affinity opposed
+6,Ten-year synthesis,Task 41,30.2612,percent,analysis/41_ae4_loss_algebraic_design/final_answer.md,Target-selected constructive model
+6,Ten-year synthesis,Experiment,35.0,percent,Peña-Münzenmayer et al. 2015,Held-out central estimate; reported uncertainty 4.7 percentage points
