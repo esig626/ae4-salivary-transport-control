@@ -1,68 +1,112 @@
-# Active phase: Task 36 manual mechanism verification
+# Active phase: Task 37 WT-only NBC validation
 
-Work only on `codex/task-36-minimal-nahco3-alkalinity`.
+Work only on `codex/task-37-wt-nbc-validation`.
+Read and execute `prompts/37_wt_nbc_validation.md`.
 
-This branch is being verified interactively before any Codex execution. Do not launch a search programme from this branch.
+This task validates the corrected Task 36 architecture in WT only. It is not a calibration, search, genotype or mechanism-discovery task.
 
 ## Fixed scientific decisions
 
-- Start from the accepted Task 31 R09 resting model and mechanistic Cha et al. NHE1 carrier amount `2.339370005697548e-05 fmol`.
-- Preserve the existing AE4 routed topology and 1 Cl : 1 monovalent cation : 2 HCO3 working stoichiometry.
-- Preserve AE2, NKCC1, pump, K channels, CaCC, CO2, paracellular, water, bath, geometry and existing AE4 beta/PKA regulation unless a literal wiring defect is found.
-- Do not force the stimulated 70/30 chloride partition at REST.
-- The accepted Task 31 REST must remain an exact nesting limit.
+- Start from the accepted Task 31 R09 WT resting state.
+- Keep the Task 31 Cha et al. mechanistic NHE1 carrier amount `2.339370005697548e-05 fmol`.
+- Keep routed AE4 with `1 Cl : 1 monovalent cation : 2 HCO3` working stoichiometry.
+- Keep the Task 36 electrogenic NBC surrogate exactly as implemented:
+  `Na_o + 2 HCO3_o <-> Na_i + 2 HCO3_i`.
+- The NBC source signature is exactly `(+1 Na, 0 K, 0 Cl, +2 TIC, +2 TA)` per inward cycle.
+- NBC carries net `-1` charge-equivalent into the cell and participates in basolateral current closure.
+- Keep `G_NBC = 0.11570913197464398 fmol/s` fixed.
+- Keep `u_sec = clip((Ca - 0.058)/(0.25 - 0.058), 0, 1)` fixed.
+- Keep the NHE1 stimulation multiplier `1 + 1.3 u_sec`, giving exactly `1.0x` at REST and `2.3x` at `Ca=0.25 uM`.
+- Preserve AE2, NKCC1, pump, K channels, CaCC, CO2, paracellular transport, water laws, bath, geometry and existing AE4 beta/PKA regulation.
+- Do not force 70/30 at REST.
+- Do not fit the WT stimulated chloride partition. Compare it only with the 65--75% NKCC1 context after the run.
 
-## Task 36 structural intervention
+## Phase A: implementation and REST nesting only
 
-The discarded 1 Na : 1 HCO3 electroneutral NBC draft is not valid.
+Run the focused Task 36 NBC tests and the minimum directly required Task 31 NHE regressions.
 
-The active Task 36 surrogate is a stimulus-recruited electrogenic NBCe-like cycle:
+Verify stoichiometry, electrogenic current sign, voltage-dependent affinity, reversal, source bookkeeping and exact zero NBC recruitment at REST.
 
-`Na_o + 2 HCO3_o <-> Na_i + 2 HCO3_i`.
+Evaluate the accepted Task 31 R09 resting state directly under both the Task 31 model and Task 36 wrapper. Do not solve another root.
 
-Positive inward cycle source signature in conserved cell coordinates is
+If a literal implementation bug prevents the already-declared Task 36 equations from being represented, make only the smallest correction consistent with those equations. Do not alter any scientific choice or parameter.
 
-`(+1 Na, 0 K, 0 Cl, +2 TIC, +2 TA)`.
+If focused tests or REST nesting fail after that one correction opportunity, stop with:
 
-It carries net `-1` charge-equivalent into the cell per inward cycle and therefore must participate explicitly in basolateral current closure.
+`TASK37_IMPLEMENTATION_OR_REST_NESTING_FAILED`
 
-The inward affinity is
+## Phase B: exactly one WT stimulation
 
-`A_NBC = log((Na_o HCO3_o^2)/(Na_i HCO3_i^2)) + V_b/(RT/F)`.
+Only after Phase A passes, run one intended WT trajectory:
 
-The flux law is
+- CCh `0.3 uM`
+- isoproterenol `5 uM`
+- Ca `0.25 uM`
+- standard beta/IPR input
+- `0--600 s`
+- accepted Task 31 R09 WT state as the initial condition
+- AE4 expression exactly `1.0`
 
-`J_NBC = u_sec * G_NBC * tanh(A_NBC/2)`.
+No stationary solve is permitted.
 
-Use
+One retry is allowed only for a clearly numerical ODE solver failure and may change only to another already-declared production stiff solver configuration.
 
-`u_sec = clip((Ca - 0.058)/(0.25 - 0.058), 0, 1)`.
+If WT violates physical/conservation gates, stop with:
 
-Thus NBC is exactly zero at Task 31 REST and fully recruited at the standard central `Ca=0.25 uM` condition.
+`WT_NBC_TRAJECTORY_PHYSIOLOGY_FAILED`
 
-The same secretory coordinate applies the source-fixed NHE1 stimulation
+If WT fails the secretion activation gate, stop with:
 
-`G_NHE = 1 + 1.3 u_sec`,
+`WT_NBC_SECRETION_GATE_FAILED`
 
-so NHE1 is exactly Task 31 at REST and 2.3-fold active at the central stimulated endpoint. Do not change any Cha kinetic constant or add an NHE state/time constant.
+Do not rescue either failure.
 
-The current fixed structural capacity is
+## Absolute anti-combinatorial rules
 
-`G_NBC = 0.11570913197464398 fmol/s`.
+There is no search in Task 37.
 
-This is derived from the WT stimulated 70/30 chloride-loading feasibility algebra plus self-consistent current closure at the Task 31 reference chemical state. It is not a measured NBC abundance and not a knockout-phenotype fit.
+- No optimisation.
+- No stationary solve.
+- No grids or sweeps.
+- No one-at-a-time parameter exploration.
+- No pairwise/factorial search.
+- No random search.
+- No multistart.
+- No global/evolutionary/Bayesian optimisation.
+- No Shapley analysis.
+- No NBC capacity change.
+- No alternate NBC stoichiometry or law.
+- No NHE1 gain change or alternate NHE model.
+- No AE4/NKCC1/AE2/pump/channel/CO2/paracellular/water changes.
+- No alternative Ca, CCh, beta or isoproterenol input.
+- No alternate AE4 regulatory family.
+- No R10.
+- No genotype perturbation.
+- No AE4 5%.
+- No AE4 0%.
+- No automatic escalation to another mechanism.
 
-## No search
+If WT fails, report and STOP.
 
-- No Cartesian grids.
-- No parameter sweeps.
-- No pairwise or factorial searches.
-- No random, global, evolutionary or Bayesian optimisation.
-- No alternative NBC stoichiometries in the same task.
-- No automatic addition of another transporter.
-- No widening or retuning the NBC capacity after seeing genotype results.
-- No fitting to the AE4-null secretion phenotype.
+## Hard compute stop
 
-Before any genotype dynamics, verify the stoichiometry, charge/current closure, carbon accounting and exact Task 31 REST nesting. Then run at most the direct WT stimulated trajectory. Only after WT is physically admissible should AE4 5% and 0% be evaluated.
+- zero stationary solves;
+- zero optimisation calls;
+- exactly one intended WT integration;
+- at most one numerical WT retry;
+- maximum two integration attempts total;
+- no genotype integrations;
+- one worker;
+- one BLAS thread;
+- maximum 10 minutes numerical execution.
 
+## GitHub publication
+
+Use the connected GitHub integration for all remote writes.
+Do not run `gh auth`, request a PAT, configure SSH or depend on shell `git push` credentials.
+Shell Git is only for local status/diff inspection.
+Publish compact UTF-8 outputs directly to `codex/task-37-wt-nbc-validation`.
+Do not publish binary trajectories or archives.
 Do not merge or modify `main`.
+
+The task ends after the WT report. Do not continue to AE4 perturbations inside Task 37.
