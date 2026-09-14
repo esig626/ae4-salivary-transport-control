@@ -1,20 +1,28 @@
 {
   "blas_threads": 1,
   "class_id": "C4a",
-  "completed_cases": [],
+  "completed_cases": [
+    "ae4_5pct",
+    "ae4_null"
+  ],
   "genotype_rest_solves": 0,
-  "integration_attempts": 0,
-  "no_further_scientific_execution": false,
-  "numerical_execution_seconds": 0.4560420640000302,
+  "integration_attempts": 3,
+  "limits_respected": true,
+  "no_further_scientific_execution": true,
+  "numerical_execution_seconds": 5.689535555000475,
   "numerical_retries": 0,
   "optimisation_calls": 0,
   "parameter_sweeps": 0,
   "source_tests_pass": true,
-  "started_cases": [],
+  "started_cases": [
+    "wt",
+    "ae4_5pct",
+    "ae4_null"
+  ],
   "stationary_numerical_retries": 0,
   "stationary_residual_evaluations": 75,
   "stationary_solves": 1,
-  "status": "WT_REST_FROZEN",
+  "status": "TASK42_SOURCE_CLASS_PREDICTIONS_COMPLETE_WITH_FAILURES",
   "workers": 1,
   "wt_rest_pass": true
 }
