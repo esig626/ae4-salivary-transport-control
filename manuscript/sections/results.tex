@@ -1,0 +1,86 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{The original acid--base architecture restricts productive AE4 loading}
+
+The first difficulty appeared before any knockout calculation. In the original architecture, the sustained intracellular alkalinity balance is obtained from \cref{eq:cell-ta} with $J_B=0$,
+\[
+0\approx J_H-J_2-2J_4.
+\]
+A large positive AE4 chloride flux therefore consumes two alkalinity equivalents per cycle and can be sustained only by NHE1 or by reversing AE2. Under source constrained NHE1 kinetics and physiological pH, this balance forces AE4 to remain a small part of the positive chloride loading pool. Attempts to increase AE4 capacity without another inward base pathway either failed to attain an admissible wild type state or moved pH, bicarbonate, luminal composition or transporter capacities outside the predeclared ranges.
+
+The inward $1\Na:2\HCO$ pathway changes that balance to
+\begin{equation}
+\label{eq:alkalinity-balance}
+0\approx J_H+2J_B-J_2-2J_4.
+\end{equation}
+It supplies alkalinity without also importing chloride. This is the structural degree of freedom that was absent from the 2018 model. The point is not that NBC directly generates fluid. Rather, NBC permits AE4 to support chloride loading without exhausting intracellular bicarbonate or forcing NHE1 and AE2 into implausible compensatory regimes.
+
+\subsection{NBC restores a physiological wild type with substantial AE4 loading}
+
+With the stimulus recruited NBC law in \cref{eq:nbc-flux}, the resting model nests exactly because $u_{\mathrm{sec}}=0$. During stimulation, NBC supplies bicarbonate equivalents at a rate comparable with their consumption by AE4. Wild type pH remained between 6.910 and 7.035, chloride remained between 54.08 and 60.30 mM, and all current and conservation gates passed.
+
+Over 60--600 seconds, NKCC1 supplied 79.92\% of the positive chloride loading pool, AE4 supplied 20.08\%, and AE2 supplied no positive loading. Thus AE4 became a substantial secondary chloride loader without being forced to replace NKCC1 as the dominant pathway. The coupled pH, bicarbonate, NBC and AE4 trajectories are shown in \cref{fig:nbc}. This is the first central result of the reconstruction: once AE4 is required to make a material contribution to stimulated chloride loading, an inward bicarbonate pathway is structurally necessary.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\textwidth]{figure2_nbc_acid_base.pdf}
+    \caption{NBC and acid--base balance in the reconstructed wild type model. (a) Intracellular pH and bicarbonate remain within the declared physiological range during the 600 second stimulus. (b) Stimulus recruited NBC supplies bicarbonate while AE4 exports base and loads chloride. NHE1 contributes alkalinity but cannot by itself support the required AE4 flux. (c) Integrated positive chloride loading over 60--600 seconds is approximately 80\% NKCC1 and 20\% AE4, with negligible positive AE2 loading.}
+    \label{fig:nbc}
+\end{figure}
+
+\subsection{Equal cation routing reveals strong compensation after AE4 loss}
+
+The reconstructed wild type did not preserve the original knockout explanation. Fixing the AE4 cation source to a literal 50:50 sodium/potassium split while leaving its scalar chloride cycle and all other mechanisms unchanged produced cumulative secretion deficits of only 3.42\% at 5\% AE4 and 3.86\% after complete deletion. NKCC1 positive chloride loading increased by 20.82\% and 23.16\%, respectively.
+
+The ionic response also differed from the 2018 prediction. Intracellular chloride was 2.20 mM below wild type at 600 seconds, but intracellular sodium was not persistently elevated. Sodium rose transiently and ended 0.093 mM below wild type. NBC and NHE1 activity fell substantially because removing AE4 base export changed the coupled carbon and alkalinity balance. This reduced sodium entry and helped the pump restore sodium despite the loss of AE4 cation export. These trajectories are shown in \cref{fig:task40}.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\textwidth]{figure3_task40_compensation.pdf}
+    \caption{Task 40 equal cation routing. (a) Wild type, 5\% AE4 and null cumulative secretion remain close throughout the simulation. (b) AE4 loss lowers intracellular chloride, but not enough to produce the experimental secretion deficit. (c) Sodium rises transiently after deletion but does not remain above wild type.}
+    \label{fig:task40}
+\end{figure}
+
+The reason is visible directly from the balances. Let $P$ denote total pump cycles and suppress the smaller apical potassium terms for the algebraic elimination. Combining \cref{eq:cell-na,eq:cell-cl,eq:cell-ta} under the equal source vector gives the exact transient identity
+\begin{equation}
+\label{eq:cacc-identity}
+J_{Cl,a}=6P-J_H+2\frac{dn_{\Na,i}}{dt}
+-\frac{dn_{\TA,i}}{dt}-\frac{dn_{\Cl,i}}{dt}.
+\end{equation}
+At stationary state,
+\begin{equation}
+\label{eq:cacc-steady}
+J_{Cl,a}=6P-J_H.
+\end{equation}
+The explicit AE4 term cancels. AE4 still affects secretion through the state dependence of the pump, NHE1, NBC, NKCC1 and the membrane potentials, but its sodium/potassium split does not directly set the sustained apical chloride flux. This explains why changing the split alone did not preserve the original phenotype.
+
+\subsection{Catalán 2025 source classes do not recover the knockout phenotype}
+
+The Task 42 prediction checkpoint was committed before comparison with the held out phenotype. All seven source classes passed their wild type resting state gates. Eighteen of the 21 production trajectories passed. The three failures were wild type simulations of the carbonate classes C2, C4a and C4b, which crossed the lower pH limit at 190, 222 and 317 seconds, respectively. These failures were retained without rescue.
+
+Among the classes with valid 600 second wild type trajectories, none approached a 35\% null secretion deficit (\cref{fig:classes}). C1, the proposed sodium and chloride inward with potassium and bicarbonate outward cycle, predicted 10.76\% more secretion after AE4 deletion. Its NKCC1 loading increased by 95.48\%. C3a was thermodynamically supported at the reference state but predicted essentially no phenotype, with a 0.72\% secretion increase. C3b produced the largest valid deficit, 7.67\%, but its forward affinity was opposed at the frozen wild type reference state. The Task 40 control remained at 3.86\%.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\textwidth]{figure4_task42_classes.pdf}
+    \caption{Discrimination of the Catalán 2025 stoichiometric source classes. (a) Complete AE4 deletion produces only small losses, or increases secretion, among classes with a valid 600 second wild type reference. Hatched entries failed the wild type pH gate and therefore have no admissible secretion ratio. The shaded band indicates the approximate experimental deficit. (b) NKCC1 compensation remains large in the supported classes. (c) Forward affinities at the frozen Task 40 reference state and the times at which carbonate class wild type trajectories crossed the pH floor.}
+    \label{fig:classes}
+\end{figure}
+
+The temporal pattern provided an additional discriminator. The C0 and C3b deficits were small initially and grew later, which is qualitatively closer to the experimental separation of wild type and knockout secretion. Their magnitudes, however, were far too small. C1 and C3a moved in the wrong direction. Therefore the failure was not merely a scalar mismatch. No predeclared stoichiometric source class simultaneously reproduced the sign, magnitude, time course, pH and compensatory response.
+
+This result does not falsify the molecular experiments or the proposed transport cycles. The Task 42 calculation intentionally held the Task 40 scalar kinetic law $J_4(\mathbf{x})$ fixed and changed only the transported source coefficients. The experiments of \citet{Catalan2025} constrain cation dependence and coordination but do not provide a complete salivary whole cell kinetic law. Our conclusion is narrower: changing stoichiometric source accounting alone is insufficient under the inherited kinetics and network.
+
+\subsection{A target selected CaCC coupling reconstructs magnitude but not mechanism}
+
+The failed source class panel motivated a separate constructive question. Applying \cref{eq:cacc-coupling} with full stimulus conductance equal to 14.99\% of the parent value at 5\% AE4 and 10.51\% in the null produced cumulative secretion deficits of 23.16\% and 30.26\%. All three 600 second trajectories passed the declared physiology and conservation checks. Reducing apical export as well as basolateral loading allowed the mutant cells to retain chloride and suppressed NKCC1 compensation to 5.68\% and 2.79\%.
+
+The construction is informative but not validated. It assumes that approximately 89.5\% of fully stimulated CaCC recruitment depends directly or indirectly on AE4. Sodium remains below wild type after AE4 loss. Mutant pH is still increasing at 600 seconds, and behaviour beyond the simulated interval has not been established. Most importantly, the percentage secretion deficit is largest early and then declines towards 30.26\%, whereas the experimental phenotype develops during sustained secretion. The comparison is shown in \cref{fig:constructive}.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\textwidth]{figure5_constructive_coupling.pdf}
+    \caption{Target selected constructive comparison. (a) The AE4 dependent CaCC recruitment law generates the requested null deficit, whereas equal routing alone does not. (b) The constructive model produces a large early deficit that declines with time, unlike the gradual experimental divergence. (c) The null retains intracellular chloride while sodium falls, demonstrating that matching secretion magnitude does not reproduce the complete cellular phenotype.}
+    \label{fig:constructive}
+\end{figure}
