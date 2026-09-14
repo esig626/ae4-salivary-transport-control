@@ -1,0 +1,89 @@
+\subsection{Whole cell and lumen equations}
+
+Let $P=P_a+P_b$ denote total pump cycles. Under the equal routing control, the intracellular amount balances are
+\begin{align}
+\frac{dn_{\Na,i}}{dt}&=J_N+J_H+J_B-\frac12J_4-3P,
+\label{eq:cell-na}\\
+\frac{dn_{\K,i}}{dt}&=J_N-\frac12J_4+2P-J_{K,a}-J_{K,b},
+\label{eq:cell-k}\\
+\frac{dn_{\Cl,i}}{dt}&=2J_N+J_4+J_2-J_{Cl,a},
+\label{eq:cell-cl}\\
+\frac{dn_{\TIC,i}}{dt}&=J_{CO_2,b}+J_{CO_2,a}+2J_B-J_2-2J_4,
+\label{eq:cell-tic}\\
+\frac{dn_{\TA,i}}{dt}&=J_H+2J_B-J_2-2J_4,
+\label{eq:cell-ta}\\
+\frac{dV_i}{dt}&=q_b-q_a.
+\label{eq:cell-volume}
+\end{align}
+Neutral carbon dioxide crosses each membrane linearly down its concentration gradient. The combination of \cref{eq:cell-tic,eq:cell-ta} keeps carbon and charge bookkeeping separate and is central to the mechanism tests below.
+
+The lumen receives apical and paracellular ion fluxes and loses solute through convective outflow,
+\begin{align}
+\frac{dn_{\Na,l}}{dt}&=J_{\mathrm{para},\Na}-Q_{\mathrm{out}}[\Na]_l,
+\label{eq:lumen-na}\\
+\frac{dn_{\K,l}}{dt}&=J_{\mathrm{para},\K}+J_{K,a}-Q_{\mathrm{out}}[\K]_l,
+\label{eq:lumen-k}\\
+\frac{dn_{\Cl,l}}{dt}&=J_{Cl,a}+J_{\mathrm{para},\Cl}-Q_{\mathrm{out}}[\Cl]_l,
+\label{eq:lumen-cl}\\
+\frac{dn_{\TIC,l}}{dt}&=-J_{CO_2,a}+J_{\mathrm{para},\TIC}-Q_{\mathrm{out}}[\TIC]_l,
+\label{eq:lumen-tic}\\
+\frac{dn_{\TA,l}}{dt}&=J_{\mathrm{para},\TA}-Q_{\mathrm{out}}[\TA]_l,
+\label{eq:lumen-ta}\\
+\frac{dV_l}{dt}&=q_a+q_t-Q_{\mathrm{out}}.
+\label{eq:lumen-volume}
+\end{align}
+The outflow is represented by the residence time law
+\begin{equation}
+\label{eq:outflow}
+Q_{\mathrm{out}}=\frac{V_l}{\tau_l}.
+\end{equation}
+This permits luminal volume to vary while retaining a simple connection to downstream ductal flow.
+
+\subsection{Water movement}
+
+Water moves across apical, basolateral and paracellular pathways in response to osmotic differences,
+\begin{align*}
+q_a&=L_a(\Pi_i-\Pi_l),\\
+q_b&=L_b(\Pi_e-\Pi_i),\\
+q_t&=L_t(\Pi_e-\Pi_l).
+\end{align*}
+The osmolarities include tracked mobile species, the finite intracellular buffer, fixed intracellular osmoles and any declared untracked luminal osmolyte. Hydrostatic pressure differences are neglected, as in the parent model. Total secretion is the time integral of \cref{eq:outflow}.
+
+\subsection{Mechanism classes suggested by Catalán et al.}
+
+\citet{Catalan2025} experimentally constrained cation dependence and identified molecular determinants that distinguish sodium supported from potassium supported transport. The paper proposed, but did not establish, several complete transport stoichiometries. To test their whole cell consequences without fitting the phenotype, we retained the Task 40 scalar cycle $J_4$ and replaced only the source coefficients. The seven predeclared classes are listed in \cref{tab:classes}. Carbonate removes one unit of total inorganic carbon and two alkalinity equivalents and was therefore not represented as bicarbonate.
+
+\begin{table}[t]
+\centering
+\caption{Predeclared AE4 source classes. Entries multiply the scalar positive chloride loading cycle $J_4$ and are ordered as $(\Na,\K,\Cl,\TIC,\TA)$. C0 is the Task 40 control. C1--C4b are source classes permitted by the molecular interpretations in \citet{Catalan2025}.}
+\label{tab:classes}
+\begin{tabular}{lll}
+\toprule
+Class & Interpretation & Source coefficients \\
+\midrule
+C0 & equal routed $1\Cl:1C:2\HCO$ & $(-1/2,-1/2,+1,-2,-2)$ \\
+C1 & $\Na\Cl$ inward, $\K\HCO$ outward & $(+1,-1,+1,-1,-1)$ \\
+C2 & $\Na\Cl$ inward, $2\K\COthree$ outward & $(+1,-2,+1,-1,-2)$ \\
+C3a & K879 class, $\K+2\HCO$ outward & $(0,-1,+1,-2,-2)$ \\
+C3b & K879 class, $\Na+2\HCO$ outward & $(-1,0,+1,-2,-2)$ \\
+C4a & K879 class, $\K+\COthree$ outward & $(0,-1,+1,-1,-2)$ \\
+C4b & K879 class, $\Na+\COthree$ outward & $(-1,0,+1,-1,-2)$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For each class, charge balance and source reversal were checked algebraically. A class specific forward chemical affinity was evaluated at the frozen Task 40 reference state. Each class then received exactly one wild type resting solve and, when the resting state passed, three 600 second production attempts from that same rest: wild type, 5\% AE4 and complete AE4 loss. There was no parameter sweep, phenotype based class selection, genotype specific resting solve or numerical retry.
+
+\subsection{A constructive inverse comparison}
+
+When the source constrained mechanism classes failed to recover the phenotype, we asked a separate inverse question: what additional network coupling is capable of generating a 20--35\% loss while preserving the declared 600 second physiology and conservation gates? The selected construction makes the stimulated component of apical chloride conductance depend on AE4 expression $e_4$,
+\begin{equation}
+\label{eq:cacc-coupling}
+g_{Cl,a}=g_{Cl,a}^{\mathrm{parent}}
+\left[(1-a_{\Ca})+a_{\Ca}\{b+(1-b)e_4\}\right],
+\end{equation}
+with $b=0.1051187$. The calcium input, channel gate and all other model parameters remain unchanged. This coupling was selected using the requested secretion range and is not an independent validation result.
+
+\subsection{Numerical protocol and validation}
+
+Resting states were obtained by solving the complete stationary amount and current system. Production simulations used an implicit Radau method over 600 seconds, with the frozen combined carbachol and isoproterenol protocol, calcium input, tolerances and maximum step inherited from the validated modern model. Gates were applied to all solver endpoints and integer second dense output samples. They included positivity, physiological bounds for sodium, potassium, chloride, pH and volume, current closure, bulk charge, carbon, alkalinity and water accounting. The complete implementation, frozen inputs, hashes, trajectories and gate records are available in the accompanying repository.
