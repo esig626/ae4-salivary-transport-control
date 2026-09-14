@@ -374,6 +374,10 @@ class StimulatedNkcc1Model:
             )
 
     @property
+    def nkcc1_kinetics(self) -> Any:
+        return self.base_model.nkcc1_kinetics
+
+    @property
     def parameters(self) -> Any:
         return self.base_model.parameters
 
@@ -431,6 +435,7 @@ class StimulatedNkcc1Model:
             ),
             self.parameters,
             nkcc1_scale=genotype.nkcc1_expression * multiplier,
+            nkcc1_kinetics=self.nkcc1_kinetics,
             nhe1_scale=genotype.nhe1_expression,
             ae2_scale=genotype.ae2_expression,
         )
@@ -522,6 +527,7 @@ def attach_stimulated_nkcc1(
         regulatory_model=composite,
         ae4_parameters=template.ae4_parameters,
         ae4_evaluator=template.ae4_evaluator,
+        nkcc1_kinetics=template.nkcc1_kinetics,
     )
     return StimulatedNkcc1Model(base)
 

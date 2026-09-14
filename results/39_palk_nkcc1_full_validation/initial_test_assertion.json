@@ -1,0 +1,40 @@
+{
+  "algebra": {
+    "alpha_eff_fmol_s": 0.017334746894096052,
+    "rest_cycle_fmol_s": 0.1281222023866353,
+    "shape_rest": 7.391062769440939,
+    "x_rest_mM4": 4941065.334966328
+  },
+  "algebra_checks": {
+    "alpha_eff_fmol_s": true,
+    "implemented_shape": true,
+    "independent_decimal_agreement": true,
+    "shape_rest": true,
+    "x_rest_mM4": true
+  },
+  "conversion": "X_M = 1e-12 X_mM; 2.0096e7*1e-12 = 2.0096e-5; 1.3852e6*1e-12 = 1.3852e-6",
+  "decimal_60_digit_audit": {
+    "alpha_eff_fmol_s": "0.0173347468940960604332449132130759541611320146609525052179366",
+    "shape_rest": "7.39106276944093645375767062788570264712561594782237284016275",
+    "x_rest_mM4": "4941065.33496632852012897473351133700059199704192845747434878"
+  },
+  "expected": {
+    "alpha_eff_fmol_s": 0.017334746894096052,
+    "shape_rest": 7.391062769440939,
+    "x_rest_mM4": 4941065.334966328
+  },
+  "inward_cycle_source_na_k_cl_tic_ta": [
+    1,
+    1,
+    2,
+    0,
+    0
+  ],
+  "relative_tolerance": 2e-15,
+  "reversal_x_mM4": 7837380.573248408,
+  "source_equation": "Eq. 17: (157.5 - 2.0096e-5 Na_i K_i Cl_i^2)/(1.0306 + 1.3852e-6 Na_i K_i Cl_i^2)",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5792321/#APP1",
+  "status": "PALK_NKCC1_SOURCE_OR_CONSERVATION_FAILED",
+  "tests_pass": false,
+  "tests_run": 7
+}

@@ -202,6 +202,9 @@ def _object_mapping(value: Any) -> Mapping[str, Any]:
     return {name: getattr(value, name) for name in dir(value) if not name.startswith("_")}
 
 
+from .nkcc1_palk2010 import Nkcc1Kinetics
+
+
 class ModernFullModel:
     """Twelve-state conserved whole-cell core plus optional regulatory states."""
 
@@ -213,12 +216,14 @@ class ModernFullModel:
         regulatory_model: Any | None = None,
         ae4_parameters: Any | None = None,
         ae4_evaluator: Callable[..., Any] | None = None,
+        nkcc1_kinetics: Nkcc1Kinetics = Nkcc1Kinetics(),
     ) -> None:
         self.parameters = parameters or FullModelParameters()
         self.stimulus = stimulus or ConstantStimulus()
         self.regulatory_model = regulatory_model
         self.ae4_parameters = ae4_parameters
         self.ae4_evaluator = ae4_evaluator
+        self.nkcc1_kinetics = nkcc1_kinetics
         regulatory_names = (
             tuple(str(name) for name in regulatory_model.state_names)
             if regulatory_model is not None
@@ -579,6 +584,7 @@ class ModernFullModel:
             ),
             self.parameters,
             nkcc1_scale=genotype.nkcc1_expression,
+            nkcc1_kinetics=self.nkcc1_kinetics,
             nhe1_scale=genotype.nhe1_expression,
             ae2_scale=genotype.ae2_expression,
         )

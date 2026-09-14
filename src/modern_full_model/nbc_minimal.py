@@ -517,6 +517,10 @@ class MinimalNbcModel:
         self.nbc_parameters = parameters or MinimalNbcParameters()
 
     @property
+    def nkcc1_kinetics(self) -> Any:
+        return self.base_model.nkcc1_kinetics
+
+    @property
     def parameters(self) -> Any:
         return self.base_model.parameters
 
@@ -577,6 +581,7 @@ class MinimalNbcModel:
             ),
             self.parameters,
             nkcc1_scale=genotype.nkcc1_expression * nkcc_multiplier,
+            nkcc1_kinetics=self.nkcc1_kinetics,
             nhe1_scale=genotype.nhe1_expression * nhe1_multiplier,
             ae2_scale=genotype.ae2_expression,
         )

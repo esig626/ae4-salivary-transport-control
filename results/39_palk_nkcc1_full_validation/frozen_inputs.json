@@ -1,0 +1,1101 @@
+{
+  "branch": "codex/task-39-palk-nkcc1-full-validation",
+  "execution_files": [
+    {
+      "path": ".gitignore",
+      "sha256": "18af6745fb89ec3a288e80e28e7f6103b6c6c87d2a1fe729f04447ccc0583505"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "afe0fb2052203fe2f1425becaf43349ee5f39014a1c412c157d7aeaa760107a2"
+    },
+    {
+      "path": "ARCHIVE_INDEX.md",
+      "sha256": "e7d8840460e5f18d1241e3eb789bf4dab04a8e559f35758444ebfe5e0746c690"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d1c0a6c51093e81737362877d1f9a33e210cda9a143099cca9466a03d7b73a45"
+    },
+    {
+      "path": "analysis/30_nhe1_model_repair/final_answer.md",
+      "sha256": "ebdff6bca5b18f3f9b2161e2bfe98b93dbc3b1988bb6b47d03fca7f1c40c0f36"
+    },
+    {
+      "path": "analysis/30_nhe1_model_repair/focused_test.log",
+      "sha256": "1f399d1d8ff69e8067c680556597a06ba7acbdb7a92811a667477ae674bfbcb0"
+    },
+    {
+      "path": "analysis/30_nhe1_model_repair/nhe1_law_comparison.md",
+      "sha256": "f0c7ef46f6a703b66f61023df51e72e2032f08e6b757663afd64dcc3bf2894ea"
+    },
+    {
+      "path": "analysis/31_nhe1_mechanistic_repair/continuation_test.log",
+      "sha256": "775f20b177e7e5ed8bfb5340b074cba9abced984fb7d39496ba90cddb76da136"
+    },
+    {
+      "path": "analysis/31_nhe1_mechanistic_repair/final_answer.md",
+      "sha256": "c3b173be61dc2da9a066a8f8ed2ece7929e55a80b759be19ec63cb71c7e691d6"
+    },
+    {
+      "path": "analysis/31_nhe1_mechanistic_repair/focused_test.log",
+      "sha256": "c30ea3d9c585eaef35df0a03391b02f0d2a316c7a917084a700d31bb31b30a63"
+    },
+    {
+      "path": "analysis/31_nhe1_mechanistic_repair/nhe1_source_and_equations.md",
+      "sha256": "f707d736f8b10d28ff0c89b855df138e1d6b068cba42e23b1f2de7ace39ddf05"
+    },
+    {
+      "path": "analysis/31_nhe1_mechanistic_repair/numerical_execution.log",
+      "sha256": "2d05cf6d0a5a2d895d59eae2761f1cbcbf95781c3393dce99cf9da38b089179f"
+    },
+    {
+      "path": "analysis/31_nhe1_mechanistic_repair/source_reconstruction_test.log",
+      "sha256": "7c8bce7b559f77c46e78bf5d66c4a0678f6811d9feefa648f4f6ee5fe5477bc7"
+    },
+    {
+      "path": "analysis/36_minimal_nahco3_alkalinity/design.md",
+      "sha256": "81d4e3b03b627f5ec8ee007d551628f88860b5eb101c4cf05b44362e3992a85e"
+    },
+    {
+      "path": "analysis/36_minimal_nahco3_alkalinity/manual_verification.md",
+      "sha256": "30f08d2484d2abb8883e429512b8a1c3a819cc697cff8aee564119dd79d43540"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/final_answer.md",
+      "sha256": "7e785b72ad89b0a00393633e1f7ebc47a43e6365924221d95e97e3212e70e963"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/focused_test.log",
+      "sha256": "2b674979da641b41c95a2468d069cd583a5f3a91ef22c3146365a44a72b82f99"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/numerical_execution.log",
+      "sha256": "adde7ce0c812d82a12199006e7f7e62e5034c21bcc6df65d08a60c741dd77835"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/run_focused_tests.py",
+      "sha256": "c9eddec9d0551be2fa21ded8bb85d49fe8b1ea73688983c7e7bddb1e056bb60b"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/run_phase_a.py",
+      "sha256": "50487c9d57046212b4a5d51283ebb727274f2fc814164c0c926cac2356905729"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/run_wt.py",
+      "sha256": "cea8fd154bb8a4436e00d26b8e71ea9e3224f8e7a08fa552b6f49dcbc0faed85"
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/validation_common.py",
+      "sha256": "fa0b3577e17f3bdee3bbc0e247bae75986dd48eebc3919477b68441380ecc251"
+    },
+    {
+      "path": "analysis/38_ae4_perturbation_validation/ae4_5pct_execution.log",
+      "sha256": "3380240e4896b2b5a545391fbc88c0dbb58ce7f63fa497219573a00c29d4c4f0"
+    },
+    {
+      "path": "analysis/38_ae4_perturbation_validation/ae4_null_execution.log",
+      "sha256": "19e9437ef72ec4584f88e6e25ac3554f9da9b2f7ed37f93401351f935684f424"
+    },
+    {
+      "path": "analysis/38_ae4_perturbation_validation/final_answer.md",
+      "sha256": "78b4494960430694e46026b0e2058a487d8c7907c7a690b3527ed472a5a8d319"
+    },
+    {
+      "path": "analysis/38_ae4_perturbation_validation/run_perturbation.py",
+      "sha256": "fa1c1b8fe96ed875acd5929ab28e30bcd2991cd90ac65f90226097ccc4d4ff82"
+    },
+    {
+      "path": "analysis/38_ae4_perturbation_validation/summarize_results.py",
+      "sha256": "a4b2bb30d5e59765d45ab21033a0d1f552fd966adc2ed4e0793843316657846d"
+    },
+    {
+      "path": "analysis/39_palk_nkcc1_full_validation/run_case.py",
+      "sha256": "9b2f082fa92578fe97a8289ea059f31dd1fc7859e637c54ef6e6a37ef6c17274"
+    },
+    {
+      "path": "analysis/39_palk_nkcc1_full_validation/run_preflight.py",
+      "sha256": "cb42d43eb0a13c8f63b8a06dd05bb4810ac5de710ec148752c90ebfeea3f6e87"
+    },
+    {
+      "path": "analysis/39_palk_nkcc1_full_validation/source_contract.md",
+      "sha256": "fda5de6c15e98b3a4035db30459bf957a3e13070e5c48e391974755743be2906"
+    },
+    {
+      "path": "analysis/39_palk_nkcc1_full_validation/validation_common.py",
+      "sha256": "f3ce46e1d91e077ff683cba6efa40c98f31d2cf6f8dfdc28a180d6f651cdfc45"
+    },
+    {
+      "path": "prompts/28_transport_relationship_repair.md",
+      "sha256": "49777d7164258cf445f3642538a1c76c0f7696671308c5c9fb7eba473b6619bf"
+    },
+    {
+      "path": "prompts/29_exact_null_feasibility_audit.md",
+      "sha256": "b40ebd16b1608997a1cbf2fd3fa0bf8ff9c4f5c21991cbd0fcbcf7c9902de692"
+    },
+    {
+      "path": "prompts/30_nhe1_model_repair.md",
+      "sha256": "f8b306a7839ae5e5a709a67cf38b84de0d57bcd24aec0bfae0f40ed83b28827f"
+    },
+    {
+      "path": "prompts/31_nhe1_mechanistic_repair.md",
+      "sha256": "e5d39a71d6b66858f521c2e92bb30968654e3e60eb1dfaaf42e13e599dacc7b4"
+    },
+    {
+      "path": "prompts/37_wt_nbc_validation.md",
+      "sha256": "731fdce9060d25640e410875b4dcf5f7713d7fb5a4c598c7408ac03862d9ed10"
+    },
+    {
+      "path": "prompts/38_ae4_perturbation_validation.md",
+      "sha256": "b5f6689647819b4c7cebc4f80bacb5a7a7969f3af0147c542e57c99f7a357f2e"
+    },
+    {
+      "path": "prompts/39_palk_nkcc1_full_validation.md",
+      "sha256": "f0cd0243ecedaf8cf060f419b3de47ce778ea3dde6a36c28df6fe72ad4ad2a7e"
+    },
+    {
+      "path": "reference/2018_model_concordance.md",
+      "sha256": "e72c5436f5ced4ff7b6151fd08666014895fe4c44ea0eb77c7c98105e64d0ba3"
+    },
+    {
+      "path": "reference/R09_wt_rest.json",
+      "sha256": "f18eec4d9f902d869ee4b4e2b197546c4278c0b08f17209862fca383dc03e868"
+    },
+    {
+      "path": "reference/R10_wt_rest.json",
+      "sha256": "c937ad7551845aad5de4a5d39e47bd82c14a1e99c2f08459edc12180db82a9d7"
+    },
+    {
+      "path": "reference/import_manifest.json",
+      "sha256": "1e1cda891e00294533e19de5cbe4481c923e79a46ba660b60fe01ae19ec419a1"
+    },
+    {
+      "path": "reference/native_wt_contract.json",
+      "sha256": "6d283961421a6718a54fd7c86e6575bd5c032a93e649923777b02295cee97f29"
+    },
+    {
+      "path": "reference/routed_rest_reference.csv",
+      "sha256": "4a6d8b7da1d1eb2f71b9d4e9694e963ab95adde79158e0437b5588a3624563b9"
+    },
+    {
+      "path": "reference/routing_numerical_contract.json",
+      "sha256": "2908d2a8d84a03cddc3d9a72e5207f35852b35529c6f352640d0c3db97bbfee0"
+    },
+    {
+      "path": "reference/sources.md",
+      "sha256": "bc597d281626b40e90cf44945ed5f21bf7577ec389331533025baabfcddf9ea2"
+    },
+    {
+      "path": "reference/task28_partial_handoff.md",
+      "sha256": "32095876d04d32d27d77892941358c8d094275fb8d55cedd34854571ba321717"
+    },
+    {
+      "path": "reference/task29_final_answer.md",
+      "sha256": "a18a9f3d46adb7d4e7eda338cb156dac9e25d6fea196c5e1ce23447b0603a550"
+    },
+    {
+      "path": "reference/task30_handoff.md",
+      "sha256": "8a15656537867250a943e3d5c8d4ea50c79fa95500dc02ef4847e033db9e6f7c"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/budget.json",
+      "sha256": "99c71957e3b89473682568e4ecdf3b7ad789587222e14c1c545d918c9148a7e8"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/contract.json",
+      "sha256": "2253c6379bf587fa49bd9e1fa37eb5c0de7262ed39485eeacd68787b04894347"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/flux_ledger.csv",
+      "sha256": "85c152abf2d6747f5a541ce508c651ec3e706356518f96a55c7fd1e399b01c87"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/incomplete_case.json",
+      "sha256": "856f2226b2c8ff8c1cbd5626ad8cd31b3baac8ffe553244583bcb17215c9b04b"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/resting_attempts/R09_wt_g_evaluation_1.json",
+      "sha256": "171463c8815b2402c1c89fe3d39484d7ed7e85a3044fbd0eea376f8aac1e97ef"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/resting_attempts/R09_wt_g_evaluation_2.json",
+      "sha256": "441117532f455fc6b3e1d541bb9917cc2cbc3b7616f7afb5bc1a5f59838c12c9"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/resting_attempts/R09_wt_g_evaluation_3.json",
+      "sha256": "ac2b580b436bdc7763823f79c891f5c6251a8b89bacdc3ce233a35b4cb5441ae"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/resting_states.csv",
+      "sha256": "ac7591b8244d33edaaddf5da95e6972211b89d0c64459272c2c49ae14043dac7"
+    },
+    {
+      "path": "results/30_nhe1_model_repair/verification.json",
+      "sha256": "b1b5b79849469c387291c066abdd3b1c6ab97830436caa1174535a3d3451fce5"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/budget.json",
+      "sha256": "005d64ccd4c104ccb11ba2b8615299928b0e53f9c4ceff2af4387f26d0c73531"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/calibration.json",
+      "sha256": "78e9e71d49c215d04d383195dd2cd1fcc84170391503000f5c3ff0b15360f0c5"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/contract.json",
+      "sha256": "8521936e308983dea03a8b215adefe5ee1dba6c676c462c398c453228fbcf459"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/density_freeze.json",
+      "sha256": "24a64bbe2a8f0d1b178c81c0edb312ec6d768af0e353423b123e4d5906f181ff"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/execution_summary.json",
+      "sha256": "20d5d7f23337a095857c76f8706d78b861bb0804d76d334bb278b443b5ca2a51"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/flux_ledger.csv",
+      "sha256": "42921c4207e63007e9f0de411786cf2b397df7d0dc809561ccd4a04771271f21"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/nhe1_parameters.json",
+      "sha256": "fe5f06763a49b558c0e806d492b348b2cce9553a6776783f47f92a1bb70f943d"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/185f5cee3bcec7a023cf82e4092872114f2292732ad9c4bab68ecf4e062f76e3.json",
+      "sha256": "0fda58227f71ff6f0a48c8a078c0578ae5f814ed963abc146384adbf7f59dd19"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/4ac4b74f3b56397f6a169611dfed9c1660e2f64ca42cac3bcd37dec84331b111.json",
+      "sha256": "435ebf07e1ae803a1ff1e6ea5837eb60e16fcd9742add6cd62dfe63fc81069a6"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/5a70eeb7a6479f21828fca069de5f60a575edc9b8e18961e3c24ccef734b06ee.json",
+      "sha256": "b8766ee22e7e748968b2044469a06cfff694bc91252efaa9b88a0c3658ad728d"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/7c0aa512bbd240e267a04715fd96f8c48cb280101c2dbd0584c1a9e0e19eace7.json",
+      "sha256": "39f1b4d3f754ff2dd9e73272e99362cbe07cb37e057c14e473cf5da401a7b583"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/7eb1f1368bb53dd8469bd4b2d1ad764b8b61e908e879fa2ba52477b7cfb47e8b.json",
+      "sha256": "dd01f7cd2155450d6be5e964add28bc6239e5d8ea0c86579ac8df7d71a48d2fe"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/ac3184559ce5f6ed95640e0c3005c264c3b7c4616f274eb6fb52579398a6154f.json",
+      "sha256": "73a48227f67bfcf9a904b9bffc99a4d6ec82418f58a09b456504f36f03d94f91"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/cf6377e0e2165d91ae1bb2060fa77606ae2234e637b3e5804c59a78a16204080.json",
+      "sha256": "7fee4f2317fb0b15eaeb081c3e0a0465590e22835b45b918650f6ca44014b5c6"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/d961b83eaa5d274bd0443ac6d94495fa6bc4ac3e62b532630d6df5eac6870336.json",
+      "sha256": "5932a0c99b7ccf8fee7b1bc19855be65d3c68f5c011a281f405d38f163699a58"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/resting_states.csv",
+      "sha256": "89ecd0316af8ec59aa1249b21dbb43deaa45705d51f817e03f57c0fa4298785d"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/source_table_s1.json",
+      "sha256": "a3dd24fbb8807c454254a9b280218cf41ac9b718ce7110156b6c17ac409e44a2"
+    },
+    {
+      "path": "results/31_nhe1_mechanistic_repair/verification.json",
+      "sha256": "c1a3b02567c7b8d95fd766c59075edfac42993da3df6a9775e4499760038c5e9"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/budget.json",
+      "sha256": "094642482ff56b25efba4eb87374082b27f5a8c1ffc4aaf7d56f9d737efef615"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/rest_nesting.json",
+      "sha256": "259a0476fa70b382da94adad01fa795c9c69e2788cb7ac982f615fb3bba8f093"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/source_verification.json",
+      "sha256": "40fcba3f3f3b5d94bd2c1e3f28f69e6931bbc5727fa5056281bc1db9eb2a8554"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/wt_chloride_partition.json",
+      "sha256": "e569346c840b24b2451d66c599e6ebcc36505b9d79d5d07444a2adbd3eeaffb9"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/wt_integrated_fluxes.csv",
+      "sha256": "b5e7a46bec467c7ecb6b0c7d439cb8fd0dd37075ae59a75cd91d0beb3ec14e1d"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/wt_timeseries.csv",
+      "sha256": "184b1021709a8726e6bc7fccd7e887be6306d10320fac144a94c45417d4d9b19"
+    },
+    {
+      "path": "results/37_wt_nbc_validation/wt_verification.json",
+      "sha256": "e56da842b38d172095a75cf8cbcf0603fcbad6ff3f5af8703fa7638852b22791"
+    },
+    {
+      "path": "results/38_ae4_perturbation_validation/ae4_5pct_integrated_fluxes.csv",
+      "sha256": "897371cb1a66892259d2d5882410d90d32d37a7f0a16e61c93a12e6fed61e20c"
+    },
+    {
+      "path": "results/38_ae4_perturbation_validation/ae4_5pct_timeseries.csv",
+      "sha256": "2f8354a18d64dd584a67de3185150cb0e5c1932386dc69e93450edc97c0a831a"
+    },
+    {
+      "path": "results/38_ae4_perturbation_validation/ae4_5pct_verification.json",
+      "sha256": "9a0bcec27ae2eaaa6bf2a5e63407cce6935ae299eca7b1104b3203c6ba316c8d"
+    },
+    {
+      "path": "results/38_ae4_perturbation_validation/ae4_null_integrated_fluxes.csv",
+      "sha256": "7a0609e829feec31baa6a5ad4a97f125d02211bd45601aa0c3bfff492feb844b"
+    },
+    {
+      "path": "results/38_ae4_perturbation_validation/ae4_null_timeseries.csv",
+      "sha256": "1fca0c70470fc0789ffb9f5c771ff8d5d5f0b2e58d838b89fe8038f4dc31f4f8"
+    },
+    {
+      "path": "results/38_ae4_perturbation_validation/ae4_null_verification.json",
+      "sha256": "e083f137ea0f44c36d5d8a0f6312d4552e3301ca081cb8176c4371c6da815de5"
+    },
+    {
+      "path": "results/38_ae4_perturbation_validation/budget.json",
+      "sha256": "d0b7d2eef46c5f2ac2b6e04e724578603f701e3d0a1ae8dbabdd39672b8f55d9"
+    },
+    {
+      "path": "results/38_ae4_perturbation_validation/comparison_summary.json",
+      "sha256": "a2b33b66a6d3adb7299345c4ca3bceed21c02ab68c4c031075fdc8ff91b2d686"
+    },
+    {
+      "path": "results/38_ae4_perturbation_validation/cumulative_secretion_comparison.csv",
+      "sha256": "81964ea7d25be98ed31897357b22869a66a43d021c1b83ab3f7246cd3ee98b68"
+    },
+    {
+      "path": "results/38_ae4_perturbation_validation/flow_comparison.csv",
+      "sha256": "774425f287a78907b3e4f216b0092cc8397d46574d46e993cde958f8fe702c84"
+    },
+    {
+      "path": "results/38_ae4_perturbation_validation/frozen_inputs.json",
+      "sha256": "1d0e245fe07d7b379ed270f7364c37b542129b3a500e6958f3d921476b425bd5"
+    },
+    {
+      "path": "results/38_ae4_perturbation_validation/integrated_flux_comparison.csv",
+      "sha256": "049de94d777ac0a8c6c0c889e3d190b60fb682a1b3b9515672683802e91ddbd7"
+    },
+    {
+      "path": "results/38_ae4_perturbation_validation/intracellular_comparison.csv",
+      "sha256": "8e374b76d71f7709f9c6f3aa963134ce9fb122b6a1aaf164d0d98aa3bac910e3"
+    },
+    {
+      "path": "results/39_palk_nkcc1_full_validation/alpha_eff_freeze.json",
+      "sha256": "d28168ac5d278b4520773936b12dcb693aa569f9f81e6d56607e5f7c1214d8de"
+    },
+    {
+      "path": "scripts/check_phase28_inputs.py",
+      "sha256": "5913290533443f011066b486e6935ffcdb2722bd0b25ceff1216b7d61f56d918"
+    },
+    {
+      "path": "scripts/run_task30_nhe1_repair.py",
+      "sha256": "e88b384ec85f2850ab5230e2d499122c705dfe3b277215870e15b31aec17b366"
+    },
+    {
+      "path": "src/modern_full_model/__init__.py",
+      "sha256": "721ec58e52c171e5261d769f5136acb5566574710c909dd917a36d048240f8a5"
+    },
+    {
+      "path": "src/modern_full_model/acid_base.py",
+      "sha256": "cf123937b6cf085b0cbad01fc464fca9eadbb56888802e427900473c1a737a31"
+    },
+    {
+      "path": "src/modern_full_model/ae4_routing_only.py",
+      "sha256": "ef3a55d6a74fbdc1a07a6f89c19533376aec7bee98cfbafa5f73cf4e01f63a10"
+    },
+    {
+      "path": "src/modern_full_model/camp_pka.py",
+      "sha256": "b03ef7c794017a1a312fc9bd47188a9bc430e63c8b9c6be4dbfb6c93147eaf03"
+    },
+    {
+      "path": "src/modern_full_model/membranes.py",
+      "sha256": "c4200328179cd70156590dd10eb0859505ff03d2005652fd1ae2c9b692f85fea"
+    },
+    {
+      "path": "src/modern_full_model/model.py",
+      "sha256": "a391600986aed9204cddb3aede884f6c420a5d9ba7de232d255900ec9e84027c"
+    },
+    {
+      "path": "src/modern_full_model/nbc_minimal.py",
+      "sha256": "48230ad9b6c0bbb017d8545d0c46ca6fc83eb0d6ade57f1ced96da7fd28bcfaf"
+    },
+    {
+      "path": "src/modern_full_model/nhe1_cha2009.py",
+      "sha256": "de76dccffadb75fcaecee90402161af1db48f5db88ea152164f504a974d0e5c1"
+    },
+    {
+      "path": "src/modern_full_model/nkcc1_palk2010.py",
+      "sha256": "2b4b58450589dbf2b4765c35dbeee9062815574903490654864640c2fffd60a6"
+    },
+    {
+      "path": "src/modern_full_model/nkcc_stimulation.py",
+      "sha256": "c272da41b93dea37986e293fdb0936f994dade13b4a65e093057575f58788475"
+    },
+    {
+      "path": "src/modern_full_model/parameters.py",
+      "sha256": "5a3037ec9849e8202134c664b2a87205f73e2e17edde781ee4fef0bc57b1a39b"
+    },
+    {
+      "path": "src/modern_full_model/states.py",
+      "sha256": "a037f9690960c3b52e738bc4051601adf76bf345b3a32b191770e2469255fd22"
+    },
+    {
+      "path": "src/modern_full_model/task30_nhe1_repair.py",
+      "sha256": "7d48386bf081212c2e81aeb6f0d28e47c9d3c9edec4d2f4ab3b80f762f34b105"
+    },
+    {
+      "path": "src/modern_full_model/task31_nhe1_repair.py",
+      "sha256": "976b62f8aadf87dbb5badb156d40ea974b53eee0e21acd8fd7a08d64543e07d4"
+    },
+    {
+      "path": "src/modern_full_model/transporters.py",
+      "sha256": "4177a444fa97e430c345fc1fb73f333b5b6623c3ea3cd84769cb9d6dca76061a"
+    },
+    {
+      "path": "src/modern_full_model/validation.py",
+      "sha256": "e8dd7d9bee588ecab6032a9fb35f41907a112b08d6e8448ca1d7ab60fee7b4b8"
+    },
+    {
+      "path": "src/modern_full_model/water.py",
+      "sha256": "d93494f93411123a9c9bdaea5c177c89714ee5ab0794717c586bfd87647671ba"
+    },
+    {
+      "path": "tests/test_phase28_setup.py",
+      "sha256": "154e82cb0a642763f927333b3dc9178256697f25b61f1cffde449ce0727366cb"
+    },
+    {
+      "path": "tests/test_task30_nhe1.py",
+      "sha256": "bce2b0e1c8c4cc711c59fee11bf45ee8032a31c214e13a3f08584905f96f8b42"
+    },
+    {
+      "path": "tests/test_task31_continuation.py",
+      "sha256": "0daebfcff4ea3f2b5e3473ddeab4c110d21844d7c72f8c5c8960049cd17e41f8"
+    },
+    {
+      "path": "tests/test_task31_nhe1.py",
+      "sha256": "b43bdcffd4303267c3151ceb1fd6f022a6946842f659b6adbe457b3baeec8493"
+    },
+    {
+      "path": "tests/test_task36_minimal_nbc.py",
+      "sha256": "fdbbb6207d0b38e6681b31df6b4e0c32a0da4b9554e15df70583656167fee3a4"
+    },
+    {
+      "path": "tests/test_task39_palk_nkcc1.py",
+      "sha256": "0812e02a4144e51eb9fa8072fc7e4200422daeeaefe03e040801c8ba11a21433"
+    }
+  ],
+  "frozen_task38_commit": "d4bce14c5caed4e05587e237f002814f0f27e226",
+  "modified_prepared_files": [
+    "src/modern_full_model/membranes.py",
+    "src/modern_full_model/model.py",
+    "src/modern_full_model/nbc_minimal.py",
+    "src/modern_full_model/nkcc_stimulation.py"
+  ],
+  "parameter_hashes": {
+    "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+    "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+    "nkcc1_core": "80c412da616a723120032cbff5ecd6184bb32782ec68e6a0d6de6195f5082249",
+    "regulation": "4d560edc26dbb7b9538c0447b9c8d60401804911a0bb40620d9892923ba7ab4b",
+    "stimulus": "93eba70092faaa9497c80ce30d979726a77b092cf04c0ff4cd106d3774a2c4f4",
+    "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+  },
+  "prepared_files": [
+    {
+      "git_blob_sha": "335f58a4d64a7cb0ec3b1162792f02187411c5f5",
+      "path": ".gitignore",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "14ca185dc9ecd49265f01be400985a77ba5cac13",
+      "path": "AGENTS.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "659a972fd48261c85f662ffd9f0d38767e18e05a",
+      "path": "ARCHIVE_INDEX.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "9ef63de078704a22fefd8200403102f956a2a19d",
+      "path": "README.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "e38ed1a821fa647ea07d6db92d29d011f9c3dabc",
+      "path": "analysis/30_nhe1_model_repair/final_answer.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "1f0f585b58023be9262140eea1f992d1c5c9ff7e",
+      "path": "analysis/30_nhe1_model_repair/focused_test.log",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "dbadb8eccf74d83b576887d37f7a19b203d375e4",
+      "path": "analysis/30_nhe1_model_repair/nhe1_law_comparison.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "fdce7acc6c273f35be054648e5df95e21a4c5f70",
+      "path": "analysis/31_nhe1_mechanistic_repair/continuation_test.log",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "a80628e18a1b1e3c81b4df885270ae8ddcd85842",
+      "path": "analysis/31_nhe1_mechanistic_repair/final_answer.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "7061823be1706d7b5fbeee251f71cdcff8a6c7c7",
+      "path": "analysis/31_nhe1_mechanistic_repair/focused_test.log",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "ec27f3ee861e5e491c7b162f94cc851a9692640d",
+      "path": "analysis/31_nhe1_mechanistic_repair/nhe1_source_and_equations.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "ba476c26d429d9d7d185e07f2424bac8acf2152c",
+      "path": "analysis/31_nhe1_mechanistic_repair/numerical_execution.log",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "ea88c5a50c8d6c96f96eee4a9f976edfaa97e4b8",
+      "path": "analysis/31_nhe1_mechanistic_repair/source_reconstruction_test.log",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "9190a52b837cc4c281a7be43253c29392b638c6d",
+      "path": "analysis/36_minimal_nahco3_alkalinity/design.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "23b15f1e2f32ad856c80ef117f219e1d3f068e10",
+      "path": "analysis/36_minimal_nahco3_alkalinity/manual_verification.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "83008ea8512571d002d67c636127ed1b4d6ed0a5",
+      "path": "analysis/37_wt_nbc_validation/final_answer.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "53597a7fb658a046c09dc5b065659e14e06a7c1f",
+      "path": "analysis/37_wt_nbc_validation/focused_test.log",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "2207580083a242411657903c6d87bb8b71a82f8c",
+      "path": "analysis/37_wt_nbc_validation/numerical_execution.log",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "a04ede9bf5679601ede3ce20807935528dbc288e",
+      "path": "analysis/37_wt_nbc_validation/run_focused_tests.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "be7d245cc1a2e8c3a122cb03c51beec4f85193bb",
+      "path": "analysis/37_wt_nbc_validation/run_phase_a.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "3d69c029f1d1ae53bcbc9d3c26b9c41bf1d4f9a3",
+      "path": "analysis/37_wt_nbc_validation/run_wt.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "20d8d2fc8bbbc82284fda352bbe3dd3d0a853bb2",
+      "path": "analysis/37_wt_nbc_validation/validation_common.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "f229626baba13c0241a15921b31548ce0910482a",
+      "path": "analysis/38_ae4_perturbation_validation/ae4_5pct_execution.log",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "bd22b7aeb64734d7b58b934161f6c7bb3a3e046d",
+      "path": "analysis/38_ae4_perturbation_validation/ae4_null_execution.log",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "d3e497bb90011bc9f7d37e740f9ae3f74049ae61",
+      "path": "analysis/38_ae4_perturbation_validation/final_answer.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "89890b29d2ae5139ac70c605826ee4b6a1d32cad",
+      "path": "analysis/38_ae4_perturbation_validation/run_perturbation.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "2a548bf390a0eb24efd742389db16c7cd59192a3",
+      "path": "analysis/38_ae4_perturbation_validation/summarize_results.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "f5672236aea99cc1abacbfad9ad3a47efe9ab1f1",
+      "path": "analysis/39_palk_nkcc1_full_validation/source_contract.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "a036aa8799cca29b2d51e7b65e4f313ecd8676b5",
+      "path": "prompts/28_transport_relationship_repair.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "f50049ec07b507164c04f95b3a0dd1618f47ba5e",
+      "path": "prompts/29_exact_null_feasibility_audit.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "8381eacbbcc991e1b832dff454219776ce4760ca",
+      "path": "prompts/30_nhe1_model_repair.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "267b6a5a99523efa0dfe312f972dd810c1996e18",
+      "path": "prompts/31_nhe1_mechanistic_repair.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "6af1429f1bc68920829f40ee4c47ab83dbf62832",
+      "path": "prompts/37_wt_nbc_validation.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "e5df2f3fba5c899052a6d4c14ffd0f1c2c4fbf54",
+      "path": "prompts/38_ae4_perturbation_validation.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "8311478c2b180b5e8eb5e560b4ed2c9394bb9950",
+      "path": "prompts/39_palk_nkcc1_full_validation.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "b704dd050d20436f8455ad0c7a4df580c80d8da0",
+      "path": "reference/2018_model_concordance.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "b1d469b59853e1302ed74ab48ba0f4eb9d602018",
+      "path": "reference/R09_wt_rest.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "cc323374c4e3e76f5b9293f8535fee179e6b803e",
+      "path": "reference/R10_wt_rest.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "47fe22869fa74be28b923aabb119269cf2887810",
+      "path": "reference/import_manifest.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "8198b25c48e83d197d72a888121da731a9133b29",
+      "path": "reference/native_wt_contract.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "9c29f4157c53c714747b9e8ccc60dd6caacaf7a9",
+      "path": "reference/routed_rest_reference.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "5e65527944347afe4b36db640822f56e70c41246",
+      "path": "reference/routing_numerical_contract.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "feaca09993cfe0e67e41548f94f2829da60faef4",
+      "path": "reference/sources.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "5f8afa9e3787c55dd33dde91497aebbbf6465906",
+      "path": "reference/task28_partial_handoff.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "bf319d1e369c45c537cf5425c236f7ab4e4eab65",
+      "path": "reference/task29_final_answer.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "06823ec63d618fff853f2281c92e181275c04fb3",
+      "path": "reference/task30_handoff.md",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "471f776f67541bcaadd042782a1c0a438d0009f3",
+      "path": "requirements.txt",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "96d8e25a1d68d1213943d3e741ef753d6687482a",
+      "path": "results/30_nhe1_model_repair/budget.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "a0c8c3c8db65752e56a7d30fa6297ab07a7e8390",
+      "path": "results/30_nhe1_model_repair/contract.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "8741934204b2222caf8f98975b3432349daf5ffd",
+      "path": "results/30_nhe1_model_repair/flux_ledger.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "b6377d1c98f6fb0d7e171a412afa3b3ffee87ff3",
+      "path": "results/30_nhe1_model_repair/incomplete_case.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "e7fb4e38845ce89b84fdd5e1adacd3aa1da3e587",
+      "path": "results/30_nhe1_model_repair/resting_attempts/R09_wt_g_evaluation_1.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "37d089cfd3384531fb796588a790907d2450e6a9",
+      "path": "results/30_nhe1_model_repair/resting_attempts/R09_wt_g_evaluation_2.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "e3251428a417f5dd36b1cfe935df7c177b1378f7",
+      "path": "results/30_nhe1_model_repair/resting_attempts/R09_wt_g_evaluation_3.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "8069ae33f12007b10c7ffebeb8a2e321f2686229",
+      "path": "results/30_nhe1_model_repair/resting_states.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "31dbbb98f57f5bf8140af09177c77511b259469a",
+      "path": "results/30_nhe1_model_repair/verification.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "5c1b95c343b8aba9a71ab14cdf6337cbda55af88",
+      "path": "results/31_nhe1_mechanistic_repair/budget.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "d499be26024ad55ed1bcbe60744dc6db6ccd29a6",
+      "path": "results/31_nhe1_mechanistic_repair/calibration.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "e30f17822bf563f1103c526c7c9159b610f64687",
+      "path": "results/31_nhe1_mechanistic_repair/contract.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "560b985c04dc4e56863def712d8bc113f9a0cb28",
+      "path": "results/31_nhe1_mechanistic_repair/density_freeze.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "c13d3d034645b6279ae694e8f469cebb049e6943",
+      "path": "results/31_nhe1_mechanistic_repair/execution_summary.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "8cdf7bd90acf44695d2756fcd2adcc8a6ebb88e6",
+      "path": "results/31_nhe1_mechanistic_repair/flux_ledger.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "d18d99fb02c6b30122100f51bd1d55e262706bef",
+      "path": "results/31_nhe1_mechanistic_repair/nhe1_parameters.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "db93804918512e3c4ad5c02ae1e15bf2682ab0ee",
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/185f5cee3bcec7a023cf82e4092872114f2292732ad9c4bab68ecf4e062f76e3.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "fb9e3c2dfd5f70ff90964cdc823da59945b1ceb5",
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/4ac4b74f3b56397f6a169611dfed9c1660e2f64ca42cac3bcd37dec84331b111.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "a04b6ecaa4c466d3fe2a18a944772f8f1debd8a3",
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/5a70eeb7a6479f21828fca069de5f60a575edc9b8e18961e3c24ccef734b06ee.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "6799f291bbb3622d9f6ed523615b79f268ab75e4",
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/7c0aa512bbd240e267a04715fd96f8c48cb280101c2dbd0584c1a9e0e19eace7.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "d9c70e6a8d15770dae266c7b7b9de5d275e8a58e",
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/7eb1f1368bb53dd8469bd4b2d1ad764b8b61e908e879fa2ba52477b7cfb47e8b.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "a2f01534684ead13ea2c90ebf908dc14dee5cabf",
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/ac3184559ce5f6ed95640e0c3005c264c3b7c4616f274eb6fb52579398a6154f.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "bfafda7b43f2add633da8b40c911795295d81494",
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/cf6377e0e2165d91ae1bb2060fa77606ae2234e637b3e5804c59a78a16204080.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "c9af9d212e83edd808fdb427e6ae92182c41a853",
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/d961b83eaa5d274bd0443ac6d94495fa6bc4ac3e62b532630d6df5eac6870336.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "54f1b4e5c033698df77280159eabf782ddd92bae",
+      "path": "results/31_nhe1_mechanistic_repair/resting_states.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "bab19ba0c0fa0e698c16d7eb1a719bc90b5ee782",
+      "path": "results/31_nhe1_mechanistic_repair/source_table_s1.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "9743d60510af8ab79ae8b5bb304c3bb0de112cb2",
+      "path": "results/31_nhe1_mechanistic_repair/verification.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "62e2254bd38a5b473c5f61c41efcdb25aeb700a5",
+      "path": "results/37_wt_nbc_validation/budget.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "9da445533dfe62dbce264dbfb6b639a4e3ff162c",
+      "path": "results/37_wt_nbc_validation/rest_nesting.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "14e5e35bbb61ce6a4e910eb9d2d8f42f5ee86ca7",
+      "path": "results/37_wt_nbc_validation/source_verification.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "694a83315e3ff031b398ec07ed4925bcad0e9e68",
+      "path": "results/37_wt_nbc_validation/wt_chloride_partition.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "c29cc28b87bb773456971fc29ebec1898a059d6f",
+      "path": "results/37_wt_nbc_validation/wt_integrated_fluxes.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "17780fcb8a6e7f3c8ecc07b3aa33ff2ed01f0a3a",
+      "path": "results/37_wt_nbc_validation/wt_timeseries.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "8e11ac9da0662acbcb04474f40a95711042ff9c9",
+      "path": "results/37_wt_nbc_validation/wt_verification.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "5cf6f8df83d37dc4bcfe12599f7ac439e91b525d",
+      "path": "results/38_ae4_perturbation_validation/ae4_5pct_integrated_fluxes.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "0fbadef2f2e0e4ca27e676f0c8176a9bfc0f5470",
+      "path": "results/38_ae4_perturbation_validation/ae4_5pct_timeseries.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "16fa630675a4d0bbad4178629dbca6331e1f9738",
+      "path": "results/38_ae4_perturbation_validation/ae4_5pct_verification.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "d9a5e1bee96e00c126cd8bbbdfe79d70289125fc",
+      "path": "results/38_ae4_perturbation_validation/ae4_null_integrated_fluxes.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "ad7dea00f7507b9dca5ea5d915b07f7845431d4d",
+      "path": "results/38_ae4_perturbation_validation/ae4_null_timeseries.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "abda61cddedf3693a9535e2affc68f2ee56e79ba",
+      "path": "results/38_ae4_perturbation_validation/ae4_null_verification.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "2611ac1a1d99c16c30d3557623b61150325c7c2c",
+      "path": "results/38_ae4_perturbation_validation/budget.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "5b19020c7a04c4f49fd178e789ef854ba0c67272",
+      "path": "results/38_ae4_perturbation_validation/comparison_summary.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "565b367c2ce272369e32034c1f8381b44d2162a8",
+      "path": "results/38_ae4_perturbation_validation/cumulative_secretion_comparison.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "a0d90798bf854a4705ef11c751056a1d4ac4eea0",
+      "path": "results/38_ae4_perturbation_validation/flow_comparison.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "e9929e246dc491dd71e911badfaf3b219e40e07b",
+      "path": "results/38_ae4_perturbation_validation/frozen_inputs.json",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "371314904c8ee6647d78ac5f25e0e663b2894602",
+      "path": "results/38_ae4_perturbation_validation/integrated_flux_comparison.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "fa22629d9f340fd60af809b80cdc03f2465fe989",
+      "path": "results/38_ae4_perturbation_validation/intracellular_comparison.csv",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "6dded7fac89a2a7bef4a9377504cf55343fbe294",
+      "path": "scripts/check_phase28_inputs.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "2d3f01f0c77959b43d3066098ea0ea8701a53eab",
+      "path": "scripts/run_task30_nhe1_repair.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "3cef0cd91fa99d39745e9e7275e9a4499ea46a57",
+      "path": "src/modern_full_model/__init__.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "669bd8554329ffcb5c9c70bce891415cda233fec",
+      "path": "src/modern_full_model/acid_base.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "f7ceb851df9e0cb8f4d8a9cb1c540055aa342d54",
+      "path": "src/modern_full_model/ae4_routing_only.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "e0fe3fdf2837d97ee8e235fe1a72dc9854c594b8",
+      "path": "src/modern_full_model/camp_pka.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "8fd2f35804121f11635764231d0669ddd4ffbb64",
+      "path": "src/modern_full_model/membranes.py",
+      "unchanged": false
+    },
+    {
+      "git_blob_sha": "14b1912b0c58b0fb3ae18ff639eeb6a726081c46",
+      "path": "src/modern_full_model/model.py",
+      "unchanged": false
+    },
+    {
+      "git_blob_sha": "c4bf124d497b74d68c1cbe09cf47c04c933bd244",
+      "path": "src/modern_full_model/nbc_minimal.py",
+      "unchanged": false
+    },
+    {
+      "git_blob_sha": "6090805662155915e894804e1a4dbf2acb594241",
+      "path": "src/modern_full_model/nhe1_cha2009.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "6a8ace8dacffe153fbb3d8bbd7188dd0c28f4fd7",
+      "path": "src/modern_full_model/nkcc_stimulation.py",
+      "unchanged": false
+    },
+    {
+      "git_blob_sha": "7cf42ee2305985186595ee90c8be637c7f2ed5bf",
+      "path": "src/modern_full_model/parameters.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "0a2d351830e1004bccd55c4ce609e640634eca03",
+      "path": "src/modern_full_model/states.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "2219945085de0bdd3a97daec8a098370fbda7a26",
+      "path": "src/modern_full_model/task30_nhe1_repair.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "5129f12bc8198c97aa22fa738f28b4c82ed0723a",
+      "path": "src/modern_full_model/task31_nhe1_repair.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "66738cf1963ee5bcb72cb0ebef809266df83d157",
+      "path": "src/modern_full_model/transporters.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "62e88ea22fe132a4f656963fa48959f366fad79d",
+      "path": "src/modern_full_model/validation.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "911d70765f9da1d1bdae5cedf7405b4fb7f2a3af",
+      "path": "src/modern_full_model/water.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "9d16c9b0146e52a57ff3794bc7b190c8219c1811",
+      "path": "tests/test_phase28_setup.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "cf71c7466f3cc7a5d5a70579166198e0e876710b",
+      "path": "tests/test_task30_nhe1.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "eddadcdae3b224bca7960ff73e0b1c37bb45eafe",
+      "path": "tests/test_task31_continuation.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "f88b672402208d19777b45e5e843dbaccb417e1e",
+      "path": "tests/test_task31_nhe1.py",
+      "unchanged": true
+    },
+    {
+      "git_blob_sha": "489685da37bc271e5c60e580b58d1430ba87bdca",
+      "path": "tests/test_task36_minimal_nbc.py",
+      "unchanged": true
+    }
+  ],
+  "prepared_head": "4aa1a1454dfb042d55523d103f10f27d3de77132",
+  "prepared_head_lineage_check": "GitHub comparison: only AGENTS.md, source_contract.md and Task 39 prompt differ from Task 38 final."
+}
