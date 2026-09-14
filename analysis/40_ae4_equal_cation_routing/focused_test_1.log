@@ -1,0 +1,18 @@
+test_complete_cycle_regulatory_scaling_and_expression (task40_source_tests.EqualCationSourceTests.test_complete_cycle_regulatory_scaling_and_expression) ... FAIL
+test_forward_reverse_and_zero_literal_signature (task40_source_tests.EqualCationSourceTests.test_forward_reverse_and_zero_literal_signature) ... ok
+test_inherited_j4_and_anion_sources_exact_in_both_directions (task40_source_tests.EqualCationSourceTests.test_inherited_j4_and_anion_sources_exact_in_both_directions) ... ok
+test_no_other_mechanism_or_parameter_changes (task40_source_tests.EqualCationSourceTests.test_no_other_mechanism_or_parameter_changes) ... ok
+test_reference_algebra_and_full_rhs_perturbation (task40_source_tests.EqualCationSourceTests.test_reference_algebra_and_full_rhs_perturbation) ... ok
+
+======================================================================
+FAIL: test_complete_cycle_regulatory_scaling_and_expression (task40_source_tests.EqualCationSourceTests.test_complete_cycle_regulatory_scaling_and_expression)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/0eeb42563628/ae4-salivary-transport-control/tests/test_task40_equal_cation_routing.py", line 89, in test_complete_cycle_regulatory_scaling_and_expression
+    self.assertAlmostEqual(new.intracellular_conserved_sources_fmol_s[key],gain*value,delta=2e-17)
+AssertionError: -0.012342668603866153 != -0.012342668603866173 within 2e-17 delta (2.0816681711721685e-17 difference)
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.013s
+
+FAILED (failures=1)

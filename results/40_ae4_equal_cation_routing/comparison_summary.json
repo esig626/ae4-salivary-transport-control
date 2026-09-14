@@ -1,0 +1,249 @@
+{
+  "all_initial_states_identical_to_frozen_rest": true,
+  "budget": {
+    "blas_threads": 1,
+    "calibration_calls": 0,
+    "completed_cases": [
+      "wt",
+      "ae4_5pct",
+      "ae4_null"
+    ],
+    "focused_test_runs": 2,
+    "genotype_specific_rest_solves": 0,
+    "implementation_correction_rounds": 1,
+    "integration_attempts": 3,
+    "limits_respected": true,
+    "maximum_numerical_execution_seconds": 900,
+    "no_further_scientific_execution": true,
+    "numerical_execution_seconds": 6.943258034998507,
+    "numerical_retries": 0,
+    "optimisation_calls": 0,
+    "parameter_sweeps": 0,
+    "scientific_workers": 1,
+    "source_tests_pass": true,
+    "started_cases": [
+      "wt",
+      "ae4_5pct",
+      "ae4_null"
+    ],
+    "stationary_numerical_retries": 0,
+    "stationary_residual_evaluations": 98,
+    "stationary_solves": 1,
+    "status": "TASK40_EQUAL_ROUTING_VALIDATION_COMPLETE",
+    "wt_rest_pass": true
+  },
+  "chloride_partitions": {
+    "ae4_5pct": {
+      "definition": "Integrate max(J_Cl,0) for NKCC1, AE4 and AE2 separately, then normalize their sum.",
+      "nkcc1_context_band": [
+        0.65,
+        0.75
+      ],
+      "nkcc1_within_context": false,
+      "positive_loading_pool_fmol": 194.26872329139064,
+      "positive_shares": {
+        "ae2": 0.0022396661748523674,
+        "ae4": 0.022142937845025367,
+        "nkcc1": 0.9756173959801222
+      },
+      "validation_only": true,
+      "window_s": [
+        60,
+        600
+      ]
+    },
+    "ae4_null": {
+      "definition": "Integrate max(J_Cl,0) for NKCC1, AE4 and AE2 separately, then normalize their sum.",
+      "nkcc1_context_band": [
+        0.65,
+        0.75
+      ],
+      "nkcc1_within_context": false,
+      "positive_loading_pool_fmol": 193.72066427366607,
+      "positive_shares": {
+        "ae2": 0.0026402947010223084,
+        "ae4": 0.0,
+        "nkcc1": 0.9973597052989778
+      },
+      "validation_only": true,
+      "window_s": [
+        60,
+        600
+      ]
+    },
+    "wt": {
+      "definition": "Integrate max(J_Cl,0) for NKCC1, AE4 and AE2 separately, then normalize their sum.",
+      "nkcc1_context_band": [
+        0.65,
+        0.75
+      ],
+      "nkcc1_within_context": false,
+      "positive_loading_pool_fmol": 197.92767905893515,
+      "positive_shares": {
+        "ae2": 0.0,
+        "ae4": 0.2074267841520685,
+        "nkcc1": 0.7925732158479315
+      },
+      "validation_only": true,
+      "window_s": [
+        60,
+        600
+      ]
+    }
+  },
+  "comparison_note": "Task 39 and Task 40 effects each use their own frozen WT. Their WT resting states and absolute WT secretion differ.",
+  "held_out_validation": {
+    "experimental_null_deficit_percent": 35,
+    "gap_percentage_points": 31.14251370283209,
+    "predicted_null_cumulative_deficit_percent": 3.8574862971679114,
+    "same_experimental_protocol_or_observation_model_asserted": false,
+    "used_for_fitting": false
+  },
+  "mechanistic_conclusion": "PARTIAL_COMPENSATION_REDUCTION_WITHOUT_SUSTAINED_NA_ELEVATION_OR_LARGE_SECRETION_DEFICIT",
+  "perturbations": {
+    "ae4_5pct": {
+      "ae2_positive_loading_share_percent": 0.22396661748523675,
+      "comparison_extrema_resolution_s": 60,
+      "compensation_change_percentage_points": -8.834985139731977,
+      "cumulative_deficit_percent": 3.417577608024125,
+      "cumulative_lost_pL": 0.03392029657268436,
+      "cumulative_ratio": 0.9658242239197588,
+      "endpoint_X_ratio": 0.9435210616927251,
+      "endpoint_cell_cl_amount_fmol": 78.44975789989701,
+      "endpoint_cell_na_amount_fmol": 26.23180365249977,
+      "endpoint_cl_lower_percent": 3.5092465676188622,
+      "endpoint_differences": {
+        "cl_i_mM": -1.8942884616688218,
+        "hco3_i_mM": 7.019639795644911,
+        "k_i_mM": 2.376878663379486,
+        "na_i_mM": -0.13799331891312505,
+        "nkcc1_x_i_mM4": -320451.6943808906,
+        "ph_i": 0.15643844511658855,
+        "tic_i_mM": 7.323328896918898,
+        "volume_i_pL": 0.10462807776551442
+      },
+      "endpoint_flow_deficit_percent": 2.4073216636683603,
+      "endpoint_flow_ratio": 0.9759267833633164,
+      "endpoint_na_higher_than_wt": false,
+      "integrated_flux_relative_changes_percent": {
+        "ae4_k_cell_source": -89.52228067003529,
+        "ae4_na_cell_source": -89.52228067003529,
+        "ae4_signed_cl_flux": -89.52228067003529,
+        "ae4_ta_cell_source": -89.52228067003529,
+        "ae4_tic_cell_source": -89.52228067003529,
+        "cacc_cl_export": -3.6873424740841987,
+        "nbc_bicarbonate_equivalent_influx": -77.68325960480354,
+        "nbc_current_charge": -77.68325960480354,
+        "nbc_cycles": -77.68325960480354,
+        "nhe1_flux": -53.096220321887124,
+        "nkcc1_cycles": 20.81935078944255,
+        "paracellular_cl_return": -3.3350446251551036,
+        "positive_ae2_cl_loading": null,
+        "positive_ae4_cl_loading": -89.52228067003529,
+        "positive_nkcc1_cl_loading": 20.81935078944255,
+        "pump_cycles": 1.5882712654083253,
+        "signed_ae2_cl_flux": -203.86108928124162,
+        "water_outflow": -3.6806038835554555
+      },
+      "largest_tabulated_cumulative_deficit": {
+        "percent": 3.687123704017903,
+        "time_s": 360.0
+      },
+      "nkcc1_compensation_percent": 20.81935078944255,
+      "nkcc1_replacement_fraction_of_lost_ae4_loading": 0.8886087849664895,
+      "relative_reduction_in_compensation_percent": 29.793232129133408,
+      "tabulated_times_na_higher_than_wt": [
+        60.0,
+        120.0,
+        180.0,
+        240.0,
+        300.0,
+        360.0,
+        420.0,
+        480.0
+      ],
+      "task39_cumulative_deficit_percent": 0.4821618751477019,
+      "task39_nkcc1_compensation_percent": 29.654335929174525
+    },
+    "ae4_null": {
+      "ae2_positive_loading_share_percent": 0.2640294701022308,
+      "comparison_extrema_resolution_s": 60,
+      "compensation_change_percentage_points": -9.937863001202544,
+      "cumulative_deficit_percent": 3.8574862971679114,
+      "cumulative_lost_pL": 0.038286498283985115,
+      "cumulative_ratio": 0.9614251370283209,
+      "endpoint_X_ratio": 0.9369606174901759,
+      "endpoint_cell_cl_amount_fmol": 78.76244505987515,
+      "endpoint_cell_na_amount_fmol": 26.558820368680763,
+      "endpoint_cl_lower_percent": 4.06762906090119,
+      "endpoint_differences": {
+        "cl_i_mM": -2.1957028803599243,
+        "hco3_i_mM": 8.017578609248986,
+        "k_i_mM": 2.6062346945393955,
+        "na_i_mM": -0.09251701367324117,
+        "nkcc1_x_i_mM4": -357674.5162611557,
+        "ph_i": 0.17508658627660711,
+        "tic_i_mM": 8.34979980694395,
+        "volume_i_pL": 0.11943313309437142
+      },
+      "endpoint_flow_deficit_percent": 2.828334199407545,
+      "endpoint_flow_ratio": 0.9717166580059245,
+      "endpoint_na_higher_than_wt": false,
+      "integrated_flux_relative_changes_percent": {
+        "ae4_k_cell_source": -100.0,
+        "ae4_na_cell_source": -100.0,
+        "ae4_signed_cl_flux": -100.0,
+        "ae4_ta_cell_source": -100.0,
+        "ae4_tic_cell_source": -100.0,
+        "cacc_cl_export": -4.161512010800916,
+        "nbc_bicarbonate_equivalent_influx": -86.20841328837179,
+        "nbc_current_charge": -86.20841328837179,
+        "nbc_cycles": -86.20841328837179,
+        "nhe1_flux": -56.5597970740012,
+        "nkcc1_cycles": 23.163449507535304,
+        "paracellular_cl_return": -3.7503523754652934,
+        "positive_ae2_cl_loading": null,
+        "positive_ae4_cl_loading": -100.0,
+        "positive_nkcc1_cl_loading": 23.163449507535304,
+        "pump_cycles": 1.858991247163111,
+        "signed_ae2_cl_flux": -222.19969952148432,
+        "water_outflow": -4.16352984899927
+      },
+      "largest_tabulated_cumulative_deficit": {
+        "percent": 4.10071369928513,
+        "time_s": 360.0
+      },
+      "nkcc1_compensation_percent": 23.163449507535304,
+      "nkcc1_replacement_fraction_of_lost_ae4_loading": 0.8850703510333222,
+      "relative_reduction_in_compensation_percent": 30.022564810924703,
+      "tabulated_times_na_higher_than_wt": [
+        60.0,
+        120.0,
+        180.0,
+        240.0,
+        300.0,
+        360.0,
+        420.0,
+        480.0,
+        540.0
+      ],
+      "task39_cumulative_deficit_percent": 0.6273201314711652,
+      "task39_nkcc1_compensation_percent": 33.10131250873785
+    }
+  },
+  "quadrature": "Trapezoidal on integer seconds plus t=0 and 1e-6; identical to Tasks 37-38.",
+  "status": "TASK40_EQUAL_ROUTING_VALIDATION_COMPLETE",
+  "wt": {
+    "activation_checks": {
+      "cumulative_0_600_gt_1p10_rest": true,
+      "endpoint_at_least_rest": true,
+      "mean_60_600_gt_1p10_rest": true
+    },
+    "activation_required": true,
+    "cumulative_0_600_pL": 0.992524544081835,
+    "endpoint_pL_s": 0.0016021248621457846,
+    "mean_60_600_pL_s": 0.0016366136311001798,
+    "q_rest_pL_s": 0.0010776814707374822,
+    "quadrature": "Trapezoidal on integer seconds plus t=0 and 1e-6; identical to Tasks 37-38."
+  }
+}

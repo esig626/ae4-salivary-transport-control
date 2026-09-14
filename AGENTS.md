@@ -1,78 +1,87 @@
-# Active phase: Task 39 source-fixed Palk NKCC1 full validation
+# Active phase: Task 40 equal Na/K AE4 cation routing
 
-Work only on `codex/task-39-palk-nkcc1-full-validation`.
-Read `analysis/39_palk_nkcc1_full_validation/source_contract.md` first, then execute `prompts/39_palk_nkcc1_full_validation.md`.
+Work only on `codex/task-40-ae4-equal-cation-routing`.
+Read `analysis/40_ae4_equal_cation_routing/source_contract.md` first, then execute `prompts/40_ae4_equal_cation_routing.md`.
 
-This task replaces exactly one scientific component: the generic NKCC1 concentration-response law. Everything else from Task 38 is frozen.
+Task 40 tests exactly one scientific change to the completed Task 39 model: replace donor-concentration-weighted AE4 cation routing with a fixed 50:50 Na/K split while preserving the inherited net AE4 cycle law and every other mechanism.
 
-## Fixed source law
+## Frozen parent
 
-Use the Palk et al. / Benjamin-Johnson two-state steady NKCC1 reduction used in Vera-Sigüenza et al. 2018 Eq. 17:
+Parent scientific lineage is merged Task 39 at:
 
-`X = Na_i * K_i * Cl_i^2`
+`afd101448763439f369f2682c467f069ea18a442`
 
-`J_NKCC1 = alpha_eff * activity_multiplier * (a1 - a2_mM*X)/(a3 + a4_mM*X)`
+Keep fixed:
 
-with
+- Palk/Benjamin NKCC1 law and `alpha_eff`;
+- inherited NKCC1 stimulation multiplier;
+- Cha NHE1 kinetics/carrier amount/stimulation;
+- electrogenic 1 Na : 2 HCO3 NBC and its capacity/current/recruitment;
+- total AE4 net cycle law, capacity, expression scaling, 1 Cl : 1 cation : 2 HCO3 stoichiometry, and beta/cAMP/PKA regulation;
+- AE2, pump, K channels, CaCC, CO2/acid-base, paracellular transport, water, bath, geometry and standard stimulus.
 
-- `a1 = 157.5`
-- `a2_mM = 2.0096e-5`
-- `a3 = 1.0306`
-- `a4_mM = 1.3852e-6`.
+## Fixed Task 40 AE4 routing
 
-Positive flux is one inward `1 Na : 1 K : 2 Cl` cycle. Do not clip negative flux.
+Let `J4` be the inherited AE4 net chloride source, positive inward.
 
-The whole-cell prefactor is determined once, algebraically, from the accepted Task 31 R09 resting NKCC1 cycle flux. Expected audit value:
+Use exactly:
 
-`alpha_eff = 0.017334746894096052 fmol/s`.
+- `S_Na = -0.5 J4`
+- `S_K = -0.5 J4`
+- `S_Cl = +J4`
+- `S_TIC = -2 J4`
+- `S_TA = -2 J4`.
 
-Recompute it independently. No optimiser is permitted.
+Do not change `J4` itself. Do not route by donor concentrations. Do not test another Na/K fraction.
 
-## Freeze everything else
+The charge-equivalent source must remain zero and total cation source must remain `-J4`.
 
-Do not change:
+## Algebraic preflight
 
-- Task 31 R09 resting state;
-- Cha NHE1 and its carrier amount;
-- Task 36 electrogenic `1 Na : 2 HCO3` NBC and fixed capacity;
-- NHE1 stimulation multiplier;
-- routed AE4 stoichiometry/routing;
-- AE4 beta/cAMP/PKA regulation;
-- AE2;
-- Na/K pump;
-- K or Cl channels;
-- CO2/acid-base closure;
-- paracellular pathways;
-- water;
-- bath/geometry;
-- CCh/IPR/Ca/beta stimulus;
-- the existing NKCC1 N1 stimulus-dependent activity multiplier.
+At the accepted Task 31 R09 state:
 
-The old generic NKCC1 law may remain selectable in code but is not active in Task 39 production runs.
+- donor-weighted Na fraction = `0.09062450161183984`
+- `J4 = 0.004937067441546469 fmol/s`
+- expected change in Na source = `-0.0020211144444590447 fmol/s`
+- expected change in K source = `+0.0020211144444590447 fmol/s`
+- direct Cl/TIC/TA AE4 sources unchanged
+- charge perturbation zero.
 
-## Required execution order
+Exact Task 31 REST nesting is therefore not expected.
 
-1. Source-equation and unit-conversion tests.
-2. Exact algebraic resting prefactor check.
-3. Exact Task 31 REST nesting check, with no root solve.
-4. One WT 600 s stimulated run.
-5. If WT passes, one AE4=0.05 run.
-6. If 5% passes, one AE4=0.00 run.
-7. Compare new NKCC1 compensation against frozen Task 38 results and report the held-out secretion phenotype without fitting.
+## Execution order
 
-Stop on the first scientific failure. Do not rescue it.
+1. Implement and source-test the 50:50 routed AE4 evaluator.
+2. Reproduce the algebraic preflight independently.
+3. Perform exactly one intended WT resting-state solve from the accepted Task 31 R09 state as the sole initial guess. One purely numerical retry is allowed; no calibration, multistart or root search family.
+4. If the WT rest is admissible, freeze it.
+5. From that same frozen WT rest run exactly three standard 600 s trajectories: WT, AE4=0.05, AE4=0.00.
+6. Compare Na/K/Cl, NKCC1 compensation, AE2, NBC/NHE1/pump/channel responses, and secretion against Task 40 WT and Task 39 compensation.
+7. Report held-out phenotype context without fitting.
 
-## Absolute anti-combinatorial rule
+## No search
 
-No optimisation, root solving, grids, sweeps, one-at-a-time exploration, pairwise/factorial search, random search, Latin hypercube, multistart, global/evolutionary/Bayesian optimisation, Shapley analysis, alternative NKCC1 coefficients, alternative prefactors, alternate stimulus multiplier, alternate NBC/NHE/AE4 mechanisms, extra genotype conditions, R10, or phenotype fitting.
+No optimisation, routing-fraction sweep, alternate split, R10, genotype-specific rest, alternate NKCC1/NBC/NHE1/AE4 mechanism, parameter retuning, stimulus changes, new transporter, or phenotype fitting.
 
-Maximum three intended integrations and one purely numerical retry across the whole task. One worker, one BLAS thread, maximum 15 minutes numerical execution.
+The 50:50 split is the only routing hypothesis in this task.
 
-## GitHub publication
+## Compute limits
 
-Use the connected GitHub integration for all remote writes.
-Do not use shell Git authentication, PATs, SSH setup or `gh auth`.
+- one intended WT stationary solve;
+- at most one purely numerical stationary retry;
+- three intended production integrations if WT rest passes;
+- at most one purely numerical integration retry across the task;
+- zero optimisation calls;
+- zero parameter sweeps;
+- one worker;
+- one BLAS thread;
+- maximum 15 minutes numerical execution.
+
+## Publication
+
+Use the connected GitHub integration for remote writes.
+Do not use shell Git authentication, PATs, SSH configuration or `gh auth`.
 Do not merge or modify `main`.
-Publish compact UTF-8 source/test/result files only.
+Publish compact UTF-8 source, tests and result files only.
 
-Task 39 ends after the final report or the first declared stop condition.
+Stop at the first declared scientific failure or after the Task 40 final report.

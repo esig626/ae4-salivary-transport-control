@@ -1,0 +1,110 @@
+{
+  "failed_test_names": [],
+  "independent_bookkeeping": {
+    "cell_rhs_assembly_max_abs_fmol_s": 1.0842021724855044e-19,
+    "cell_water_assembly_abs_pL_s": 0.0,
+    "isolated_nbc_signature_max_abs_fmol_s": 0.0,
+    "isolated_nbc_source": {
+      "cl": 0.0,
+      "k": 0.0,
+      "na": 0.0,
+      "ta": 0.0,
+      "tic": 0.0
+    },
+    "nbc_source_plus_current_equivalents_fmol_s": 0.0
+  },
+  "nonrouting_parent_files_verified": 150,
+  "old_donor_weighted_evaluator_retained": true,
+  "reference_preflight": {
+    "J4_fmol_s": 0.004937067441546469,
+    "actual_ae4_source_shifts_fmol_s": {
+      "alkalinity_cell_fmol_s": 0.0,
+      "cl_cell_fmol_s": 0.0,
+      "k_cell_fmol_s": 0.0020211144444590443,
+      "na_cell_fmol_s": -0.0020211144444590447,
+      "tic_cell_fmol_s": 0.0
+    },
+    "charge_perturbation_fmol_s": -4.336808689942018e-19,
+    "decimal_delta_na_source_fmol_s": "-0.0020211144444590445339448700218635960601767501671114",
+    "decimal_na_fraction": "0.090624501611839838199975983191172547781437722085005",
+    "donor_na_fraction": 0.09062450161183984,
+    "exact_task31_rest_nesting_expected": false,
+    "expected_delta_k_source_fmol_s": 0.0020211144444590447,
+    "expected_delta_na_source_fmol_s": -0.0020211144444590447,
+    "full_rhs_shift": [
+      -0.0020211144444590434,
+      0.0020211144444590434,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reference_equal_rhs": [
+      -0.002021114444459071,
+      0.00202111444445921,
+      -3.3306690738754696e-16,
+      2.082752373344654e-16,
+      2.6194324487249787e-16,
+      -5.104423828061755e-16,
+      -2.7755575615628914e-17,
+      -1.3877787807814457e-17,
+      8.326672684688674e-17,
+      -2.42861286636753e-17,
+      -1.1796119636642288e-16,
+      2.172741153660951e-16,
+      0.0
+    ],
+    "reference_old_rhs": [
+      -2.7755575615628914e-17,
+      1.6653345369377348e-16,
+      -3.3306690738754696e-16,
+      2.082752373344654e-16,
+      2.6194324487249787e-16,
+      -5.104423828061755e-16,
+      -2.7755575615628914e-17,
+      -1.3877787807814457e-17,
+      8.326672684688674e-17,
+      -2.42861286636753e-17,
+      -1.1796119636642288e-16,
+      2.172741153660951e-16,
+      0.0
+    ]
+  },
+  "rest_parameter_hashes": {
+    "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+    "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+    "nkcc1_core": "80c412da616a723120032cbff5ecd6184bb32782ec68e6a0d6de6195f5082249",
+    "regulation": "8c9ca55e1e72cc32376748755d90453c0bbca4f41b85d3ba1cc4debb8e542638",
+    "stimulus": "c9b55210206366a9f3996239683abbacff7eec54d80de7d3492fa90a2e254047",
+    "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+  },
+  "status": "PASS",
+  "stimulus_parameter_hashes": {
+    "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+    "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+    "nkcc1_core": "80c412da616a723120032cbff5ecd6184bb32782ec68e6a0d6de6195f5082249",
+    "regulation": "4d560edc26dbb7b9538c0447b9c8d60401804911a0bb40620d9892923ba7ab4b",
+    "stimulus": "93eba70092faaa9497c80ce30d979726a77b092cf04c0ff4cd106d3774a2c4f4",
+    "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+  },
+  "tests_run": 5,
+  "thread_pools": [
+    {
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "version": "0.3.30"
+    },
+    {
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "version": "0.3.30"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "all_three_cases_complete": true,
+  "matching_production_solver_settings": true,
+  "no_model_imports_or_new_numerical_runs": true,
+  "one_frozen_initial_state": true,
+  "only_genotype_expression_differs": true,
+  "readout_source_signatures_exact": true,
+  "readout_times": [
+    0,
+    60,
+    120,
+    180,
+    240,
+    300,
+    360,
+    420,
+    480,
+    540,
+    600
+  ],
+  "status": "PASS"
+}
