@@ -1,0 +1,159 @@
+\section{Model and methods}
+\label{sec:model}
+
+\subsection{Compartments and conserved coordinates}
+
+We consider one well stirred acinar cell coupled to an open interstitial bath and a well stirred lumen. Subscripts $i$, $e$ and $l$ denote intracellular, extracellular and luminal quantities. The interstitial bath is fixed. The dynamic state is written in amount coordinates,
+\begin{equation}
+\label{eq:state-vector}
+\mathbf{x}=\bigl(
+ n_{\Na,i},n_{\K,i},n_{\Cl,i},n_{\TIC,i},n_{\TA,i},
+ n_{\Na,l},n_{\K,l},n_{\Cl,l},n_{\TIC,l},n_{\TA,l},V_i,V_l
+\bigr)^{\mathsf T}.
+\end{equation}
+Concentrations are recovered as $[X]_j=n_{X,j}/V_j$, with the usual conversion that one millimolar in one picolitre corresponds to one femtomole. The use of amounts prevents concentration changes caused by water movement from being mistaken for ion transport.
+
+The model tracks total inorganic carbon and total alkalinity rather than separate bicarbonate, carbonate and proton amounts. In each compartment,
+\begin{align}
+\TIC &= [\mathrm{CO}_2]+[\HCO]+[\COthree],
+\label{eq:tic-definition}\\
+\TA &= [\HCO]+2[\COthree]-[\Hion]+[\mathrm{OH}^{-}]+[B^{-}],
+\label{eq:ta-definition}
+\end{align}
+where $[B^-]$ is the deprotonated fraction of a finite noncarbonate buffer. With $h=[\Hion]$, carbonic acid dissociation constants $K_1$ and $K_2$, water constant $K_w$, total buffer concentration $B_T$ and buffer constant $K_B$, speciation satisfies
+\begin{align*}
+[\mathrm{CO}_2]&=\frac{\TIC h^2}{h^2+K_1h+K_1K_2},\\
+[\HCO]&=\frac{\TIC K_1h}{h^2+K_1h+K_1K_2},\\
+[\COthree]&=\frac{\TIC K_1K_2}{h^2+K_1h+K_1K_2},\\
+[B^-]&=\frac{B_TK_B}{K_B+h},\qquad [\mathrm{OH}^{-}]=\frac{K_w}{h}.
+\end{align*}
+At each right hand side evaluation, $h$ is the positive root that satisfies \cref{eq:ta-definition}, and $\mathrm{pH}=-\log_{10}(h/\mathrm{mM})+3$. This formulation makes bicarbonate and carbonate removal distinguishable: one bicarbonate removes one carbon and one alkalinity equivalent, whereas one carbonate removes one carbon and two alkalinity equivalents.
+
+\subsection{Transport conventions}
+
+Positive transporter flux denotes the physiological direction stated below and is measured in femtomoles per second. Membrane potentials are
+\[
+V_a=\phi_i-\phi_l,\qquad V_b=\phi_i-\phi_e,\qquad V_t=\phi_l-\phi_e=V_b-V_a.
+\]
+A positive conventional current is a positive charge current from the first named compartment to the second. The membrane potentials are treated as fast variables and obtained from quasi steady current closure.
+
+\subsubsection{NKCC1}
+
+The modern model uses the two state Palk--Benjamin concentration response law \citep{Benjamin1997,Palk2010}. The inward cycle flux is
+\begin{equation}
+\label{eq:nkcc1}
+J_N=\alpha_{N}\,
+\frac{a_1-a_2[\Na]_i[\K]_i[\Cl]_i^2}
+     {a_3+a_4[\Na]_i[\K]_i[\Cl]_i^2},
+\end{equation}
+where $\alpha_N$ includes the frozen carrier capacity and the fixed stimulus dependent activity multiplier. Each positive cycle adds one sodium, one potassium and two chloride ions to the cell.
+
+\subsubsection{NHE1}
+
+NHE1 is represented by the source based eight state model of \citet{Cha2009}. Define the occupied and unoccupied fractions
+\[
+P_X(c;K)=\frac{c}{c+K},\qquad Q_X(c;K)=\frac{K}{c+K}.
+\]
+The four effective transitions are
+\begin{align*}
+a&=k_1^+P_{\Na}([\Na]_e;K_{\Na,e})Q_H([\Hion]_e;K_{H,e}),\\
+b&=k_2^+P_H([\Hion]_i;K_{H,i})Q_{\Na}([\Na]_i;K_{\Na,i}),\\
+c&=k_1^-P_{\Na}([\Na]_i;K_{\Na,i})Q_H([\Hion]_i;K_{H,i}),\\
+d&=k_2^-P_H([\Hion]_e;K_{H,e})Q_{\Na}([\Na]_e;K_{\Na,e}).
+\end{align*}
+The regulated turnover and amount flux are
+\begin{equation}
+\label{eq:nhe1}
+J_H=N_H\,u_H(t)\,M_H\,\frac{ab-cd}{a+b+c+d},
+\qquad
+M_H=\left[1+\left(1+\left(\frac{[\Hion]_e}{K_{m,e}}\right)^{m_H}\right)
+\left(\frac{K_{m,i}}{[\Hion]_i}\right)^{n_H}\right]^{-1}.
+\end{equation}
+Here $N_H$ is the salivary NHE1 carrier amount, $u_H(t)$ is one at rest and 2.3 under the standard combined stimulus, $m_H=1$ and $n_H=3$. A positive $J_H$ adds one intracellular sodium and removes one proton, hence contributes one alkalinity equivalent.
+
+\subsubsection{Stimulus recruited sodium/bicarbonate cotransport}
+
+The missing acid--base degree of freedom is represented by an electrogenic inward $1\Na:2\HCO$ cotransporter,
+\[
+[\Na]_e+2[\HCO]_e\rightleftharpoons [\Na]_i+2[\HCO]_i.
+\]
+Its dimensionless inward affinity is
+\begin{equation}
+\label{eq:nbc-affinity}
+A_B=\log\left(\frac{[\Na]_e[\HCO]_e^2}{[\Na]_i[\HCO]_i^2}\right)
++\frac{V_b}{V_T},
+\qquad V_T=\frac{RT}{F}.
+\end{equation}
+The cycle flux is
+\begin{equation}
+\label{eq:nbc-flux}
+J_B=u_{\mathrm{sec}}(t)G_B\tanh\left(\frac{A_B}{w_B}\right),
+\qquad
+u_{\mathrm{sec}}(t)=
+\operatorname{clip}\left(\frac{[\Ca](t)-0.058}{0.25-0.058},0,1\right),
+\end{equation}
+with $w_B=2$ and $G_B=0.1157091$ fmol s$^{-1}$. Positive flux adds one sodium, two units of total inorganic carbon and two alkalinity equivalents. It carries one net negative charge inward and therefore enters the basolateral current closure. The recruitment is exactly zero at the frozen resting calcium concentration, so the accepted resting state is an exact nesting limit rather than a refitted state.
+
+\subsubsection{AE2}
+
+AE2 is a reversible chloride/bicarbonate exchanger with positive direction chloride inward and bicarbonate outward. Its affinity and bounded flux are
+\begin{equation}
+\label{eq:ae2}
+A_2=\log\left(\frac{[\Cl]_e[\HCO]_i}{[\Cl]_i[\HCO]_e}\right),
+\qquad
+J_2=G_2\tanh\left(\frac{A_2}{w_2}\right).
+\end{equation}
+One positive cycle adds one intracellular chloride and removes one unit of total inorganic carbon and one alkalinity equivalent.
+
+\subsubsection{AE4}
+
+The reconstructed AE4 core is a reversible shared carrier model. It has a common chloride path and separate sodium and potassium return paths. For cation $C\in\{\Na,\K\}$, the complete positive chloride loading affinity is
+\begin{equation}
+\label{eq:ae4-affinity}
+A_{4,C}=\log\left(\frac{[\Cl]_e}{[\Cl]_i}\right)
++\log\left(\frac{[C]_i}{[C]_e}\right)
++2\log\left(\frac{[\HCO]_i}{[\HCO]_e}\right).
+\end{equation}
+The chloride edge and cation return edges are assigned symmetric forward and reverse rates whose log ratios sum to \cref{eq:ae4-affinity}. Let $k_{Cl}^{+}$ and $k_{Cl}^{-}$ denote the chloride rates and $k_C^{+}$ and $k_C^{-}$ the cation return rates. With
+\begin{align*}
+\sigma&=k_{Cl}^{+}+k_{Cl}^{-}+\sum_C(k_C^{+}+k_C^{-}),\\
+p_o&=\frac{k_{Cl}^{-}+\sum_C k_C^{+}}{\sigma},\qquad
+p_i=\frac{k_{Cl}^{+}+\sum_C k_C^{-}}{\sigma},
+\end{align*}
+the branch and total cycle fluxes are
+\begin{equation}
+\label{eq:ae4-qss}
+J_{4,C}=N_4u_4(t)\bigl(k_C^{+}p_i-k_C^{-}p_o\bigr),
+\qquad J_4=J_{4,\Na}+J_{4,\K}.
+\end{equation}
+The factor $u_4(t)$ is the frozen beta adrenergic/cAMP/PKA capacity regulation motivated by the experiments of \citet{PenaMunzenmayer2021}; it changes active capacity but not reversal. Local detailed balance is enforced for each branch.
+
+The Task 40 control retains this scalar cycle $J_4$ but fixes the conserved source vector to equal sodium and potassium routing,
+\begin{equation}
+\label{eq:ae4-equal-source}
+\bigl(S_{\Na},S_{\K},S_{\Cl},S_{\TIC},S_{\TA}\bigr)
+=\left(-\tfrac12,-\tfrac12,1,-2,-2\right)J_4.
+\end{equation}
+This intervention separates the total AE4 chloride cycle from the uncertain mixed cation allocation. It is not claimed to be a microscopic transport stoichiometry.
+
+\subsubsection{Pump, channels and paracellular pathways}
+
+The sodium/potassium pump transports three sodium ions outward and two potassium ions inward per cycle. Its total cycle flux is a saturating function of intracellular sodium and extracellular potassium,
+\begin{equation}
+\label{eq:pump}
+P=G_P
+\frac{[\Na]_i^3}{[\Na]_i^3+K_{P,\Na}^3}
+\frac{[\K]_e^2}{[\K]_e^2+K_{P,\K}^2},
+\end{equation}
+and is partitioned between apical and basolateral membranes by fixed fractions. Calcium activated potassium and chloride conductances use Hill activation
+\[
+a_{\Ca}=\frac{[\Ca]^n}{[\Ca]^n+K_{\Ca}^n}
+\]
+and rectifying current voltage relations. Their fluxes are denoted $J_{K,a}$, $J_{K,b}$ and $J_{Cl,a}$. Paracellular sodium, potassium, chloride and bicarbonate fluxes use Goldman--Hodgkin--Katz relations driven by $V_t$. All ionic current terms enter the two membrane closure equations
+\begin{align}
+I_a-I_{\mathrm{para}}&=0,
+\label{eq:current-apical}\\
+I_b+I_{\mathrm{para}}&=0.
+\label{eq:current-basal}
+\end{align}
+The NBC current is included in $I_b$. The potentials $V_a$ and $V_b$ are solved at every state; they are not integrated as slow variables.
