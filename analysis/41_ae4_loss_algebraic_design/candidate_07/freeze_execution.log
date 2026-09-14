@@ -1,0 +1,15 @@
+test_inverse_rhs_current_and_chloride_identities (recruitment_tests.RecruitmentTests.test_inverse_rhs_current_and_chloride_identities) ... ok
+test_rest_wt_and_expression_law (recruitment_tests.RecruitmentTests.test_rest_wt_and_expression_law) ... ok
+test_wt_exact_nesting_and_no_output_scaling (recruitment_tests.RecruitmentTests.test_wt_exact_nesting_and_no_output_scaling) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.023s
+
+OK
+
+{
+  "status": "PASS",
+  "rest_sha256": "a0b96ef16e5967de4dfe2bdabb882f2a28d478e211f920bc19cd735a5a143acb",
+  "new_rest_solves": 0,
+  "selected_b": 0.08140756971327436
+}

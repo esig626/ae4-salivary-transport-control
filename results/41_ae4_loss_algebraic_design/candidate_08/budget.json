@@ -1,0 +1,30 @@
+{
+  "algebraic_design_residual_calls": 0,
+  "algebraic_design_solver_calls": 0,
+  "blas_threads": 1,
+  "completed_cases": [
+    "wt",
+    "ae4_5pct",
+    "ae4_null"
+  ],
+  "genotype_specific_rest_solves": 0,
+  "integration_attempts": 3,
+  "limits_respected": true,
+  "no_further_scientific_execution": true,
+  "numerical_execution_seconds": 5.794570243000635,
+  "numerical_retries": 0,
+  "parameter_selection_uses_target": true,
+  "scientific_workers": 1,
+  "selected_production_parameters": {
+    "null_stimulated_fraction": 0.10511872843288446
+  },
+  "source_tests_pass": true,
+  "started_cases": [
+    "wt",
+    "ae4_5pct",
+    "ae4_null"
+  ],
+  "stationary_solves": 0,
+  "status": "TASK41_RECRUITMENT_VALIDATION_COMPLETE",
+  "wt_rest_pass": true
+}

@@ -1,0 +1,58 @@
+{
+  "branch": "codex/task-40-ae4-equal-cation-routing",
+  "execution_files": [
+    {
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/candidate_common.py",
+      "sha256": "b7251e0b5cd0943a06ca90042484884b0bcc7808659df6c5bdf8a109df38dcbe"
+    },
+    {
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/design.py",
+      "sha256": "f16129c0e1264103a67c3ef18e54b5ba5989ab98d8546e0fe2ec8144ab918059"
+    },
+    {
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/freeze.py",
+      "sha256": "89a07aef4678089dd953b4e63f94eebe420fa3186e0c4f9fb27c02c9a2581a5e"
+    },
+    {
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_07/run_case.py",
+      "sha256": "d86ad3c793d8cd3f7c7bbb6f4c04537ea450613113b614f64e417582952438eb"
+    },
+    {
+      "path": "results/41_ae4_loss_algebraic_design/candidate_07/design.json",
+      "sha256": "5ba6041bc939d663017130d08309eba5e54cfaaf460ffa19279ce698e9f18172"
+    },
+    {
+      "path": "src/modern_full_model/ae4_cacc_recruitment.py",
+      "sha256": "1adb937058a0bc1fa27cc789b99f2491d7d99d7b7c6e3dec4356ee12158c55aa"
+    },
+    {
+      "path": "tests/test_task41_ae4_cacc_recruitment.py",
+      "sha256": "6eb028e1e13d4eb848a2dcf49d40db042c900d47cb17bbb1b3e3a34cd8c90e34"
+    }
+  ],
+  "frozen_rest_state_sha256": "a0b96ef16e5967de4dfe2bdabb882f2a28d478e211f920bc19cd735a5a143acb",
+  "frozen_utc": "2026-09-14T05:15:27.872710+00:00",
+  "long_run_null_physiology_limitation_explicit": true,
+  "prepared_head": "76f3144a4e662eb12d6da26c83ebf6f2ff47a59d",
+  "rest_parameter_hashes": {
+    "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+    "ae4_cacc_recruitment": "a196b5a184ee20d3d604b0d2d4d6052de7ec26382bbcef6af80f98c7005fe94c",
+    "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+    "nkcc1_core": "80c412da616a723120032cbff5ecd6184bb32782ec68e6a0d6de6195f5082249",
+    "regulation": "8c9ca55e1e72cc32376748755d90453c0bbca4f41b85d3ba1cc4debb8e542638",
+    "stimulus": "c9b55210206366a9f3996239683abbacff7eec54d80de7d3492fa90a2e254047",
+    "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+  },
+  "selected_parameters": {
+    "null_stimulated_fraction": 0.08140756971327436
+  },
+  "stimulus_parameter_hashes": {
+    "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+    "ae4_cacc_recruitment": "a196b5a184ee20d3d604b0d2d4d6052de7ec26382bbcef6af80f98c7005fe94c",
+    "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+    "nkcc1_core": "80c412da616a723120032cbff5ecd6184bb32782ec68e6a0d6de6195f5082249",
+    "regulation": "4d560edc26dbb7b9538c0447b9c8d60401804911a0bb40620d9892923ba7ab4b",
+    "stimulus": "93eba70092faaa9497c80ce30d979726a77b092cf04c0ff4cd106d3774a2c4f4",
+    "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+  }
+}

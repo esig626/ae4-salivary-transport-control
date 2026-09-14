@@ -1,0 +1,12 @@
+{
+  "WT_matches_Task40_exactly": true,
+  "all_attempts_disclosed": true,
+  "frozen_input_hashes_checked": true,
+  "no_extra_scientific_runs_during_reporting": true,
+  "plot_full_deficit_range_visible": true,
+  "public_driver_dispatch_test_pass": true,
+  "public_driver_test_calls_ODE_solver": false,
+  "same_rest_all_cases": true,
+  "target_satisfied_both_losses": true,
+  "three_final_trajectories_complete_and_pass": true
+}

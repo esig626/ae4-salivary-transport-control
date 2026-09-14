@@ -1,0 +1,84 @@
+{
+  "status": "PRESERVED_TASK41_RECOVERED_AND_VERIFIED",
+  "continuation_date": "2026-09-14",
+  "requested_repository": "esig626/ae4-salivary-transport-control",
+  "requested_branch": "codex/task-40-ae4-equal-cation-routing",
+  "remote_branch_at_recovery": "76f3144a4e662eb12d6da26c83ebf6f2ff47a59d",
+  "remote_main_at_recovery": "fe51473d7cc201e2e04007aa62fbc1b45098732e",
+  "original_local_file_count": 374,
+  "original_local_file_changes": [],
+  "local_git_state": "No committed HEAD; 150 imported files staged and preserved new task files untracked. Index and HEAD left unchanged.",
+  "parent_blobs_verified_unchanged": 189,
+  "original_Task41_manifest_files_verified": 144,
+  "original_publication_entries_verified": 145,
+  "publication_destination_verified": "Private repository owned by authenticated connected user; push permission confirmed.",
+  "new_model_changes": 0,
+  "science": {
+    "status": "PASS",
+    "additional_ODE_integrations": 0,
+    "additional_stationary_solves": 0,
+    "frozen_source_hashes_verified": true,
+    "WT_cumulative_matches_Task40_exactly": true,
+    "selected_b_rederived_exactly": 0.10511872843288446,
+    "cases": [
+      {
+        "case": "wt",
+        "recomputed_cumulative_pL": 0.992524544081835,
+        "saved_gate_status": "PASS",
+        "saved_checked_state_count": 934,
+        "endpoint_readouts_verified": 37,
+        "endpoint_algebra_residuals_fmol_s": [
+          -5.551115123125783e-17,
+          2.7755575615628914e-17
+        ],
+        "max_saved_conservation_ratio": 0.005908162847845233,
+        "same_frozen_initial_state": true,
+        "cumulative_deficit_percent": 0.0
+      },
+      {
+        "case": "ae4_5pct",
+        "recomputed_cumulative_pL": 0.7626224586023684,
+        "saved_gate_status": "PASS",
+        "saved_checked_state_count": 917,
+        "endpoint_readouts_verified": 37,
+        "endpoint_algebra_residuals_fmol_s": [
+          -5.551115123125783e-17,
+          -2.7755575615628914e-17
+        ],
+        "max_saved_conservation_ratio": 0.0058335558605904225,
+        "same_frozen_initial_state": true,
+        "cumulative_deficit_percent": 23.163365263893244
+      },
+      {
+        "case": "ae4_null",
+        "recomputed_cumulative_pL": 0.6921751966127494,
+        "saved_gate_status": "PASS",
+        "saved_checked_state_count": 916,
+        "endpoint_readouts_verified": 37,
+        "endpoint_algebra_residuals_fmol_s": [
+          5.551115123125783e-17,
+          0.0
+        ],
+        "max_saved_conservation_ratio": 0.005631051180898794,
+        "same_frozen_initial_state": true,
+        "cumulative_deficit_percent": 30.26115064458511
+      }
+    ]
+  },
+  "focused_test_programs": [
+    {
+      "script": "tests/test_task40_equal_cation_routing.py",
+      "exit_code": 0
+    },
+    {
+      "script": "tests/test_task41_ae4_cacc_recruitment.py",
+      "exit_code": 0
+    },
+    {
+      "script": "tests/test_task41_selected_driver.py",
+      "exit_code": 0
+    }
+  ],
+  "focused_test_count": 9,
+  "limitation": "AE4-dependent CaCC recruitment was selected against the secretion target. Its biological dependency is unvalidated; only the inherited 600-second interval is demonstrated."
+}

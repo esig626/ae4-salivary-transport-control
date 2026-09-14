@@ -1,0 +1,6 @@
+test_integrator_receives_selected_rhs (__main__.DriverTest.test_integrator_receives_selected_rhs) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.024s
+
+OK

@@ -1,0 +1,91 @@
+{
+  "case": "ae4_null",
+  "status": "PASS",
+  "attempts": [
+    {
+      "attempt": 1,
+      "global_attempt": 3,
+      "solver": {
+        "label": "production_radau",
+        "method": "Radau",
+        "rtol": 1e-07,
+        "amount_atol_fmol": 1e-10,
+        "volume_atol_pL": 1e-12,
+        "regulatory_atol_fraction": 1e-10,
+        "max_step_s": 2.0
+      },
+      "initial_state_sha256": "a0b96ef16e5967de4dfe2bdabb882f2a28d478e211f920bc19cd735a5a143acb",
+      "solver_status": "finished",
+      "last_solver_time_s": 600.0,
+      "nfev": 2238,
+      "njev": 2,
+      "nlu": 602,
+      "wall_seconds": 1.3851757409975107,
+      "stopped_by_scientific_gate": false
+    }
+  ],
+  "first_failure": null,
+  "error": null,
+  "secretion": {
+    "cumulative_0_600_pL": 0.638278114874437,
+    "mean_60_600_pL_s": 0.0010676361355644163,
+    "endpoint_pL_s": 0.001082580260939689,
+    "q_rest_pL_s": 0.0010776814707374822,
+    "activation_checks": {
+      "mean_60_600_gt_1p10_rest": false,
+      "cumulative_0_600_gt_1p10_rest": false,
+      "endpoint_at_least_rest": true
+    },
+    "activation_required": false,
+    "quadrature": "Trapezoidal on integer seconds plus t=0 and 1e-6; identical to Tasks 37-38."
+  },
+  "chloride_partition": {
+    "window_s": [
+      60,
+      600
+    ],
+    "positive_loading_pool_fmol": 155.05276139750939,
+    "positive_shares": {
+      "nkcc1": 0.9975489440692876,
+      "ae4": 0.0,
+      "ae2": 0.00245105593071243
+    },
+    "nkcc1_context_band": [
+      0.65,
+      0.75
+    ],
+    "nkcc1_within_context": false,
+    "validation_only": true,
+    "definition": "Integrate max(J_Cl,0) for NKCC1, AE4 and AE2 separately, then normalize their sum."
+  },
+  "budget": {
+    "algebraic_design_residual_calls": 29,
+    "algebraic_design_solver_calls": 2,
+    "blas_threads": 1,
+    "completed_cases": [
+      "wt",
+      "ae4_5pct",
+      "ae4_null"
+    ],
+    "genotype_specific_rest_solves": 0,
+    "integration_attempts": 3,
+    "limits_respected": true,
+    "no_further_scientific_execution": true,
+    "numerical_execution_seconds": 5.757237792004162,
+    "numerical_retries": 0,
+    "parameter_selection_uses_target": true,
+    "scientific_workers": 1,
+    "selected_production_parameters": {
+      "null_stimulated_fraction": 0.08140756971327436
+    },
+    "source_tests_pass": true,
+    "started_cases": [
+      "wt",
+      "ae4_5pct",
+      "ae4_null"
+    ],
+    "stationary_solves": 0,
+    "status": "TASK41_RECRUITMENT_VALIDATION_COMPLETE",
+    "wt_rest_pass": true
+  }
+}

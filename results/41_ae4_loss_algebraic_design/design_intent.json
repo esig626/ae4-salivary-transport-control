@@ -1,0 +1,24 @@
+{
+  "capacity_seed_from_literal_A_over_2C_plus_A": 0.099588569181597,
+  "design_equations": 21,
+  "design_unknowns": 21,
+  "parameter_selection_uses_target": true,
+  "scientific_workers": 1,
+  "solver": "root/hybr",
+  "target_finite_horizon_range": [
+    0.2,
+    0.35
+  ],
+  "target_null_sustained_deficit": 0.275,
+  "thread_pools": [
+    {
+      "internal_api": "openblas",
+      "num_threads": 1
+    },
+    {
+      "internal_api": "openblas",
+      "num_threads": 1
+    }
+  ],
+  "trajectories_before_selection": 0
+}

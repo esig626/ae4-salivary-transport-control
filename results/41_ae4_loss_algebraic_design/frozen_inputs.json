@@ -1,0 +1,66 @@
+{
+  "branch": "codex/task-40-ae4-equal-cation-routing",
+  "execution_files": [
+    {
+      "path": "analysis/41_ae4_loss_algebraic_design/constrain_design.py",
+      "sha256": "3fa76bea0ce170d33a718120a1f8f98318907c1e8715973f8b914b0e4ddc68bc"
+    },
+    {
+      "path": "analysis/41_ae4_loss_algebraic_design/inverse_balance.py",
+      "sha256": "866947bbc632a428d4b5849753fc9fb21701fc301c2a375f6f58d0737cf419a5"
+    },
+    {
+      "path": "analysis/41_ae4_loss_algebraic_design/reduced_inverse.py",
+      "sha256": "c264624646b3990645e622ca978296826c99e1b775fa73cd93d9abcdaca5caad"
+    },
+    {
+      "path": "analysis/41_ae4_loss_algebraic_design/run_case.py",
+      "sha256": "0dc5d2641a6f50edcdc92131b1b1bb9dc3d0cf4360d75caa999365d0e978d533"
+    },
+    {
+      "path": "analysis/41_ae4_loss_algebraic_design/run_rest.py",
+      "sha256": "66b96bab0114bcade41d30d9342ca5278092130f42de1d3867d4c11035a591a9"
+    },
+    {
+      "path": "analysis/41_ae4_loss_algebraic_design/validation_common.py",
+      "sha256": "7e72a1d0d9813903da3bcfee793c3b7ba7d476ffbe4a108adc6e2b7c3978e4f4"
+    },
+    {
+      "path": "results/41_ae4_loss_algebraic_design/capacity_design.json",
+      "sha256": "29518c79c7c700fb7ee3eeac6e4dec56e45df596879dae48fefc970ef38dbd38"
+    },
+    {
+      "path": "src/modern_full_model/nkcc1_capacity_limited.py",
+      "sha256": "5d0e5bdfbca6a874bfe055f162bf925ef4db70d415692271248f351c14bed0e8"
+    },
+    {
+      "path": "tests/test_task41_nkcc1_capacity.py",
+      "sha256": "816147caa792ca423021d6f2bc94b15bee99b77144979590acabc157ac7f394b"
+    }
+  ],
+  "frozen_rest_state_sha256": "d94a5a160f3da74a7ffdec17cee844919fa5f7d3b770bccf9d43777c1e6373bd",
+  "frozen_utc": "2026-09-14T04:53:56.765282+00:00",
+  "long_run_design_null_physiology_failure_explicit": true,
+  "prepared_head": "76f3144a4e662eb12d6da26c83ebf6f2ff47a59d",
+  "rest_parameter_hashes": {
+    "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+    "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+    "nkcc1_core": "80c412da616a723120032cbff5ecd6184bb32782ec68e6a0d6de6195f5082249",
+    "nkcc1_finite_capacity": "91e6b20921086a9b5db93e8b56bc01b507194758eff21513a52f44cdecb63a74",
+    "regulation": "8c9ca55e1e72cc32376748755d90453c0bbca4f41b85d3ba1cc4debb8e542638",
+    "stimulus": "c9b55210206366a9f3996239683abbacff7eec54d80de7d3492fa90a2e254047",
+    "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+  },
+  "selected_parameters": {
+    "cycle_capacity_fmol_s": 0.11825332823371645
+  },
+  "stimulus_parameter_hashes": {
+    "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+    "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+    "nkcc1_core": "80c412da616a723120032cbff5ecd6184bb32782ec68e6a0d6de6195f5082249",
+    "nkcc1_finite_capacity": "91e6b20921086a9b5db93e8b56bc01b507194758eff21513a52f44cdecb63a74",
+    "regulation": "4d560edc26dbb7b9538c0447b9c8d60401804911a0bb40620d9892923ba7ab4b",
+    "stimulus": "93eba70092faaa9497c80ce30d979726a77b092cf04c0ff4cd106d3774a2c4f4",
+    "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+  }
+}

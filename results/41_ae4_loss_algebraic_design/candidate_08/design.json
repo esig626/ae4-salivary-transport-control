@@ -1,0 +1,23 @@
+{
+  "actual_residual_calls": 0,
+  "additional_trajectories_during_selection": 0,
+  "inputs": {
+    "previous_b": 0.08140756971327436,
+    "previous_null_Q_pL": 0.638278114874437,
+    "task40_null_Q_pL": 0.9542380457978499,
+    "wt_Q_pL": 0.992524544081835
+  },
+  "method": "Closed-form two-point saturating-conductance surrogate; not an exact ODE identity",
+  "null_stimulated_cacc_fraction": 0.10511872843288446,
+  "parameter_selection_uses_trajectories": true,
+  "prior_stationary_null_ph_limitation": "Prior b=0.08140757 has limiting pH=7.3191; no long-run validation claimed at corrected b",
+  "root_calls": 0,
+  "solver_success": true,
+  "surrogate": {
+    "Qinf_pL": 0.9980208525928306,
+    "k": 0.04588247868316062,
+    "target_Q_pL": 0.6947671808572845,
+    "target_null_cumulative_deficit": 0.3
+  },
+  "wall_seconds": 0.0004451610002433881
+}

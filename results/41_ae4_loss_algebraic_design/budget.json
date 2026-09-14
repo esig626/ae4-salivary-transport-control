@@ -1,0 +1,31 @@
+{
+  "algebraic_design_residual_calls": 48568,
+  "algebraic_design_solver_calls": 7,
+  "algebraic_least_squares_solver_calls": 2,
+  "blas_threads": 1,
+  "completed_cases": [
+    "wt",
+    "ae4_5pct"
+  ],
+  "genotype_specific_rest_solves": 0,
+  "integration_attempts": 3,
+  "limits_respected": true,
+  "no_further_scientific_execution": true,
+  "numerical_execution_seconds": 44.19970487700812,
+  "numerical_retries": 0,
+  "parameter_selection_uses_target": true,
+  "scientific_workers": 1,
+  "selected_production_parameters": {
+    "cycle_capacity_fmol_s": 0.11825332823371645
+  },
+  "source_tests_pass": true,
+  "started_cases": [
+    "wt",
+    "ae4_5pct",
+    "ae4_null"
+  ],
+  "stationary_solves": 1,
+  "status": "TASK41_CAPACITY_AE4_NULL_FAILED",
+  "unselected_algebraic_candidates_simulated": 0,
+  "wt_rest_pass": true
+}
