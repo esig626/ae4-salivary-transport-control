@@ -1,0 +1,154 @@
+{
+  "dimensionless_additional_groups": {
+    "AE4_to_NKCC_chloride_initial": 0.010982931975181706,
+    "AE4_to_NKCC_cycle_initial": 0.02196586395036341,
+    "Ka1_over_C0": 5.478125756719188e-06,
+    "Ka2_over_C0": 3.4564636801880793e-10,
+    "Kw_over_C0_squared": 4.756242568370987e-13,
+    "carrier_QSS_time_ratio_initial": 0.0001392109809217884,
+    "cell_buffer_K_over_C0": 6.89655172413793e-07,
+    "cell_buffer_scaled": 0.14235990889597497,
+    "cell_other_impermeant_scaled": 0.5917396954358599,
+    "co2_apical": 6.455402013220178,
+    "co2_basolateral": 12.910804026440356,
+    "electrical_relaxation_group": null,
+    "electrical_relaxation_reason": "No capacitance or voltage differential equation in the frozen model; conductance groups measure currents and do not establish an electrical relaxation time.",
+    "fixed_cell_charge_scaled": 0.37042884519658564,
+    "lumen_buffer_K_over_C0": 6.89655172413793e-07,
+    "lumen_buffer_scaled": 6.543937703691496e-11
+  },
+  "intracellular_ph_range": [
+    6.769569567561475,
+    7.119566175676634
+  ],
+  "joint_projection_kernel": "zero",
+  "joint_projection_rank": 5,
+  "maxima": {
+    "carbon_alkalinity_identity": 0.0,
+    "carbonate_derivative_relative": 2.1133181434178927e-08,
+    "carbonate_ph": 4.11226608321158e-13,
+    "charge_rate": 1.607047828144914e-14,
+    "electrical_slope_relative": 3.105515844481488e-12,
+    "electrical_voltage": 8.326672684688674e-17,
+    "rhs_scaled": 4.509299800023877e-12,
+    "structural_identity": 2.220446049250313e-16
+  },
+  "minimum_electrical_slope_S": 5.430912551739446e-09,
+  "proof_scope": "Exact identities and conditional closure proofs; random checks establish implementation agreement, not global physiology or global stability.",
+  "random_seed": 45044,
+  "regulatory_derivative_error_per_s": [
+    3.367445211566178e-13,
+    5.884459586269486e-13
+  ],
+  "regulatory_jacobian_caveat": "At r=1 the executable trial clip is not differentiable. A centred difference halves its column. Use the inward derivative or the stated smooth analytical extension dr/dt=(1-r)/30 for full spectrum and modal calculations.",
+  "source_vectors": [
+    {
+      "alkalinity": "-2",
+      "carbon": "-2",
+      "charge": "0",
+      "chloride": "1",
+      "mechanism": "C0",
+      "nu": [
+        "-1/2",
+        "-1/2",
+        "1",
+        "-2",
+        "-2"
+      ],
+      "stationary_projection": "0"
+    },
+    {
+      "alkalinity": "-1",
+      "carbon": "-1",
+      "charge": "0",
+      "chloride": "1",
+      "mechanism": "C1",
+      "nu": [
+        "1",
+        "-1",
+        "1",
+        "-1",
+        "-1"
+      ],
+      "stationary_projection": "-2"
+    },
+    {
+      "alkalinity": "-2",
+      "carbon": "-1",
+      "charge": "0",
+      "chloride": "1",
+      "mechanism": "C2",
+      "nu": [
+        "1",
+        "-2",
+        "1",
+        "-1",
+        "-2"
+      ],
+      "stationary_projection": "-3"
+    },
+    {
+      "alkalinity": "-2",
+      "carbon": "-2",
+      "charge": "0",
+      "chloride": "1",
+      "mechanism": "C3a",
+      "nu": [
+        "0",
+        "-1",
+        "1",
+        "-2",
+        "-2"
+      ],
+      "stationary_projection": "-1"
+    },
+    {
+      "alkalinity": "-2",
+      "carbon": "-2",
+      "charge": "0",
+      "chloride": "1",
+      "mechanism": "C3b",
+      "nu": [
+        "-1",
+        "0",
+        "1",
+        "-2",
+        "-2"
+      ],
+      "stationary_projection": "1"
+    },
+    {
+      "alkalinity": "-2",
+      "carbon": "-1",
+      "charge": "0",
+      "chloride": "1",
+      "mechanism": "C4a",
+      "nu": [
+        "0",
+        "-1",
+        "1",
+        "-1",
+        "-2"
+      ],
+      "stationary_projection": "-1"
+    },
+    {
+      "alkalinity": "-2",
+      "carbon": "-1",
+      "charge": "0",
+      "chloride": "1",
+      "mechanism": "C4b",
+      "nu": [
+        "-1",
+        "0",
+        "1",
+        "-1",
+        "-2"
+      ],
+      "stationary_projection": "1"
+    }
+  ],
+  "states": 84,
+  "states_per_class": 12,
+  "status": "passed"
+}
