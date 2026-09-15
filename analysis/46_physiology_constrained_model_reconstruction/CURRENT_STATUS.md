@@ -1,130 +1,61 @@
-# Current status — milestone 01: Task 44 failure baseline replay
+# Current status: Task 46G local solver verification complete
 
-- Milestone: 01, reproduce the unchanged relevant Task 44 baseline.
-- Branch: `analysis/task-46-physiology-constrained-model-reconstruction`.
-- Branch head before milestone: `6b8fc26df59da943e2656cf3237ee603311c00a7`.
-- Previous remotely verified checkpoint: 00 at that same SHA.
+* Branch: `analysis/task-46-physiology-constrained-model-reconstruction`.
+* Preceding branch SHA: `3598bd866c33d41d4a6914bda56d17c73900e82a`.
+* Current immutable checkpoint: `CHECKPOINT_46G_LOCAL_CORE.md`.
+* The containing commit identifies this checkpoint after publication.
 
-## Recovery verification on 15 September 2026
+## Completed and verified
 
-Resumed from the requested checkpoint 00 commit with the unpublished milestone
-01 payload already staged. Fetched the remote branch and confirmed it remained
-at that same commit; fast-forward reconciliation was already up to date.
-Preserved `CHECKPOINT_01.md`, the replay scripts and every recovered numerical
-output byte for byte. The fresh independent verifier again passed 67,067
-numerical comparisons and 3,886 logical checks, including 1,806 fresh state
-evaluations and 88 eigenvalue comparisons. Its complete output is byte-identical
-to `output/checkpoint_01_independent_verification.json`. The recovery receipt is
-`output/checkpoint_01_recovery.json`; it records hashes and the exact command.
-No additional integrations or root solves were required for recovery.
+Read Task 46G and the local core documentation. Installed its declared
+dependencies and passed the supplied smoke test. The independent analytical
+control passed two FBA objectives and reference/fast/prepared FVA checks across
+three regions. All 90 comparisons with analytical endpoints and all 60
+comparisons between reference and fast paths passed, with zero absolute
+endpoint error. Thirty explicitly specified complete states independently
+verify endpoint attainability.
 
-This resumption completes and publishes milestone 01 only. Milestone 02 remains
-unstarted; the next-milestone instructions below are a handoff for a later
-authorised resumption.
+All solver imports resolved within the required local vendor directory. Core
+file hashes remained unchanged. No CarbonScope repository was accessed or
+modified. No AE4 scientific CBM optimisation, new kinetics or phenotype fitting
+was performed. The full Task 46 reconstruction is not complete.
 
-## Completed
+Read `LOCAL_CBM_VERIFICATION.md` and
+`output/checkpoint_46g_local_core_verification.json` for the exact control,
+versions, tolerances, imports, hashes and results.
 
-Reproduced WT, 5% AE4 and AE4-null 600 s production trajectories, the C0
-constant-input equilibrium continuation, eigenvalues/slow modes and local
-compensation derivative. Recomputed cumulative secretion and the two distinct
-60–600 s compensation measures. Retained pH, Na, K, Cl, carbon, alkalinity,
-cell/lumen volumes/compositions, electrical closure and AE4 regulation.
-No scientific parameter or equation changed.
+## Preserved scientific state
 
-Read the Task 43 and Task 44 pinned reports, PDFs and numerical source context.
-All original sources remain in clean detached checkouts. The replay calls
-unchanged source functions and writes exclusively to Task 46 paths.
+Checkpoint 01 remains the authoritative Task 44 failure replay, published at
+`83e69048a329135b95ef00f007610610ff8afc6a`. Its scripts and outputs are
+unchanged. Its report and records retain the known thermodynamic, protocol
+and mathematical limitations. No AE4 conclusion follows from this control.
 
-## Verified
+Main, manuscript, Tasks 1–45, production source, previous outputs and the
+local core are unchanged. The Task 46 branch remains unmerged.
 
-The primary comparison record has 1,794 numerical comparisons, all bit-identical
-to the corresponding pinned references. The three production cases each pass
-934 full inherited state/conservation checks; all eight C0 roots pass full
-physiology gates and have negative-real-part spectra. Four independently
-solved nearby roots verify the local WT IFT derivative. A separate independent
-verifier checks saved dense states, volume extrema, reconstructed quadrature,
-root gates and source preservation; its exact counts and result are recorded
-in `output/checkpoint_01_independent_verification.json`: 67,067 numerical
-comparisons (67,060 exact, seven quadrature-roundoff differences), 3,886 logical
-checks and 1,806 fresh saved-state evaluations, with zero failures.
+## Next scientific milestone
 
-One preliminary WT attempt failed only during JSON serialisation of a NumPy
-boolean. Its CSV outputs and failure record are preserved. The fixed run used
-four integrations; including the preliminary WT attempt, this milestone used
-five integrations, twelve stationary solves, no optimisation, no parameter
-search and no scientific retry/rescue.
+Freeze the construction/holdout evidence split and implement Task 46E CBM
+milestone 1: one curated network, transport ledger, exact S matrix, charge and
+conservation audit, provenance of bounds, rank, nullspace dimension and shared
+WT/KO capacities. Publish it before phenotype optimisation. Do not rerun the
+old dynamic model merely to begin this stage. Keep all AE4 biology above the
+local generic solver layer, without an external CarbonScope dependency.
 
-## Files and results
+Subsequent CBM milestones cover WT feasibility/FVA, knockout feasibility,
+the justified NKCC constraint, targeted coupling, sparse structural repair and
+the decision report. Each requires its own remote checkpoint. New kinetics
+remain gated on the published CBM decision.
 
-- `replay_baseline.py`, `verify_baseline.py`.
-- `BASELINE_REPRODUCTION.md`.
-- `output/checkpoint_01_replay/`: trajectories, states, summaries, roots, IFT,
-  compensation and primary comparison record.
-- `output/checkpoint_01_independent_verification.json`.
-- `output/checkpoint_01_execution.json`.
-- `output/checkpoint_01_attempt01_failure.json` and
-  `output/checkpoint_01_baseline/`: preserved implementation failure outputs.
-- Updated `PROTOCOL.md` describes the verified GitHub-integration publication
-  route after shell Git lacked write authentication.
-
-## Scientific conclusions so far
-
-The failure baseline is reproduced: cumulative deficits are 3.417577608% (5%)
-and 3.857486297% (null); the stationary null deficit is 0.9461727943%.
-The local independent-verifier NKCC chloride compensation is 92.90107418%;
-finite-time replacement is 88.50703510%; relative integrated NKCC increase is
-23.16344951%. WT/5%/null slowest decay times are
-345.81857188/442.08904428/459.91603104 s. These are separate local and finite-time
-numerical results. No new model has been proposed or accepted.
-
-## Unresolved issues
-
-Causal diagnosis remains pending. The inherited thermodynamic opposition of
-C0's substituted source convention, the shared WT resting initial condition
-for mutants, isolated-assay protocol mismatch and lack of global/finite-range
-robustness proofs remain explicit. No evidence split or model search has yet
-been performed. The baseline is not a successful physiological reconstruction.
-
-## Exact next milestone
-
-Milestone 02: causal diagnosis of excessive NKCC compensation using the pinned
-Task 43 provenance and Task 44 derivatives, state/network interactions and
-chloride storage. Rank causes in Markdown and machine-readable form. Do not
-change equations or begin evidence/model search before checkpoint 02 publication.
-
-## Exact resume commands
-
-From the Task 46 repository root:
+## Resume and verify publication
 
 ```bash
 git fetch origin
-git switch analysis/task-46-physiology-constrained-model-reconstruction
-git merge --ff-only origin/analysis/task-46-physiology-constrained-model-reconstruction
+git pull --ff-only
 python analysis/46_physiology_constrained_model_reconstruction/verify_checkpoint.py --published
-git show HEAD:analysis/46_physiology_constrained_model_reconstruction/CURRENT_STATUS.md
-git show 547f113d9123ab1976774639a69483faf40cef34:analysis/43_parameter_provenance/output/task44_sensitivity_crosswalk.csv
-git show e5fa9840bf96be3147c6118daee4942468c78f8b:analysis/44_full_system_mathematics/output/expression_sensitivities.csv
-git show e5fa9840bf96be3147c6118daee4942468c78f8b:src/modern_full_model/nkcc1_palk2010.py
 ```
 
-Read `BASELINE_REPRODUCTION.md`, then implement the new Task 46 diagnosis
-script/report; no diagnosis script is claimed to exist at this checkpoint.
-Do not rerun completed baseline calculations merely to resume milestone 02.
-For an explicitly requested independent replay, use a new scratch destination:
-
-```bash
-PYTHONDONTWRITEBYTECODE=1 python analysis/46_physiology_constrained_model_reconstruction/replay_baseline.py --source /absolute/path/to/clean-pinned-source44 --output /absolute/path/to/new-empty-replay-output
-```
-
-The source checkout must be exactly
-`e5fa9840bf96be3147c6118daee4942468c78f8b`; the output directory must not exist.
-
-## Publication cleanliness and identity
-
-Checkpoint 00 was independently confirmed clean and remotely published at
-`6b8fc26df59da943e2656cf3237ee603311c00a7` before this work began. This checkpoint
-is published only if its independently reviewed tree is committed, the remote
-Task 46 ref contains that commit, and the local checkout is fast-forwarded and
-clean. The post-publication guard is mandatory before milestone 02.
-The containing commit identifies checkpoint 01. Earlier checkpoint files and
-outputs are unchanged. No force push, history rewrite or branch merge is used.
+Publication is complete only when the remote branch matches this checkpoint's
+commit and the working tree is clean. `PROTOCOL.md` records the connected
+GitHub publication route if shell write authentication is unavailable.

@@ -1,0 +1,683 @@
+{
+  "control": {
+    "S": [
+      [
+        1.0,
+        0.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        -1.0
+      ]
+    ],
+    "fba_maximum": {
+      "diagnostics": {
+        "max_lower_bound_violation": 0.0,
+        "max_mass_balance_residual": 0.0,
+        "max_upper_bound_violation": 0.0,
+        "objective_recalculation_error": 0.0
+      },
+      "expected": 10,
+      "fluxes": {
+        "D_A": 5.0,
+        "D_B": 5.0,
+        "T": 1.0,
+        "U_A": 6.0,
+        "U_B": 4.0
+      },
+      "observed": 10.0
+    },
+    "fba_minimum_transfer": {
+      "diagnostics": {
+        "max_lower_bound_violation": 0.0,
+        "max_mass_balance_residual": 0.0,
+        "max_upper_bound_violation": 0.0,
+        "objective_recalculation_error": 0.0
+      },
+      "expected": -2,
+      "fluxes": {
+        "D_A": 2.0,
+        "D_B": 2.0,
+        "T": -2.0,
+        "U_A": 0.0,
+        "U_B": 4.0
+      },
+      "observed": -2.0
+    },
+    "fva_regions": [
+      {
+        "fraction": null,
+        "maximum_absolute_error": 0.0,
+        "name": "whole_feasible_region",
+        "observed_ranges": {
+          "prepared_vffva": [
+            [
+              0.0,
+              6.0
+            ],
+            [
+              0.0,
+              4.0
+            ],
+            [
+              -2.0,
+              3.0
+            ],
+            [
+              0.0,
+              5.0
+            ],
+            [
+              0.0,
+              7.0
+            ]
+          ],
+          "reference": [
+            [
+              0.0,
+              6.0
+            ],
+            [
+              0.0,
+              4.0
+            ],
+            [
+              -2.0,
+              3.0
+            ],
+            [
+              0.0,
+              5.0
+            ],
+            [
+              0.0,
+              7.0
+            ]
+          ],
+          "vffva": [
+            [
+              0.0,
+              6.0
+            ],
+            [
+              0.0,
+              4.0
+            ],
+            [
+              -2.0,
+              3.0
+            ],
+            [
+              0.0,
+              5.0
+            ],
+            [
+              0.0,
+              7.0
+            ]
+          ]
+        },
+        "ranges": [
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            -2,
+            3
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            7
+          ]
+        ],
+        "witnesses": [
+          [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              1,
+              5,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              0,
+              4
+            ]
+          ],
+          [
+            [
+              0,
+              2,
+              -2,
+              2,
+              0
+            ],
+            [
+              3,
+              0,
+              3,
+              0,
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              0,
+              5,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              4,
+              3,
+              0,
+              7
+            ]
+          ]
+        ]
+      },
+      {
+        "fraction": 0.8,
+        "maximum_absolute_error": 0.0,
+        "name": "retain_80_percent",
+        "observed_ranges": {
+          "prepared_vffva": [
+            [
+              4.0,
+              6.0
+            ],
+            [
+              2.0,
+              4.0
+            ],
+            [
+              -1.0,
+              3.0
+            ],
+            [
+              1.0,
+              5.0
+            ],
+            [
+              3.0,
+              7.0
+            ]
+          ],
+          "reference": [
+            [
+              4.0,
+              6.0
+            ],
+            [
+              2.0,
+              4.0
+            ],
+            [
+              -1.0,
+              3.0
+            ],
+            [
+              1.0,
+              5.0
+            ],
+            [
+              3.0,
+              7.0
+            ]
+          ],
+          "vffva": [
+            [
+              4.0,
+              6.0
+            ],
+            [
+              2.0,
+              4.0
+            ],
+            [
+              -1.0,
+              3.0
+            ],
+            [
+              1.0,
+              5.0
+            ],
+            [
+              3.0,
+              7.0
+            ]
+          ]
+        },
+        "ranges": [
+          [
+            4,
+            6
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            -1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        "witnesses": [
+          [
+            [
+              4,
+              4,
+              -1,
+              5,
+              3
+            ],
+            [
+              6,
+              2,
+              1,
+              5,
+              3
+            ]
+          ],
+          [
+            [
+              6,
+              2,
+              1,
+              5,
+              3
+            ],
+            [
+              4,
+              4,
+              -1,
+              5,
+              3
+            ]
+          ],
+          [
+            [
+              4,
+              4,
+              -1,
+              5,
+              3
+            ],
+            [
+              4,
+              4,
+              3,
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              4,
+              4,
+              3,
+              1,
+              7
+            ],
+            [
+              4,
+              4,
+              -1,
+              5,
+              3
+            ]
+          ],
+          [
+            [
+              4,
+              4,
+              -1,
+              5,
+              3
+            ],
+            [
+              4,
+              4,
+              3,
+              1,
+              7
+            ]
+          ]
+        ]
+      },
+      {
+        "fraction": 1.0,
+        "maximum_absolute_error": 0.0,
+        "name": "retain_optimum",
+        "observed_ranges": {
+          "prepared_vffva": [
+            [
+              6.0,
+              6.0
+            ],
+            [
+              4.0,
+              4.0
+            ],
+            [
+              1.0,
+              3.0
+            ],
+            [
+              3.0,
+              5.0
+            ],
+            [
+              5.0,
+              7.0
+            ]
+          ],
+          "reference": [
+            [
+              6.0,
+              6.0
+            ],
+            [
+              4.0,
+              4.0
+            ],
+            [
+              1.0,
+              3.0
+            ],
+            [
+              3.0,
+              5.0
+            ],
+            [
+              5.0,
+              7.0
+            ]
+          ],
+          "vffva": [
+            [
+              6.0,
+              6.0
+            ],
+            [
+              4.0,
+              4.0
+            ],
+            [
+              1.0,
+              3.0
+            ],
+            [
+              3.0,
+              5.0
+            ],
+            [
+              5.0,
+              7.0
+            ]
+          ]
+        },
+        "ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "witnesses": [
+          [
+            [
+              6,
+              4,
+              1,
+              5,
+              5
+            ],
+            [
+              6,
+              4,
+              1,
+              5,
+              5
+            ]
+          ],
+          [
+            [
+              6,
+              4,
+              1,
+              5,
+              5
+            ],
+            [
+              6,
+              4,
+              1,
+              5,
+              5
+            ]
+          ],
+          [
+            [
+              6,
+              4,
+              1,
+              5,
+              5
+            ],
+            [
+              6,
+              4,
+              3,
+              3,
+              7
+            ]
+          ],
+          [
+            [
+              6,
+              4,
+              3,
+              3,
+              7
+            ],
+            [
+              6,
+              4,
+              1,
+              5,
+              5
+            ]
+          ],
+          [
+            [
+              6,
+              4,
+              1,
+              5,
+              5
+            ],
+            [
+              6,
+              4,
+              3,
+              3,
+              7
+            ]
+          ]
+        ]
+      }
+    ],
+    "lower": [
+      0.0,
+      0.0,
+      -2.0,
+      0.0,
+      0.0
+    ],
+    "maximisation_objective": [
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "metabolite_order": [
+      "A",
+      "B"
+    ],
+    "reaction_order": [
+      "U_A",
+      "U_B",
+      "T",
+      "D_A",
+      "D_B"
+    ],
+    "simultaneous_marginal_maxima": [
+      6.0,
+      4.0,
+      3.0,
+      5.0,
+      7.0
+    ],
+    "simultaneous_marginal_maxima_residual": [
+      -2.0,
+      0.0
+    ],
+    "upper": [
+      6.0,
+      4.0,
+      3.0,
+      5.0,
+      7.0
+    ]
+  },
+  "core_files_unchanged": true,
+  "core_input_ae4_commit": "3598bd866c33d41d4a6914bda56d17c73900e82a",
+  "core_provenance_commit": "a11e25f176a2cc70de22c3f36a1c0e623248393a",
+  "core_sha256": {
+    "PROVENANCE.md": "7b480ff0847c2dab59bd2f4fe4caffd9f4bd6f028d9c57750173c0af14358731",
+    "README.md": "a0ef821bc170e8b31c8b6b598aa0d6f670740afb9918d3c54bf7265bf5240b23",
+    "THIRD_PARTY_NOTICES.md": "a8124686d90c40e552a55d952199b20ca54b6660b472783e9938bd2118ceb956",
+    "__init__.py": "112dfa6aada305c8fd25da5816f35bde80ea73f6a5d7b6d5b9b963ad742312c1",
+    "exceptions.py": "2522556bdf1b6debaf3dc8e3aa15cb50d880f6a50f52191f681ec5b0a73db030",
+    "requirements.txt": "808540b936b2fce8a5f8cd734849d1b7f02cd3845069c68524b1473696a388ca",
+    "results.py": "8c45d2fd38c5e3762be4200f3e4a42b243c235b4e8fef3aa569735c42a59bc0f",
+    "schema.py": "ec94a9bbf64edc0112d2eafaea4054edea1fd472c1951990512618c0f9a3fef7",
+    "smoke_test.py": "c1e6c4f50abac28d4407dd8cd48cf510f60ee7d899491ef286245a2fd695a176",
+    "solver.py": "496a8c4ced07c69d7be179a3ce14688c3b4453f560e1606d7f8a1b8b2bb7b7a5",
+    "validation.py": "12dd527e19c266ae44a7bd097a2a5ea4bb4ad08705968215a8be2ceb5793d272"
+  },
+  "counts": {
+    "analytical_endpoint_witnesses": 30,
+    "analytical_fba_objectives": 2,
+    "endpoint_comparisons_between_reference_and_fast_paths": 60,
+    "endpoint_comparisons_with_analytical_values": 90,
+    "failures": 0,
+    "fva_regions": 3,
+    "implementations_compared_with_analytical_endpoints": 3,
+    "local_smoke_tests": 1
+  },
+  "external_carbonscope_imported": false,
+  "imports": {
+    "carbonscope_flux_core": "vendor/carbonscope_flux_core/__init__.py",
+    "carbonscope_flux_core.exceptions": "vendor/carbonscope_flux_core/exceptions.py",
+    "carbonscope_flux_core.results": "vendor/carbonscope_flux_core/results.py",
+    "carbonscope_flux_core.schema": "vendor/carbonscope_flux_core/schema.py",
+    "carbonscope_flux_core.smoke_test": "vendor/carbonscope_flux_core/smoke_test.py",
+    "carbonscope_flux_core.solver": "vendor/carbonscope_flux_core/solver.py",
+    "carbonscope_flux_core.validation": "vendor/carbonscope_flux_core/validation.py"
+  },
+  "scope": "Task 46G local solver verification; no AE4 scientific calculations",
+  "smoke_test_stdout": "AE4 local CBM core smoke test passed",
+  "status": "passed",
+  "tolerances": {
+    "analytical_absolute": 1e-08,
+    "analytical_relative": 0,
+    "core_objective_validation": 1e-07,
+    "core_primal_validation": 1e-07,
+    "highs_primal_and_dual": 1e-09
+  },
+  "verification_script_sha256": "0efc2d93449738451ffd2ead24b91686d89cb330df1ff45e5663a614c86010b3",
+  "versions": {
+    "highspy": "1.12.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "python": "3.12.14"
+  }
+}

@@ -1,5 +1,36 @@
 # Task 46 execution protocol
 
+## Task 46G authority update
+
+The current user instruction invokes
+`prompts/46g_use_local_cbm_core_and_isolate_carbonscope.md`, read at AE4 main
+commit `1148397ca7add328b1e3da71864c56e5382ae324`, with blob
+`7ba7922cd63fbe4fd6f461a8e3a104866679e9ab`. The main Task 46 specification
+and addenda A–G were read. The later addenda supersede conflicting historical
+sequencing below: do not repeat the baseline; complete the compact CBM screen
+before any new kinetic search.
+
+Use only `vendor/carbonscope_flux_core/` for CBM solver operations. Do not clone,
+modify, branch, commit, push, open pull requests or otherwise mutate
+`esig626/CarbonScope`. Source comparison without writes is allowed only when
+necessary; none was needed here. No external CarbonScope checkout or package
+may serve as a runtime dependency.
+
+Read the local README, provenance and third party notices before use. Install
+the declared requirements as necessary. Run the supplied smoke test and an
+independent analytical FBA/FVA/VFFVA control before scientific calculations.
+`CHECKPOINT_46G_LOCAL_CORE.md` records completion of that prerequisite;
+`LOCAL_CBM_VERIFICATION.md` gives its derivation, results and replay command.
+
+Additional generic solver capability must be implemented and tested locally,
+documented and checkpointed before scientific use. AE4 biology, paired WT/KO
+constraints, coupling and sparse repair belong above the generic layer.
+The full reconstruction remains open. Next comes the evidence split and Task
+46E network construction, followed by separately published CBM milestones.
+
+The remainder preserves the earlier protocol and publication safeguards;
+read its milestone ordering subject to this authority update.
+
 ## Authority and scope
 
 Execute the user's checkpoint directive supplied in `Pasted markdown.md` and all
