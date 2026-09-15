@@ -186,5 +186,5 @@ later pH failure. A secretion measurement alone does not identify this
 specific dependency.
 
 '''
-(HERE/'inverse_results.tex').write_text(text)
+(HERE/'inverse_results.tex').write_text(text.rstrip()+'\n')
 print('Inverse report fragment generated from verified results')

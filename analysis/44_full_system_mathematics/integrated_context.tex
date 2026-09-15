@@ -1,0 +1,210 @@
+% Integration supplement: source recovery, local domain, IFT and compensation.
+% Values read from the verified Task 44 JSON outputs; no new calculations here.
+\section{Verification, equilibrium framework and compensation}
+\label{sec:integrated-context}
+
+\subsection{Production identity and dimensional recovery}
+The analysis loads the actual frozen Task 40 objects and WT conserved initial
+state. It checks all six stimulated parameter-object hashes and the resting
+state hash against the frozen manifest, rather than rebuilding from dataclass
+defaults. The source audit compares 150 entries with the Task 40 parent
+manifest: 149 match; the sole difference is \texttt{AGENTS.md}, an instructional
+metadata change. All listed production Python sources match their recorded
+Git blobs. The recovery audit also found no differences in the protected
+scientific tree relative to the main head it inspected. The scientific base
+is \texttt{c4d4f207f702d8eee09ab94d2d90ae90552dd641}; the recovered Task 44
+checkpoint is \texttt{b7b775a0277d93263c4de339745806e5658ec9c2}.
+The complete audit and object hashes are retained in
+\texttt{output/source\_audit.json}. For an unambiguous initial-state anchor,
+the frozen thirteen-state SHA256 is
+\begin{center}\footnotesize\ttfamily
+a0b96ef16e5967de4dfe2bdabb882f2a28d478e211f920bc19cd735a5a143acb
+\end{center}
+
+Dimensional recovery uses $n_{s,i}=C_0V_0x_s$,
+$n_{s,l}=C_0L_0y_s$, $V_i=V_0v$, $V_l=L_0\ell$ and $t=t_0\tau$.
+If $\widehat I$ is the integrated dimensionless water observable scaled by
+$V_0$, then $I=V_0\widehat I$ and $Q=(J_0/C_0)\widehat Q$.
+Separate dimensional and dimensionless integrations through 600 s differ by
+at most $7.524\times10^{-10}$ in a state component divided by its declared
+scale, over the saved comparison times. A separate check recovers cumulative
+water to $1.443\times10^{-15}$ pL. The reproduced original sampled WT output
+is $0.992524545$ pL, compared with frozen $0.992524544$ pL; its adaptive
+integral is $0.992544443$ pL. These two observables have different numerical
+definitions. The WT, 5\% expression and null reference checks reproduce
+all 34 diagnostic columns at eleven frozen display times, with a largest
+cumulative-output discrepancy of $6.74\times10^{-10}$ pL. These are numerical
+equivalence checks on the retained equations, not a reduced-model fit.
+
+\subsection{Executable domain and inherited acceptance gates}
+The carbonate executable bracket is $[3,11]$ for pH in both compartments.
+For the smooth local analysis, require $G(3)<0<G(11)$ for the amount residual
+in \eqref{eq:carbonate-amount}, positive transported concentrations and
+positive volumes. The NBC electrical solver brackets the basolateral
+voltage on $[-0.5,0.5]$ V; strict bracketing of its residual defines the
+interior domain used for differentiation. The apical voltage is then
+recovered from the coupled current equation, without imposing a separate
+apical bracket. The numerical solvers can accept an exact endpoint root;
+that fact does not extend the stated smooth interior domain. Require
+$V_l>V_{\rm dead}$ to remain on the differentiable, active-outflow branch.
+The physical regulatory range is $0\leq r\leq1$; its boundary derivative
+uses the inward rule or smooth extension already specified above.
+
+The inherited physiological checks are more restrictive than numerical
+speciation. They require all twelve amount/volume components to be strictly
+positive and all states, derivatives and diagnostics to be finite, together
+with the following intracellular bounds:
+\begin{center}
+\begin{tabular}{ll}\hline
+Quantity & Accepted domain\\\hline
+Sodium & $[\mathrm{Na}]_i<40$ mM\\
+Potassium & $50\leq[\mathrm K]_i\leq200$ mM\\
+Chloride & $30\leq[\mathrm{Cl}]_i\leq80$ mM\\
+pH & $6.6\leq\mathrm{pH}_i\leq7.3$\\
+Bicarbonate & $0<[\mathrm{HCO}_3]_i<100$ mM\\
+Total inorganic carbon & $[T]_i>0$\\
+Cell volume & $0<V_i<3$ pL\\\hline
+\end{tabular}
+\end{center}
+The same diagnostics check charge, carbon and buffer accounting to
+$10^{-10}$ fmol/s, water accounting to $10^{-12}$ pL/s, each membrane
+current residual to $10^{-20}$ A, and compartmental speciation alkalinity
+to $10^{-9}$ mM. The declared diagnostic-key set must match, and NBC's
+signed charge and carbon sources must equal $-B$ and $2B$ exactly in the
+diagnostic representation. These last two sources are not zero residuals.
+No additional physiological luminal pH interval has been introduced.
+
+The supplemental full-gate verification independently re-solves 128
+parameter-perturbed WT/null roots and 256 nearby expression roots used for
+compensation validation. All 384 pass these inherited checks; the largest
+conservation residual divided by its own tolerance is $4.086\times10^{-5}$.
+The largest dimensionless independent equilibrium residual is
+$6.880\times10^{-12}$. These results are retained in
+\texttt{output/sensitivity\_full\_gate\_verification.json}; gate acceptance
+does not remove the separate thermodynamic qualifications.
+
+\subsection{An eleven-coordinate implicit-function problem}
+Let
+\[
+ z=(x_{\rm Na},x_{\rm K},x_{\rm Cl},x_T,v,
+       y_{\rm Na},y_{\rm K},y_{\rm Cl},y_T,\ell,r)\in\mathbb R^{11},
+ \qquad \frac{\mathrm dz}{\mathrm d\tau}=F(z,\mu).
+\]
+The two alkalinity coordinates are reconstructed by
+\eqref{eq:neutral-manifold}; both carbon amounts, both volumes and the
+regulatory state remain dynamic. The parameter $\mu$ denotes expression
+or one specified active model setting, with the scaling fixed at the
+reference values. Carbonate and voltage closures are evaluated inside $F$.
+Constant full stimulation defines the equilibrium problem $F(z^*,\mu)=0$.
+The numerical solver finds ten positive chemical/volume coordinates in
+logarithmic variables and sets the \emph{equilibrium} condition $r^*=1$.
+All eleven equations are subsequently checked, and all eleven coordinates
+are retained in the dynamic Jacobian.
+
+\paragraph{Proposition: local equilibrium sensitivity.}
+Suppose the stated interior closure conditions hold, the vector field and
+observable $Q(z,\mu)$ are continuously differentiable locally, and
+$F_z(z^*,\mu)$ is nonsingular. Then a unique differentiable equilibrium
+branch exists in a neighbourhood of this root and parameter. Its derivatives
+are
+\begin{align}
+ \frac{\mathrm dz^*}{\mathrm d\mu}
+   &=-F_z^{-1}F_\mu,\label{eq:integrated-ift-state}\\
+ \frac{\mathrm dQ^*}{\mathrm d\mu}
+   &=Q_\mu-Q_zF_z^{-1}F_\mu.
+   \label{eq:integrated-ift-output}
+\end{align}
+At a physical boundary the claim uses the smooth extension and is restricted
+to inward admissible perturbations. The result follows by differentiating
+$F(z^*(\mu),\mu)=0$ and applying the implicit function theorem. It establishes
+local uniqueness of the branch, not global uniqueness or global existence.
+The dimensional dynamic Jacobian is $J=F_z/t_0$; this constant time scaling
+does not change \eqref{eq:integrated-ift-state}. $\square$
+
+The terms in \eqref{eq:integrated-ift-output} separate explicit parameter
+dependence from the response mediated by the complete state. For AE4
+expression the outflow law has $Q_{e_4}=0$. This mathematical zero does not
+mean that AE4 has no biological effect on secretion. Likewise, $Q_z$ has
+only a lumen-volume component on the active-outflow branch, but every
+retained network process can influence that volume.
+
+The expression derivatives were checked against independently solved nearby
+equilibria at steps $10^{-4}$ and $5\times10^{-5}$, centred at
+$e_4=1,0.5,0.05$ and second-order inward at $e_4=0$. Validation covers all
+eleven coordinates and $Q,N,J_4,P,H,\mathrm{pH}_i$. Across these checks,
+the largest observable component relative discrepancy is
+$1.034\times10^{-7}$; the largest state-derivative relative discrepancy is
+$8.070\times10^{-8}$. The maximum nearby-root residual is
+$5.683\times10^{-12}$ in the dimensionless independent equations.
+This validates local derivatives at the sampled points, without assigning
+those difference steps the meaning of uncertainty intervals.
+
+\subsection{Three distinct measures of NKCC compensation}
+Because $N$ is an NKCC1 \emph{cycle} flux carrying two chlorides, the local
+stationary chloride compensation gain is
+\begin{equation}
+ C_N(e_4)=-\frac{2\,\mathrm dN^*/\mathrm de_4}
+                  {\mathrm dJ_4^*/\mathrm de_4},
+ \qquad \mathrm dJ_4^*/\mathrm de_4\ne0.
+ \label{eq:integrated-local-compensation}
+\end{equation}
+Here the parent $J_4$ carries one chloride per cycle. At a zero denominator
+the ratio is undefined and the two unnormalised derivatives must be given
+separately. The null entry below is an inward derivative and has a nonzero
+denominator even though $J_4^*=0$ there.
+\begin{center}
+\begin{tabular}{rrrr}\hline
+$e_4$ & $\mathrm dN^*/\mathrm de_4$ & $\mathrm dJ_4^*/\mathrm de_4$ & $C_N$\\\hline
+1 & $-0.0117368$ & $0.0252674$ & 0.929011\\
+0.5 & $-0.0283978$ & $0.0620609$ & 0.915159\\
+0.05 & $-0.0719960$ & $0.160300$ & 0.898266\\
+0 & $-0.0795571$ & $0.177417$ & 0.896838\\\hline
+\end{tabular}
+\end{center}
+Flux derivatives in the table are in fmol/s per unit expression.
+Equation \eqref{eq:integrated-local-compensation} describes incremental
+replacement at equilibrium; it does not quantify the complete knockout.
+
+For the original finite-time experiment let $\mathcal I=[60,600]$ s and
+superscripts $W$ and $0$ denote WT and AE4 null. The relative integrated
+NKCC increase and the integrated chloride replacement fraction are instead
+\begin{align*}
+ R_N&=\frac{\int_{\mathcal I}2(N^0-N^W)\,dt}
+             {\int_{\mathcal I}2N^W\,dt}=0.2316345,\\
+ C_{N,\mathcal I}&=
+ \frac{\int_{\mathcal I}2(N^0-N^W)\,dt}
+      {\int_{\mathcal I}(J_4^W-J_4^0)\,dt}=0.8850704.
+\end{align*}
+These signed integrals use the frozen one-second flux records, with nonzero
+denominators. NKCC supplies an additional $36.33701$ fmol of chloride
+against $41.05550$ fmol of missing AE4 chloride. Thus $23.16\%$ is an
+increase relative to WT NKCC loading, whereas $88.51\%$ is replacement of
+lost AE4 chloride over that specified window. Neither is the local gain
+$C_N$. The window also differs from the $[0,600]$ s cumulative secretion
+comparison. The constant-stimulus stationary null secretion deficit is
+$0.94617\%$, compared with the frozen finite-time $3.8575\%$; their
+difference retains transient storage and state evolution.
+
+\subsection{Counting local cases and interpreting slow coordinates}
+The 26 equilibrium entries are class/expression \emph{cases}: eight C0
+expression values and three values for each of the other six source classes.
+At zero expression the AE4 source vanishes, so all seven null entries solve
+the same system. The count must not be read as 26 distinct equilibria at one
+parameter point. Twenty two entries pass the inherited physiological gates.
+Across all cases the smallest singular value of the dimensional Jacobian is
+at least $9.202\times10^{-4}$ s$^{-1}$ and its condition number ranges from
+$1.882\times10^4$ to $2.931\times10^4$ in the declared scaled coordinates.
+Nonsingularity supports the local framework; the conditioning and numerical
+step checks qualify its implementation.
+
+The slow eigenvectors involve volume and ionic storage together. For the
+slowest WT mode (345.82 s), intracellular potassium, cell volume and
+intracellular chloride account for $28.82\%$, $20.65\%$ and $18.35\%$ of
+the sum of absolute components of the scaled right eigenvector. For the
+slowest null mode (459.92 s), the corresponding shares are $31.04\%$,
+$24.68\%$ and $16.55\%$. These are coordinate-dependent descriptive shares,
+not fractions of physiological energy, transported chloride or causal
+control. They supplement the secretion input/output residues and
+nonnormality diagnostics reported below. In particular, they give no
+justification for removing either volume or declaring the full chemical
+system instantaneous.
