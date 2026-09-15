@@ -1,0 +1,10 @@
+{
+  "milestone": "48A",
+  "json_parse": "pass",
+  "primary_table1_values_checked": 28,
+  "primary_2015_seed_numerics": "verified",
+  "new_model_runs": 0,
+  "parameter_fits": 0,
+  "parallel_workers": 5,
+  "source_doi_correction": "10.1085/jgp.201611571"
+}

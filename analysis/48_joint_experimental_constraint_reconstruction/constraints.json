@@ -1,0 +1,718 @@
+{
+  "task": 48,
+  "base_task47_commit": "0a6adda00f0bb57d527f341412ceffa348b67a76",
+  "purpose": "Primary source verified constraint ledger; advisory integration proposal, no inference performed.",
+  "primary_source": {
+    "citation": "Pe\u00f1a-M\u00fcnzenmayer et al., J Biol Chem 2015",
+    "doi": "10.1074/jbc.M114.612895",
+    "pmcid": "PMC4409235",
+    "pmid": "25745107"
+  },
+  "ae4_table1": [
+    {
+      "observable": "rest_Cl_i",
+      "WT": [
+        50.1,
+        1.5,
+        7
+      ],
+      "AE4_KO": [
+        36.5,
+        1.6,
+        6
+      ],
+      "tuple": "mean_SE_n",
+      "units": "mM",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "rest in B+ physiological HCO3 solution",
+      "measurement": "calibrated resting concentration"
+    },
+    {
+      "observable": "rest_pH_i",
+      "WT": [
+        6.91,
+        0.07,
+        4
+      ],
+      "AE4_KO": [
+        6.89,
+        0.02,
+        4
+      ],
+      "tuple": "mean_SE_n",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "rest in B+ physiological HCO3 solution",
+      "units": "pH",
+      "measurement": "calibrated resting pH"
+    },
+    {
+      "observable": "initial_Cl_exit_CCh_IPR",
+      "WT": [
+        -0.21,
+        0.01,
+        10
+      ],
+      "AE4_KO": [
+        -0.18,
+        0.02,
+        9
+      ],
+      "tuple": "mean_SE_n",
+      "units": "SPQ_deltaF",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "B+ physiological solution; CCh 0.3 uM and/or IPR 5 uM as named",
+      "measurement": "change in normalised SPQ F0/F; amplitude, not flux"
+    },
+    {
+      "observable": "initial_Cl_exit_CCh",
+      "WT": [
+        -0.18,
+        0.03,
+        7
+      ],
+      "AE4_KO": [
+        -0.15,
+        0.01,
+        6
+      ],
+      "tuple": "mean_SE_n",
+      "units": "SPQ_deltaF",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "B+ physiological solution; CCh 0.3 uM and/or IPR 5 uM as named",
+      "measurement": "change in normalised SPQ F0/F; amplitude, not flux"
+    },
+    {
+      "observable": "initial_Cl_uptake_CCh_IPR",
+      "WT": [
+        2.02,
+        0.1,
+        10
+      ],
+      "AE4_KO": [
+        0.9,
+        0.09,
+        9
+      ],
+      "tuple": "mean_SE_n",
+      "units": "1e-3_s-1",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "B+ physiological solution; CCh 0.3 uM and/or IPR 5 uM as named",
+      "measurement": "linear regression slope of normalised SPQ F0/F; not molar flux"
+    },
+    {
+      "observable": "initial_Cl_uptake_CCh",
+      "WT": [
+        2.18,
+        0.2,
+        7
+      ],
+      "AE4_KO": [
+        2.3,
+        0.1,
+        6
+      ],
+      "tuple": "mean_SE_n",
+      "units": "1e-3_s-1",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "B+ physiological solution; CCh 0.3 uM and/or IPR 5 uM as named",
+      "measurement": "linear regression slope of normalised SPQ F0/F; not molar flux"
+    },
+    {
+      "observable": "initial_Cl_uptake_IPR",
+      "WT": [
+        0.4,
+        0.07,
+        4
+      ],
+      "AE4_KO": [
+        0.2,
+        0.03,
+        7
+      ],
+      "tuple": "mean_SE_n",
+      "units": "1e-3_s-1",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "B+ physiological solution; CCh 0.3 uM and/or IPR 5 uM as named",
+      "measurement": "linear regression slope of normalised SPQ F0/F; not molar flux"
+    }
+  ],
+  "ae2_table1": [
+    {
+      "observable": "rest_Cl_i",
+      "control": [
+        53.4,
+        1.8,
+        6
+      ],
+      "AE2_KO": [
+        54.5,
+        1.8,
+        6
+      ],
+      "tuple": "mean_SE_n",
+      "units": "mM",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "rest in B+ physiological HCO3 solution",
+      "measurement": "calibrated resting concentration"
+    },
+    {
+      "observable": "rest_pH_i",
+      "control": [
+        6.87,
+        0.01,
+        4
+      ],
+      "AE2_KO": [
+        6.95,
+        0.05,
+        6
+      ],
+      "tuple": "mean_SE_n",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "rest in B+ physiological HCO3 solution",
+      "units": "pH",
+      "measurement": "calibrated resting pH"
+    },
+    {
+      "observable": "initial_Cl_exit_CCh_IPR",
+      "control": [
+        -0.16,
+        0.02,
+        13
+      ],
+      "AE2_KO": [
+        -0.15,
+        0.01,
+        18
+      ],
+      "tuple": "mean_SE_n",
+      "units": "SPQ_deltaF",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "B+ physiological solution; CCh 0.3 uM and/or IPR 5 uM as named",
+      "measurement": "change in normalised SPQ F0/F; amplitude, not flux"
+    },
+    {
+      "observable": "initial_Cl_exit_CCh",
+      "control": [
+        -0.14,
+        0.02,
+        8
+      ],
+      "AE2_KO": [
+        -0.17,
+        0.02,
+        9
+      ],
+      "tuple": "mean_SE_n",
+      "units": "SPQ_deltaF",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "B+ physiological solution; CCh 0.3 uM and/or IPR 5 uM as named",
+      "measurement": "change in normalised SPQ F0/F; amplitude, not flux"
+    },
+    {
+      "observable": "initial_Cl_uptake_CCh_IPR",
+      "control": [
+        2.11,
+        0.5,
+        13
+      ],
+      "AE2_KO": [
+        2.39,
+        0.2,
+        18
+      ],
+      "tuple": "mean_SE_n",
+      "units": "1e-3_s-1",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "B+ physiological solution; CCh 0.3 uM and/or IPR 5 uM as named",
+      "measurement": "linear regression slope of normalised SPQ F0/F; not molar flux"
+    },
+    {
+      "observable": "initial_Cl_uptake_CCh",
+      "control": [
+        2.2,
+        0.2,
+        8
+      ],
+      "AE2_KO": [
+        2.3,
+        0.2,
+        9
+      ],
+      "tuple": "mean_SE_n",
+      "units": "1e-3_s-1",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "B+ physiological solution; CCh 0.3 uM and/or IPR 5 uM as named",
+      "measurement": "linear regression slope of normalised SPQ F0/F; not molar flux"
+    },
+    {
+      "observable": "initial_Cl_uptake_IPR",
+      "control": [
+        0.7,
+        0.1,
+        7
+      ],
+      "AE2_KO": [
+        0.58,
+        0.05,
+        6
+      ],
+      "tuple": "mean_SE_n",
+      "units": "1e-3_s-1",
+      "source_locator": "JBC 2015 Table 1; Experimental Procedures: Intracellular Cl and pH Measurements; Statistical Analysis",
+      "verification_status": "verified_exact_against_full_primary_text",
+      "data_type": "quantitative",
+      "uncertainty_type": "SE",
+      "n_unit": "experiments",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/#T1",
+      "protocol": "B+ physiological solution; CCh 0.3 uM and/or IPR 5 uM as named",
+      "measurement": "linear regression slope of normalised SPQ F0/F; not molar flux"
+    }
+  ],
+  "whole_gland_secretion": {
+    "protocol": "0.3 uM CCh + 5 uM IPR",
+    "AE4_KO_total_10min_reduction_percent": {
+      "mean": 35.0,
+      "SE": 4.7,
+      "n_WT": 6,
+      "n_KO": 6,
+      "uncertainty_type": "SE"
+    },
+    "AE4_KO_timecourse": "Comparable to WT for initial 2-3 min, then sustained reduction after approximately 3 min.",
+    "AE2_KO": "Essentially identical secretion kinetics and total output to strain-matched control; n=6 each. Verify/digitize source figure if quantitative time-course constraints are used.",
+    "source_locator": "JBC 2015 Results first section; Figure 1A and 1B captions",
+    "verification_status": "verified_exact_against_full_primary_text",
+    "duration_s": 600,
+    "sampling_interval_s": 60,
+    "temperature_C": 37,
+    "preparation": "ex vivo SMG",
+    "data_type": "quantitative_endpoint_plus_qualitative_timing",
+    "AE4_KO_late_timecourse": "After approximately 3 min sustained output is stated to be less than half WT; this is a qualitative textual constraint, not a digitised timepoint series.",
+    "strain_warning": "AE4 is BS/129Svj; AE2 C57Bl/6. Source explicitly reports strain differences in initial control secretion kinetics; retain within-strain genotype comparisons and do not treat distinct controls as one observed timecourse."
+  },
+  "salivary_HCO3_output": {
+    "units": "microequiv_per_10min",
+    "AE4": {
+      "WT": [
+        5.3,
+        1.4,
+        7
+      ],
+      "AE4_KO": [
+        7.1,
+        0.8,
+        7
+      ],
+      "tuple": "mean_SE_n",
+      "p": 0.28
+    },
+    "AE2": {
+      "control": [
+        4.0,
+        0.4,
+        5
+      ],
+      "AE2_KO": [
+        6.3,
+        1.8,
+        6
+      ],
+      "tuple": "mean_SE_n",
+      "p": 0.28
+    },
+    "source_locator": "JBC 2015 Results paragraph immediately after Table 1",
+    "verification_status": "verified_exact_against_full_primary_text",
+    "data_type": "quantitative_with_measurement_caveat",
+    "uncertainty_type": "SE",
+    "method_caveat": "Methods state division of concentration by collected saliva amount, which is dimensionally inconsistent with reported microequiv. Preserve published output values without silently repairing raw calculation. No raw concentrations or volumes available here."
+  },
+  "isolated_NKCC1": {
+    "protocol": "HCO3-free; 30 uM ethoxyzolamide; 50 uM T16Ainh-A01; Cl depletion followed by readdition.",
+    "genotype_result": "No statistically detectable difference in NKCC1-dependent initial Cl uptake among control, AE4 KO and AE2 KO under this assay.",
+    "n": {
+      "control": 16,
+      "AE4_KO": 8,
+      "AE2_KO": 10
+    },
+    "bumetanide_50uM_reduction_percent": {
+      "mean": 95.6,
+      "SE": 0.9,
+      "n": 9
+    },
+    "constraint_rule": "Do not translate non-significance into exact equality or an invented numerical tolerance. Simulate the assay protocol separately.",
+    "source_locator": "JBC 2015 Results after Table 1; Figure 2A/B",
+    "verification_status": "verified_exact_against_full_primary_text",
+    "data_type": "qualitative_genotype_comparison_plus_quantitative_bumetanide_reduction",
+    "uncertainty_type": "SE",
+    "control_pooling": "Figure pools distinct AE4 WT and AE2 control genotypes after detecting no difference; n=16 refers pooled control experiments.",
+    "raw_group_means_available": false
+  },
+  "NHE_assay": {
+    "protocol": "0.3 uM CCh + 5 uM IPR",
+    "genotype_result": "No statistically detectable difference in stimulation-induced NHE-mediated alkalinisation among control, AE4 KO and AE2 KO.",
+    "n": {
+      "control": 13,
+      "AE4_KO": 8,
+      "AE2_KO": 6
+    },
+    "EIPA": "10 uM EIPA reverses the stimulated alkalinisation to acidification; n=7.",
+    "constraint_rule": "A reconstruction must not obtain AE4-KO rescue failure by strongly suppressing NHE activity.",
+    "source_locator": "JBC 2015 Results and Figure 2C/D",
+    "verification_status": "verified_exact_against_full_primary_text",
+    "data_type": "qualitative_without_figure_digitisation",
+    "measurement": "Initial slope of normalised BCECF 490/440 ratio F/F0, not direct NHE molar flux.",
+    "control_pooling": "AE4 WT and AE2 control experiments pooled after no significant difference.",
+    "raw_group_means_available": false
+  },
+  "isolated_HCO3_dependent_exchanger": {
+    "protocol_note": "B+ physiological solution; first deplete at external Cl=4mM, then add 50uM bumetanide and 50uM T16Ainh-A01 while still depleted, then restore external Cl=128.3mM with both inhibitors retained.",
+    "reduction_percent": {
+      "AE4_KO": {
+        "mean": 38.2,
+        "SE": 6.6,
+        "n_KO": 8,
+        "n_AE4_WT": 7,
+        "n_AE2_control": 8,
+        "source_locator": "Figure 4A/B and adjoining Results",
+        "control": "pooled AE4 WT and AE2 control",
+        "data_type": "quantitative"
+      },
+      "AE2_KO": {
+        "mean": 55.1,
+        "SE": 3.4,
+        "n_KO": 10,
+        "n_AE4_WT": 7,
+        "n_AE2_control": 8,
+        "source_locator": "Figure 4A/B and adjoining Results",
+        "control": "pooled AE4 WT and AE2 control",
+        "data_type": "quantitative"
+      },
+      "AE4_AE2_double_KO": {
+        "mean": 87.7,
+        "SE": 3.1,
+        "n_KO": 6,
+        "n_control": 8,
+        "source_locator": "Figure 5A/B and adjoining Results",
+        "data_type": "quantitative"
+      }
+    },
+    "IPR_activation": {
+      "control_no_IPR": [
+        1.56,
+        0.19,
+        10
+      ],
+      "control_plus_IPR": [
+        4.33,
+        0.91,
+        13
+      ],
+      "control_p": 0.016,
+      "AE4_KO_no_IPR": [
+        0.95,
+        0.1,
+        8
+      ],
+      "AE4_KO_plus_IPR": [
+        1.08,
+        0.09,
+        9
+      ],
+      "AE4_KO_p": 0.366,
+      "tuple": "mean_SE_n",
+      "units": "1e-3_s-1",
+      "source_locator": "Final Results paragraph preceding Discussion; isolated depletion/readdition protocol of Figs 3 to 5",
+      "measurement": "linear regression slope of normalised SPQ F0/F",
+      "data_type": "quantitative",
+      "activation_time_constant_identified": false
+    },
+    "AE4_Na_dependence_in_AE2_KO": {
+      "Na_present": [
+        1.35,
+        0.16,
+        7
+      ],
+      "Na_free": [
+        0.51,
+        0.09,
+        7
+      ],
+      "tuple": "mean_SE_n",
+      "p": 0.001,
+      "units": "1e-3_s-1",
+      "source_locator": "Results paragraph immediately before Figure 4",
+      "measurement": "linear regression slope of normalised SPQ F0/F",
+      "data_type": "quantitative",
+      "replacement": "NaCl replaced by NMDG-Cl, NaHCO3 by choline-HCO3; Na removal is not removal of osmoles/charge"
+    },
+    "source_locator": "JBC 2015 Results around Figures 3 to 5 and final Results paragraph",
+    "verification_status": "verified_exact_against_full_primary_text",
+    "uncertainty_type": "SE"
+  },
+  "secondary_mechanistic_sources": [
+    {
+      "citation": "Pe\u00f1a-M\u00fcnzenmayer et al., J Gen Physiol 2016",
+      "doi": "10.1085/jgp.201611571",
+      "use": "AE4 biophysics",
+      "facts_to_verify": [
+        "AE4 transport is electroneutral",
+        "Na EC50 approximately 49 mM with Hill coefficient approximately 2.0",
+        "K EC50 approximately 62 mM with Hill coefficient approximately 1.8",
+        "both Na and K support/participate in AE4 transport"
+      ],
+      "pmcid": "PMC4845690",
+      "pmid": "27114614",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4845690/",
+      "verification_status": "all_seed_claims_verified_against_full_primary_JATS",
+      "source_locator": "Figures 2 to 4: electroneutrality; Figure 8: K transport; Figure 9 and adjoining Results: Na/K Hill fits",
+      "quantitative": {
+        "Na_EC50_mM": 49,
+        "Na_Hill": 2.0,
+        "K_EC50_mM": 62,
+        "K_Hill": 1.8,
+        "Na_Rmin": 0.3,
+        "Na_Rmax": 1.5,
+        "K_Rmin": 0.4,
+        "K_Rmax": 1.6,
+        "fit_uncertainty": null,
+        "figure_error_type": "SEM",
+        "n_per_condition": "at least 4 experiments; at least 3 electroporations"
+      },
+      "qualification": "External cation dose response for reverse exchange in heterologous cells. Hill coefficients are empirical fits, not measured whole cycle stoichiometry, and do not identify physiological Na/K routing."
+    },
+    {
+      "citation": "Pe\u00f1a-M\u00fcnzenmayer et al., AJP GI 2021",
+      "doi": "10.1152/ajpgi.00145.2021",
+      "use": "documented beta-adrenergic/cAMP/PKA regulation of AE4",
+      "facts_to_verify": [
+        "IPR/cAMP increases AE4 activity",
+        "H89 prevents activation",
+        "constitutively active PKA increases AE4 activity",
+        "S173A abolishes PKA activation"
+      ],
+      "pmcid": "PMC8887885",
+      "pmid": "34585968",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34585968/",
+      "verification_status": "all_seed_claims_verified_against_primary_abstract_and_figure_captions",
+      "source_locator": "Abstract; Figures 1, 2, 3 and 6 captions",
+      "figure_uncertainty": "SD, not SE",
+      "qualification": "H89 described as nonselective. S173 dependence demonstrated; direct phosphorylation proposed as probable, not directly established. Does not identify activation time constant.",
+      "native_assay": {
+        "IPR_uM": 5,
+        "H89_uM": 10,
+        "NKCC_block_bumetanide_uM": 50,
+        "Tmem16A_block_uM": 50
+      }
+    },
+    {
+      "citation": "Evans et al., J Biol Chem 2000",
+      "doi": "10.1074/jbc.M003753200",
+      "use": "secondary cross-gland validation only",
+      "facts_to_verify": [
+        "NKCC1 knockout reduces muscarinic-stimulated saliva by more than 60% in mouse parotid",
+        "bumetanide-sensitive Cl influx is lost",
+        "AE2 activity/expression compensates"
+      ],
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/10831596/",
+      "pmid": "10831596",
+      "verification_status": "all_seed_claims_verified_against_primary_abstract",
+      "source_locator": "Abstract",
+      "quantification_rule": "cross-gland qualitative validation only"
+    },
+    {
+      "citation": "Park et al., J Biol Chem 2001",
+      "doi": "10.1074/jbc.M102901200",
+      "use": "secondary cross-gland validation only",
+      "facts_to_verify": [
+        "NHE1 knockout removes more than 95% of acinar Na/H exchange",
+        "prolonged secretion is impaired",
+        "NKCC1 mRNA increases"
+      ],
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/11358967/",
+      "pmid": "11358967",
+      "verification_status": "pending_full_primary_abstract_retrieval",
+      "source_locator": "primary abstract; retrieval pending",
+      "quantification_rule": "cross-gland qualitative validation only; not part of primary fit"
+    }
+  ],
+  "nonnegotiable_rules": [
+    "Use one shared scientific parameter vector across genotypes and protocols.",
+    "Give each established knockout its own relaxed resting state; do not use a shared WT initial state as the primary comparator.",
+    "Genotype changes only the experimentally deleted transporter; do not fit genotype-specific capacity multipliers.",
+    "Protocol changes only documented agonists, extracellular solution, inhibitors and source-supported signalling inputs.",
+    "Do not equate a non-significant difference with exact equality.",
+    "Do not invent numerical tolerances such as 5% or 10%.",
+    "Whole-gland outputs must be compared via ratios and time-course shape unless an acinus-to-gland scale is independently justified.",
+    "SPQ fluorescence observables require an explicit observation operator or a documented normalized comparison; do not identify them directly with fmol/s transporter flux.",
+    "Do not tune solely to the approximately 35% saliva endpoint.",
+    "Do not perform a Cartesian-product sweep or mechanism-family search.",
+    "If the inherited AE4 law lacks beta-adrenergic/cAMP/PKA activation, treat the smallest AE4-specific activation mechanism as the first documented equation correction, and fit it to isolated exchanger data rather than secretion.",
+    "After that, allow at most one additional equation-level correction, only if a specific residual pattern and independent evidence require it."
+  ],
+  "verification": {
+    "frozen_start_sha": "5c945c4a7857657b5f7c76d5bf9e3d3abc7d5721",
+    "primary_source_full_text_verified": true,
+    "primary_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/",
+    "retrieved_utc_date": "2026-09-15",
+    "uncertainty": "All JBC 2015 results mean plus or minus SE. SE refers to uncertainty of experimental mean; not a hard bound and not biological SD.",
+    "n_definition": "Number of experiments; separate preparations from at least three different mice for each condition. Do not identify every experiment with an independent animal.",
+    "supplement_status": "No supplementary data link identified in primary full HTML; numerical seed verified against main Table 1, figure captions and Results.",
+    "source_files": [
+      {
+        "file": "jbc.html",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/",
+        "sha256": "6a6278db90147a68fe86af03ad977a3a63899c21ee430bb12ed7b20f528db543",
+        "bytes": 248636,
+        "kind": "primary_full_html"
+      },
+      {
+        "file": "jgp.xml",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4845690/fullTextXML",
+        "sha256": "6b13788cac9a66edc331a183f7589a17cc4ac69f1c76fa3dfc27dbec8804b3e0",
+        "bytes": 175320,
+        "kind": "secondary_full_jats"
+      }
+    ]
+  },
+  "additional_verified_primary_constraints": [
+    {
+      "observable": "isolated_Cl_uptake_reduction_with_NKCC_and_Tmem16A_block",
+      "mean": 74.0,
+      "SE": 2.6,
+      "units": "percent",
+      "source_locator": "Figure 3B/C and adjoining Results",
+      "note": "Joint inhibition in depletion/readdition assay, not NKCC alone."
+    },
+    {
+      "observable": "isolated_Cl_uptake_reduction_with_blockers_and_HCO3_free",
+      "mean": 96.3,
+      "SE": 1.4,
+      "units": "percent",
+      "source_locator": "Figure 3B/C and adjoining Results",
+      "note": "Source phrase says reduced to 96.3% of control but context means a 96.3% reduction (near absence); do not use as a hard numerical constraint without checking figure or raw data."
+    },
+    {
+      "observable": "initial_Cl_exit_IPR_only",
+      "data_type": "qualitative",
+      "result": "No initial Cl exit detected; relatively slow net uptake observed.",
+      "source_locator": "Results paragraph after Figure 5"
+    }
+  ],
+  "source_corrections": [
+    {
+      "field": "secondary_mechanistic_sources[0].doi",
+      "seed": "10.1085/jgp.201511529",
+      "verified": "10.1085/jgp.201611571",
+      "reason": "Full JATS bibliographic metadata and actual paper DOI.",
+      "pmcid": "PMC4845690",
+      "pmid": "27114614"
+    },
+    {
+      "field": "PKA publication year",
+      "verified": "2021 Dec 1;321(6):G628-G638; epub 2021 Sep 29",
+      "reason": "PubMed PMID34585968. Avoid 2021/2022 ambiguity."
+    }
+  ],
+  "protocol_solution_facts": {
+    "source_locator": "JBC 2015 Experimental Procedures: Intracellular Cl and pH Measurements",
+    "Bplus_high_Cl_mM": {
+      "Na": 145,
+      "K": 4.3,
+      "Cl": 128.3,
+      "HCO3": 25,
+      "Ca": 1,
+      "Mg": 1,
+      "glucose": 5,
+      "HEPES": 10
+    },
+    "Bminus_high_Cl_mM": {
+      "Na": 145,
+      "K": 4.3,
+      "Cl": 153.3,
+      "HCO3": 0,
+      "Ca": 1,
+      "Mg": 1,
+      "glucose": 5,
+      "HEPES": 10
+    },
+    "low_Cl_mM": 4,
+    "pH": 7.4,
+    "Bplus_gas": "95% O2,5% CO2 for at least 30min",
+    "Bminus_gas": "100% O2",
+    "fluorescence_normalisation": {
+      "SPQ": "F0/F",
+      "BCECF_ratio": "F/F0"
+    },
+    "rest_Cl_calibration_mM": [
+      20,
+      50,
+      80
+    ],
+    "rest_pH_calibration": "high K/nigericin"
+  }
+}

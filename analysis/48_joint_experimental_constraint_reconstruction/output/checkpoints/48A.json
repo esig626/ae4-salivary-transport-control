@@ -1,0 +1,97 @@
+{
+  "milestone": "48A",
+  "parent_sha": "5c945c4a7857657b5f7c76d5bf9e3d3abc7d5721",
+  "scientific_start_sha": "5c945c4a7857657b5f7c76d5bf9e3d3abc7d5721",
+  "output_commit": "commit containing this receipt; git log -1 -- this path",
+  "produced_files": [
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/CODEX_PARALLEL_LAUNCH.txt",
+      "sha256": "46192c772c905e92aaa5939354c87e067fb2a693de5aaa5e318a03d8477a6073"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/CODEX_START_HERE.md",
+      "sha256": "0beccc8eb29019e8c368705f445310a0ffeddd3c389a4ae83aa4c86c456adb37"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/EXPERIMENTAL_CONSTRAINT_LEDGER.md",
+      "sha256": "10058a0ef4fbadf99fe5cb1b2d55f4f4e01215b33524be66308a95427160906b"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/OBSERVATION_OPERATORS.md",
+      "sha256": "4116061173f5d5e3e8b2c5a7ea8009a48131e7e5a038b513c467cf8fee91926d"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/PARAMETER_ADMISSIBILITY.md",
+      "sha256": "76c20eb3dfb78b96f84d12b52d66aac6efb60e96daa9729f6a54afce126e8efd"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/PREDECLARED_EXECUTION.md",
+      "sha256": "93da11c8aeb25d898e0de69acb20a4849844180816b6072e44acb929ebb8ff55"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/PROTOCOL_MAP.md",
+      "sha256": "886537ff7c5d49254d7753074eead17906eef7c50e9efd8615b1796091e0bcd2"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/README.md",
+      "sha256": "884b5a3ee69bebd1af519eba3c6e967ea77c1459e899949d7bbc821125c68599"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/constraints.json",
+      "sha256": "2c1f4644a0bb4e865030bf6b5df47b6b063c00f65d4b5c89696368358549d77a"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/constraints_seed.json",
+      "sha256": "aa0c52f2b3dbf60c6cd9da087282d138c7aab995561fed29a21fe5b06bc2bc8b"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/input/43_FINAL_STATUS.md",
+      "sha256": "d15813202ad612f87f75317d6986f9ae7d1691c885352cdd4471b26c4b598c8a"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/input/43_parameter_inventory.json",
+      "sha256": "1e3d5763a171dfd64b95fbb72a8a35eae4bbd3fcd1a61939c2886808296d994b"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/input/44_FINAL_STATUS.md",
+      "sha256": "c5f37257883e085e8eaeafc0e3c896ab1c579a1bca7a1ac3d9a1a6801ebd9b7e"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/input/44_parameter_sensitivity.csv",
+      "sha256": "e72a4d01296a40be04a8067d058135343bca57c1764b7f048b1ce443516e1ba1"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/input/companion_sources.json",
+      "sha256": "f6319435df60716fb31e4184bed3493156132d51eccb00a7f2082afa49f9e8ff"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/checkpoints/SETUP_parallel_agent_protocol.json",
+      "sha256": "b9e1d81f6a488ddfbf6de6196103cbdf07c40bc04328f635e1f804caa207bfb4"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/latest_checks.json",
+      "sha256": "4643657f68841d5f7e790cef7ec592588dcde22bf73fbbd13c8a9121e9ff4891"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/parameter_admissibility.json",
+      "sha256": "57891db6e540ce42c4d08a0fc3ed62a95d2cf014678513d33d5bf07b4dd47696"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/protocol_inventory.json",
+      "sha256": "6072db04f795e21ea2bfb671a0cbffd1d58f8fa794c6b9d55d28ac64ac201dea"
+    }
+  ],
+  "tests": {
+    "milestone": "48A",
+    "json_parse": "pass",
+    "primary_table1_values_checked": 28,
+    "primary_2015_seed_numerics": "verified",
+    "new_model_runs": 0,
+    "parameter_fits": 0,
+    "parallel_workers": 5,
+    "source_doi_correction": "10.1085/jgp.201611571"
+  },
+  "key_result": "Evidence and protocol freeze; existing PKA regulation and assay limitations verified",
+  "prior_remote_verifications": [],
+  "utc": "2026-09-15T23:10:16.700097+00:00"
+}

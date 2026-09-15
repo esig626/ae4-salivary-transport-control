@@ -1,0 +1,55 @@
+{
+  "frozen_sha": "5c945c4a7857657b5f7c76d5bf9e3d3abc7d5721",
+  "advisory_only": true,
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4409235/",
+  "model_already_has_ae2": true,
+  "model_already_has_beta_ae4_activation": true,
+  "frozen_activation": {
+    "state": "ae4_effective_activation_fraction",
+    "tau_s": 30.0,
+    "basal_multiplier": 1.0,
+    "fully_activated_increment": 0.25
+  },
+  "representability": {
+    "standard_positive_bath_rest_and_agonists": {
+      "status": "partial",
+      "reason": "Requires explicit external spectator bookkeeping; source transported ion concentrations can be matched, full HEPES/titrant chemistry unknown."
+    },
+    "nkcc_isolation": {
+      "status": "blocked",
+      "reasons": [
+        "No carbonic anhydrase kinetic target",
+        "Zero carbon domain forbidden",
+        "Palk NKCC has no extracellular substrate inputs",
+        "Source bath spectator species omitted"
+      ]
+    },
+    "nkcc_bumetanide": {
+      "status": "blocked",
+      "reasons": [
+        "Base NKCC assay blocked",
+        "Drug to zero NKCC activity is an ideal complete block, not a 95.6 percent data fit"
+      ]
+    },
+    "nhe_with_without_eipa": {
+      "status": "partial",
+      "reason": "Can remove NHE exactly at source level after genotype rest; BCECF observation and effective positive bath mapping required"
+    },
+    "exchanger_isolation": {
+      "status": "partial",
+      "reason": "NKCC and Tmem16A blockers representable; preceding depletion not protocol faithful with active Palk law and missing spectator ions"
+    },
+    "exchanger_ipr": {
+      "status": "partial",
+      "reason": "Existing AE4 activation usable but isolated protocol state and IPR timing not yet fully established"
+    },
+    "exchanger_na_absent": {
+      "status": "blocked",
+      "reasons": [
+        "Zero Na forbidden",
+        "Substituted NMDG/choline species omitted",
+        "Inherited AE4 law lacks confirmed native extracellular Na response"
+      ]
+    }
+  }
+}
