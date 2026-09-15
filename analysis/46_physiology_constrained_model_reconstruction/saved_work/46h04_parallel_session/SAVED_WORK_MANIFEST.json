@@ -1,0 +1,25 @@
+{
+  "purpose": "Preserve completed work at user-requested stop; no new calculations",
+  "original_analysis_root": "analysis/46_physiology_constrained_model_reconstruction",
+  "published_parent": "e6c4eb1fcdd7e3ef197a85434d6d9edb1c04eeed",
+  "saved_files_sha256": {
+    "CHECKPOINT_46H04_PAIRED_SUPPLEMENT.md": "a233e43cedbbdc191123b9be63d8a799ddfe4e9d7231d27759b91437de4e1a36",
+    "CURRENT_STATUS.md": "dcea0f4c6ffd3ec3280cb57ba77ee98b069dba6d8749674ef434e241706984cb",
+    "PAIRED_NKCC_ANALYSIS.md": "81736aa3eaad34dedf712f5eb1df15a83ff901fbd2bcc1eca3fec4643a60479d",
+    "PAIRED_PROTOCOL.md": "2af084ee9fe8093d32596e4ffafca73c52404399f69bc84ef7ea190b0b49c02e",
+    "cbm/lp_tools.py": "004387bb5dc9dbd41e369fad61ea72971e250035bb1273a867cfa66b61b14564",
+    "cbm/paired_diagnostics.py": "ce8640be09c77b9c44e7422b8cbf6c2701c84c68eece60dcc8edc73e6d4b55ce",
+    "cbm/test_lp_tools.py": "03b2fd99727a8df1ab112aff3978515cba8e710f6c35ca09eb3057fb91179363",
+    "output/46h/h04/assay.json": "64dd033dbc81f5a3329937b8d1b6df79777eb5c99f02c7121b3c576e870af44c",
+    "output/46h/h04/compact_paired_witnesses.json": "0fb5f8a60f37f2669af637ad6b6db2a14fc0d043dbcbf53a18e96a721cf94ccb",
+    "output/46h/h04/independent_review.json": "306279324146569d518eaf003236632f67927ea6b70df93eaabd52dd46f450df",
+    "output/46h/h04/maximum.json": "c60f8fb2ca5556e36b3bb7c34dc64fbc68d75e22405154d8f7caa1c6128e7bad",
+    "output/46h/h04/replacement.json": "8692446e9fd33ae07c86560b30c2c46ee16368d90233c2fc6afcbda85b4e073a",
+    "output/46h/h04/utility_tests.json": "12d0a9a321a4b676de2bfcae4a8fc1bc26a2637b5df9f211f3b576b60c9e8a19",
+    "output/46h/receipt_46h04_supplement.json": "6d786a8ed4664018bc1f43ff1deb3d6a272284ac6e3a8033c6751506f3a41a22",
+    "cbm/build_cbm.py": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+    "cbm/analyse_region.py": "3e03b821de3b80fd48159420f127c62a44ad9e1206e12a595b118d84ec6cf222"
+  },
+  "scientific_runs_this_turn": 0,
+  "note": "Archived status/checkpoint describe the saved session state; canonical remote H04 checkpoint is preserved unchanged."
+}

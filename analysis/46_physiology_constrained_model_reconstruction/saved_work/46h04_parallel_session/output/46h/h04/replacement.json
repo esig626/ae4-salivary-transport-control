@@ -1,0 +1,187 @@
+{
+  "diagnostic": "replacement",
+  "input_commit": "cb18477adc393d5a18ea6f2ab8f41f4dc42376fc",
+  "builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+  "numerical_NKCC_tolerance": null,
+  "normal_stimulation_flux_equality_imposed": false,
+  "WT_reference": {
+    "N": 0.25,
+    "A": 0.5,
+    "E": 0.0,
+    "H": 0.0,
+    "B": 0.5,
+    "Pb": 0.16666666666666666,
+    "Pa": 0.0,
+    "Kb": 0.3333333333333333,
+    "Ka": 0.0,
+    "J": 1,
+    "Db": 0.0,
+    "Da": 0.0,
+    "pNa": -1,
+    "pK": 0.0,
+    "pCl": 0.0,
+    "pHCO3": 0.0,
+    "oNa": 1,
+    "oK": 0.0,
+    "oCl": 1,
+    "oHCO3": 0.0,
+    "oCO2": 0.0
+  },
+  "KO_NKCC_minimum": {
+    "objective": 0.0,
+    "fluxes": {
+      "WT:N": 0.25,
+      "WT:A": 0.5,
+      "WT:E": 0.0,
+      "WT:H": 0.0,
+      "WT:B": 0.5,
+      "WT:Pb": 0.16666666666666666,
+      "WT:Pa": 0.0,
+      "WT:Kb": 0.3333333333333333,
+      "WT:Ka": 0.0,
+      "WT:J": 1.0,
+      "WT:Db": 0.0,
+      "WT:Da": 0.0,
+      "WT:pNa": -1.0,
+      "WT:pK": 0.0,
+      "WT:pCl": 0.0,
+      "WT:pHCO3": 0.0,
+      "WT:oNa": 1.0,
+      "WT:oK": 0.0,
+      "WT:oCl": 1.0,
+      "WT:oHCO3": 0.0,
+      "WT:oCO2": 0.0,
+      "KO:N": 0.0,
+      "KO:A": 0.0,
+      "KO:E": 1.0,
+      "KO:H": 0.0,
+      "KO:B": 0.5,
+      "KO:Pb": 0.16666666666666666,
+      "KO:Pa": 0.0,
+      "KO:Kb": 0.0,
+      "KO:Ka": 0.3333333333333333,
+      "KO:J": 1.0,
+      "KO:Db": -0.0,
+      "KO:Da": -0.0,
+      "KO:pNa": -100.0,
+      "KO:pK": 0.3333333333333333,
+      "KO:pCl": 1.0,
+      "KO:pHCO3": -100.0,
+      "KO:oNa": 100.0,
+      "KO:oK": 0.0,
+      "KO:oCl": 0.0,
+      "KO:oHCO3": 100.0,
+      "KO:oCO2": 0.0
+    },
+    "diagnostics": {
+      "max_lower_bound_violation": 0.0,
+      "max_upper_bound_violation": 0.0,
+      "max_mass_balance_residual": 0.0,
+      "objective_recalculation_error": 0.0
+    }
+  },
+  "KO_NKCC_maximum": {
+    "objective": 0.5,
+    "fluxes": {
+      "WT:N": 0.25,
+      "WT:A": 0.5,
+      "WT:E": 0.0,
+      "WT:H": 0.0,
+      "WT:B": 0.5,
+      "WT:Pb": 0.16666666666666666,
+      "WT:Pa": 0.0,
+      "WT:Kb": 0.3333333333333333,
+      "WT:Ka": 0.0,
+      "WT:J": 1.0,
+      "WT:Db": 0.0,
+      "WT:Da": 0.0,
+      "WT:pNa": -1.0,
+      "WT:pK": 0.0,
+      "WT:pCl": 0.0,
+      "WT:pHCO3": 0.0,
+      "WT:oNa": 1.0,
+      "WT:oK": 0.0,
+      "WT:oCl": 1.0,
+      "WT:oHCO3": 0.0,
+      "WT:oCO2": 0.0,
+      "KO:N": 0.5,
+      "KO:A": 0.0,
+      "KO:E": -0.0,
+      "KO:H": 0.0,
+      "KO:B": 0.0,
+      "KO:Pb": 0.0,
+      "KO:Pa": 0.16666666666666666,
+      "KO:Kb": 0.8333333333333333,
+      "KO:Ka": 0.0,
+      "KO:J": 1.0,
+      "KO:Db": -0.0,
+      "KO:Da": -0.0,
+      "KO:pNa": -99.5,
+      "KO:pK": -0.3333333333333333,
+      "KO:pCl": 1.0,
+      "KO:pHCO3": -100.0,
+      "KO:oNa": 100.0,
+      "KO:oK": 0.0,
+      "KO:oCl": 0.0,
+      "KO:oHCO3": 100.0,
+      "KO:oCO2": 0.0
+    },
+    "diagnostics": {
+      "max_lower_bound_violation": 0.0,
+      "max_upper_bound_violation": 0.0,
+      "max_mass_balance_residual": 0.0,
+      "objective_recalculation_error": 0.0
+    }
+  },
+  "difference_range": [
+    -0.25,
+    0.25
+  ],
+  "missing_AE4_chloride_replacement_range": [
+    -1.0,
+    1.0
+  ],
+  "interpretation": "For this explicit illustrative WT witness, full output allows either no NKCC chloride replacement or complete replacement; negative values mean NKCC falls while AE2 changes. This is not an inferred WT partition or a phenotype fit.",
+  "independent_validation": {
+    "worker": "physiology_bounds_evidence",
+    "builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+    "full_original_S_checks": {
+      "KO_NKCC_minimum": {
+        "WT_full_matrix_check": {
+          "max_full_balance_residual": 2.7755575615628914e-17,
+          "max_bound_violation": 0.0,
+          "valid": true
+        },
+        "KO_full_matrix_check": {
+          "max_full_balance_residual": 2.7755575615628914e-17,
+          "max_bound_violation": 0.0,
+          "valid": true
+        },
+        "same_frozen_WT_witness": true,
+        "KO_reference_output_fixed": true,
+        "objective_matches_N": true,
+        "KO_A_zero": true
+      },
+      "KO_NKCC_maximum": {
+        "WT_full_matrix_check": {
+          "max_full_balance_residual": 2.7755575615628914e-17,
+          "max_bound_violation": 0.0,
+          "valid": true
+        },
+        "KO_full_matrix_check": {
+          "max_full_balance_residual": 8.326672684688674e-17,
+          "max_bound_violation": 0.0,
+          "valid": true
+        },
+        "same_frozen_WT_witness": true,
+        "KO_reference_output_fixed": true,
+        "objective_matches_N": true,
+        "KO_A_zero": true
+      }
+    },
+    "exact_endpoint_argument": "KO TA gives E=H+2B>=0; Cl gives J=2N+E. At J=1, 0<=N<=1/2. Returned complete feasible extrema attain both bounds. Convexity attains intermediate replacement, including zero and 90 percent.",
+    "scope": "Optional strong NKCC replacement under the declared normal stimulation region. No numerical assay equivalence or measured WT partition follows.",
+    "endpoint_degeneracy": "Solver chooses arbitrary peripheral fluxes at computational caps and zero chloride outflow with chloride return to bath. This does not change core NKCC extrema or prove literal saliva secretion.",
+    "additional_optimisations": 0
+  }
+}

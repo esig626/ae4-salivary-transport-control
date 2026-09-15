@@ -1,0 +1,44 @@
+{
+  "milestone": "46H04 supplement",
+  "input_commit": "adaa79669588f666005e56e85fa19e840840252a",
+  "commands": [
+    "python analysis/46_physiology_constrained_model_reconstruction/cbm/test_lp_tools.py OUTPUT",
+    "python analysis/46_physiology_constrained_model_reconstruction/cbm/paired_diagnostics.py --diagnostic DIAGNOSTIC --output OUTPUT (maximum,replacement,assay)"
+  ],
+  "solver_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "highspy": "1.12.0"
+  },
+  "checks": {
+    "parallel_diagnostics": 3,
+    "analytical_utility_tests": 4,
+    "independent_full_vectors_verified": 8,
+    "compact_joint_states_verified": 4,
+    "no_invented_epsilon": true,
+    "protocol_mismatch_explicit": true,
+    "vendor_unchanged": true
+  },
+  "principal_results": [
+    "Under shared capacities and the defensible NKCC evidence, KO can still attain WT reference chloride export1. An absolute physiological maximum remains unidentified.",
+    "For the explicit published WT witness N=1/4,A=1/2,J=1, KO atJ=1 permitsN from0 to1/2. Strong NKCC replacement is allowed, not necessary; NBC/AE2 supplies a separate allowed route.",
+    "The blocked steady assay forcesN=0 and cannot represent positive initial uptake. The exact NKCC accumulation contribution is(N,N,2N). No measured tolerance or normal-stimulation equality follows from the assay."
+  ],
+  "products_sha256": {
+    "output/46h/h04/assay.json": "64dd033dbc81f5a3329937b8d1b6df79777eb5c99f02c7121b3c576e870af44c",
+    "output/46h/h04/compact_paired_witnesses.json": "0fb5f8a60f37f2669af637ad6b6db2a14fc0d043dbcbf53a18e96a721cf94ccb",
+    "output/46h/h04/independent_review.json": "306279324146569d518eaf003236632f67927ea6b70df93eaabd52dd46f450df",
+    "output/46h/h04/maximum.json": "c60f8fb2ca5556e36b3bb7c34dc64fbc68d75e22405154d8f7caa1c6128e7bad",
+    "output/46h/h04/replacement.json": "8692446e9fd33ae07c86560b30c2c46ee16368d90233c2fc6afcbda85b4e073a",
+    "output/46h/h04/utility_tests.json": "12d0a9a321a4b676de2bfcae4a8fc1bc26a2637b5df9f211f3b576b60c9e8a19",
+    "PAIRED_PROTOCOL.md": "2af084ee9fe8093d32596e4ffafca73c52404399f69bc84ef7ea190b0b49c02e",
+    "PAIRED_NKCC_ANALYSIS.md": "81736aa3eaad34dedf712f5eb1df15a83ff901fbd2bcc1eca3fec4643a60479d",
+    "cbm/lp_tools.py": "004387bb5dc9dbd41e369fad61ea72971e250035bb1273a867cfa66b61b14564",
+    "cbm/test_lp_tools.py": "03b2fd99727a8df1ab112aff3978515cba8e710f6c35ca09eb3057fb91179363",
+    "cbm/paired_diagnostics.py": "ce8640be09c77b9c44e7422b8cbf6c2701c84c68eece60dcc8edc73e6d4b55ce"
+  },
+  "next": "46H05: execute only the six frozen coupling questions concurrently, one question per worker.",
+  "publication_rule": "Containing Git commit is checkpoint identity; next milestone records it after remote SHA/clean tree verification.",
+  "remote_checkpoint_preserved": "CHECKPOINT_46H04_PAIRED_EVIDENCE.md",
+  "publication_reconciliation": "Original cb18477-parent ref update rejected as non-fast-forward. Fetched accepted H04 adaa796...; verified clean tree; preserved its files and added tested computations as a fast-forward supplement."
+}

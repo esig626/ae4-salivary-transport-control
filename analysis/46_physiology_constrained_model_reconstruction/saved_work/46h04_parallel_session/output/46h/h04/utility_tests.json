@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "analytical_tests": 4,
+  "expected": [
+    1.5,
+    1,
+    4,
+    1
+  ],
+  "observed": [
+    1.5,
+    1.0,
+    4.0,
+    1.0
+  ],
+  "scope": "Task-specific block indexing, fixed bounds, affine cap, signed cross-block inequality; unchanged vendor"
+}

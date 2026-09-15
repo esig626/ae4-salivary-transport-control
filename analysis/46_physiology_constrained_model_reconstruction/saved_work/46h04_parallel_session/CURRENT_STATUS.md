@@ -16,6 +16,4 @@ Next: 46H05: execute exactly the six targeted coupling questions C1-C6 from `out
 
 Before dependent work, confirm the remote H04 state. No Task44/46G reruns, new kinetics, CarbonScope access, manuscript changes or merge to main.
 
-## User requested stop after saving
-
-The user instructed this session to publish existing work and perform no more simulations. Completed parallel H04 source, results, complete witnesses and review are preserved in `saved_work/46h04_parallel_session/`. The existing remote H04 evidence and implementation remain intact. This session is stopped; it does not claim completion of H05 through H07. No additional simulations were run for this save.
+Verified supplementary calculations are recorded in CHECKPOINT_46H04_PAIRED_SUPPLEMENT.md and output/46h/receipt_46h04_supplement.json. They preserve the evidence rule above and explicitly demonstrate optional NKCC replacement with complete WT/KO states. This supplement uses the current published H04 as parent; no history or original checkpoint was overwritten.
