@@ -1,0 +1,135 @@
+{
+  "task": 48,
+  "base_task47_commit": "0a6adda00f0bb57d527f341412ceffa348b67a76",
+  "purpose": "Seed ledger for joint experimental-constraint reconstruction. Every entry must be verified against the primary source before use in inference.",
+  "primary_source": {
+    "citation": "Peña-Münzenmayer et al., J Biol Chem 2015",
+    "doi": "10.1074/jbc.M114.612895",
+    "pmcid": "PMC4409235",
+    "pmid": "25745107"
+  },
+  "ae4_table1": [
+    {"observable": "rest_Cl_i", "WT": [50.10, 1.50, 7], "AE4_KO": [36.50, 1.60, 6], "tuple": "mean_SE_n", "units": "mM"},
+    {"observable": "rest_pH_i", "WT": [6.91, 0.07, 4], "AE4_KO": [6.89, 0.02, 4], "tuple": "mean_SE_n"},
+    {"observable": "initial_Cl_exit_CCh_IPR", "WT": [-0.21, 0.01, 10], "AE4_KO": [-0.18, 0.02, 9], "tuple": "mean_SE_n", "units": "SPQ_deltaF"},
+    {"observable": "initial_Cl_exit_CCh", "WT": [-0.18, 0.03, 7], "AE4_KO": [-0.15, 0.01, 6], "tuple": "mean_SE_n", "units": "SPQ_deltaF"},
+    {"observable": "initial_Cl_uptake_CCh_IPR", "WT": [2.02, 0.10, 10], "AE4_KO": [0.90, 0.09, 9], "tuple": "mean_SE_n", "units": "1e-3_s-1"},
+    {"observable": "initial_Cl_uptake_CCh", "WT": [2.18, 0.20, 7], "AE4_KO": [2.30, 0.10, 6], "tuple": "mean_SE_n", "units": "1e-3_s-1"},
+    {"observable": "initial_Cl_uptake_IPR", "WT": [0.40, 0.07, 4], "AE4_KO": [0.20, 0.03, 7], "tuple": "mean_SE_n", "units": "1e-3_s-1"}
+  ],
+  "ae2_table1": [
+    {"observable": "rest_Cl_i", "control": [53.40, 1.80, 6], "AE2_KO": [54.50, 1.80, 6], "tuple": "mean_SE_n", "units": "mM"},
+    {"observable": "rest_pH_i", "control": [6.87, 0.01, 4], "AE2_KO": [6.95, 0.05, 6], "tuple": "mean_SE_n"},
+    {"observable": "initial_Cl_exit_CCh_IPR", "control": [-0.16, 0.02, 13], "AE2_KO": [-0.15, 0.01, 18], "tuple": "mean_SE_n", "units": "SPQ_deltaF"},
+    {"observable": "initial_Cl_exit_CCh", "control": [-0.14, 0.02, 8], "AE2_KO": [-0.17, 0.02, 9], "tuple": "mean_SE_n", "units": "SPQ_deltaF"},
+    {"observable": "initial_Cl_uptake_CCh_IPR", "control": [2.11, 0.50, 13], "AE2_KO": [2.39, 0.20, 18], "tuple": "mean_SE_n", "units": "1e-3_s-1"},
+    {"observable": "initial_Cl_uptake_CCh", "control": [2.20, 0.20, 8], "AE2_KO": [2.30, 0.20, 9], "tuple": "mean_SE_n", "units": "1e-3_s-1"},
+    {"observable": "initial_Cl_uptake_IPR", "control": [0.70, 0.10, 7], "AE2_KO": [0.58, 0.05, 6], "tuple": "mean_SE_n", "units": "1e-3_s-1"}
+  ],
+  "whole_gland_secretion": {
+    "protocol": "0.3 uM CCh + 5 uM IPR",
+    "AE4_KO_total_10min_reduction_percent": {"mean": 35.0, "SE": 4.7, "n_WT": 6, "n_KO": 6},
+    "AE4_KO_timecourse": "Comparable to WT for initial 2-3 min, then sustained reduction after approximately 3 min.",
+    "AE2_KO": "Essentially identical secretion kinetics and total output to strain-matched control; n=6 each. Verify/digitize source figure if quantitative time-course constraints are used."
+  },
+  "salivary_HCO3_output": {
+    "units": "microequiv_per_10min",
+    "AE4": {"WT": [5.3, 1.4, 7], "AE4_KO": [7.1, 0.8, 7], "tuple": "mean_SE_n", "p": 0.28},
+    "AE2": {"control": [4.0, 0.4, 5], "AE2_KO": [6.3, 1.8, 6], "tuple": "mean_SE_n", "p": 0.28}
+  },
+  "isolated_NKCC1": {
+    "protocol": "HCO3-free; 30 uM ethoxyzolamide; 50 uM T16Ainh-A01; Cl depletion followed by readdition.",
+    "genotype_result": "No statistically detectable difference in NKCC1-dependent initial Cl uptake among control, AE4 KO and AE2 KO under this assay.",
+    "n": {"control": 16, "AE4_KO": 8, "AE2_KO": 10},
+    "bumetanide_50uM_reduction_percent": {"mean": 95.6, "SE": 0.9, "n": 9},
+    "constraint_rule": "Do not translate non-significance into exact equality or an invented numerical tolerance. Simulate the assay protocol separately."
+  },
+  "NHE_assay": {
+    "protocol": "0.3 uM CCh + 5 uM IPR",
+    "genotype_result": "No statistically detectable difference in stimulation-induced NHE-mediated alkalinisation among control, AE4 KO and AE2 KO.",
+    "n": {"control": 13, "AE4_KO": 8, "AE2_KO": 6},
+    "EIPA": "10 uM EIPA reverses the stimulated alkalinisation to acidification; n=7.",
+    "constraint_rule": "A reconstruction must not obtain AE4-KO rescue failure by strongly suppressing NHE activity."
+  },
+  "isolated_HCO3_dependent_exchanger": {
+    "protocol_note": "NKCC1 and Tmem16A inhibited; verify exact inhibitor concentrations and solution composition from source before implementation.",
+    "reduction_percent": {
+      "AE4_KO": {"mean": 38.2, "SE": 6.6},
+      "AE2_KO": {"mean": 55.1, "SE": 3.4},
+      "AE4_AE2_double_KO": {"mean": 87.7, "SE": 3.1}
+    },
+    "IPR_activation": {
+      "control_no_IPR": [1.56, 0.19, 10],
+      "control_plus_IPR": [4.33, 0.91, 13],
+      "control_p": 0.016,
+      "AE4_KO_no_IPR": [0.95, 0.10, 8],
+      "AE4_KO_plus_IPR": [1.08, 0.09, 9],
+      "AE4_KO_p": 0.366,
+      "tuple": "mean_SE_n"
+    },
+    "AE4_Na_dependence_in_AE2_KO": {
+      "Na_present": [1.35, 0.16, 7],
+      "Na_free": [0.51, 0.09, 7],
+      "tuple": "mean_SE_n",
+      "p": 0.001
+    }
+  },
+  "secondary_mechanistic_sources": [
+    {
+      "citation": "Peña-Münzenmayer et al., J Gen Physiol 2016",
+      "doi": "10.1085/jgp.201511529",
+      "use": "AE4 biophysics",
+      "facts_to_verify": [
+        "AE4 transport is electroneutral",
+        "Na EC50 approximately 49 mM with Hill coefficient approximately 2.0",
+        "K EC50 approximately 62 mM with Hill coefficient approximately 1.8",
+        "both Na and K support/participate in AE4 transport"
+      ]
+    },
+    {
+      "citation": "AE4 PKA regulation study",
+      "doi": "10.1152/ajpgi.00145.2021",
+      "use": "documented beta-adrenergic/cAMP/PKA regulation of AE4",
+      "facts_to_verify": [
+        "IPR/cAMP increases AE4 activity",
+        "H89 prevents activation",
+        "constitutively active PKA increases AE4 activity",
+        "S173A abolishes PKA activation"
+      ]
+    },
+    {
+      "citation": "Evans et al., J Biol Chem 2000",
+      "doi": "10.1074/jbc.M003753200",
+      "use": "secondary cross-gland validation only",
+      "facts_to_verify": [
+        "NKCC1 knockout reduces muscarinic-stimulated saliva by more than 60% in mouse parotid",
+        "bumetanide-sensitive Cl influx is lost",
+        "AE2 activity/expression compensates"
+      ]
+    },
+    {
+      "citation": "Park et al., J Biol Chem 2001",
+      "doi": "10.1074/jbc.M102901200",
+      "use": "secondary cross-gland validation only",
+      "facts_to_verify": [
+        "NHE1 knockout removes more than 95% of acinar Na/H exchange",
+        "prolonged secretion is impaired",
+        "NKCC1 mRNA increases"
+      ]
+    }
+  ],
+  "nonnegotiable_rules": [
+    "Use one shared scientific parameter vector across genotypes and protocols.",
+    "Give each established knockout its own relaxed resting state; do not use a shared WT initial state as the primary comparator.",
+    "Genotype changes only the experimentally deleted transporter; do not fit genotype-specific capacity multipliers.",
+    "Protocol changes only documented agonists, extracellular solution, inhibitors and source-supported signalling inputs.",
+    "Do not equate a non-significant difference with exact equality.",
+    "Do not invent numerical tolerances such as 5% or 10%.",
+    "Whole-gland outputs must be compared via ratios and time-course shape unless an acinus-to-gland scale is independently justified.",
+    "SPQ fluorescence observables require an explicit observation operator or a documented normalized comparison; do not identify them directly with fmol/s transporter flux.",
+    "Do not tune solely to the approximately 35% saliva endpoint.",
+    "Do not perform a Cartesian-product sweep or mechanism-family search.",
+    "If the inherited AE4 law lacks beta-adrenergic/cAMP/PKA activation, treat the smallest AE4-specific activation mechanism as the first documented equation correction, and fit it to isolated exchanger data rather than secretion.",
+    "After that, allow at most one additional equation-level correction, only if a specific residual pattern and independent evidence require it."
+  ]
+}
