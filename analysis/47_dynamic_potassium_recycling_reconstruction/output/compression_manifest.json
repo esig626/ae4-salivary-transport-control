@@ -1,4 +1,14 @@
 {
+  "output/ae4_5pct/states.csv.gz": {
+    "compressed_sha256": "87ead3613527b3665af84bfc48599529b2b8ed1b4aa44b6ad7ba98cb6b6ca301",
+    "uncompressed_bytes": 150735,
+    "uncompressed_sha256": "e6ef79d3674e433740859147bc0323d2c64e484ce374a3c31cc591f57ed3878a"
+  },
+  "output/ae4_5pct/trajectory.csv.gz": {
+    "compressed_sha256": "8c3766ff5369fc55bc6a60f3ef5ed95b8c02ff1de673a3662cf5543abc03225a",
+    "uncompressed_bytes": 1108743,
+    "uncompressed_sha256": "f8ea42e87c2379d4a1ba43e71382df628bfee82c0c7c39fc6fa6c1f4eb66dee6"
+  },
   "output/ae4_null/states.csv.gz": {
     "compressed_sha256": "9f4d907c8b429550981ef24854ad289db62a891b9a457cf237c9f85b944ad3a2",
     "uncompressed_bytes": 150805,
