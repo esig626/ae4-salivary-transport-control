@@ -1,5 +1,9 @@
 {
   "extra_NKCC_chloride_fmol": 36.33700753324828,
+  "integration_window_s": [
+    60.0,
+    600.0
+  ],
   "lost_AE4_chloride_fmol": 41.05550196187763,
   "relative_NKCC_increase": 0.23163449507535305,
   "signed_integrated_compensation": 0.8850703510333222,

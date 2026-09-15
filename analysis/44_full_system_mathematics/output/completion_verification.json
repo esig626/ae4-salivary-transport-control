@@ -1,0 +1,29 @@
+{
+  "analysed_commit": "5589fa36e2c7d1e5bf21869aad82909a123e759b",
+  "dimensional_recovered_cumulative_water_error_pL": 1.4432899320127035e-15,
+  "equilibrium_roots": 26,
+  "independently_solved_nearby_roots": 128,
+  "inverse_parameter_observable_pairs": 16,
+  "physiological_roots": 22,
+  "protected_path_differences": [],
+  "random_valid_exact_states": 84,
+  "required_analysis_files": [
+    "core.py",
+    "run_analysis.py",
+    "verify.py",
+    "verify_exact.py",
+    "exact_results.tex",
+    "equilibrium_review.py",
+    "equilibrium_results.tex",
+    "sensitivity_analysis.py",
+    "sensitivity_results.tex",
+    "inverse_analysis.py",
+    "inverse_verify.py",
+    "inverse_results.tex",
+    "literature_comparison.tex",
+    "sources.bib"
+  ],
+  "scope": "Cross-file and fresh dimensional recovery checks. Full clean-checkout numerical replay is recorded separately.",
+  "status": "passed",
+  "uncertain_equilibrium_parameters": 16
+}

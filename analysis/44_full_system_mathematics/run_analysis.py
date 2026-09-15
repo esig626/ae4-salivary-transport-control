@@ -124,7 +124,7 @@ def main(skip_inverse=False):
     wfi,nfi=frozen_integrals('wt'),frozen_integrals('ae4_null')
     extra=2*(nfi['nkcc1_cycles']-wfi['nkcc1_cycles'])
     lost=wfi['ae4_signed_cl_flux']-nfi['ae4_signed_cl_flux']
-    write_json(OUT/'compensation_comparison.json',dict(signed_integrated_compensation=extra/lost,
+    write_json(OUT/'compensation_comparison.json',dict(integration_window_s=[60.,600.],signed_integrated_compensation=extra/lost,
       relative_NKCC_increase=extra/(2*wfi['nkcc1_cycles']),extra_NKCC_chloride_fmol=extra,
       lost_AE4_chloride_fmol=lost,source='Frozen one-second integrated fluxes, not the compact 60-second display table.',
       steady_null_deficit=1-roots[0.]['observables']['q_pL_s']/roots[1.]['observables']['q_pL_s']))
