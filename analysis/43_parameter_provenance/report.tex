@@ -1,0 +1,117 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=26mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,longtable,microtype,natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{url}
+\title{Parameter provenance and conditional justification of the reconstructed AE4 model}
+\author{Technical report for the AE4 project}
+\date{15 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+This report inventories the actual Task 40 production objects, rather than treating dataclass defaults as the model parameter set. Each numerical value, protocol setting and inactive legacy field is classified by its role and provenance. The inventory contains 105 records, of which 86 are marked active; these are not 86 independently fitted physiological parameters. Published kinetic coefficients, transferred model settings, quantities derived from WT constraints, effective assumptions, numerical controls and the separate Task 41 inverse parameter are distinguished. No parameter is refitted, no experimental uncertainty interval is invented, and no historical model or result is changed. Several quantities are mathematically derived but remain conditional on unmeasured assumptions, most notably the NBC capacity constructed from a 70/30 chloride loading partition. The accompanying full system analysis provides local sensitivity evidence, not a substitute for experimental parameter identification.
+\end{abstract}
+
+\section{Source of the audit}
+The audit uses repository \url{https://github.com/esig626/ae4-salivary-transport-control} at main revision \texttt{c4d4f207f702d8eee09ab94d2d90ae90552dd641}. It loads the actual nested Task 40 model through its historical validation helper and checks the complete active parameter hashes against \path{results/40_ae4_equal_cation_routing/frozen_inputs.json}. It does not overwrite the helper or weaken its historical numerical checks. The canonical initial condition is the separately frozen WT resting state, not the constructor default tuple.
+
+The model lineage includes the original AE4 reconstruction \citep{VeraSiguenza2018}, the Palk and Benjamin NKCC1 law \citep{Palk2010,Benjamin1997}, and the Cha NHE kinetic model \citep{Cha2009}. The experimental evidence for AE4 transport and regulation constrains mechanism and direction, but does not automatically identify every abundance, gain or timescale in this implementation \citep{Pena2015,Pena2016,Pena2021,Catalan2025}. This report preserves that distinction.
+
+\section{What counts as a justification}
+A published numerical coefficient has a source, but transfer from another tissue or model still needs an applicability argument. A value determined by a balance equation is justified conditional on the concentrations, fluxes and structural assumptions used in that balance. A value selected to keep a reference trajectory within physiological limits is an effective modelling choice; acceptance of that trajectory does not make the value measured, unique, or known within an uncertainty interval. A numerical inversion bracket is not a physiological observation. A parameter selected using the knockout phenotype must remain labelled as an inverse design choice.
+
+The inventory records value, units, original metadata, active role, classification, source path, mathematical justification, default value and whether the active value differs from that default. Its uncertainty field states explicitly when no measured interval has been established. Classification is conservative: inherited metadata identifies a lineage, not a newly verified measurement of salivary transporter abundance.
+
+The current categories include physical constants; published kinetic coefficients; inherited model conversions or settings; reference and WT constraint derived values; WT architecture derived values; effective assumptions; numerical brackets and regularisation; protocol and law selections; inactive legacy values; constructor seeds; and the target selected Task 41 parameter. These categories should not be collapsed into a single ``from the literature'' column.
+
+\section{Parameters that can be explained mathematically}
+\subsection{NKCC1 scale: derived from a modelled resting flux}
+The production law has the form
+\[
+ J_N=\alpha_Nm_N(t)\psi([Na]_i,[K]_i,[Cl]_i),\qquad
+ \psi=\frac{A_1-A_2[Na]_i[K]_i[Cl]_i^2}
+ {A_3+A_4[Na]_i[K]_i[Cl]_i^2}.
+\]
+At the accepted resting state, the scale is determined by
+\begin{equation}
+ \alpha_N=\frac{J_{N,rest}}{\psi(c_{rest})}
+ =0.017334746894096052\ \mathrm{fmol/s}.
+ \label{eq:nkcc-scale}
+\end{equation}
+Equation \cref{eq:nkcc-scale} makes the choice reproducible and avoids an independent extra fit. However, $J_{N,rest}$ is itself an inherited model flux. The scale is not a directly measured salivary carrier amount. The much larger legacy field \path{homeostasis.nkcc1_capacity_fmol_s} is inactive for this selected law and must not appear in a publication table as its active capacity.
+
+The four Palk coefficients contain fourth order concentration factors. Their conversion to mM is essential. They are effective coefficients for the adopted fixed bath, so an uncertainty study that changes bath composition cannot automatically reuse them without rechecking the underlying reduction.
+
+\subsection{NHE1 carrier amount: a WT resting pH calibration}
+The active NHE1 law is the eight state Cha reduction with its Mod2 term. Printed rate and binding constants are retained, including the documented rounding discrepancy in the fourth reverse rate. The salivary carrier amount is
+\[
+ N_H=2.339370005697548\times10^{-5}\ \mathrm{fmol}.
+\]
+This was determined against a resting pH target of 6.91 on the selected R09 background. The derivation fixes one scale conditional on that background and target. It does not identify a cardiac carrier count as a salivary measurement, nor does it prove unique joint identification of the carrier amount, buffer pool and other pH pathways.
+
+Legacy tanh NHE capacity and older NHE kinetic fields remain in the dataclass for other models, but are inactive in production. The active stimulus multiplier is 2.3. Calling it fixed before the test documents absence of retuning; it does not establish that its transfer to every tissue and stimulus is exact. The mathematical companion report shows explicitly how the alkalinity bound depends on this multiplier and $N_H$.
+
+\subsection{NBC capacity: derived conditional on an assumed partition}
+The NBC source imports one sodium and two bicarbonate equivalents per inward cycle. Its capacity is
+\[
+ G_B=0.11570913197464398\ \mathrm{fmol/s}.
+\]
+The construction begins from the assumed fraction $s=0.70$ of positive WT chloride loading assigned to NKCC1 at the Task 31 reference scale. If that NKCC1 chloride flux is $L_N$, the corresponding AE4 demand is
+\begin{equation}
+ J_{4,req}=\frac{1-s}{s}L_N.
+ \label{eq:partition}
+\end{equation}
+Using $L_N=0.2562444047732706$ fmol/s and the selected stimulated NHE flux, the approximate reference requirement is $B_{req}=J_{4,req}-H_{stim}/2$, before evaluating the full coupled electrical closure. The capacity is then chosen so the NBC law supplies that cycle rate at the reference chemical state with its self consistent voltage. The derivation is recorded in the unchanged Task 36 design and NBC module.
+
+This is a conditional structural construction, not a knockout fit and not a measured transporter density. In particular, \cref{eq:partition} does not turn the 70/30 partition into experimental evidence. The subsequently evolved trajectory need not retain that partition exactly. The manuscript should state the assumed partition, how it sets the capacity, and what changes when that assumption changes. A broad uncertainty interval for $s$ has not been established by this audit.
+
+The NBC increment is zero at the declared resting calcium and fully recruited at $0.25\ \mu$M. Its width parameter is effective. Its molecular identity is deliberately not assigned to a particular salivary SLC4 isoform.
+
+\subsection{Fixed charge and osmotic pools}
+Reference electroneutrality determines the fixed intracellular anion equivalent amount from
+\[
+ X=n_{Na,i}+n_{K,i}-n_{Cl,i}-n_{A,i}.
+\]
+The active value is $78.06176220594485$ fmol equivalents. Its status is reference constraint derived, conditional on the reference tuple and carbonate buffer model. It is not a directly counted molecular pool.
+
+The other impermeant osmotic pool is $124.69936937124379$ fmol on the selected background, rather than the smaller dataclass default. It is an inherited effective osmotic setting. The separate finite intracellular buffer amount is 30 fmol and is counted exactly once in the osmolarity. Effective osmotic closure and charge closure are different roles and should not be conflated.
+
+\section{Parameters that remain assumptions or transferred settings}
+The AE4 carrier amount and transition attempt rates are inherited effective model settings. Their thermodynamic construction constrains rate ratios and reversal properties of the parent cycle; it does not supply independent measurements of the absolute carrier number or all attempt rates. Moreover, fixed source substitution in the later mechanism panel does not itself establish thermodynamic consistency of the inherited scalar kinetics with each substituted cycle.
+
+Channel conductances, pump capacity and apical fractions determine current closure and the distribution of secretion. Their active values are explicit in the inventory, but physiological feasibility at one reference point is not evidence that each value is unique. The same applies to the effective outlet rate and dead volume. The code itself describes the outlet law as a transparent compliance closure rather than a calibrated secretion law.
+
+The water coefficients are inherited model conversions with stated units. They should be described as transferred model parameters, not newly measured hydraulic permeabilities of the present preparation. The effective beta activation time of 30 s and AE4 gain of 0.25 likewise need to remain explicit assumptions. Experimental activation of a pathway does not identify all intermediate time constants \citep{Pena2021}.
+
+The NKCC1 algebraic recruitment reaches its endpoint at $0.10\ \mu$M calcium, while NBC reaches its endpoint at $0.25\ \mu$M. The production input fully recruits both. This difference is preserved and recorded, not silently reconciled. Any analysis of submaximal calcium would need to account for it.
+
+The numerical pH bracket from 3 to 11 only enables inversion; the actual inherited physiological criterion is pH 6.6 to 7.3. The tiny positive luminal buffer amount $10^{-9}$ fmol is numerical regularisation approximating no fixed luminal buffer, not an abundance measurement. Constructor concentrations and volumes do not replace the frozen solved initial state used by the production experiments.
+
+Finally, the Task 41 residual CaCC recruitment coefficient $b=0.10511872843288446$ is target selected. It is not an active parameter of the parent Task 40 model and is not reclassified as literature supported merely because the resulting trajectory has an appropriate secretion magnitude.
+
+\section{What the mathematical analysis adds to justification}
+The separate Task 44 report uses the unchanged reference parameter set and retains carbon, alkalinity, volume, lumen and electrical feedback. It supplies exact structural identities and a conditional NHE supply bound, then evaluates local stationary sensitivities. These calculations help identify which assumptions affect which conclusions. They do not estimate experimental uncertainty intervals.
+
+An important distinction is between statements independent of capacities, such as the cancellation of the explicit equal routing AE4 term in the chloride balance, and numerical conclusions that depend on the adopted kinetics and scales, such as large NKCC1 replacement. Even an exact balance identity does not determine the magnitude of the knockout flow deficit. The dependence of pump and NHE fluxes on state remains part of the mechanism.
+
+For later manuscript development, every nonliterature value should therefore be accompanied by either its conditional derivation or a plainly stated effective role. Where several values were selected together on the same WT background, their correlation should be retained in future uncertainty work. Independently perturbing every value as though each had its own measured error bar would create an unsupported uncertainty model.
+
+The remaining parameter work is substantive rather than typographical: independently justify or measure ranges for the effective settings; define a WT feasible set using evidence not reused from the knockout comparison; and assess which conclusions survive across that set. A local derivative or a collection of physiologically passing simulations does not prove robustness over all plausible parameterisations. This audit has performed no new fitting and established no calibrated uncertainty intervals.
+
+\section{Reproducibility and use in the manuscript}
+Run \texttt{python analysis/43\_parameter\_provenance/audit.py} from the repository root. It verifies the production parameter hashes and writes both CSV and JSON inventories under this task's \texttt{output} directory. Each record contains source paths and justification notes beyond the abbreviated table below. \texttt{prepare\_report.py} typesets the table from those records. The report and the full inventory belong on the Task 43 branch, separate from the mathematical analysis and from the main manuscript.
+
+The inventory has 105 records and 86 active flags. This is an inventory of configuration and roles, not a count of independent degrees of freedom: it includes physical constants, protocol settings, law selections, derived values and other nonfit quantities. Five legacy fields and twelve constructor seed fields are explicitly separated. The Task 41 inverse coefficient is also outside the parent model.
+
+No model source, historical analysis, frozen trajectory or main manuscript is modified by this audit. The exact original metadata is retained in the machine readable inventory, while the new classification states what that metadata does and does not justify.
+
+\appendix
+\section{Complete active object and legacy inventory}
+The ``Used'' column denotes use by the selected production configuration as classified by the audit. ``No'' for constructor seeds means they are not the production initial state; the constructor still uses that tuple for reference consistency checks. Full units, source locations, defaults and detailed justifications are in \texttt{parameter\_inventory.csv} and \texttt{parameter\_inventory.json}.
+\input{output/inventory_table.tex}
+\bibliographystyle{plainnat}
+\bibliography{../../manuscript/references}
+\end{document}
