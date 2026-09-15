@@ -14,6 +14,7 @@
   "production_source_manifest_entries": 75,
   "protected_source_changes": [],
   "records": 137,
+  "report_build_receipt_matches_source_and_page_count": true,
   "report_tables_match_machine_readable_sources": true,
   "saved_outputs_match_recomputation": true,
   "scope": "Inventory reconstruction, selected input law checks, original parameter and state hashes, source files, uncertainty semantics and CSV/JSON consistency.",

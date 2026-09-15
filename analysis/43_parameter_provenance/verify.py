@@ -79,6 +79,12 @@ tables=['audit_counts.tex','inventory_table.tex','sensitivity_table.tex']
 saved_tables={n:(OUT/n).read_bytes() for n in tables}
 subprocess.run([sys.executable,str(HERE/'prepare_report.py')],check=True,stdout=subprocess.DEVNULL)
 assert all((OUT/n).read_bytes()==saved_tables[n] for n in tables),'Report tables differ from their machine-readable sources.'
+receipt=json.loads((OUT/'build_provenance.json').read_text())
+assert receipt['report_tex_sha256']==hashlib.sha256((HERE/'report.tex').read_bytes()).hexdigest(),'Stale report build receipt.'
+assert receipt['source_manifest_sha256']==hashlib.sha256((OUT/'source_manifest.json').read_bytes()).hexdigest()
+pdf_info=subprocess.check_output(['pdfinfo',str(HERE/'AE4_parameter_provenance.pdf')],text=True)
+pdf_pages=int(next(line.split(':',1)[1] for line in pdf_info.splitlines() if line.startswith('Pages:')))
+assert pdf_pages==receipt['pdf_pages'],'Stale PDF page count in build receipt.'
 checks={
  'passed':True,'records':len(rows),'active_records':sum(r['active'] for r in rows),
  'production_parameter_hashes_verified':True,'frozen_initial_state_hash_verified':True,
@@ -90,6 +96,7 @@ checks={
  'sensitivity_source_commit':cross['source_commit'],
  'sensitivity_source_file_hashes_reverified':len(cross['imported_source_files']),
  'sensitivity_crosswalk_matches_committed_source':True,'report_tables_match_machine_readable_sources':True,
+ 'report_build_receipt_matches_source_and_page_count':True,
  'parameter_fits':0,'new_sensitivity_simulations_on_task43':0,
  'scope':'Inventory reconstruction, selected input law checks, original parameter and state hashes, source files, uncertainty semantics and CSV/JSON consistency.'}
 (OUT/'verification.json').write_text(json.dumps(checks,indent=2,sort_keys=True)+'\n')
