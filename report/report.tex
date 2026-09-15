@@ -1,0 +1,76 @@
+\documentclass[11pt,a4paper]{article}
+\pdfinfoomitdate=1
+\pdftrailerid{}
+\pdfsuppressptexinfo=15
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,booktabs,longtable,array,graphicx,microtype}
+\usepackage{natbib,xurl,pdflscape,placeins,fancyvrb}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{4em}
+\allowdisplaybreaks
+\hypersetup{pdftitle={AE4 salivary transport: complete mathematical analysis and model diagnosis},pdfauthor={AE4 project},pdfsubject={Source grounded technical synthesis of Tasks 43 and 44}}
+\newcommand{\sourcefile}[1]{\par\smallskip{\footnotesize\textit{Source record:} \nolinkurl{#1}.}\par}
+\newcommand{\reportnote}[1]{\par\smallskip\textbf{Interpretation.} #1\par\smallskip}
+\begin{document}
+\begin{titlepage}
+\centering
+\vspace*{18mm}
+{\Large AE4 salivary transport\par}
+\vspace{8mm}
+{\huge\bfseries Complete mathematical analysis, parameter provenance and diagnosis of model inadequacy\par}
+\vspace{12mm}
+{\Large Technical report based on the completed Codex Tasks 43 and 44\par}
+\vspace{10mm}
+{15 September 2026\par}
+\vfill
+\begin{minipage}{.94\textwidth}
+This report consolidates the completed analysis of the frozen Task 40 model and the prescribed Task 41 inverse family. It includes the full mathematical exposition, expanded computational methods, complete numerical case tables, parameter provenance and the original electronic evidence. It is a technical basis for article development, not a new model or a claim that the biological mechanism has been validated.
+
+\medskip
+\textbf{Immutable scientific inputs}\par
+Task 43: \nolinkurl{547f113d9123ab1976774639a69483faf40cef34}\par
+Task 44: \nolinkurl{e5fa9840bf96be3147c6118daee4942468c78f8b}\par
+Numerical replay: \nolinkurl{f783785a863440df459e9c5530beba4c7eb59110}
+
+\medskip
+The source branches, production code, original outputs and existing manuscript are not modified by this report. Exact results, local numerical findings, finite duration calculations and unresolved biological questions are explicitly distinguished.
+\end{minipage}
+\end{titlepage}
+\begin{abstract}
+The reconstructed AE4 salivary transport model was examined using complete parameter provenance, invertible nondimensionalisation, conditional algebraic closure results, conserved amount identities, equilibrium continuation, local stability and sensitivity analysis, source vector projections and an inverse CaCC recruitment calculation. Carbon, alkalinity, both finite volumes, lumen composition, algebraic pH and electrical closure, and AE4 regulation remain present. Thirteen production states are represented by eleven independent dynamic coordinates after exact charge elimination. At the frozen parameter point the stationary AE4 null secretion deficit is approximately 0.94617\%, while the original 600 s cumulative deficit is 3.8575\%. Local NKCC chloride compensation is approximately 92.901\%; the integrated replacement of missing AE4 chloride over 60 to 600 s is 88.507\%. These are distinct observables. The system already contains slow modes of approximately 346 and 460 s in WT and null. A physiological NBC absent root exists at much lower AE4 loading, so the alkalinity obstruction is conditional on a specified loading demand. The prescribed Task 41 family requires approximately 89.51\% AE4 dependent stimulated CaCC recruitment at its first numerical comparison crossing, but that target selected construction later violates the pH gate. The analysis diagnoses a mismatch between a particular mathematical reconstruction and the biological phenotype. It does not prove that NKCC1 is the unique defective component, that compensation must vanish in all protocols, or that a better model has already been identified. Full source attribution and electronic numerical evidence accompany the technical account.
+\end{abstract}
+\clearpage
+\tableofcontents
+\clearpage
+\part{Purpose, interpretation and computational methods}
+\input{interpretation.tex}
+\input{methods.tex}
+\clearpage
+\part{Complete mathematical analysis from the final Task 44 sources}
+The following chapters retain the complete technical exposition in the final Task 44 report, including every included mathematical fragment and its tables. Their scope statements refer to the original Codex investigation. The report assembly expands the original TeX inputs, preserves the numerical values, and changes only document integration, reference namespaces and file paths. Additional detailed tables appear in Part IV. Source verification here checks the preserved records; it is not a new execution of the original full simulation programme.
+\sourcefile{evidence/task44/report.tex and included TeX files}
+\input{generated/task44_body.tex}
+\clearpage
+\part{Complete parameter provenance from the final Task 43 sources}
+The following chapters retain the completed Task 43 audit and its complete inventory table. The additional parameter records in Part IV expose the detailed justification fields that were only supplied electronically in that source report. The original source bibliography is preserved separately; duplicate reference keys in this combined document are namespaced rather than silently reconciled.
+\sourcefile{evidence/task43/report.tex; evidence/task43/output/parameter_inventory.json}
+\input{generated/task43_body.tex}
+\clearpage
+\part{Expanded numerical and provenance records}
+\input{generated/numerical_appendix.tex}
+\input{generated/parameter_details.tex}
+\clearpage
+\part{Verification, coverage and use in an article}
+\input{conclusions.tex}
+\input{generated/verification_appendix.tex}
+\input{generated/evidence_catalogue.tex}
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{generated/references}
+\end{document}
