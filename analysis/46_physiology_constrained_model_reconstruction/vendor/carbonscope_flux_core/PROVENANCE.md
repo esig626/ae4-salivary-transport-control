@@ -1,26 +1,30 @@
-# Frozen CarbonScope flux-analysis snapshot
+# Frozen local CarbonScope-derived flux-analysis core
 
-This directory vendors only the generic FBA/FVA solver substrate required for the Task 46 AE4 constraint-based screening stage.
+This directory contains a self-contained minimal port of the generic FBA/FVA/VFFVA substrate required for the Task 46 AE4 constraint-based screening stage.
 
-Source repository: `esig626/CarbonScope`
+Source repository consulted read-only: `esig626/CarbonScope`
 
 Pinned source commit:
 
 `a11e25f176a2cc70de22c3f36a1c0e623248393a`
 
-The Task 46 workflow must use this local snapshot and must not write to, branch, commit, push, open pull requests in, or otherwise modify the CarbonScope repository.
-
-The intended copied source files are:
+Relevant pinned source components used as the implementation reference were:
 
 - `src/fluxemu/flux_analysis/highs.py`
 - `src/fluxemu/flux_analysis/results.py`
 - `src/fluxemu/model/schema.py`
-- the flux-model validation subset from `src/fluxemu/model/validation.py`
+- `src/fluxemu/model/validation.py`
 - `src/fluxemu/exceptions.py`
 - `THIRD_PARTY_NOTICES.md`
 
-Only generic flux-model / HiGHS FBA/FVA functionality is needed. Do not copy CarbonScope isotope, EMU, MFA, hypothesis-testing, workflow, CLI, or experiment code.
+The AE4 copy is intentionally reduced to the functionality needed for the small transporter CBM: an immutable flux schema, validation, HiGHS FBA, cold-start reference FVA, reusable-worker VFFVA, result records and numerical checks. Isotope, EMU, MFA, hypothesis-testing, workflow, CLI and experiment code were not brought across.
 
-Runtime dependencies for the vendored core are NumPy, pandas, and `highspy`; the pinned CarbonScope version specifies `highspy>=1.11,<1.13`.
+This is therefore an adapted local port, not a byte-for-byte copy of the full CarbonScope modules. The scientific solver ideas and relevant implementation details are pinned to the source commit above. Any further modifications must occur only in the AE4 Task 46 branch and must be documented here or in Task 46 checkpoint records.
 
-The VFFVA implementation preserves the third-party attribution and MIT notice copied in `THIRD_PARTY_NOTICES.md`.
+## Isolation rule
+
+The Task 46 workflow must use this local core. It must not write to, branch, commit, push, open pull requests in, or otherwise modify the CarbonScope repository. CarbonScope may be consulted read-only only if source comparison is genuinely needed.
+
+Runtime dependencies are NumPy, pandas and `highspy`; the pinned CarbonScope source specifies `highspy>=1.11,<1.13`.
+
+The VFFVA worker design preserves the third-party attribution and MIT notice in `THIRD_PARTY_NOTICES.md`.
