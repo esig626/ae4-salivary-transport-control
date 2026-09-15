@@ -15,6 +15,9 @@ Task 48 staged specification:
 Parallel-agent / crash-safe publication addendum:
 `f2fcfa2eb5d5f9484225bffadb02b0093bbb4da4`
 
+Codex handoff wired to the addendum:
+`d803cfe4d9c6f3541f12c19b5ef8dc13c379ae1b`
+
 ## Current state
 
 No Task 48 scientific inference has been run yet.
@@ -27,8 +30,8 @@ Only the orchestrator owns the canonical branch and authoritative inference.
 
 Milestones 48A through 48F must each be committed and pushed immediately, with this file updated and a machine-readable receipt under `output/checkpoints/`, before dependent work begins.
 
-Never force-push or rewrite a published milestone.
+After every push, the orchestrator must verify the remote branch points to the exact pushed SHA. Never force-push or rewrite a published milestone. If a Codex workspace is lost, resume from the latest verified remote milestone instead of repeating completed work.
 
 ## Next step
 
-Launch Codex from the current remote Task 48 head, read both Task 48 prompt files, then execute milestone 48A using the prescribed parallel workers.
+Launch Codex from the current remote Task 48 head, read `CODEX_START_HERE.md`, both Task 48 prompt files and the constraint seed, then execute milestone 48A using the prescribed parallel workers.
