@@ -1,0 +1,12 @@
+{
+  "base_main": "c4d4f207f702d8eee09ab94d2d90ae90552dd641",
+  "build": "Final Task45 report compiled and visually reviewed; report_source_commit contains the unchanged report bytes.",
+  "numerical_source_commit": "f783785a863440df459e9c5530beba4c7eb59110",
+  "pdf_pages": 11,
+  "recovered_checkpoint": "693f44c0b05e92faec737aa7793c3a99ec76445c",
+  "report_source_commit": "bc3e37645b9a7519dee0da9d1e2df55e291dd983",
+  "report_tex_sha256": "173c8855813b6ff124cae9bbe192168c6a3abc88e6ceae65cb2d8546f08100d0",
+  "reviewed_pdf_sha256": "7d3018ab4b720bf998c0a46f7ffbf18650db314919be21c0af05fa776d3f9643",
+  "source_manifest_sha256": "bbc0946b1c69f005eafcc42804fe017dd2d2530b39deb3e9d2450e8b639d57e8",
+  "visual_review": "All eleven rendered pages inspected; no clipping, overlap or unresolved references. Clean rebuild reproduces all page texts and drawing streams exactly."
+}

@@ -1,0 +1,897 @@
+{
+  "files": [
+    {
+      "report_path": "evidence/task43/AE4_parameter_provenance.pdf",
+      "sha256": "7d3018ab4b720bf998c0a46f7ffbf18650db314919be21c0af05fa776d3f9643",
+      "size_bytes": 287482,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/AE4_parameter_provenance.pdf"
+    },
+    {
+      "report_path": "evidence/task43/CHECKPOINT_02.md",
+      "sha256": "709ad9591eca4b2c924f2138a1b689cf289f4c6af121227d710f802361608411",
+      "size_bytes": 1396,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/CHECKPOINT_02.md"
+    },
+    {
+      "report_path": "evidence/task43/FINAL_STATUS.md",
+      "sha256": "d15813202ad612f87f75317d6986f9ae7d1691c885352cdd4471b26c4b598c8a",
+      "size_bytes": 5831,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/FINAL_STATUS.md"
+    },
+    {
+      "report_path": "evidence/task43/PROTOCOL.md",
+      "sha256": "fc688428a9d36d8cca448b5f167d217c9d9cdd058311dadcbc8014b81cbf41f6",
+      "size_bytes": 1264,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/PROTOCOL.md"
+    },
+    {
+      "report_path": "evidence/task43/audit.py",
+      "sha256": "490bf469105d91e6704b8db911bcc19197427cec291c315362d4cbccfce5d871",
+      "size_bytes": 16615,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/audit.py"
+    },
+    {
+      "report_path": "evidence/task43/build.sh",
+      "sha256": "9cb30f4f6fa739de36bedfb9fe3f3310b56e82bc21c28da092e843746c4ff9dc",
+      "size_bytes": 856,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/build.sh"
+    },
+    {
+      "report_path": "evidence/task43/import_crosswalk.py",
+      "sha256": "f6fa6da55d0dfcc68789f21573e8f93b2f1ad629468a4f8d51dcbf203f9e11cf",
+      "size_bytes": 6122,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/import_crosswalk.py"
+    },
+    {
+      "report_path": "evidence/task43/output/audit_counts.tex",
+      "sha256": "f83c105dce76fd40718d2cfd9189e91b62ef946822d22946128ea54d0baa5961",
+      "size_bytes": 145,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/output/audit_counts.tex"
+    },
+    {
+      "report_path": "evidence/task43/output/audit_summary.json",
+      "sha256": "2b9e9af107e6e127f5acdf6c96f63009391eba9b468d87bde06b1c8f73cc1f44",
+      "size_bytes": 2089,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/output/audit_summary.json"
+    },
+    {
+      "report_path": "evidence/task43/output/build_provenance.json",
+      "sha256": "8e5067d75ac91296c27c2066824b460ce24df624239030e1b530a5f4b14033e4",
+      "size_bytes": 873,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/output/build_provenance.json"
+    },
+    {
+      "report_path": "evidence/task43/output/inventory_table.tex",
+      "sha256": "a061ee7d3a63996d4088ca7260a770baa177c321c7f81b56b6c6b0027aeb51c4",
+      "size_bytes": 10449,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/output/inventory_table.tex"
+    },
+    {
+      "report_path": "evidence/task43/output/numerical_controls.json",
+      "sha256": "52eb5646cb6c6c37aed459061eb9f282fa78256edb8c82506db0e39965746ba9",
+      "size_bytes": 1702,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/output/numerical_controls.json"
+    },
+    {
+      "report_path": "evidence/task43/output/parameter_inventory.csv",
+      "sha256": "62508403456b859ce37ae3d7ad6c65544849ec6fbcffbaebc2662e0abdef8d2b",
+      "size_bytes": 357834,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/output/parameter_inventory.csv"
+    },
+    {
+      "report_path": "evidence/task43/output/parameter_inventory.json",
+      "sha256": "1e3d5763a171dfd64b95fbb72a8a35eae4bbd3fcd1a61939c2886808296d994b",
+      "size_bytes": 460253,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/output/parameter_inventory.json"
+    },
+    {
+      "report_path": "evidence/task43/output/sensitivity_table.tex",
+      "sha256": "dd3d26dc1ba7e667d6c7ce023991cd287196309b12a4f2bf9fc0fb51f768b221",
+      "size_bytes": 1312,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/output/sensitivity_table.tex"
+    },
+    {
+      "report_path": "evidence/task43/output/source_manifest.json",
+      "sha256": "bbc0946b1c69f005eafcc42804fe017dd2d2530b39deb3e9d2450e8b639d57e8",
+      "size_bytes": 11220,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/output/source_manifest.json"
+    },
+    {
+      "report_path": "evidence/task43/output/task44_sensitivity_crosswalk.csv",
+      "sha256": "03d76e57ef277806ee58c49183f77cab773d4365ced56e7b2b7db7b26e8d133d",
+      "size_bytes": 17601,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/output/task44_sensitivity_crosswalk.csv"
+    },
+    {
+      "report_path": "evidence/task43/output/task44_sensitivity_crosswalk.json",
+      "sha256": "cbe0570de39fe11b64199b0d340befa8789126cf9e9d734a37f743cd834147ef",
+      "size_bytes": 81226,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/output/task44_sensitivity_crosswalk.json"
+    },
+    {
+      "report_path": "evidence/task43/output/verification.json",
+      "sha256": "0aab335bf4a8c82f1aa931baa5aa35f43adc331d9610b4b7106c2794f7116323",
+      "size_bytes": 1131,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/output/verification.json"
+    },
+    {
+      "report_path": "evidence/task43/prepare_report.py",
+      "sha256": "5e828215d2048e6de2a555c402a47888576fb86f700a0ea110a8b10a7915290d",
+      "size_bytes": 2301,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/prepare_report.py"
+    },
+    {
+      "report_path": "evidence/task43/provenance_metadata.py",
+      "sha256": "de09833607382531b9a3838098545c0ace6c53b271808991ade276843bcc5412",
+      "size_bytes": 18562,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/provenance_metadata.py"
+    },
+    {
+      "report_path": "evidence/task43/report.tex",
+      "sha256": "173c8855813b6ff124cae9bbe192168c6a3abc88e6ceae65cb2d8546f08100d0",
+      "size_bytes": 24609,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/report.tex"
+    },
+    {
+      "report_path": "evidence/task43/sources.bib",
+      "sha256": "662af2191e959a6e36cfe99fabc56953280c6d3e50cf941eca7adae3ecded6c6",
+      "size_bytes": 22761,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/sources.bib"
+    },
+    {
+      "report_path": "evidence/task43/verify.py",
+      "sha256": "82ed3a97ed545503da2d320dad03ee05226d3bf3924337165b650235a69b86cf",
+      "size_bytes": 7763,
+      "source_commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "source_path": "analysis/43_parameter_provenance/verify.py"
+    },
+    {
+      "report_path": "evidence/task44/.gitignore",
+      "sha256": "de94f2c3b3d2f21e2f8a8e137d01f6d6c48cd58871f2444aacd5077de532078d",
+      "size_bytes": 111,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/.gitignore"
+    },
+    {
+      "report_path": "evidence/task44/AE4_full_system_mathematics.pdf",
+      "sha256": "3a86965653ff2cc4834ee99772f48edc4dbbba8b6b6b0960ff3110c91b63c60d",
+      "size_bytes": 555772,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/AE4_full_system_mathematics.pdf"
+    },
+    {
+      "report_path": "evidence/task44/CHECKPOINT_01.json",
+      "sha256": "2e55979c6a519c440efc791739d45dfc927fafd6598761294dc31975e439201c",
+      "size_bytes": 1409,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/CHECKPOINT_01.json"
+    },
+    {
+      "report_path": "evidence/task44/FINAL_STATUS.md",
+      "sha256": "c5f37257883e085e8eaeafc0e3c896ab1c579a1bca7a1ac3d9a1a6801ebd9b7e",
+      "size_bytes": 10624,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/FINAL_STATUS.md"
+    },
+    {
+      "report_path": "evidence/task44/PROTOCOL.md",
+      "sha256": "d345b060fb9af80f5fcdec6ce236b6e34bf53e0452304dca4086b033155ea139",
+      "size_bytes": 3490,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/PROTOCOL.md"
+    },
+    {
+      "report_path": "evidence/task44/README.md",
+      "sha256": "13728237ba94bec7b516b7c5dc3123abbef3ae6efdd206eea384cdca74296bf1",
+      "size_bytes": 3293,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/README.md"
+    },
+    {
+      "report_path": "evidence/task44/RECOVERY.md",
+      "sha256": "62288eb9d9ae32ffd6e747ab72c2c0db671f4ca4e1ded1f7d7cfa04a7c9d0986",
+      "size_bytes": 2325,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/RECOVERY.md"
+    },
+    {
+      "report_path": "evidence/task44/build.log",
+      "sha256": "6eea687535a191b910b72de9771990173dec001d45655158af479a7578c8c9b3",
+      "size_bytes": 27284,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/build.log"
+    },
+    {
+      "report_path": "evidence/task44/build.sh",
+      "sha256": "fe580d1e98c0c351c33c9b3a89a4fcd55486df8232d8e84a2dee09e64c829f73",
+      "size_bytes": 1336,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/build.sh"
+    },
+    {
+      "report_path": "evidence/task44/core.py",
+      "sha256": "9658e08688680e840ae2f032f7d99e7e94c112bed316dc41bdb0800334ebf555",
+      "size_bytes": 10775,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/core.py"
+    },
+    {
+      "report_path": "evidence/task44/equilibrium_results.tex",
+      "sha256": "18665662d250a809ebfbc7de1df8a2194702f29847645e462f48a3a138d6d576",
+      "size_bytes": 6131,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/equilibrium_results.tex"
+    },
+    {
+      "report_path": "evidence/task44/equilibrium_review.py",
+      "sha256": "e5063719355c0492373ca4d7361735545e3671632bd9ea90e35898a18d9868c8",
+      "size_bytes": 22532,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/equilibrium_review.py"
+    },
+    {
+      "report_path": "evidence/task44/exact_results.tex",
+      "sha256": "f71ac326b8723641b55a74049c5ed5861cdfdd0f8f5c76d5d66da5ea684333c3",
+      "size_bytes": 24136,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/exact_results.tex"
+    },
+    {
+      "report_path": "evidence/task44/integrated_context.tex",
+      "sha256": "9c8c9dc93922d3e82917731d0cbd31c71d8a023ab5e2ec3cb36c82130d19efb8",
+      "size_bytes": 11776,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/integrated_context.tex"
+    },
+    {
+      "report_path": "evidence/task44/inverse_analysis.py",
+      "sha256": "30b8d80ce445606d24da76e5a700761204e6df797df04dda216d1ef868d3be3e",
+      "size_bytes": 19157,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_analysis.py"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/crossing_long_time.csv",
+      "sha256": "05f0c18e96d13dd1cf073dc8f2bd1e42d912465864197de00ed7b385b2f8e776",
+      "size_bytes": 2066705,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/crossing_long_time.csv"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/crossings.json",
+      "sha256": "91095cdf07abf3faf5e9264f4f7e3869d07b66ff2bd6584bf27109318c951a26",
+      "size_bytes": 48226,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/crossings.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/independent_verification.json",
+      "sha256": "386898553ac8a9817686427cf7bbf421eaf4ab0fc6226a8822c0c26f50e0963f",
+      "size_bytes": 2519,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/independent_verification.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/long_time_summary.json",
+      "sha256": "8615e26807c3468e66868dfd23d07ff59a36f9713184da7fd8f243c8d335e502",
+      "size_bytes": 26562,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/long_time_summary.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/ordered_family_scan.json",
+      "sha256": "b6620d04217b911b64178b6db87e899fabcac1ba07ed061ecc855ae78982ebe1",
+      "size_bytes": 93366,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/ordered_family_scan.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/protocol.json",
+      "sha256": "aaf620bdb42aa90c76309379d48edf85a7139a50dfe855cb0d100bcf0b272db3",
+      "size_bytes": 16188,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/protocol.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/selected_long_time.csv",
+      "sha256": "5b265bfa7498d84b17fb64f1623e477c7c902cbd290620c2b82e20686e488a46",
+      "size_bytes": 2063008,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/selected_long_time.csv"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/selected_reproduction.json",
+      "sha256": "2b34f7942e59699b502452f0d4c9a237a8961c0339c51f6336018974fec12d27",
+      "size_bytes": 17141,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/selected_reproduction.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/sensitivity_AE4_carrier.json",
+      "sha256": "7f789e95fd6d9d122cdc051e2616f8190399866ed92dc5fe71caa257c623d5d1",
+      "size_bytes": 2871,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/sensitivity_AE4_carrier.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/sensitivity_CaCC_conductance.json",
+      "sha256": "d998b11871d319e02d98c522455d3e1c69086e23bc93ea837062bf7f21a965c5",
+      "size_bytes": 2844,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/sensitivity_CaCC_conductance.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/sensitivity_NBC_capacity.json",
+      "sha256": "08855428f9b346456f83ef8767841a9d8ceec6ec6b52ffdac22fefc9fdef07b6",
+      "size_bytes": 2878,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/sensitivity_NBC_capacity.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/sensitivity_NHE_carrier.json",
+      "sha256": "22dc5c868b6d6acc10ec2f9ca1c3947423c17228981adc2cbc9a37664fa12666",
+      "size_bytes": 2869,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/sensitivity_NHE_carrier.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/sensitivity_NKCC_scale.json",
+      "sha256": "c7d63cb915d49f5205459057b7ab003121b084d4ad58a57c5f92c42ad1cc693a",
+      "size_bytes": 2872,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/sensitivity_NKCC_scale.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/sensitivity_buffer_pool.json",
+      "sha256": "26b2b757672eb86f882cf0fd0aca3bca6cc427b0a36e2c2018d9cae86404a78b",
+      "size_bytes": 2862,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/sensitivity_buffer_pool.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/sensitivity_pump_capacity.json",
+      "sha256": "ba4048ab72be49257e8f64c233b22e190a794cc14eb2fa2979c2ea46fa0540f1",
+      "size_bytes": 2862,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/sensitivity_pump_capacity.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/sensitivity_water_apical.json",
+      "sha256": "f25a6765d7d74af6c074697ac532e69ba122408e1e9f53ba933bc81f0ac3188e",
+      "size_bytes": 2896,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/sensitivity_water_apical.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/threshold_sensitivities.csv",
+      "sha256": "b7551d60ecb463367d5b19ae3e3b9aa519ea727f267d3ba25165a9a0d4837a65",
+      "size_bytes": 5426,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/threshold_sensitivities.csv"
+    },
+    {
+      "report_path": "evidence/task44/inverse_detail/threshold_sensitivities.json",
+      "sha256": "73149e626bc608c998b7dc23ca261b8b9520f0361a5f50b16a364ae19b7876ac",
+      "size_bytes": 22933,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_detail/threshold_sensitivities.json"
+    },
+    {
+      "report_path": "evidence/task44/inverse_results.tex",
+      "sha256": "55995704db8c817ad47284ec9d8c09922947b0a79568144bcd4a409a1f2f1d07",
+      "size_bytes": 7803,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_results.tex"
+    },
+    {
+      "report_path": "evidence/task44/inverse_verify.py",
+      "sha256": "7213543b1934d60abe08eff7b6adc208dd09c012d575e4374e125e095b372e54",
+      "size_bytes": 4027,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/inverse_verify.py"
+    },
+    {
+      "report_path": "evidence/task44/literature_comparison.tex",
+      "sha256": "8d730d3dae86111402938b40319f9e63d47e57d8d9411986da1fede03cae9065",
+      "size_bytes": 8358,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/literature_comparison.tex"
+    },
+    {
+      "report_path": "evidence/task44/output/active_parameters.json",
+      "sha256": "1a4a4708de6d1752add85b99135b421f96c54c141a018390c64de50368ec774e",
+      "size_bytes": 3845,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/active_parameters.json"
+    },
+    {
+      "report_path": "evidence/task44/output/additional_groups_table.tex",
+      "sha256": "24bc5373a76678d888b510e22c28f18f152f24deaebd9b20b3d62284883d1a0e",
+      "size_bytes": 959,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/additional_groups_table.tex"
+    },
+    {
+      "report_path": "evidence/task44/output/algebra_verification.json",
+      "sha256": "f652361c64e015167165c1da1656733871b9c4840df7ed5cb442f257f61a4dbb",
+      "size_bytes": 99,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/algebra_verification.json"
+    },
+    {
+      "report_path": "evidence/task44/output/class_table.tex",
+      "sha256": "f1ad436b949807789e26bb4d529314182ef8b456f866717761ab48e07e75ae1d",
+      "size_bytes": 450,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/class_table.tex"
+    },
+    {
+      "report_path": "evidence/task44/output/clean_recomputation_verification.json",
+      "sha256": "6438e080cd2af4762fb20823cab77e3fb7ae6a389e9c95e6f9b5e7c5b8380f2c",
+      "size_bytes": 41356,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/clean_recomputation_verification.json"
+    },
+    {
+      "report_path": "evidence/task44/output/clean_sensitivity_gate_verification.json",
+      "sha256": "ada5ca73f487809153c4740d1e4bd65ff9061465fbe7647cf3297ca17e193b7d",
+      "size_bytes": 2514,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/clean_sensitivity_gate_verification.json"
+    },
+    {
+      "report_path": "evidence/task44/output/compensation_comparison.json",
+      "sha256": "ec2a57700e742b3c824816a0df48cf4e9e4eb3db44b0b84815bbcff1d8c36b2c",
+      "size_bytes": 396,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/compensation_comparison.json"
+    },
+    {
+      "report_path": "evidence/task44/output/completion_verification.json",
+      "sha256": "92338be4399e4d1837f2033efd9d371f646a5908e18d01ca63b7ef7de82c4a5f",
+      "size_bytes": 940,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/completion_verification.json"
+    },
+    {
+      "report_path": "evidence/task44/output/coordinate_attribution.csv",
+      "sha256": "c0f3605d0c4081364e5543aed5f072299321fda4bb872fd0c05b23374a7092e6",
+      "size_bytes": 799,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/coordinate_attribution.csv"
+    },
+    {
+      "report_path": "evidence/task44/output/dimensionless_groups.json",
+      "sha256": "c639fde60da5fef593f19e8154a80178ba7bfdec0696571d607599141f558a3d",
+      "size_bytes": 1926,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/dimensionless_groups.json"
+    },
+    {
+      "report_path": "evidence/task44/output/equilibria.json",
+      "sha256": "d5814e8a55b00fd5075e81a9d8021235c7dc1ffa5a52b88b3d02b9ced2fd3d2f",
+      "size_bytes": 178467,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/equilibria.json"
+    },
+    {
+      "report_path": "evidence/task44/output/equilibrium_flow.pdf",
+      "sha256": "6671a8c6287066f399e650a5b71d8dda9ec44242779ad7df75c157ef4d60a5da",
+      "size_bytes": 14708,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/equilibrium_flow.pdf"
+    },
+    {
+      "report_path": "evidence/task44/output/equilibrium_flow.png",
+      "sha256": "72aaccaf57f93e350fc25c0906b3fd43780c34a2aa33abd3047028224dcf0c13",
+      "size_bytes": 47674,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/equilibrium_flow.png"
+    },
+    {
+      "report_path": "evidence/task44/output/equilibrium_review.json",
+      "sha256": "029f64cd334febf16304e5bc9e358cd1660304a86faf81a8771756354cbd569f",
+      "size_bytes": 265862,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/equilibrium_review.json"
+    },
+    {
+      "report_path": "evidence/task44/output/equilibrium_summary.csv",
+      "sha256": "0bc4d74b45720e2fb706f97cc8b2cd297fc334141f68746feb0f29581c985cb3",
+      "size_bytes": 17493,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/equilibrium_summary.csv"
+    },
+    {
+      "report_path": "evidence/task44/output/exact_verification.json",
+      "sha256": "7e6a9815695ff279204ad188df09fac37a5b00b0da315933cb99044389a2508a",
+      "size_bytes": 4008,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/exact_verification.json"
+    },
+    {
+      "report_path": "evidence/task44/output/execution_summary.json",
+      "sha256": "ddd9fbf93443a273c14bf38e97345345906942e37ff46694d8cba41ae1a11773",
+      "size_bytes": 347,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/execution_summary.json"
+    },
+    {
+      "report_path": "evidence/task44/output/expression_sensitivities.csv",
+      "sha256": "7bd17f65f8899dbeeb2b47fa000de2df8c4c2709ecc99ca7b288e2d283df4fe0",
+      "size_bytes": 1140,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/expression_sensitivities.csv"
+    },
+    {
+      "report_path": "evidence/task44/output/final_repository_audit.json",
+      "sha256": "5b004041bfcd7633240377dba84f944abbca3b4c031308563c9bfe11f1137b0e",
+      "size_bytes": 10465,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/final_repository_audit.json"
+    },
+    {
+      "report_path": "evidence/task44/output/inverse_legacy_threshold.json",
+      "sha256": "f67d6dc3a66b7f307597179c61dee123588481e40ba6d47e829e833ff28f8c96",
+      "size_bytes": 5687,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/inverse_legacy_threshold.json"
+    },
+    {
+      "report_path": "evidence/task44/output/inverse_long_time.csv",
+      "sha256": "6b7cc6f04833de136809b83f47905d78a9f3f2d330913da02fcce5035be41ae9",
+      "size_bytes": 383361,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/inverse_long_time.csv"
+    },
+    {
+      "report_path": "evidence/task44/output/inverse_long_time_summary.json",
+      "sha256": "41a1b8590f1d73ebc74e6316d1db28914e7000caa521a263024848254294102f",
+      "size_bytes": 428,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/inverse_long_time_summary.json"
+    },
+    {
+      "report_path": "evidence/task44/output/inverse_ph.pdf",
+      "sha256": "f1583732dd4787d8bcf646e9c22a55daffd3715e07b1699e4fb98c4fa932416a",
+      "size_bytes": 15563,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/inverse_ph.pdf"
+    },
+    {
+      "report_path": "evidence/task44/output/inverse_ph.png",
+      "sha256": "8273b8f9897cc09f004e77957f6acc29cee4e6700c252d83bd515c05ff8b4614",
+      "size_bytes": 47583,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/inverse_ph.png"
+    },
+    {
+      "report_path": "evidence/task44/output/inverse_samples.json",
+      "sha256": "b8b78ba698f62466a929f232862579259d32509c10ca580c9137d0eae7de786e",
+      "size_bytes": 214828,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/inverse_samples.json"
+    },
+    {
+      "report_path": "evidence/task44/output/inverse_threshold.json",
+      "sha256": "418366d8c49ed44ef1002e971007491c2a9fe2d11c6380660109438d2cfebbc2",
+      "size_bytes": 23417,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/inverse_threshold.json"
+    },
+    {
+      "report_path": "evidence/task44/output/inverse_threshold.pdf",
+      "sha256": "9c704437cd5062d67a70a4a2bd6ff8458115e6929c2875d64bc2f8276448ab62",
+      "size_bytes": 16996,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/inverse_threshold.pdf"
+    },
+    {
+      "report_path": "evidence/task44/output/inverse_threshold.png",
+      "sha256": "a42d72a6420446b3790867b195c9371350ae3f1e95f4305e0166dececefefb50",
+      "size_bytes": 48225,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/inverse_threshold.png"
+    },
+    {
+      "report_path": "evidence/task44/output/linear_response.pdf",
+      "sha256": "908dd7e220b7af6c9171a8857b676fe00232ae5f9a1bc54df62c1818de64d0bd",
+      "size_bytes": 14270,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/linear_response.pdf"
+    },
+    {
+      "report_path": "evidence/task44/output/linear_response.png",
+      "sha256": "6f3cfaee2945d68748f215f853e9455ef193f2726e8873d1f90965c67edc83f6",
+      "size_bytes": 56496,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/linear_response.png"
+    },
+    {
+      "report_path": "evidence/task44/output/local_step_response.csv",
+      "sha256": "bc5c64d461549d298908d8fb3b78b30d2430e78fffe348ff2f6f88d43ae6d935",
+      "size_bytes": 577,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/local_step_response.csv"
+    },
+    {
+      "report_path": "evidence/task44/output/nbc_continuation.csv",
+      "sha256": "10bb57e113cdcefaf18dc7047412f5b240e73ed4f99d90032dc800594414ae36",
+      "size_bytes": 3008,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/nbc_continuation.csv"
+    },
+    {
+      "report_path": "evidence/task44/output/nbc_table.tex",
+      "sha256": "ae9ea8821f91af4e7126286b7a4ccf6dba857b40ecb89f1c5e9a43a1edafadcd",
+      "size_bytes": 344,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/nbc_table.tex"
+    },
+    {
+      "report_path": "evidence/task44/output/parameter_sensitivity.csv",
+      "sha256": "e72a4d01296a40be04a8067d058135343bca57c1764b7f048b1ce443516e1ba1",
+      "size_bytes": 690,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/parameter_sensitivity.csv"
+    },
+    {
+      "report_path": "evidence/task44/output/projection_table.tex",
+      "sha256": "fa5809b8065255de3c5f330307f8a06932cfd8d9f266bc0b1e122de45ba38e06",
+      "size_bytes": 471,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/projection_table.tex"
+    },
+    {
+      "report_path": "evidence/task44/output/recovery_verification.json",
+      "sha256": "b0cfb323bde3a37fd6d9ec0b97db72254c9165482bc20734376988d44e10a2f7",
+      "size_bytes": 215,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/recovery_verification.json"
+    },
+    {
+      "report_path": "evidence/task44/output/report_independent_review.json",
+      "sha256": "3ce9b8b68f0f91fb1602bbcce351189b45c4adb966ff0a9e552fe080b5a156ec",
+      "size_bytes": 11158,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/report_independent_review.json"
+    },
+    {
+      "report_path": "evidence/task44/output/report_verification.json",
+      "sha256": "341369835350f16d9b529a6d81ade0bd3423c136d8b5a528305f0d4d5012bdbb",
+      "size_bytes": 9222,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/report_verification.json"
+    },
+    {
+      "report_path": "evidence/task44/output/rescaling_verification.json",
+      "sha256": "9a10f81de7a2920518c99a5b1bf8c2ea462be283039dd0cf3550049f3bfa24d6",
+      "size_bytes": 275,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/rescaling_verification.json"
+    },
+    {
+      "report_path": "evidence/task44/output/scale_table.tex",
+      "sha256": "2960f90a792c7b93ede8deda9b3c9213908d3a4e75defe478a869fe7595850c8",
+      "size_bytes": 435,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/scale_table.tex"
+    },
+    {
+      "report_path": "evidence/task44/output/sensitivity_extended.csv",
+      "sha256": "992742a4a365c8964780a4a341ae9fcac78b94a1aa185b448d90fc5f2f62f4fe",
+      "size_bytes": 16719,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/sensitivity_extended.csv"
+    },
+    {
+      "report_path": "evidence/task44/output/sensitivity_extended.json",
+      "sha256": "712fe98b8c75a63028c3bb697f1a3a6e901a3653ede82e6f670c4703ddee145a",
+      "size_bytes": 316717,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/sensitivity_extended.json"
+    },
+    {
+      "report_path": "evidence/task44/output/sensitivity_full_gate_verification.json",
+      "sha256": "dbd522586ccdbc1be521a2dc7d7827a06e813cccc5b29e4598c71705bc792316",
+      "size_bytes": 522030,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/sensitivity_full_gate_verification.json"
+    },
+    {
+      "report_path": "evidence/task44/output/sensitivity_table.tex",
+      "sha256": "65d6572a3e6aebac49ef20f0b728c931868d5572d34cf1fe04801c98f92cd238",
+      "size_bytes": 467,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/sensitivity_table.tex"
+    },
+    {
+      "report_path": "evidence/task44/output/sensitivity_verification.json",
+      "sha256": "940451d234d1beaf1b95aa2e02ef3b459878d43b5a530955206e630ac113713d",
+      "size_bytes": 682,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/sensitivity_verification.json"
+    },
+    {
+      "report_path": "evidence/task44/output/slow_modes.pdf",
+      "sha256": "171a813e74560a67dea841ecb56625a5e91179b976e7d3cd057606b26c5311ae",
+      "size_bytes": 13543,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/slow_modes.pdf"
+    },
+    {
+      "report_path": "evidence/task44/output/slow_modes.png",
+      "sha256": "ce93878bf86d31f065662c59283dc1dc62b4a4c85f0f796bec2d1eac46ff9f64",
+      "size_bytes": 44784,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/slow_modes.png"
+    },
+    {
+      "report_path": "evidence/task44/output/source_audit.json",
+      "sha256": "52aafdfc2da3665c29bf4834209036c1e9a4c41f6522b87bfd452e57619ee829",
+      "size_bytes": 27304,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/source_audit.json"
+    },
+    {
+      "report_path": "evidence/task44/output/source_projections.csv",
+      "sha256": "1f6f0a3cdf96b6ee5db4f435bccc9d7bd24dabfac3298e6e5e2b96b0e1a74d4f",
+      "size_bytes": 447,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/source_projections.csv"
+    },
+    {
+      "report_path": "evidence/task44/output/spectrum_table.tex",
+      "sha256": "a65cfc329eea128dec23701891d00e13f78dee8e4063824e9b42f67053ad03a8",
+      "size_bytes": 461,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/spectrum_table.tex"
+    },
+    {
+      "report_path": "evidence/task44/output/test_summary.json",
+      "sha256": "512bc2c2d7e5cce5e8353a09bd221ca3979dbfeee354254a83f4a496f1009e49",
+      "size_bytes": 69,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/test_summary.json"
+    },
+    {
+      "report_path": "evidence/task44/output/wt_trajectory.csv",
+      "sha256": "64aa41573f9d9841cd1bed007cf7b823df9d405411500dd996cc7c7f9c5244ae",
+      "size_bytes": 326554,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/output/wt_trajectory.csv"
+    },
+    {
+      "report_path": "evidence/task44/prepare_inverse_report.py",
+      "sha256": "f52f842c9dca2f46c7129c15bbb920eeeab3317f72379aa66f5f6b0ce6fe4981",
+      "size_bytes": 9383,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/prepare_inverse_report.py"
+    },
+    {
+      "report_path": "evidence/task44/prepare_report.py",
+      "sha256": "d122a305828a608cc857195eedd65d797bd4ed269bae7c359a64716d7bf3c33e",
+      "size_bytes": 5461,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/prepare_report.py"
+    },
+    {
+      "report_path": "evidence/task44/prepare_summary.py",
+      "sha256": "f86f2cf194a671e41f29f7d696fafb99d789934cbc42e74f11496a76697cfc22",
+      "size_bytes": 1795,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/prepare_summary.py"
+    },
+    {
+      "report_path": "evidence/task44/recompute_pinned_checkpoint.py",
+      "sha256": "6d4f9f19101b4aa1d506c822e521a3966961a4465e64b95c9ec06c2cc009debd",
+      "size_bytes": 13229,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/recompute_pinned_checkpoint.py"
+    },
+    {
+      "report_path": "evidence/task44/report.tex",
+      "sha256": "384795a43b0fc7becc02313ec2f68cbeaee4c974c22960427c874ce407d8273f",
+      "size_bytes": 17192,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/report.tex"
+    },
+    {
+      "report_path": "evidence/task44/run_analysis.py",
+      "sha256": "f26e66a93daea75655e97e2ca0339a3287c945d6fdbe6ef5abbaedefbb6715ac",
+      "size_bytes": 16898,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/run_analysis.py"
+    },
+    {
+      "report_path": "evidence/task44/sensitivity_analysis.py",
+      "sha256": "03327b08223e7c0812aad6d90ed4bb06a2794bb01f850d682ac04e0d880b38eb",
+      "size_bytes": 25679,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/sensitivity_analysis.py"
+    },
+    {
+      "report_path": "evidence/task44/sensitivity_results.tex",
+      "sha256": "be01d6d49a36bb6bf6c99f98f35ae0fc18f56f935216ed77b6dfce84de30f0a9",
+      "size_bytes": 4707,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/sensitivity_results.tex"
+    },
+    {
+      "report_path": "evidence/task44/sources.bib",
+      "sha256": "05d7cc09976860539b440649d8125c357ec749368b069043f82f3e0c05385634",
+      "size_bytes": 3247,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/sources.bib"
+    },
+    {
+      "report_path": "evidence/task44/verify.py",
+      "sha256": "1643e72a9c3892f49b7df9bce5c51dfea67cbc2d09776735897dc5cf8fc672a9",
+      "size_bytes": 5126,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/verify.py"
+    },
+    {
+      "report_path": "evidence/task44/verify_completion.py",
+      "sha256": "e590ef11c92d83158155512d325a6438d178d9b317fe99b14090ac4361ec623d",
+      "size_bytes": 3772,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/verify_completion.py"
+    },
+    {
+      "report_path": "evidence/task44/verify_exact.py",
+      "sha256": "4f24701c32b7c0bb59f8616fa8f849987d5f3feafbd125265444dbf03d7c2617",
+      "size_bytes": 13677,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/verify_exact.py"
+    },
+    {
+      "report_path": "evidence/task44/verify_report.py",
+      "sha256": "01ed730fd7d5c9f5f9a37f513ab3dc720de6e66f65d1e272209487382f107c6a",
+      "size_bytes": 5412,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/verify_report.py"
+    },
+    {
+      "report_path": "evidence/task44/verify_sensitivity_gates.py",
+      "sha256": "7219d49b5e4819adfa6eade20f83ce44bd8ece9637cdae997ef3c5a06dae62c6",
+      "size_bytes": 6690,
+      "source_commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "source_path": "analysis/44_full_system_mathematics/verify_sensitivity_gates.py"
+    }
+  ],
+  "pinned_inputs": {
+    "task43": [
+      "547f113d9123ab1976774639a69483faf40cef34",
+      "analysis/43_parameter_provenance"
+    ],
+    "task44": [
+      "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "analysis/44_full_system_mathematics"
+    ]
+  },
+  "scope": "Unchanged copies of complete published Task 43 and Task 44 task directories."
+}

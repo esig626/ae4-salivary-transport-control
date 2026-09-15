@@ -1,0 +1,523 @@
+% Self-contained mathematical sections, included by report.tex.
+\section{The retained system and exact scaling}
+\label{sec:exact-full-system}
+The analysis keeps the intracellular and luminal amounts of sodium,
+potassium, chloride, total inorganic carbon and total alkalinity; both
+volumes; and the AE4 regulatory fraction.  Carbonate speciation and two
+membrane voltages are recovered algebraically at every evaluation.
+The older reduction in \texttt{Marty.tex} is therefore not used: neither a
+fixed pH nor a fixed volume can be inserted into the following identities.
+Alkalinity is a conserved acid--base coordinate, not bicarbonate alone.
+
+Let $N,H,E,B,J_4$ denote inward NKCC1 cycles, NHE1 sodium uptake with proton
+extrusion, AE2 chloride uptake with bicarbonate extrusion, NBC cycles and
+AE4 cycles respectively.  A positive NBC cycle imports one sodium and two
+bicarbonates.  Write $P=P_a+P_b$ for the total pump cycles,
+$K_a,K_b$ for potassium efflux from cell to lumen and bath, and $C_a$ for
+chloride efflux from cell to lumen.  The paracellular flux $j_{p,s}$ is
+positive from lumen to bath for species $s$.  The carbon dioxide fluxes
+$D_b,D_a$ are positive from bath and lumen into the cell.  Water fluxes
+$q_b,q_a,q_t,Q$ are positive from bath to cell, cell to lumen, bath to lumen,
+and lumen to sink respectively.  These are signed fluxes, not their positive
+parts.  The general AE4 source vector is
+\[
+ \nu=(\nu_{\mathrm{Na}},\nu_{\mathrm K},\nu_{\mathrm{Cl}},\nu_T,\nu_A),
+ \qquad S^4=J_4\nu .
+\]
+
+Take $C_0=[\mathrm{Na}]_e$, $V_0=V_i(0)$, $L_0=V_l(0)$ and the initial
+stimulated WT NKCC1 \emph{cycle} flux $J_0$.  Define
+\[
+ t_0=\frac{C_0V_0}{J_0},\quad \tau=t/t_0,\quad
+ \varepsilon=L_0/V_0,\quad v=V_i/V_0,\quad \ell=V_l/L_0,
+ \quad x_s=\frac{n_{s,i}}{C_0V_0},\quad y_s=\frac{n_{s,l}}{C_0L_0}.
+\]
+Every ionic or carbon flux below is divided by $J_0$, and every water flux
+by $J_0/C_0$; a hat marks these fluxes.  Dimensionless concentrations are
+$c_{s,i}=x_s/v$ and $c_{s,l}=y_s/\ell$.  Primes mean $d/d\tau$.
+The full dimensionless amount and volume equations are
+\begin{align}
+ x_{\mathrm{Na}}'&=\widehat N+\widehat H+\widehat B+
+                \nu_{\mathrm{Na}}\widehat J_4-3\widehat P,\notag\\
+ x_{\mathrm K}'&=\widehat N+\nu_{\mathrm K}\widehat J_4+
+                2\widehat P-\widehat K_a-\widehat K_b,\notag\\
+ x_{\mathrm{Cl}}'&=2\widehat N+\widehat E+
+                \nu_{\mathrm{Cl}}\widehat J_4-\widehat C_a,\notag\\
+ x_T'&=-\widehat E+2\widehat B+\nu_T\widehat J_4+
+                \widehat D_b+\widehat D_a,\notag\\
+ x_A'&=\widehat H-\widehat E+2\widehat B+\nu_A\widehat J_4,\notag\\
+ v'&=\widehat q_b-\widehat q_a,\label{eq:dimless-cell}\\
+ \varepsilon y_{\mathrm{Na}}'&=3\widehat P_a-\widehat j_{p,\mathrm{Na}}
+                -\widehat Q c_{\mathrm{Na},l},\notag\\
+ \varepsilon y_{\mathrm K}'&=-2\widehat P_a+\widehat K_a-
+                \widehat j_{p,\mathrm K}-\widehat Qc_{\mathrm K,l},\notag\\
+ \varepsilon y_{\mathrm{Cl}}'&=\widehat C_a-\widehat j_{p,\mathrm{Cl}}
+                -\widehat Qc_{\mathrm{Cl},l},\notag\\
+ \varepsilon y_T'&=-\widehat j_{p,\mathrm{HCO}_3}-\widehat D_a-
+                \widehat Qc_{T,l},\notag\\
+ \varepsilon y_A'&=-\widehat j_{p,\mathrm{HCO}_3}-\widehat Qc_{A,l},\notag\\
+ \varepsilon\ell'&=\widehat q_a+\widehat q_t-\widehat Q,
+ \qquad \theta_4 r'=\beta-r,\qquad \theta_4=30/t_0.
+ \label{eq:dimless-lumen}
+\end{align}
+The neutral manifold is
+\begin{equation}
+ x_A=x_{\mathrm{Na}}+x_{\mathrm K}-x_{\mathrm{Cl}}-a_f,
+ \quad y_A=y_{\mathrm{Na}}+y_{\mathrm K}-y_{\mathrm{Cl}},
+ \quad a_f=\frac{n_{\mathrm{fixed}}}{C_0V_0}.
+ \label{eq:neutral-manifold}
+\end{equation}
+Eliminating these two amounts leaves eleven independent dynamic
+coordinates.  This is exact: cell charge is conserved; luminal charge obeys
+$\dot q_l=-Qq_l/V_l$ and hence remains zero from zero initial charge.
+Alkalinity and its effect on pH remain in the reconstructed state.
+
+\subsection{Dimensionless constitutive laws}
+Here $h_i$ and $b_i$ denote the dimensionless hydrogen and bicarbonate
+concentrations from the carbonate closure below.  All half concentrations
+and dissociation constants in this subsection are divided by $C_0$;
+numerical rate constants retain their declared unit conversions.
+For constant full stimulation the frozen NKCC1 and NHE1 multipliers are
+$m_N=1.75$ and $m_H=2.3$.  More generally their separate clipped calcium
+coordinates have the frozen endpoints used by the production objects:
+the active NKCC1 endpoints are $0.058$ and $0.1\,\mu\mathrm M$,
+whereas NBC and NHE1 use $0.058$ and $0.25\,\mu\mathrm M$.
+This distinction matters away from full stimulation.
+
+Put $X=c_{\mathrm{Na},i}c_{\mathrm K,i}c_{\mathrm{Cl},i}^{2}$.  The
+Palk law actually selected in Task 40~\cite{Palk2010} is
+\begin{equation}
+ \widehat N=e_Nm_N\frac{\alpha_N A_1}{J_0A_3}
+   \frac{1-\eta_2X}{1+\eta_4X},\qquad
+ \eta_2=\frac{A_2C_0^4}{A_1},\quad
+ \eta_4=\frac{A_4C_0^4}{A_3}.
+ \label{eq:dimless-nkcc}
+\end{equation}
+The coefficients are $A_1=157.5$, $A_2=2.0096\,10^{-5}$,
+$A_3=1.0306$ and $A_4=1.3852\,10^{-6}$ in the repository's mM
+convention.  The effective amount flux $\alpha_N$ comes from the frozen
+WT calibration, not an imported membrane density.
+
+For NHE1, choose $k_*=1000k_{1+}$, converting its printed rate per
+millisecond into a rate per second.  Let barred rates be divided by $k_*$:
+\begin{align*}
+ \bar a&=\frac{1000k_{1+}}{k_*}
+       \frac{c_{\mathrm{Na},e}}{c_{\mathrm{Na},e}+K_{\mathrm{Na},e}}
+       \frac{K_{H,e}}{h_e+K_{H,e}},&
+ \bar b&=\frac{1000k_{2+}}{k_*}
+       \frac{h_i}{h_i+K_{H,i}}
+       \frac{K_{\mathrm{Na},i}}{c_{\mathrm{Na},i}+K_{\mathrm{Na},i}},\\
+ \bar c&=\frac{1000k_{1-}}{k_*}
+       \frac{c_{\mathrm{Na},i}}{c_{\mathrm{Na},i}+K_{\mathrm{Na},i}}
+       \frac{K_{H,i}}{h_i+K_{H,i}},&
+ \bar d&=\frac{1000k_{2-}}{k_*}
+       \frac{h_e}{h_e+K_{H,e}}
+       \frac{K_{\mathrm{Na},e}}{c_{\mathrm{Na},e}+K_{\mathrm{Na},e}}.
+\end{align*}
+Thus, with the exact printed Cha constants selected by production~\cite{Cha2009},
+\[
+ M_H=\frac{1}{1+(1+h_e/K_{M,e})(K_{M,i}/h_i)^3},\quad
+ \widehat H=\frac{n_Hk_*}{J_0}e_Hm_HM_H
+        \frac{\bar a\bar b-\bar c\bar d}{\bar a+\bar b+\bar c+\bar d}.
+\]
+The printed $k_{2-}=183\,\mathrm{ms}^{-1}$ is retained: the small
+rounding discrepancy in microscopic reversibility is not silently repaired.
+The other acid--base flux laws are
+\begin{align*}
+ \widehat E&=e_2\gamma_2\tanh\left[
+  \frac{\log(c_{\mathrm{Cl},e}b_i/(c_{\mathrm{Cl},i}b_e))}{w_2}\right],
+ &\gamma_2&=G_2/J_0,\\
+ \widehat B&=\gamma_Bu\tanh\left[
+  \frac{\log(c_{\mathrm{Na},e}b_e^2/(c_{\mathrm{Na},i}b_i^2))+\psi_b}{w_B}\right],
+ &\gamma_B&=G_B/J_0,\\
+ \widehat D_b&=\delta_b(c_{\mathrm{CO}_2,e}-c_{\mathrm{CO}_2,i}),
+ &\widehat D_a&=\delta_a(c_{\mathrm{CO}_2,l}-c_{\mathrm{CO}_2,i}).
+\end{align*}
+Here $\delta_{a,b}=P_{\mathrm{CO}_2,a,b}C_0/J_0$,
+$\psi_b=V_b/V_T$, $V_T=RT/F$, and $u$ is the frozen NBC calcium
+coordinate.  The tanh widths are dimensionless effective parameters.
+
+For the inherited AE4 shared carrier, write $k_4$ for its common chloride
+attempt rate.  Define
+\begin{align*}
+ L_c&=\log(c_{\mathrm{Cl},e}/c_{\mathrm{Cl},i}),&
+ L_s&=\log(c_{s,i}/c_{s,e})+2\log(b_i/b_e),\quad s\in\{\mathrm{Na},\mathrm K\},\\
+ a_c^\pm&=\exp(\pm L_c/2),&
+ a_s^\pm&=(k_s/k_4)\exp(\pm L_s/2),\\
+ U&=a_c^++a_{\mathrm{Na}}^-+a_{\mathrm K}^-,&
+ W&=a_c^-+a_{\mathrm{Na}}^++a_{\mathrm K}^+,\quad
+ \pi_i=U/(U+W),\quad\pi_o=W/(U+W).
+\end{align*}
+The scalar cycle is exactly
+\[
+ \widehat J_4=e_4\gamma_4(1+0.25r)
+ \left[(a_{\mathrm{Na}}^++a_{\mathrm K}^+)\pi_i
+       -(a_{\mathrm{Na}}^-+a_{\mathrm K}^-)\pi_o\right],
+ \qquad\gamma_4=n_4k_4/J_0.
+\]
+The frozen cooperative gate is absent.  Task 40 applies equal ensemble
+sodium and potassium routing to this scalar cycle.  The seven Catal\'an
+classes change its source vector but do not provide new class specific
+kinetics.  Local detailed balance of the inherited carrier edges does not
+by itself establish thermodynamic consistency of those substituted vectors.
+
+To specify the electrical laws, scale each conductance $G$ as
+$g=GV_T10^{15}/(FJ_0)$.  The reversal potential for a valence $z_s$ is
+$e_{s,uv}=z_s^{-1}\log(c_{s,v}/c_{s,u})$.  With
+$g_{K,a},g_{K,b},g_{C,a}$ incorporating the frozen calcium gate
+$a_{\mathrm{Ca}}$ and background conductances, explicitly
+\[
+ g_{K,a}=g_{K,\mathrm{total}}a_{\mathrm{Ca}}f_K+g_{a,\mathrm{bg}},\quad
+ g_{K,b}=g_{K,\mathrm{total}}a_{\mathrm{Ca}}(1-f_K)+g_{b,\mathrm{bg}},\quad
+ g_{C,a}=g_{\mathrm{Cl},a}a_{\mathrm{Ca}},
+\]
+the channel and paracellular fluxes are
+\begin{align*}
+ \widehat K_a&=g_{K,a}(\psi_a-e_{K,il}), &
+ \widehat K_b&=g_{K,b}(\psi_b-e_{K,ie}),\\
+ \widehat C_a&=-g_{C,a}(\psi_a-e_{\mathrm{Cl},il}), &
+ \widehat j_{p,s}&=\frac{g_{p,s}}{z_s}
+   (\psi_b-\psi_a-e_{s,le}).
+\end{align*}
+The apical pump is
+\[
+ \widehat P_a=\gamma_P f_P
+ \frac{c_{\mathrm{Na},i}^3}{c_{\mathrm{Na},i}^3+K_{P,\mathrm{Na}}^3}
+ \frac{c_{\mathrm K,l}^2}{c_{\mathrm K,l}^2+K_{P,\mathrm K}^2},
+ \qquad\gamma_P=G_P/J_0,
+\]
+and the basolateral expression replaces $f_P,c_{\mathrm K,l}$ by
+$1-f_P,c_{\mathrm K,e}$.  These pump rates are voltage independent in the
+frozen model.  The calcium gate is $c_{\mathrm{Ca}}^n/(c_{\mathrm{Ca}}^n+K_{\mathrm{Ca}}^n)$,
+using the same calcium units in numerator and denominator.
+
+For water define dimensionless osmolarities
+\[
+ o_i=c_{\mathrm{Na},i}+c_{\mathrm K,i}+c_{\mathrm{Cl},i}+c_{T,i}
+       +(\beta_i+\iota_i)/v,\quad
+ o_l=c_{\mathrm{Na},l}+c_{\mathrm K,l}+c_{\mathrm{Cl},l}+c_{T,l},
+\]
+where $\beta_i=n_{\mathrm{buffer},i}/(C_0V_0)$ and
+$\iota_i=n_{\mathrm{other\ impermeant}}/(C_0V_0)$.  The bath expression
+includes its declared untracked osmolyte concentration.  Exactly as in the
+production law, free hydrogen and hydroxide are omitted from osmolarity,
+and the tiny luminal buffer is not added as an osmotic particle.  No new
+approximation is introduced by the present scaling.  Then
+\[
+ \widehat q_b=\lambda_b(o_i-o_e),\quad
+ \widehat q_a=\lambda_a(o_l-o_i),\quad
+ \widehat q_t=\lambda_t(o_l-o_e),\quad
+ \widehat Q=\omega\varepsilon(\ell-d_l)_+,
+\]
+with $\lambda_j=L_jC_0^2/J_0$, $\omega=k_{\mathrm{out}}t_0$,
+and $d_l=V_{\mathrm{dead}}/L_0$.  These equations close
+\eqref{eq:dimless-cell}--\eqref{eq:dimless-lumen} without fixing a volume,
+composition, carbon pool or voltage.
+
+\section{Carbonate closure and pH derivatives}
+\label{sec:carbonate-proof}
+Write $p$ for pH, $h=10^{-p}$ in molar units,
+$K_1=10^{-pK_1}$ and $K_2=10^{-pK_2}$.  The carbonate fractions are
+\[
+ (\alpha_0,\alpha_1,\alpha_2)=
+ \frac{(h^2,K_1h,K_1K_2)}{h^2+K_1h+K_1K_2},\qquad
+ f(p)=\alpha_1+2\alpha_2,\quad
+ g(p)=\frac1{1+10^{pK_b-p}}.
+\]
+In concentration units mM let
+$w(p)=10^3(10^{p-pK_w}-10^{-p})=[\mathrm{OH}]-[\mathrm H]$.
+For either compartment, with fixed finite buffer amount $n_b$, the closure
+is the single equation
+\begin{equation}
+ G(p;n_T,n_A,V)=n_Tf(p)+n_bg(p)+Vw(p)-n_A=0.
+ \label{eq:carbonate-amount}
+\end{equation}
+Equivalently, for the cell,
+$x_A=x_Tf(p)+\beta_i g(p)+v w(p)/C_0$; the lumen uses $y_T,y_A,\ell$
+and $\beta_l=n_{b,l}/(C_0L_0)$.  Thus dilution of the finite buffer is
+retained exactly.
+
+\paragraph{Proposition: unique speciation on the stated domain.}
+Suppose $V>0$, $n_T\geq0$, $n_b\geq0$, and all constants are finite and
+strictly positive in their concentration representation.  For each real
+$n_A$, equation \eqref{eq:carbonate-amount} has exactly one real pH.
+The solution depends smoothly on the retained amounts and volume on their
+open physical domain.  For the production implementation one additionally
+requires $n_T>0$ and
+\[
+ G(p_{\min})\leq0\leq G(p_{\max});
+\]
+smoothness within the executable domain is asserted with strict bracket
+inequalities.  This numerical bracket is distinct from a physiological
+pH acceptance interval.
+
+\paragraph{Proof.}
+Let $Z$ take the values $0,1,2$ with probabilities
+$\alpha_0,\alpha_1,\alpha_2$.  Differentiation gives
+\[
+ f'(p)=\log(10)\operatorname{Var}(Z),\quad
+ g'(p)=\log(10)g(1-g),\quad
+ w'(p)=\log(10)([\mathrm H]+[\mathrm{OH}]).
+\]
+Consequently
+\begin{equation}
+ G_p=\log(10)\{n_T\operatorname{Var}(Z)+n_bg(1-g)
+                  +V([\mathrm H]+[\mathrm{OH}])\}>0.
+ \label{eq:carbonate-positive}
+\end{equation}
+The water term sends $G$ to $-\infty$ as $p\to-\infty$ and to
+$+\infty$ as $p\to+\infty$.  Continuity, strict monotonicity and the
+implicit function theorem prove the claims.  The statement for the
+finite numerical bracket follows by monotonicity. $\square$
+
+At fixed buffer amount the partial derivatives and trajectory derivative
+are
+\begin{equation}
+ \frac{\partial p}{\partial n_A}=\frac1{G_p},\quad
+ \frac{\partial p}{\partial n_T}=-\frac f{G_p},\quad
+ \frac{\partial p}{\partial V}=-\frac w{G_p},\qquad
+ \dot p=\frac{\dot n_A-f\dot n_T-w\dot V}{G_p}.
+ \label{eq:ph-derivatives}
+\end{equation}
+If the buffer amount is a parameter, $\partial p/\partial n_b=-g/G_p$.
+The very small explicit volume derivative at fixed amounts does not permit
+constant volume: volume changes all transported concentrations, osmolarity,
+electrical reversals and therefore $\dot n_T$ and $\dot n_A$.  Nor does
+small free hydrogen concentration justify dropping carbon or buffering.
+
+\section{The coupled electrical closure}
+\label{sec:electrical-proof}
+Use the dimensionless conductances and voltages defined above.  Set
+$g_a=g_{K,a}+g_{C,a}$, $g_p=\sum_sg_{p,s}$,
+$c_a=-g_{K,a}e_{K,il}-g_{C,a}e_{\mathrm{Cl},il}+\widehat P_a$
+and $c_p=-\sum_sg_{p,s}e_{s,le}$.  The apical equation gives
+\[
+ \psi_a(\psi_b)=\frac{g_p\psi_b-c_a+c_p}{g_a+g_p}.
+\]
+The remaining current equation, including the electrogenic NBC, is
+\begin{equation}
+ R(\psi_b)=g_{K,b}(\psi_b-e_{K,ie})+\widehat P_b
+      +\widehat B(\psi_b)+g_p(\psi_b-\psi_a(\psi_b))+c_p=0.
+ \label{eq:electrical-scalar}
+\end{equation}
+
+\paragraph{Proposition: unique electrical root.}
+At any chemical state with positive concentrations and finite logarithms,
+suppose all conductances and NBC capacity are nonnegative,
+$g_a+g_p>0$, and
+$s_0=g_{K,b}+g_pg_a/(g_a+g_p)>0$.  If $w_B>0$ and $u\in[0,1]$,
+the mathematical current closure has a unique root on the real voltage
+line, smoothly dependent on the chemical state and parameters.  The
+production routine further requires its physical voltage bracket
+$[-0.5,0.5]\,\mathrm V$ to contain that root.
+
+\paragraph{Proof.}
+Writing $L_B=\log(c_{\mathrm{Na},e}b_e^2/(c_{\mathrm{Na},i}b_i^2))$,
+\[
+ R'(\psi_b)=s_0+\frac{\gamma_Bu}{w_B}
+       \operatorname{sech}^2((L_B+\psi_b)/w_B)>0.
+\]
+The NBC term is bounded whereas the passive contribution grows linearly
+with positive slope $s_0$.  Thus $R(\psi_b)\to\pm\infty$ at the two
+ends of the real line.  Monotonicity and the implicit function theorem
+complete the argument.  For any retained variable $z$,
+$\partial_z\psi_b=-R_z/R_{\psi_b}$; differentiating the expression
+for $\psi_a$ gives its corresponding derivative. $\square$
+
+On a domain with positive amounts and volumes, strict pH and voltage
+brackets and $V_l>V_{\mathrm{dead}}$, these closures make the constant input
+chemical vector field smooth.  At the outflow threshold it is locally
+Lipschitz but not differentiable.  The regulatory law on $0\leq r\leq1$
+has the smooth analytical extension $\dot r=(\beta-r)/30$ and
+capacity multiplier $1+0.25r$; its derivative at $r=1$ means the derivative
+from the physical side, or equivalently that extension.  The executable
+trial clamp outside $[0,1]$ must not be differentiated by a centred
+difference across the boundary.  Doing so gives a spurious regulator
+eigenvalue $-1/60$ instead of $-1/30\,\mathrm{s}^{-1}$.
+These regularity statements prove local existence and uniqueness of
+trajectories in the stated domain.  They do not prove global positivity,
+global equilibrium uniqueness or global stability.
+
+\section{Alkalinity balance and conditional capacity obstruction}
+\label{sec:alkalinity-proof}
+\paragraph{Proposition: parent alkalinity budget.}
+For the parent equal routing class C0, the intracellular balance is
+\begin{equation}
+ \dot n_{A,i}=H+2B-E-2J_4.
+ \label{eq:alkalinity-budget}
+\end{equation}
+Hence an intracellular stationary state must satisfy
+$2J_4=H+2B-E$.  For $J_4\ne0$ define
+\[
+ \mathcal A=\frac{H+2B-E}{2J_4}
+       =1+\frac{\dot n_{A,i}}{2J_4},\qquad
+ \mathcal A_0=\frac{H-E}{2J_4}.
+\]
+Here $\mathcal A_0$ removes the NBC contribution at the same state; it is
+not the result of resolving the NBC null system.  For $J_4=0$ these ratios
+are undefined, and the relevant statement is the unnormalised balance
+$\dot n_{A,i}=H+2B-E$.
+
+\paragraph{Proof and finite time form.}
+NHE1 proton extrusion adds one alkalinity equivalent, AE2 bicarbonate
+export removes one, NBC imports two, and the parent AE4 cycle removes two.
+Neutral carbon dioxide exchange, water transfer and the included potassium,
+sodium and chloride pathways have no direct alkalinity source.
+Integration yields, for every finite valid interval $[0,T]$,
+\begin{equation}
+ 2\int_0^T J_4\,dt=\int_0^T(H+2B-E)\,dt
+                         +n_{A,i}(0)-n_{A,i}(T).
+ \label{eq:alkalinity-integrated}
+\end{equation}
+Changing volume is already retained because these are amount balances.
+Equation \eqref{eq:ph-derivatives} then gives the pH change without
+identifying alkalinity change with pH change. $\square$
+
+\paragraph{Corollary: a conditional obstruction without NBC.}
+Suppose a declared admissible domain gives $H\leq H_{\max}$ and
+$E\geq-E_{\max}$.  At an equilibrium with $B=0$,
+$J_4\leq(H_{\max}+E_{\max})/2$.  More generally, maintaining a positive
+mean demand $J_d$ for time $T$ requires
+\[
+ 2J_d\leq H_{\max}+E_{\max}
+      +\frac{n_{A,i}(0)-n_{A,i}(T)}{T}
+\]
+when NBC is absent.  If $n_{A,i}(T)\geq A_{\min}$, a demand greater than
+the capacity term can persist for at most
+$[n_{A,i}(0)-A_{\min}]/[2J_d-H_{\max}-E_{\max}]$.
+This is conditional on the stated domain and demand, not a universal
+impossibility of secretion without NBC.
+
+For the frozen fixed bath and NHE1 amount one can obtain a rigorous but
+conservative bound from the inherited pH condition $p_i\geq6.6$.
+In the dimensional Cha notation $a,d$ are fixed bath quantities,
+$b\leq b_0(h)=1000k_{2+}h/(h+K_{H,i})$ and $c\geq0$.
+Both $M_H(h)$ and $ab_0/(a+b_0+d)$ increase with $h$.
+Therefore
+\[
+ H\leq n_Hm_H M_H(h_{\max})
+      \frac{ab_0(h_{\max})}{a+b_0(h_{\max})+d},
+ \qquad h_{\max}=10^3 10^{-6.6}\ \mathrm{mM}.
+\]
+With $m_H\leq2.3$ this yields $H_{\max}=0.08202591\,\mathrm{fmol/s}$;
+the tanh AE2 law gives $E_{\max}=0.005\,\mathrm{fmol/s}$.
+Consequently the corresponding NBC absent bound is
+$J_4\leq0.04351295\,\mathrm{fmol/s}$.  A \emph{specified} demand of
+$0.075\,\mathrm{fmol/s}$ requires
+$B\geq0.03148705\,\mathrm{fmol/s}$ at equilibrium.
+The chosen demand is an illustrative model loading level, not a measured
+AE4 requirement.  Neither this bound nor the source based kinetic law
+identifies the effective salivary carrier amounts.
+
+\section{Equal routing and general source projections}
+\label{sec:source-proof}
+\paragraph{Proposition: exact chloride identity.}
+For the full system with a constant AE4 source vector define
+\[
+ \kappa(\nu)=\nu_{\mathrm{Cl}}-2\nu_{\mathrm{Na}}+\nu_A.
+\]
+At every valid state,
+\begin{equation}
+ C_a=6P-H+\kappa(\nu)J_4
+            +2\dot n_{\mathrm{Na},i}-\dot n_{A,i}-\dot n_{\mathrm{Cl},i}.
+ \label{eq:general-chloride-identity}
+\end{equation}
+For the parent equal routing vector $\kappa=0$, yielding precisely
+\[
+ C_a=6P-H+2\dot n_{\mathrm{Na},i}-\dot n_{A,i}-\dot n_{\mathrm{Cl},i},
+ \qquad C_a^*=6P^*-H^*.
+\]
+
+\paragraph{Proof.}
+From the three intracellular balances,
+\begin{align*}
+ 2\dot n_{\mathrm{Na},i}-\dot n_{A,i}-\dot n_{\mathrm{Cl},i}
+ &=2(N+H+B+\nu_{\mathrm{Na}}J_4-3P)\\
+ &\quad -(H-E+2B+\nu_AJ_4)
+             -(2N+E+\nu_{\mathrm{Cl}}J_4-C_a)\\
+ &=H-6P-\kappa(\nu)J_4+C_a.
+\end{align*}
+Rearrangement gives the claim.  Neither carbon, volume nor pH was frozen.
+$\square$
+
+Only the explicit AE4 term disappears from this stationary balance.
+AE4 still changes the chemical state, pump, NHE1, NKCC1, pH, volumes,
+membrane voltages and hence secretion.  The proposition does not prove
+zero AE4 sensitivity, a small null phenotype for every admissible
+parameterisation, or observational equivalence of mechanisms.  Away from
+equilibrium the three storage terms cannot be omitted.  Integrating
+\eqref{eq:general-chloride-identity} gives the analogous finite time
+chloride budget by replacing each derivative integral with its endpoint
+amount difference.
+
+The five relevant linear projections of a source vector are
+\[
+ \Pi_{\mathrm{Cl}}\nu=\nu_{\mathrm{Cl}},\quad
+ \Pi_T\nu=\nu_T,\quad \Pi_A\nu=\nu_A,\quad
+ q\nu=\nu_{\mathrm{Na}}+\nu_{\mathrm K}-\nu_{\mathrm{Cl}}-\nu_A,
+ \quad \kappa\nu=-2\nu_{\mathrm{Na}}+\nu_{\mathrm{Cl}}+\nu_A.
+\]
+The charge source is $(q\nu)J_4$.  Thus a class with nonzero $q\nu$ would
+require its additional transported current in the electrical closure;
+merely changing amount sources would not preserve the neutral manifold.
+All seven frozen classes have $q\nu=0$, so their explicit AE4 current is
+zero.  On that neutral subspace,
+$\kappa\nu=\nu_{\mathrm K}-\nu_{\mathrm{Na}}$: the cancellation tests
+equal sodium and potassium source coefficients.
+
+\begin{center}
+\begin{tabular}{lrrrrrr}
+\hline
+Class & $\nu_{\mathrm{Na}}$ & $\nu_{\mathrm K}$ & $\nu_{\mathrm{Cl}}$
+      & $\nu_T$ & $\nu_A$ & $\kappa$\\
+\hline
+C0  & $-1/2$ & $-1/2$ & 1 & $-2$ & $-2$ & 0\\
+C1  & 1 & $-1$ & 1 & $-1$ & $-1$ & $-2$\\
+C2  & 1 & $-2$ & 1 & $-1$ & $-2$ & $-3$\\
+C3a & 0 & $-1$ & 1 & $-2$ & $-2$ & $-1$\\
+C3b & $-1$ & 0 & 1 & $-2$ & $-2$ & 1\\
+C4a & 0 & $-1$ & 1 & $-1$ & $-2$ & $-1$\\
+C4b & $-1$ & 0 & 1 & $-1$ & $-2$ & 1\\
+\hline
+\end{tabular}
+\end{center}
+Each individual balance annihilates the kernel of its displayed linear
+functional.  For example a change in $\nu_T$ alone is invisible to
+$\Pi_{\mathrm{Cl}},\Pi_A,q,\kappa$ but not to carbon balance.  This is
+exactly why C3a/C4a and C3b/C4b have the same listed stationary chloride
+coefficient but different carbon signatures.  Jointly the five projections
+have rank five: if chloride, carbon and alkalinity projections vanish,
+$q=0$ gives $\nu_{\mathrm K}=-\nu_{\mathrm{Na}}$, and $\kappa=0$
+then gives $\nu_{\mathrm{Na}}=\nu_{\mathrm K}=0$.  No nonzero direction
+is lost by all five together.  Equality in one projected balance is not
+equality of molecular mechanisms or of the whole dynamical response.
+
+\subsection{Independent verification and scaling implications}
+The analysis script \texttt{verify\_exact.py} independently assembles
+carbonate chemistry, all selected kinetic laws, the nonlinear electrical
+solve, finite lumen transport, changing volumes and the thirteen amount,
+volume and regulatory derivatives.  It compares these with production
+at 84 random valid states spanning all seven source classes and varied
+AE4 expression.  It also verifies the pH derivative formula at two
+perturbation sizes, the positive electrical derivative, the exact charge
+and chloride identities, and the correct inward regulatory derivative at
+$r=1$.  Rational source coefficients are retained in
+\texttt{output/exact\_verification.json}.  These implementation checks
+support the algebra but do not turn random samples into a global theorem.
+
+Numerically $\varepsilon=0.072515$ and $\theta_4=0.031977$;
+$\gamma_B=0.515137$, $\gamma_2=0.022260$ and
+$\gamma_4=0.668363$.  The water coefficients are
+$\lambda_a=404.37$, $\lambda_b=4820.57$ and $\lambda_t=24.34$;
+$\omega=187.64$.  These suggest some rapidly adjusting variables but
+are insufficient to justify freezing either volume: their driving
+osmotic differences and coupling to amounts matter.  The verified
+dimensional recovery retains them all.
+The small dissociation concentrations, luminal buffer amount and inherited
+carrier relaxation ratio are recorded separately in the machine readable
+groups.  A small buffer amount is a numerical convention here, not a
+measured physiological asymptotic limit.  There is no membrane capacitance
+or differential voltage equation in the frozen system, so no electrical
+relaxation parameter can be inferred from its conductance groups.  The
+algebraic voltage law is an inherited modelling assumption, not a new
+singular perturbation theorem proved by this analysis.

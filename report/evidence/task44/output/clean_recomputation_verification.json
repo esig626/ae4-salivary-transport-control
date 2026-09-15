@@ -1,0 +1,805 @@
+{
+  "all_commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/run_analysis.py",
+        "--skip-inverse"
+      ],
+      "elapsed_s": 5.182382142000279,
+      "label": "baseline",
+      "log_sha256": "fbce953289045e31c04581e58c46ba89be90e86558cba07bc5006ac0583ecfd1",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/verify_exact.py"
+      ],
+      "elapsed_s": 0.5831282340004691,
+      "label": "exact",
+      "log_sha256": "f0f809ae967f9d7f9b4284ddf84d841413d5a01473a55f51db2a89790ad90325",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/equilibrium_review.py"
+      ],
+      "elapsed_s": 5.291473307999695,
+      "label": "equilibrium",
+      "log_sha256": "01cc34d2470176b49a6b4c5766a1f44a8d3b844b0c4b4958a278e5eabc9169c5",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/sensitivity_analysis.py"
+      ],
+      "elapsed_s": 13.602338511999733,
+      "label": "sensitivity",
+      "log_sha256": "2849313f4e1b21f124215cf26003a247ad56e1705ab19e5f48f4a8715c24cdeb",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/inverse_analysis.py",
+        "--phase",
+        "baseline",
+        "--recompute"
+      ],
+      "elapsed_s": 82.58062399600021,
+      "label": "inverse_baseline",
+      "log_sha256": "bcf5cf1e6bddad97ea79abf28288e0fedbe5d36967895a4cee697b1c966e5a55",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/inverse_analysis.py",
+        "--phase",
+        "long",
+        "--recompute"
+      ],
+      "elapsed_s": 18.1421717230005,
+      "label": "inverse_long",
+      "log_sha256": "cd044ce5a3858c9293b1272fe08193578a3fee246ba8707119f01be45e4d0dda",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/inverse_analysis.py",
+        "--phase",
+        "sensitivity",
+        "--parameter",
+        "NBC_capacity",
+        "--recompute"
+      ],
+      "elapsed_s": 100.15359094699943,
+      "label": "inverse_NBC_capacity",
+      "log_sha256": "ba9faa2110ea22ddc002117472e21ce6864582af96053b29784585be92d7d9f6",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/inverse_analysis.py",
+        "--phase",
+        "sensitivity",
+        "--parameter",
+        "AE4_carrier",
+        "--recompute"
+      ],
+      "elapsed_s": 100.67806042699976,
+      "label": "inverse_AE4_carrier",
+      "log_sha256": "ca956d81113027d820639785aee8f4d7da92d1fc51b39063c5fcdf302a36ffad",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/inverse_analysis.py",
+        "--phase",
+        "sensitivity",
+        "--parameter",
+        "NKCC_scale",
+        "--recompute"
+      ],
+      "elapsed_s": 101.37862700499954,
+      "label": "inverse_NKCC_scale",
+      "log_sha256": "b102c66d92aff481700b0b8e6c84c81d3c6c2c5039b3a1479ea2aa63a8b82f0b",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/inverse_analysis.py",
+        "--phase",
+        "sensitivity",
+        "--parameter",
+        "pump_capacity",
+        "--recompute"
+      ],
+      "elapsed_s": 100.26039173000026,
+      "label": "inverse_pump_capacity",
+      "log_sha256": "8b279549847a1fa450e9dafbcf268a3d3da6e144b43a7a1c4f1381062fb72f9c",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/inverse_analysis.py",
+        "--phase",
+        "sensitivity",
+        "--parameter",
+        "NHE_carrier",
+        "--recompute"
+      ],
+      "elapsed_s": 100.81556708500011,
+      "label": "inverse_NHE_carrier",
+      "log_sha256": "442f87fb8b9ba3e7c832ac978735b2d2ed4d6a5cf11ab39e931e9212e1924d79",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/inverse_analysis.py",
+        "--phase",
+        "sensitivity",
+        "--parameter",
+        "CaCC_conductance",
+        "--recompute"
+      ],
+      "elapsed_s": 99.68330016299933,
+      "label": "inverse_CaCC_conductance",
+      "log_sha256": "0973b926047b3a6acbd00f800d802a27de0a465a818e7310ffda30a3a0546b85",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/inverse_analysis.py",
+        "--phase",
+        "sensitivity",
+        "--parameter",
+        "water_apical",
+        "--recompute"
+      ],
+      "elapsed_s": 99.90299581099953,
+      "label": "inverse_water_apical",
+      "log_sha256": "5447955c8adc44a13d5bccffaf826cbc6cabc5b7a7d136f1791801b6c6a73c6d",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/inverse_analysis.py",
+        "--phase",
+        "sensitivity",
+        "--parameter",
+        "buffer_pool",
+        "--recompute"
+      ],
+      "elapsed_s": 100.79335208500015,
+      "label": "inverse_buffer_pool",
+      "log_sha256": "3d47d7c55c6251e03f0d69b61083506d880e774acf0a5261d18b630df64e029f",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/inverse_analysis.py",
+        "--phase",
+        "combine",
+        "--recompute"
+      ],
+      "elapsed_s": 0.4259632379998948,
+      "label": "inverse_combine",
+      "log_sha256": "816b7cb4e714d1c602572a051a98975d343bc9104b40747d051ba957a48b94ac",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/inverse_verify.py"
+      ],
+      "elapsed_s": 11.57725934500013,
+      "label": "inverse_independent",
+      "log_sha256": "5dd036f33456583a0a1778e66865ec860057444b08f4f3e3d1715ffcf31a4203",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/verify.py"
+      ],
+      "elapsed_s": 0.3922212390007189,
+      "label": "tests",
+      "log_sha256": "c80c0137da397d5400425be8ec43e7e74f425ee793fb4592653faa447252b3a5",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "analysis/44_full_system_mathematics/verify_completion.py"
+      ],
+      "elapsed_s": 2.519493966000482,
+      "label": "completion",
+      "log_sha256": "6894bcb44554347abe20b3c323cc494233e65b3b27f92e3233d8c725038e6c23",
+      "returncode": 0
+    }
+  ],
+  "authoritative_files": 47,
+  "bit_identical_numeric_values": 331157,
+  "comparison_helper_sha256": "6d4f9f19101b4aa1d506c822e521a3966961a4465e64b95c9ec06c2cc009debd",
+  "exact_metadata_exclusions": [
+    {
+      "file": "output/completion_verification.json",
+      "path": [
+        "analysed_commit"
+      ],
+      "reason": "precommit provenance versus clean numerical checkpoint revision; ancestry independently verified"
+    },
+    {
+      "file": "output/execution_summary.json",
+      "path": [
+        "elapsed_s"
+      ],
+      "reason": "execution elapsed time only"
+    }
+  ],
+  "failures": [],
+  "files": [
+    {
+      "expected_sha256": "05f0c18e96d13dd1cf073dc8f2bd1e42d912465864197de00ed7b385b2f8e776",
+      "historical_source_record_only": false,
+      "numeric_values": 133274,
+      "path": "inverse_detail/crossing_long_time.csv",
+      "recomputed_sha256": "05f0c18e96d13dd1cf073dc8f2bd1e42d912465864197de00ed7b385b2f8e776",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "91095cdf07abf3faf5e9264f4f7e3869d07b66ff2bd6584bf27109318c951a26",
+      "historical_source_record_only": false,
+      "numeric_values": 954,
+      "path": "inverse_detail/crossings.json",
+      "recomputed_sha256": "91095cdf07abf3faf5e9264f4f7e3869d07b66ff2bd6584bf27109318c951a26",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "386898553ac8a9817686427cf7bbf421eaf4ab0fc6226a8822c0c26f50e0963f",
+      "historical_source_record_only": false,
+      "numeric_values": 39,
+      "path": "inverse_detail/independent_verification.json",
+      "recomputed_sha256": "386898553ac8a9817686427cf7bbf421eaf4ab0fc6226a8822c0c26f50e0963f",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "8615e26807c3468e66868dfd23d07ff59a36f9713184da7fd8f243c8d335e502",
+      "historical_source_record_only": false,
+      "numeric_values": 660,
+      "path": "inverse_detail/long_time_summary.json",
+      "recomputed_sha256": "8615e26807c3468e66868dfd23d07ff59a36f9713184da7fd8f243c8d335e502",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "b6620d04217b911b64178b6db87e899fabcac1ba07ed061ecc855ae78982ebe1",
+      "historical_source_record_only": false,
+      "numeric_values": 2006,
+      "path": "inverse_detail/ordered_family_scan.json",
+      "recomputed_sha256": "b6620d04217b911b64178b6db87e899fabcac1ba07ed061ecc855ae78982ebe1",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "aaf620bdb42aa90c76309379d48edf85a7139a50dfe855cb0d100bcf0b272db3",
+      "historical_source_record_only": false,
+      "numeric_values": 609,
+      "path": "inverse_detail/protocol.json",
+      "recomputed_sha256": "aaf620bdb42aa90c76309379d48edf85a7139a50dfe855cb0d100bcf0b272db3",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "5b265bfa7498d84b17fb64f1623e477c7c902cbd290620c2b82e20686e488a46",
+      "historical_source_record_only": false,
+      "numeric_values": 133274,
+      "path": "inverse_detail/selected_long_time.csv",
+      "recomputed_sha256": "5b265bfa7498d84b17fb64f1623e477c7c902cbd290620c2b82e20686e488a46",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "2b34f7942e59699b502452f0d4c9a237a8961c0339c51f6336018974fec12d27",
+      "historical_source_record_only": false,
+      "numeric_values": 356,
+      "path": "inverse_detail/selected_reproduction.json",
+      "recomputed_sha256": "2b34f7942e59699b502452f0d4c9a237a8961c0339c51f6336018974fec12d27",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "7f789e95fd6d9d122cdc051e2616f8190399866ed92dc5fe71caa257c623d5d1",
+      "historical_source_record_only": false,
+      "numeric_values": 40,
+      "path": "inverse_detail/sensitivity_AE4_carrier.json",
+      "recomputed_sha256": "7f789e95fd6d9d122cdc051e2616f8190399866ed92dc5fe71caa257c623d5d1",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "d998b11871d319e02d98c522455d3e1c69086e23bc93ea837062bf7f21a965c5",
+      "historical_source_record_only": false,
+      "numeric_values": 40,
+      "path": "inverse_detail/sensitivity_CaCC_conductance.json",
+      "recomputed_sha256": "d998b11871d319e02d98c522455d3e1c69086e23bc93ea837062bf7f21a965c5",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "08855428f9b346456f83ef8767841a9d8ceec6ec6b52ffdac22fefc9fdef07b6",
+      "historical_source_record_only": false,
+      "numeric_values": 40,
+      "path": "inverse_detail/sensitivity_NBC_capacity.json",
+      "recomputed_sha256": "08855428f9b346456f83ef8767841a9d8ceec6ec6b52ffdac22fefc9fdef07b6",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "22dc5c868b6d6acc10ec2f9ca1c3947423c17228981adc2cbc9a37664fa12666",
+      "historical_source_record_only": false,
+      "numeric_values": 40,
+      "path": "inverse_detail/sensitivity_NHE_carrier.json",
+      "recomputed_sha256": "22dc5c868b6d6acc10ec2f9ca1c3947423c17228981adc2cbc9a37664fa12666",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "c7d63cb915d49f5205459057b7ab003121b084d4ad58a57c5f92c42ad1cc693a",
+      "historical_source_record_only": false,
+      "numeric_values": 40,
+      "path": "inverse_detail/sensitivity_NKCC_scale.json",
+      "recomputed_sha256": "c7d63cb915d49f5205459057b7ab003121b084d4ad58a57c5f92c42ad1cc693a",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "26b2b757672eb86f882cf0fd0aca3bca6cc427b0a36e2c2018d9cae86404a78b",
+      "historical_source_record_only": false,
+      "numeric_values": 40,
+      "path": "inverse_detail/sensitivity_buffer_pool.json",
+      "recomputed_sha256": "26b2b757672eb86f882cf0fd0aca3bca6cc427b0a36e2c2018d9cae86404a78b",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "ba4048ab72be49257e8f64c233b22e190a794cc14eb2fa2979c2ea46fa0540f1",
+      "historical_source_record_only": false,
+      "numeric_values": 40,
+      "path": "inverse_detail/sensitivity_pump_capacity.json",
+      "recomputed_sha256": "ba4048ab72be49257e8f64c233b22e190a794cc14eb2fa2979c2ea46fa0540f1",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "f25a6765d7d74af6c074697ac532e69ba122408e1e9f53ba933bc81f0ac3188e",
+      "historical_source_record_only": false,
+      "numeric_values": 40,
+      "path": "inverse_detail/sensitivity_water_apical.json",
+      "recomputed_sha256": "f25a6765d7d74af6c074697ac532e69ba122408e1e9f53ba933bc81f0ac3188e",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "b7551d60ecb463367d5b19ae3e3b9aa519ea727f267d3ba25165a9a0d4837a65",
+      "historical_source_record_only": false,
+      "numeric_values": 128,
+      "path": "inverse_detail/threshold_sensitivities.csv",
+      "recomputed_sha256": "b7551d60ecb463367d5b19ae3e3b9aa519ea727f267d3ba25165a9a0d4837a65",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "73149e626bc608c998b7dc23ca261b8b9520f0361a5f50b16a364ae19b7876ac",
+      "historical_source_record_only": false,
+      "numeric_values": 320,
+      "path": "inverse_detail/threshold_sensitivities.json",
+      "recomputed_sha256": "73149e626bc608c998b7dc23ca261b8b9520f0361a5f50b16a364ae19b7876ac",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "1a4a4708de6d1752add85b99135b421f96c54c141a018390c64de50368ec774e",
+      "historical_source_record_only": false,
+      "numeric_values": 94,
+      "path": "output/active_parameters.json",
+      "recomputed_sha256": "1a4a4708de6d1752add85b99135b421f96c54c141a018390c64de50368ec774e",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "f652361c64e015167165c1da1656733871b9c4840df7ed5cb442f257f61a4dbb",
+      "historical_source_record_only": false,
+      "numeric_values": 3,
+      "path": "output/algebra_verification.json",
+      "recomputed_sha256": "f652361c64e015167165c1da1656733871b9c4840df7ed5cb442f257f61a4dbb",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "ec2a57700e742b3c824816a0df48cf4e9e4eb3db44b0b84815bbcff1d8c36b2c",
+      "historical_source_record_only": false,
+      "numeric_values": 7,
+      "path": "output/compensation_comparison.json",
+      "recomputed_sha256": "ec2a57700e742b3c824816a0df48cf4e9e4eb3db44b0b84815bbcff1d8c36b2c",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "fd3a4bac2fca6b7d5617c4c1179152ed1664efadf698e1e4657628b4e1252f81",
+      "historical_source_record_only": false,
+      "numeric_values": 7,
+      "path": "output/completion_verification.json",
+      "recomputed_sha256": "92338be4399e4d1837f2033efd9d371f646a5908e18d01ca63b7ef7de82c4a5f",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "c0f3605d0c4081364e5543aed5f072299321fda4bb872fd0c05b23374a7092e6",
+      "historical_source_record_only": false,
+      "numeric_values": 66,
+      "path": "output/coordinate_attribution.csv",
+      "recomputed_sha256": "c0f3605d0c4081364e5543aed5f072299321fda4bb872fd0c05b23374a7092e6",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "c639fde60da5fef593f19e8154a80178ba7bfdec0696571d607599141f558a3d",
+      "historical_source_record_only": false,
+      "numeric_values": 58,
+      "path": "output/dimensionless_groups.json",
+      "recomputed_sha256": "c639fde60da5fef593f19e8154a80178ba7bfdec0696571d607599141f558a3d",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "d5814e8a55b00fd5075e81a9d8021235c7dc1ffa5a52b88b3d02b9ced2fd3d2f",
+      "historical_source_record_only": false,
+      "numeric_values": 5278,
+      "path": "output/equilibria.json",
+      "recomputed_sha256": "d5814e8a55b00fd5075e81a9d8021235c7dc1ffa5a52b88b3d02b9ced2fd3d2f",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "029f64cd334febf16304e5bc9e358cd1660304a86faf81a8771756354cbd569f",
+      "historical_source_record_only": false,
+      "numeric_values": 4876,
+      "path": "output/equilibrium_review.json",
+      "recomputed_sha256": "029f64cd334febf16304e5bc9e358cd1660304a86faf81a8771756354cbd569f",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "0bc4d74b45720e2fb706f97cc8b2cd297fc334141f68746feb0f29581c985cb3",
+      "historical_source_record_only": false,
+      "numeric_values": 884,
+      "path": "output/equilibrium_summary.csv",
+      "recomputed_sha256": "0bc4d74b45720e2fb706f97cc8b2cd297fc334141f68746feb0f29581c985cb3",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "7e6a9815695ff279204ad188df09fac37a5b00b0da315933cb99044389a2508a",
+      "historical_source_record_only": false,
+      "numeric_values": 31,
+      "path": "output/exact_verification.json",
+      "recomputed_sha256": "7e6a9815695ff279204ad188df09fac37a5b00b0da315933cb99044389a2508a",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "ddd9fbf93443a273c14bf38e97345345906942e37ff46694d8cba41ae1a11773",
+      "historical_source_record_only": false,
+      "numeric_values": 5,
+      "path": "output/execution_summary.json",
+      "recomputed_sha256": "896452815519bae23f7d08fcca5b05ee994c107e181fc50d8354da9c994cb22f",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "7bd17f65f8899dbeeb2b47fa000de2df8c4c2709ecc99ca7b288e2d283df4fe0",
+      "historical_source_record_only": false,
+      "numeric_values": 48,
+      "path": "output/expression_sensitivities.csv",
+      "recomputed_sha256": "7bd17f65f8899dbeeb2b47fa000de2df8c4c2709ecc99ca7b288e2d283df4fe0",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "f67d6dc3a66b7f307597179c61dee123588481e40ba6d47e829e833ff28f8c96",
+      "historical_source_record_only": false,
+      "numeric_values": 120,
+      "path": "output/inverse_legacy_threshold.json",
+      "recomputed_sha256": "f67d6dc3a66b7f307597179c61dee123588481e40ba6d47e829e833ff28f8c96",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "6b7cc6f04833de136809b83f47905d78a9f3f2d330913da02fcce5035be41ae9",
+      "historical_source_record_only": false,
+      "numeric_values": 20188,
+      "path": "output/inverse_long_time.csv",
+      "recomputed_sha256": "6b7cc6f04833de136809b83f47905d78a9f3f2d330913da02fcce5035be41ae9",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "41a1b8590f1d73ebc74e6316d1db28914e7000caa521a263024848254294102f",
+      "historical_source_record_only": false,
+      "numeric_values": 5,
+      "path": "output/inverse_long_time_summary.json",
+      "recomputed_sha256": "41a1b8590f1d73ebc74e6316d1db28914e7000caa521a263024848254294102f",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "b8b78ba698f62466a929f232862579259d32509c10ca580c9137d0eae7de786e",
+      "historical_source_record_only": false,
+      "numeric_values": 4602,
+      "path": "output/inverse_samples.json",
+      "recomputed_sha256": "b8b78ba698f62466a929f232862579259d32509c10ca580c9137d0eae7de786e",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "418366d8c49ed44ef1002e971007491c2a9fe2d11c6380660109438d2cfebbc2",
+      "historical_source_record_only": false,
+      "numeric_values": 478,
+      "path": "output/inverse_threshold.json",
+      "recomputed_sha256": "418366d8c49ed44ef1002e971007491c2a9fe2d11c6380660109438d2cfebbc2",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "bc5c64d461549d298908d8fb3b78b30d2430e78fffe348ff2f6f88d43ae6d935",
+      "historical_source_record_only": false,
+      "numeric_values": 32,
+      "path": "output/local_step_response.csv",
+      "recomputed_sha256": "bc5c64d461549d298908d8fb3b78b30d2430e78fffe348ff2f6f88d43ae6d935",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "10bb57e113cdcefaf18dc7047412f5b240e73ed4f99d90032dc800594414ae36",
+      "historical_source_record_only": false,
+      "numeric_values": 145,
+      "path": "output/nbc_continuation.csv",
+      "recomputed_sha256": "10bb57e113cdcefaf18dc7047412f5b240e73ed4f99d90032dc800594414ae36",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "e72a4d01296a40be04a8067d058135343bca57c1764b7f048b1ce443516e1ba1",
+      "historical_source_record_only": false,
+      "numeric_values": 24,
+      "path": "output/parameter_sensitivity.csv",
+      "recomputed_sha256": "e72a4d01296a40be04a8067d058135343bca57c1764b7f048b1ce443516e1ba1",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "b0cfb323bde3a37fd6d9ec0b97db72254c9165482bc20734376988d44e10a2f7",
+      "historical_source_record_only": true,
+      "numeric_values": 0,
+      "path": "output/recovery_verification.json",
+      "recomputed_sha256": "b0cfb323bde3a37fd6d9ec0b97db72254c9165482bc20734376988d44e10a2f7",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "9a10f81de7a2920518c99a5b1bf8c2ea462be283039dd0cf3550049f3bfa24d6",
+      "historical_source_record_only": false,
+      "numeric_values": 5,
+      "path": "output/rescaling_verification.json",
+      "recomputed_sha256": "9a10f81de7a2920518c99a5b1bf8c2ea462be283039dd0cf3550049f3bfa24d6",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "992742a4a365c8964780a4a341ae9fcac78b94a1aa185b448d90fc5f2f62f4fe",
+      "historical_source_record_only": false,
+      "numeric_values": 704,
+      "path": "output/sensitivity_extended.csv",
+      "recomputed_sha256": "992742a4a365c8964780a4a341ae9fcac78b94a1aa185b448d90fc5f2f62f4fe",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "712fe98b8c75a63028c3bb697f1a3a6e901a3653ede82e6f670c4703ddee145a",
+      "historical_source_record_only": false,
+      "numeric_values": 4631,
+      "path": "output/sensitivity_extended.json",
+      "recomputed_sha256": "712fe98b8c75a63028c3bb697f1a3a6e901a3653ede82e6f670c4703ddee145a",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "940451d234d1beaf1b95aa2e02ef3b459878d43b5a530955206e630ac113713d",
+      "historical_source_record_only": false,
+      "numeric_values": 11,
+      "path": "output/sensitivity_verification.json",
+      "recomputed_sha256": "940451d234d1beaf1b95aa2e02ef3b459878d43b5a530955206e630ac113713d",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "52aafdfc2da3665c29bf4834209036c1e9a4c41f6522b87bfd452e57619ee829",
+      "historical_source_record_only": false,
+      "numeric_values": 0,
+      "path": "output/source_audit.json",
+      "recomputed_sha256": "52aafdfc2da3665c29bf4834209036c1e9a4c41f6522b87bfd452e57619ee829",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "1f6f0a3cdf96b6ee5db4f435bccc9d7bd24dabfac3298e6e5e2b96b0e1a74d4f",
+      "historical_source_record_only": false,
+      "numeric_values": 56,
+      "path": "output/source_projections.csv",
+      "recomputed_sha256": "1f6f0a3cdf96b6ee5db4f435bccc9d7bd24dabfac3298e6e5e2b96b0e1a74d4f",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "512bc2c2d7e5cce5e8353a09bd221ca3979dbfeee354254a83f4a496f1009e49",
+      "historical_source_record_only": false,
+      "numeric_values": 3,
+      "path": "output/test_summary.json",
+      "recomputed_sha256": "512bc2c2d7e5cce5e8353a09bd221ca3979dbfeee354254a83f4a496f1009e49",
+      "status": "passed"
+    },
+    {
+      "expected_sha256": "64aa41573f9d9841cd1bed007cf7b823df9d405411500dd996cc7c7f9c5244ae",
+      "historical_source_record_only": false,
+      "numeric_values": 16856,
+      "path": "output/wt_trajectory.csv",
+      "recomputed_sha256": "64aa41573f9d9841cd1bed007cf7b823df9d405411500dd996cc7c7f9c5244ae",
+      "status": "passed"
+    }
+  ],
+  "files_compared": 47,
+  "independent_clean_source": {
+    "acquisition_detail": "Independent --no-hardlinks clone of the root repository object history immediately after its exact remote checkpoint fetch; detached at f783785a863440df459e9c5530beba4c7eb59110 with clean status. Direct GitHub checkout is unavailable in this runtime. No working-tree files from the root checkout were reused.",
+    "checkout": "/workspace/scratch/32c3c5dd39a9/clean_task44_f783785",
+    "clean_git_status": true,
+    "initial_inverse_trial_cache_files": 0,
+    "runtime_python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "source_acquisition": "Fresh checkout of the remotely published numerical checkpoint; exact HEAD and clean status checked before removing generated outputs.",
+    "source_python_sha256": {
+      "analysis/44_full_system_mathematics/core.py": "9658e08688680e840ae2f032f7d99e7e94c112bed316dc41bdb0800334ebf555",
+      "analysis/44_full_system_mathematics/equilibrium_review.py": "e5063719355c0492373ca4d7361735545e3671632bd9ea90e35898a18d9868c8",
+      "analysis/44_full_system_mathematics/inverse_analysis.py": "30b8d80ce445606d24da76e5a700761204e6df797df04dda216d1ef868d3be3e",
+      "analysis/44_full_system_mathematics/inverse_verify.py": "7213543b1934d60abe08eff7b6adc208dd09c012d575e4374e125e095b372e54",
+      "analysis/44_full_system_mathematics/prepare_inverse_report.py": "2608ef20e718c16c8328da97d844839d7b3c863ec48d63b9b9cfcc947fc186dc",
+      "analysis/44_full_system_mathematics/prepare_report.py": "6249256f4734897412330556d27af71d4e2eaf21da8a965ebf1d09f7b909a2b7",
+      "analysis/44_full_system_mathematics/run_analysis.py": "f26e66a93daea75655e97e2ca0339a3287c945d6fdbe6ef5abbaedefbb6715ac",
+      "analysis/44_full_system_mathematics/sensitivity_analysis.py": "03327b08223e7c0812aad6d90ed4bb06a2794bb01f850d682ac04e0d880b38eb",
+      "analysis/44_full_system_mathematics/verify.py": "1643e72a9c3892f49b7df9bce5c51dfea67cbc2d09776735897dc5cf8fc672a9",
+      "analysis/44_full_system_mathematics/verify_completion.py": "e590ef11c92d83158155512d325a6438d178d9b317fe99b14090ac4361ec623d",
+      "analysis/44_full_system_mathematics/verify_exact.py": "4f24701c32b7c0bb59f8616fa8f849987d5f3feafbd125265444dbf03d7c2617",
+      "src/ae4_identifiability.py": "42a4d68c290b37e5ffd2b908af97c792b87336ed36db37d3137cd08b7dd0736b",
+      "src/ae4_mechanism_reconstruction/__init__.py": "d587aa6f5453f262eab170603d655f844ead07b376f3862cbea2a92f2b1792c4",
+      "src/ae4_mechanism_reconstruction/chassis.py": "c9c5fa4e98112d425c804a74c3c31638f06886b877c52e6e9b91ae3b0f0a4877",
+      "src/ae4_mechanism_reconstruction/comparison.py": "686c90f7f13c6954625a0f75565eb33e0aabc911b20b7b5370feeb0187b934b4",
+      "src/ae4_mechanism_reconstruction/mechanisms.py": "abc5e90aabd2ee2f8f49a7bcb5c88b137ed7784049ee2d00ca997e2d76747a23",
+      "src/ae4_mechanism_reconstruction/run_analysis.py": "6bdd73472709688f2cbad88c25f9ca00aeea44906796fe235ddbcda8de69971c",
+      "src/ae4_mechanism_reconstruction/structure.py": "b37cac0665a77c00e34a439bd65363aa68b9ea3b14e2a65c5496e5d2bba9e157",
+      "src/identifiability_discrimination/__init__.py": "e1e5d65574a840def898aaf53b39aec8bf2fb6ff9900b22dcf4bf51eca6d39e9",
+      "src/identifiability_discrimination/reduced_model.py": "29782581c8cdef5139a0379ffb76b38a86f014377859348df236b537917c368f",
+      "src/identifiability_discrimination/run_analysis.py": "296a3b613865b2cab543572497f3dc22e49b9f0ef2a0aea4724affc50ab26430",
+      "src/modern_full_model/__init__.py": "721ec58e52c171e5261d769f5136acb5566574710c909dd917a36d048240f8a5",
+      "src/modern_full_model/absolute_hydraulic_diagnostic.py": "19affea6ff6c7d199cc028c71b541b5f24661a859d4130e77330538d1cef89f6",
+      "src/modern_full_model/acid_base.py": "cf123937b6cf085b0cbad01fc464fca9eadbb56888802e427900473c1a737a31",
+      "src/modern_full_model/ae4_cacc_recruitment.py": "1adb937058a0bc1fa27cc789b99f2491d7d99d7b7c6e3dec4356ee12158c55aa",
+      "src/modern_full_model/ae4_catalan2025.py": "f3b488f6c0075d68178167b0145543af3f04e4db889002c11cde782fa868da11",
+      "src/modern_full_model/ae4_equal_cation_routing.py": "fbb6fd25f69d3e5f57ad995a465710670b7a3704f0cf797a0a6c018910fa3293",
+      "src/modern_full_model/ae4_routing_only.py": "ef3a55d6a74fbdc1a07a6f89c19533376aec7bee98cfbafa5f73cf4e01f63a10",
+      "src/modern_full_model/calibration.py": "fc839e1caf26c9d8143059b3945d77322e1e84584e495a17bb2c7d047a7ca9ca",
+      "src/modern_full_model/camp_pka.py": "b03ef7c794017a1a312fc9bd47188a9bc430e63c8b9c6be4dbfb6c93147eaf03",
+      "src/modern_full_model/freeze_g5_joint.py": "410e05b5d08c61dec4ca5a38c14027b94c0133327a0d5b2e00a093ccc03bc76a",
+      "src/modern_full_model/genotype_evaluation.py": "03c1fc871741e1720b90a51a8b5a57de0786ec72803ac38fedd2bee633fd6cea",
+      "src/modern_full_model/independent.py": "0fdbcbca373505fa4684769e4c297aae464cc814c3787092aec60241550f3385",
+      "src/modern_full_model/independent_genotype.py": "a0deb1ccd57cbf702461446e92c00dc052fdb3c09ed24b75f69276ebbf6a3a61",
+      "src/modern_full_model/independent_native.py": "849dd3e7d22c470884a1255f8d529e73d3006bf785eb217e1e7a043605f5676c",
+      "src/modern_full_model/membranes.py": "c4200328179cd70156590dd10eb0859505ff03d2005652fd1ae2c9b692f85fea",
+      "src/modern_full_model/model.py": "a391600986aed9204cddb3aede884f6c420a5d9ba7de232d255900ec9e84027c",
+      "src/modern_full_model/native_dynamic_contract.py": "d11a1ea7c7c2f5c8ba9bf7939574975b724772cd837fc87ac75ef3ede91bd6cc",
+      "src/modern_full_model/native_source_panel.py": "8693b91a69ca652784e4b21e14b8c3c6fb9030ebe87a33ade3147d191ea1a367",
+      "src/modern_full_model/nbc_minimal.py": "48230ad9b6c0bbb017d8545d0c46ca6fc83eb0d6ade57f1ced96da7fd28bcfaf",
+      "src/modern_full_model/nhe1_cha2009.py": "de76dccffadb75fcaecee90402161af1db48f5db88ea152164f504a974d0e5c1",
+      "src/modern_full_model/nkcc1_capacity_limited.py": "5d0e5bdfbca6a874bfe055f162bf925ef4db70d415692271248f351c14bed0e8",
+      "src/modern_full_model/nkcc1_palk2010.py": "2b4b58450589dbf2b4765c35dbeee9062815574903490654864640c2fffd60a6",
+      "src/modern_full_model/nkcc_stimulation.py": "c272da41b93dea37986e293fdb0936f994dade13b4a65e093057575f58788475",
+      "src/modern_full_model/parameters.py": "5a3037ec9849e8202134c664b2a87205f73e2e17edde781ee4fef0bc57b1a39b",
+      "src/modern_full_model/pooled_ae4.py": "92eb87df49bcede5a42d0f679c8d9fdf7b015a1d6b0ac03e8ee895b4d39334cf",
+      "src/modern_full_model/report_calcium_fast_screen.py": "cda9bb274250b26ec1fa2af7e32c20c73b76ebe8ded75b61badd3649dd5ab165",
+      "src/modern_full_model/run_absolute_hydraulic_diagnostic.py": "d99d5fd33ac4b592c815e44b38bf1d79f5db5d9c7c6e22c1cd49a72d5d99fa95",
+      "src/modern_full_model/run_ae4_carbon_nhe1_compensation.py": "7057b97c088a0d78ce0c13a68382fa699eba4399579687aaf5d818e750de6c49",
+      "src/modern_full_model/run_ae4_routing_only.py": "d742c8196cc87cb4786e0622e530073361f155aa48d4288793960fb3bd246ac9",
+      "src/modern_full_model/run_ae4_routing_re_equilibrated.py": "59b6b615bf7b91cfd111c89860a93a9b33bb5e242c99a3d6bdff689703f9af80",
+      "src/modern_full_model/run_analysis.py": "919a9bc843240550537b8a2019bec89dfa6dcc0e4e8a920d7f041bf26a608339",
+      "src/modern_full_model/run_calcium_fast_screen.py": "62f2032dafebadb819d770ac37623178ec9f256f4f4cc3356b4af907e647238b",
+      "src/modern_full_model/run_g5_ae2_validation.py": "08e753039974759904fee294fbac91689a98d94aa081c183f2401a07a5842769",
+      "src/modern_full_model/run_g5_cross_root_profile.py": "c682dd163f2e997e86a344edee2b75a3dd185e8f49e515928afaf4300a3e0bf4",
+      "src/modern_full_model/run_g5_joint_repair_profile.py": "c815b44021bab726a282461b9dbc228d5c89e0449e4512708dd82ef7b3f305cd",
+      "src/modern_full_model/run_g5_nearby_robustness.py": "8ef1613ced73de593074eb06f32334e005f14dc10306ba24bd1f85179dfac187",
+      "src/modern_full_model/run_independent_native.py": "ff647783872c07ac4ee940ae3720a613c6e9bd409ff7eaf54742f96141ebd957",
+      "src/modern_full_model/run_independent_native_ae2.py": "5778a4358d9694e42575a3c87850147d98943ee0968c97acb8ed801414988c11",
+      "src/modern_full_model/run_independent_native_dynamic.py": "8ed8f7262aaca6aaa6ddd0d322695d95d6220426c2ca90cdf7c5ddec5fae40b0",
+      "src/modern_full_model/run_independent_native_genotypes.py": "0f171b69df639355d1cd7fd6f4174597033433130039bed92a71ba1a02b7243c",
+      "src/modern_full_model/run_native_dynamic_contract.py": "f4380a27f859b6d76368630259d5b3988a3a693ffd8a58520c42457d46966c4f",
+      "src/modern_full_model/run_native_genotype_evaluation.py": "db3d9f89ecbff3961c43188bbd13227aa672bd744496a126de960df4d65303ec",
+      "src/modern_full_model/run_native_source_panel.py": "76847920661f7ec14e36b13f8c08dfdcb7a2a101fd8e4731ff39751146cca88f",
+      "src/modern_full_model/run_nkcc_stimulation_profile.py": "cbc08c882a1dcd0347cbc16a17cde03e285c00e6b84f4cbf3c24838c46a035a9",
+      "src/modern_full_model/run_vbeta_diagnostic.py": "57ab6cbd860e3d22d3d5e90971b8241de94f3a4e02290d7b6e7a8cdf44659b5c",
+      "src/modern_full_model/run_wt_calibration.py": "5224bd94638d915a6806933f233ff367e7650d0298c5fff630ece41a0e6c4f0e",
+      "src/modern_full_model/states.py": "a037f9690960c3b52e738bc4051601adf76bf345b3a32b191770e2469255fd22",
+      "src/modern_full_model/task14_blind.py": "d11b1b70c99589e62e8edfa54d60fa91165ee7cc4870bd0c64c95720fd296f94",
+      "src/modern_full_model/task14_compare.py": "f8b758f4fd059e6150517aac15fb081b2fa9514552e49fd93f348f2480f7fb39",
+      "src/modern_full_model/task14_report.py": "7db7eabfe5d1d029f77daf1bd301fedb2bb50879e1f919ba5bbebb5957e2277e",
+      "src/modern_full_model/task14_reveal.py": "b387fa51991f6c6f1397e8e7273c9b47ecc93754b592ea849c032db2e591db48",
+      "src/modern_full_model/task14b_five_percent.py": "d8c28629a89941a4fac6a5a7d2de3f4b4f67d54a96cbde61a72d0054146af256",
+      "src/modern_full_model/task16_postfreeze.py": "f791f09c17165e5da89af8e66743f09307545e61143d90f89960ae61e4b65dad",
+      "src/modern_full_model/task16_wt_allocation.py": "c611fc080836f86cb51da67ae324fbfcb95e7298b33a8da34f49285fc2760d77",
+      "src/modern_full_model/task16_wt_diagnostics.py": "612f891b1ed39731bc47e805fbe7e89fe0205e793d2dba99c86116636f7c832d",
+      "src/modern_full_model/task17_fixed_wt.py": "45c3b4fac5e8ebca4f8f894bdba9218191d86904b9228c856e2a3cdb6f9f4803",
+      "src/modern_full_model/task17_postfreeze.py": "d127addde40d2f6b8efa8db2f20ccc714c504b19b197ff88a22ce0264d504ae0",
+      "src/modern_full_model/task18_fixed_wt.py": "bddd5ae4b5d9f761d01191730e933437854d83206c9b757fd5a437d148ba78e0",
+      "src/modern_full_model/task18_postfreeze.py": "50d723b43934585ba72820b26d99a42bb57126b22ee231a8eb9ddb5928df93c4",
+      "src/modern_full_model/task19_pump_coupling.py": "51903e225e7471975dcc6ac013e687fcd7f556892890f4028ab3f50959edb869",
+      "src/modern_full_model/task19_reporting.py": "ea3228e1671180c0380e7b3c6d19ac2fbe331662a01880c451c8f3ecb02fbdc0",
+      "src/modern_full_model/task20_fixed_wt.py": "159d7a822cfed6c6de1772a87e74e522bdebaf5d430c84ac7adf5fcd7d8fc7c3",
+      "src/modern_full_model/task20_postfreeze.py": "4c2b6e2520fd87d46f0234bd248ceac30ab5a6382b26eea27d981d5f245b6989",
+      "src/modern_full_model/task30_nhe1_repair.py": "7d48386bf081212c2e81aeb6f0d28e47c9d3c9edec4d2f4ab3b80f762f34b105",
+      "src/modern_full_model/task31_nhe1_repair.py": "976b62f8aadf87dbb5badb156d40ea974b53eee0e21acd8fd7a08d64543e07d4",
+      "src/modern_full_model/task41_selected.py": "56d55bbb196a5df2a86434f44a8be098eaa41345c0fbffa187dd72ccb44f7d67",
+      "src/modern_full_model/transporters.py": "4177a444fa97e430c345fc1fb73f333b5b6623c3ea3cd84769cb9d6dca76061a",
+      "src/modern_full_model/validation.py": "e8dd7d9bee588ecab6032a9fb35f41907a112b08d6e8448ca1d7ab60fee7b4b8",
+      "src/modern_full_model/vbeta_diagnostic.py": "8cb8e303ad3d39e50ff0434d98494bc5822ad809a720b6ecfe476312ceb18f17",
+      "src/modern_full_model/water.py": "d93494f93411123a9c9bdaea5c177c89714ee5ab0794717c586bfd87647671ba",
+      "src/run_identifiability_audit.py": "9c2ca29a5f8b8b1f5fa05bc082d099ac047c01fa790baa3e727e85dc51b87001",
+      "src/state_resolved_ae4/__init__.py": "d7ec5bc9b8c7bad56a98e4458da95729b02c520e94fc144c2bd96a554c31cb73",
+      "src/state_resolved_ae4/adapter.py": "314e5554314470efb07026cad42f030bedfd8a4ffcbe6b67be99a836fd38bc10",
+      "src/state_resolved_ae4/chassis.py": "eca2b98676cb7b3b7c977bff5b8f32bd6437b567687f407d33bdb2501640db7d",
+      "src/state_resolved_ae4/chemistry.py": "cb8450a9e4422669d4ae87dc59c8b9cfd4b8376b6741aaa7941a08cbbe0bd339",
+      "src/state_resolved_ae4/cycles.py": "3f2db8788dde2bc24c36d09061732e69dded712583bfdd4ec97515429c108257",
+      "src/state_resolved_ae4/evidence.py": "3d3be4dc0cf8d4d88778b780e8885a9ddc04ca7fb33780b553036a87a97d1e78",
+      "src/state_resolved_ae4/export_ctmc_reproduction.py": "944a5f12e45f20e46a13ab754def94db7c66058d430f724b61f410fc4c0f1efc",
+      "src/state_resolved_ae4/fitting.py": "f6be3be2cc21523e2a164edc216556f8854274464ece27ce2583546b8a99ca23",
+      "src/state_resolved_ae4/independent.py": "370d266e3ee264225ec5890fba5d45d916d8dbbac56ebbbeca9d9b8b2aec8231",
+      "src/state_resolved_ae4/localization.py": "da8f44b85c37b5d0b88474f6600b4bef71827310c45b54fcadd8ee3b1ffef0a5",
+      "src/state_resolved_ae4/protocols.py": "ee9b4ae0e83685ddd7594ccf7595673e9de71da33db6c32e6fb951a2f01616d6",
+      "src/state_resolved_ae4/run_amendment_01.py": "d3800ead6bf28de70da7bb1933969c3f98ab51f7439cf783ad32a6ee073d431a",
+      "src/state_resolved_ae4/run_chassis_reconstruction.py": "06bf55bfe8b8a7a037b865ef6b8fe0c7324c9fd8447ee8de8d64a09350ec533a",
+      "src/state_resolved_ae4/run_stage_a.py": "b810af4432af5a392b701b8ee50659c6651f086722df2af70160a7c831db7bde",
+      "src/state_resolved_ae4/solvers.py": "bc66a087229c9a062173e3b2cd1a0f965231a3b15dcd05f5b544dc8dcb31585b",
+      "src/state_resolved_ae4/validation.py": "00deb5128df5de0d29e1ee230e09721a1f7a95b3fda646546f36bd32ace35c2c"
+    },
+    "source_sha": "f783785a863440df459e9c5530beba4c7eb59110"
+  },
+  "largest_numeric_differences": [],
+  "numeric_values_compared": 331157,
+  "numeric_values_with_tolerated_difference": 0,
+  "numerical_cache_reuse": false,
+  "protected_paths_unchanged": true,
+  "regenerated_inverse_trial_cache_files": 532,
+  "regeneration_scope": {
+    "authoritative_files_compared": 47,
+    "explanation": "The historical recovery record documents an earlier checkpoint and is explicitly identified as such; it is compared unchanged, while every current numerical product is regenerated.",
+    "historical_source_record_carried_forward": [
+      "output/recovery_verification.json"
+    ],
+    "numerical_output_files_regenerated": 46
+  },
+  "source_files_unchanged": true,
+  "status": "passed",
+  "supplementary_worktree_audit": {
+    "all_task44_numerical_sources_unchanged": true,
+    "status": "passed",
+    "tracked_changed_paths": [
+      "analysis/44_full_system_mathematics/output/completion_verification.json",
+      "analysis/44_full_system_mathematics/output/execution_summary.json"
+    ],
+    "tracked_changes_outside_task44": [],
+    "tracked_files_outside_task44": 1751,
+    "untracked_nonignored_paths_outside_task44": []
+  },
+  "tolerance_classes_used": {},
+  "tolerance_policy": {
+    "conservation_tolerance_ratio_roundoff": {
+      "atol": 1e-05,
+      "rtol": 1e-08
+    },
+    "default": {
+      "atol": 1e-14,
+      "rtol": 1e-08
+    },
+    "electrical_current_ampere": {
+      "atol": 1e-19,
+      "rtol": 1e-08
+    },
+    "rationale": "The same runtime should reproduce deterministic solves nearly exactly. Tiny differences of conservation cancellation residuals are allowed far below their physiological gates. No failed gate, boolean, class, root count or experimental observable is excluded.",
+    "small_equilibrium_or_charge_residual": {
+      "atol": 1e-10,
+      "rtol": 1e-08
+    }
+  },
+  "trial_cache_scope": "Inverse trial caches are regenerated from zero and are not authoritative report files. Every top level inverse summary/CSV and every output JSON/CSV is compared. No cache value is read by a solver.",
+  "verification_revision_provenance": {
+    "clean_recomputed_check_sha": "f783785a863440df459e9c5530beba4c7eb59110",
+    "published_check_is_ancestor_of_clean_checkpoint": true,
+    "published_precommit_check_sha": "5589fa36e2c7d1e5bf21869aad82909a123e759b"
+  }
+}

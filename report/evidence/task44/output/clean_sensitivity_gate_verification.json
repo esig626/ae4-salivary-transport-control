@@ -1,0 +1,62 @@
+{
+  "architecture_gate_revision": {
+    "all_384_case_records_unchanged": true,
+    "current_script_sha256": "7219d49b5e4819adfa6eade20f83ce44bd8ece9637cdae997ef3c5a06dae62c6",
+    "exact_changed_metadata_paths": [
+      [
+        "gate_source"
+      ],
+      [
+        "scope"
+      ],
+      [
+        "source_sha256",
+        "verify_sensitivity_gates.py"
+      ]
+    ],
+    "numerical_values_unchanged": true,
+    "prior_script_sha256": "0d53ed3d2340638ad87f35ee43756d180708de5b5181e97915b1136b361185ac"
+  },
+  "base_numerical_checkpoint": "f783785a863440df459e9c5530beba4c7eb59110",
+  "byte_identical": true,
+  "comparison_policy": "Exact equality for every key, scalar and list element; no numeric tolerance or metadata exclusion.",
+  "excluded_fields": [],
+  "expected_json_sha256": "dbd522586ccdbc1be521a2dc7d7827a06e813cccc5b29e4598c71705bc792316",
+  "failures": [],
+  "groups": {
+    "compensation_expression": {
+      "attempted": 256,
+      "expected": 256,
+      "failed": 0,
+      "passed": 256
+    },
+    "parameter_WT_null": {
+      "attempted": 128,
+      "expected": 128,
+      "failed": 0,
+      "passed": 128
+    }
+  },
+  "maximum_conservation_tolerance_ratio": 4.085620730620576e-05,
+  "maximum_independent_rhs": 6.87977075654328e-12,
+  "numeric_values_compared_exactly": 7567,
+  "protected_worktree_paths_unchanged": true,
+  "recomputed_json_sha256": "dbd522586ccdbc1be521a2dc7d7827a06e813cccc5b29e4598c71705bc792316",
+  "scalar_values_compared_exactly": 10265,
+  "scope_note": "Calls complete Task 40 diagnose: all inherited Task 37 physiological/conservation/NBC checks plus equal_routing_evaluator_active and equal_routing_source_signature. No gate is bypassed or relaxed.",
+  "source_acquisition": {
+    "base_commit": "f783785a863440df459e9c5530beba4c7eb59110",
+    "clean_output_absent_before_execution": true,
+    "copied_into_checkout": [
+      "analysis/44_full_system_mathematics/verify_sensitivity_gates.py"
+    ],
+    "elapsed_s": 9.274271502999909,
+    "expected_output_sha256": "dbd522586ccdbc1be521a2dc7d7827a06e813cccc5b29e4598c71705bc792316",
+    "returncode": 0,
+    "revision_note": "Supplement expanded to include both Task 40 equal-routing architecture gates.",
+    "script_sha256": "7219d49b5e4819adfa6eade20f83ce44bd8ece9637cdae997ef3c5a06dae62c6"
+  },
+  "status": "passed",
+  "supplementary_script": "analysis/44_full_system_mathematics/verify_sensitivity_gates.py",
+  "supplementary_script_sha256": "7219d49b5e4819adfa6eade20f83ce44bd8ece9637cdae997ef3c5a06dae62c6"
+}

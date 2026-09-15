@@ -1,0 +1,66 @@
+{
+  "assembly_script_sha256": "a6f1517bb16031147a4b2c67fb3ee33351466841cc4ae37c445dda052b6f511e",
+  "coverage": {
+    "complete_jacobians": 26,
+    "coordinate_attribution_rows": 33,
+    "eigenvalues": 286,
+    "equilibrium_cases": 26,
+    "expression_derivative_points": 4,
+    "inverse_parameter_observable_pairs": 16,
+    "jacobian_entries": 3146,
+    "modal_rows": 22,
+    "ordered_inverse_points": 17,
+    "parameter_active_flags": 109,
+    "parameter_inventory_records": 137,
+    "parameter_metric_rows": 208,
+    "scientific_recomputation_performed_by_report_assembly": false,
+    "source_snapshot_files": 126,
+    "state_entries": 338,
+    "task43_full_exposition": {
+      "all_sections_retained": true,
+      "expanded_tex_sha256": "03d47dce298e32c56ba82e3a3a502b307bfb4e579c4b8541ec6f8e71887227a8",
+      "integrated_section_count": 7,
+      "original_report_sha256": "173c8855813b6ff124cae9bbe192168c6a3abc88e6ceae65cb2d8546f08100d0",
+      "original_section_count": 7
+    },
+    "task44_full_exposition": {
+      "all_sections_retained": true,
+      "expanded_tex_sha256": "f95505ec35e55a039404354c96739106a1cc23eb1ce1f5ad87e6678ed22c7f00",
+      "integrated_section_count": 16,
+      "original_report_sha256": "384795a43b0fc7becc02313ec2f68cbeaee4c974c22960427c874ce407d8273f",
+      "original_section_count": 7
+    },
+    "uncertain_parameters": 16
+  },
+  "no_overfull_boxes_or_missing_characters": true,
+  "no_unresolved_citations_or_references": true,
+  "pdf": {
+    "bytes": 999015,
+    "pages": 154,
+    "path": "AE4_mathematical_analysis_report.pdf",
+    "sha256": "15fc598194fdf92c3df3307a7988e7cae64f5582e8acc800ee19b84e3931c68c"
+  },
+  "pinned_inputs": {
+    "task43": [
+      "547f113d9123ab1976774639a69483faf40cef34",
+      "analysis/43_parameter_provenance"
+    ],
+    "task44": [
+      "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "analysis/44_full_system_mathematics"
+    ]
+  },
+  "report_inputs": {
+    "conclusions.tex": "9dc5e6a68657d7d8cd03c3e0adf072d1ddd944676fa9e172d6e20fe76ff34660",
+    "interpretation.tex": "196af9c404e2388d920a0fb2025cec683a5667a5d7ef173c88ce5e70cceb7599",
+    "methods.tex": "4b89a15d6a5e2d9dfde48f38e32d97340968aafb8caa1dcddbd2287932dc926c",
+    "report.tex": "699397349498a9ae6f1331100c2621de30686c4a98df95a69a64568dccc71b33"
+  },
+  "resolved_citation_keys": 14,
+  "scientific_replay_claims": "Transcribed from preserved Task 44 verification receipts, not newly executed here.",
+  "scientific_simulations_rerun_for_this_report": false,
+  "status": "REPORT_BUILD_AND_SOURCE_INTEGRITY_VERIFIED",
+  "unchanged_evidence_files": 126,
+  "verification_script_sha256": "9512a7bc145bbefa535b5e7c6ab219a8e8cd7d2bc641501fb92261fe5b2e0511",
+  "visual_review": "Separate manual rendered page review required; this script does not assert visual review."
+}

@@ -1,0 +1,138 @@
+{
+  "ae4_parameters": {
+    "carrier_amount_fmol": 0.1501264265070657,
+    "common_cl_attempt_rate_s": 1.0,
+    "cooperative_gate": null,
+    "k_loaded_attempt_rate_s": 1.9,
+    "na_loaded_attempt_rate_s": 0.1
+  },
+  "nbc_parameters": {
+    "capacity_fmol_s": 0.11570913197464398,
+    "fully_recruited_calcium_uM": 0.25,
+    "log_width": 2.0,
+    "nhe1_stimulated_multiplier": 2.3,
+    "resting_calcium_uM": 0.058
+  },
+  "nkcc1_kinetics": {
+    "alpha_eff_fmol_s": 0.017334746894096052,
+    "law": "palk_benjamin_2010_eq17"
+  },
+  "parameters": {
+    "acid_base": {
+      "carbon_pka1": 6.1,
+      "carbon_pka2": 10.3,
+      "cell_buffer_pka": 7.0,
+      "lumen_buffer_pka": 7.0,
+      "ph_lower": 3.0,
+      "ph_upper": 11.0,
+      "water_pkw": 14.0
+    },
+    "bath": {
+      "buffer_total_mM": 0.0,
+      "cl_mM": 126.16159280366088,
+      "k_mM": 5.0,
+      "na_mM": 145.0,
+      "ph": 7.4,
+      "tic_mM": 25.0,
+      "untracked_osmolyte_mM": 0.0
+    },
+    "constants": {
+      "faraday_C_mol": 96485.33212,
+      "gas_constant_J_mol_K": 8.31446261815324,
+      "temperature_K": 310.15
+    },
+    "geometry": {
+      "cell_buffer_total_fmol": 30.0,
+      "cell_impermeant_osmoles_fmol": 124.69936937124379,
+      "fixed_cell_anion_equivalents_fmol": 78.06176220594485,
+      "lumen_buffer_total_fmol": 1e-09
+    },
+    "homeostasis": {
+      "ae2_capacity_fmol_s": 0.005,
+      "co2_apical_permeability_fmol_s_mM": 0.01,
+      "co2_basolateral_permeability_fmol_s_mM": 0.02,
+      "nhe1_capacity_fmol_s": 0.007440980590414482,
+      "nhe1_cha_carrier_amount_fmol": 2.339370005697548e-05,
+      "nhe1_model": "cha_2009_eight_state_mod2",
+      "nhe1_published_g_fmol_s": 0.0305,
+      "nhe1_published_k_h_mM": 0.00045,
+      "nhe1_published_k_na_mM": 15.0,
+      "nkcc1_capacity_fmol_s": 0.32,
+      "thermodynamic_saturation_log_width": 2.0
+    },
+    "initial": {
+      "cell_cl_mM": 40.0,
+      "cell_k_mM": 140.0,
+      "cell_na_mM": 15.0,
+      "cell_ph": 7.2,
+      "cell_tic_mM": 20.0,
+      "cell_volume_pL": 1.0,
+      "lumen_cl_mM": 126.16159279650834,
+      "lumen_k_mM": 5.0,
+      "lumen_na_mM": 145.0,
+      "lumen_ph": 7.4,
+      "lumen_tic_mM": 25.0,
+      "lumen_volume_pL": 0.1
+    },
+    "membranes": {
+      "apical_k_fraction": 0.3,
+      "apical_pump_fraction": 0.075075,
+      "calcium_half_uM": 0.26,
+      "calcium_hill": 1.46,
+      "g_apical_background_S": 0.0,
+      "g_basolateral_background_S": 0.0,
+      "g_cl_apical_S": 3.14e-08,
+      "g_k_total_S": 1.4e-08,
+      "g_para_cl_S": 2.5e-10,
+      "g_para_hco3_S": 5e-11,
+      "g_para_k_S": 5e-11,
+      "g_para_na_S": 3e-10,
+      "nak_capacity_fmol_s": 0.08,
+      "nak_k_half_mM": 1.5,
+      "nak_na_half_mM": 10.0
+    },
+    "water": {
+      "apical_hydraulic_pL_s_mOsm": 0.00432,
+      "basolateral_hydraulic_pL_s_mOsm": 0.0515,
+      "lumen_dead_volume_pL": 0.1,
+      "outflow_rate_s": 0.2,
+      "paracellular_hydraulic_pL_s_mOsm": 0.00026
+    }
+  },
+  "regulatory_model": {
+    "ae4_regulatory_model": {
+      "construct": "WT",
+      "gain": {
+        "basal_capacity_multiplier": 1.0,
+        "coupling_scale": 1.0,
+        "fully_activated_increment": 0.25
+      },
+      "tau_activation_s": 30.0
+    },
+    "nkcc1_regulatory_model": {
+      "fully_activated_multiplier": 1.75,
+      "resting_calcium_uM": 0.058,
+      "stimulated_calcium_uM": 0.1
+    },
+    "stimulus": {
+      "arm": "CCH_IPR",
+      "beta_occupancy_on": 1.0,
+      "cch_dose_uM": 0.3,
+      "duration_s": 600.0,
+      "ipr_dose_uM": 5.0,
+      "onset_s": 0.0,
+      "resting_calcium_uM": 0.058,
+      "stimulated_calcium_uM": 0.25
+    }
+  },
+  "stimulus": {
+    "arm": "CCH_IPR",
+    "beta_occupancy_on": 1.0,
+    "cch_dose_uM": 0.3,
+    "duration_s": 600.0,
+    "ipr_dose_uM": 5.0,
+    "onset_s": 0.0,
+    "resting_calcium_uM": 0.058,
+    "stimulated_calcium_uM": 0.25
+  }
+}

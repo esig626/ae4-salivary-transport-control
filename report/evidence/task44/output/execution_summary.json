@@ -1,0 +1,13 @@
+{
+  "elapsed_s": 5.0055812189998505,
+  "equilibrium_rows": 26,
+  "expression_sensitivities": 3,
+  "frozen_results_modified": false,
+  "inverse_integrations": 0,
+  "numpy": "2.3.5",
+  "parameter_sensitivities": 8,
+  "production_sources_modified": false,
+  "root_failures": 0,
+  "scipy": "1.17.0",
+  "status": "baseline_complete_inverse_separate"
+}

@@ -1,0 +1,65 @@
+{
+  "all_inherited_gates_checked": true,
+  "diagnostic_scope": "Long extension checked separately; no retrospective rejection or alteration of Task 41",
+  "independent_raw_state_integrations": [
+    {
+      "adaptive_quad_pL": 0.992544442734954,
+      "augmented_integral_difference_pL": -1.1495360219271333e-11,
+      "case": "selected_wt",
+      "endpoint_state_max_absolute_error": 2.029310053330846e-11,
+      "expression": 1.0,
+      "max_conservation_ratio": 0.005908162847845233,
+      "physiological": true,
+      "quad_error_estimate_pL": 7.76109769121491e-12,
+      "raw_state_count": 13,
+      "rho": 0.8948812715671155,
+      "sampled_difference_pL": -6.714184763723097e-12
+    },
+    {
+      "adaptive_quad_pL": 0.76262486240608,
+      "augmented_integral_difference_pL": 1.0461520538740388e-11,
+      "case": "selected_5pct",
+      "endpoint_state_max_absolute_error": 2.76543232757831e-11,
+      "expression": 0.05,
+      "max_conservation_ratio": 0.0059401372709544376,
+      "physiological": true,
+      "quad_error_estimate_pL": 1.2742048527180241e-12,
+      "raw_state_count": 13,
+      "rho": 0.8948812715671155,
+      "sampled_difference_pL": 1.375433100747614e-11
+    },
+    {
+      "adaptive_quad_pL": 0.6921737088594144,
+      "augmented_integral_difference_pL": -2.836619827917275e-13,
+      "case": "selected_null",
+      "endpoint_state_max_absolute_error": 4.0046188587439246e-11,
+      "expression": 0.0,
+      "max_conservation_ratio": 0.0056346038945775945,
+      "physiological": true,
+      "quad_error_estimate_pL": 8.709310510385129e-12,
+      "raw_state_count": 13,
+      "rho": 0.8948812715671155,
+      "sampled_difference_pL": -1.5198176051001155e-11
+    },
+    {
+      "adaptive_quad_pL": 0.6918034768886048,
+      "augmented_integral_difference_pL": -5.9291460630106485e-12,
+      "case": "crossing_null",
+      "endpoint_state_max_absolute_error": 4.5645265345228836e-11,
+      "expression": 0.0,
+      "max_conservation_ratio": 0.005623945753541193,
+      "physiological": true,
+      "quad_error_estimate_pL": 9.062817495081348e-12,
+      "raw_state_count": 13,
+      "rho": 0.8950726881777452,
+      "sampled_difference_pL": 1.6566414906549198e-11
+    }
+  ],
+  "sensitivity_rows": 16,
+  "status": "PASS",
+  "threshold_tolerance_checks": {
+    "adaptive": 1.3655743202889425e-13,
+    "sampled": 1.7156387421835007e-11
+  },
+  "verification_method": "Raw 13-state Radau integration plus independent adaptive dense-flow quadrature; original sampled trapezoid also reproduced"
+}

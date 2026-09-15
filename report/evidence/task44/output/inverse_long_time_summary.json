@@ -1,0 +1,11 @@
+{
+  "all_failed_gates": {
+    "ph_i": 1484.9493695279766
+  },
+  "all_gate_detail_file": "inverse_detail/long_time_summary.json",
+  "end_ph": 7.311843679847367,
+  "end_s": 3600.0,
+  "ph_gate_crossing_s": 1484.745167894735,
+  "protocol": "Separate constant full stimulation extension; gates monitored at accepted endpoints and integer seconds. Failure does not alter original 600 s Task 41 result.",
+  "rho": 0.8950726881777452
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "crossing_log_elasticity": -0.00029752666386114254,
+    "d_deficit_d_rho": 1.9510582154119716,
+    "d_rho_d_log_parameter": -0.00026630799082674923,
+    "difference_step_relative_error": 8.151740510539856e-08,
+    "estimates": [
+      {
+        "d_rho_d_log_parameter": -0.0002663080125354856,
+        "derivative_relative_validation_error": 1.6204484961008837e-06,
+        "finite_root_d_rho_d_log_parameter": -0.0002663084440746033,
+        "log_step": 0.001,
+        "perturbed_gates_pass": true,
+        "rho_minus": 0.8950729547172445,
+        "rho_plus": 0.8950724221003563
+      },
+      {
+        "d_rho_d_log_parameter": -0.00026630799082674923,
+        "derivative_relative_validation_error": 1.6235898812674865e-06,
+        "finite_root_d_rho_d_log_parameter": -0.00026630842320241044,
+        "log_step": 0.0005,
+        "perturbed_gates_pass": true,
+        "rho_minus": 0.8950728214755055,
+        "rho_plus": 0.8950725551670823
+      }
+    ],
+    "finite_root_d_rho_d_log_parameter": -0.00026630842320241044,
+    "initialisation": "Fixed inherited WT conserved state for WT and null; perturbed WT denominator; no rest solve",
+    "maximum_validation_relative_error": 1.6235898812674865e-06,
+    "observable": "adaptive",
+    "parameter": "water_apical",
+    "residual_recruitment_log_elasticity": 0.0025380235727173756,
+    "rho": 0.8950726881777452,
+    "uncertainty_interval": "Not established; local sensitivity only"
+  },
+  {
+    "crossing_log_elasticity": -0.0002946478037628319,
+    "d_deficit_d_rho": 1.9511913898984101,
+    "d_rho_d_log_parameter": -0.0002637335413665952,
+    "difference_step_relative_error": 3.0118296934961536e-07,
+    "estimates": [
+      {
+        "d_rho_d_log_parameter": -0.0002637336207986463,
+        "derivative_relative_validation_error": 1.6324074434166466e-06,
+        "finite_root_d_rho_d_log_parameter": -0.00026373405132007477,
+        "log_step": 0.001,
+        "perturbed_gates_pass": true,
+        "rho_minus": 0.8950808924253383,
+        "rho_plus": 0.8950803649572356
+      },
+      {
+        "d_rho_d_log_parameter": -0.0002637335413665952,
+        "derivative_relative_validation_error": 1.6328121902417777e-06,
+        "finite_root_d_rho_d_log_parameter": -0.00026373397199463966,
+        "log_step": 0.0005,
+        "perturbed_gates_pass": true,
+        "rho_minus": 0.895080760471119,
+        "rho_plus": 0.895080496737147
+      }
+    ],
+    "finite_root_d_rho_d_log_parameter": -0.00026373397199463966,
+    "initialisation": "Fixed inherited WT conserved state for WT and null; perturbed WT denominator; no rest solve",
+    "maximum_validation_relative_error": 1.6328121902417777e-06,
+    "observable": "sampled",
+    "parameter": "water_apical",
+    "residual_recruitment_log_elasticity": 0.002513678241655898,
+    "rho": 0.8950806284606818,
+    "uncertainty_interval": "Not established; local sensitivity only"
+  }
+]

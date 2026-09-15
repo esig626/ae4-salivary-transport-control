@@ -1,0 +1,2046 @@
+\section{Complete equilibrium case tables}
+All 26 cases are printed, including the four physiological exclusions and the repeated null systems. Numeric entries use standard e notation where needed: 1.2e-5 means $1.2\times10^{-5}$. Tables round for reading; every full precision value remains in the unchanged electronic source. The equilibrium evaluator time field is not an equilibration time.
+
+\begingroup\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{lrrrrr}
+\caption{Stationary flow and intracellular ions. Flow is in pL/s; concentrations are in mM.}\\
+\toprule
+Class & $e_4$ & $Q$ & $[Na]_i$ & $[K]_i$ & $[Cl]_i$ \\
+\midrule\endfirsthead
+\toprule
+Class & $e_4$ & $Q$ & $[Na]_i$ & $[K]_i$ & $[Cl]_i$ \\
+\midrule\endhead
+\bottomrule\endfoot
+C0 & \texttt{1} & \texttt{0.00158407} & \texttt{18.0826} & \texttt{110.237} & \texttt{53.2985} \\
+C0 & \texttt{0.9} & \texttt{0.0015839} & \texttt{18.0351} & \texttt{110.398} & \texttt{53.2649} \\
+C0 & \texttt{0.75} & \texttt{0.00158348} & \texttt{17.9502} & \texttt{110.691} & \texttt{53.2007} \\
+C0 & \texttt{0.5} & \texttt{0.00158192} & \texttt{17.7592} & \texttt{111.381} & \texttt{53.0352} \\
+C0 & \texttt{0.25} & \texttt{0.00157803} & \texttt{17.4794} & \texttt{112.498} & \texttt{52.7302} \\
+C0 & \texttt{0.1} & \texttt{0.0015735} & \texttt{17.2567} & \texttt{113.518} & \texttt{52.4206} \\
+C0 & \texttt{0.05} & \texttt{0.00157145} & \texttt{17.1728} & \texttt{113.944} & \texttt{52.2851} \\
+C0 & \texttt{0} & \texttt{0.00156908} & \texttt{17.0844} & \texttt{114.424} & \texttt{52.1287} \\
+C1 & \texttt{1} & \texttt{0.00108167} & \texttt{45.6937} & \texttt{79.5546} & \texttt{41.9556} \\
+C1 & \texttt{0.05} & \texttt{0.00153903} & \texttt{18.2226} & \texttt{112.696} & \texttt{51.2039} \\
+C1 & \texttt{0} & \texttt{0.00156908} & \texttt{17.0844} & \texttt{114.424} & \texttt{52.1287} \\
+C2 & \texttt{1} & \texttt{0.00093557} & \texttt{57.4596} & \texttt{63.0419} & \texttt{42.2884} \\
+C2 & \texttt{0.05} & \texttt{0.00151952} & \texttt{18.8973} & \texttt{110.84} & \texttt{50.798} \\
+C2 & \texttt{0} & \texttt{0.00156908} & \texttt{17.0844} & \texttt{114.424} & \texttt{52.1287} \\
+C3a & \texttt{1} & \texttt{0.00141723} & \texttt{24.5079} & \texttt{102.228} & \texttt{48.2718} \\
+C3a & \texttt{0.05} & \texttt{0.00155578} & \texttt{17.6797} & \texttt{113.245} & \texttt{51.7658} \\
+C3a & \texttt{0} & \texttt{0.00156908} & \texttt{17.0844} & \texttt{114.424} & \texttt{52.1287} \\
+C3b & \texttt{1} & \texttt{0.00171753} & \texttt{14.2063} & \texttt{115.557} & \texttt{58.0397} \\
+C3b & \texttt{0.05} & \texttt{0.00158668} & \texttt{16.6943} & \texttt{114.61} & \texttt{52.7984} \\
+C3b & \texttt{0} & \texttt{0.00156908} & \texttt{17.0844} & \texttt{114.424} & \texttt{52.1287} \\
+C4a & \texttt{1} & \texttt{0.00128961} & \texttt{31.1075} & \texttt{90.6207} & \texttt{46.3804} \\
+C4a & \texttt{0.05} & \texttt{0.00155274} & \texttt{17.7687} & \texttt{112.368} & \texttt{51.8636} \\
+C4a & \texttt{0} & \texttt{0.00156908} & \texttt{17.0844} & \texttt{114.424} & \texttt{52.1287} \\
+C4b & \texttt{1} & \texttt{0.00167764} & \texttt{15.5809} & \texttt{110.052} & \texttt{57.4878} \\
+C4b & \texttt{0.05} & \texttt{0.00158409} & \texttt{16.7677} & \texttt{113.757} & \texttt{52.9047} \\
+C4b & \texttt{0} & \texttt{0.00156908} & \texttt{17.0844} & \texttt{114.424} & \texttt{52.1287} \\
+\end{longtable}
+\endgroup
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{lrrrrrrr}
+\caption{Intracellular carbon, alkalinity, bicarbonate and finite volumes. Concentrations are in mM and volumes in pL.}\\
+\toprule
+Class & $e_4$ & $T_i$ & $A_i$ & $[HCO_3]_i$ & $pH_i$ & $V_i$ & $V_l$ \\
+\midrule\endfirsthead
+\toprule
+Class & $e_4$ & $T_i$ & $A_i$ & $[HCO_3]_i$ & $pH_i$ & $V_i$ & $V_l$ \\
+\midrule\endhead
+\bottomrule\endfoot
+C0 & \texttt{1} & \texttt{8.268} & \texttt{18.857} & \texttt{7.4308} & \texttt{7.0504} & \texttt{1.3899} & \texttt{0.10792} \\
+C0 & \texttt{0.9} & \texttt{8.5578} & \texttt{19.19} & \texttt{7.7051} & \texttt{7.0582} & \texttt{1.3945} & \texttt{0.10792} \\
+C0 & \texttt{0.75} & \texttt{9.0922} & \texttt{19.805} & \texttt{8.2126} & \texttt{7.0726} & \texttt{1.4031} & \texttt{0.10792} \\
+C0 & \texttt{0.5} & \texttt{10.388} & \texttt{21.292} & \texttt{9.4523} & \texttt{7.1073} & \texttt{1.4241} & \texttt{0.10791} \\
+C0 & \texttt{0.25} & \texttt{12.615} & \texttt{23.826} & \texttt{11.609} & \texttt{7.1657} & \texttt{1.4613} & \texttt{0.10789} \\
+C0 & \texttt{0.1} & \texttt{14.822} & \texttt{26.292} & \texttt{13.769} & \texttt{7.2214} & \texttt{1.4994} & \texttt{0.10787} \\
+C0 & \texttt{0.05} & \texttt{15.801} & \texttt{27.368} & \texttt{14.734} & \texttt{7.2452} & \texttt{1.5168} & \texttt{0.10786} \\
+C0 & \texttt{0} & \texttt{16.955} & \texttt{28.618} & \texttt{15.873} & \texttt{7.2723} & \texttt{1.5378} & \texttt{0.10785} \\
+C1 & \texttt{1} & \texttt{8.6202} & \texttt{20.037} & \texttt{7.6798} & \texttt{7.0139} & \texttt{1.2341} & \texttt{0.10541} \\
+C1 & \texttt{0.05} & \texttt{15.957} & \texttt{27.686} & \texttt{14.885} & \texttt{7.2477} & \texttt{1.5003} & \texttt{0.1077} \\
+C1 & \texttt{0} & \texttt{16.955} & \texttt{28.618} & \texttt{15.873} & \texttt{7.2723} & \texttt{1.5378} & \texttt{0.10785} \\
+C2 & \texttt{1} & \texttt{9.8336} & \texttt{13.344} & \texttt{7.1287} & \texttt{6.5211} & \texttt{1.2034} & \texttt{0.10468} \\
+C2 & \texttt{0.05} & \texttt{15.688} & \texttt{25.972} & \texttt{14.325} & \texttt{7.1246} & \texttt{1.4738} & \texttt{0.1076} \\
+C2 & \texttt{0} & \texttt{16.955} & \texttt{28.618} & \texttt{15.873} & \texttt{7.2723} & \texttt{1.5378} & \texttt{0.10785} \\
+C3a & \texttt{1} & \texttt{7.7661} & \texttt{18.713} & \texttt{6.9328} & \texttt{7.022} & \texttt{1.3064} & \texttt{0.10709} \\
+C3a & \texttt{0.05} & \texttt{15.621} & \texttt{27.247} & \texttt{14.555} & \texttt{7.2403} & \texttt{1.5037} & \texttt{0.10778} \\
+C3a & \texttt{0} & \texttt{16.955} & \texttt{28.618} & \texttt{15.873} & \texttt{7.2723} & \texttt{1.5378} & \texttt{0.10785} \\
+C3b & \texttt{1} & \texttt{8.773} & \texttt{18.934} & \texttt{7.9256} & \texttt{7.0734} & \texttt{1.4787} & \texttt{0.10859} \\
+C3b & \texttt{0.05} & \texttt{15.98} & \texttt{27.487} & \texttt{14.911} & \texttt{7.25} & \texttt{1.53} & \texttt{0.10793} \\
+C3b & \texttt{0} & \texttt{16.955} & \texttt{28.618} & \texttt{15.873} & \texttt{7.2723} & \texttt{1.5378} & \texttt{0.10785} \\
+C4a & \texttt{1} & \texttt{10.224} & \texttt{13.356} & \texttt{7.413} & \texttt{6.5214} & \texttt{1.2592} & \texttt{0.10645} \\
+C4a & \texttt{0.05} & \texttt{16.061} & \texttt{26.234} & \texttt{14.691} & \texttt{7.1334} & \texttt{1.5001} & \texttt{0.10776} \\
+C4a & \texttt{0} & \texttt{16.955} & \texttt{28.618} & \texttt{15.873} & \texttt{7.2723} & \texttt{1.5378} & \texttt{0.10785} \\
+C4b & \texttt{1} & \texttt{11.739} & \texttt{14.489} & \texttt{8.8135} & \texttt{6.5792} & \texttt{1.4549} & \texttt{0.10839} \\
+C4b & \texttt{0.05} & \texttt{16.427} & \texttt{26.487} & \texttt{15.05} & \texttt{7.1419} & \texttt{1.5266} & \texttt{0.10792} \\
+C4b & \texttt{0} & \texttt{16.955} & \texttt{28.618} & \texttt{15.873} & \texttt{7.2723} & \texttt{1.5378} & \texttt{0.10785} \\
+\end{longtable}
+\endgroup
+
+
+\begingroup\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{lrrrrrr}
+\caption{Lumen composition and membrane potentials. Chloride is in mM, osmolarity in mOsm, and voltage in V.}\\
+\toprule
+Class & $e_4$ & $[Cl]_l$ & $pH_l$ & $O_l$ & $V_a$ & $V_b$ \\
+\midrule\endfirsthead
+\toprule
+Class & $e_4$ & $[Cl]_l$ & $pH_l$ & $O_l$ & $V_a$ & $V_b$ \\
+\midrule\endhead
+\bottomrule\endfoot
+C0 & \texttt{1} & \texttt{147.677} & \texttt{6.67928} & \texttt{301.535} & \texttt{-0.0295982} & \texttt{-0.0791034} \\
+C0 & \texttt{0.9} & \texttt{147.669} & \texttt{6.67169} & \texttt{301.535} & \texttt{-0.0296128} & \texttt{-0.0790928} \\
+C0 & \texttt{0.75} & \texttt{147.653} & \texttt{6.659} & \texttt{301.535} & \texttt{-0.0296409} & \texttt{-0.0790718} \\
+C0 & \texttt{0.5} & \texttt{147.619} & \texttt{6.63427} & \texttt{301.534} & \texttt{-0.0297138} & \texttt{-0.0790152} \\
+C0 & \texttt{0.25} & \texttt{147.568} & \texttt{6.60658} & \texttt{301.533} & \texttt{-0.0298506} & \texttt{-0.0789105} \\
+C0 & \texttt{0.1} & \texttt{147.528} & \texttt{6.59123} & \texttt{301.532} & \texttt{-0.0299919} & \texttt{-0.0788118} \\
+C0 & \texttt{0.05} & \texttt{147.512} & \texttt{6.58692} & \texttt{301.532} & \texttt{-0.0300546} & \texttt{-0.0787723} \\
+C0 & \texttt{0} & \texttt{147.496} & \texttt{6.58321} & \texttt{301.531} & \texttt{-0.0301275} & \texttt{-0.07873} \\
+C1 & \texttt{1} & \texttt{145.973} & \texttt{6.80765} & \texttt{301.416} & \texttt{-0.0349864} & \texttt{-0.0716211} \\
+C1 & \texttt{0.05} & \texttt{147.431} & \texttt{6.5952} & \texttt{301.524} & \texttt{-0.0305548} & \texttt{-0.0785273} \\
+C1 & \texttt{0} & \texttt{147.496} & \texttt{6.58321} & \texttt{301.531} & \texttt{-0.0301275} & \texttt{-0.07873} \\
+C2 & \texttt{1} & \texttt{144.346} & \texttt{6.41508} & \texttt{301.382} & \texttt{-0.0342485} & \texttt{-0.0661334} \\
+C2 & \texttt{0.05} & \texttt{147.254} & \texttt{6.49501} & \texttt{301.519} & \texttt{-0.0307075} & \texttt{-0.0782226} \\
+C2 & \texttt{0} & \texttt{147.496} & \texttt{6.58321} & \texttt{301.531} & \texttt{-0.0301275} & \texttt{-0.07873} \\
+C3a & \texttt{1} & \texttt{147.258} & \texttt{6.73356} & \texttt{301.495} & \texttt{-0.0319461} & \texttt{-0.077626} \\
+C3a & \texttt{0.05} & \texttt{147.476} & \texttt{6.59201} & \texttt{301.528} & \texttt{-0.0302942} & \texttt{-0.0786693} \\
+C3a & \texttt{0} & \texttt{147.496} & \texttt{6.58321} & \texttt{301.531} & \texttt{-0.0301275} & \texttt{-0.07873} \\
+C3b & \texttt{1} & \texttt{147.953} & \texttt{6.63582} & \texttt{301.566} & \texttt{-0.0275453} & \texttt{-0.0798805} \\
+C3b & \texttt{0.05} & \texttt{147.547} & \texttt{6.58201} & \texttt{301.535} & \texttt{-0.0298199} & \texttt{-0.0788679} \\
+C3b & \texttt{0} & \texttt{147.496} & \texttt{6.58321} & \texttt{301.531} & \texttt{-0.0301275} & \texttt{-0.07873} \\
+C4a & \texttt{1} & \texttt{145.95} & \texttt{6.2529} & \texttt{301.465} & \texttt{-0.0325839} & \texttt{-0.0746932} \\
+C4a & \texttt{0.05} & \texttt{147.332} & \texttt{6.48275} & \texttt{301.527} & \texttt{-0.0302108} & \texttt{-0.0784617} \\
+C4a & \texttt{0} & \texttt{147.496} & \texttt{6.58321} & \texttt{301.531} & \texttt{-0.0301275} & \texttt{-0.07873} \\
+C4b & \texttt{1} & \texttt{146.951} & \texttt{6.11227} & \texttt{301.557} & \texttt{-0.0275475} & \texttt{-0.0786201} \\
+C4b & \texttt{0.05} & \texttt{147.402} & \texttt{6.47139} & \texttt{301.535} & \texttt{-0.0297337} & \texttt{-0.0786676} \\
+C4b & \texttt{0} & \texttt{147.496} & \texttt{6.58321} & \texttt{301.531} & \texttt{-0.0301275} & \texttt{-0.07873} \\
+\end{longtable}
+\endgroup
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{lrrrrrrrrr}
+\caption{Signed stationary fluxes in fmol/s. NKCC and pump columns are cycle fluxes.}\\
+\toprule
+Class & $e_4$ & $N$ & $H$ & $E$ & $B$ & $J_4$ & $P$ & $C_a$ & $j_{p,Cl}$ \\
+\midrule\endfirsthead
+\toprule
+Class & $e_4$ & $N$ & $H$ & $E$ & $B$ & $J_4$ & $P$ & $C_a$ & $j_{p,Cl}$ \\
+\midrule\endhead
+\bottomrule\endfoot
+C0 & \texttt{1} & \texttt{0.14939} & \texttt{0.0060362} & \texttt{-0.00074806} & \texttt{0.07168} & \texttt{0.075072} & \texttt{0.06319} & \texttt{0.37311} & \texttt{0.13918} \\
+C0 & \texttt{0.9} & \texttt{0.15066} & \texttt{0.0057091} & \texttt{-0.00065769} & \texttt{0.06915} & \texttt{0.072334} & \texttt{0.063118} & \texttt{0.373} & \texttt{0.13911} \\
+C0 & \texttt{0.75} & \texttt{0.15301} & \texttt{0.0051453} & \texttt{-0.00049737} & \texttt{0.064444} & \texttt{0.067265} & \texttt{0.062987} & \texttt{0.37278} & \texttt{0.13897} \\
+C0 & \texttt{0.5} & \texttt{0.15864} & \texttt{0.0039755} & \texttt{-0.00013973} & \texttt{0.052944} & \texttt{0.055001} & \texttt{0.062686} & \texttt{0.37214} & \texttt{0.13862} \\
+C0 & \texttt{0.25} & \texttt{0.16791} & \texttt{0.002519} & \texttt{0.00038759} & \texttt{0.033563} & \texttt{0.034628} & \texttt{0.062226} & \texttt{0.37084} & \texttt{0.13797} \\
+C0 & \texttt{0.1} & \texttt{0.17629} & \texttt{0.0015978} & \texttt{0.00082224} & \texttt{0.015665} & \texttt{0.016052} & \texttt{0.061844} & \texttt{0.36946} & \texttt{0.13733} \\
+C0 & \texttt{0.05} & \texttt{0.17972} & \texttt{0.001309} & \texttt{0.00099221} & \texttt{0.0082788} & \texttt{0.0084372} & \texttt{0.061696} & \texttt{0.36887} & \texttt{0.13706} \\
+C0 & \texttt{0} & \texttt{0.1835} & \texttt{0.0010393} & \texttt{0.0011767} & \texttt{6.8683e-05} & \texttt{0} & \texttt{0.061537} & \texttt{0.36819} & \texttt{0.13675} \\
+C1 & \texttt{1} & \texttt{0.088636} & \texttt{0.004194} & \texttt{-7.307e-05} & \texttt{0.040726} & \texttt{0.085719} & \texttt{0.073091} & \texttt{0.26292} & \texttt{0.10502} \\
+C1 & \texttt{0.05} & \texttt{0.17617} & \texttt{0.0012374} & \texttt{0.0010667} & \texttt{0.0042075} & \texttt{0.0085858} & \texttt{0.0634} & \texttt{0.36199} & \texttt{0.13509} \\
+C1 & \texttt{0} & \texttt{0.1835} & \texttt{0.0010393} & \texttt{0.0011767} & \texttt{6.8683e-05} & \texttt{0} & \texttt{0.061537} & \texttt{0.36819} & \texttt{0.13675} \\
+C2 & \texttt{1} & \texttt{0.082846} & \texttt{0.029022} & \texttt{-0.00027869} & \texttt{0.046924} & \texttt{0.061574} & \texttt{0.073455} & \texttt{0.22699} & \texttt{0.091941} \\
+C2 & \texttt{0.05} & \texttt{0.1741} & \texttt{0.0033544} & \texttt{0.00099391} & \texttt{0.0071942} & \texttt{0.0083744} & \texttt{0.064342} & \texttt{0.35758} & \texttt{0.13382} \\
+C2 & \texttt{0} & \texttt{0.1835} & \texttt{0.0010393} & \texttt{0.0011767} & \texttt{6.8683e-05} & \texttt{0} & \texttt{0.061537} & \texttt{0.36819} & \texttt{0.13675} \\
+C3a & \texttt{1} & \texttt{0.13369} & \texttt{0.0062131} & \texttt{-0.00067532} & \texttt{0.067623} & \texttt{0.071067} & \texttt{0.069174} & \texttt{0.33777} & \texttt{0.12907} \\
+C3a & \texttt{0.05} & \texttt{0.1781} & \texttt{0.0013424} & \texttt{0.00098686} & \texttt{0.0082313} & \texttt{0.0084091} & \texttt{0.062558} & \texttt{0.36559} & \texttt{0.13615} \\
+C3a & \texttt{0} & \texttt{0.1835} & \texttt{0.0010393} & \texttt{0.0011767} & \texttt{6.8683e-05} & \texttt{0} & \texttt{0.061537} & \texttt{0.36819} & \texttt{0.13675} \\
+C3b & \texttt{1} & \texttt{0.16185} & \texttt{0.0057461} & \texttt{-0.0007987} & \texttt{0.074573} & \texttt{0.077845} & \texttt{0.054775} & \texttt{0.40075} & \texttt{0.14664} \\
+C3b & \texttt{0.05} & \texttt{0.18129} & \texttt{0.0012765} & \texttt{0.00099744} & \texttt{0.008324} & \texttt{0.0084635} & \texttt{0.060809} & \texttt{0.37204} & \texttt{0.13793} \\
+C3b & \texttt{0} & \texttt{0.1835} & \texttt{0.0010393} & \texttt{0.0011767} & \texttt{6.8683e-05} & \texttt{0} & \texttt{0.061537} & \texttt{0.36819} & \texttt{0.13675} \\
+C4a & \texttt{1} & \texttt{0.11464} & \texttt{0.042992} & \texttt{-0.00041119} & \texttt{0.056852} & \texttt{0.078554} & \texttt{0.071493} & \texttt{0.30742} & \texttt{0.1192} \\
+C4a & \texttt{0.05} & \texttt{0.17755} & \texttt{0.0032376} & \texttt{0.0010046} & \texttt{0.0073198} & \texttt{0.0084363} & \texttt{0.062701} & \texttt{0.36453} & \texttt{0.13576} \\
+C4a & \texttt{0} & \texttt{0.1835} & \texttt{0.0010393} & \texttt{0.0011767} & \texttt{6.8683e-05} & \texttt{0} & \texttt{0.061537} & \texttt{0.36819} & \texttt{0.13675} \\
+C4b & \texttt{1} & \texttt{0.14901} & \texttt{0.053092} & \texttt{-0.00051442} & \texttt{0.065128} & \texttt{0.091931} & \texttt{0.058431} & \texttt{0.38943} & \texttt{0.1429} \\
+C4b & \texttt{0.05} & \texttt{0.18078} & \texttt{0.0031227} & \texttt{0.0010148} & \texttt{0.0074359} & \texttt{0.0084898} & \texttt{0.06095} & \texttt{0.37106} & \texttt{0.13757} \\
+C4b & \texttt{0} & \texttt{0.1835} & \texttt{0.0010393} & \texttt{0.0011767} & \texttt{6.8683e-05} & \texttt{0} & \texttt{0.061537} & \texttt{0.36819} & \texttt{0.13675} \\
+\end{longtable}
+\endgroup
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{lrlp{.25\linewidth}rl}
+\caption{Separate physiological and thermodynamic classifications at every root.}\\
+\toprule
+Class & $e_4$ & Physiology & Failed gate & $A_4/(RT)$ & Flux compatibility \\
+\midrule\endfirsthead
+\toprule
+Class & $e_4$ & Physiology & Failed gate & $A_4/(RT)$ & Flux compatibility \\
+\midrule\endhead
+\bottomrule\endfoot
+C0 & \texttt{1} & Pass & None & \texttt{-0.958921} & opposed \\
+C0 & \texttt{0.9} & Pass & None & \texttt{-0.886387} & opposed \\
+C0 & \texttt{0.75} & Pass & None & \texttt{-0.758624} & opposed \\
+C0 & \texttt{0.5} & Pass & None & \texttt{-0.476574} & opposed \\
+C0 & \texttt{0.25} & Pass & None & \texttt{-0.0627855} & opposed \\
+C0 & \texttt{0.1} & Pass & None & \texttt{0.282549} & supported \\
+C0 & \texttt{0.05} & Pass & None & \texttt{0.420015} & supported \\
+C0 & \texttt{0} & Pass & None & \texttt{0.571436} & zero\_flux \\
+C1 & \texttt{1} & Fail & na\_i\_mM & \texttt{3.89255} & supported \\
+C1 & \texttt{0.05} & Pass & None & \texttt{5.62265} & supported \\
+C1 & \texttt{0} & Pass & None & \texttt{5.74871} & zero\_flux \\
+C2 & \texttt{1} & Fail & na\_i\_mM, ph\_i & \texttt{3.85893} & supported \\
+C2 & \texttt{0.05} & Pass & None & \texttt{8.00389} & supported \\
+C2 & \texttt{0} & Pass & None & \texttt{8.58518} & zero\_flux \\
+C3a & \texttt{1} & Pass & None & \texttt{1.51348} & supported \\
+C3a & \texttt{0.05} & Pass & None & \texttt{3.02927} & supported \\
+C3a & \texttt{0} & Pass & None & \texttt{3.20596} & zero\_flux \\
+C3b & \texttt{1} & Pass & None & \texttt{-3.74397} & opposed \\
+C3b & \texttt{0.05} & Pass & None & \texttt{-2.22395} & opposed \\
+C3b & \texttt{0} & Pass & None & \texttt{-2.06309} & zero\_flux \\
+C4a & \texttt{1} & Fail & ph\_i & \texttt{0.709318} & supported \\
+C4a & \texttt{0.05} & Pass & None & \texttt{2.90591} & supported \\
+C4a & \texttt{0} & Pass & None & \texttt{3.31614} & zero\_flux \\
+C4b & \texttt{1} & Fail & ph\_i & \texttt{-4.3271} & opposed \\
+C4b & \texttt{0.05} & Pass & None & \texttt{-2.34} & opposed \\
+C4b & \texttt{0} & Pass & None & \texttt{-1.95291} & zero\_flux \\
+\end{longtable}
+\endgroup
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{lrrrrrrr}
+\caption{Root, state charge and current residual diagnostics. Independent residuals use the dimensionless vector field.}\\
+\toprule
+Class & $e_4$ & $\|F\|_\infty$ & $\kappa(J)$ & Charge (fmol) & Current (A) & Amount RHS & Volume RHS \\
+\midrule\endfirsthead
+\toprule
+Class & $e_4$ & $\|F\|_\infty$ & $\kappa(J)$ & Charge (fmol) & Current (A) & Amount RHS & Volume RHS \\
+\midrule\endhead
+\bottomrule\endfoot
+C0 & \texttt{1} & \texttt{4.3571e-11} & \texttt{24849} & \texttt{1.4211e-14} & \texttt{3.8774e-26} & \texttt{1.7708e-14} & \texttt{6.7495e-14} \\
+C0 & \texttt{0.9} & \texttt{6.9845e-10} & \texttt{24857} & \texttt{1.4211e-14} & \texttt{1.1632e-25} & \texttt{4.8475e-13} & \texttt{1.082e-12} \\
+C0 & \texttt{0.75} & \texttt{1.4406e-10} & \texttt{24903} & \texttt{1.4211e-14} & \texttt{2.5849e-26} & \texttt{9.9226e-14} & \texttt{2.074e-13} \\
+C0 & \texttt{0.5} & \texttt{4.2564e-12} & \texttt{25173} & \texttt{1.4211e-14} & \texttt{3.2312e-26} & \texttt{3.3445e-15} & \texttt{5.6888e-15} \\
+C0 & \texttt{0.25} & \texttt{1.8392e-10} & \texttt{26074} & \texttt{1.4211e-14} & \texttt{1.551e-25} & \texttt{1.0159e-13} & \texttt{2.849e-13} \\
+C0 & \texttt{0.1} & \texttt{9.4522e-11} & \texttt{27458} & \texttt{2.2204e-15} & \texttt{1.1299e-23} & \texttt{1.6197e-13} & \texttt{1.0409e-13} \\
+C0 & \texttt{0.05} & \texttt{2.2513e-10} & \texttt{28241} & \texttt{2.8422e-14} & \texttt{1.6479e-24} & \texttt{3.645e-14} & \texttt{3.0522e-13} \\
+C0 & \texttt{0} & \texttt{1.2427e-11} & \texttt{29314} & \texttt{1.4211e-14} & \texttt{1.1309e-25} & \texttt{3.0431e-15} & \texttt{1.925e-14} \\
+C1 & \texttt{1} & \texttt{1.3937e-12} & \texttt{22777} & \texttt{2.8422e-14} & \texttt{1.8095e-25} & \texttt{1.7764e-15} & \texttt{1.5656e-16} \\
+C1 & \texttt{0.05} & \texttt{5.3949e-11} & \texttt{28199} & \texttt{1.4211e-14} & \texttt{2.8434e-25} & \texttt{1.7125e-14} & \texttt{8.3572e-14} \\
+C1 & \texttt{0} & \texttt{1.8975e-12} & \texttt{29314} & \texttt{1.4211e-14} & \texttt{5.8161e-26} & \texttt{1.491e-15} & \texttt{2.1315e-16} \\
+C2 & \texttt{1} & \texttt{3.7703e-09} & \texttt{19380} & \texttt{1.4211e-14} & \texttt{1.8418e-25} & \texttt{1.9159e-12} & \texttt{4.6477e-12} \\
+C2 & \texttt{0.05} & \texttt{7.7569e-11} & \texttt{25851} & \texttt{1.4211e-14} & \texttt{1.0857e-24} & \texttt{2.4652e-14} & \texttt{8.7135e-15} \\
+C2 & \texttt{0} & \texttt{1.8975e-12} & \texttt{29314} & \texttt{1.4211e-14} & \texttt{5.8161e-26} & \texttt{1.491e-15} & \texttt{2.1315e-16} \\
+C3a & \texttt{1} & \texttt{1.7863e-10} & \texttt{26347} & \texttt{1.4211e-14} & \texttt{2.0033e-25} & \texttt{8.846e-14} & \texttt{2.7672e-13} \\
+C3a & \texttt{0.05} & \texttt{7.2033e-12} & \texttt{27980} & \texttt{1.4211e-14} & \texttt{1.6414e-24} & \texttt{1.6556e-14} & \texttt{1.1159e-14} \\
+C3a & \texttt{0} & \texttt{1.8975e-12} & \texttt{29314} & \texttt{1.4211e-14} & \texttt{5.8161e-26} & \texttt{1.491e-15} & \texttt{2.1315e-16} \\
+C3b & \texttt{1} & \texttt{4.8111e-11} & \texttt{24602} & \texttt{1.4211e-14} & \texttt{3.8774e-26} & \texttt{1.1262e-13} & \texttt{7.4529e-14} \\
+C3b & \texttt{0.05} & \texttt{9.0095e-11} & \texttt{28516} & \texttt{0} & \texttt{1.6867e-24} & \texttt{2.0005e-14} & \texttt{1.3957e-13} \\
+C3b & \texttt{0} & \texttt{1.8975e-12} & \texttt{29314} & \texttt{1.4211e-14} & \texttt{5.8161e-26} & \texttt{1.491e-15} & \texttt{2.1315e-16} \\
+C4a & \texttt{1} & \texttt{1.4568e-11} & \texttt{19319} & \texttt{1.4211e-14} & \texttt{3.2312e-26} & \texttt{3.8997e-15} & \texttt{1.6365e-15} \\
+C4a & \texttt{0.05} & \texttt{5.2386e-10} & \texttt{26074} & \texttt{1.1102e-16} & \texttt{1.1988e-24} & \texttt{1.4613e-13} & \texttt{5.8846e-14} \\
+C4a & \texttt{0} & \texttt{1.8975e-12} & \texttt{29314} & \texttt{1.4211e-14} & \texttt{5.8161e-26} & \texttt{1.491e-15} & \texttt{2.1315e-16} \\
+C4b & \texttt{1} & \texttt{6.5386e-10} & \texttt{18817} & \texttt{1.1102e-16} & \texttt{1.9387e-26} & \texttt{1.9672e-13} & \texttt{1.7423e-13} \\
+C4b & \texttt{0.05} & \texttt{2.891e-12} & \texttt{26375} & \texttt{1.4211e-14} & \texttt{1.1891e-24} & \texttt{1.645e-14} & \texttt{4.4784e-15} \\
+C4b & \texttt{0} & \texttt{1.8975e-12} & \texttt{29314} & \texttt{1.4211e-14} & \texttt{5.8161e-26} & \texttt{1.491e-15} & \texttt{2.1315e-16} \\
+\end{longtable}
+\endgroup
+
+
+\sourcefile{evidence/task44/output/equilibrium_summary.csv}
+
+\sourcefile{evidence/task44/output/equilibrium_review.json}
+
+\section{All state vectors, Jacobians and eigenvalues}
+The following matrices are the recorded dimensionless dynamic Jacobians $F_z$, in the eleven coordinate order $(x_{Na},x_K,x_{Cl},x_T,v,y_{Na},y_K,y_{Cl},y_T,\ell,r)$. The physical eigenvalues are in s$^{-1}$ after division by $t_0$. The thirteen state entries are dimensional amounts and volumes followed by the regulatory fraction, in the production order specified above. Full precision matrices and solver messages are retained in \texttt{equilibria.json}.
+\begin{landscape}
+\subsection*{C0, expression 1.0}
+{\scriptsize State: \texttt{25.13268}, \texttt{153.2164}, \texttt{74.07855}, \texttt{11.49151}, \texttt{26.20874}, \texttt{1.38988}, \texttt{12.71138}, \texttt{3.520701}, \texttt{15.93738}, \texttt{0.3722667}, \texttt{0.2947073}, \texttt{0.1079203}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 54; residual: \texttt{4.35706e-11}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-27.851} & \texttt{-7.2169} & \texttt{-9.0535} & \texttt{-8.2564} & \texttt{11.055} & \texttt{0.061709} & \texttt{0.073671} & \texttt{-0.080312} & \texttt{0.00015615} & \texttt{0.015089} & \texttt{-0.033422} \\
+
+2 & \texttt{-19.449} & \texttt{-8.807} & \texttt{-19.054} & \texttt{-9.6279} & \texttt{15.983} & \texttt{-2.0056} & \texttt{7.1965} & \texttt{4.7377} & \texttt{-0.0050748} & \texttt{-4.815} & \texttt{-0.033422} \\
+
+3 & \texttt{-36.772} & \texttt{-8.0917} & \texttt{-36.833} & \texttt{10.98} & \texttt{24.438} & \texttt{-2.0673} & \texttt{7.1203} & \texttt{4.818} & \texttt{-0.005231} & \texttt{-4.8295} & \texttt{0.066845} \\
+
+4 & \texttt{-5.8392} & \texttt{-3.3635} & \texttt{4.1567} & \texttt{-35.015} & \texttt{2.7024} & \texttt{-6.169} & \texttt{-6.1425} & \texttt{6.1318} & \texttt{6.2963} & \texttt{-0.0016594} & \texttt{-0.13369} \\
+
+5 & \texttt{5463.5} & \texttt{5463.5} & \texttt{5463.5} & \texttt{5463.5} & \texttt{-11349} & \texttt{-394.88} & \texttt{-394.88} & \texttt{-394.88} & \texttt{-394.88} & \texttt{821.17} & \texttt{0} \\
+
+6 & \texttt{2.5678} & \texttt{4.5608} & \texttt{11.505} & \texttt{-3.697} & \texttt{-8.0708} & \texttt{-22.449} & \texttt{-0.45952} & \texttt{-1.0034} & \texttt{-0.0064381} & \texttt{-133.06} & \texttt{3.1554e-25} \\
+
+7 & \texttt{-2.3484} & \texttt{41.679} & \texttt{86.021} & \texttt{0.32885} & \texttt{-63.008} & \texttt{-4.2373} & \texttt{-154.99} & \texttt{-24.543} & \texttt{-0.010722} & \texttt{21.094} & \texttt{0} \\
+
+8 & \texttt{0.074759} & \texttt{47} & \texttt{99.443} & \texttt{-3.9843} & \texttt{-72.353} & \texttt{30.629} & \texttt{-97.793} & \texttt{-83.452} & \texttt{0.077501} & \texttt{-108.99} & \texttt{0} \\
+
+9 & \texttt{-11.232} & \texttt{-12.137} & \texttt{9.4596} & \texttt{20.231} & \texttt{0.73896} & \texttt{43.23} & \texttt{42.885} & \texttt{-42.639} & \texttt{-100.69} & \texttt{-3.4073} & \texttt{0} \\
+
+10 & \texttt{-5830.9} & \texttt{-5830.9} & \texttt{-5830.9} & \texttt{-5830.9} & \texttt{12112} & \texttt{5773.2} & \texttt{5773.2} & \texttt{5773.2} & \texttt{5773.2} & \texttt{-12193} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0028916897}; \texttt{-0.0044747554}; \texttt{-0.032669813}; \texttt{-0.033333333}; \texttt{-0.0413017}; \texttt{-0.061790606}; \texttt{-0.10806272}; \texttt{-0.13646588}; \texttt{-0.2}; \texttt{-9.1014622}; \texttt{-15.905022}.\par}
+
+\subsection*{C0, expression 0.9}
+{\scriptsize State: \texttt{25.1501}, \texttt{153.9511}, \texttt{74.27844}, \texttt{11.93393}, \texttt{26.761}, \texttt{1.394509}, \texttt{12.70767}, \texttt{3.523573}, \texttt{15.93632}, \texttt{0.3739098}, \texttt{0.2949219}, \texttt{0.1079195}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 38; residual: \texttt{6.98445e-10}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-27.739} & \texttt{-7.024} & \texttt{-9.2537} & \texttt{-7.6403} & \texttt{11.028} & \texttt{0.064257} & \texttt{0.076781} & \texttt{-0.083647} & \texttt{0.00015775} & \texttt{0.015712} & \texttt{-0.032203} \\
+
+2 & \texttt{-19.404} & \texttt{-8.6907} & \texttt{-19.137} & \texttt{-8.9273} & \texttt{15.934} & \texttt{-2.0016} & \texttt{7.1931} & \texttt{4.7333} & \texttt{-0.0049141} & \texttt{-4.8145} & \texttt{-0.032203} \\
+
+3 & \texttt{-37.05} & \texttt{-8.2755} & \texttt{-36.525} & \texttt{9.5681} & \texttt{24.462} & \texttt{-2.0659} & \texttt{7.1138} & \texttt{4.8169} & \texttt{-0.0050718} & \texttt{-4.8296} & \texttt{0.064406} \\
+
+4 & \texttt{-5.4636} & \texttt{-2.9226} & \texttt{3.6171} & \texttt{-32.208} & \texttt{2.6044} & \texttt{-6.1642} & \texttt{-6.1366} & \texttt{6.1254} & \texttt{6.2966} & \texttt{-0.00098697} & \texttt{-0.12881} \\
+
+5 & \texttt{5445.3} & \texttt{5445.3} & \texttt{5445.3} & \texttt{5445.3} & \texttt{-11311} & \texttt{-394.88} & \texttt{-394.88} & \texttt{-394.88} & \texttt{-394.88} & \texttt{821.18} & \texttt{2.068e-20} \\
+
+6 & \texttt{2.5343} & \texttt{4.5172} & \texttt{11.49} & \texttt{-3.6989} & \texttt{-8.0277} & \texttt{-22.445} & \texttt{-0.45733} & \texttt{-1.0081} & \texttt{-0.0062367} & \texttt{-133.02} & \texttt{-2.5244e-24} \\
+
+7 & \texttt{-2.3559} & \texttt{41.482} & \texttt{85.788} & \texttt{0.32902} & \texttt{-62.799} & \texttt{-4.234} & \texttt{-154.88} & \texttt{-24.548} & \texttt{-0.010395} & \texttt{21.062} & \texttt{0} \\
+
+8 & \texttt{0.025367} & \texttt{46.752} & \texttt{99.193} & \texttt{-3.9863} & \texttt{-72.093} & \texttt{30.606} & \texttt{-97.706} & \texttt{-83.433} & \texttt{0.075139} & \texttt{-108.98} & \texttt{6.3109e-25} \\
+
+9 & \texttt{-11.432} & \texttt{-12.338} & \texttt{9.6697} & \texttt{20.256} & \texttt{0.72359} & \texttt{43.263} & \texttt{42.918} & \texttt{-42.671} & \texttt{-100.69} & \texttt{-3.4177} & \texttt{0} \\
+
+10 & \texttt{-5811.5} & \texttt{-5811.5} & \texttt{-5811.5} & \texttt{-5811.5} & \texttt{12072} & \texttt{5773.3} & \texttt{5773.3} & \texttt{5773.3} & \texttt{5773.3} & \texttt{-12193} & \texttt{-1.034e-20} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0028711031}; \texttt{-0.0044077049}; \texttt{-0.032032096}; \texttt{-0.033333333}; \texttt{-0.038615936}; \texttt{-0.061750647}; \texttt{-0.10801877}; \texttt{-0.13632315}; \texttt{-0.2}; \texttt{-9.0846545}; \texttt{-15.88169}.\par}
+
+\clearpage
+\subsection*{C0, expression 0.75}
+{\scriptsize State: \texttt{25.18567}, \texttt{155.3092}, \texttt{74.64529}, \texttt{12.75718}, \texttt{27.78786}, \texttt{1.403088}, \texttt{12.70107}, \texttt{3.528616}, \texttt{15.93435}, \texttt{0.3767946}, \texttt{0.2953438}, \texttt{0.1079174}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 43; residual: \texttt{1.44058e-10}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-27.57} & \texttt{-6.7103} & \texttt{-9.5731} & \texttt{-6.7581} & \texttt{10.988} & \texttt{0.068718} & \texttt{0.08223} & \texttt{-0.089494} & \texttt{0.00016045} & \texttt{0.016809} & \texttt{-0.029947} \\
+
+2 & \texttt{-19.352} & \texttt{-8.5107} & \texttt{-19.251} & \texttt{-7.8983} & \texttt{15.852} & \texttt{-1.9943} & \texttt{7.1875} & \texttt{4.7252} & \texttt{-0.0046565} & \texttt{-4.8136} & \texttt{-0.029947} \\
+
+3 & \texttt{-37.473} & \texttt{-8.5385} & \texttt{-36.05} & \texttt{7.5272} & \texttt{24.483} & \texttt{-2.063} & \texttt{7.1028} & \texttt{4.8146} & \texttt{-0.004817} & \texttt{-4.8298} & \texttt{0.059893} \\
+
+4 & \texttt{-4.9221} & \texttt{-2.2574} & \texttt{2.8011} & \texttt{-28.115} & \texttt{2.4655} & \texttt{-6.1558} & \texttt{-6.1263} & \texttt{6.1142} & \texttt{6.297} & \texttt{0.00021677} & \texttt{-0.11979} \\
+
+5 & \texttt{5412} & \texttt{5412} & \texttt{5412} & \texttt{5412} & \texttt{-11242} & \texttt{-394.89} & \texttt{-394.89} & \texttt{-394.89} & \texttt{-394.89} & \texttt{821.19} & \texttt{0} \\
+
+6 & \texttt{2.4779} & \texttt{4.4412} & \texttt{11.46} & \texttt{-3.6867} & \texttt{-7.9501} & \texttt{-22.437} & \texttt{-0.45299} & \texttt{-1.0169} & \texttt{-0.0059141} & \texttt{-132.95} & \texttt{1.2622e-24} \\
+
+7 & \texttt{-2.3693} & \texttt{41.123} & \texttt{85.364} & \texttt{0.32794} & \texttt{-62.415} & \texttt{-4.2275} & \texttt{-154.67} & \texttt{-24.558} & \texttt{-0.0098709} & \texttt{21.006} & \texttt{0} \\
+
+8 & \texttt{-0.058816} & \texttt{46.304} & \texttt{98.734} & \texttt{-3.9732} & \texttt{-71.618} & \texttt{30.56} & \texttt{-97.557} & \texttt{-83.391} & \texttt{0.071356} & \texttt{-108.96} & \texttt{-2.5244e-24} \\
+
+9 & \texttt{-11.781} & \texttt{-12.688} & \texttt{10.038} & \texttt{20.291} & \texttt{0.69692} & \texttt{43.326} & \texttt{42.983} & \texttt{-42.735} & \texttt{-100.69} & \texttt{-3.4364} & \texttt{-2.0195e-23} \\
+
+10 & \texttt{-5776} & \texttt{-5776} & \texttt{-5776} & \texttt{-5776} & \texttt{11998} & \texttt{5773.4} & \texttt{5773.4} & \texttt{5773.4} & \texttt{5773.4} & \texttt{-12194} & \texttt{-2.5849e-21} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0028304045}; \texttt{-0.004290714}; \texttt{-0.029772028}; \texttt{-0.033333333}; \texttt{-0.03602262}; \texttt{-0.061676038}; \texttt{-0.10795563}; \texttt{-0.13607934}; \texttt{-0.2}; \texttt{-9.0535326}; \texttt{-15.839225}.\par}
+
+\subsection*{C0, expression 0.5}
+{\scriptsize State: \texttt{25.29149}, \texttt{158.6214}, \texttt{75.52913}, \texttt{14.79375}, \texttt{30.32204}, \texttt{1.424133}, \texttt{12.68636}, \texttt{3.539572}, \texttt{15.92946}, \texttt{0.383044}, \texttt{0.2964781}, \texttt{0.1079096}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 62; residual: \texttt{4.25642e-12}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-27.276} & \texttt{-6.1015} & \texttt{-10.17} & \texttt{-5.4143} & \texttt{10.914} & \texttt{0.078118} & \texttt{0.093743} & \texttt{-0.10186} & \texttt{0.0001656} & \texttt{0.019151} & \texttt{-0.024487} \\
+
+2 & \texttt{-19.31} & \texttt{-8.184} & \texttt{-19.395} & \texttt{-6.246} & \texttt{15.683} & \texttt{-1.9768} & \texttt{7.177} & \texttt{4.7061} & \texttt{-0.0041905} & \texttt{-4.8118} & \texttt{-0.024487} \\
+
+3 & \texttt{-38.186} & \texttt{-8.9174} & \texttt{-35.212} & \texttt{4.4294} & \texttt{24.45} & \texttt{-2.0549} & \texttt{7.0809} & \texttt{4.808} & \texttt{-0.0043561} & \texttt{-4.8304} & \texttt{0.048973} \\
+
+4 & \texttt{-4.0915} & \texttt{-1.1388} & \texttt{1.4177} & \texttt{-21.711} & \texttt{2.2643} & \texttt{-6.1382} & \texttt{-6.1045} & \texttt{6.0907} & \texttt{6.2981} & \texttt{0.0028436} & \texttt{-0.097946} \\
+
+5 & \texttt{5332.1} & \texttt{5332.1} & \texttt{5332.1} & \texttt{5332.1} & \texttt{-11076} & \texttt{-394.92} & \texttt{-394.92} & \texttt{-394.92} & \texttt{-394.92} & \texttt{821.25} & \texttt{0} \\
+
+6 & \texttt{2.3711} & \texttt{4.2802} & \texttt{11.372} & \texttt{-3.5866} & \texttt{-7.7735} & \texttt{-22.414} & \texttt{-0.44149} & \texttt{-1.0381} & \texttt{-0.0053304} & \texttt{-132.8} & \texttt{-3.1554e-25} \\
+
+7 & \texttt{-2.3995} & \texttt{40.27} & \texttt{84.361} & \texttt{0.31904} & \texttt{-61.492} & \texttt{-4.2095} & \texttt{-154.22} & \texttt{-24.584} & \texttt{-0.0089235} & \texttt{20.882} & \texttt{-1.5777e-25} \\
+
+8 & \texttt{-0.2244} & \texttt{45.264} & \texttt{97.628} & \texttt{-3.8654} & \texttt{-70.489} & \texttt{30.433} & \texttt{-97.265} & \texttt{-83.271} & \texttt{0.064514} & \texttt{-108.93} & \texttt{1.2622e-24} \\
+
+9 & \texttt{-12.541} & \texttt{-13.45} & \texttt{10.841} & \texttt{20.331} & \texttt{0.64082} & \texttt{43.499} & \texttt{43.156} & \texttt{-42.907} & \texttt{-100.68} & \texttt{-3.4783} & \texttt{0} \\
+
+10 & \texttt{-5690.7} & \texttt{-5690.7} & \texttt{-5690.7} & \texttt{-5690.7} & \texttt{11821} & \texttt{5773.8} & \texttt{5773.8} & \texttt{5773.8} & \texttt{5773.8} & \texttt{-12195} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0027212505}; \texttt{-0.0040421657}; \texttt{-0.023337525}; \texttt{-0.033333333}; \texttt{-0.034848527}; \texttt{-0.061481273}; \texttt{-0.10785004}; \texttt{-0.13556203}; \texttt{-0.2}; \texttt{-8.9772761}; \texttt{-15.739084}.\par}
+
+\clearpage
+\subsection*{C0, expression 0.25}
+{\scriptsize State: \texttt{25.54177}, \texttt{164.3879}, \texttt{77.052}, \texttt{18.4336}, \texttt{34.81592}, \texttt{1.461251}, \texttt{12.66495}, \texttt{3.554817}, \texttt{15.92113}, \texttt{0.3915857}, \texttt{0.2986369}, \texttt{0.1078902}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 80; residual: \texttt{1.83918e-10}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-26.9} & \texttt{-5.3438} & \texttt{-10.855} & \texttt{-4.1987} & \texttt{10.802} & \texttt{0.089305} & \texttt{0.10754} & \texttt{-0.11671} & \texttt{0.00017022} & \texttt{0.022038} & \texttt{-0.015417} \\
+
+2 & \texttt{-19.278} & \texttt{-7.7789} & \texttt{-19.445} & \texttt{-4.6442} & \texttt{15.416} & \texttt{-1.9495} & \texttt{7.1655} & \texttt{4.6773} & \texttt{-0.0037157} & \texttt{-4.8101} & \texttt{-0.015417} \\
+
+3 & \texttt{-38.82} & \texttt{-9.1408} & \texttt{-34.264} & \texttt{1.948} & \texttt{24.238} & \texttt{-2.0388} & \texttt{7.0556} & \texttt{4.794} & \texttt{-0.0038859} & \texttt{-4.8316} & \texttt{0.030833} \\
+
+4 & \texttt{-3.3209} & \texttt{0.0041049} & \texttt{-0.02268} & \texttt{-15.988} & \texttt{2.1063} & \texttt{-6.1177} & \texttt{-6.0788} & \texttt{6.0629} & \texttt{6.2999} & \texttt{0.0060414} & \texttt{-0.061666} \\
+
+5 & \texttt{5196.6} & \texttt{5196.6} & \texttt{5196.6} & \texttt{5196.6} & \texttt{-10794} & \texttt{-394.99} & \texttt{-394.99} & \texttt{-394.99} & \texttt{-394.99} & \texttt{821.4} & \texttt{5.1699e-21} \\
+
+6 & \texttt{2.282} & \texttt{4.0702} & \texttt{11.178} & \texttt{-3.2578} & \texttt{-7.5081} & \texttt{-22.363} & \texttt{-0.42117} & \texttt{-1.0722} & \texttt{-0.0047355} & \texttt{-132.61} & \texttt{0} \\
+
+7 & \texttt{-2.4427} & \texttt{38.863} & \texttt{82.691} & \texttt{0.28979} & \texttt{-59.927} & \texttt{-4.1747} & \texttt{-153.58} & \texttt{-24.633} & \texttt{-0.007957} & \texttt{20.709} & \texttt{-7.8886e-26} \\
+
+8 & \texttt{-0.3853} & \texttt{43.611} & \texttt{95.732} & \texttt{-3.511} & \texttt{-68.614} & \texttt{30.185} & \texttt{-96.933} & \texttt{-83.021} & \texttt{0.057534} & \texttt{-108.88} & \texttt{-3.1554e-25} \\
+
+9 & \texttt{-13.624} & \texttt{-14.527} & \texttt{11.986} & \texttt{20.309} & \texttt{0.56915} & \texttt{43.827} & \texttt{43.486} & \texttt{-43.235} & \texttt{-100.66} & \texttt{-3.5394} & \texttt{2.0195e-23} \\
+
+10 & \texttt{-5546.1} & \texttt{-5546.1} & \texttt{-5546.1} & \texttt{-5546.1} & \texttt{11520} & \texttt{5774.8} & \texttt{5774.8} & \texttt{5774.8} & \texttt{5774.8} & \texttt{-12197} & \texttt{-5.1699e-21} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0025231865}; \texttt{-0.0037184213}; \texttt{-0.016704518}; \texttt{-0.033333333}; \texttt{-0.034634893}; \texttt{-0.06111238}; \texttt{-0.10773076}; \texttt{-0.13483578}; \texttt{-0.2}; \texttt{-8.8430546}; \texttt{-15.575308}.\par}
+
+\subsection*{C0, expression 0.1}
+{\scriptsize State: \texttt{25.87486}, \texttt{170.2099}, \texttt{78.60007}, \texttt{22.22366}, \texttt{39.42291}, \texttt{1.49941}, \texttt{12.64779}, \texttt{3.566471}, \texttt{15.91344}, \texttt{0.3978245}, \texttt{0.3008224}, \texttt{0.1078675}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 90; residual: \texttt{9.45216e-11}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-26.522} & \texttt{-4.8001} & \texttt{-11.278} & \texttt{-3.4447} & \texttt{10.662} & \texttt{0.094668} & \texttt{0.11427} & \texttt{-0.124} & \texttt{0.00017025} & \texttt{0.023546} & \texttt{-0.0071466} \\
+
+2 & \texttt{-19.154} & \texttt{-7.4443} & \texttt{-19.39} & \texttt{-3.6526} & \texttt{15.136} & \texttt{-1.9272} & \texttt{7.1576} & \texttt{4.655} & \texttt{-0.003466} & \texttt{-4.8097} & \texttt{-0.0071466} \\
+
+3 & \texttt{-39.018} & \texttt{-9.1236} & \texttt{-33.566} & \texttt{0.89382} & \texttt{23.917} & \texttt{-2.0219} & \texttt{7.041} & \texttt{4.779} & \texttt{-0.0036362} & \texttt{-4.8328} & \texttt{0.014293} \\
+
+4 & \texttt{-2.7725} & \texttt{0.73205} & \texttt{-0.95506} & \texttt{-12.895} & \texttt{2.0121} & \texttt{-6.1087} & \texttt{-6.0671} & \texttt{6.05} & \texttt{6.3015} & \texttt{0.0074147} & \texttt{-0.028586} \\
+
+5 & \texttt{5064.4} & \texttt{5064.4} & \texttt{5064.4} & \texttt{5064.4} & \texttt{-10520} & \texttt{-395.07} & \texttt{-395.07} & \texttt{-395.07} & \texttt{-395.07} & \texttt{821.57} & \texttt{-1.2925e-21} \\
+
+6 & \texttt{2.2885} & \texttt{3.9239} & \texttt{10.946} & \texttt{-2.8419} & \texttt{-7.2873} & \texttt{-22.309} & \texttt{-0.4032} & \texttt{-1.1008} & \texttt{-0.0044217} & \texttt{-132.48} & \texttt{-1.5777e-25} \\
+
+7 & \texttt{-2.473} & \texttt{37.534} & \texttt{81.063} & \texttt{0.25279} & \texttt{-58.398} & \texttt{-4.1393} & \texttt{-153.06} & \texttt{-24.681} & \texttt{-0.0074441} & \texttt{20.576} & \texttt{3.1554e-25} \\
+
+8 & \texttt{-0.41605} & \texttt{42.112} & \texttt{93.833} & \texttt{-3.0628} & \texttt{-66.827} & \texttt{29.932} & \texttt{-96.748} & \texttt{-82.755} & \texttt{0.053829} & \texttt{-108.86} & \texttt{-6.3109e-25} \\
+
+9 & \texttt{-14.507} & \texttt{-15.392} & \texttt{12.914} & \texttt{20.249} & \texttt{0.52208} & \texttt{44.158} & \texttt{43.818} & \texttt{-43.564} & \texttt{-100.65} & \texttt{-3.588} & \texttt{-1.0097e-23} \\
+
+10 & \texttt{-5405} & \texttt{-5405} & \texttt{-5405} & \texttt{-5405} & \texttt{11227} & \texttt{5776.1} & \texttt{5776.1} & \texttt{5776.1} & \texttt{5776.1} & \texttt{-12199} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0023387148}; \texttt{-0.0034983584}; \texttt{-0.013004551}; \texttt{-0.033333333}; \texttt{-0.034512761}; \texttt{-0.060739148}; \texttt{-0.10764851}; \texttt{-0.13425348}; \texttt{-0.2}; \texttt{-8.7055549}; \texttt{-15.422196}.\par}
+
+\clearpage
+\subsection*{C0, expression 0.05}
+{\scriptsize State: \texttt{26.04863}, \texttt{172.8354}, \texttt{79.3086}, \texttt{23.9684}, \texttt{41.51367}, \texttt{1.51685}, \texttt{12.64123}, \texttt{3.570821}, \texttt{15.91029}, \texttt{0.4000405}, \texttt{0.3017623}, \texttt{0.1078572}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 62; residual: \texttt{2.25131e-10}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-26.335} & \texttt{-4.6025} & \texttt{-11.407} & \texttt{-3.1677} & \texttt{10.588} & \texttt{0.095541} & \texttt{0.11542} & \texttt{-0.12526} & \texttt{0.00016905} & \texttt{0.023848} & \texttt{-0.0037563} \\
+
+2 & \texttt{-19.061} & \texttt{-7.3045} & \texttt{-19.345} & \texttt{-3.3048} & \texttt{15.002} & \texttt{-1.919} & \texttt{7.1544} & \texttt{4.6471} & \texttt{-0.0033955} & \texttt{-4.8099} & \texttt{-0.0037563} \\
+
+3 & \texttt{-39.011} & \texttt{-9.077} & \texttt{-33.286} & \texttt{0.62796} & \texttt{23.75} & \texttt{-2.0146} & \texttt{7.0367} & \texttt{4.7724} & \texttt{-0.0035646} & \texttt{-4.8332} & \texttt{0.0075125} \\
+
+4 & \texttt{-2.5367} & \texttt{0.99207} & \texttt{-1.2882} & \texttt{-11.909} & \texttt{1.9719} & \texttt{-6.1077} & \texttt{-6.0656} & \texttt{6.0482} & \texttt{6.3022} & \texttt{0.0075004} & \texttt{-0.015025} \\
+
+5 & \texttt{5006.2} & \texttt{5006.2} & \texttt{5006.2} & \texttt{5006.2} & \texttt{-10399} & \texttt{-395.11} & \texttt{-395.11} & \texttt{-395.11} & \texttt{-395.11} & \texttt{821.64} & \texttt{2.5849e-21} \\
+
+6 & \texttt{2.3129} & \texttt{3.8724} & \texttt{10.834} & \texttt{-2.6506} & \texttt{-7.2001} & \texttt{-22.285} & \texttt{-0.39632} & \texttt{-1.1117} & \texttt{-0.0043327} & \texttt{-132.43} & \texttt{-6.3109e-25} \\
+
+7 & \texttt{-2.4823} & \texttt{36.963} & \texttt{80.34} & \texttt{0.23578} & \texttt{-57.724} & \texttt{-4.1241} & \texttt{-152.87} & \texttt{-24.702} & \texttt{-0.0072972} & \texttt{20.525} & \texttt{-3.1554e-25} \\
+
+8 & \texttt{-0.39886} & \texttt{41.481} & \texttt{92.98} & \texttt{-2.8566} & \texttt{-66.051} & \texttt{29.822} & \texttt{-96.694} & \texttt{-82.639} & \texttt{0.052767} & \texttt{-108.85} & \texttt{3.1554e-25} \\
+
+9 & \texttt{-14.857} & \texttt{-15.732} & \texttt{13.281} & \texttt{20.227} & \texttt{0.50679} & \texttt{44.299} & \texttt{43.959} & \texttt{-43.705} & \texttt{-100.64} & \texttt{-3.6063} & \texttt{2.0195e-23} \\
+
+10 & \texttt{-5342.8} & \texttt{-5342.8} & \texttt{-5342.8} & \texttt{-5342.8} & \texttt{11098} & \texttt{5776.6} & \texttt{5776.6} & \texttt{5776.6} & \texttt{5776.6} & \texttt{-12200} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0022619877}; \texttt{-0.0034253228}; \texttt{-0.011809039}; \texttt{-0.033333333}; \texttt{-0.034431621}; \texttt{-0.060579032}; \texttt{-0.10761986}; \texttt{-0.13402661}; \texttt{-0.2}; \texttt{-8.642952}; \texttt{-15.356859}.\par}
+
+\subsection*{C0, expression 0.0}
+{\scriptsize State: \texttt{26.27248}, \texttt{175.9622}, \texttt{80.16363}, \texttt{26.07319}, \texttt{44.0093}, \texttt{1.537802}, \texttt{12.6342}, \texttt{3.575436}, \texttt{15.90681}, \texttt{0.4022997}, \texttt{0.3028266}, \texttt{0.1078454}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 66; residual: \texttt{1.24269e-11}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-26.098} & \texttt{-4.396} & \texttt{-11.523} & \texttt{-2.8703} & \texttt{10.491} & \texttt{0.095614} & \texttt{0.11561} & \texttt{-0.12549} & \texttt{0.00016683} & \texttt{0.023966} & \texttt{0} \\
+
+2 & \texttt{-18.924} & \texttt{-7.1443} & \texttt{-19.277} & \texttt{-2.9448} & \texttt{14.838} & \texttt{-1.9106} & \texttt{7.1506} & \texttt{4.6393} & \texttt{-0.0033337} & \texttt{-4.8104} & \texttt{-3.9443e-26} \\
+
+3 & \texttt{-38.942} & \texttt{-9.003} & \texttt{-32.966} & \texttt{0.40619} & \texttt{23.539} & \texttt{-2.0062} & \texttt{7.0327} & \texttt{4.7648} & \texttt{-0.0035005} & \texttt{-4.8338} & \texttt{0} \\
+
+4 & \texttt{-2.2542} & \texttt{1.2664} & \texttt{-1.638} & \texttt{-10.941} & \texttt{1.9222} & \texttt{-6.1083} & \texttt{-6.066} & \texttt{6.0485} & \texttt{6.3029} & \texttt{0.0072486} & \texttt{-3.1554e-25} \\
+
+5 & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{-10257} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{821.73} & \texttt{0} \\
+
+6 & \texttt{2.3531} & \texttt{3.819} & \texttt{10.698} & \texttt{-2.4291} & \texttt{-7.1041} & \texttt{-22.259} & \texttt{-0.38918} & \texttt{-1.123} & \texttt{-0.0042541} & \texttt{-132.38} & \texttt{-6.3109e-25} \\
+
+7 & \texttt{-2.49} & \texttt{36.305} & \texttt{79.485} & \texttt{0.21607} & \texttt{-56.935} & \texttt{-4.107} & \texttt{-152.66} & \texttt{-24.725} & \texttt{-0.0071658} & \texttt{20.472} & \texttt{1.5777e-25} \\
+
+8 & \texttt{-0.36073} & \texttt{40.761} & \texttt{91.966} & \texttt{-2.6179} & \texttt{-65.15} & \texttt{29.698} & \texttt{-96.645} & \texttt{-82.506} & \texttt{0.051818} & \texttt{-108.84} & \texttt{6.3109e-25} \\
+
+9 & \texttt{-15.246} & \texttt{-16.106} & \texttt{13.687} & \texttt{20.211} & \texttt{0.49211} & \texttt{44.458} & \texttt{44.119} & \texttt{-43.864} & \texttt{-100.63} & \texttt{-3.6256} & \texttt{0} \\
+
+10 & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{10947} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{-12202} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0021743099}; \texttt{-0.0033552801}; \texttt{-0.010624601}; \texttt{-0.033333333}; \texttt{-0.034309271}; \texttt{-0.060398218}; \texttt{-0.10759125}; \texttt{-0.13377908}; \texttt{-0.2}; \texttt{-8.5679955}; \texttt{-15.281905}.\par}
+
+\clearpage
+\subsection*{C1, expression 1.0}
+{\scriptsize State: \texttt{56.38905}, \texttt{98.17567}, \texttt{51.77597}, \texttt{10.63786}, \texttt{24.72699}, \texttt{1.234067}, \texttt{13.70917}, \texttt{2.132253}, \texttt{15.38673}, \texttt{0.5436435}, \texttt{0.4546967}, \texttt{0.1054083}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 388; residual: \texttt{1.39371e-12}; physiological: False.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-9.6225} & \texttt{-5.2232} & \texttt{-17.414} & \texttt{4.9034} & \texttt{10.181} & \texttt{0.052284} & \texttt{0.066621} & \texttt{-0.077882} & \texttt{0.00023194} & \texttt{0.022206} & \texttt{0.076324} \\
+
+2 & \texttt{-11.409} & \texttt{-14.186} & \texttt{-24.282} & \texttt{-18.05} & \texttt{18.035} & \texttt{-1.1934} & \texttt{14.244} & \texttt{3.9813} & \texttt{-0.005294} & \texttt{-4.9246} & \texttt{-0.076324} \\
+
+3 & \texttt{-13.678} & \texttt{-12.43} & \texttt{-48.676} & \texttt{12.197} & \texttt{25.464} & \texttt{-1.2457} & \texttt{14.165} & \texttt{4.0592} & \texttt{-0.0055259} & \texttt{-4.9451} & \texttt{0.076324} \\
+
+4 & \texttt{-3.0969} & \texttt{-2.7811} & \texttt{2.7834} & \texttt{-31.565} & \texttt{2.8808} & \texttt{-6.3329} & \texttt{-6.2919} & \texttt{6.2817} & \texttt{6.4424} & \texttt{0.005064} & \texttt{-0.076324} \\
+
+5 & \texttt{6153.3} & \texttt{6153.3} & \texttt{6153.3} & \texttt{6153.3} & \texttt{-12781} & \texttt{-404.29} & \texttt{-404.29} & \texttt{-404.29} & \texttt{-404.29} & \texttt{840.41} & \texttt{0} \\
+
+6 & \texttt{-1.3159} & \texttt{7.0523} & \texttt{16.529} & \texttt{-5.6312} & \texttt{-8.3525} & \texttt{-16.834} & \texttt{2.2819} & \texttt{-2.205} & \texttt{-0.0067429} & \texttt{-151.3} & \texttt{-3.1554e-25} \\
+
+7 & \texttt{0.038924} & \texttt{65.052} & \texttt{123.07} & \texttt{0.5009} & \texttt{-71.302} & \texttt{-2.551} & \texttt{-237.91} & \texttt{-27.334} & \texttt{-0.011317} & \texttt{36.818} & \texttt{0} \\
+
+8 & \texttt{-1.5174} & \texttt{73.28} & \texttt{142.35} & \texttt{-6.0689} & \texttt{-81.04} & \texttt{18.445} & \texttt{-197.17} & \texttt{-67.989} & \texttt{0.081823} & \texttt{-109.49} & \texttt{-2.5244e-24} \\
+
+9 & \texttt{-12.42} & \texttt{-13.835} & \texttt{9.9052} & \texttt{23.618} & \texttt{0.7084} & \texttt{60.572} & \texttt{59.953} & \texttt{-59.951} & \texttt{-98.563} & \texttt{-5.5088} & \texttt{9.8608e-27} \\
+
+10 & \texttt{-6567.1} & \texttt{-6567.1} & \texttt{-6567.1} & \texttt{-6567.1} & \texttt{13641} & \texttt{5910.8} & \texttt{5910.8} & \texttt{5910.8} & \texttt{5910.8} & \texttt{-12475} & \texttt{2.0195e-23} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0017718692}; \texttt{-0.0037623636}; \texttt{-0.024428354}; \texttt{-0.033333333}; \texttt{-0.039145477}; \texttt{-0.042851348}; \texttt{-0.10646676}; \texttt{-0.2}; \texttt{-0.22910833}; \texttt{-9.7789807}; \texttt{-17.053204}.\par}
+
+\subsection*{C1, expression 0.05}
+{\scriptsize State: \texttt{27.34018}, \texttt{169.0834}, \texttt{76.82347}, \texttt{23.94153}, \texttt{41.53835}, \texttt{1.500344}, \texttt{12.71311}, \texttt{3.473817}, \texttt{15.87763}, \texttt{0.4081329}, \texttt{0.3093046}, \texttt{0.1076952}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 69; residual: \texttt{5.39494e-11}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-24.594} & \texttt{-4.5518} & \texttt{-11.927} & \texttt{-2.9379} & \texttt{10.59} & \texttt{0.093248} & \texttt{0.11312} & \texttt{-0.12302} & \texttt{0.00016983} & \texttt{0.023993} & \texttt{0.0076448} \\
+
+2 & \texttt{-18.479} & \texttt{-7.4636} & \texttt{-19.88} & \texttt{-3.4145} & \texttt{15.175} & \texttt{-1.8658} & \texttt{7.472} & \texttt{4.5969} & \texttt{-0.0033982} & \texttt{-4.8171} & \texttt{-0.0076448} \\
+
+3 & \texttt{-36.958} & \texttt{-9.252} & \texttt{-34.227} & \texttt{0.62964} & \texttt{23.916} & \texttt{-1.9591} & \texttt{7.3562} & \texttt{4.72} & \texttt{-0.003568} & \texttt{-4.8405} & \texttt{0.0076448} \\
+
+4 & \texttt{-2.2707} & \texttt{1.0557} & \texttt{-1.3989} & \texttt{-11.796} & \texttt{1.9825} & \texttt{-6.1216} & \texttt{-6.0792} & \texttt{6.0621} & \texttt{6.3116} & \texttt{0.0074018} & \texttt{-0.0076448} \\
+
+5 & \texttt{5061.2} & \texttt{5061.2} & \texttt{5061.2} & \texttt{5061.2} & \texttt{-10513} & \texttt{-395.71} & \texttt{-395.71} & \texttt{-395.71} & \texttt{-395.71} & \texttt{822.86} & \texttt{-6.4623e-22} \\
+
+6 & \texttt{1.6834} & \texttt{3.9706} & \texttt{11.166} & \texttt{-2.6656} & \texttt{-7.2157} & \texttt{-21.921} & \texttt{-0.25606} & \texttt{-1.19} & \texttt{-0.0043363} & \texttt{-133.65} & \texttt{1.5777e-25} \\
+
+7 & \texttt{-2.0666} & \texttt{37.782} & \texttt{82.941} & \texttt{0.2371} & \texttt{-58.397} & \texttt{-4.0105} & \texttt{-156.24} & \texttt{-24.88} & \texttt{-0.0073041} & \texttt{21.579} & \texttt{0} \\
+
+8 & \texttt{-0.62041} & \texttt{42.415} & \texttt{95.967} & \texttt{-2.8727} & \texttt{-66.75} & \texttt{29} & \texttt{-101.22} & \texttt{-81.597} & \texttt{0.052817} & \texttt{-108.91} & \texttt{-1.0097e-23} \\
+
+9 & \texttt{-14.958} & \texttt{-15.856} & \texttt{13.334} & \texttt{20.367} & \texttt{0.50762} & \texttt{45.466} & \texttt{45.115} & \texttt{-44.871} & \texttt{-100.51} & \texttt{-3.7048} & \texttt{6.3109e-25} \\
+
+10 & \texttt{-5401.6} & \texttt{-5401.6} & \texttt{-5401.6} & \texttt{-5401.6} & \texttt{11220} & \texttt{5785.3} & \texttt{5785.3} & \texttt{5785.3} & \texttt{5785.3} & \texttt{-12218} & \texttt{6.4623e-22} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0021929936}; \texttt{-0.0033742164}; \texttt{-0.011373241}; \texttt{-0.033333333}; \texttt{-0.033747215}; \texttt{-0.059222843}; \texttt{-0.10757387}; \texttt{-0.13779196}; \texttt{-0.2}; \texttt{-8.7071946}; \texttt{-15.433508}.\par}
+
+\clearpage
+\subsection*{C1, expression 0.0}
+{\scriptsize State: \texttt{26.27248}, \texttt{175.9622}, \texttt{80.16363}, \texttt{26.07319}, \texttt{44.0093}, \texttt{1.537802}, \texttt{12.6342}, \texttt{3.575436}, \texttt{15.90681}, \texttt{0.4022997}, \texttt{0.3028266}, \texttt{0.1078454}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 14; residual: \texttt{1.89753e-12}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-26.098} & \texttt{-4.396} & \texttt{-11.523} & \texttt{-2.8703} & \texttt{10.491} & \texttt{0.095614} & \texttt{0.11561} & \texttt{-0.12549} & \texttt{0.00016683} & \texttt{0.023966} & \texttt{0} \\
+
+2 & \texttt{-18.924} & \texttt{-7.1443} & \texttt{-19.277} & \texttt{-2.9448} & \texttt{14.838} & \texttt{-1.9106} & \texttt{7.1506} & \texttt{4.6393} & \texttt{-0.0033337} & \texttt{-4.8104} & \texttt{9.8608e-27} \\
+
+3 & \texttt{-38.942} & \texttt{-9.003} & \texttt{-32.966} & \texttt{0.40619} & \texttt{23.539} & \texttt{-2.0062} & \texttt{7.0327} & \texttt{4.7648} & \texttt{-0.0035005} & \texttt{-4.8338} & \texttt{0} \\
+
+4 & \texttt{-2.2542} & \texttt{1.2664} & \texttt{-1.638} & \texttt{-10.941} & \texttt{1.9222} & \texttt{-6.1083} & \texttt{-6.066} & \texttt{6.0485} & \texttt{6.3029} & \texttt{0.0072486} & \texttt{3.9443e-26} \\
+
+5 & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{-10257} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{821.73} & \texttt{0} \\
+
+6 & \texttt{2.3531} & \texttt{3.819} & \texttt{10.698} & \texttt{-2.4291} & \texttt{-7.1041} & \texttt{-22.259} & \texttt{-0.38918} & \texttt{-1.123} & \texttt{-0.0042541} & \texttt{-132.38} & \texttt{1.5777e-25} \\
+
+7 & \texttt{-2.49} & \texttt{36.305} & \texttt{79.485} & \texttt{0.21607} & \texttt{-56.935} & \texttt{-4.107} & \texttt{-152.66} & \texttt{-24.725} & \texttt{-0.0071659} & \texttt{20.472} & \texttt{0} \\
+
+8 & \texttt{-0.36073} & \texttt{40.761} & \texttt{91.966} & \texttt{-2.6179} & \texttt{-65.15} & \texttt{29.698} & \texttt{-96.645} & \texttt{-82.506} & \texttt{0.051818} & \texttt{-108.84} & \texttt{0} \\
+
+9 & \texttt{-15.246} & \texttt{-16.106} & \texttt{13.687} & \texttt{20.211} & \texttt{0.49211} & \texttt{44.458} & \texttt{44.119} & \texttt{-43.864} & \texttt{-100.63} & \texttt{-3.6256} & \texttt{1.5777e-25} \\
+
+10 & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{10947} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{-12202} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0021743099}; \texttt{-0.0033552801}; \texttt{-0.010624601}; \texttt{-0.033333333}; \texttt{-0.034309271}; \texttt{-0.060398218}; \texttt{-0.10759125}; \texttt{-0.13377908}; \texttt{-0.2}; \texttt{-8.5679955}; \texttt{-15.281905}.\par}
+
+\subsection*{C2, expression 1.0}
+{\scriptsize State: \texttt{69.1451}, \texttt{75.86267}, \texttt{50.88861}, \texttt{11.83347}, \texttt{16.0574}, \texttt{1.20337}, \texttt{13.8998}, \texttt{1.744818}, \texttt{15.10988}, \texttt{0.7935139}, \texttt{0.5347388}, \texttt{0.1046778}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 778; residual: \texttt{3.77027e-09}; physiological: False.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-8.7457} & \texttt{-7.0546} & \texttt{-16.864} & \texttt{4.7368} & \texttt{10.39} & \texttt{0.040935} & \texttt{0.050812} & \texttt{-0.065433} & \texttt{3.7518e-05} & \texttt{0.021809} & \texttt{0.054825} \\
+
+2 & \texttt{-18.828} & \texttt{-27.199} & \texttt{-14.529} & \texttt{-20.281} & \texttt{19.142} & \texttt{-0.97993} & \texttt{17.958} & \texttt{3.8104} & \texttt{-0.00089815} & \texttt{-4.9601} & \texttt{-0.10965} \\
+
+3 & \texttt{-7.6652} & \texttt{-13.508} & \texttt{-52.104} & \texttt{8.4699} & \texttt{25.936} & \texttt{-1.0209} & \texttt{17.885} & \texttt{3.8758} & \texttt{-0.00093567} & \texttt{-4.9794} & \texttt{0.054825} \\
+
+4 & \texttt{-5.0978} & \texttt{-5.5436} & \texttt{5.1181} & \texttt{-29.84} & \texttt{3.1331} & \texttt{-6.4123} & \texttt{-6.3703} & \texttt{6.3633} & \texttt{6.4965} & \texttt{-0.069779} & \texttt{-0.054825} \\
+
+5 & \texttt{6310.3} & \texttt{6310.3} & \texttt{6310.3} & \texttt{6310.3} & \texttt{-13107} & \texttt{-407.11} & \texttt{-407.11} & \texttt{-407.11} & \texttt{-407.11} & \texttt{846.18} & \texttt{8.2718e-20} \\
+
+6 & \texttt{-2.6492} & \texttt{8.0202} & \texttt{18.178} & \texttt{-3.8707} & \texttt{-8.5748} & \texttt{-15.241} & \texttt{3.5366} & \texttt{-2.5572} & \texttt{-0.0011433} & \texttt{-155.74} & \texttt{8.0779e-23} \\
+
+7 & \texttt{0.20336} & \texttt{84.284} & \texttt{125.09} & \texttt{0.34431} & \texttt{-73.133} & \texttt{-2.0909} & \texttt{-286.21} & \texttt{-28.362} & \texttt{-0.0019164} & \texttt{41.48} & \texttt{4.039e-23} \\
+
+8 & \texttt{-2.8961} & \texttt{93.64} & \texttt{146.3} & \texttt{-4.1715} & \texttt{-83.133} & \texttt{15.117} & \texttt{-249.45} & \texttt{-64.003} & \texttt{0.013856} & \texttt{-108.25} & \texttt{3.2312e-22} \\
+
+9 & \texttt{-31.358} & \texttt{-33.145} & \texttt{28.779} & \texttt{53.272} & \texttt{-0.5791} & \texttt{65.492} & \texttt{64.72} & \texttt{-64.858} & \texttt{-97.989} & \texttt{-7.5366} & \texttt{3.2312e-22} \\
+
+10 & \texttt{-6734.6} & \texttt{-6734.6} & \texttt{-6734.6} & \texttt{-6734.6} & \texttt{13988} & \texttt{5952.1} & \texttt{5952.1} & \texttt{5952.1} & \texttt{5952.1} & \texttt{-12559} & \texttt{8.2718e-20} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0019979069}; \texttt{-0.01003652}; \texttt{-0.025845605}; \texttt{-0.033333333}; \texttt{-0.035377417}; \texttt{-0.042900643}; \texttt{-0.10756814}; \texttt{-0.2}; \texttt{-0.28247149}; \texttt{-9.9289579}; \texttt{-17.341529}.\par}
+
+\clearpage
+\subsection*{C2, expression 0.05}
+{\scriptsize State: \texttt{27.85071}, \texttt{163.3548}, \texttt{74.86581}, \texttt{23.12077}, \texttt{38.27794}, \texttt{1.473796}, \texttt{12.7553}, \texttt{3.402883}, \texttt{15.84418}, \texttt{0.4404082}, \texttt{0.3140022}, \texttt{0.1075976}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 104; residual: \texttt{7.75692e-11}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-24.747} & \texttt{-5.4665} & \texttt{-11.422} & \texttt{-2.3523} & \texttt{10.727} & \texttt{0.091498} & \texttt{0.11128} & \texttt{-0.12117} & \texttt{0.0001157} & \texttt{0.023973} & \texttt{0.0074566} \\
+
+2 & \texttt{-18.509} & \texttt{-7.9068} & \texttt{-20.122} & \texttt{-3.6234} & \texttt{15.464} & \texttt{-1.8355} & \texttt{7.7047} & \texttt{4.5707} & \texttt{-0.0023209} & \texttt{-4.8215} & \texttt{-0.014913} \\
+
+3 & \texttt{-36.132} & \texttt{-9.5336} & \texttt{-35.068} & \texttt{0.63855} & \texttt{24.289} & \texttt{-1.927} & \texttt{7.5906} & \texttt{4.6919} & \texttt{-0.0024366} & \texttt{-4.8449} & \texttt{0.0074566} \\
+
+4 & \texttt{-2.0311} & \texttt{1.1913} & \texttt{-1.5486} & \texttt{-12.613} & \texttt{2.0531} & \texttt{-6.1328} & \texttt{-6.0904} & \texttt{6.0734} & \texttt{6.3187} & \texttt{-0.0039155} & \texttt{-0.0074566} \\
+
+5 & \texttt{5152.4} & \texttt{5152.4} & \texttt{5152.4} & \texttt{5152.4} & \texttt{-10702} & \texttt{-396.06} & \texttt{-396.06} & \texttt{-396.06} & \texttt{-396.06} & \texttt{823.59} & \texttt{4.039e-23} \\
+
+6 & \texttt{1.2495} & \texttt{4.0137} & \texttt{11.559} & \texttt{-2.6764} & \texttt{-7.3112} & \texttt{-21.704} & \texttt{-0.16214} & \texttt{-1.2385} & \texttt{-0.0029616} & \texttt{-134.37} & \texttt{0} \\
+
+7 & \texttt{-1.8488} & \texttt{39.116} & \texttt{85.101} & \texttt{0.23807} & \texttt{-59.47} & \texttt{-3.9448} & \texttt{-158.9} & \texttt{-25.011} & \texttt{-0.0049881} & \texttt{22.356} & \texttt{-2.5244e-24} \\
+
+8 & \texttt{-0.86046} & \texttt{43.799} & \texttt{98.586} & \texttt{-2.8844} & \texttt{-67.939} & \texttt{28.526} & \texttt{-104.52} & \texttt{-81.02} & \texttt{0.03607} & \texttt{-108.8} & \texttt{-2.0195e-23} \\
+
+9 & \texttt{-17.167} & \texttt{-18.097} & \texttt{15.501} & \texttt{23.955} & \texttt{0.33794} & \texttt{46.171} & \texttt{45.811} & \texttt{-45.575} & \texttt{-100.43} & \texttt{-3.9185} & \texttt{2.0195e-23} \\
+
+10 & \texttt{-5498.9} & \texttt{-5498.9} & \texttt{-5498.9} & \texttt{-5498.9} & \texttt{11422} & \texttt{5790.5} & \texttt{5790.5} & \texttt{5790.5} & \texttt{5790.5} & \texttt{-12229} & \texttt{1.2925e-21} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0022991984}; \texttt{-0.0044018205}; \texttt{-0.01180514}; \texttt{-0.033333333}; \texttt{-0.033658696}; \texttt{-0.05841514}; \texttt{-0.10760509}; \texttt{-0.14095712}; \texttt{-0.2}; \texttt{-8.8066197}; \texttt{-15.54779}.\par}
+
+\subsection*{C2, expression 0.0}
+{\scriptsize State: \texttt{26.27248}, \texttt{175.9622}, \texttt{80.16363}, \texttt{26.07319}, \texttt{44.0093}, \texttt{1.537802}, \texttt{12.6342}, \texttt{3.575436}, \texttt{15.90681}, \texttt{0.4022997}, \texttt{0.3028266}, \texttt{0.1078454}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 14; residual: \texttt{1.89753e-12}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-26.098} & \texttt{-4.396} & \texttt{-11.523} & \texttt{-2.8703} & \texttt{10.491} & \texttt{0.095614} & \texttt{0.11561} & \texttt{-0.12549} & \texttt{0.00016683} & \texttt{0.023966} & \texttt{0} \\
+
+2 & \texttt{-18.924} & \texttt{-7.1443} & \texttt{-19.277} & \texttt{-2.9448} & \texttt{14.838} & \texttt{-1.9106} & \texttt{7.1506} & \texttt{4.6393} & \texttt{-0.0033337} & \texttt{-4.8104} & \texttt{9.8608e-27} \\
+
+3 & \texttt{-38.942} & \texttt{-9.003} & \texttt{-32.966} & \texttt{0.40619} & \texttt{23.539} & \texttt{-2.0062} & \texttt{7.0327} & \texttt{4.7648} & \texttt{-0.0035005} & \texttt{-4.8338} & \texttt{0} \\
+
+4 & \texttt{-2.2542} & \texttt{1.2664} & \texttt{-1.638} & \texttt{-10.941} & \texttt{1.9222} & \texttt{-6.1083} & \texttt{-6.066} & \texttt{6.0485} & \texttt{6.3029} & \texttt{0.0072486} & \texttt{3.9443e-26} \\
+
+5 & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{-10257} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{821.73} & \texttt{0} \\
+
+6 & \texttt{2.3531} & \texttt{3.819} & \texttt{10.698} & \texttt{-2.4291} & \texttt{-7.1041} & \texttt{-22.259} & \texttt{-0.38918} & \texttt{-1.123} & \texttt{-0.0042541} & \texttt{-132.38} & \texttt{1.5777e-25} \\
+
+7 & \texttt{-2.49} & \texttt{36.305} & \texttt{79.485} & \texttt{0.21607} & \texttt{-56.935} & \texttt{-4.107} & \texttt{-152.66} & \texttt{-24.725} & \texttt{-0.0071659} & \texttt{20.472} & \texttt{0} \\
+
+8 & \texttt{-0.36073} & \texttt{40.761} & \texttt{91.966} & \texttt{-2.6179} & \texttt{-65.15} & \texttt{29.698} & \texttt{-96.645} & \texttt{-82.506} & \texttt{0.051818} & \texttt{-108.84} & \texttt{0} \\
+
+9 & \texttt{-15.246} & \texttt{-16.106} & \texttt{13.687} & \texttt{20.211} & \texttt{0.49211} & \texttt{44.458} & \texttt{44.119} & \texttt{-43.864} & \texttt{-100.63} & \texttt{-3.6256} & \texttt{1.5777e-25} \\
+
+10 & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{10947} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{-12202} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0021743099}; \texttt{-0.0033552801}; \texttt{-0.010624601}; \texttt{-0.033333333}; \texttt{-0.034309271}; \texttt{-0.060398218}; \texttt{-0.10759125}; \texttt{-0.13377908}; \texttt{-0.2}; \texttt{-8.5679955}; \texttt{-15.281905}.\par}
+
+\clearpage
+\subsection*{C3a, expression 1.0}
+{\scriptsize State: \texttt{32.01803}, \texttt{133.5549}, \texttt{63.06404}, \texttt{10.14596}, \texttt{24.44714}, \texttt{1.306437}, \texttt{13.08013}, \texttt{3.023995}, \texttt{15.76924}, \texttt{0.4126252}, \texttt{0.3348781}, \texttt{0.1070862}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 189; residual: \texttt{1.78632e-10}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-20.267} & \texttt{-6.7935} & \texttt{-12.101} & \texttt{-4.2029} & \texttt{10.997} & \texttt{0.05692} & \texttt{0.069151} & \texttt{-0.076562} & \texttt{0.0001794} & \texttt{0.016334} & \texttt{6.3109e-25} \\
+
+2 & \texttt{-17.611} & \texttt{-11.03} & \texttt{-20.788} & \texttt{-17.246} & \texttt{17.374} & \texttt{-1.7309} & \texttt{9.0465} & \texttt{4.4784} & \texttt{-0.0054553} & \texttt{-4.8517} & \texttt{-0.063278} \\
+
+3 & \texttt{-27.632} & \texttt{-9.2267} & \texttt{-42.342} & \texttt{12.608} & \texttt{25.49} & \texttt{-1.7878} & \texttt{8.9731} & \texttt{4.5549} & \texttt{-0.0056347} & \texttt{-4.8672} & \texttt{0.063278} \\
+
+4 & \texttt{-5.5612} & \texttt{-4.0236} & \texttt{4.8792} & \texttt{-40.445} & \texttt{2.9848} & \texttt{-6.2258} & \texttt{-6.1971} & \texttt{6.1865} & \texttt{6.3439} & \texttt{-9.402e-06} & \texttt{-0.12656} \\
+
+5 & \texttt{5812.4} & \texttt{5812.4} & \texttt{5812.4} & \texttt{5812.4} & \texttt{-12073} & \texttt{-397.96} & \texttt{-397.96} & \texttt{-397.96} & \texttt{-397.96} & \texttt{827.46} & \texttt{-5.1699e-21} \\
+
+6 & \texttt{0.093869} & \texttt{5.226} & \texttt{13.497} & \texttt{-4.5063} & \texttt{-8.2717} & \texttt{-20.574} & \texttt{0.3192} & \texttt{-1.4052} & \texttt{-0.0069253} & \texttt{-139.37} & \texttt{-5.0487e-24} \\
+
+7 & \texttt{-0.80888} & \texttt{47.816} & \texttt{101.05} & \texttt{0.40084} & \texttt{-67.207} & \texttt{-3.6639} & \texttt{-175.44} & \texttt{-25.45} & \texttt{-0.011548} & \texttt{26.558} & \texttt{2.0195e-23} \\
+
+8 & \texttt{-0.9156} & \texttt{53.913} & \texttt{116.79} & \texttt{-4.8565} & \texttt{-76.82} & \texttt{26.486} & \texttt{-123.98} & \texttt{-78.179} & \texttt{0.083475} & \texttt{-109.33} & \texttt{-8.0779e-23} \\
+
+9 & \texttt{-11.125} & \texttt{-12.197} & \texttt{9.0763} & \texttt{21.451} & \texttt{0.77545} & \texttt{49.118} & \texttt{48.704} & \texttt{-48.518} & \texttt{-99.998} & \texttt{-3.9173} & \texttt{0} \\
+
+10 & \texttt{-6203.3} & \texttt{-6203.3} & \texttt{-6203.3} & \texttt{-6203.3} & \texttt{12885} & \texttt{5818.2} & \texttt{5818.2} & \texttt{5818.2} & \texttt{5818.2} & \texttt{-12285} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0023191439}; \texttt{-0.0044009787}; \texttt{-0.029600937}; \texttt{-0.033333333}; \texttt{-0.047709669}; \texttt{-0.055058198}; \texttt{-0.10778138}; \texttt{-0.15957077}; \texttt{-0.2}; \texttt{-9.4383413}; \texttt{-16.439217}.\par}
+
+\subsection*{C3a, expression 0.05}
+{\scriptsize State: \texttt{26.5854}, \texttt{170.2896}, \texttt{77.8413}, \texttt{23.49024}, \texttt{40.97197}, \texttt{1.503722}, \texttt{12.67872}, \texttt{3.521334}, \texttt{15.89483}, \texttt{0.4034743}, \texttt{0.305228}, \texttt{0.1077789}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 62; residual: \texttt{7.20333e-12}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-25.594} & \texttt{-4.6376} & \texttt{-11.646} & \texttt{-3.1461} & \texttt{10.628} & \texttt{0.094324} & \texttt{0.11416} & \texttt{-0.12401} & \texttt{0.00016992} & \texttt{0.023878} & \texttt{-7.8886e-26} \\
+
+2 & \texttt{-18.859} & \texttt{-7.4317} & \texttt{-19.638} & \texttt{-3.4754} & \texttt{15.142} & \texttt{-1.8945} & \texttt{7.312} & \texttt{4.624} & \texttt{-0.0034129} & \texttt{-4.8134} & \texttt{-0.0074875} \\
+
+3 & \texttt{-38.122} & \texttt{-9.1993} & \texttt{-33.853} & \texttt{0.64413} & \texttt{23.914} & \texttt{-1.9888} & \texttt{7.1954} & \texttt{4.748} & \texttt{-0.0035828} & \texttt{-4.8368} & \texttt{0.0074875} \\
+
+4 & \texttt{-2.4762} & \texttt{0.95707} & \texttt{-1.2573} & \texttt{-12.1} & \texttt{1.9894} & \texttt{-6.1146} & \texttt{-6.0724} & \texttt{6.0552} & \texttt{6.3067} & \texttt{0.007492} & \texttt{-0.014975} \\
+
+5 & \texttt{5049.9} & \texttt{5049.9} & \texttt{5049.9} & \texttt{5049.9} & \texttt{-10489} & \texttt{-395.4} & \texttt{-395.4} & \texttt{-395.4} & \texttt{-395.4} & \texttt{822.23} & \texttt{1.6156e-22} \\
+
+6 & \texttt{1.999} & \texttt{3.9331} & \texttt{11.033} & \texttt{-2.7108} & \texttt{-7.2326} & \texttt{-22.109} & \texttt{-0.3285} & \texttt{-1.1481} & \texttt{-0.0043548} & \texttt{-133.05} & \texttt{-3.9443e-26} \\
+
+7 & \texttt{-2.2794} & \texttt{37.516} & \texttt{81.855} & \texttt{0.24113} & \texttt{-58.246} & \texttt{-4.0714} & \texttt{-154.58} & \texttt{-24.786} & \texttt{-0.0073344} & \texttt{21.063} & \texttt{-1.5777e-25} \\
+
+8 & \texttt{-0.51491} & \texttt{42.104} & \texttt{94.727} & \texttt{-2.9215} & \texttt{-66.615} & \texttt{29.441} & \texttt{-98.938} & \texttt{-82.149} & \texttt{0.053036} & \texttt{-108.88} & \texttt{-1.5777e-25} \\
+
+9 & \texttt{-14.817} & \texttt{-15.707} & \texttt{13.213} & \texttt{20.304} & \texttt{0.51099} & \texttt{44.844} & \texttt{44.499} & \texttt{-44.25} & \texttt{-100.57} & \texttt{-3.6502} & \texttt{3.1554e-25} \\
+
+10 & \texttt{-5389.5} & \texttt{-5389.5} & \texttt{-5389.5} & \texttt{-5389.5} & \texttt{11195} & \texttt{5780.8} & \texttt{5780.8} & \texttt{5780.8} & \texttt{5780.8} & \texttt{-12209} & \texttt{-8.0779e-23} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0022511308}; \texttt{-0.0034199841}; \texttt{-0.011897649}; \texttt{-0.033333333}; \texttt{-0.034183751}; \texttt{-0.059944004}; \texttt{-0.10760606}; \texttt{-0.13593533}; \texttt{-0.2}; \texttt{-8.6925696}; \texttt{-15.413258}.\par}
+
+\clearpage
+\subsection*{C3a, expression 0.0}
+{\scriptsize State: \texttt{26.27248}, \texttt{175.9622}, \texttt{80.16363}, \texttt{26.07319}, \texttt{44.0093}, \texttt{1.537802}, \texttt{12.6342}, \texttt{3.575436}, \texttt{15.90681}, \texttt{0.4022997}, \texttt{0.3028266}, \texttt{0.1078454}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 14; residual: \texttt{1.89753e-12}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-26.098} & \texttt{-4.396} & \texttt{-11.523} & \texttt{-2.8703} & \texttt{10.491} & \texttt{0.095614} & \texttt{0.11561} & \texttt{-0.12549} & \texttt{0.00016683} & \texttt{0.023966} & \texttt{0} \\
+
+2 & \texttt{-18.924} & \texttt{-7.1443} & \texttt{-19.277} & \texttt{-2.9448} & \texttt{14.838} & \texttt{-1.9106} & \texttt{7.1506} & \texttt{4.6393} & \texttt{-0.0033337} & \texttt{-4.8104} & \texttt{9.8608e-27} \\
+
+3 & \texttt{-38.942} & \texttt{-9.003} & \texttt{-32.966} & \texttt{0.40619} & \texttt{23.539} & \texttt{-2.0062} & \texttt{7.0327} & \texttt{4.7648} & \texttt{-0.0035005} & \texttt{-4.8338} & \texttt{0} \\
+
+4 & \texttt{-2.2542} & \texttt{1.2664} & \texttt{-1.638} & \texttt{-10.941} & \texttt{1.9222} & \texttt{-6.1083} & \texttt{-6.066} & \texttt{6.0485} & \texttt{6.3029} & \texttt{0.0072486} & \texttt{3.9443e-26} \\
+
+5 & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{-10257} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{821.73} & \texttt{0} \\
+
+6 & \texttt{2.3531} & \texttt{3.819} & \texttt{10.698} & \texttt{-2.4291} & \texttt{-7.1041} & \texttt{-22.259} & \texttt{-0.38918} & \texttt{-1.123} & \texttt{-0.0042541} & \texttt{-132.38} & \texttt{1.5777e-25} \\
+
+7 & \texttt{-2.49} & \texttt{36.305} & \texttt{79.485} & \texttt{0.21607} & \texttt{-56.935} & \texttt{-4.107} & \texttt{-152.66} & \texttt{-24.725} & \texttt{-0.0071659} & \texttt{20.472} & \texttt{0} \\
+
+8 & \texttt{-0.36073} & \texttt{40.761} & \texttt{91.966} & \texttt{-2.6179} & \texttt{-65.15} & \texttt{29.698} & \texttt{-96.645} & \texttt{-82.506} & \texttt{0.051818} & \texttt{-108.84} & \texttt{0} \\
+
+9 & \texttt{-15.246} & \texttt{-16.106} & \texttt{13.687} & \texttt{20.211} & \texttt{0.49211} & \texttt{44.458} & \texttt{44.119} & \texttt{-43.864} & \texttt{-100.63} & \texttt{-3.6256} & \texttt{1.5777e-25} \\
+
+10 & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{10947} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{-12202} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0021743099}; \texttt{-0.0033552801}; \texttt{-0.010624601}; \texttt{-0.033333333}; \texttt{-0.034309271}; \texttt{-0.060398218}; \texttt{-0.10759125}; \texttt{-0.13377908}; \texttt{-0.2}; \texttt{-8.5679955}; \texttt{-15.281905}.\par}
+
+\subsection*{C3b, expression 1.0}
+{\scriptsize State: \texttt{21.00716}, \texttt{170.8769}, \texttt{85.82469}, \texttt{12.97284}, \texttt{27.99761}, \texttt{1.478723}, \texttt{12.39015}, \texttt{3.943997}, \texttt{16.06584}, \texttt{0.346365}, \texttt{0.2683033}, \texttt{0.1085876}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 163; residual: \texttt{4.81113e-11}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-35.826} & \texttt{-7.5925} & \texttt{-6.5779} & \texttt{-11.287} & \texttt{11.029} & \texttt{0.065096} & \texttt{0.076786} & \texttt{-0.082947} & \texttt{0.00014006} & \texttt{0.014174} & \texttt{-0.069313} \\
+
+2 & \texttt{-20.293} & \texttt{-7.0706} & \texttt{-17.699} & \texttt{-3.7324} & \texttt{14.661} & \texttt{-2.2304} & \texttt{5.9399} & \texttt{4.9525} & \texttt{-0.0047989} & \texttt{-4.786} & \texttt{0} \\
+
+3 & \texttt{-45.358} & \texttt{-7.3001} & \texttt{-32.351} & \texttt{9.5362} & \texttt{23.331} & \texttt{-2.2955} & \texttt{5.8615} & \texttt{5.0355} & \texttt{-0.004939} & \texttt{-4.7998} & \texttt{0.069313} \\
+
+4 & \texttt{-6.121} & \texttt{-2.8419} & \texttt{3.5534} & \texttt{-30.473} & \texttt{2.4579} & \texttt{-6.1246} & \texttt{-6.0996} & \texttt{6.0889} & \texttt{6.2585} & \texttt{-0.0031286} & \texttt{-0.13863} \\
+
+5 & \texttt{5135.2} & \texttt{5135.2} & \texttt{5135.2} & \texttt{5135.2} & \texttt{-10667} & \texttt{-392.45} & \texttt{-392.45} & \texttt{-392.45} & \texttt{-392.45} & \texttt{816.21} & \texttt{-6.4623e-22} \\
+
+6 & \texttt{5.9976} & \texttt{4.0945} & \texttt{9.9492} & \texttt{-3.0788} & \texttt{-7.8718} & \texttt{-23.96} & \texttt{-1.0272} & \texttt{-0.67649} & \texttt{-0.0060852} & \texttt{-127.85} & \texttt{0} \\
+
+7 & \texttt{-4.4651} & \texttt{37.371} & \texttt{74.246} & \texttt{0.27386} & \texttt{-59.061} & \texttt{-4.7055} & \texttt{-141.92} & \texttt{-23.822} & \texttt{-0.010124} & \texttt{16.557} & \texttt{0} \\
+
+8 & \texttt{1.4702} & \texttt{42.148} & \texttt{85.853} & \texttt{-3.3181} & \texttt{-68.14} & \texttt{34.012} & \texttt{-79.967} & \texttt{-87.76} & \texttt{0.073181} & \texttt{-108.65} & \texttt{-1.6156e-22} \\
+
+9 & \texttt{-11.429} & \texttt{-12.173} & \texttt{9.8328} & \texttt{19.311} & \texttt{0.69944} & \texttt{38.416} & \texttt{38.118} & \texttt{-37.832} & \texttt{-101.23} & \texttt{-3.0767} & \texttt{1.0097e-23} \\
+
+10 & \texttt{-5480.6} & \texttt{-5480.6} & \texttt{-5480.6} & \texttt{-5480.6} & \texttt{11384} & \texttt{5737.8} & \texttt{5737.8} & \texttt{5737.8} & \texttt{5737.8} & \texttt{-12121} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0031785847}; \texttt{-0.0044616681}; \texttt{-0.033333333}; \texttt{-0.036673046} + \texttt{0.0028277923}$\mathrm i$; \texttt{-0.036673046} + \texttt{-0.0028277923}$\mathrm i$; \texttt{-0.067347536}; \texttt{-0.10790701}; \texttt{-0.12204811}; \texttt{-0.2}; \texttt{-8.7581719}; \texttt{-15.443567}.\par}
+
+\clearpage
+\subsection*{C3b, expression 0.05}
+{\scriptsize State: \texttt{25.54313}, \texttt{175.3595}, \texttt{80.78407}, \texttt{24.44984}, \texttt{42.05678}, \texttt{1.530048}, \texttt{12.60442}, \texttt{3.619287}, \texttt{15.92525}, \texttt{0.3967677}, \texttt{0.2984586}, \texttt{0.1079334}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 60; residual: \texttt{9.00951e-11}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-27.074} & \texttt{-4.5682} & \texttt{-11.176} & \texttt{-3.186} & \texttt{10.547} & \texttt{0.096726} & \texttt{0.11665} & \texttt{-0.12648} & \texttt{0.00016824} & \texttt{0.02382} & \texttt{-0.0075359} \\
+
+2 & \texttt{-19.251} & \texttt{-7.1819} & \texttt{-19.06} & \texttt{-3.1427} & \texttt{14.864} & \texttt{-1.943} & \texttt{7.0037} & \texttt{4.6697} & \texttt{-0.0033795} & \texttt{-4.8065} & \texttt{0} \\
+
+3 & \texttt{-39.885} & \texttt{-8.959} & \texttt{-32.734} & \texttt{0.61238} & \texttt{23.587} & \texttt{-2.0397} & \texttt{6.8849} & \texttt{4.7962} & \texttt{-0.0035478} & \texttt{-4.8298} & \texttt{0.0075359} \\
+
+4 & \texttt{-2.5964} & \texttt{1.026} & \texttt{-1.3184} & \texttt{-11.724} & \texttt{1.9546} & \texttt{-6.1009} & \texttt{-6.0589} & \texttt{6.0414} & \texttt{6.2978} & \texttt{0.0075086} & \texttt{-0.015072} \\
+
+5 & \texttt{4963} & \texttt{4963} & \texttt{4963} & \texttt{4963} & \texttt{-10309} & \texttt{-394.83} & \texttt{-394.83} & \texttt{-394.83} & \texttt{-394.83} & \texttt{821.07} & \texttt{2.5849e-21} \\
+
+6 & \texttt{2.6339} & \texttt{3.814} & \texttt{10.641} & \texttt{-2.5924} & \texttt{-7.1676} & \texttt{-22.457} & \texttt{-0.46164} & \texttt{-1.0762} & \texttt{-0.0043123} & \texttt{-131.83} & \texttt{-1.5777e-25} \\
+
+7 & \texttt{-2.6893} & \texttt{36.431} & \texttt{78.872} & \texttt{0.2306} & \texttt{-57.208} & \texttt{-4.1755} & \texttt{-151.24} & \texttt{-24.621} & \texttt{-0.0072628} & \texttt{20} & \texttt{-3.1554e-25} \\
+
+8 & \texttt{-0.27956} & \texttt{40.881} & \texttt{91.287} & \texttt{-2.7939} & \texttt{-65.494} & \texttt{30.194} & \texttt{-94.547} & \texttt{-83.116} & \texttt{0.052518} & \texttt{-108.81} & \texttt{5.0487e-24} \\
+
+9 & \texttt{-14.897} & \texttt{-15.756} & \texttt{13.347} & \texttt{20.153} & \texttt{0.50266} & \texttt{43.767} & \texttt{43.433} & \texttt{-43.174} & \texttt{-100.7} & \texttt{-3.5645} & \texttt{-1.0097e-23} \\
+
+10 & \texttt{-5296.7} & \texttt{-5296.7} & \texttt{-5296.7} & \texttt{-5296.7} & \texttt{11002} & \texttt{5772.5} & \texttt{5772.5} & \texttt{5772.5} & \texttt{5772.5} & \texttt{-12192} & \texttt{-1.2925e-21} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0022696463}; \texttt{-0.0034289782}; \texttt{-0.011722463}; \texttt{-0.033333333}; \texttt{-0.034700399}; \texttt{-0.0611975}; \texttt{-0.10762728}; \texttt{-0.13221825}; \texttt{-0.2}; \texttt{-8.5933834}; \texttt{-15.301834}.\par}
+
+\subsection*{C3b, expression 0.0}
+{\scriptsize State: \texttt{26.27248}, \texttt{175.9622}, \texttt{80.16363}, \texttt{26.07319}, \texttt{44.0093}, \texttt{1.537802}, \texttt{12.6342}, \texttt{3.575436}, \texttt{15.90681}, \texttt{0.4022997}, \texttt{0.3028266}, \texttt{0.1078454}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 14; residual: \texttt{1.89753e-12}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-26.098} & \texttt{-4.396} & \texttt{-11.523} & \texttt{-2.8703} & \texttt{10.491} & \texttt{0.095614} & \texttt{0.11561} & \texttt{-0.12549} & \texttt{0.00016683} & \texttt{0.023966} & \texttt{0} \\
+
+2 & \texttt{-18.924} & \texttt{-7.1443} & \texttt{-19.277} & \texttt{-2.9448} & \texttt{14.838} & \texttt{-1.9106} & \texttt{7.1506} & \texttt{4.6393} & \texttt{-0.0033337} & \texttt{-4.8104} & \texttt{9.8608e-27} \\
+
+3 & \texttt{-38.942} & \texttt{-9.003} & \texttt{-32.966} & \texttt{0.40619} & \texttt{23.539} & \texttt{-2.0062} & \texttt{7.0327} & \texttt{4.7648} & \texttt{-0.0035005} & \texttt{-4.8338} & \texttt{0} \\
+
+4 & \texttt{-2.2542} & \texttt{1.2664} & \texttt{-1.638} & \texttt{-10.941} & \texttt{1.9222} & \texttt{-6.1083} & \texttt{-6.066} & \texttt{6.0485} & \texttt{6.3029} & \texttt{0.0072486} & \texttt{3.9443e-26} \\
+
+5 & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{-10257} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{821.73} & \texttt{0} \\
+
+6 & \texttt{2.3531} & \texttt{3.819} & \texttt{10.698} & \texttt{-2.4291} & \texttt{-7.1041} & \texttt{-22.259} & \texttt{-0.38918} & \texttt{-1.123} & \texttt{-0.0042541} & \texttt{-132.38} & \texttt{1.5777e-25} \\
+
+7 & \texttt{-2.49} & \texttt{36.305} & \texttt{79.485} & \texttt{0.21607} & \texttt{-56.935} & \texttt{-4.107} & \texttt{-152.66} & \texttt{-24.725} & \texttt{-0.0071659} & \texttt{20.472} & \texttt{0} \\
+
+8 & \texttt{-0.36073} & \texttt{40.761} & \texttt{91.966} & \texttt{-2.6179} & \texttt{-65.15} & \texttt{29.698} & \texttt{-96.645} & \texttt{-82.506} & \texttt{0.051818} & \texttt{-108.84} & \texttt{0} \\
+
+9 & \texttt{-15.246} & \texttt{-16.106} & \texttt{13.687} & \texttt{20.211} & \texttt{0.49211} & \texttt{44.458} & \texttt{44.119} & \texttt{-43.864} & \texttt{-100.63} & \texttt{-3.6256} & \texttt{1.5777e-25} \\
+
+10 & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{10947} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{-12202} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0021743099}; \texttt{-0.0033552801}; \texttt{-0.010624601}; \texttt{-0.033333333}; \texttt{-0.034309271}; \texttt{-0.060398218}; \texttt{-0.10759125}; \texttt{-0.13377908}; \texttt{-0.2}; \texttt{-8.5679955}; \texttt{-15.281905}.\par}
+
+\clearpage
+\subsection*{C4a, expression 1.0}
+{\scriptsize State: \texttt{39.17136}, \texttt{114.112}, \texttt{58.4034}, \texttt{12.87387}, \texttt{16.81816}, \texttt{1.259225}, \texttt{13.27539}, \texttt{2.637351}, \texttt{15.53605}, \texttt{0.6415983}, \texttt{0.376686}, \texttt{0.106448}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 352; residual: \texttt{1.45684e-11}; physiological: False.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-20.598} & \texttt{-11.047} & \texttt{-9.1342} & \texttt{-1.3757} & \texttt{11.217} & \texttt{0.057093} & \texttt{0.070798} & \texttt{-0.079622} & \texttt{3.351e-05} & \texttt{0.01894} & \texttt{0} \\
+
+2 & \texttt{-19.459} & \texttt{-16.869} & \texttt{-17.701} & \texttt{-11.022} & \texttt{17.907} & \texttt{-1.5061} & \texttt{10.905} & \texttt{4.2828} & \texttt{-0.00088397} & \texttt{-4.8788} & \texttt{-0.069944} \\
+
+3 & \texttt{-18.474} & \texttt{-7.7806} & \texttt{-47.697} & \texttt{7.7553} & \texttt{25.822} & \texttt{-1.5632} & \texttt{10.827} & \texttt{4.3625} & \texttt{-0.00091748} & \texttt{-4.8966} & \texttt{0.069944} \\
+
+4 & \texttt{-5.2542} & \texttt{-4.1058} & \texttt{4.2444} & \texttt{-27.076} & \texttt{2.8547} & \texttt{-6.2725} & \texttt{-6.2385} & \texttt{6.2274} & \texttt{6.3889} & \texttt{-0.072945} & \texttt{-0.069944} \\
+
+5 & \texttt{6030.4} & \texttt{6030.4} & \texttt{6030.4} & \texttt{6030.4} & \texttt{-12526} & \texttt{-400.34} & \texttt{-400.34} & \texttt{-400.34} & \texttt{-400.34} & \texttt{832.34} & \texttt{-5.0487e-24} \\
+
+6 & \texttt{-2.0835} & \texttt{4.8572} & \texttt{15.868} & \texttt{-3.1583} & \texttt{-8.3729} & \texttt{-19.154} & \texttt{1.0482} & \texttt{-1.7558} & \texttt{-0.0011239} & \texttt{-143.32} & \texttt{7.8886e-26} \\
+
+7 & \texttt{-0.15623} & \texttt{56.075} & \texttt{108.99} & \texttt{0.28093} & \texttt{-69.812} & \texttt{-3.2025} & \texttt{-197.19} & \texttt{-26.368} & \texttt{-0.0018797} & \texttt{30.928} & \texttt{0} \\
+
+8 & \texttt{-2.6792} & \texttt{61.741} & \texttt{127.51} & \texttt{-3.4037} & \texttt{-79.561} & \texttt{23.152} & \texttt{-150.15} & \texttt{-74.244} & \texttt{0.013589} & \texttt{-108.39} & \texttt{1.5777e-25} \\
+
+9 & \texttt{-31.775} & \texttt{-33.024} & \texttt{29.57} & \texttt{52.126} & \texttt{-0.61504} & \texttt{53.931} & \texttt{53.445} & \texttt{-53.319} & \texttt{-99.487} & \texttt{-5.5131} & \texttt{2.5244e-24} \\
+
+10 & \texttt{-6435.9} & \texttt{-6435.9} & \texttt{-6435.9} & \texttt{-6435.9} & \texttt{13368} & \texttt{5853.1} & \texttt{5853.1} & \texttt{5853.1} & \texttt{5853.1} & \texttt{-12357} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0021943472}; \texttt{-0.010820533}; \texttt{-0.026367862}; \texttt{-0.033333333}; \texttt{-0.038991851}; \texttt{-0.04951702}; \texttt{-0.10850239}; \texttt{-0.18454082}; \texttt{-0.2}; \texttt{-9.6386489}; \texttt{-16.797767}.\par}
+
+\subsection*{C4a, expression 0.05}
+{\scriptsize State: \texttt{26.65423}, \texttt{168.5598}, \texttt{77.79886}, \texttt{24.0927}, \texttt{39.35344}, \texttt{1.500067}, \texttt{12.6772}, \texttt{3.506215}, \texttt{15.87704}, \texttt{0.4332536}, \texttt{0.3063804}, \texttt{0.1077637}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 62; residual: \texttt{5.23861e-10}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-26.236} & \texttt{-5.3837} & \texttt{-10.928} & \texttt{-2.4092} & \texttt{10.648} & \texttt{0.094063} & \texttt{0.11393} & \texttt{-0.1238} & \texttt{0.00011456} & \texttt{0.023909} & \texttt{0} \\
+
+2 & \texttt{-18.952} & \texttt{-7.6213} & \texttt{-19.515} & \texttt{-3.2738} & \texttt{15.176} & \texttt{-1.8872} & \texttt{7.3604} & \texttt{4.6194} & \texttt{-0.0022986} & \texttt{-4.8141} & \texttt{-0.0075117} \\
+
+3 & \texttt{-37.969} & \texttt{-9.268} & \texttt{-33.874} & \texttt{0.60571} & \texttt{23.957} & \texttt{-1.9813} & \texttt{7.2439} & \texttt{4.7432} & \texttt{-0.0024131} & \texttt{-4.8374} & \texttt{0.0075117} \\
+
+4 & \texttt{-2.1504} & \texttt{1.2694} & \texttt{-1.6165} & \texttt{-12.229} & \texttt{2.018} & \texttt{-6.118} & \texttt{-6.0758} & \texttt{6.0586} & \texttt{6.3091} & \texttt{-0.0040246} & \texttt{-0.0075117} \\
+
+5 & \texttt{5062.2} & \texttt{5062.2} & \texttt{5062.2} & \texttt{5062.2} & \texttt{-10515} & \texttt{-395.45} & \texttt{-395.45} & \texttt{-395.45} & \texttt{-395.45} & \texttt{822.34} & \texttt{0} \\
+
+6 & \texttt{1.8521} & \texttt{3.883} & \texttt{11.135} & \texttt{-2.5544} & \texttt{-7.2443} & \texttt{-22.076} & \texttt{-0.30834} & \texttt{-1.1617} & \texttt{-0.002933} & \texttt{-133.07} & \texttt{1.5777e-25} \\
+
+7 & \texttt{-2.2391} & \texttt{37.909} & \texttt{81.891} & \texttt{0.22721} & \texttt{-58.392} & \texttt{-4.0559} & \texttt{-155.12} & \texttt{-24.834} & \texttt{-0.00494} & \texttt{21.229} & \texttt{7.8886e-26} \\
+
+8 & \texttt{-0.63853} & \texttt{42.439} & \texttt{94.882} & \texttt{-2.7529} & \texttt{-66.775} & \texttt{29.329} & \texttt{-99.624} & \texttt{-82.052} & \texttt{0.035722} & \texttt{-108.72} & \texttt{0} \\
+
+9 & \texttt{-17.248} & \texttt{-18.147} & \texttt{15.644} & \texttt{23.759} & \texttt{0.32963} & \texttt{45.02} & \texttt{44.673} & \texttt{-44.425} & \texttt{-100.56} & \texttt{-3.8237} & \texttt{-1.6156e-22} \\
+
+10 & \texttt{-5402.6} & \texttt{-5402.6} & \texttt{-5402.6} & \texttt{-5402.6} & \texttt{11222} & \texttt{5781.6} & \texttt{5781.6} & \texttt{5781.6} & \texttt{5781.6} & \texttt{-12211} & \texttt{1.034e-20} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0023471421}; \texttt{-0.0043851487}; \texttt{-0.01163729}; \texttt{-0.033333333}; \texttt{-0.034089148}; \texttt{-0.059754965}; \texttt{-0.10762392}; \texttt{-0.13674655}; \texttt{-0.2}; \texttt{-8.7062483}; \texttt{-15.428727}.\par}
+
+\clearpage
+\subsection*{C4a, expression 0.0}
+{\scriptsize State: \texttt{26.27248}, \texttt{175.9622}, \texttt{80.16363}, \texttt{26.07319}, \texttt{44.0093}, \texttt{1.537802}, \texttt{12.6342}, \texttt{3.575436}, \texttt{15.90681}, \texttt{0.4022997}, \texttt{0.3028266}, \texttt{0.1078454}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 14; residual: \texttt{1.89753e-12}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-26.098} & \texttt{-4.396} & \texttt{-11.523} & \texttt{-2.8703} & \texttt{10.491} & \texttt{0.095614} & \texttt{0.11561} & \texttt{-0.12549} & \texttt{0.00016683} & \texttt{0.023966} & \texttt{0} \\
+
+2 & \texttt{-18.924} & \texttt{-7.1443} & \texttt{-19.277} & \texttt{-2.9448} & \texttt{14.838} & \texttt{-1.9106} & \texttt{7.1506} & \texttt{4.6393} & \texttt{-0.0033337} & \texttt{-4.8104} & \texttt{9.8608e-27} \\
+
+3 & \texttt{-38.942} & \texttt{-9.003} & \texttt{-32.966} & \texttt{0.40619} & \texttt{23.539} & \texttt{-2.0062} & \texttt{7.0327} & \texttt{4.7648} & \texttt{-0.0035005} & \texttt{-4.8338} & \texttt{0} \\
+
+4 & \texttt{-2.2542} & \texttt{1.2664} & \texttt{-1.638} & \texttt{-10.941} & \texttt{1.9222} & \texttt{-6.1083} & \texttt{-6.066} & \texttt{6.0485} & \texttt{6.3029} & \texttt{0.0072486} & \texttt{3.9443e-26} \\
+
+5 & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{-10257} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{821.73} & \texttt{0} \\
+
+6 & \texttt{2.3531} & \texttt{3.819} & \texttt{10.698} & \texttt{-2.4291} & \texttt{-7.1041} & \texttt{-22.259} & \texttt{-0.38918} & \texttt{-1.123} & \texttt{-0.0042541} & \texttt{-132.38} & \texttt{1.5777e-25} \\
+
+7 & \texttt{-2.49} & \texttt{36.305} & \texttt{79.485} & \texttt{0.21607} & \texttt{-56.935} & \texttt{-4.107} & \texttt{-152.66} & \texttt{-24.725} & \texttt{-0.0071659} & \texttt{20.472} & \texttt{0} \\
+
+8 & \texttt{-0.36073} & \texttt{40.761} & \texttt{91.966} & \texttt{-2.6179} & \texttt{-65.15} & \texttt{29.698} & \texttt{-96.645} & \texttt{-82.506} & \texttt{0.051818} & \texttt{-108.84} & \texttt{0} \\
+
+9 & \texttt{-15.246} & \texttt{-16.106} & \texttt{13.687} & \texttt{20.211} & \texttt{0.49211} & \texttt{44.458} & \texttt{44.119} & \texttt{-43.864} & \texttt{-100.63} & \texttt{-3.6256} & \texttt{1.5777e-25} \\
+
+10 & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{10947} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{-12202} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0021743099}; \texttt{-0.0033552801}; \texttt{-0.010624601}; \texttt{-0.033333333}; \texttt{-0.034309271}; \texttt{-0.060398218}; \texttt{-0.10759125}; \texttt{-0.13377908}; \texttt{-0.2}; \texttt{-8.5679955}; \texttt{-15.281905}.\par}
+
+\subsection*{C4b, expression 1.0}
+{\scriptsize State: \texttt{22.66805}, \texttt{160.1109}, \texttt{83.63703}, \texttt{17.07847}, \texttt{21.08015}, \texttt{1.454865}, \texttt{12.43563}, \texttt{3.771254}, \texttt{15.9278}, \texttt{0.5505061}, \texttt{0.279085}, \texttt{0.1083882}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 144; residual: \texttt{6.53858e-10}; physiological: False.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-39.416} & \texttt{-13.923} & \texttt{-0.47993} & \texttt{-4.1728} & \texttt{11.104} & \texttt{0.072571} & \texttt{0.086243} & \texttt{-0.093393} & \texttt{3.7508e-05} & \texttt{0.016532} & \texttt{-0.081856} \\
+
+2 & \texttt{-20.47} & \texttt{-8.6104} & \texttt{-16.814} & \texttt{-2.4762} & \texttt{14.882} & \texttt{-2.1266} & \texttt{6.4364} & \texttt{4.8656} & \texttt{-0.0010991} & \texttt{-4.7928} & \texttt{3.1554e-25} \\
+
+3 & \texttt{-38.845} & \texttt{-5.5328} & \texttt{-34.984} & \texttt{5.3947} & \texttt{23.374} & \texttt{-2.1992} & \texttt{6.3482} & \texttt{4.959} & \texttt{-0.0011366} & \texttt{-4.8089} & \texttt{0.081856} \\
+
+4 & \texttt{-4.5846} & \texttt{-1.5583} & \texttt{1.7589} & \texttt{-20.505} & \texttt{2.3046} & \texttt{-6.1265} & \texttt{-6.0972} & \texttt{6.0848} & \texttt{6.2744} & \texttt{-0.0758} & \texttt{-0.081856} \\
+
+5 & \texttt{5219.4} & \texttt{5219.4} & \texttt{5219.4} & \texttt{5219.4} & \texttt{-10842} & \texttt{-393.17} & \texttt{-393.17} & \texttt{-393.17} & \texttt{-393.17} & \texttt{817.69} & \texttt{1.2925e-21} \\
+
+6 & \texttt{3.4429} & \texttt{3.4443} & \texttt{11.139} & \texttt{-2.0425} & \texttt{-7.8285} & \texttt{-23.491} & \texttt{-0.79286} & \texttt{-0.8418} & \texttt{-0.0013958} & \texttt{-128.84} & \texttt{-1.5777e-25} \\
+
+7 & \texttt{-3.4486} & \texttt{39.966} & \texttt{76.105} & \texttt{0.18169} & \texttt{-60.098} & \texttt{-4.5066} & \texttt{-146.97} & \texttt{-24.276} & \texttt{-0.0023292} & \texttt{18.411} & \texttt{-6.3109e-25} \\
+
+8 & \texttt{-0.28069} & \texttt{43.985} & \texttt{89.101} & \texttt{-2.2013} & \texttt{-69.14} & \texttt{32.578} & \texttt{-86.872} & \texttt{-86.284} & \texttt{0.016838} & \texttt{-107.65} & \texttt{0} \\
+
+9 & \texttt{-30.67} & \texttt{-31.519} & \texttt{29.089} & \texttt{45.731} & \texttt{-0.57958} & \texttt{40.433} & \texttt{40.117} & \texttt{-39.843} & \texttt{-101.07} & \texttt{-4.2729} & \texttt{1.6156e-22} \\
+
+10 & \texttt{-5570.5} & \texttt{-5570.5} & \texttt{-5570.5} & \texttt{-5570.5} & \texttt{11571} & \texttt{5748.3} & \texttt{5748.3} & \texttt{5748.3} & \texttt{5748.3} & \texttt{-12142} & \texttt{1.034e-20} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0031884057}; \texttt{-0.010473454}; \texttt{-0.02962534}; \texttt{-0.033213585}; \texttt{-0.033333333}; \texttt{-0.065089593}; \texttt{-0.10766528}; \texttt{-0.12936487}; \texttt{-0.2}; \texttt{-8.8500786}; \texttt{-15.561552}.\par}
+
+\clearpage
+\subsection*{C4b, expression 0.05}
+{\scriptsize State: \texttt{25.598}, \texttt{173.6653}, \texttt{80.7659}, \texttt{25.0776}, \texttt{40.43568}, \texttt{1.526629}, \texttt{12.60206}, \texttt{3.60516}, \texttt{15.90774}, \texttt{0.4267956}, \texttt{0.2994836}, \texttt{0.1079204}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 67; residual: \texttt{2.89099e-12}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-27.716} & \texttt{-5.3029} & \texttt{-10.464} & \texttt{-2.454} & \texttt{10.565} & \texttt{0.096493} & \texttt{0.11644} & \texttt{-0.12629} & \texttt{0.00011366} & \texttt{0.023849} & \texttt{-0.0075593} \\
+
+2 & \texttt{-19.342} & \texttt{-7.3572} & \texttt{-18.941} & \texttt{-2.9587} & \texttt{14.894} & \texttt{-1.9362} & \texttt{7.0468} & \texttt{4.6657} & \texttt{-0.0022806} & \texttt{-4.8071} & \texttt{0} \\
+
+3 & \texttt{-39.748} & \texttt{-9.0217} & \texttt{-32.745} & \texttt{0.57532} & \texttt{23.627} & \texttt{-2.0327} & \texttt{6.9281} & \texttt{4.792} & \texttt{-0.0023943} & \texttt{-4.8304} & \texttt{0.0075593} \\
+
+4 & \texttt{-2.2674} & \texttt{1.3424} & \texttt{-1.6802} & \texttt{-11.871} & \texttt{1.9836} & \texttt{-6.1041} & \texttt{-6.062} & \texttt{6.0445} & \texttt{6.3} & \texttt{-0.0041261} & \texttt{-0.0075593} \\
+
+5 & \texttt{4974.1} & \texttt{4974.1} & \texttt{4974.1} & \texttt{4974.1} & \texttt{-10332} & \texttt{-394.88} & \texttt{-394.88} & \texttt{-394.88} & \texttt{-394.88} & \texttt{821.17} & \texttt{-8.0779e-23} \\
+
+6 & \texttt{2.4911} & \texttt{3.7627} & \texttt{10.738} & \texttt{-2.4406} & \texttt{-7.1784} & \texttt{-22.428} & \texttt{-0.44347} & \texttt{-1.0891} & \texttt{-0.0029101} & \texttt{-131.84} & \texttt{3.9443e-26} \\
+
+7 & \texttt{-2.6505} & \texttt{36.795} & \texttt{78.882} & \texttt{0.2171} & \texttt{-57.339} & \texttt{-4.1612} & \texttt{-151.73} & \texttt{-24.668} & \texttt{-0.0049014} & \texttt{20.155} & \texttt{0} \\
+
+8 & \texttt{-0.40031} & \texttt{41.185} & \texttt{91.409} & \texttt{-2.6303} & \texttt{-65.638} & \texttt{30.091} & \texttt{-95.158} & \texttt{-83.03} & \texttt{0.035443} & \texttt{-108.65} & \texttt{-3.9443e-26} \\
+
+9 & \texttt{-17.324} & \texttt{-18.192} & \texttt{15.776} & \texttt{23.573} & \texttt{0.32177} & \texttt{43.929} & \texttt{43.594} & \texttt{-43.336} & \texttt{-100.69} & \texttt{-3.738} & \texttt{0} \\
+
+10 & \texttt{-5308.6} & \texttt{-5308.6} & \texttt{-5308.6} & \texttt{-5308.6} & \texttt{11027} & \texttt{5773.2} & \texttt{5773.2} & \texttt{5773.2} & \texttt{5773.2} & \texttt{-12193} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0023790986}; \texttt{-0.0043642238}; \texttt{-0.011479333}; \texttt{-0.033333333}; \texttt{-0.034609562}; \texttt{-0.061023623}; \texttt{-0.10761517}; \texttt{-0.13298557}; \texttt{-0.2}; \texttt{-8.6060273}; \texttt{-15.315437}.\par}
+
+\subsection*{C4b, expression 0.0}
+{\scriptsize State: \texttt{26.27248}, \texttt{175.9622}, \texttt{80.16363}, \texttt{26.07319}, \texttt{44.0093}, \texttt{1.537802}, \texttt{12.6342}, \texttt{3.575436}, \texttt{15.90681}, \texttt{0.4022997}, \texttt{0.3028266}, \texttt{0.1078454}, \texttt{1}.\par
+
+Solver flag: True; evaluations: 14; residual: \texttt{1.89753e-12}; physiological: True.\par}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\centering
+\begin{tabular}{rrrrrrrrrrrr}\toprule
+
+Row/column & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \midrule
+
+1 & \texttt{-26.098} & \texttt{-4.396} & \texttt{-11.523} & \texttt{-2.8703} & \texttt{10.491} & \texttt{0.095614} & \texttt{0.11561} & \texttt{-0.12549} & \texttt{0.00016683} & \texttt{0.023966} & \texttt{0} \\
+
+2 & \texttt{-18.924} & \texttt{-7.1443} & \texttt{-19.277} & \texttt{-2.9448} & \texttt{14.838} & \texttt{-1.9106} & \texttt{7.1506} & \texttt{4.6393} & \texttt{-0.0033337} & \texttt{-4.8104} & \texttt{9.8608e-27} \\
+
+3 & \texttt{-38.942} & \texttt{-9.003} & \texttt{-32.966} & \texttt{0.40619} & \texttt{23.539} & \texttt{-2.0062} & \texttt{7.0327} & \texttt{4.7648} & \texttt{-0.0035005} & \texttt{-4.8338} & \texttt{0} \\
+
+4 & \texttt{-2.2542} & \texttt{1.2664} & \texttt{-1.638} & \texttt{-10.941} & \texttt{1.9222} & \texttt{-6.1083} & \texttt{-6.066} & \texttt{6.0485} & \texttt{6.3029} & \texttt{0.0072486} & \texttt{3.9443e-26} \\
+
+5 & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{4937.9} & \texttt{-10257} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{-395.15} & \texttt{821.73} & \texttt{0} \\
+
+6 & \texttt{2.3531} & \texttt{3.819} & \texttt{10.698} & \texttt{-2.4291} & \texttt{-7.1041} & \texttt{-22.259} & \texttt{-0.38918} & \texttt{-1.123} & \texttt{-0.0042541} & \texttt{-132.38} & \texttt{1.5777e-25} \\
+
+7 & \texttt{-2.49} & \texttt{36.305} & \texttt{79.485} & \texttt{0.21607} & \texttt{-56.935} & \texttt{-4.107} & \texttt{-152.66} & \texttt{-24.725} & \texttt{-0.0071659} & \texttt{20.472} & \texttt{0} \\
+
+8 & \texttt{-0.36073} & \texttt{40.761} & \texttt{91.966} & \texttt{-2.6179} & \texttt{-65.15} & \texttt{29.698} & \texttt{-96.645} & \texttt{-82.506} & \texttt{0.051818} & \texttt{-108.84} & \texttt{0} \\
+
+9 & \texttt{-15.246} & \texttt{-16.106} & \texttt{13.687} & \texttt{20.211} & \texttt{0.49211} & \texttt{44.458} & \texttt{44.119} & \texttt{-43.864} & \texttt{-100.63} & \texttt{-3.6256} & \texttt{1.5777e-25} \\
+
+10 & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{-5270} & \texttt{10947} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{5777.2} & \texttt{-12202} & \texttt{0} \\
+
+11 & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{-31.273} \\
+
+\bottomrule\end{tabular}\par\endgroup
+
+{\scriptsize Eigenvalues: \texttt{-0.0021743099}; \texttt{-0.0033552801}; \texttt{-0.010624601}; \texttt{-0.033333333}; \texttt{-0.034309271}; \texttt{-0.060398218}; \texttt{-0.10759125}; \texttt{-0.13377908}; \texttt{-0.2}; \texttt{-8.5679955}; \texttt{-15.281905}.\par}
+
+\end{landscape}
+
+\sourcefile{evidence/task44/output/equilibria.json}
+
+\section{Complete expression sensitivities and modal accounting}
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{lrrrrrrr}
+\caption{Implicit expression derivatives at all four verified points. Flux derivatives are per unit expression.}\\
+\toprule
+$e_4$ & $Q_e$ & $N_e$ & $(J_4)_e$ & $P_e$ & $H_e$ & $(pH)_e$ & $C_N$ \\
+\midrule\endfirsthead
+\toprule
+$e_4$ & $Q_e$ & $N_e$ & $(J_4)_e$ & $P_e$ & $H_e$ & $(pH)_e$ & $C_N$ \\
+\midrule\endhead
+\bottomrule\endfoot
+\texttt{1} & \texttt{1.28527e-06} & \texttt{-0.0117368} & \texttt{0.0252674} & \texttt{0.000673673} & \texttt{0.00309526} & \texttt{-0.0724609} & \texttt{0.929011} \\
+\texttt{0.5} & \texttt{9.59704e-06} & \texttt{-0.0283978} & \texttt{0.0620609} & \texttt{0.00147416} & \texttt{0.00529833} & \texttt{-0.175657} & \texttt{0.915159} \\
+\texttt{0.05} & \texttt{4.41072e-05} & \texttt{-0.071996} & \texttt{0.1603} & \texttt{0.00306229} & \texttt{0.00560557} & \texttt{-0.507229} & \texttt{0.898266} \\
+\texttt{0} & \texttt{5.06256e-05} & \texttt{-0.0795571} & \texttt{0.177417} & \texttt{0.0032697} & \texttt{0.00516036} & \texttt{-0.580009} & \texttt{0.896838} \\
+\end{longtable}
+\endgroup
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{rrlrrr}
+\caption{Independent nearby root checks for each expression derivative and difference step.}\\
+\toprule
+$e_4$ & Step & Rule & Max component error & State error & Root residual \\
+\midrule\endfirsthead
+\toprule
+$e_4$ & Step & Rule & Max component error & State error & Root residual \\
+\midrule\endhead
+\bottomrule\endfoot
+\texttt{1} & \texttt{0.0001} & centred & \texttt{1.0247e-07} & \texttt{6.01819e-09} & \texttt{2.2979e-12} \\
+\texttt{1} & \texttt{5e-05} & centred & \texttt{1.03313e-07} & \texttt{1.67435e-09} & \texttt{5.68295e-12} \\
+\texttt{0.5} & \texttt{0.0001} & centred & \texttt{3.22151e-08} & \texttt{1.22956e-08} & \texttt{3.70048e-12} \\
+\texttt{0.5} & \texttt{5e-05} & centred & \texttt{1.68938e-08} & \texttt{3.93657e-09} & \texttt{2.95344e-12} \\
+\texttt{0.05} & \texttt{0.0001} & centred & \texttt{7.33576e-08} & \texttt{3.24719e-08} & \texttt{2.94958e-12} \\
+\texttt{0.05} & \texttt{5e-05} & centred & \texttt{6.19127e-08} & \texttt{8.34278e-09} & \texttt{1.52112e-12} \\
+\texttt{0} & \texttt{0.0001} & second\_order\_forward & \texttt{3.95616e-08} & \texttt{8.06978e-08} & \texttt{1.43811e-12} \\
+\texttt{0} & \texttt{5e-05} & second\_order\_forward & \texttt{6.2377e-08} & \texttt{2.02032e-08} & \texttt{4.95907e-12} \\
+\end{longtable}
+\endgroup
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{lrrrrrr}
+\caption{All modal projections at expression 1.0. Projections use the declared scaled coordinates.}\\
+\toprule
+Mode & $\lambda$ (1/s) & $\tau$ (s) & Input & Output & Residue & Stationary contribution \\
+\midrule\endfirsthead
+\toprule
+Mode & $\lambda$ (1/s) & $\tau$ (s) & Input & Output & Residue & Stationary contribution \\
+\midrule\endhead
+\bottomrule\endfoot
+1 & \texttt{-0.00289169} & \texttt{345.819} & \texttt{-0.000148937} & \texttt{0.00108248} & \texttt{-1.61222e-07} & \texttt{-5.57536e-05} \\
+2 & \texttt{-0.00447476} & \texttt{223.476} & \texttt{5.83148e-05} & \texttt{0.00122877} & \texttt{7.16556e-08} & \texttt{1.60133e-05} \\
+3 & \texttt{-0.0326698} & \texttt{30.6093} & \texttt{0.000702471} & \texttt{-0.00018535} & \texttt{-1.30203e-07} & \texttt{-3.98541e-06} \\
+4 & \texttt{-0.0333333} & \texttt{30} & \texttt{0} & \texttt{5.97958e-05} & \texttt{0} & \texttt{0} \\
+5 & \texttt{-0.0413017} & \texttt{24.2121} & \texttt{0.00113294} & \texttt{0.000393944} & \texttt{4.46316e-07} & \texttt{1.08062e-05} \\
+6 & \texttt{-0.0617906} & \texttt{16.1837} & \texttt{0.000114472} & \texttt{-0.00134877} & \texttt{-1.54397e-07} & \texttt{-2.49871e-06} \\
+7 & \texttt{-0.108063} & \texttt{9.25389} & \texttt{-0.000294285} & \texttt{0.00851219} & \texttt{-2.50501e-06} & \texttt{-2.31811e-05} \\
+8 & \texttt{-0.136466} & \texttt{7.32784} & \texttt{-0.00188052} & \texttt{-0.0110079} & \texttt{2.07006e-05} & \texttt{0.000151691} \\
+9 & \texttt{-0.2} & \texttt{5} & \texttt{-0.00145479} & \texttt{0.0127143} & \texttt{-1.84965e-05} & \texttt{-9.24826e-05} \\
+10 & \texttt{-9.10146} & \texttt{0.109872} & \texttt{0.000695322} & \texttt{0.020258} & \texttt{1.40858e-05} & \texttt{1.54764e-06} \\
+11 & \texttt{-15.905} & \texttt{0.0628732} & \texttt{0.00067473} & \texttt{-0.0205372} & \texttt{-1.3857e-05} & \texttt{-8.71236e-07} \\
+\end{longtable}
+\endgroup
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{lrrrrrr}
+\caption{All modal projections at expression 0.0. Projections use the declared scaled coordinates.}\\
+\toprule
+Mode & $\lambda$ (1/s) & $\tau$ (s) & Input & Output & Residue & Stationary contribution \\
+\midrule\endfirsthead
+\toprule
+Mode & $\lambda$ (1/s) & $\tau$ (s) & Input & Output & Residue & Stationary contribution \\
+\midrule\endhead
+\bottomrule\endfoot
+1 & \texttt{-0.00217431} & \texttt{459.916} & \texttt{0.00112772} & \texttt{-0.000690139} & \texttt{-7.78285e-07} & \texttt{-0.000357946} \\
+2 & \texttt{-0.00335528} & \texttt{298.038} & \texttt{0.000156605} & \texttt{0.000943594} & \texttt{1.47771e-07} & \texttt{4.40415e-05} \\
+3 & \texttt{-0.0106246} & \texttt{94.1212} & \texttt{-0.00217902} & \texttt{-0.0014848} & \texttt{3.23539e-06} & \texttt{0.000304519} \\
+4 & \texttt{-0.0333333} & \texttt{30} & \texttt{0} & \texttt{4.33681e-14} & \texttt{0} & \texttt{0} \\
+5 & \texttt{-0.0343093} & \texttt{29.1466} & \texttt{0.000667533} & \texttt{0.000348579} & \texttt{2.32688e-07} & \texttt{6.78207e-06} \\
+6 & \texttt{-0.0603982} & \texttt{16.5568} & \texttt{-9.9719e-05} & \texttt{0.00128035} & \texttt{-1.27676e-07} & \texttt{-2.1139e-06} \\
+7 & \texttt{-0.107591} & \texttt{9.29444} & \texttt{0.000198567} & \texttt{-0.00855199} & \texttt{-1.69814e-06} & \texttt{-1.57833e-05} \\
+8 & \texttt{-0.133779} & \texttt{7.47501} & \texttt{0.00284998} & \texttt{0.0109128} & \texttt{3.11014e-05} & \texttt{0.000232483} \\
+9 & \texttt{-0.2} & \texttt{5} & \texttt{-0.00255957} & \texttt{0.0127325} & \texttt{-3.25896e-05} & \texttt{-0.000162948} \\
+10 & \texttt{-8.568} & \texttt{0.116713} & \texttt{0.00153443} & \texttt{0.019815} & \texttt{3.04048e-05} & \texttt{3.54864e-06} \\
+11 & \texttt{-15.2819} & \texttt{0.0654369} & \texttt{0.0014486} & \texttt{-0.0206601} & \texttt{-2.99283e-05} & \texttt{-1.95841e-06} \\
+\end{longtable}
+\endgroup
+
+
+\begingroup\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{rlr}
+\caption{Recorded coordinate chain rule attribution. This is not a unique causal allocation to individual transporters.}\\
+\toprule
+$e_4$ & Coordinate & $dQ/de_4$ contribution \\
+\midrule\endfirsthead
+\toprule
+$e_4$ & Coordinate & $dQ/de_4$ contribution \\
+\midrule\endhead
+\bottomrule\endfoot
+\texttt{1} & \nolinkurl{na_i_fmol} & \texttt{-0} \\
+\texttt{1} & \nolinkurl{k_i_fmol} & \texttt{-0} \\
+\texttt{1} & \nolinkurl{cl_i_fmol} & \texttt{-0} \\
+\texttt{1} & \nolinkurl{tic_i_fmol} & \texttt{-0} \\
+\texttt{1} & \nolinkurl{volume_i_pL} & \texttt{-0} \\
+\texttt{1} & \nolinkurl{na_l_fmol} & \texttt{0} \\
+\texttt{1} & \nolinkurl{k_l_fmol} & \texttt{-0} \\
+\texttt{1} & \nolinkurl{cl_l_fmol} & \texttt{0} \\
+\texttt{1} & \nolinkurl{tic_l_fmol} & \texttt{-0} \\
+\texttt{1} & \nolinkurl{volume_l_pL} & \texttt{1.28527e-06} \\
+\texttt{1} & \nolinkurl{ae4_effective_activation_fraction} & \texttt{-0} \\
+\texttt{0.5} & \nolinkurl{na_i_fmol} & \texttt{-0} \\
+\texttt{0.5} & \nolinkurl{k_i_fmol} & \texttt{-0} \\
+\texttt{0.5} & \nolinkurl{cl_i_fmol} & \texttt{-0} \\
+\texttt{0.5} & \nolinkurl{tic_i_fmol} & \texttt{-0} \\
+\texttt{0.5} & \nolinkurl{volume_i_pL} & \texttt{-0} \\
+\texttt{0.5} & \nolinkurl{na_l_fmol} & \texttt{0} \\
+\texttt{0.5} & \nolinkurl{k_l_fmol} & \texttt{-0} \\
+\texttt{0.5} & \nolinkurl{cl_l_fmol} & \texttt{0} \\
+\texttt{0.5} & \nolinkurl{tic_l_fmol} & \texttt{-0} \\
+\texttt{0.5} & \nolinkurl{volume_l_pL} & \texttt{9.59704e-06} \\
+\texttt{0.5} & \nolinkurl{ae4_effective_activation_fraction} & \texttt{0} \\
+\texttt{0.05} & \nolinkurl{na_i_fmol} & \texttt{-0} \\
+\texttt{0.05} & \nolinkurl{k_i_fmol} & \texttt{-0} \\
+\texttt{0.05} & \nolinkurl{cl_i_fmol} & \texttt{-0} \\
+\texttt{0.05} & \nolinkurl{tic_i_fmol} & \texttt{-0} \\
+\texttt{0.05} & \nolinkurl{volume_i_pL} & \texttt{-0} \\
+\texttt{0.05} & \nolinkurl{na_l_fmol} & \texttt{0} \\
+\texttt{0.05} & \nolinkurl{k_l_fmol} & \texttt{-0} \\
+\texttt{0.05} & \nolinkurl{cl_l_fmol} & \texttt{0} \\
+\texttt{0.05} & \nolinkurl{tic_l_fmol} & \texttt{-0} \\
+\texttt{0.05} & \nolinkurl{volume_l_pL} & \texttt{4.41072e-05} \\
+\texttt{0.05} & \nolinkurl{ae4_effective_activation_fraction} & \texttt{-0} \\
+\end{longtable}
+\endgroup
+
+
+\sourcefile{evidence/task44/output/equilibrium_review.json}
+
+\sourcefile{evidence/task44/output/coordinate_attribution.csv}
+
+\section{All extended parameter sensitivity outputs}
+For each of the sixteen parameters, each recorded metric is listed as an unnormalised derivative with respect to $\log p$, a log elasticity, and the recorded difference step disagreement. For pH the unnormalised derivative is the physically useful quantity; the source also stores a formal log elasticity of the numerical pH value. It is retained here as metadata, not reinterpreted as a hydrogen concentration elasticity. Near zero metrics can make a log elasticity undefined; n/a preserves that fact.
+\subsection*{NBC capacity}
+Active setting: \nolinkurl{nbc.capacity_fmol_s} = \texttt{0.115709132}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for NBC capacity.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{3.15588e-05} & \texttt{0.0199226} & \texttt{1.93608e-09} \\
+\nolinkurl{WT_pH} & \texttt{0.064832} & \texttt{0.00919553} & \texttt{4.95274e-10} \\
+\nolinkurl{null_stationary_deficit} & \texttt{0.0197256} & \texttt{2.08477} & \texttt{2.07061e-07} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{0.0517877} & \texttt{0.0542385} & \texttt{5.62998e-09} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{-0.0517877} & \texttt{-1.14613} & \texttt{1.18945e-07} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{0.0906026} & \texttt{0.603435} & \texttt{5.78306e-08} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{-0.349759} & \texttt{-0.603435} & \texttt{6.07007e-08} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{0.0453013} & \texttt{1.43543} & \texttt{1.37565e-07} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{-0.0598054} & \texttt{-0.0643754} & \texttt{3.71371e-09} \\
+\nolinkurl{WT_slowest_decay} & \texttt{37.0061} & \texttt{0.10701} & \texttt{7.16627e-08} \\
+\nolinkurl{null_slowest_decay} & \texttt{-61.7063} & \texttt{-0.134169} & \texttt{7.42118e-08} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{-0.149281}; deficit percentage points per log parameter: \texttt{1.97256}; maximum IFT relative error: \texttt{1.94488e-06}.\par
+
+\subsection*{AE4 carrier}
+Active setting: \nolinkurl{ae4.carrier_amount_fmol} = \texttt{0.1501264265}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for AE4 carrier.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{1.28527e-06} & \texttt{0.000811371} & \texttt{2.84796e-10} \\
+\nolinkurl{WT_pH} & \texttt{-0.0724609} & \texttt{-0.0102776} & \texttt{3.95816e-10} \\
+\nolinkurl{null_stationary_deficit} & \texttt{0.000803694} & \texttt{0.0849416} & \texttt{3.00151e-08} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{-0.011048} & \texttt{-0.0115708} & \texttt{9.00734e-10} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{0.011048} & \texttt{0.244507} & \texttt{1.89537e-08} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{0.0505347} & \texttt{0.336573} & \texttt{1.46268e-08} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{-0.195082} & \texttt{-0.336573} & \texttt{6.14006e-08} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{0.0252674} & \texttt{0.800627} & \texttt{3.47935e-08} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{0.021727} & \texttt{0.0233873} & \texttt{6.44511e-07} \\
+\nolinkurl{WT_slowest_decay} & \texttt{-22.1213} & \texttt{-0.063968} & \texttt{6.58077e-08} \\
+\nolinkurl{null_slowest_decay} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{0.166847}; deficit percentage points per log parameter: \texttt{0.0803694}; maximum IFT relative error: \texttt{4.4693e-08}.\par
+
+\subsection*{NKCC scale}
+Active setting: \nolinkurl{nkcc1.alpha_eff_fmol_s} = \texttt{0.01733474689}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for NKCC scale.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{8.76953e-05} & \texttt{0.0553609} & \texttt{2.20164e-09} \\
+\nolinkurl{WT_pH} & \texttt{-0.00155802} & \texttt{-0.000220984} & \texttt{4.1509e-11} \\
+\nolinkurl{null_stationary_deficit} & \texttt{-0.0141328} & \texttt{-1.49368} & \texttt{6.60673e-08} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{-0.00173929} & \texttt{-0.0018216} & \texttt{5.73242e-11} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{0.00173929} & \texttt{0.0384928} & \texttt{1.03305e-09} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{-0.00761267} & \texttt{-0.0507022} & \texttt{3.61768e-10} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{0.0293876} & \texttt{0.0507022} & \texttt{6.45221e-10} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{-0.00380634} & \texttt{-0.120608} & \texttt{8.6056e-10} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{0.0594955} & \texttt{0.0640418} & \texttt{2.41813e-07} \\
+\nolinkurl{WT_slowest_decay} & \texttt{65.7564} & \texttt{0.190147} & \texttt{1.11422e-07} \\
+\nolinkurl{null_slowest_decay} & \texttt{67.5683} & \texttt{0.146915} & \texttt{1.31417e-07} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{0.00358748}; deficit percentage points per log parameter: \texttt{-1.41328}; maximum IFT relative error: \texttt{7.24353e-08}.\par
+
+\subsection*{NHE carrier}
+Active setting: \nolinkurl{parameters.homeostasis.nhe1_cha_carrier_amount_fmol} = \texttt{2.339370006e-05}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for NHE carrier.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{-5.16575e-06} & \texttt{-0.00326106} & \texttt{9.55481e-11} \\
+\nolinkurl{WT_pH} & \texttt{0.0708381} & \texttt{0.0100474} & \texttt{1.43927e-10} \\
+\nolinkurl{null_stationary_deficit} & \texttt{-0.0021694} & \texttt{-0.229282} & \texttt{1.42273e-08} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{-0.0186507} & \texttt{-0.0195333} & \texttt{5.03534e-10} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{0.0186507} & \texttt{0.412764} & \texttt{1.30975e-08} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{0.00171704} & \texttt{0.0114359} & \texttt{2.82002e-10} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0.0820259} & \texttt{1} & \texttt{1.25e-07} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0.041013} & \texttt{0.942546} & \texttt{1.17818e-07} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{0.539683} & \texttt{0.93111} & \texttt{1.13769e-07} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{-0.0401544} & \texttt{-1.27234} & \texttt{1.63114e-07} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{0.00713379} & \texttt{0.00767891} & \texttt{2.5761e-07} \\
+\nolinkurl{WT_slowest_decay} & \texttt{-5.09309} & \texttt{-0.0147276} & \texttt{1.49055e-07} \\
+\nolinkurl{null_slowest_decay} & \texttt{-12.6158} & \texttt{-0.0274307} & \texttt{5.74744e-08} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{-0.163111}; deficit percentage points per log parameter: \texttt{-0.21694}; maximum IFT relative error: \texttt{6.30036e-08}.\par
+
+\subsection*{pump capacity}
+Active setting: \nolinkurl{parameters.membranes.nak_capacity_fmol_s} = \texttt{0.08}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for pump capacity.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{0.000833109} & \texttt{0.52593} & \texttt{1.55267e-07} \\
+\nolinkurl{WT_pH} & \texttt{0.120613} & \texttt{0.0171072} & \texttt{5.97384e-09} \\
+\nolinkurl{null_stationary_deficit} & \texttt{0.0438432} & \texttt{4.63374} & \texttt{3.22697e-06} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{0.0149391} & \texttt{0.0156461} & \texttt{4.95122e-09} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{-0.0149391} & \texttt{-0.330623} & \texttt{1.04462e-07} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{0.0299113} & \texttt{0.199216} & \texttt{1.87764e-07} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{-0.115468} & \texttt{-0.199217} & \texttt{2.65905e-07} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{0.0149557} & \texttt{0.473888} & \texttt{4.46646e-07} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{-0.253957} & \texttt{-0.273362} & \texttt{2.6333e-07} \\
+\nolinkurl{WT_slowest_decay} & \texttt{-526.404} & \texttt{-1.5222} & \texttt{1.85117e-06} \\
+\nolinkurl{null_slowest_decay} & \texttt{-339.522} & \texttt{-0.738226} & \texttt{2.16652e-06} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{-0.277721}; deficit percentage points per log parameter: \texttt{4.38432}; maximum IFT relative error: \texttt{5.22959e-07}.\par
+
+\subsection*{CaCC conductance}
+Active setting: \nolinkurl{parameters.membranes.g_cl_apical_S} = \texttt{3.14e-08}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for CaCC conductance.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{5.14341e-05} & \texttt{0.0324697} & \texttt{3.8224e-09} \\
+\nolinkurl{WT_pH} & \texttt{-0.0055239} & \texttt{-0.000783489} & \texttt{6.05944e-11} \\
+\nolinkurl{null_stationary_deficit} & \texttt{-0.00209253} & \texttt{-0.221157} & \texttt{1.005e-08} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{-0.000296827} & \texttt{-0.000310874} & \texttt{8.5463e-12} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{0.000296827} & \texttt{0.00656919} & \texttt{6.38455e-10} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{-0.000789119} & \texttt{-0.00525571} & \texttt{1.85413e-10} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{0.00304628} & \texttt{0.00525571} & \texttt{1.7038e-10} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{-0.000394559} & \texttt{-0.0125021} & \texttt{4.41053e-10} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{0.0102626} & \texttt{0.0110468} & \texttt{5.26855e-07} \\
+\nolinkurl{WT_slowest_decay} & \texttt{2.86118} & \texttt{0.00827365} & \texttt{3.13325e-08} \\
+\nolinkurl{null_slowest_decay} & \texttt{-5.37412} & \texttt{-0.011685} & \texttt{2.37091e-08} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{0.0127192}; deficit percentage points per log parameter: \texttt{-0.209253}; maximum IFT relative error: \texttt{2.18379e-07}.\par
+
+\subsection*{buffer pool}
+Active setting: \nolinkurl{parameters.geometry.cell_buffer_total_fmol} = \texttt{30}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for buffer pool.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{-2.4947e-06} & \texttt{-0.00157487} & \texttt{1.04035e-11} \\
+\nolinkurl{WT_pH} & \texttt{0.00139566} & \texttt{0.000197955} & \texttt{1.13378e-12} \\
+\nolinkurl{null_stationary_deficit} & \texttt{-0.00195204} & \texttt{-0.206309} & \texttt{4.10684e-10} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{0.000302635} & \texttt{0.000316956} & \texttt{4.18594e-12} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{-0.000302635} & \texttt{-0.00669771} & \texttt{2.49547e-11} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{-0.000118028} & \texttt{-0.000786094} & \texttt{8.31864e-12} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{0.00045563} & \texttt{0.000786094} & \texttt{8.52378e-12} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{-5.9014e-05} & \texttt{-0.00186993} & \texttt{1.9788e-11} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{0.00882912} & \texttt{0.00950379} & \texttt{1.07406e-07} \\
+\nolinkurl{WT_slowest_decay} & \texttt{106.704} & \texttt{0.308555} & \texttt{2.03105e-07} \\
+\nolinkurl{null_slowest_decay} & \texttt{184.733} & \texttt{0.401666} & \texttt{2.00556e-07} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{-0.00321362}; deficit percentage points per log parameter: \texttt{-0.195204}; maximum IFT relative error: \texttt{6.10481e-06}.\par
+
+\subsection*{water apical}
+Active setting: \nolinkurl{parameters.water.apical_hydraulic_pL_s_mOsm} = \texttt{0.00432}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for water apical.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{3.37326e-06} & \texttt{0.00212949} & \texttt{1.7686e-10} \\
+\nolinkurl{WT_pH} & \texttt{-8.31675e-05} & \texttt{-1.17962e-05} & \texttt{5.66891e-13} \\
+\nolinkurl{null_stationary_deficit} & \texttt{-3.36644e-05} & \texttt{-0.00355795} & \texttt{3.81349e-10} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{-1.51011e-06} & \texttt{-1.58158e-06} & \texttt{1.02904e-11} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{1.51012e-06} & \texttt{3.3421e-05} & \texttt{2.03476e-11} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{-1.61264e-05} & \texttt{-0.000107406} & \texttt{1.75616e-12} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{6.22536e-05} & \texttt{0.000107406} & \texttt{1.72391e-12} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{-8.0632e-06} & \texttt{-0.000255492} & \texttt{4.17747e-12} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{0.000207998} & \texttt{0.000223892} & \texttt{3.81471e-07} \\
+\nolinkurl{WT_slowest_decay} & \texttt{-0.0129329} & \texttt{-3.73979e-05} & \texttt{5.44652e-09} \\
+\nolinkurl{null_slowest_decay} & \texttt{-0.16216} & \texttt{-0.000352587} & \texttt{1.68272e-08} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{0.0001915}; deficit percentage points per log parameter: \texttt{-0.00336644}; maximum IFT relative error: \texttt{1.30553e-07}.\par
+
+\subsection*{AE4 tau}
+Active setting: \nolinkurl{regulation.ae4_regulatory_model.tau_activation_s} = \texttt{30}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for AE4 tau.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{WT_pH} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{null_stationary_deficit} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{WT_slowest_decay} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{null_slowest_decay} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{-0}; deficit percentage points per log parameter: \texttt{0}; maximum IFT relative error: \texttt{0}.\par
+
+\subsection*{AE4 gain}
+Active setting: \nolinkurl{regulation.ae4_regulatory_model.gain.fully_activated_increment} = \texttt{0.25}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for AE4 gain.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{2.57053e-07} & \texttt{0.000162274} & \texttt{2.62141e-11} \\
+\nolinkurl{WT_pH} & \texttt{-0.0144922} & \texttt{-0.00205552} & \texttt{5.82638e-11} \\
+\nolinkurl{null_stationary_deficit} & \texttt{0.000160739} & \texttt{0.0169883} & \texttt{2.75158e-09} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{-0.0022096} & \texttt{-0.00231416} & \texttt{1.01974e-10} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{0.0022096} & \texttt{0.0489014} & \texttt{2.17919e-09} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{0.0101069} & \texttt{0.0673146} & \texttt{1.6665e-09} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{-0.0390164} & \texttt{-0.0673146} & \texttt{4.44003e-10} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{0.00505347} & \texttt{0.160125} & \texttt{3.9642e-09} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{0.00434561} & \texttt{0.00467767} & \texttt{1.9282e-07} \\
+\nolinkurl{WT_slowest_decay} & \texttt{-4.42423} & \texttt{-0.0127935} & \texttt{8.89569e-08} \\
+\nolinkurl{null_slowest_decay} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{0.0333695}; deficit percentage points per log parameter: \texttt{0.0160739}; maximum IFT relative error: \texttt{4.64675e-08}.\par
+
+\subsection*{apical pump fraction}
+Active setting: \nolinkurl{parameters.membranes.apical_pump_fraction} = \texttt{0.075075}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for apical pump fraction.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{7.85135e-05} & \texttt{0.0495645} & \texttt{6.45148e-09} \\
+\nolinkurl{WT_pH} & \texttt{-0.00357128} & \texttt{-0.000506537} & \texttt{7.77271e-11} \\
+\nolinkurl{null_stationary_deficit} & \texttt{-0.000566061} & \texttt{-0.0598263} & \texttt{1.4679e-08} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{-0.000208311} & \texttt{-0.000218169} & \texttt{4.79058e-11} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{0.000208311} & \texttt{0.00461021} & \texttt{5.66893e-10} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{-0.000673156} & \texttt{-0.00448338} & \texttt{7.88607e-10} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{0.00259862} & \texttt{0.00448338} & \texttt{8.05832e-10} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{-0.000336578} & \texttt{-0.0106649} & \texttt{1.87591e-09} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{0.00292689} & \texttt{0.00315054} & \texttt{7.22836e-07} \\
+\nolinkurl{WT_slowest_decay} & \texttt{15.6203} & \texttt{0.045169} & \texttt{1.76137e-08} \\
+\nolinkurl{null_slowest_decay} & \texttt{9.32054} & \texttt{0.0202657} & \texttt{1.83547e-08} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{0.00822317}; deficit percentage points per log parameter: \texttt{-0.056606}; maximum IFT relative error: \texttt{2.53979e-07}.\par
+
+\subsection*{NHE stimulated multiplier}
+Active setting: \nolinkurl{nbc.nhe1_stimulated_multiplier} = \texttt{2.3}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for NHE stimulated multiplier.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{-5.16575e-06} & \texttt{-0.00326106} & \texttt{9.28788e-11} \\
+\nolinkurl{WT_pH} & \texttt{0.0708381} & \texttt{0.0100474} & \texttt{1.44179e-10} \\
+\nolinkurl{null_stationary_deficit} & \texttt{-0.0021694} & \texttt{-0.229282} & \texttt{1.39457e-08} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{-0.0186507} & \texttt{-0.0195333} & \texttt{5.16906e-10} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{0.0186507} & \texttt{0.412764} & \texttt{1.30769e-08} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{0.00171704} & \texttt{0.0114359} & \texttt{2.91707e-10} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0.0820259} & \texttt{1} & \texttt{1.25e-07} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0.041013} & \texttt{0.942546} & \texttt{1.17818e-07} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{0.539683} & \texttt{0.93111} & \texttt{1.13778e-07} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{-0.0401544} & \texttt{-1.27234} & \texttt{1.63137e-07} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{0.0071334} & \texttt{0.00767849} & \texttt{1.63473e-07} \\
+\nolinkurl{WT_slowest_decay} & \texttt{-5.09309} & \texttt{-0.0147276} & \texttt{1.50992e-07} \\
+\nolinkurl{null_slowest_decay} & \texttt{-12.6158} & \texttt{-0.0274307} & \texttt{5.84941e-08} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{-0.163111}; deficit percentage points per log parameter: \texttt{-0.21694}; maximum IFT relative error: \texttt{6.30036e-08}.\par
+
+\subsection*{CO2 basolateral permeability}
+Active setting: \nolinkurl{parameters.homeostasis.co2_basolateral_permeability_fmol_s_mM} = \texttt{0.02}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for CO2 basolateral permeability.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{-7.04598e-06} & \texttt{-0.00444803} & \texttt{1.98899e-10} \\
+\nolinkurl{WT_pH} & \texttt{-0.0831861} & \texttt{-0.0117988} & \texttt{9.07026e-11} \\
+\nolinkurl{null_stationary_deficit} & \texttt{-0.00410429} & \texttt{-0.433779} & \texttt{1.97128e-08} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{-0.0232637} & \texttt{-0.0243646} & \texttt{1.37398e-09} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{0.0232637} & \texttt{0.514857} & \texttt{2.31545e-08} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{0.00200029} & \texttt{0.0133224} & \texttt{7.64668e-10} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{-0.00772182} & \texttt{-0.0133224} & \texttt{7.90221e-10} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{0.00100014} & \texttt{0.0316907} & \texttt{1.81896e-09} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{0.047022} & \texttt{0.0506151} & \texttt{1.90077e-07} \\
+\nolinkurl{WT_slowest_decay} & \texttt{-23.5774} & \texttt{-0.0681786} & \texttt{1.41451e-07} \\
+\nolinkurl{null_slowest_decay} & \texttt{-69.9883} & \texttt{-0.152176} & \texttt{1.7382e-07} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{0.191543}; deficit percentage points per log parameter: \texttt{-0.410429}; maximum IFT relative error: \texttt{6.49468e-08}.\par
+
+\subsection*{AE2 capacity}
+Active setting: \nolinkurl{parameters.homeostasis.ae2_capacity_fmol_s} = \texttt{0.005}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for AE2 capacity.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{-1.16185e-07} & \texttt{-7.33458e-05} & \texttt{7.80264e-12} \\
+\nolinkurl{WT_pH} & \texttt{0.000362969} & \texttt{5.14821e-05} & \texttt{6.2358e-12} \\
+\nolinkurl{null_stationary_deficit} & \texttt{-0.000289197} & \texttt{-0.030565} & \texttt{3.58468e-09} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{-0.00469991} & \texttt{-0.00492232} & \texttt{5.78649e-10} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{0.00469991} & \texttt{0.104015} & \texttt{1.22851e-08} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{0.000505812} & \texttt{0.00336883} & \texttt{4.03731e-10} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0.0025} & \texttt{0.0574542} & \texttt{7.18169e-09} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{0.0313486} & \texttt{0.0540853} & \texttt{6.64251e-09} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{-0.00224709} & \texttt{-0.0712018} & \texttt{8.94145e-09} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{-0.0314286} & \texttt{-0.0338301} & \texttt{3.54413e-09} \\
+\nolinkurl{WT_slowest_decay} & \texttt{0.0259648} & \texttt{7.50822e-05} & \texttt{8.17993e-08} \\
+\nolinkurl{null_slowest_decay} & \texttt{-1.70281} & \texttt{-0.00370243} & \texttt{7.08077e-09} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{-0.000835766}; deficit percentage points per log parameter: \texttt{-0.0289197}; maximum IFT relative error: \texttt{1.65073e-07}.\par
+
+\subsection*{NBC log width}
+Active setting: \nolinkurl{nbc.log_width} = \texttt{2}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for NBC log width.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{-2.2734e-05} & \texttt{-0.0143517} & \texttt{9.58356e-10} \\
+\nolinkurl{WT_pH} & \texttt{-0.0467032} & \texttt{-0.0066242} & \texttt{3.9695e-10} \\
+\nolinkurl{null_stationary_deficit} & \texttt{-0.0142074} & \texttt{-1.50156} & \texttt{9.9409e-08} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{-0.0373064} & \texttt{-0.0390719} & \texttt{4.01519e-09} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{0.0373064} & \texttt{0.825641} & \texttt{8.49456e-08} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{-0.0652676} & \texttt{-0.434697} & \texttt{2.87085e-08} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{0.251956} & \texttt{0.434697} & \texttt{4.32029e-08} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{-0.0326338} & \texttt{-1.03404} & \texttt{6.82907e-08} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{0.0165089} & \texttt{0.0177704} & \texttt{2.63759e-07} \\
+\nolinkurl{WT_slowest_decay} & \texttt{-25.118} & \texttt{-0.0726336} & \texttt{9.34528e-08} \\
+\nolinkurl{null_slowest_decay} & \texttt{61.7062} & \texttt{0.134168} & \texttt{1.74507e-08} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{0.107538}; deficit percentage points per log parameter: \texttt{-1.42074}; maximum IFT relative error: \texttt{3.34413e-06}.\par
+
+\subsection*{NKCC stimulated multiplier}
+Active setting: \nolinkurl{regulation.nkcc1_regulatory_model.fully_activated_multiplier} = \texttt{1.75}. No justified physiological uncertainty interval; local analysis only.
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.44\linewidth}rrr}
+\caption{Complete metric derivatives for NKCC stimulated multiplier.}\\
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endfirsthead
+\toprule
+Metric & $dY/d\log p$ & $d\log Y/d\log p$ & Step disagreement \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{WT_Q} & \texttt{8.76953e-05} & \texttt{0.0553609} & \texttt{2.20164e-09} \\
+\nolinkurl{WT_pH} & \texttt{-0.00155802} & \texttt{-0.000220984} & \texttt{4.27058e-11} \\
+\nolinkurl{null_stationary_deficit} & \texttt{-0.0141328} & \texttt{-1.49368} & \texttt{6.63607e-08} \\
+\nolinkurl{NBC_alkalinity_share} & \texttt{-0.00173929} & \texttt{-0.0018216} & \texttt{3.86618e-11} \\
+\nolinkurl{noNBC_observed_support_share} & \texttt{0.00173929} & \texttt{0.0384928} & \texttt{1.10238e-09} \\
+\nolinkurl{AE4_alkalinity_demand} & \texttt{-0.00761267} & \texttt{-0.0507022} & \texttt{3.48736e-10} \\
+\nolinkurl{NHE_physiological_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_AE4_capacity_upper} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\nolinkurl{noNBC_capacity_to_current_demand} & \texttt{0.0293876} & \texttt{0.0507022} & \texttt{6.58247e-10} \\
+\nolinkurl{noNBC_capacity_gap} & \texttt{-0.00380634} & \texttt{-0.120608} & \texttt{8.29559e-10} \\
+\nolinkurl{chloride_compensation_gain} & \texttt{0.0594962} & \texttt{0.0640426} & \texttt{6.93126e-07} \\
+\nolinkurl{WT_slowest_decay} & \texttt{65.7564} & \texttt{0.190147} & \texttt{1.39192e-09} \\
+\nolinkurl{null_slowest_decay} & \texttt{67.5683} & \texttt{0.146914} & \texttt{6.06859e-08} \\
+\end{longtable}
+\endgroup
+
+Hydrogen concentration elasticity: \texttt{0.00358748}; deficit percentage points per log parameter: \texttt{-1.41328}; maximum IFT relative error: \texttt{7.28046e-08}.\par
+
+
+\sourcefile{evidence/task44/output/sensitivity_extended.csv}
+
+\sourcefile{evidence/task44/output/sensitivity_extended.json}
+
+\section{Complete inverse scan and both crossing sensitivity observables}
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{lrrrrrr}
+\caption{All seventeen ordered scan points in the prescribed inverse family. Deficits are percentages; output is pL.}\\
+\toprule
+$\rho$ & $b$ & $I_A$ & $I_S$ & $100D_A$ & $100D_S$ & Gate pass \\
+\midrule\endfirsthead
+\toprule
+$\rho$ & $b$ & $I_A$ & $I_S$ & $100D_A$ & $100D_S$ & Gate pass \\
+\midrule\endhead
+\bottomrule\endfoot
+\texttt{0} & \texttt{1} & \texttt{0.95425792} & \texttt{0.95423805} & \texttt{3.857411} & \texttt{3.857486} & Yes \\
+\texttt{0.1} & \texttt{0.9} & \texttt{0.94933258} & \texttt{0.94931332} & \texttt{4.353645} & \texttt{4.353669} & Yes \\
+\texttt{0.2} & \texttt{0.8} & \texttt{0.94325604} & \texttt{0.94323753} & \texttt{4.965863} & \texttt{4.965824} & Yes \\
+\texttt{0.3} & \texttt{0.7} & \texttt{0.9355714} & \texttt{0.9355538} & \texttt{5.7401} & \texttt{5.739984} & Yes \\
+\texttt{0.4} & \texttt{0.6} & \texttt{0.92554309} & \texttt{0.92552664} & \texttt{6.750464} & \texttt{6.750252} & Yes \\
+\texttt{0.5} & \texttt{0.5} & \texttt{0.91190632} & \texttt{0.91189136} & \texttt{8.124384} & \texttt{8.124049} & Yes \\
+\texttt{0.6} & \texttt{0.4} & \texttt{0.89228667} & \texttt{0.89227373} & \texttt{10.10109} & \texttt{10.10059} & Yes \\
+\texttt{0.7} & \texttt{0.3} & \texttt{0.8616407} & \texttt{0.86163063} & \texttt{13.1887} & \texttt{13.18798} & Yes \\
+\texttt{0.75} & \texttt{0.25} & \texttt{0.83880188} & \texttt{0.83879376} & \texttt{15.48974} & \texttt{15.48886} & Yes \\
+\texttt{0.8} & \texttt{0.2} & \texttt{0.80702962} & \texttt{0.80702397} & \texttt{18.69083} & \texttt{18.68977} & Yes \\
+\texttt{0.85} & \texttt{0.15} & \texttt{0.75978276} & \texttt{0.75978035} & \texttt{23.45101} & \texttt{23.44972} & Yes \\
+\texttt{0.875} & \texttt{0.125} & \texttt{0.72630434} & \texttt{0.72630396} & \texttt{26.824} & \texttt{26.82257} & Yes \\
+\texttt{0.89} & \texttt{0.11} & \texttt{0.70132171} & \texttt{0.70132271} & \texttt{29.34103} & \texttt{29.33951} & Yes \\
+\texttt{0.894881272} & \texttt{0.10511873} & \texttt{0.69217371} & \texttt{0.6921752} & \texttt{30.2627} & \texttt{30.26115} & Yes \\
+\texttt{0.9} & \texttt{0.1} & \texttt{0.68195476} & \texttt{0.68195677} & \texttt{31.29227} & \texttt{31.29069} & Yes \\
+\texttt{0.925} & \texttt{0.075} & \texttt{0.62025661} & \texttt{0.62026151} & \texttt{37.50843} & \texttt{37.50668} & Yes \\
+\texttt{0.95} & \texttt{0.05} & \texttt{0.52794581} & \texttt{0.52795425} & \texttt{46.80885} & \texttt{46.80693} & Yes \\
+\end{longtable}
+\endgroup
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.25\linewidth}lrrrr}
+\caption{All sixteen parameter and observable pairs for the inverse threshold.}\\
+\toprule
+Parameter & Observable & $d\rho/d\log p$ & $E_\rho$ & $E_b$ & Validation error \\
+\midrule\endfirsthead
+\toprule
+Parameter & Observable & $d\rho/d\log p$ & $E_\rho$ & $E_b$ & Validation error \\
+\midrule\endhead
+\bottomrule\endfoot
+NBC capacity & adaptive & \texttt{-0.00533011} & \texttt{-0.00595495} & \texttt{0.0507982} & \texttt{1.61947e-06} \\
+NBC capacity & sampled & \texttt{-0.00532963} & \texttt{-0.00595436} & \texttt{0.0507974} & \texttt{1.63388e-06} \\
+AE4 carrier & adaptive & \texttt{-0.00452626} & \texttt{-0.00505686} & \texttt{0.0431371} & \texttt{1.61496e-06} \\
+AE4 carrier & sampled & \texttt{-0.00452603} & \texttt{-0.00505657} & \texttt{0.0431382} & \texttt{1.62948e-06} \\
+NKCC scale & adaptive & \texttt{-0.00196257} & \texttt{-0.00219264} & \texttt{0.0187041} & \texttt{1.6351e-06} \\
+NKCC scale & sampled & \texttt{-0.00196294} & \texttt{-0.00219303} & \texttt{0.018709} & \texttt{1.64811e-06} \\
+NHE carrier & adaptive & \texttt{0.000717662} & \texttt{0.000801792} & \texttt{-0.00683961} & \texttt{1.62144e-06} \\
+NHE carrier & sampled & \texttt{0.00071767} & \texttt{0.000801794} & \texttt{-0.0068402} & \texttt{1.63572e-06} \\
+pump capacity & adaptive & \texttt{-0.0318489} & \texttt{-0.0355825} & \texttt{0.303533} & \texttt{1.61727e-06} \\
+pump capacity & sampled & \texttt{-0.0318503} & \texttt{-0.0355837} & \texttt{0.303569} & \texttt{1.63166e-06} \\
+CaCC conductance & adaptive & \texttt{0.0880143} & \texttt{0.098332} & \texttt{-0.838812} & \texttt{1.70519e-06} \\
+CaCC conductance & sampled & \texttt{0.0880092} & \texttt{0.0983254} & \texttt{-0.838827} & \texttt{1.67871e-06} \\
+buffer pool & adaptive & \texttt{0.00640488} & \texttt{0.00715571} & \texttt{-0.0610411} & \texttt{1.61876e-06} \\
+buffer pool & sampled & \texttt{0.00642313} & \texttt{0.00717603} & \texttt{-0.0612196} & \texttt{1.63561e-06} \\
+water apical & adaptive & \texttt{-0.000266308} & \texttt{-0.000297527} & \texttt{0.00253802} & \texttt{1.62359e-06} \\
+water apical & sampled & \texttt{-0.000263734} & \texttt{-0.000294648} & \texttt{0.00251368} & \texttt{1.63281e-06} \\
+\end{longtable}
+\endgroup
+
+
+\sourcefile{evidence/task44/inverse_detail/ordered_family_scan.json}
+
+\sourcefile{evidence/task44/inverse_detail/threshold_sensitivities.json}
+
+\section{Complete scaling and capacity metadata}
+The saved group file also contains loose kinetic turnover bounds and the sharper pH conditioned bounds. They are distinct calculations, not contradictory versions of one bound. The fields named NHE global bound and AE4 without NBC global bound use the broad printed turnover bound; the physiological fields use the specified pH floor. Flux bound fields retain fmol/s even though they share the dimensionless group file.
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.46\linewidth}p{.46\linewidth}}
+\caption{All saved scale and group scalars.}\\
+\toprule
+Field & Recorded value \\
+\midrule\endfirsthead
+\toprule
+Field & Recorded value \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{AE4_without_NBC_global_bound} & \texttt{0.2849789282} \\
+\nolinkurl{C0_mM} & \texttt{145} \\
+\nolinkurl{J0_fmol_s} & \texttt{0.2246180791} \\
+\nolinkurl{L0_pL} & \texttt{0.1053884074} \\
+\nolinkurl{NBC_lower_for_AE4_demand_0075_fmol_s} & \texttt{0.03148704525} \\
+\nolinkurl{NHE_global_bound} & \texttt{0.5649578564} \\
+\nolinkurl{NKCC_eta2} & \texttt{56.40285308} \\
+\nolinkurl{NKCC_eta4} & \texttt{594.1476089} \\
+\nolinkurl{V0_pL} & \texttt{1.453334393} \\
+\nolinkurl{ae2_capacity_ratio} & \texttt{0.02226000694} \\
+\nolinkurl{epsilon_lumen} & \texttt{0.07251490634} \\
+\nolinkurl{g_cl_apical_S_dimensionless} & \texttt{38.72293949} \\
+\nolinkurl{g_k_total_S_dimensionless} & \texttt{17.26500487} \\
+\nolinkurl{g_para_cl_S_dimensionless} & \texttt{0.3083036584} \\
+\nolinkurl{g_para_hco3_S_dimensionless} & \texttt{0.06166073167} \\
+\nolinkurl{g_para_k_S_dimensionless} & \texttt{0.06166073167} \\
+\nolinkurl{g_para_na_S_dimensionless} & \texttt{0.36996439} \\
+\nolinkurl{gamma_AE4_reference} & \texttt{0.6683630592} \\
+\nolinkurl{n0_fmol} & \texttt{210.7334869} \\
+\nolinkurl{nbc_capacity_ratio} & \texttt{0.5151372162} \\
+\nolinkurl{nkcc_forward_bound} & \texttt{4.636027181} \\
+\nolinkurl{nkcc_reversal_product_mM4} & \texttt{7837380.573} \\
+\nolinkurl{nkcc_reverse_bound} & \texttt{0.4401013419} \\
+\nolinkurl{nl0_fmol} & \texttt{15.28131907} \\
+\nolinkurl{outflow_rate_dimensionless} & \texttt{187.6371553} \\
+\nolinkurl{physiological_AE4_without_NBC_upper_fmol_s} & \texttt{0.04351295475} \\
+\nolinkurl{physiological_NHE_upper_fmol_s} & \texttt{0.08202590949} \\
+\nolinkurl{pump_capacity_ratio} & \texttt{0.3561601111} \\
+\nolinkurl{t0_s} & \texttt{938.1857764} \\
+\nolinkurl{thermal_voltage_V} & \texttt{0.02672665911} \\
+\nolinkurl{theta_ae4} & \texttt{0.03197660928} \\
+\nolinkurl{water_apical} & \texttt{404.3663821} \\
+\nolinkurl{water_basolateral} & \texttt{4820.571453} \\
+\nolinkurl{water_paracellular} & \texttt{24.33686559} \\
+\end{longtable}
+\endgroup
+
+
+\begingroup\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.46\linewidth}p{.46\linewidth}}
+\caption{Additional scale interpretation fields.}\\
+\toprule
+Field & Recorded value \\
+\midrule\endfirsthead
+\toprule
+Field & Recorded value \\
+\midrule\endhead
+\bottomrule\endfoot
+\nolinkurl{AE4_to_NKCC_chloride_initial} & \texttt{0.01098293198} \\
+\nolinkurl{AE4_to_NKCC_cycle_initial} & \texttt{0.02196586395} \\
+\nolinkurl{Ka1_over_C0} & \texttt{5.478125757e-06} \\
+\nolinkurl{Ka2_over_C0} & \texttt{3.45646368e-10} \\
+\nolinkurl{Kw_over_C0_squared} & \texttt{4.756242568e-13} \\
+\nolinkurl{carrier_QSS_time_ratio_initial} & \texttt{0.0001392109809} \\
+\nolinkurl{cell_buffer_K_over_C0} & \texttt{6.896551724e-07} \\
+\nolinkurl{cell_buffer_scaled} & \texttt{0.1423599089} \\
+\nolinkurl{cell_other_impermeant_scaled} & \texttt{0.5917396954} \\
+\nolinkurl{co2_apical} & \texttt{6.455402013} \\
+\nolinkurl{co2_basolateral} & \texttt{12.91080403} \\
+\nolinkurl{electrical_relaxation_group} & \textit{n/a} \\
+\nolinkurl{electrical_relaxation_reason} & No capacitance or voltage differential equation in the frozen model; conductance groups measure currents and do not establish an electrical relaxation time. \\
+\nolinkurl{fixed_cell_charge_scaled} & \texttt{0.3704288452} \\
+\nolinkurl{lumen_buffer_K_over_C0} & \texttt{6.896551724e-07} \\
+\nolinkurl{lumen_buffer_scaled} & \texttt{6.543937704e-11} \\
+\end{longtable}
+\endgroup
+
+
+\sourcefile{evidence/task44/output/dimensionless_groups.json}
+
+\sourcefile{evidence/task44/output/exact_verification.json}

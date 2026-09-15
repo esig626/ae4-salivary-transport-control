@@ -1,0 +1,138 @@
+% Primary source audit, completed 15 September 2026.
+% 2015: PMC4409235 full primary HTML, Experimental Procedures (Statistical
+% Analyses), Results, Table 1 and Figures 1--2; retrieved with urllib after
+% the web reader returned a CAPTCHA. SHA256 of retrieved HTML:
+% 72dd59caaede1c477c643f818926390bf48e2966692b4dbd47b752b4f6fbe98d.
+% 2018: literature/core/2018_AE4_model.pdf, pp. 258--263, 269--271;
+% SHA256 e2782a89b13a6dd27ea1c510d11515bacc33931697baccb678802de47bb13a23.
+% 2021: primary PubMed record 34585968, abstract and Figures 1--2 captions;
+% the complete article was not required or claimed to be reread.
+% 2025: PMC12463136 primary author manuscript, Methods, Results and Discussion;
+% retrieved HTML SHA256:
+% 890c6f4b9834e8f0c8683e181aac5c8e3d49e045d7ada3d728b1b0cc591c2583.
+% No source text or protected manuscript text is copied into this section.
+\section{Comparison with experimental evidence}
+\label{sec:literature-comparison}
+
+\paragraph{The gland phenotype and the comparison threshold.}
+In the 2015 mouse submandibular gland study, stimulation used
+$0.3\,\mu\mathrm{M}$ carbachol and $5\,\mu\mathrm{M}$ isoproterenol.
+AE4 deletion reduced total secretion over ten minutes by
+$35\pm4.7\%$ (mean $\pm$ standard error; six glands per genotype).
+Initial flow over two to three minutes was comparable, with the deficit
+developing later. AE2 deletion had no detectable flow effect against its
+own control strain. AE4 deficient acinar cells had lower resting chloride
+and slower chloride reuptake; initial chloride exit and resting pH were
+not detectably changed. These are distinct measurements, rather than
+interchangeable manifestations of a single steady flux~\cite{Pena2015}.
+The prescribed $30.3\%=35\%-4.7\%$ inverse target is therefore a
+comparison value one reported standard error below the mean. It is not
+a confidence bound, an uncertainty interval for a model parameter, or
+a universal biological minimum.
+
+The Task 40 cumulative null deficit of $3.8575\%$ establishes a small
+effect for the frozen model and protocol. The equal routing identity
+does not establish that small magnitude for every admissible parameter
+choice. Nor does agreement at $600\,\mathrm{s}$ establish the observed
+time course. The present simulations initialise every genotype at the
+inherited WT resting state, whereas the experiment used established
+knockout animals. That difference should remain explicit when comparing
+the initial response or stored intracellular chloride.
+
+\paragraph{Compensation and pH.}
+The 2015 isolated NKCC1 assay used bicarbonate free solution,
+$30\,\mu\mathrm{M}$ ethoxyzolamide and
+$50\,\mu\mathrm{M}$ T16Ainh-A01; bumetanide identified the
+NKCC1 dependent component. Initial chloride uptake showed no detectable
+genotype difference. Stimulation induced NHE dependent alkalinisation
+also showed no genotype difference~\cite{Pena2015}.
+Neither finding measures the complete stimulated network integral.
+Consequently, the approximately $23.16\%$ rise in integrated NKCC1
+loading in the frozen Task 40 null is an unresolved experimental
+tension. It must not be described as observed compensation. The local
+equilibrium compensation derivative, the relative integrated NKCC1
+increase and the fraction of missing AE4 chloride replaced by NKCC1
+are three separate quantities throughout this report. Unchanged assay
+alkalinisation does not establish equal NHE1 net flux at different ionic
+states, and unchanged resting pH does not identify individual alkalinity
+sources. A discriminating experiment would measure chloride loading,
+pH, sodium and volume through the same combined stimulus, with
+pathway specific perturbations and parallel controls.
+
+\paragraph{What the 2018 model actually established.}
+The published model predicted an approximately $24\%$ flow reduction
+after AE4 deletion. Its reduced flow settled within about two minutes;
+the authors explicitly contrasted this with experimental development
+over roughly ten minutes. It predicted little NKCC1 activation following
+either exchanger deletion. It included carbon dioxide hydration, NHE1,
+AE2 and AE4, without another proton or bicarbonate transporter, and
+held lumen volume constant~\cite{VeraSiguenza2018}.
+Those are historical model properties, not experimental determinations
+of the full network. The present retained carbon, alkalinity and volume
+coordinates make the storage terms explicit. Numerical slow modes and
+their projection onto secretion must be examined before attributing a
+temporal discrepancy to absent slow regulation. A slow eigenvalue alone
+does not reproduce delayed genotype divergence.
+
+\paragraph{Regulation and the inverse CaCC family.}
+The 2021 study found that beta adrenergic stimulation increased native
+AE4 activity, that H89 prevented the response, and that constitutively
+active PKA increased AE4 activity in CHO cells. The S173A mutant lost
+PKA activation, whereas S273A retained it. The authors described
+phosphorylation of S173 as a probable mechanism; H89 is a nonselective
+inhibitor~\cite{Pena2021}.
+This supports regulated AE4 activity, but does not measure the model's
+AE4 regulatory gain, relaxation time or an AE4 to CaCC recruitment law.
+The Task 41 inverse crossing quantifies a requirement within one family
+selected using the phenotype. It supplies no independent validation of
+that family. Its direct experimental test is the fraction of stimulated
+apical chloride conductance lost upon AE4 perturbation at matched
+calcium, membrane potential, chloride, pH and volume, resolved from the
+initial response into sustained secretion. This distinguishes altered
+channel recruitment from changed driving force and from intracellular
+chloride storage.
+
+\paragraph{Molecular source classes.}
+Catal\'an and colleagues studied human AE4 expressed in HEK293 cells,
+combining mutagenesis, transport assays and molecular dynamics. The
+T756A--T448I mutant lost transport with extracellular sodium while
+retaining activity with potassium. Their discussion proposes both
+bicarbonate and carbonate cycles, including exchanged sodium and
+potassium, and explicitly calls for further experiments to resolve
+the alternatives~\cite{Catalan2025}.
+Thus the seven frozen classes are specified source hypotheses, not seven
+experimentally established full cycles. Their conserved projections
+and equilibrium tests separate chloride, carbon, alkalinity and charge
+consequences under inherited scalar kinetics. Matching one projected
+signature cannot establish identical molecular mechanisms or identical
+whole cell responses. An unsuccessful root search cannot establish
+nonexistence. A thermodynamically opposed or nonphysiological case must
+retain that qualification. Joint measurements of cation and anion
+flux ratios, reversal conditions and current would constrain the source
+vector; rates measured across those gradients would constrain the
+separate kinetic law.
+
+\paragraph{The most urgent missing measurements.}
+The evidence checked here does not establish the identity, abundance
+or capacity of the assumed inward $1\mathrm{Na}:2\mathrm{HCO}_3$
+pathway. The alkalinity proposition gives a conditional requirement for
+additional support when the admissible NHE1 and AE2 contribution is
+insufficient. It does not prove that a particular NBC isoform is
+universally necessary. The assumed loading allocation used to construct
+NBC capacity is not a measured transporter partition.
+Measurements of sodium and bicarbonate influx with current and pH
+during combined stimulation are therefore a priority, alongside native
+NHE1 and NKCC1 capacity and state dependence. The sensitivity crosswalk
+identifies which effective capacities, conductances and buffer settings
+matter most at the analysed point. Until independent ranges constrain
+them, local elasticities do not establish robustness over biological
+uncertainty.
+
+\paragraph{Scope of source verification.}
+The comparison uses the 2015 primary full text and Figures 1 and 2,
+the repository copy of the 2018 published paper, the 2021 primary
+abstract and figure captions, and the 2025 primary author manuscript
+including its discussion. These four references were checked to that
+extent. No systematic literature survey, new experimental measurement
+or complete source audit of every inherited kinetic coefficient is
+claimed here; parameter provenance is recorded separately in Task 43.

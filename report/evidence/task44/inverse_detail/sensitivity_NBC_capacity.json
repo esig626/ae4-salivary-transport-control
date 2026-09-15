@@ -1,0 +1,70 @@
+[
+  {
+    "crossing_log_elasticity": -0.0059549519812578154,
+    "d_deficit_d_rho": 1.9510582154119716,
+    "d_rho_d_log_parameter": -0.0053301148778338225,
+    "difference_step_relative_error": 9.759883865325786e-08,
+    "estimates": [
+      {
+        "d_rho_d_log_parameter": -0.0053301143576208005,
+        "derivative_relative_validation_error": 1.6145010181434673e-06,
+        "finite_root_d_rho_d_log_parameter": -0.005330122963109751,
+        "log_step": 0.001,
+        "perturbed_gates_pass": true,
+        "rho_minus": 0.8950780185732632,
+        "rho_plus": 0.895067358327337
+      },
+      {
+        "d_rho_d_log_parameter": -0.0053301148778338225,
+        "derivative_relative_validation_error": 1.6194652394614895e-06,
+        "finite_root_d_rho_d_log_parameter": -0.005330123509783569,
+        "log_step": 0.0005,
+        "perturbed_gates_pass": true,
+        "rho_minus": 0.8950753533934233,
+        "rho_plus": 0.8950700232699135
+      }
+    ],
+    "finite_root_d_rho_d_log_parameter": -0.005330123509783569,
+    "initialisation": "Fixed inherited WT conserved state for WT and null; perturbed WT denominator; no rest solve",
+    "maximum_validation_relative_error": 1.6194652394614895e-06,
+    "observable": "adaptive",
+    "parameter": "NBC_capacity",
+    "residual_recruitment_log_elasticity": 0.05079816479872231,
+    "rho": 0.8950726881777452,
+    "uncertainty_interval": "Not established; local sensitivity only"
+  },
+  {
+    "crossing_log_elasticity": -0.005954355602549772,
+    "d_deficit_d_rho": 1.9511913898984101,
+    "d_rho_d_log_parameter": -0.005329628354808632,
+    "difference_step_relative_error": 9.750500105078778e-08,
+    "estimates": [
+      {
+        "d_rho_d_log_parameter": -0.005329627835143213,
+        "derivative_relative_validation_error": 1.6288738980810214e-06,
+        "finite_root_d_rho_d_log_parameter": -0.005329636516449021,
+        "log_step": 0.001,
+        "perturbed_gates_pass": true,
+        "rho_minus": 0.8950859583698574,
+        "rho_plus": 0.8950752990968245
+      },
+      {
+        "d_rho_d_log_parameter": -0.005329628354808632,
+        "derivative_relative_validation_error": 1.6338788246543827e-06,
+        "finite_root_d_rho_d_log_parameter": -0.0053296370627897716,
+        "log_step": 0.0005,
+        "perturbed_gates_pass": true,
+        "rho_minus": 0.8950832934331792,
+        "rho_plus": 0.8950779637961164
+      }
+    ],
+    "finite_root_d_rho_d_log_parameter": -0.0053296370627897716,
+    "initialisation": "Fixed inherited WT conserved state for WT and null; perturbed WT denominator; no rest solve",
+    "maximum_validation_relative_error": 1.6338788246543827e-06,
+    "observable": "sampled",
+    "parameter": "NBC_capacity",
+    "residual_recruitment_log_elasticity": 0.050797372083108326,
+    "rho": 0.8950806284606818,
+    "uncertainty_interval": "Not established; local sensitivity only"
+  }
+]

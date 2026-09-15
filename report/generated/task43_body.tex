@@ -1,0 +1,309 @@
+\newcommand{\InventoryCount}{137}
+\newcommand{\ActiveCount}{109}
+\newcommand{\SensitivitySourceCommit}{f783785a863440df459e9c5530beba4c7eb59110}
+
+\section{Source of the audit}
+The audit uses repository \url{https://github.com/esig626/ae4-salivary-transport-control} at main revision \texttt{c4d4f207f702d8eee09ab94d2d90ae90552dd641}. It loads the actual nested Task 40 model through its historical validation helper and checks the complete active parameter hashes against \path{results/40_ae4_equal_cation_routing/frozen_inputs.json}. It does not overwrite the helper or weaken its historical numerical checks. The canonical initial condition is the separately frozen WT resting state, not the constructor default tuple.
+
+The model lineage includes the original AE4 reconstruction \citep{p43VeraSiguenza2018}, the Palk and Benjamin NKCC1 law \citep{p43Palk2010,p43Benjamin1997}, and the Cha NHE kinetic model \citep{p43Cha2009}. The experimental evidence for AE4 transport and regulation constrains mechanism and direction, but does not automatically identify every abundance, gain or timescale in this implementation \citep{p43Pena2015,p43Pena2016,p43Pena2021,p43Catalan2025}. This report preserves that distinction.
+
+\section{What counts as a justification}
+A published numerical coefficient has a source, but transfer from another tissue or model still needs an applicability argument. A value determined by a balance equation is justified conditional on the concentrations, fluxes and structural assumptions used in that balance. A value selected to keep a reference trajectory within physiological limits is an effective modelling choice; acceptance of that trajectory does not make the value measured, unique, or known within an uncertainty interval. A numerical inversion bracket is not a physiological observation. A parameter selected using the knockout phenotype must remain labelled as an inverse design choice.
+
+The inventory records value, units, original metadata, active role, classification, exact code locations, the equation role and source, mathematical justification, default value and whether the active value differs from that default. Separate fields state what constrains each quantity, what does not justify it, its logical domain, its uncertainty status, its relevance to manuscript conclusions, and an experiment that could constrain it. Classification is conservative: inherited metadata identifies a lineage, not a newly verified measurement of salivary transporter abundance. Each physiological uncertainty interval remains explicitly null in the machine readable inventory. Logical positivity or fractional bounds are not substituted for experimental uncertainty.
+
+The current categories include physical constants; published kinetic coefficients; inherited model conversions or settings; reference and WT constraint derived values; WT architecture derived values; effective assumptions; numerical brackets and regularisation; protocol and law selections; inactive legacy values; constructor seeds; and the target selected Task 41 parameter. These categories should not be collapsed into a single ``from the literature'' column.
+
+\section{Parameters that can be explained mathematically}
+\subsection{NKCC1 scale: derived from a modelled resting flux}
+The production law has the form
+\[
+ J_N=\alpha_Nm_N(t)\psi([Na]_i,[K]_i,[Cl]_i),\qquad
+ \psi=\frac{A_1-A_2[Na]_i[K]_i[Cl]_i^2}
+ {A_3+A_4[Na]_i[K]_i[Cl]_i^2}.
+\]
+At the accepted resting state, the scale is determined by
+\begin{equation}
+ \alpha_N=\frac{J_{N,rest}}{\psi(c_{rest})}
+ =0.017334746894096052\ \mathrm{fmol/s}.
+ \label{p43eq:nkcc-scale}
+\end{equation}
+Equation \cref{p43eq:nkcc-scale} makes the choice reproducible and avoids an independent extra fit. However, $J_{N,rest}$ is itself an inherited model flux. The scale is not a directly measured salivary carrier amount. The much larger legacy field \path{homeostasis.nkcc1_capacity_fmol_s} is inactive for this selected law and must not appear in a publication table as its active capacity.
+
+The four Palk coefficients contain fourth order concentration factors. Their conversion to mM is essential. They are effective coefficients for the adopted fixed bath, so an uncertainty study that changes bath composition cannot automatically reuse them without rechecking the underlying reduction.
+
+\subsection{NHE1 carrier amount: a WT resting pH calibration}
+The active NHE1 law is the eight state Cha reduction with its Mod2 term. Printed rate and binding constants are retained, including the documented rounding discrepancy in the fourth reverse rate. The salivary carrier amount is
+\[
+ N_H=2.339370005697548\times10^{-5}\ \mathrm{fmol}.
+\]
+This was determined against a resting pH target of 6.91 on the selected R09 background. The derivation fixes one scale conditional on that background and target. It does not identify a cardiac carrier count as a salivary measurement, nor does it prove unique joint identification of the carrier amount, buffer pool and other pH pathways.
+
+The completion audit also records the fixed Mod2 exponents $n_H=3$ and $m_H=1$, which were absent from the earlier inventory because they are module constants rather than dataclass fields. Both are part of the selected kinetic law. Their inclusion corrects an inventory omission without changing the model.
+
+Legacy tanh NHE capacity and older NHE kinetic fields remain in the dataclass for other models, but are inactive in production. The active stimulus multiplier is 2.3. Calling it fixed before the test documents absence of retuning; it does not establish that its transfer to every tissue and stimulus is exact. The mathematical companion report shows explicitly how the alkalinity bound depends on this multiplier and $N_H$.
+
+\subsection{NBC capacity: derived conditional on an assumed partition}
+The NBC source imports one sodium and two bicarbonate equivalents per inward cycle. Its capacity is
+\[
+ G_B=0.11570913197464398\ \mathrm{fmol/s}.
+\]
+The construction begins from the assumed fraction $s=0.70$ of positive WT chloride loading assigned to NKCC1 at the Task 31 reference scale. If that NKCC1 chloride flux is $L_N$, the corresponding AE4 demand is
+\begin{equation}
+ J_{4,req}=\frac{1-s}{s}L_N.
+ \label{p43eq:partition}
+\end{equation}
+Using $L_N=0.2562444047732706$ fmol/s and the selected stimulated NHE flux, the approximate reference requirement is $B_{req}=J_{4,req}-H_{stim}/2$, before evaluating the full coupled electrical closure. The capacity is then chosen so the NBC law supplies that cycle rate at the reference chemical state with its self consistent voltage. The derivation is recorded in the unchanged Task 36 design and NBC module.
+
+This is a conditional structural construction, not a knockout fit and not a measured transporter density. In particular, \cref{p43eq:partition} does not turn the 70/30 partition into experimental evidence. The subsequently evolved trajectory need not retain that partition exactly. The manuscript should state the assumed partition, how it sets the capacity, and what changes when that assumption changes. A broad uncertainty interval for $s$ has not been established by this audit.
+
+The NBC increment is zero at the declared resting calcium and fully recruited at $0.25\ \mu$M. Its width parameter is effective. Its molecular identity is deliberately not assigned to a particular salivary SLC4 isoform.
+
+\subsection{Fixed charge and osmotic pools}
+Reference electroneutrality determines the fixed intracellular anion equivalent amount from
+\[
+ X=n_{Na,i}+n_{K,i}-n_{Cl,i}-n_{A,i}.
+\]
+The active value is $78.06176220594485$ fmol equivalents. Its status is reference constraint derived, conditional on the reference tuple and carbonate buffer model. It is not a directly counted molecular pool.
+
+The other impermeant osmotic pool is $124.69936937124379$ fmol on the selected background, rather than the smaller dataclass default. It is an inherited effective osmotic setting. The separate finite intracellular buffer amount is 30 fmol and is counted exactly once in the osmolarity. Effective osmotic closure and charge closure are different roles and should not be conflated.
+
+\section{Parameters that remain assumptions or transferred settings}
+The AE4 carrier amount and transition attempt rates are inherited effective model settings. Their thermodynamic construction constrains rate ratios and reversal properties of the parent cycle; it does not supply independent measurements of the absolute carrier number or all attempt rates. Moreover, fixed source substitution in the later mechanism panel does not itself establish thermodynamic consistency of the inherited scalar kinetics with each substituted cycle.
+
+Channel conductances, pump capacity and apical fractions determine current closure and the distribution of secretion. Their active values are explicit in the inventory, but physiological feasibility at one reference point is not evidence that each value is unique. The same applies to the effective outlet rate and dead volume. The code itself describes the outlet law as a transparent compliance closure rather than a calibrated secretion law.
+
+The water coefficients are inherited model conversions with stated units. They should be described as transferred model parameters, not newly measured hydraulic permeabilities of the present preparation. The effective beta activation time of 30 s and AE4 gain of 0.25 likewise need to remain explicit assumptions. Experimental activation of a pathway does not identify all intermediate time constants \citep{p43Pena2021}.
+
+The NKCC1 algebraic recruitment reaches its endpoint at $0.10\ \mu$M calcium, while NBC reaches its endpoint at $0.25\ \mu$M. The production input fully recruits both. This difference is preserved and recorded, not silently reconciled. Any analysis of submaximal calcium would need to account for it.
+
+The numerical pH bracket from 3 to 11 only enables inversion; the actual inherited physiological criterion is pH 6.6 to 7.3. The tiny positive luminal buffer amount $10^{-9}$ fmol is numerical regularisation approximating no fixed luminal buffer, not an abundance measurement. Constructor concentrations and volumes do not replace the frozen solved initial state used by the production experiments.
+
+Finally, the Task 41 residual CaCC recruitment coefficient $b=0.10511872843288446$ is target selected. It is not an active parameter of the parent Task 40 model and is not reclassified as literature supported merely because the resulting trajectory has an appropriate secretion magnitude.
+
+The CCh and IPR dose fields, $0.3$ and $5\ \mu$M respectively, are experiment labels in this implementation. The selected input callable returns prescribed calcium and beta activation from the input arm and time window; it does not map those dose values through a dose response law. They are therefore retained as protocol metadata but marked inactive for the selected right hand side. The previous inventory incorrectly marked both active. Changing the nominal dose labels alone cannot change the model trajectory.
+
+The frozen initial state is now recorded separately, with all twelve conserved amount and volume coordinates and the AE4 regulatory fraction. The twelve constructor reference fields remain distinct. The upstream NBC design quantities, selected transport laws, R1 regulatory family and WT construct are also explicit. These additions explain the larger record count; they add no fitted degrees of freedom.
+
+The externally passed WT genotype object and the three prescribed AE4 expression values, $1$, $0.05$ and $0$, are also recorded. The other transporter expression multipliers remain one in those comparisons. These values define interventions, not an uncertainty interval for protein abundance. The prescribed Task 41 family requires $0<b\leq1$, equivalently $0\leq\rho<1$; the endpoint $b=0$ is outside its implemented domain.
+
+The additional file \path{output/numerical_controls.json} records the production integration specification, conservation tolerances, pH inversion tolerances and voltage bracket. In particular, $[-0.5,0.5]$ V is the implemented voltage search bracket and not a measured physiological voltage interval. Integration begins at $10^{-6}$ s with the shared frozen state; the distinct resting observable at exactly $t=0$ is preserved. Exact unit conversions are stated separately from physiological settings.
+
+\section{What the mathematical analysis adds to justification}
+The separate Task 44 report uses the unchanged reference parameter set and retains carbon, alkalinity, volume, lumen and electrical feedback. It supplies exact structural identities and a conditional NHE supply bound, then evaluates local stationary sensitivities. These calculations help identify which assumptions affect which conclusions. They do not estimate experimental uncertainty intervals.
+
+An important distinction is between statements independent of capacities, such as the cancellation of the explicit equal routing AE4 term in the chloride balance, and numerical conclusions that depend on the adopted kinetics and scales, such as large NKCC1 replacement. Even an exact balance identity does not determine the magnitude of the knockout flow deficit. The dependence of pump and NHE fluxes on state remains part of the mechanism.
+
+For later manuscript development, every nonliterature value should therefore be accompanied by either its conditional derivation or a plainly stated effective role. Where several values were selected together on the same WT background, their correlation should be retained in future uncertainty work. Independently perturbing every value as though each had its own measured error bar would create an unsupported uncertainty model.
+
+The remaining parameter work is substantive rather than typographical: independently justify or measure ranges for the effective settings; define a WT feasible set using evidence not reused from the knockout comparison; and assess which conclusions survive across that set. A local derivative or a collection of physiologically passing simulations does not prove robustness over all plausible parameterisations. This audit has performed no new fitting and established no calibrated uncertainty intervals.
+
+\subsection{Completed sensitivity crosswalk}
+The completed companion calculation examines sixteen uncertain or effective settings. All 128 nearby WT and AE4 null equilibrium solves pass the inherited physiological gates. Parameter differences of $10^{-3}$ and $5\times10^{-4}$ in log coordinates are numerical verification steps, not uncertainty ranges. The machine readable crosswalk reads the verified results directly from immutable Task 44 numerical source commit \texttt{\SensitivitySourceCommit} and records SHA256 hashes of all seven imported source files. Later report-only commits need not have that same head SHA. It maps every companion parameter name back to the actual inventory value and classification.
+
+At the adopted constant full stimulus equilibrium, WT secretion is $0.0015840671$ pL/s and intracellular pH is $7.0503863$. The AE4 null stationary secretion deficit is $0.94617\%$. This stationary deficit is distinct from the frozen Task 40 cumulative deficit of $3.8575\%$ at 600 s. Intracellular storage, changing volumes, finite lumen composition and regulation remain active in the companion analysis.
+
+In the table, $E_Q=d\log Q_{WT}/d\log p$, $E_D=d\log D/d\log p$ for the positive stationary null deficit $D$, and $E_{\tau}=d\log\tau_{slow,WT}/d\log p$. The pH column uses $d\mathrm{pH}/d\log p$ because pH is already logarithmic. A large elasticity of a small deficit is not a large absolute percentage point change.
+
+% Expanded source: evidence/task43/output/sensitivity_table.tex
+\begin{table}[tbp]
+\centering\small
+\begin{tabular}{p{.36\textwidth}rrrr}
+\toprule Setting & $E_Q$ & $d\mathrm{pH}/d\log p$ & $E_D$ & $E_{\tau}$ \\ \midrule
+NBC capacity & 0.019923 & 0.064832 & 2.0848 & 0.10701 \\
+AE4 carrier & 0.00081137 & -0.072461 & 0.084942 & -0.063968 \\
+NKCC scale & 0.055361 & -0.001558 & -1.4937 & 0.19015 \\
+NHE carrier & -0.0032611 & 0.070838 & -0.22928 & -0.014728 \\
+pump capacity & 0.52593 & 0.12061 & 4.6337 & -1.5222 \\
+CaCC conductance & 0.03247 & -0.0055239 & -0.22116 & 0.0082736 \\
+buffer pool & -0.0015749 & 0.0013957 & -0.20631 & 0.30856 \\
+water apical & 0.0021295 & -8.3167e-05 & -0.003558 & -3.7398e-05 \\
+AE4 tau & 0 & 0 & 0 & 0 \\
+AE4 gain & 0.00016227 & -0.014492 & 0.016988 & -0.012794 \\
+apical pump fraction & 0.049564 & -0.0035713 & -0.059826 & 0.045169 \\
+NHE stimulated multiplier & -0.0032611 & 0.070838 & -0.22928 & -0.014728 \\
+CO2 basolateral permeability & -0.004448 & -0.083186 & -0.43378 & -0.068179 \\
+AE2 capacity & -7.3346e-05 & 0.00036297 & -0.030565 & 7.5082e-05 \\
+NBC log width & -0.014352 & -0.046703 & -1.5016 & -0.072634 \\
+NKCC stimulated multiplier & 0.055361 & -0.001558 & -1.4937 & 0.19015 \\
+\bottomrule\end{tabular}
+\caption{Local stationary sensitivities imported from Task 44. No measured uncertainty intervals are implied.}
+\end{table}
+
+
+
+The largest local sensitivities of the stationary null deficit are to pump capacity ($E_D=4.634$), NBC capacity ($2.085$), NBC saturation width ($-1.502$), and NKCC effective capacity ($-1.494$). These values identify priorities for experimental constraint. They do not establish a finite parameter change that recovers the experimental phenotype. The common stationary effects of NHE carrier amount and its stimulated multiplier reflect their product under full stimulation; separate resting and stimulated measurements are needed to distinguish them.
+
+At the WT equilibrium, NBC supplies $95.48\%$ of the AE4 alkalinity demand. Under the stated bath composition and inherited intracellular pH lower gate of 6.6, the conditional NHE/AE2 capacity calculation covers at most $57.96\%$ of that current demand without NBC. This comparison holds the required AE4 demand at the analysed level; it does not rule out a lower supported flux, another admissible state or an additional pathway. The capacity ratio has local elasticity $0.931$ to NHE carrier amount and to the stimulated NHE multiplier. Direct measurements of maximal acid extrusion are therefore essential before treating the conditional obstruction as a biological conclusion.
+
+The companion continuation also finds a physiological equilibrium with zero NBC capacity: pH $6.96833$ and secretion $0.00153598$ pL/s, only $3.035\%$ below the full NBC equilibrium. Its AE4 cycle flux falls from $0.0750724$ to $0.00632651$ fmol/s. Consequently, any earlier broad claim that NBC is structurally necessary for secretion must be qualified: the proved obstruction concerns sustaining the specified AE4 loading level. It does not imply that all physiological secretion fails without NBC.
+
+The WT and null slowest local decay times are approximately $346$ and $460$ s. The WT decay time is particularly sensitive to pump capacity ($E_{\tau}=-1.522$) and the finite intracellular buffer pool ($0.309$). The model therefore already contains slow modes. The effective AE4 regulatory time has zero local stationary influence in the selected R1 family while the slower chemical mode remains dominant; this is not evidence that time dependent regulation is irrelevant. Acute pH, TIC and volume measurements alongside secretion would constrain those chemical modes and their observable effects.
+
+The separate inverse calculation stays inside the one prescribed Task 41 family. Its first numerical 600 s crossing requires an AE4 dependent stimulated CaCC fraction $\rho\simeq0.89507$, approximately $89.51\%$. The original selected value $\rho=1-b=0.89488127$ gives the frozen $30.2612\%$ deficit, slightly below the exact $30.3\%$ comparison threshold. The threshold is $35\%$ minus the reported standard error of $4.7$ percentage points in the 2015 comparison; it is not a confidence bound. Adaptive integration and the original sampled trapezoidal observable are retained separately in the companion files. This is the first crossing found in the ordered numerical scan. Monotonicity between samples and exclusion of earlier unsampled crossings are unproved; it is neither a global lower bound nor a universal recruitment requirement.
+
+Inverse sensitivities hold the inherited conserved WT initial state fixed, perturb the WT denominator and null system together, and perform no new resting solve. A buffer perturbation therefore changes the initial algebraic pH. Within that family, the adaptive crossing has local log elasticity $0.09833$ to CaCC conductance and $-0.03558$ to pump capacity, larger in magnitude than its elasticities to the other six tested settings. The relative sensitivity of the residual independent recruitment $1-\rho$ is also recorded, because a small change in $\rho$ can be a larger relative change in the remaining approximately $10.49\%$. Under continued full stimulation, both the selected and crossing null cases eventually violate the inherited upper pH gate at about $1485$~s. This diagnostic does not change their declared 600 s results, but prevents an unsupported long duration interpretation.
+
+The most urgent experiments consequently differ by claim. Functional pump turnover and membrane distribution, NBC capacity and saturation shape, and ion conditioned NKCC uptake constrain secretion and compensation. Maximal NHE acid extrusion constrains the conditional alkalinity obstruction. Buffer titration with TIC and volume time series constrains slow relaxation. Matched CaCC current measurements during acute AE4 perturbation would directly test the very large recruitment dependence required by the inverse family. Strong modelled NKCC compensation remains in tension with the isolated 2015 NKCC assay; changing the assay context in the model does not erase that discrepancy.
+
+\section{Reproducibility and use in the manuscript}
+Run \texttt{python analysis/43\_parameter\_provenance/audit.py} from the repository root. It verifies the production parameter hashes and writes both CSV and JSON inventories under this task's \texttt{output} directory. Each record contains source paths and justification notes beyond the abbreviated table below. \texttt{prepare\_report.py} typesets the table from those records. The report and the full inventory belong on the Task 43 branch, separate from the mathematical analysis and from the main manuscript.
+
+The inventory has \InventoryCount{} records and \ActiveCount{} active flags. This is an inventory of configuration and roles, not a count of independent degrees of freedom: it includes physical constants, protocol settings, law selections, derived values and other nonfit quantities. Five legacy fields and twelve constructor seed fields are explicitly separated. The Task 41 inverse coefficient is also outside the parent model.
+
+Run \path{analysis/43_parameter_provenance/verify.py} to compare the saved CSV/JSON products with a fresh reconstruction, check every nested production field, verify source hashes, confirm the fixed Cha exponents and demonstrate that changing dose labels leaves the selected input unchanged. The audit performs no fresh sensitivity simulations. With the companion commit available in the fetched Git history, \path{import_crosswalk.py --check} independently reconstructs the saved crosswalk from that exact commit; no adjacent Task 44 working directory is required. The report tables are also checked against their machine readable sources. The source manifest contains SHA256 values for the production modules and frozen inputs; verification also checks that protected paths are unchanged from recovered Task 43 checkpoint \texttt{693f44c0b05e92faec737aa7793c3a99ec76445c}.
+
+No model source, historical analysis, frozen trajectory or main manuscript is modified by this audit. The exact original metadata is retained in the machine readable inventory, while the new classification states what that metadata does and does not justify.
+
+% Appendix integrated in combined section sequence
+\section{Complete active object and legacy inventory}
+The ``Used'' column denotes use by the selected production configuration as classified by the audit. ``No'' for constructor seeds means they are not the production initial state; the constructor still uses that tuple for reference consistency checks. Full units, source locations, defaults and detailed justifications are in \texttt{parameter\_inventory.csv} and \texttt{parameter\_inventory.json}.
+
+% Expanded source: evidence/task43/output/inventory_table.tex
+\setlength{\tabcolsep}{4pt}
+\small
+\begin{longtable}{p{.38\textwidth}p{.17\textwidth}p{.11\textwidth}p{.25\textwidth}}
+\toprule Setting & Value & Used & Classification \\ \midrule\endfirsthead
+\toprule Setting & Value & Used & Classification \\ \midrule\endhead
+\bottomrule\endfoot
+\path{constants.temperature_K} & 310.15 & Yes & effective assumption \\
+\path{constants.gas_constant_J_mol_K} & 8.31446262 & Yes & physical constant \\
+\path{constants.faraday_C_mol} & 96485.3321 & Yes & physical constant \\
+\path{acid_base.carbon_pka1} & 6.1 & Yes & inherited model setting \\
+\path{acid_base.carbon_pka2} & 10.3 & Yes & inherited model setting \\
+\path{acid_base.water_pkw} & 14 & Yes & inherited model setting \\
+\path{acid_base.cell_buffer_pka} & 7 & Yes & effective assumption \\
+\path{acid_base.lumen_buffer_pka} & 7 & Yes & effective assumption \\
+\path{acid_base.ph_lower} & 3 & Yes & numerical bracket \\
+\path{acid_base.ph_upper} & 11 & Yes & numerical bracket \\
+\path{bath.na_mM} & 145 & Yes & effective assumption \\
+\path{bath.k_mM} & 5 & Yes & effective assumption \\
+\path{bath.cl_mM} & 126.161593 & Yes & reference constraint derived \\
+\path{bath.tic_mM} & 25 & Yes & effective assumption \\
+\path{bath.ph} & 7.4 & Yes & effective assumption \\
+\path{bath.buffer_total_mM} & 0 & Yes & effective assumption \\
+\path{bath.untracked_osmolyte_mM} & 0 & Yes & effective assumption \\
+\path{geometry.cell_buffer_total_fmol} & 30 & Yes & effective assumption \\
+\path{geometry.lumen_buffer_total_fmol} & 1e-09 & Yes & numerical regularisation \\
+\path{geometry.fixed_cell_anion_equivalents_fmol} & 78.0617622 & Yes & reference constraint derived \\
+\path{geometry.cell_impermeant_osmoles_fmol} & 124.699369 & Yes & inherited effective setting \\
+\path{homeostasis.nkcc1_capacity_fmol_s} & 0.32 & No & inactive legacy \\
+\path{homeostasis.nhe1_capacity_fmol_s} & 0.00744098059 & No & inactive legacy \\
+\path{homeostasis.nhe1_model} & \path{cha_2009_eight_state_mod2} & Yes & law selection \\
+\path{homeostasis.nhe1_published_g_fmol_s} & 0.0305 & No & inactive legacy \\
+\path{homeostasis.nhe1_published_k_h_mM} & 0.00045 & No & inactive legacy \\
+\path{homeostasis.nhe1_published_k_na_mM} & 15 & No & inactive legacy \\
+\path{homeostasis.nhe1_cha_carrier_amount_fmol} & 2.33937001e-05 & Yes & WT constraint derived \\
+\path{homeostasis.ae2_capacity_fmol_s} & 0.005 & Yes & effective assumption \\
+\path{homeostasis.thermodynamic_saturation_log_width} & 2 & Yes & effective assumption \\
+\path{homeostasis.co2_basolateral_permeability_fmol_s_mM} & 0.02 & Yes & effective assumption \\
+\path{homeostasis.co2_apical_permeability_fmol_s_mM} & 0.01 & Yes & effective assumption \\
+\path{membranes.nak_capacity_fmol_s} & 0.08 & Yes & effective assumption \\
+\path{membranes.nak_na_half_mM} & 10 & Yes & inherited model setting \\
+\path{membranes.nak_k_half_mM} & 1.5 & Yes & inherited model setting \\
+\path{membranes.apical_pump_fraction} & 0.075075 & Yes & effective assumption \\
+\path{membranes.apical_k_fraction} & 0.3 & Yes & effective assumption \\
+\path{membranes.g_k_total_S} & 1.4e-08 & Yes & effective assumption \\
+\path{membranes.g_cl_apical_S} & 3.14e-08 & Yes & effective assumption \\
+\path{membranes.calcium_half_uM} & 0.26 & Yes & effective assumption \\
+\path{membranes.calcium_hill} & 1.46 & Yes & effective assumption \\
+\path{membranes.g_para_na_S} & 3e-10 & Yes & inherited model setting \\
+\path{membranes.g_para_k_S} & 5e-11 & Yes & inherited model setting \\
+\path{membranes.g_para_cl_S} & 2.5e-10 & Yes & effective assumption \\
+\path{membranes.g_para_hco3_S} & 5e-11 & Yes & effective assumption \\
+\path{membranes.g_apical_background_S} & 0 & Yes & effective assumption \\
+\path{membranes.g_basolateral_background_S} & 0 & Yes & effective assumption \\
+\path{water.apical_hydraulic_pL_s_mOsm} & 0.00432 & Yes & published model conversion \\
+\path{water.basolateral_hydraulic_pL_s_mOsm} & 0.0515 & Yes & published model conversion \\
+\path{water.paracellular_hydraulic_pL_s_mOsm} & 0.00026 & Yes & published model conversion \\
+\path{water.lumen_dead_volume_pL} & 0.1 & Yes & effective assumption \\
+\path{water.outflow_rate_s} & 0.2 & Yes & effective assumption \\
+\path{initial.cell_na_mM} & 15 & No & constructor seed \\
+\path{initial.cell_k_mM} & 140 & No & constructor seed \\
+\path{initial.cell_cl_mM} & 40 & No & constructor seed \\
+\path{initial.cell_tic_mM} & 20 & No & constructor seed \\
+\path{initial.cell_ph} & 7.2 & No & constructor seed \\
+\path{initial.cell_volume_pL} & 1 & No & constructor seed \\
+\path{initial.lumen_na_mM} & 145 & No & constructor seed \\
+\path{initial.lumen_k_mM} & 5 & No & constructor seed \\
+\path{initial.lumen_cl_mM} & 126.161593 & No & constructor seed \\
+\path{initial.lumen_tic_mM} & 25 & No & constructor seed \\
+\path{initial.lumen_ph} & 7.4 & No & constructor seed \\
+\path{initial.lumen_volume_pL} & 0.1 & No & constructor seed \\
+\path{ae4.carrier_amount_fmol} & 0.150126427 & Yes & inherited effective setting \\
+\path{ae4.common_cl_attempt_rate_s} & 1 & Yes & inherited effective setting \\
+\path{ae4.na_loaded_attempt_rate_s} & 0.1 & Yes & inherited effective setting \\
+\path{ae4.k_loaded_attempt_rate_s} & 1.9 & Yes & inherited effective setting \\
+\path{ae4.cooperative_gate} & \path{None} & No & inherited effective setting \\
+\path{nbc.capacity_fmol_s} & 0.115709132 & Yes & WT architecture derived \\
+\path{nbc.log_width} & 2 & Yes & effective assumption \\
+\path{nbc.resting_calcium_uM} & 0.058 & Yes & effective assumption \\
+\path{nbc.fully_recruited_calcium_uM} & 0.25 & Yes & effective assumption \\
+\path{nbc.nhe1_stimulated_multiplier} & 2.3 & Yes & effective assumption \\
+\path{nkcc.alpha_eff_fmol_s} & 0.0173347469 & Yes & WT constraint derived \\
+\path{nkcc.A1} & 157.5 & Yes & published kinetic coefficient \\
+\path{nkcc.A2} & 2.0096e-05 & Yes & published kinetic coefficient \\
+\path{nkcc.A3} & 1.0306 & Yes & published kinetic coefficient \\
+\path{nkcc.A4} & 1.3852e-06 & Yes & published kinetic coefficient \\
+\path{cha.k1_plus_per_ms} & 10.5 & Yes & published kinetic coefficient \\
+\path{cha.k1_minus_per_ms} & 0.201 & Yes & published kinetic coefficient \\
+\path{cha.k2_plus_per_ms} & 15.8 & Yes & published kinetic coefficient \\
+\path{cha.k_na_o_mM} & 195 & Yes & published kinetic coefficient \\
+\path{cha.k_na_i_mM} & 16.2 & Yes & published kinetic coefficient \\
+\path{cha.k_h_o_mM} & 0.00162 & Yes & published kinetic coefficient \\
+\path{cha.k_h_i_mM} & 0.000605 & Yes & published kinetic coefficient \\
+\path{cha.modifier_k_i_mM} & 3.07e-05 & Yes & published kinetic coefficient \\
+\path{cha.modifier_k_o_mM} & 4.8e-07 & Yes & published kinetic coefficient \\
+\path{cha.k2_minus_table_per_ms} & 183 & Yes & published kinetic coefficient \\
+\path{regulation.tau_ae4_s} & 30 & Yes & effective assumption \\
+\path{regulation.basal_capacity_multiplier} & 1 & Yes & effective assumption \\
+\path{regulation.fully_activated_increment} & 0.25 & Yes & effective assumption \\
+\path{regulation.coupling_scale} & 1 & Yes & effective assumption \\
+\path{nkcc_activation.fully_activated_multiplier} & 1.75 & Yes & inherited effective setting \\
+\path{nkcc_activation.resting_calcium_uM} & 0.058 & Yes & inherited effective setting \\
+\path{nkcc_activation.stimulated_calcium_uM} & 0.1 & Yes & inherited effective setting \\
+\path{protocol.arm} & \path{CCH_IPR} & Yes & protocol setting \\
+\path{protocol.onset_s} & 0 & Yes & protocol setting \\
+\path{protocol.duration_s} & 600 & Yes & protocol setting \\
+\path{protocol.cch_dose_uM} & 0.3 & No & protocol setting \\
+\path{protocol.ipr_dose_uM} & 5 & No & protocol setting \\
+\path{protocol.resting_calcium_uM} & 0.058 & Yes & protocol setting \\
+\path{protocol.stimulated_calcium_uM} & 0.25 & Yes & protocol setting \\
+\path{protocol.beta_occupancy_on} & 1 & Yes & protocol setting \\
+\path{Task41.b} & 0.105118728 & No & target selected \\
+\path{cha.intracellular_modifier_hill} & 3 & Yes & published kinetic coefficient \\
+\path{cha.extracellular_modifier_hill} & 1 & Yes & published kinetic coefficient \\
+\path{nkcc.law} & \path{palk_benjamin_2010_eq17} & Yes & law selection \\
+\path{ae4.law} & \path{equal_routing_adapter} & Yes & law selection \\
+\path{regulation.family} & \path{R1} & Yes & law selection \\
+\path{regulation.construct} & \path{WT} & Yes & protocol setting \\
+\path{nkcc_activation.family} & \path{N1_CCH_ALGEBRAIC} & Yes & law selection \\
+\path{nbc_design.TARGET_NKCC1_POSITIVE_CL_SHARE} & 0.7 & No & effective assumption \\
+\path{nbc_design.TASK31_R09_NKCC1_CL_FMOL_S} & 0.256244405 & No & WT architecture derived \\
+\path{nbc_design.TASK31_R09_NHE1_FMOL_S} & 0.00789058049 & No & WT architecture derived \\
+\path{nbc_design.DERIVED_AE4_CL_FMOL_S} & 0.109819031 & No & WT architecture derived \\
+\path{nbc_design.DERIVED_STIMULATED_NHE1_FMOL_S} & 0.0181483351 & No & WT architecture derived \\
+\path{nbc_design.DERIVED_REQUIRED_NBC_CYCLE_FMOL_S} & 0.100744863 & No & WT architecture derived \\
+\path{frozen_initial.na_i_fmol} & 16.7203587 & Yes & WT constraint derived \\
+\path{frozen_initial.k_i_fmol} & 170.002009 & Yes & WT constraint derived \\
+\path{frozen_initial.cl_i_fmol} & 88.031802 & Yes & WT constraint derived \\
+\path{frozen_initial.tic_i_fmol} & 8.26351181 & Yes & WT constraint derived \\
+\path{frozen_initial.alk_i_fmol} & 20.6288031 & Yes & WT constraint derived \\
+\path{frozen_initial.volume_i_pL} & 1.45333439 & Yes & WT constraint derived \\
+\path{frozen_initial.na_l_fmol} & 13.1277687 & Yes & WT constraint derived \\
+\path{frozen_initial.k_l_fmol} & 2.71897261 & Yes & WT constraint derived \\
+\path{frozen_initial.cl_l_fmol} & 15.3786879 & Yes & WT constraint derived \\
+\path{frozen_initial.tic_l_fmol} & 0.540262316 & Yes & WT constraint derived \\
+\path{frozen_initial.alk_l_fmol} & 0.468053423 & Yes & WT constraint derived \\
+\path{frozen_initial.volume_l_pL} & 0.105388407 & Yes & WT constraint derived \\
+\path{frozen_initial.ae4_effective_activation_fraction} & 0 & Yes & WT constraint derived \\
+\path{genotype.name} & \path{WT} & No & protocol setting \\
+\path{genotype.ae4_expression} & 1 & Yes & protocol setting \\
+\path{genotype.ae2_expression} & 1 & Yes & protocol setting \\
+\path{genotype.nkcc1_expression} & 1 & Yes & protocol setting \\
+\path{genotype.nhe1_expression} & 1 & Yes & protocol setting \\
+\path{protocol.ae4_expression_cases} & \path{[1.0, 0.05, 0.0]} & Yes & protocol setting \\
+\end{longtable}
+\normalsize
+
+

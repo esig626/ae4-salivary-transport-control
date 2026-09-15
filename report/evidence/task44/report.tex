@@ -1,0 +1,312 @@
+\documentclass[11pt,a4paper]{article}
+\pdfinfoomitdate=1
+\pdftrailerid{}
+\pdfsuppressptexinfo=15
+\usepackage[margin=24mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,booktabs,longtable,array,graphicx,microtype}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{placeins}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+\allowdisplaybreaks
+\title{AE4 control of salivary transport:\\full system mathematics and parameter dependence}
+\author{Tasks 44 and 45: standalone technical analysis}
+\date{15 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+The frozen Task 40 system is analysed without removing intracellular or
+luminal carbon, alkalinity, volume, pH closure, electrical closure or AE4
+regulation. Exact charge elimination leaves eleven independent dynamic
+coordinates. We prove conditional closure and balance results and distinguish
+them from local equilibrium calculations and finite time simulations. Equal
+cation routing cancels the explicit AE4 cycle in one stationary chloride
+balance; it does not cancel state mediated secretion sensitivity. The parent
+system has slow local modes of approximately 346 s in WT and 460 s in the
+AE4 null. A physiological NBC absent root exists at reduced AE4 loading,
+qualifying any universal necessity claim. Within the prescribed target selected
+Task 41 family, the first numerical crossing of a 30.3\% cumulative deficit
+requires approximately 89.51\% AE4 dependent stimulated CaCC recruitment.
+That family passes the inherited 600 s gates but later violates the pH gate.
+Local sensitivity identifies pump, NBC and NKCC capacities, CaCC recruitment
+and finite buffering as priorities for independent constraint. Unknown parameter
+ranges, thermodynamic tensions and experimental discrepancies prevent global
+robustness or mechanism validation claims.
+\end{abstract}
+
+\section{Scope, checkpoint continuity and interpretation}
+This report continues the existing branch
+\texttt{analysis/task-44-full-system-mathematics}, recovered at
+\nolinkurl{b7b775a0277d93263c4de339745806e5658ec9c2}.
+The complete numerical checkpoint independently replayed for this report is
+\nolinkurl{f783785a863440df459e9c5530beba4c7eb59110}.
+Task 43 remains on the separate, unmerged parameter provenance branch; its
+final report checkpoint is
+\nolinkurl{bc3e37645b9a7519dee0da9d1e2df55e291dd983}.
+The companion crosswalk reads numerical results at the exact Task 44 commit,
+with source file hashes. Neither a fit nor a new production model is introduced.
+
+The archived \texttt{Marty.tex} fixes intracellular concentrations other than
+sodium, potassium and chloride, lumen concentrations, membrane potentials
+and cell volume. Those assumptions remove precisely the carbon, alkalinity,
+storage and osmotic responses at issue here. Its reduction is therefore not
+reused. The following scaling is an invertible coordinate change; every
+retained degree of freedom remains dynamic or is reconstructed by an exact
+constraint. The inherited algebraic electrical approximation is identified
+as an assumption, not justified retrospectively by a nonexistent capacitance
+parameter.
+
+The report uses four levels of conclusion. A proved identity is conditional
+on its stated equations and domain. A local numerical result applies at the
+specified parameter point and branch of roots. A finite time numerical result
+applies to its stated stimulus, initial state and observation window.
+Unresolved questions include biological mechanism identity, global uniqueness,
+global stability, uncertainty ranges and robustness over those ranges.
+
+\input{exact_results}
+
+\section{Numerical scales and their interpretation}
+\begin{center}
+\input{output/scale_table}
+\end{center}
+Here the table's $\epsilon_L$ is the $\varepsilon$ in the equations.
+The induced cell and lumen amount scales are 210.733487 and
+15.2813191 fmol; the induced water flux scale is
+$J_0/C_0=0.00154909$ pL/s. For dimensional recovery multiply cell amounts
+by $C_0V_0$, lumen amounts by $C_0L_0$, the two volumes by their distinct
+scales, time by $t_0$, ionic fluxes by $J_0$ and water fluxes by $J_0/C_0$.
+pH is already dimensionless. The thermal voltage is 26.726659 mV.
+
+\begin{center}\small
+\input{output/additional_groups_table}
+\end{center}
+The carbonate constants in this table use mM before division by $C_0$;
+$K_w$ uses mM squared. These units differ from the molar representation
+used to define pH in the proof, with the conversion shown there.
+The small initial AE4 loading ratio is evaluated at the inherited WT state
+under immediate full stimulation. It is not a sustained loading fraction.
+The reference carrier capacity ratio is $\gamma_4=0.668363$, the pump
+capacity ratio is 0.356160 and the outflow group is 187.637155.
+The Palk concentration groups are $\eta_2=56.402853$ and
+$\eta_4=594.147609$. Dimensionless maximal channel conductances are
+38.722939 for CaCC and 17.265005 for potassium; the paracellular sodium,
+potassium, chloride and bicarbonate values are respectively 0.369964,
+0.061661, 0.308304 and 0.061661. Stimulus gates multiply the channel
+capacities as specified in the constitutive laws.
+
+Small dissociation concentrations do not imply a dispensable alkalinity
+coordinate. The cell buffer amount is appreciable relative to the amount
+scale. The small lumen buffer is an inherited numerical convention, whereas
+finite lumen carbon remains dynamical. Large water conductances allow small
+osmotic imbalances to move appreciable water. No uniform error bound or
+normally attracting limiting manifold has been established that would permit
+freezing either volume or lumen composition. The present results therefore
+make no singular perturbation reduction.
+
+\input{integrated_context}
+
+\section{NBC removal: capacity obstruction versus secretion}
+At the parent WT root, NBC supplies $J_B/J_4=0.954815$ of the AE4
+alkalinity demand. The conditional no NBC capacity bound covers 57.9613\%
+of that particular demand. These are state and capacity comparisons; the
+total support ratio at equilibrium is identically one.
+Resolving the full system as NBC capacity decreases gives:
+\begin{center}
+\input{output/nbc_table}
+\end{center}
+At zero NBC, a root satisfying the inherited physiological gates has
+$Q=0.00153598288$ pL/s and $\mathrm{pH}_i=6.96833154$.
+The reference WT value is $0.00158406711$ pL/s, so secretion falls by
+approximately 3.035\%. AE4 loading falls from 0.07507245 to
+0.00632651 fmol/s. The conditional obstruction is respected because
+the network selects a much lower AE4 demand. Additional alkalinity support
+is needed to sustain the larger stated loading level under the capacity
+assumptions; universal NBC necessity for all secretion is disproved for
+this frozen mathematical system by the valid counterexample root.
+Existence of this root does not establish a unique global attractor or
+identify the biological NBC isoform.
+
+\input{equilibrium_results}
+
+\begin{figure}[htbp]
+\centering\includegraphics[width=.82\linewidth]{output/equilibrium_flow.pdf}
+\caption{Constant stimulus C0 equilibrium secretion normalised by WT.
+The vertical axis deliberately resolves the small change around one;
+the complete null deficit is 0.94617\%, not the 600 s cumulative deficit.
+Each point is a solved local root, not evidence of global uniqueness.}
+\end{figure}
+\begin{figure}[htbp]
+\centering\includegraphics[width=.82\linewidth]{output/slow_modes.pdf}
+\caption{Dominant local decay times on the eleven dimensional neutral
+manifold during expression continuation. Carbon, alkalinity, both volumes,
+finite lumen composition and regulation are retained. These local
+timescales do not alone establish the shape of genotype divergence.}
+\end{figure}
+\begin{figure}[htbp]
+\centering\includegraphics[width=.82\linewidth]{output/linear_response.pdf}
+\caption{Local expression step response at the WT equilibrium.
+This linear response retains input and secretion output projection.
+It is a derivative experiment, not a replacement for a finite knockout
+trajectory from the inherited resting state.}
+\end{figure}
+\FloatBarrier
+
+\section{All frozen source classes}
+The exact projections were derived above without class specific refitting.
+For completeness, the full expression root of every class is tabulated here.
+Sodium concentrations are in mM. Physiological acceptance and thermodynamic
+compatibility are separate tests; passing this table's gates does not erase
+the opposed fluxes reported in the spectral review.
+\begin{center}\small
+\input{output/class_table}
+\end{center}
+In particular C0 is a physiological mathematical root with thermodynamic
+opposition under the substituted ensemble source convention. Edge kinetics
+inherited from the carrier are insufficient to guarantee consistency of
+the whole substituted molecular cycle. The source vector analysis identifies
+the conserved signatures that require measurement; it does not validate
+the scalar kinetics for each molecular hypothesis.
+
+\input{inverse_results}
+\begin{figure}[htbp]
+\centering\includegraphics[width=.82\linewidth]{output/inverse_threshold.pdf}
+\caption{Ordered numerical scan within the one prescribed Task 41 family.
+The experimental band represents the reported mean plus or minus one
+standard error, not a confidence interval. The refined adaptive and sampled
+crossings are recorded separately. Neither a global lower bound nor global
+monotonicity follows from the plotted points.}
+\end{figure}
+\begin{figure}[htbp]
+\centering\includegraphics[width=.82\linewidth]{output/inverse_ph.pdf}
+\caption{Separate extension of the adaptive crossing null beyond the
+declared 600 s Task 41 window. It first crosses the inherited upper pH
+gate near 1485 s; the selected case has a nearly identical late crossing.
+The later diagnostic does not revise the frozen 600 s
+observable; it limits claims of sustained physiological validity.}
+\end{figure}
+\FloatBarrier
+
+\section{Dependence on uncertain parameters}
+\input{sensitivity_results}
+The independent complete gate supplement resolves all 128 perturbed WT
+and null parameter roots and 256 additional expression roots used to
+check compensation. Every numerical solve succeeds and every inherited
+gate passes. Its largest conservation residual divided by its own tolerance
+is $4.086\times10^{-5}$; the largest independent RHS residual is
+$6.880\times10^{-12}$. This supplements the original derivative checks
+without weakening a gate. Exact reproduction of this supplementary
+calculation from the clean numerical checkout is recorded separately.
+
+\input{literature_comparison}
+
+\clearpage
+\section{What is established and what remains unresolved}
+\begin{longtable}{p{.17\linewidth}p{.76\linewidth}}
+\toprule
+Status & Conclusion and scope\\\midrule
+\endhead
+Proved or exact & Unique mathematical carbonate and electrical roots under
+the stated positivity and slope assumptions, smooth dependence inside strict
+executable brackets, local well posedness, exact retained nondimensionalisation,
+alkalinity storage budget, conditional capacity obstruction and equal routing
+chloride identity. Joint source projections have rank five.\\
+Local numerical & Twenty six class/expression cases yield nonsingular stable
+local roots; twenty two pass the physiological gates. WT/null slow times are
+345.82/459.92 s. The stationary null deficit is 0.94617\%; the WT local
+chloride compensation is 92.901\%. Local IFT and parameter derivatives
+are independently verified. A physiological NBC absent equilibrium exists.\\
+Finite time numerical & Frozen Task 40 observables reproduce. The 60--600 s
+integrated NKCC increase is 23.163\% and missing AE4 chloride compensation
+88.507\%. First numerical Task 41 crossings need about 89.51\% AE4 dependent
+stimulated CaCC recruitment. The 600 s gates pass; selected continued null
+cases later violate the pH gate.\\
+Unresolved & Global uniqueness, stability and positivity; a justified reduced
+model; global exclusion of earlier inverse crossings; robustness over unknown
+parameter ranges; native carrier abundance and pathway identity; molecular
+source stoichiometry and compatible kinetics; the isolated NKCC assay tension;
+independent validation of the Task 41 CaCC coupling.\\\bottomrule
+\end{longtable}
+
+Several earlier interpretations require explicit correction. Stationary
+cancellation does not imply zero total sensitivity or a uniformly small
+phenotype. The system already contains slow chemical modes; the corrected
+regulatory derivative gives 30 s, not the spurious 60 s obtained by crossing
+the production clamp. The initial unsuccessful continuation record is not
+evidence of nonexistence. NBC is not universally necessary for secretion
+in this frozen system, though it supplies most of the larger AE4 alkalinity
+demand. The old selected Task 41 point gives a sampled deficit of
+30.26115\%, slightly below 30.3\%, and the refined crossing depends on
+the declared integral. The comparison value is mean minus one standard
+error. The construction remains target selected and its late pH failure
+must accompany any claim about sustained stimulation.
+
+The immediate experimental priorities are functional pump capacity and
+apical distribution; NBC equivalent sodium/bicarbonate flux, current and
+its saturation curve; ion conditioned NKCC and NHE capacity; simultaneous
+TIC, buffering, pH and volume measurements; and stimulated CaCC conductance
+and recruitment under acute AE4 perturbation at matched calcium and driving
+forces. Source stoichiometry requires combined cation, chloride, carbon and
+current measurements. These measurements would constrain the effective
+parameters that dominate local sensitivities and separate a transport
+pathway from a fitted phenomenological coupling. An accepted physiological
+point and small numerical perturbations do not supply those missing ranges.
+
+\section{Reproduction, verification and deliverables}
+All new material is under \texttt{analysis/44\_full\_system\_mathematics/}.
+The frozen scientific base is
+\nolinkurl{c4d4f207f702d8eee09ab94d2d90ae90552dd641}.
+The original source manifest, active parameter objects, source hashes and
+recovery record distinguish scientific files from historical metadata changes.
+The complete numerical checkpoint was cloned independently, checked out
+detached, and regenerated with empty inverse trial caches before this
+standalone report was written. All eighteen commands passed. Forty six
+regenerated authoritative JSON/CSV files plus one unchanged historical
+record were compared: all 331157 numeric values matched bit for bit.
+Only elapsed runtime and an ancestor validated verification commit field
+were excluded. All 532 inverse trial files were regenerated; the optional
+cache is not part of the published scientific deliverables. All 1751 tracked
+files outside Task 44 were unchanged in that clean replay.
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{.42\linewidth}>{\raggedright\arraybackslash}p{.51\linewidth}}
+\toprule
+File or group & Content\\\midrule\endhead
+\texttt{README.md}, \texttt{RECOVERY.md} & Reproduction commands, recovered
+history and derivative correction.\\
+\texttt{core.py}, \texttt{run\_analysis.py} & Exact coordinates, production
+adapter, scaling, continuation, local derivatives and baseline reproduction.\\
+\texttt{verify\_exact.py} & Independent full RHS reconstruction, pH and
+electrical closure checks, exact source and balance identities at valid states.\\
+\texttt{equilibrium\_review.py} & Full physiological gates, matched
+eigenvalues, modal projection and independent nearby roots.\\
+\texttt{sensitivity\_analysis.py} & Sixteen uncertain parameter sensitivities
+and derivative verification; Task 43 crosswalk source.\\
+\texttt{verify\_sensitivity\_gates.py} & All 384 nearby roots tested against
+the complete inherited gates, with solver failures retained separately.\\
+\texttt{inverse\_analysis.py}, \texttt{inverse\_verify.py} & Original family,
+both crossing observables, long diagnostics, eight parameter sensitivities
+and independent thirteen state integration/quadrature.\\
+\texttt{output/}, \texttt{inverse\_detail/} & Machine readable source audit,
+scales, trajectories, roots, spectra, derivatives, projections, crossing scan,
+refinement, gates and verification.\\
+\nolinkurl{output/clean_recomputation_verification.json} & Exact numerical
+checkpoint, commands, file comparisons, exclusions and protected file audit.\\
+\texttt{report.tex}, \texttt{build.sh}, \texttt{sources.bib} & Standalone
+report source, bibliography and clean build command.\\
+\texttt{FINAL\_STATUS.md} & Final verified checkpoint, findings, failures,
+caveats, artifact paths and checksums.\\\bottomrule
+\end{longtable}
+
+The PDF build resolves every citation and reference. Figures are generated
+from saved verified results; axis ranges and the distinct observables are
+stated in captions. The report, TeX fragments, vector figures and complete
+machine readable outputs are retained for scientific review. No model
+source, frozen output, Task 1--42 analysis or manuscript text was changed.
+The two analysis branches remain separate and unmerged.
+
+\bibliographystyle{plain}
+\bibliography{sources}
+\end{document}

@@ -1,0 +1,145 @@
+\setlength{\tabcolsep}{4pt}
+\small
+\begin{longtable}{p{.38\textwidth}p{.17\textwidth}p{.11\textwidth}p{.25\textwidth}}
+\toprule Setting & Value & Used & Classification \\ \midrule\endfirsthead
+\toprule Setting & Value & Used & Classification \\ \midrule\endhead
+\bottomrule\endfoot
+\path{constants.temperature_K} & 310.15 & Yes & effective assumption \\
+\path{constants.gas_constant_J_mol_K} & 8.31446262 & Yes & physical constant \\
+\path{constants.faraday_C_mol} & 96485.3321 & Yes & physical constant \\
+\path{acid_base.carbon_pka1} & 6.1 & Yes & inherited model setting \\
+\path{acid_base.carbon_pka2} & 10.3 & Yes & inherited model setting \\
+\path{acid_base.water_pkw} & 14 & Yes & inherited model setting \\
+\path{acid_base.cell_buffer_pka} & 7 & Yes & effective assumption \\
+\path{acid_base.lumen_buffer_pka} & 7 & Yes & effective assumption \\
+\path{acid_base.ph_lower} & 3 & Yes & numerical bracket \\
+\path{acid_base.ph_upper} & 11 & Yes & numerical bracket \\
+\path{bath.na_mM} & 145 & Yes & effective assumption \\
+\path{bath.k_mM} & 5 & Yes & effective assumption \\
+\path{bath.cl_mM} & 126.161593 & Yes & reference constraint derived \\
+\path{bath.tic_mM} & 25 & Yes & effective assumption \\
+\path{bath.ph} & 7.4 & Yes & effective assumption \\
+\path{bath.buffer_total_mM} & 0 & Yes & effective assumption \\
+\path{bath.untracked_osmolyte_mM} & 0 & Yes & effective assumption \\
+\path{geometry.cell_buffer_total_fmol} & 30 & Yes & effective assumption \\
+\path{geometry.lumen_buffer_total_fmol} & 1e-09 & Yes & numerical regularisation \\
+\path{geometry.fixed_cell_anion_equivalents_fmol} & 78.0617622 & Yes & reference constraint derived \\
+\path{geometry.cell_impermeant_osmoles_fmol} & 124.699369 & Yes & inherited effective setting \\
+\path{homeostasis.nkcc1_capacity_fmol_s} & 0.32 & No & inactive legacy \\
+\path{homeostasis.nhe1_capacity_fmol_s} & 0.00744098059 & No & inactive legacy \\
+\path{homeostasis.nhe1_model} & \path{cha_2009_eight_state_mod2} & Yes & law selection \\
+\path{homeostasis.nhe1_published_g_fmol_s} & 0.0305 & No & inactive legacy \\
+\path{homeostasis.nhe1_published_k_h_mM} & 0.00045 & No & inactive legacy \\
+\path{homeostasis.nhe1_published_k_na_mM} & 15 & No & inactive legacy \\
+\path{homeostasis.nhe1_cha_carrier_amount_fmol} & 2.33937001e-05 & Yes & WT constraint derived \\
+\path{homeostasis.ae2_capacity_fmol_s} & 0.005 & Yes & effective assumption \\
+\path{homeostasis.thermodynamic_saturation_log_width} & 2 & Yes & effective assumption \\
+\path{homeostasis.co2_basolateral_permeability_fmol_s_mM} & 0.02 & Yes & effective assumption \\
+\path{homeostasis.co2_apical_permeability_fmol_s_mM} & 0.01 & Yes & effective assumption \\
+\path{membranes.nak_capacity_fmol_s} & 0.08 & Yes & effective assumption \\
+\path{membranes.nak_na_half_mM} & 10 & Yes & inherited model setting \\
+\path{membranes.nak_k_half_mM} & 1.5 & Yes & inherited model setting \\
+\path{membranes.apical_pump_fraction} & 0.075075 & Yes & effective assumption \\
+\path{membranes.apical_k_fraction} & 0.3 & Yes & effective assumption \\
+\path{membranes.g_k_total_S} & 1.4e-08 & Yes & effective assumption \\
+\path{membranes.g_cl_apical_S} & 3.14e-08 & Yes & effective assumption \\
+\path{membranes.calcium_half_uM} & 0.26 & Yes & effective assumption \\
+\path{membranes.calcium_hill} & 1.46 & Yes & effective assumption \\
+\path{membranes.g_para_na_S} & 3e-10 & Yes & inherited model setting \\
+\path{membranes.g_para_k_S} & 5e-11 & Yes & inherited model setting \\
+\path{membranes.g_para_cl_S} & 2.5e-10 & Yes & effective assumption \\
+\path{membranes.g_para_hco3_S} & 5e-11 & Yes & effective assumption \\
+\path{membranes.g_apical_background_S} & 0 & Yes & effective assumption \\
+\path{membranes.g_basolateral_background_S} & 0 & Yes & effective assumption \\
+\path{water.apical_hydraulic_pL_s_mOsm} & 0.00432 & Yes & published model conversion \\
+\path{water.basolateral_hydraulic_pL_s_mOsm} & 0.0515 & Yes & published model conversion \\
+\path{water.paracellular_hydraulic_pL_s_mOsm} & 0.00026 & Yes & published model conversion \\
+\path{water.lumen_dead_volume_pL} & 0.1 & Yes & effective assumption \\
+\path{water.outflow_rate_s} & 0.2 & Yes & effective assumption \\
+\path{initial.cell_na_mM} & 15 & No & constructor seed \\
+\path{initial.cell_k_mM} & 140 & No & constructor seed \\
+\path{initial.cell_cl_mM} & 40 & No & constructor seed \\
+\path{initial.cell_tic_mM} & 20 & No & constructor seed \\
+\path{initial.cell_ph} & 7.2 & No & constructor seed \\
+\path{initial.cell_volume_pL} & 1 & No & constructor seed \\
+\path{initial.lumen_na_mM} & 145 & No & constructor seed \\
+\path{initial.lumen_k_mM} & 5 & No & constructor seed \\
+\path{initial.lumen_cl_mM} & 126.161593 & No & constructor seed \\
+\path{initial.lumen_tic_mM} & 25 & No & constructor seed \\
+\path{initial.lumen_ph} & 7.4 & No & constructor seed \\
+\path{initial.lumen_volume_pL} & 0.1 & No & constructor seed \\
+\path{ae4.carrier_amount_fmol} & 0.150126427 & Yes & inherited effective setting \\
+\path{ae4.common_cl_attempt_rate_s} & 1 & Yes & inherited effective setting \\
+\path{ae4.na_loaded_attempt_rate_s} & 0.1 & Yes & inherited effective setting \\
+\path{ae4.k_loaded_attempt_rate_s} & 1.9 & Yes & inherited effective setting \\
+\path{ae4.cooperative_gate} & \path{None} & No & inherited effective setting \\
+\path{nbc.capacity_fmol_s} & 0.115709132 & Yes & WT architecture derived \\
+\path{nbc.log_width} & 2 & Yes & effective assumption \\
+\path{nbc.resting_calcium_uM} & 0.058 & Yes & effective assumption \\
+\path{nbc.fully_recruited_calcium_uM} & 0.25 & Yes & effective assumption \\
+\path{nbc.nhe1_stimulated_multiplier} & 2.3 & Yes & effective assumption \\
+\path{nkcc.alpha_eff_fmol_s} & 0.0173347469 & Yes & WT constraint derived \\
+\path{nkcc.A1} & 157.5 & Yes & published kinetic coefficient \\
+\path{nkcc.A2} & 2.0096e-05 & Yes & published kinetic coefficient \\
+\path{nkcc.A3} & 1.0306 & Yes & published kinetic coefficient \\
+\path{nkcc.A4} & 1.3852e-06 & Yes & published kinetic coefficient \\
+\path{cha.k1_plus_per_ms} & 10.5 & Yes & published kinetic coefficient \\
+\path{cha.k1_minus_per_ms} & 0.201 & Yes & published kinetic coefficient \\
+\path{cha.k2_plus_per_ms} & 15.8 & Yes & published kinetic coefficient \\
+\path{cha.k_na_o_mM} & 195 & Yes & published kinetic coefficient \\
+\path{cha.k_na_i_mM} & 16.2 & Yes & published kinetic coefficient \\
+\path{cha.k_h_o_mM} & 0.00162 & Yes & published kinetic coefficient \\
+\path{cha.k_h_i_mM} & 0.000605 & Yes & published kinetic coefficient \\
+\path{cha.modifier_k_i_mM} & 3.07e-05 & Yes & published kinetic coefficient \\
+\path{cha.modifier_k_o_mM} & 4.8e-07 & Yes & published kinetic coefficient \\
+\path{cha.k2_minus_table_per_ms} & 183 & Yes & published kinetic coefficient \\
+\path{regulation.tau_ae4_s} & 30 & Yes & effective assumption \\
+\path{regulation.basal_capacity_multiplier} & 1 & Yes & effective assumption \\
+\path{regulation.fully_activated_increment} & 0.25 & Yes & effective assumption \\
+\path{regulation.coupling_scale} & 1 & Yes & effective assumption \\
+\path{nkcc_activation.fully_activated_multiplier} & 1.75 & Yes & inherited effective setting \\
+\path{nkcc_activation.resting_calcium_uM} & 0.058 & Yes & inherited effective setting \\
+\path{nkcc_activation.stimulated_calcium_uM} & 0.1 & Yes & inherited effective setting \\
+\path{protocol.arm} & \path{CCH_IPR} & Yes & protocol setting \\
+\path{protocol.onset_s} & 0 & Yes & protocol setting \\
+\path{protocol.duration_s} & 600 & Yes & protocol setting \\
+\path{protocol.cch_dose_uM} & 0.3 & No & protocol setting \\
+\path{protocol.ipr_dose_uM} & 5 & No & protocol setting \\
+\path{protocol.resting_calcium_uM} & 0.058 & Yes & protocol setting \\
+\path{protocol.stimulated_calcium_uM} & 0.25 & Yes & protocol setting \\
+\path{protocol.beta_occupancy_on} & 1 & Yes & protocol setting \\
+\path{Task41.b} & 0.105118728 & No & target selected \\
+\path{cha.intracellular_modifier_hill} & 3 & Yes & published kinetic coefficient \\
+\path{cha.extracellular_modifier_hill} & 1 & Yes & published kinetic coefficient \\
+\path{nkcc.law} & \path{palk_benjamin_2010_eq17} & Yes & law selection \\
+\path{ae4.law} & \path{equal_routing_adapter} & Yes & law selection \\
+\path{regulation.family} & \path{R1} & Yes & law selection \\
+\path{regulation.construct} & \path{WT} & Yes & protocol setting \\
+\path{nkcc_activation.family} & \path{N1_CCH_ALGEBRAIC} & Yes & law selection \\
+\path{nbc_design.TARGET_NKCC1_POSITIVE_CL_SHARE} & 0.7 & No & effective assumption \\
+\path{nbc_design.TASK31_R09_NKCC1_CL_FMOL_S} & 0.256244405 & No & WT architecture derived \\
+\path{nbc_design.TASK31_R09_NHE1_FMOL_S} & 0.00789058049 & No & WT architecture derived \\
+\path{nbc_design.DERIVED_AE4_CL_FMOL_S} & 0.109819031 & No & WT architecture derived \\
+\path{nbc_design.DERIVED_STIMULATED_NHE1_FMOL_S} & 0.0181483351 & No & WT architecture derived \\
+\path{nbc_design.DERIVED_REQUIRED_NBC_CYCLE_FMOL_S} & 0.100744863 & No & WT architecture derived \\
+\path{frozen_initial.na_i_fmol} & 16.7203587 & Yes & WT constraint derived \\
+\path{frozen_initial.k_i_fmol} & 170.002009 & Yes & WT constraint derived \\
+\path{frozen_initial.cl_i_fmol} & 88.031802 & Yes & WT constraint derived \\
+\path{frozen_initial.tic_i_fmol} & 8.26351181 & Yes & WT constraint derived \\
+\path{frozen_initial.alk_i_fmol} & 20.6288031 & Yes & WT constraint derived \\
+\path{frozen_initial.volume_i_pL} & 1.45333439 & Yes & WT constraint derived \\
+\path{frozen_initial.na_l_fmol} & 13.1277687 & Yes & WT constraint derived \\
+\path{frozen_initial.k_l_fmol} & 2.71897261 & Yes & WT constraint derived \\
+\path{frozen_initial.cl_l_fmol} & 15.3786879 & Yes & WT constraint derived \\
+\path{frozen_initial.tic_l_fmol} & 0.540262316 & Yes & WT constraint derived \\
+\path{frozen_initial.alk_l_fmol} & 0.468053423 & Yes & WT constraint derived \\
+\path{frozen_initial.volume_l_pL} & 0.105388407 & Yes & WT constraint derived \\
+\path{frozen_initial.ae4_effective_activation_fraction} & 0 & Yes & WT constraint derived \\
+\path{genotype.name} & \path{WT} & No & protocol setting \\
+\path{genotype.ae4_expression} & 1 & Yes & protocol setting \\
+\path{genotype.ae2_expression} & 1 & Yes & protocol setting \\
+\path{genotype.nkcc1_expression} & 1 & Yes & protocol setting \\
+\path{genotype.nhe1_expression} & 1 & Yes & protocol setting \\
+\path{protocol.ae4_expression_cases} & \path{[1.0, 0.05, 0.0]} & Yes & protocol setting \\
+\end{longtable}
+\normalsize

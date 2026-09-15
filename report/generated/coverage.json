@@ -1,0 +1,32 @@
+{
+  "complete_jacobians": 26,
+  "coordinate_attribution_rows": 33,
+  "eigenvalues": 286,
+  "equilibrium_cases": 26,
+  "expression_derivative_points": 4,
+  "inverse_parameter_observable_pairs": 16,
+  "jacobian_entries": 3146,
+  "modal_rows": 22,
+  "ordered_inverse_points": 17,
+  "parameter_active_flags": 109,
+  "parameter_inventory_records": 137,
+  "parameter_metric_rows": 208,
+  "scientific_recomputation_performed_by_report_assembly": false,
+  "source_snapshot_files": 126,
+  "state_entries": 338,
+  "task43_full_exposition": {
+    "all_sections_retained": true,
+    "expanded_tex_sha256": "03d47dce298e32c56ba82e3a3a502b307bfb4e579c4b8541ec6f8e71887227a8",
+    "integrated_section_count": 7,
+    "original_report_sha256": "173c8855813b6ff124cae9bbe192168c6a3abc88e6ceae65cb2d8546f08100d0",
+    "original_section_count": 7
+  },
+  "task44_full_exposition": {
+    "all_sections_retained": true,
+    "expanded_tex_sha256": "f95505ec35e55a039404354c96739106a1cc23eb1ce1f5ad87e6678ed22c7f00",
+    "integrated_section_count": 16,
+    "original_report_sha256": "384795a43b0fc7becc02313ec2f68cbeaee4c974c22960427c874ce407d8273f",
+    "original_section_count": 7
+  },
+  "uncertain_parameters": 16
+}

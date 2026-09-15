@@ -1,0 +1,7 @@
+{
+  "adaptive_integral_pL": 0.9925444427461253,
+  "canonical_flow_max_error": 1.3619079822224656e-12,
+  "dimensionless_max_scaled_error": 7.523696110567357e-10,
+  "original_sampled_cumulative_pL": 0.992524544081835,
+  "reproduced_sampled_cumulative_pL": 0.9925245446920273
+}

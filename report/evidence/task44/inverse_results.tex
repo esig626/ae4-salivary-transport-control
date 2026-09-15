@@ -1,0 +1,168 @@
+\section{The prescribed Task 41 inverse family}
+\label{sec:task41inverse}
+
+The Task 41 construction is target selected. Its added hypothesis changes
+stimulated CaCC conductance before the full electrical and NBC closure:
+\begin{equation}
+ g_{\mathrm{CaCC}}(e,a;\rho)
+ =g_{\mathrm{parent}}\{1-a\rho(1-e)\},\qquad
+ \rho=1-b,\quad 0\leq\rho<1.
+ \label{eq:inversefamily}
+\end{equation}
+Here $e$ is AE4 expression and $a$ is the protocol normalised recruitment
+fraction used by NBC:
+\[
+ a=\min\!\left\{1,\max\!\left\{0,
+ \frac{[\mathrm{Ca}]_i-0.058\,\mu\mathrm M}{(0.25-0.058)\,\mu\mathrm M}
+ \right\}\right\}.
+\]
+The parent CaCC Hill gate remains a distinct retained factor.
+The full conserved system, carbonate closure, electrical closure, both
+volumes and AE4 regulation remain active. WT nests the parent exactly for
+every state and every $\rho$. At full activation, the null retains fraction
+$b=1-\rho$ of its parent CaCC conductance.
+
+Every 600 s trajectory uses the identical frozen WT initial conserved state
+and original stimulus protocol. No genotype resting solve, new mechanism or
+parameter fit is introduced. All inherited positivity, concentration, pH,
+volume, source and conservation gates are checked at accepted solver endpoints
+and at the original observation times. The original WT stimulation requirement
+is also retained; it is not imposed retrospectively on mutants.
+
+For $X\in\{\mathrm{A},\mathrm{S}\}$ define
+\begin{equation}
+ D_X(\rho,p)=1-\frac{I_{0,X}(\rho,p)}{I_{1,X}(p)}.
+ \label{eq:inverseobservable}
+\end{equation}
+$I_{e,\mathrm A}$ is the adaptive time integral of outflow and
+$I_{e,\mathrm S}$ is the original trapezoidal observable on integer seconds,
+including $t=0$ and $10^{-6}$ s. These are distinct numerical observations.
+The prescribed comparison threshold is $D_X=0.303$: it is one reported
+standard error below the experimental mean of 35\%, whose reported standard
+error is 4.7 percentage points. It is not a confidence limit, a measured
+biological range or an admissibility gate.
+
+\subsection{Reproduction and numerical crossing}
+The selected Task 41 parameter is
+$b=0.10511872843288446$, or $\rho=0.8948812715671155$.
+The three selected trajectories reproduce the frozen sampled cumulative
+outputs to within 6.7e-10 pL.
+\begin{center}
+\begin{tabular}{lrrr}
+\hline
+Case & Sampled output (pL) & Adaptive output (pL) & Sampled deficit (\%) \\
+\hline
+WT & 0.992524545 & 0.992544443 & 0 \\
+5\% AE4 & 0.762622459 & 0.762624862 & 23.163365 \\
+AE4 null & 0.692175197 & 0.692173709 & 30.261151 \\
+\hline
+\end{tabular}
+\end{center}
+In particular, the frozen selected null deficit is slightly below 30.3\%.
+It must not be described as exactly attaining this new comparison threshold.
+
+An ordered scan of 17 recruitment fractions, followed by bracketed numerical
+root refinement in the prescribed family, gives:
+\begin{center}
+\begin{tabular}{lrrr}
+\hline
+Observable & Crossing $\rho$ & AE4 dependent recruitment (\%) & Residual $b$ \\
+\hline
+Adaptive & 0.8950726882 & 89.5072688 & 0.1049273118 \\
+Original sampled & 0.8950806285 & 89.5080628 & 0.1049193715 \\
+\hline
+\end{tabular}
+\end{center}
+Both crossings pass every inherited 600 s gate. At the adaptive crossing,
+the original sampled deficit is 30.2984507\%;
+at the sampled crossing, the adaptive deficit is
+30.3015492\%.
+Refinement at relative solver tolerances $10^{-8}$ and $2\times10^{-9}$,
+with respective maximum steps 2 s and 1 s, changes the two crossing fractions
+by 1.4e-13 and
+1.7e-11, respectively.
+Independent integration of the 13 production states, followed by adaptive
+quadrature of dense flow, also reproduces the selected cases and crossing.
+
+The deficit increases at the sampled points, but monotonicity between them
+and exclusion of all earlier unsampled crossings have not been proved.
+These are the first numerical crossings found in this prescribed family,
+not global lower bounds, universal recruitment requirements or independent
+validation of the coupling hypothesis.
+
+\subsection{The separate extension beyond 600 s}
+Continuing constant full stimulation to 3600 s gives the following null
+diagnostics. Each run passes all inherited gates through 600 s. Intracellular
+pH is the only later gate failure; all other monitored gates continue to pass.
+\begin{center}
+\begin{tabular}{lrrr}
+\hline
+Case & First pH $=7.3$ time (s) & pH at 3600 s & Limiting local root pH \\
+\hline
+Selected Task 41 & 1486.30957 & 7.3117946 & 7.3120147 \\
+Adaptive crossing & 1484.74517 & 7.3118437 & 7.3120644 \\
+\hline
+\end{tabular}
+\end{center}
+The limiting roots found from these late states are mathematical continuations
+outside the inherited pH domain. They do not establish globally unique
+equilibria or physiological long term validity. These separate diagnostics do
+not change any frozen 600 s Task 41 result.
+
+\subsection{Local uncertainty of the crossing}
+For a locally regular numerical crossing with $\partial_\rho D_X\ne0$,
+\begin{equation}
+ \frac{\mathrm d\rho_X}{\mathrm d\log p}
+ =-\frac{\partial_{\log p}D_X}{\partial_\rho D_X},\qquad
+ \frac{\mathrm d\log b_X}{\mathrm d\log p}
+ =-\frac{1}{1-\rho_X}\frac{\mathrm d\rho_X}{\mathrm d\log p}.
+ \label{eq:thresholdsensitivity}
+\end{equation}
+Eight effective or architecture derived quantities were selected using the
+Task 43 provenance classification. A perturbed WT denominator is used with
+the same perturbed parameter in the null. The conserved initial state is
+always held at the inherited WT value. Thus changing the buffer amount also
+changes the algebraic initial pH; it does not trigger a new resting solve.
+
+The following elasticities refer to the adaptive crossing. The companion
+sampled results are retained in the machine readable crosswalk.
+\begin{center}
+\begin{tabular}{lrr}
+\hline
+Parameter & $\mathrm d\log\rho/\mathrm d\log p$ & $\mathrm d\log b/\mathrm d\log p$ \\
+\hline
+NBC capacity & -0.0059550 & +0.0507982 \\
+AE4 carrier amount & -0.0050569 & +0.0431371 \\
+NKCC effective scale & -0.0021926 & +0.0187041 \\
+NHE1 carrier amount & +0.0008018 & -0.0068396 \\
+Pump capacity & -0.0355825 & +0.3035333 \\
+CaCC conductance & +0.0983320 & -0.8388120 \\
+Cell buffer amount & +0.0071557 & -0.0610411 \\
+Apical water permeability & -0.0002975 & +0.0025380 \\
+\hline
+\end{tabular}
+\end{center}
+The derivative calculation is checked against independently solved nearby
+crossings at logarithmic perturbation sizes $10^{-3}$ and $5\times10^{-4}$.
+Every perturbed WT and null trajectory passes its inherited gates. The maximum
+relative discrepancy between implicit crossing derivatives and nearby root
+differences is 1.7e-06.
+The larger relative sensitivity of residual recruitment $b$ is relevant when
+interpreting a conductance assay. None of these eight quantities has an
+established experimental uncertainty interval in the audited configuration.
+Accordingly, these calculations establish local sensitivity only; they do
+not prove robustness over a finite range or identify a finite parameter
+change that overturns the conclusion.
+
+\subsection{A discriminating experiment and scope}
+At the numerical comparison crossing the null must retain approximately
+10.49\% of stimulated CaCC conductance in this family. A direct test would
+compare stimulated CaCC conductance and channel recruitment in WT and AE4
+loss cells while matching calcium activation, voltage, intracellular chloride
+and pH, so that a changed driving force is distinguished from a changed
+conductance. Surface channel abundance and channel open probability would
+help distinguish recruitment from gating. Concurrent measurements of pH,
+chloride, cell volume and secretion over the first ten minutes and after
+approximately 25 minutes would test the predicted coupled response and its
+later pH failure. A secretion measurement alone does not identify this
+specific dependency.

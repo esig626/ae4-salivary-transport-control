@@ -1,0 +1,65 @@
+\section{Independent equilibrium and spectral review}
+
+The full inherited physiological and conservation gates were applied to all 26 roots. Twenty two roots pass; the four excluded roots are retained in the table below. All 26 Jacobians are nonsingular and have negative real spectral parts on the 11 dimensional charge manifold. This establishes numerical local stability in the inward regulatory linearisation, not global uniqueness or global physiological validity.
+
+\begin{center}\begin{tabular}{lrrrrl}\hline Class & $e_4$ & $\mathrm{pH}_i$ & $[\mathrm{Na}]_i$ & $\tau_{\rm slow}$ (s) & Failed gate\\\hline
+
+C1 & 1 & 7.0139 & 45.694 & 564.4 & na\_i\_mM\\
+
+C2 & 1 & 6.5211 & 57.460 & 500.5 & na\_i\_mM, ph\_i\\
+
+C4a & 1 & 6.5214 & 31.108 & 455.7 & ph\_i\\
+
+C4b & 1 & 6.5792 & 15.581 & 313.6 & ph\_i\\
+
+\hline\end{tabular}\end{center}
+
+The first inherited checkpoint recorded 22 roots and four unsuccessful large continuation steps, without individual seeds, class labels or error strings. That aggregate failure record is preserved verbatim in the review JSON; missing details have not been reconstructed. The completed analysis follows C0 through eight expression levels. Other classes use the converged C0 WT as the WT seed and matching C0 roots for 5 percent expression and the null. This documented retry strategy obtains all 26 roots, including the four outside the physiological gates.
+
+Eigenvalues were matched individually between relative coordinate difference steps $10^{-5}$ and $5\times10^{-6}$. The greatest matched relative eigenvalue discrepancy is 5.43e-08. At full regulatory activation the production evaluator clips values beyond one. A centred derivative across this boundary halves the regulatory Jacobian column. The corrected second order inward derivative gives the regulatory eigenvalue $-1/30\;\mathrm{s}^{-1}$. The much slower chemical modes remain, with decay times 345.82 s in WT and 459.92 s in the null.
+
+\subsection{Thermodynamics at the local roots}
+
+\begin{center}\begin{tabular}{lrrl}\hline Class & $e_4$ & $A_4/(RT)$ & Signed flux compatibility\\\hline
+
+C0 & 1 & -0.9589 & opposed\\
+
+C1 & 1 & 3.8925 & supported\\
+
+C2 & 1 & 3.8589 & supported\\
+
+C3a & 1 & 1.5135 & supported\\
+
+C3b & 1 & -3.7440 & opposed\\
+
+C3b & 0.05 & -2.2240 & opposed\\
+
+C4a & 1 & 0.7093 & supported\\
+
+C4b & 1 & -4.3271 & opposed\\
+
+C4b & 0.05 & -2.3400 & opposed\\
+
+\hline\end{tabular}\end{center}
+
+Positive forward affinity supports the proposed positive chloride cycle direction. The product of signed cycle flux and affinity separately checks the actual implemented flux. These diagnostics do not replace the inherited scalar cycle law. Every null has exactly zero AE4 flux, regardless of the hypothetical forward affinity. Thermodynamic opposition is retained and is not repaired by refitting.
+
+\subsection{Modal input and output projection}
+
+For $\dot z=Jz+B\,\delta e_4$ and $\delta Q=Cz$, let $J=V\Lambda V^{-1}$. The residue of mode $k$ is $(CV)_k(V^{-1}B)_k$, and its stationary sensitivity contribution is this residue divided by $-\lambda_k$. The right vectors, inverse left rows and both projections are reported for every WT and null mode. The Euclidean norm uses the declared dimensionless coordinates and is not a physiological energy norm.
+
+\begin{center}\begin{tabular}{lrrrr}\hline State & $\tau_{\rm slow}$ & $\kappa(V)$ & $\max_t\|e^{Jt}\|_2$ & $\mathrm{d}Q^*/\mathrm{d}e_4$\\\hline
+
+WT & 345.82 & 22.02 & 1.37 & 1.28527e-06\\
+
+Null & 459.92 & 21.59 & 1.37 & 5.06256e-05\\
+
+\hline\end{tabular}\end{center}
+
+The propagator maxima are sampled numerical diagnostics over 0 to 10000 s, not proved suprema. State amplification, expression input projection and secretion output projection must be considered together. A small stationary secretion sensitivity can result from cancellation of modal contributions even when slow state modes are present. In WT, the 345.82 s and 223.48 s modes contribute $-5.5754\times10^{-5}$ and $+1.6013\times10^{-5}$ pL s$^{-1}$ per unit expression to the stationary secretion derivative. These contributions partially cancel faster positive contributions, leaving the much smaller net derivative $+1.2853\times10^{-6}$ pL s$^{-1}$. At the null, the 459.92 s mode contributes $-3.5795\times10^{-4}$ pL s$^{-1}$, against a net derivative of $+5.0626\times10^{-5}$ pL s$^{-1}$. The slow modes therefore do project onto expression driven secretion and substantially shape its transient approach; their effects are not absent merely because the final WT derivative is small. For example, at 600 s the WT linear step derivative is $1.0027\times10^{-5}$ pL s$^{-1}$, still above its eventual value. The 30 s regulatory mode has zero expression input projection at both endpoints, because its target does not depend on expression. Its WT secretion output projection is nonzero, so a perturbation that actually excites regulation is a different experiment. There is therefore no basis for claiming that this model lacks a slow mode. The linear expression response at either endpoint is not a validated approximation to the complete WT to null change.
+
+\subsection{Independent reference and sensitivity verification}
+
+All 34 diagnostic columns at all 11 frozen display times were reproduced for WT, 5 percent expression and the null using the original Task 40 stimulus. The largest relative diagnostic discrepancy was 2.26e-07; the largest cumulative secretion discrepancy was 6.73e-10 pL. The original stimulus is unstimulated at the exact initial instant; the separate constant stimulus equilibrium experiment is fully stimulated there. This distinction matters for instantaneous transporter fluxes, even though initial outflow is state determined.
+
+Implicit expression sensitivities for all independent coordinates and six observables were checked against separately solved nearby roots at $10^{-4}$ and $5\times10^{-5}$. Centred differences were used at expression 1, 0.5 and 0.05, and second order inward differences at the null. All component discrepancies and root residuals are provided in the review JSON. Chloride compensation retains the factor two for NKCC cycles.
