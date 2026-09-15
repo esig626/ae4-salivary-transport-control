@@ -16,4 +16,5 @@ if grep -Eq 'undefined citations|undefined references|Label\(s\) may have change
   echo 'Unresolved report references' >&2; exit 1
 fi
 cp report.pdf AE4_parameter_provenance.pdf
+rm report.pdf
 pdfinfo AE4_parameter_provenance.pdf | grep -E '^(Pages|Page size|File size):'

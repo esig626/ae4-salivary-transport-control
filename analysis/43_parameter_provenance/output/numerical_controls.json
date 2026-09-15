@@ -31,6 +31,12 @@
     "volume_atol_pL": 1e-12
   },
   "regulatory_trial_tolerance": 0.0001,
+  "stimulus_discontinuity": {
+    "initial_observable_time_s": 0.0,
+    "integration_start_s": 1e-06,
+    "shared_initial_state_preserved": true,
+    "source": "analysis/40_ae4_equal_cation_routing/run_case.py:152"
+  },
   "unit_conventions": {
     "fmol_per_mol": 1000000000000000.0,
     "mM_times_pL_equals_fmol": true,

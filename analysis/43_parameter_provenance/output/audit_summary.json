@@ -7,7 +7,7 @@
     "stimulus": "93eba70092faaa9497c80ce30d979726a77b092cf04c0ff4cd106d3774a2c4f4",
     "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
   },
-  "active_records": 104,
+  "active_records": 109,
   "base_main": "c4d4f207f702d8eee09ab94d2d90ae90552dd641",
   "calibrated_uncertainty_intervals": 0,
   "classifications": {
@@ -22,7 +22,7 @@
     "numerical_bracket": 2,
     "numerical_regularisation": 1,
     "physical_constant": 2,
-    "protocol_setting": 9,
+    "protocol_setting": 15,
     "published_kinetic_coefficient": 16,
     "published_model_conversion": 3,
     "reference_constraint_derived": 2,
@@ -37,6 +37,6 @@
   "frozen_initial_state_sha256": "a0b96ef16e5967de4dfe2bdabb882f2a28d478e211f920bc19cd735a5a143acb",
   "model_or_frozen_outputs_modified": false,
   "parameter_fits_performed": 0,
-  "records": 131,
+  "records": 137,
   "uncertainty_interpretation": "Logical domains and physiology gates are not measured uncertainty intervals; all effective parameter intervals remain unestablished."
 }

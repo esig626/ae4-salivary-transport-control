@@ -1,6 +1,7 @@
 {
-  "active_records": 104,
+  "active_records": 109,
   "all_actual_nested_dataclass_fields_covered": true,
+  "all_branch_changes_within_task43": true,
   "all_record_source_paths_resolve": true,
   "cha_fixed_exponents_verified": true,
   "frozen_initial_state_hash_verified": true,
@@ -12,8 +13,12 @@
   "production_parameter_hashes_verified": true,
   "production_source_manifest_entries": 75,
   "protected_source_changes": [],
-  "records": 131,
+  "records": 137,
+  "report_tables_match_machine_readable_sources": true,
   "saved_outputs_match_recomputation": true,
   "scope": "Inventory reconstruction, selected input law checks, original parameter and state hashes, source files, uncertainty semantics and CSV/JSON consistency.",
-  "sensitivity_crosswalk_present": false
+  "sensitivity_crosswalk_matches_committed_source": true,
+  "sensitivity_crosswalk_present": true,
+  "sensitivity_source_commit": "f783785a863440df459e9c5530beba4c7eb59110",
+  "sensitivity_source_file_hashes_reverified": 7
 }

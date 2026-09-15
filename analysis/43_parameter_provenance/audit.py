@@ -2,7 +2,7 @@
 from __future__ import annotations
 import os
 for key in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS'):os.environ[key]='1'
-import csv,importlib.util,json,sys,hashlib
+import ast,csv,importlib.util,json,sys,hashlib
 from pathlib import Path
 from dataclasses import asdict,fields,is_dataclass
 from collections import Counter
@@ -115,6 +115,16 @@ for n,v in zip(model.state_names,frozen_rest['state_vector']):
     add('frozen_initial.'+n,v,'pL' if 'volume' in n else 'dimensionless' if 'fraction' in n else 'fmol',
         'WT_constraint_derived','results/40_ae4_equal_cation_routing/wt_rest.json',
         'Solved, accepted WT resting state used as the shared initial condition for production genotype trajectories; not the constructor seed and not an independent measurement.')
+from modern_full_model.model import WT
+for n,v in asdict(WT).items():
+    add('genotype.'+n,v,'genotype label' if n=='name' else 'dimensionless expression scale',
+        'protocol_setting','src/modern_full_model/model.py:Genotype',
+        'Externally passed WT expression scale, equal to one for all retained transporters; not a measured abundance. Task 40 alters only the AE4 expression scale.',active=n!='name')
+case_tree=ast.parse((ROOT/'analysis/40_ae4_equal_cation_routing/run_case.py').read_text())
+cases=next(ast.literal_eval(n.value) for n in case_tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='CASES' for t in n.targets))
+add('protocol.ae4_expression_cases',list(cases.values()),'dimensionless expression scales','protocol_setting',
+    'analysis/40_ae4_equal_cation_routing/run_case.py:21',
+    'Predeclared WT, 5 percent and null interventions; only the AE4 expression field differs. These are protocol conditions, not estimated abundance uncertainty.')
 from provenance_metadata import enrich_inventory,write_source_manifest
 enrich_inventory(rows,ROOT)
 write_source_manifest(rows,ROOT,OUT)
@@ -130,10 +140,14 @@ from modern_full_model.camp_pka import INTEGRATION_TRIAL_TOLERANCE
     'voltage_inversion':{'lower_V':-.5,'upper_V':.5,'xtol_V':1e-14,'rtol':1e-13,
                          'source':'src/modern_full_model/nbc_minimal.py:evaluate_membrane_closure_with_nbc'},
     'unit_conventions':{'mM_times_pL_equals_fmol':True,'fmol_per_mol':1e15,'ms_per_s':1000},
+    'stimulus_discontinuity':{'initial_observable_time_s':0.0,'integration_start_s':1e-6,
+                             'shared_initial_state_preserved':True,
+                             'source':'analysis/40_ae4_equal_cation_routing/run_case.py:152'},
     'note':'Tolerances are audited from retained source or production specifications. They do not bound model error or parameter uncertainty.'
 },indent=2,sort_keys=True)+'\n')
 with (OUT/'parameter_inventory.csv').open('w',newline='') as f:
-    keys=list(dict.fromkeys(k for r in rows for k in r));w=csv.DictWriter(f,keys,lineterminator='\n');w.writeheader();w.writerows(rows)
+    keys=list(dict.fromkeys(k for r in rows for k in r));w=csv.DictWriter(f,keys,lineterminator='\n');w.writeheader()
+    w.writerows({k:json.dumps(v,sort_keys=True) if isinstance(v,(list,dict)) else v for k,v in r.items()} for r in rows)
 (OUT/'parameter_inventory.json').write_text(json.dumps(rows,indent=2,default=str,allow_nan=False)+'\n')
 summary=dict(base_main='c4d4f207f702d8eee09ab94d2d90ae90552dd641',records=len(rows),active_records=sum(r['active'] for r in rows),
   classifications=dict(Counter(r['classification'] for r in rows)),active_parameters_hashes=task.parameter_hashes(model),

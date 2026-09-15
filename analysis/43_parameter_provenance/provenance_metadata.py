@@ -22,7 +22,8 @@ ROLE = {
  'regulation': ('camp_pka.py','capacity_multiplier','da/dt=(beta-a)/tau; AE4 multiplier=basal+increment*coupling*construct_scale*a.'),
  'nkcc_activation': ('nkcc_stimulation.py','normalized_calcium_arm','m_N=1+(m_max-1)*clip((Ca-Ca_rest)/(Ca_sat-Ca_rest),0,1).'),
  'protocol': ('validation.py','__call__','Declared input arm and time window select calcium and beta activation steps; no agonist dose response map is present.'),
- 'Task41': ('task41_selected.py','cacc_multiplier','In the prescribed inverse family, residual stimulated CaCC recruitment is b and the AE4 dependent fraction is rho=1-b.'),
+ 'Task41': ('ae4_cacc_recruitment.py','recruitment_factor','In the prescribed inverse family, residual stimulated CaCC recruitment is b and the AE4 dependent fraction is rho=1-b.'),
+ 'genotype': ('model.py','Genotype','Externally passed expression multipliers scale the corresponding transport flux; zero AE4 expression is an exact deletion of its source.'),
  'nbc_design': ('nbc_minimal.py','DERIVED_REFERENCE_NBC_CAPACITY_FMOL_S','Upstream construction: J4_req=((1-s)/s)*L_N; JB_req=J4_req-H_stim/2; capacity includes the self consistent voltage.'),
  'frozen_initial': ('model.py','evaluate','Full conserved state and regulatory initial value at t=0 for the finite duration protocol; all amounts and both volumes evolve subsequently.'),
 }
@@ -47,13 +48,16 @@ def source_location(root, filename, symbol):
     path=root/'src/modern_full_model'/filename
     lines=path.read_text().splitlines()
     for i,line in enumerate(lines,1):
-        if ('def '+symbol+'(' in line or line.lstrip().startswith(symbol+' =')):
+        if ('def '+symbol+'(' in line or 'class '+symbol+':' in line or line.lstrip().startswith(symbol+' =')):
             return f'{path.relative_to(root)}:{i}'
     # No guessed line: a file level source remains exact when a symbol is absent.
     return str(path.relative_to(root))
 
 
 def enrich_inventory(rows,root):
+    crosswalk=root/'analysis/43_parameter_provenance/output/task44_sensitivity_crosswalk.json'
+    crosswalk_data=json.loads(crosswalk.read_text()) if crosswalk.exists() else {}
+    sensitivity={r['inventory_parameter']:r for r in crosswalk_data.get('parameters',[])}
     selected=set(x[0] for x in ROLE.values())|{'ae4_equal_cation_routing.py','task31_nhe1_repair.py','parameters.py'}
     source_lines={str((root/'src/modern_full_model'/f).relative_to(root)):(root/'src/modern_full_model'/f).read_text().splitlines() for f in selected}
     for r in rows:
@@ -75,6 +79,11 @@ def enrich_inventory(rows,root):
             r['active']=False
             r['selected_law_usage']='Protocol dose metadata only. __call__ returns prescribed calcium and beta values independently of these dose fields.'
             r['justification']='Nominal experiment dose labels retained for provenance. The selected model has no dose response map from these fields to calcium or beta activation.'
+        if name=='protocol.beta_occupancy_on':r['units']='dimensionless fraction'
+        if name=='protocol.ae4_expression_cases':
+            r['equation_role']='Task40 calls the same model with e4=1,0.05,0; eNKCC=eNHE=eAE2=1 and all other parameters fixed.'
+            r['equation_source']='analysis/40_ae4_equal_cation_routing/run_case.py:78'
+            r['code_locations']=['analysis/40_ae4_equal_cation_routing/run_case.py:21','analysis/40_ae4_equal_cation_routing/run_case.py:78']
         if name.startswith('frozen_initial.'):
             r['selected_law_usage']='Used as an initial condition. This is an output of the frozen WT root solve, not a kinetic coefficient.'
             r['code_locations']=['results/40_ae4_equal_cation_routing/wt_rest.json:state_vector']
@@ -121,6 +130,8 @@ def enrich_inventory(rows,root):
         if name.startswith('acid_base.') and 'ph_' not in name:r['logical_domain']='Finite p scale dissociation constant; environmental applicability must be measured.'
         if name in {'acid_base.ph_lower','acid_base.ph_upper'}:r['logical_domain']='Ordered numerical inversion endpoints [3,11]; not the inherited physiological pH gate [6.6,7.3].'
         if name=='nbc.nhe1_stimulated_multiplier':r['logical_domain']='At least 1 by the selected model constructor; this is a structural choice, not an experimental lower bound.'
+        if name=='Task41.b':r['logical_domain']='0 < b <= 1, equivalently 0 <= rho < 1, by the prescribed family constructor. b=0 is excluded; this is not a measured uncertainty interval.'
+        if group=='genotype' and leaf!='name':r['logical_domain']='Nonnegative expression scale; values 1, 0.05 and 0 are specified interventions, not a fitted interval.'
         r['manuscript_dependence']='Numerical state, current and secretion claims are conditional on this active setting; exact stoichiometric identities are independent of its numerical value.' if r['active'] else 'No independent parent RHS sensitivity. Used only for the explicitly stated metadata, initial reference, design lineage or inverse family role.'
         if group=='regulation':r['manuscript_dependence']='Regulatory transient claims depend on the selected family/timescale and gain; constant full stimulus equilibrium is independent of tau within R1.'
         if name=='Task41.b':r['manuscript_dependence']='Directly controls the target selected Task 41 CaCC recruitment mechanism and its 600 s inverse crossing; outside the parent Task 40 model.'
@@ -134,6 +145,18 @@ def enrich_inventory(rows,root):
         elif cls in {'inactive_legacy','constructor_seed'}:
             r['constraint_experiment']='No new production parameter experiment is implied for this inactive field; measure the actual corresponding state or active pathway instead.'
         r['sensitivity_crosswalk']='See output/task44_sensitivity_crosswalk.json when available; a missing numerical derivative is not evidence of insensitivity.'
+        if name in sensitivity:
+            z=sensitivity[name]['results']
+            r['sensitivity_crosswalk']={'source':'output/task44_sensitivity_crosswalk.json',
+                 'source_commit':crosswalk_data['source_commit'],
+                 'status':'local_numerical','WT_secretion_log_elasticity':z['WT_Q_log_elasticity'],
+                 'WT_pH_per_log_parameter':z['WT_pH_per_log_parameter'],
+                 'null_stationary_deficit_log_elasticity':z['null_stationary_deficit_log_elasticity'],
+                 'chloride_compensation_gain_log_elasticity':z['chloride_compensation_gain_log_elasticity'],
+                 'WT_slowest_decay_log_elasticity':z['WT_slowest_decay_log_elasticity'],
+                 'noNBC_capacity_ratio_log_elasticity':z['noNBC_capacity_to_current_demand_log_elasticity'],
+                 'finite_change_overturning_a_claim_established':False}
+            r['manuscript_dependence']+=' Local numerical dependence is quantified in the linked crosswalk; it establishes neither a measured uncertainty range nor global robustness.'
 
 
 def write_source_manifest(rows,root,out):
