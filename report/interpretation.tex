@@ -1,0 +1,89 @@
+\section{Question, scope and standard of inference}
+\label{sec:report-scope}
+The scientific question is why AE4 loss produces a substantial sustained salivary secretion deficit even though NKCC1 remains available as a chloride loading pathway, whereas AE2 loss has comparatively little effect in the experimental comparison. The work documented here did not construct a successful replacement model. It analysed a particular conservation explicit reconstruction and established exactly how that reconstruction responds to AE4 perturbation. The distinction matters: a mathematically coherent response can still be an inadequate account of the biological experiment.
+
+The main mathematical input is the completed Task 44 analysis, including its final report, all included TeX fragments, numerical tables, verification records and executable analysis scripts. The parameter input is the completed Task 43 audit. Their final branch commits are pinned on the title page. Both refer to the frozen Task 40 production configuration; Task 44 additionally examines the single Task 41 CaCC recruitment family. Earlier Tasks 37 to 42 supply the frozen reference context. Task 46 model discovery is outside the scope of this report, and no prospective candidate is treated as a result.
+
+This is a source grounded synthesis. Part II retains the complete Task 44 mathematical exposition, rather than replacing it by a summary. Part III retains the completed Task 43 provenance account. Part IV supplies the full equilibrium case tables, spectra, modal contributions, expression sensitivities, all extended parameter sensitivity metrics, inverse scan and both inverse sensitivity observables, followed by detailed parameter records. Part V explains verification, coverage and the implications for article development. The accompanying electronic archive contains the original reports, scripts and machine readable payloads unchanged, with an individual hash manifest. Large arrays, all nearby trial records and per diagnostic residuals are preserved there rather than rounded into a few headline numbers.
+
+\subsection{Four levels of conclusion}
+An \emph{exact or proved} result follows from the stated equations under its explicit domain assumptions. It need not hold after a kinetic law, charge convention or transported source vector is changed. A \emph{local numerical} result describes a solved equilibrium, derivative or spectrum at a specified parameter point. It is not a proof of global uniqueness or a statement over unknown physiological parameter ranges. A \emph{finite duration numerical} result describes an initial condition, stimulus, integration method and observation window. It is not an equilibrium statement. An \emph{unresolved} issue is one for which the existing sources do not establish the proposed conclusion. The completed analysis contains all four categories, and the report does not promote one into another.
+
+In particular, repeated numerical reproduction establishes consistency of a computation with its saved inputs. It does not independently validate the biological mechanism. Similarly, a physiological gate is an inherited admissibility criterion used in this investigation, not a newly measured confidence interval. A case can pass these gates while having a separate thermodynamic qualification.
+\sourcefile{evidence/task44/FINAL_STATUS.md; evidence/task44/report.tex; evidence/task43/FINAL_STATUS.md}
+
+\section{What system was actually analysed?}
+\label{sec:report-state}
+The production model represents an acinar cell, a finite lumen and a fixed extracellular bath. Its thirteen evolving coordinates are the five intracellular amounts of sodium, potassium, chloride, total inorganic carbon and total alkalinity, the cell volume, the corresponding five luminal amounts, the lumen volume and an AE4 regulatory fraction. The fixed bath is an external reservoir; the lumen has an outflow sink. Consequently, conservation means that every internal and boundary source is accounted for. It does not mean that each amount in the open cell and lumen is individually constant.
+
+Total inorganic carbon is the sum of carbon dioxide, bicarbonate and carbonate. Alkalinity records bicarbonate, twice carbonate, the deprotonated noncarbonate buffer, hydroxide and the negative contribution of hydrogen. Internal protonation changes speciation but does not create total inorganic carbon or alkalinity. Proton extrusion and bicarbonate or carbonate transport have different source signatures. Retaining those signatures is central to the analysis, rather than a cosmetic reformulation of a chloride model.
+
+At each evaluation, carbonate equilibrium determines pH and species concentrations from amounts and volume. The electrical equations determine apical and basolateral voltage from the current balance. Neither pH nor voltage is an independently frozen constant. Water flow responds to the current osmotic state, and lumen outflow removes both water and solutes. AE4 regulation remains dynamic. The calcium stimulus is prescribed, not generated by a calcium signalling subsystem.
+
+Two charge identities permit exact elimination of the two alkalinity coordinates from the numerical independent state. This changes thirteen stored production coordinates into eleven independent dynamic coordinates, without discarding the alkalinity balances or their effects. In particular, the eliminated intracellular alkalinity is reconstructed from sodium, potassium, chloride and fixed anion amount; luminal alkalinity is reconstructed from luminal ionic charge. This is not the reduction in \texttt{Marty.tex}. No carbon pool, volume or luminal composition has been held constant to obtain the eleven dimensional system.
+
+The independent representation is important for equilibrium differentiation. Keeping redundant charge coordinates would introduce directions that do not represent freely variable dynamics on the analysed charge manifold. The computed nonsingularity and stability statements refer to that manifold and the declared regulatory linearisation, not to an unconstrained enlargement of the model.
+
+\subsection{Notation used in the inherited analysis}
+The mathematical chapters use $N$ for NKCC1 cycle flux, $H$ for NHE1 flux, $E$ for AE2 flux, $B$ for NBC cycle flux, $J_4$ for AE4 cycle flux, $P=P_a+P_b$ for pump cycle flux, and $C_a$ for apical chloride efflux. The symbol $H$ used as a flux must not be confused with hydrogen concentration, which is written $h$ or $[\mathrm H^+]$. Each NKCC1 cycle transports two chlorides; the parent AE4 source transports one chloride per scalar cycle. $Q$ denotes lumen outflow, while its time integral is the accumulated secreted volume. Amount fluxes are in fmol/s, volumes in pL, concentrations in mM and voltage in V unless a table states otherwise.
+\sourcefile{evidence/task44/exact_results.tex; evidence/task44/core.py}
+
+\section{Why the numerical outputs diagnose an inadequate phenotype}
+\label{sec:report-diagnosis}
+The experimental account carried into Task 44 reports an approximately $35\pm4.7\%$ reduction in ten minute secretion following AE4 deletion, with the quoted uncertainty identified as a standard error rather than a confidence interval. The initial response is comparatively preserved and the difference develops subsequently. That account comes from the source review in the completed analysis, with its stated review limits; this synthesis does not claim a new experimental reanalysis~\citep{m44Pena2015}.
+
+Against that context, the frozen Task 40 model yields only a $3.8575\%$ cumulative null deficit over 600 s. In a separate constant stimulus equilibrium calculation the null deficit is approximately $0.94617\%$. Neither number should replace the other. The former includes the initial stored material, changing state and finite lumen response. The latter compares stationary outputs on solved local branches. Both describe small effects for this particular configuration.
+
+The compensation measurements explain an important part of the behaviour. At the WT equilibrium, the local gain is
+\[
+ -\frac{2\,\mathrm dN^*/\mathrm de_4}{\mathrm dJ_4^*/\mathrm de_4}
+ \simeq0.92901.
+\]
+This is an incremental equilibrium derivative, not the fraction of the entire knockout recovered. Over 60 to 600 s in the finite experiment, NKCC1 supplies an additional approximately 36.33701 fmol of chloride, compared with approximately 41.05550 fmol of missing AE4 chloride. The replacement fraction is therefore approximately $88.507\%$. The same extra NKCC1 loading is approximately $23.163\%$ of WT NKCC1 loading. The three percentages have different denominators and different experimental meanings.
+
+These results support the statement that the analysed network largely compensates the lost AE4 chloride input. They do not establish that a single parameter, transporter law or molecular process is uniquely responsible for the mismatch with experiment. Pump, NHE1, NBC, carbonate state, ionic storage, voltages and water flow are coupled. The sensitivity analysis identifies several uncertain quantities with substantial effects. A mechanistic diagnosis should therefore distinguish the observed compensation from an unproved claim that NKCC1 alone is defective.
+
+\subsection{What the chloride identity does and does not explain}
+The exact equal routing identity is
+\[
+ C_a=6P-H+2\dot n_{\mathrm{Na},i}-\dot n_{A,i}-\dot n_{\mathrm{Cl},i}.
+\]
+At stationary intracellular amounts the three derivatives vanish and the explicit AE4 term is absent. The proof uses a linear combination of the sodium, alkalinity and chloride balances. It neither fixes nor removes carbon, pH, volume or lumen dynamics.
+
+The identity constrains the ways that secretion can respond; it does not evaluate the state dependent pump and NHE1 rates. The total derivative with respect to AE4 expression remains nonzero through the equilibrium state. The small computed null deficit is consequently a numerical result of the adopted model and parameter point, not a universal consequence of the cancellation. Nor is $C_a$ identical to fluid secretion: luminal chloride concentration, paracellular return and changing chloride stores intervene between apical export and volume outflow.
+
+A correct article claim is therefore that the cancellation reveals a structural constraint and the subsequent full calculation quantifies strong compensation. A stronger statement that the identity proves a small phenotype for every allowed parameter set is not supported.
+\sourcefile{evidence/task44/integrated_context.tex; evidence/task44/output/compensation_comparison.json; evidence/task44/exact_results.tex}
+
+\section{Three corrections that change the scientific interpretation}
+\label{sec:report-corrections}
+\subsection{Alkalinity support is conditional, not universal NBC necessity}
+The parent stationary alkalinity requirement is $2J_4=H+2B-E$. The exact finite duration budget additionally includes the change in the intracellular alkalinity store. Given a specified positive AE4 demand and upper bounds on the admissible non NBC support, that balance provides a genuine obstruction. However, it does not require the demand itself to remain fixed when the whole system changes.
+
+Task 44 finds an NBC absent physiological mathematical root. Its AE4 cycle flux is approximately 0.00632651 fmol/s rather than 0.07507245 fmol/s at the reference WT root, and its stationary secretion is approximately $3.035\%$ lower. This is not a contradiction of the conditional budget. The system avoids the larger alkalinity demand by operating at substantially lower AE4 loading. The defensible conclusion is that extra alkalinity support is required for the \emph{specified larger loading regime under the stated capacity assumptions}, not that all physiological secretion mathematically requires an NBC pathway. The pathway's molecular identity remains unknown.
+
+\subsection{Slow modes exist and affect the output}
+The slowest local decay times are approximately 345.82 s in WT and 459.92 s in the null. The modal calculation also evaluates how an expression perturbation excites each mode and how that mode projects onto secretion. Slow modes have nonzero contributions to the secretion response, even when their contributions partly cancel those of other modes in the stationary derivative.
+
+It would therefore be incorrect to infer a missing slow regulator simply because a particular secretion curve has the wrong timing. Local eigenvalues, input projection, output projection, nonnormal state amplification, initial conditions and finite perturbation size must be considered together. The source provides a local linear response calculation, not a validated linear approximation to the complete WT to null experiment. The correction of the regulatory eigenvalue from a spurious 60 s mode to the proper 30 s mode concerns differentiation across a numerical clamp; it does not remove the slower chemical modes.
+
+\subsection{The CaCC construction is a conditional inverse requirement}
+In the prescribed Task 41 family, the stimulated CaCC conductance is multiplied by $1-a\rho(1-e_4)$. WT is unchanged for any $\rho$, while a fully stimulated null retains $1-\rho$ of parent conductance. This is an explicitly target selected family, not independent evidence of AE4 control of CaCC recruitment.
+
+The first numerical crossings of a 30.3\% cumulative deficit require approximately 89.50727\% AE4 dependent recruitment with adaptive integration and 89.50806\% with the original sampled observable. A finite ordered scan and local bracket refinement do not prove global monotonicity or exclude every unsampled earlier crossing. Furthermore, separate continued stimulus null cases exceed the upper pH gate near 1485 s. The construction demonstrates what this particular added coupling can achieve during its declared 600 s interval, and where it ceases to satisfy the inherited physiological criterion. It does not establish a universal lower bound, sustained physiological validity or a biological mechanism.
+\sourcefile{evidence/task44/report.tex; evidence/task44/equilibrium_results.tex; evidence/task44/inverse_results.tex}
+
+\section{Thermodynamics, experimental comparability and the limits of blame}
+\label{sec:report-thermodynamics}
+The source vector experiment changes transported coefficients while retaining the parent scalar AE4 carrier law. An inherited carrier law with locally balanced edges does not automatically become a thermodynamically valid implementation of every substituted cycle. Task 44 explicitly records an opposed signed flux and affinity in C0 WT and in several sodium supported alternatives at the tested states. This qualification belongs beside any assertion of physiological acceptance, not in an unrelated footnote.
+
+Thus a numerical root can satisfy all inherited concentration, volume and current residual gates and still fail a separate cycle affinity check. Current closure and stoichiometric charge conservation are necessary bookkeeping properties, but they are not a proof of full energetic consistency. The report retains both sets of diagnostics for every source class. It does not silently repair the scalar laws or reject inconvenient rows from the mathematical analysis.
+
+The NKCC1 assay requires equally careful interpretation. The source review reports no detectable genotype difference in the initial isolated NKCC1 dependent chloride uptake under bicarbonate free, inhibitor treated conditions. This is not a direct measurement of the total integrated NKCC1 chloride loading during the complete stimulated network experiment~\citep{m44Pena2015}. The present strong compensation is an experimental tension that needs matched protocol testing. A nondetection in one assay does not establish a universal identity of NKCC fluxes for every intracellular state and stimulus.
+
+The original simulations also initialise all three expression cases at the same inherited WT state. That is not the same preparation as established knockout animals with potentially different resting stores. The 5\% expression result in this repository is a prescribed model intervention; it must not be called an independently measured expression phenotype unless an appropriate experimental source is supplied. These distinctions prevent model predictions and historical protocol choices from being reclassified as biological observations.
+
+The current NKCC1 law has a rational saturating form with recorded forward and reverse bounds. Strong network compensation is therefore not, by itself, evidence that the law has unlimited flux. The unresolved question is whether its effective capacity, dependence on the ionic state, regulation and coupling to the rest of this reconstruction are appropriate for the biological preparation. The Task 43 audit and Task 44 sensitivities make that question specific, but do not settle it.
+
+\reportnote{The results justify seeking a better constrained mechanistic model. They do not already prove which replacement is correct. The purpose of the next reconstruction is to test candidate explanations of this diagnosed failure, rather than to impose a desired compensation value and label the resulting secretion curve a discovery.}
+\sourcefile{evidence/task44/literature_comparison.tex; evidence/task44/equilibrium_results.tex; evidence/task44/output/dimensionless_groups.json; evidence/task43/report.tex}
