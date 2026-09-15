@@ -16,6 +16,26 @@ There is also a model-class mismatch. The assay observable is an initial uptake 
 
 Accordingly the assay remains an independent qualitative, protocol-specific diagnostic. It is not converted into a numerical physiological constraint.
 
+## Smallest paired LP
+
+`cbm/paired_lp.py` builds two copies of the frozen compiled LP above the unchanged local vendor core, fixes WT `J=1`, optionally accepts an explicit cross-genotype NKCC equality row, and maximises KO `J`. The evidence-approved H04 problem does **not** activate that optional equality row because no transferable numerical equality/tolerance is supported.
+
+The paired maximum is exactly `KO J=1`. No new optimisation is needed to establish this value: the reporting region gives the upper bound `J<=1`, while H02 supplies a validated WT `J=1` witness and H03 supplies a validated KO `J=1` witness. With no evidence-supported cross-genotype numerical row added at H04, those two states are jointly admissible.
+
+At fixed KO `J=1`, NKCC flux can range from `N=0` to `N=0.5`. Thus strong NKCC recruitment is optional, not structurally required, even at maximal reported KO output.
+
+## Assay-matched structural diagnostic
+
+The frozen cellular chloride identity is
+
+`2*N + A + E - J = 0`.
+
+For the isolated uptake protocol, the bicarbonate-dependent AE4/AE2 routes are unavailable in the intended structural check and CaCC is inhibited, so setting `A=0`, `E=0`, `J=0` reduces the sustained identity to
+
+`2*N = 0`.
+
+Hence the zero-storage CBM cannot represent positive initial NKCC uptake under that assay protocol. Positive initial uptake requires transient intracellular chloride storage, which is precisely what the sustained CBM omits. This is why the assay cannot be converted into a normal-stimulation NKCC flux equality without changing model class.
+
 ## Frozen paired construction
 
 H04 freezes the cross-genotype rules before H05/H06 diagnostics:
@@ -31,11 +51,11 @@ H04 freezes the cross-genotype rules before H05/H06 diagnostics:
 9. H05 is restricted to the six coupling questions C1-C6 frozen in `output/46h/constraint_budget.json`.
 10. H06 is restricted to the six single resource tests G1-G6 frozen in that same budget. No pairs, subsets, grids, or target-selected tuning are permitted.
 
-## Mathematical consequence at H04
+## Interpretation of old-model style strong NKCC rescue
 
-With no defensible quantitative cross-genotype measurement to add, the admissible paired physiological region contains independent WT and KO feasible copies under the common construction assumptions. H03 already established that the KO copy contains a valid `J=1` witness with AE4 deleted. H04 therefore does not, by evidence alone, remove that witness.
+An old-model style roughly 90% replacement of lost AE4 chloride loading is **merely allowed by loose constraints**. It is not structurally required because KO `J=1` remains feasible with `N=0`, and it cannot be declared incompatible with the preserved isolated NKCC evidence because that assay supplies no numerical normal-stimulation tolerance that can be transferred into this sustained CBM.
 
-This is not a claim that physiological NKCC compensation is unlimited. It is the narrower statement that the preserved assay does not provide the numerical sustained-flux restriction required to exclude the H03 witness inside this CBM.
+This is not a claim that physiological NKCC compensation is unlimited. It is the narrower statement that the preserved evidence does not provide the numerical sustained-flux restriction required to exclude the H03 rescue witness inside this CBM.
 
 ## Decision
 
