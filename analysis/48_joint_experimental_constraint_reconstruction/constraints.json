@@ -593,11 +593,12 @@
         "prolonged secretion is impaired",
         "NKCC1 mRNA increases"
       ],
-      "source_url": "https://pubmed.ncbi.nlm.nih.gov/11358967/",
+      "source_url": "https://www.jbc.org/article/S0021-9258(20)89821-4/fulltext",
       "pmid": "11358967",
-      "verification_status": "pending_full_primary_abstract_retrieval",
-      "source_locator": "primary abstract; retrieval pending",
-      "quantification_rule": "cross-gland qualitative validation only; not part of primary fit"
+      "verification_status": "all_seed_claims_verified_against_primary_publisher_full_text",
+      "source_locator": "Abstract and Methods: Measurement of Parotid Gland Fluid Secretion; PMID11358967",
+      "quantification_rule": "cross-gland qualitative validation only; not part of primary fit",
+      "protocol": "Parotid saliva; pilocarpine 10mg/kg intraperitoneal; flow sampled every5min, normalised per100mg gland."
     }
   ],
   "nonnegotiable_rules": [
@@ -637,7 +638,9 @@
         "bytes": 175320,
         "kind": "secondary_full_jats"
       }
-    ]
+    ],
+    "full_primary_seed_verification_complete": true,
+    "full_secondary_seed_claim_verification_complete": true
   },
   "additional_verified_primary_constraints": [
     {
@@ -646,7 +649,9 @@
       "SE": 2.6,
       "units": "percent",
       "source_locator": "Figure 3B/C and adjoining Results",
-      "note": "Joint inhibition in depletion/readdition assay, not NKCC alone."
+      "note": "Joint inhibition in depletion/readdition assay, not NKCC alone.",
+      "n_control": 10,
+      "n_inhibitors": 7
     },
     {
       "observable": "isolated_Cl_uptake_reduction_with_blockers_and_HCO3_free",
@@ -654,7 +659,9 @@
       "SE": 1.4,
       "units": "percent",
       "source_locator": "Figure 3B/C and adjoining Results",
-      "note": "Source phrase says reduced to 96.3% of control but context means a 96.3% reduction (near absence); do not use as a hard numerical constraint without checking figure or raw data."
+      "note": "Source phrase says reduced to 96.3% of control but context means a 96.3% reduction (near absence); do not use as a hard numerical constraint without checking figure or raw data.",
+      "n_control": 10,
+      "n_inhibitors_HCO3_free": 9
     },
     {
       "observable": "initial_Cl_exit_IPR_only",
@@ -714,5 +721,21 @@
       80
     ],
     "rest_pH_calibration": "high K/nigericin"
+  },
+  "critical_CCh_IPR_contrast": {
+    "genotype": "AE4_KO",
+    "CCh_only": {
+      "mean": 2.3,
+      "SE": 0.1,
+      "n": 6
+    },
+    "CCh_plus_IPR": {
+      "mean": 0.9,
+      "SE": 0.09,
+      "n": 9
+    },
+    "units": "1e-3_s-1",
+    "protocol_match": "Same physiological B+, same CCh0.3uM, added IPR5uM; same SPQ F0/F normalisation. Results explicitly refer single agonist experiments to Fig1C/D protocol.",
+    "qualification": "Initial slope fitted from individual trace regions; precise single and dual assay regression windows not tabulated. Source no direct unique beta-mediated inhibitory target explaining KO contrast."
   }
 }

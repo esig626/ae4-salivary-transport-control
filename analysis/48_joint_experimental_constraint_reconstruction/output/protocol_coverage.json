@@ -1,0 +1,267 @@
+[
+  {
+    "genotype": "WT",
+    "protocol": "REST",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "WT",
+    "protocol": "CCH_ONLY",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "WT",
+    "protocol": "IPR_ONLY",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "WT",
+    "protocol": "CCH_IPR",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "WT",
+    "protocol": "NHE",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "WT",
+    "protocol": "NHE_EIPA",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "AE4_KO",
+    "protocol": "REST",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "AE4_KO",
+    "protocol": "CCH_ONLY",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "AE4_KO",
+    "protocol": "IPR_ONLY",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "AE4_KO",
+    "protocol": "CCH_IPR",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "AE4_KO",
+    "protocol": "NHE",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "AE4_KO",
+    "protocol": "NHE_EIPA",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "AE2_KO",
+    "protocol": "REST",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "AE2_KO",
+    "protocol": "CCH_ONLY",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "AE2_KO",
+    "protocol": "IPR_ONLY",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "AE2_KO",
+    "protocol": "CCH_IPR",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "AE2_KO",
+    "protocol": "NHE",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "AE2_KO",
+    "protocol": "NHE_EIPA",
+    "execution": "supported_B_plus_projection",
+    "observation": "rest direct; gland ratio conditional; cell optics unavailable without calibration/window"
+  },
+  {
+    "genotype": "WT",
+    "protocol": "NKCC_ISOLATION",
+    "execution": "blocked",
+    "reasons": [
+      "Bicarbonate absent outside inherited positive domain",
+      "Carbonic anhydrase kinetics absent",
+      "Selected NKCC law has no extracellular substrate dependence",
+      "Source conditioning and slope windows not numerically specified"
+    ]
+  },
+  {
+    "genotype": "AE4_KO",
+    "protocol": "NKCC_ISOLATION",
+    "execution": "blocked",
+    "reasons": [
+      "Bicarbonate absent outside inherited positive domain",
+      "Carbonic anhydrase kinetics absent",
+      "Selected NKCC law has no extracellular substrate dependence",
+      "Source conditioning and slope windows not numerically specified"
+    ]
+  },
+  {
+    "genotype": "AE2_KO",
+    "protocol": "NKCC_ISOLATION",
+    "execution": "blocked",
+    "reasons": [
+      "Bicarbonate absent outside inherited positive domain",
+      "Carbonic anhydrase kinetics absent",
+      "Selected NKCC law has no extracellular substrate dependence",
+      "Source conditioning and slope windows not numerically specified"
+    ]
+  },
+  {
+    "genotype": "DOUBLE_KO",
+    "protocol": "NKCC_ISOLATION",
+    "execution": "blocked",
+    "reasons": [
+      "Bicarbonate absent outside inherited positive domain",
+      "Carbonic anhydrase kinetics absent",
+      "Selected NKCC law has no extracellular substrate dependence",
+      "Source conditioning and slope windows not numerically specified"
+    ]
+  },
+  {
+    "genotype": "WT",
+    "protocol": "NKCC_ISOLATION_BUMETANIDE",
+    "execution": "blocked",
+    "reasons": [
+      "Same missing protocol as NKCC_ISOLATION"
+    ]
+  },
+  {
+    "genotype": "AE4_KO",
+    "protocol": "NKCC_ISOLATION_BUMETANIDE",
+    "execution": "blocked",
+    "reasons": [
+      "Same missing protocol as NKCC_ISOLATION"
+    ]
+  },
+  {
+    "genotype": "AE2_KO",
+    "protocol": "NKCC_ISOLATION_BUMETANIDE",
+    "execution": "blocked",
+    "reasons": [
+      "Same missing protocol as NKCC_ISOLATION"
+    ]
+  },
+  {
+    "genotype": "DOUBLE_KO",
+    "protocol": "NKCC_ISOLATION_BUMETANIDE",
+    "execution": "blocked",
+    "reasons": [
+      "Same missing protocol as NKCC_ISOLATION"
+    ]
+  },
+  {
+    "genotype": "WT",
+    "protocol": "EXCHANGER_ISOLATION",
+    "execution": "blocked",
+    "reasons": [
+      "Low chloride predepletion uses a bath independent NKCC law",
+      "Conditioning durations and source regression windows unavailable",
+      "Isolated acinar apical bath access not specified"
+    ]
+  },
+  {
+    "genotype": "AE4_KO",
+    "protocol": "EXCHANGER_ISOLATION",
+    "execution": "blocked",
+    "reasons": [
+      "Low chloride predepletion uses a bath independent NKCC law",
+      "Conditioning durations and source regression windows unavailable",
+      "Isolated acinar apical bath access not specified"
+    ]
+  },
+  {
+    "genotype": "AE2_KO",
+    "protocol": "EXCHANGER_ISOLATION",
+    "execution": "blocked",
+    "reasons": [
+      "Low chloride predepletion uses a bath independent NKCC law",
+      "Conditioning durations and source regression windows unavailable",
+      "Isolated acinar apical bath access not specified"
+    ]
+  },
+  {
+    "genotype": "DOUBLE_KO",
+    "protocol": "EXCHANGER_ISOLATION",
+    "execution": "blocked",
+    "reasons": [
+      "Low chloride predepletion uses a bath independent NKCC law",
+      "Conditioning durations and source regression windows unavailable",
+      "Isolated acinar apical bath access not specified"
+    ]
+  },
+  {
+    "genotype": "WT",
+    "protocol": "EXCHANGER_IPR",
+    "execution": "blocked",
+    "reasons": [
+      "EXCHANGER_ISOLATION limitations and IPR exposure time unavailable"
+    ]
+  },
+  {
+    "genotype": "AE4_KO",
+    "protocol": "EXCHANGER_IPR",
+    "execution": "blocked",
+    "reasons": [
+      "EXCHANGER_ISOLATION limitations and IPR exposure time unavailable"
+    ]
+  },
+  {
+    "genotype": "AE2_KO",
+    "protocol": "EXCHANGER_IPR",
+    "execution": "blocked",
+    "reasons": [
+      "EXCHANGER_ISOLATION limitations and IPR exposure time unavailable"
+    ]
+  },
+  {
+    "genotype": "DOUBLE_KO",
+    "protocol": "EXCHANGER_IPR",
+    "execution": "blocked",
+    "reasons": [
+      "EXCHANGER_ISOLATION limitations and IPR exposure time unavailable"
+    ]
+  },
+  {
+    "genotype": "AE2_KO",
+    "protocol": "EXCHANGER_NA_FREE",
+    "execution": "blocked",
+    "reasons": [
+      "Extracellular Na=0 lies outside inherited rate and Nernst domains",
+      "EXCHANGER_ISOLATION limitations"
+    ]
+  }
+]

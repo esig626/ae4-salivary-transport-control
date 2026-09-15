@@ -28,7 +28,7 @@ Full JBC HTML and JGP JATS were fetched through public primary repositories. Fiv
 | [JGP 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC4845690/) | Figures 2 to 4, 8, 9 | Full JATS checked |
 | [PKA 2021](https://pubmed.ncbi.nlm.nih.gov/34585968/) | Abstract; Figures 1, 2, 3, 6 | All seed mechanism claims checked |
 | [Evans 2000](https://pubmed.ncbi.nlm.nih.gov/10831596/) | Abstract | All seed claims checked |
-| [Park 2001](https://pubmed.ncbi.nlm.nih.gov/11358967/) | Abstract | See JSON retrieval status |
+| [Park 2001](https://www.jbc.org/article/S0021-9258(20)89821-4/fulltext) | Abstract and Methods | All seed claims checked in publisher full text |
 
 ## Table 1 verification
 
@@ -49,5 +49,6 @@ Units are mM for resting chloride, pH units for resting pH, dimensionless SPQ ch
 * `jbc.html` SHA256 `6a6278db90147a68fe86af03ad977a3a63899c21ee430bb12ed7b20f528db543`
 * `jgp.xml` SHA256 `6b13788cac9a66edc331a183f7589a17cc4ac69f1c76fa3dfc27dbec8804b3e0`
 
+## Critical within genotype stimulus contrast
 
-Orchestrator integration: reviewed and accepted for the 48A evidence freeze. This document supplies evidence and restrictions, not a completed fit.
+AE4 KO CCh uptake is 2.30 ± 0.10 (n=6), compared with 0.90 ± 0.09 (n=9) under CCh plus IPR, in 10⁻³ s⁻¹. The same B+ solution and CCh 0.3 µM apply; IPR 5 µM is added. Both observations use SPQ F0/F. The initial regressions are selected from individual traces; exact windows for each single and combined assay are not tabulated. No unique beta regulated inhibitory transporter is directly established by this paper.
