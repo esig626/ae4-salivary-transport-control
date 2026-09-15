@@ -1,0 +1,83 @@
+{
+  "base_networks": 1,
+  "coupling_questions": [
+    {
+      "id": "C1",
+      "question": "AE4 versus NKCC1"
+    },
+    {
+      "id": "C2",
+      "question": "AE4 versus net basolateral chloride loading"
+    },
+    {
+      "id": "C3",
+      "question": "NKCC1 versus apical chloride export"
+    },
+    {
+      "id": "C4",
+      "question": "AE4 versus net alkalinity support"
+    },
+    {
+      "id": "C5",
+      "question": "total pump demand versus apical chloride export"
+    },
+    {
+      "id": "C6",
+      "question": "net basolateral chloride loading versus apical chloride export"
+    }
+  ],
+  "structural_groups": [
+    {
+      "id": "G1",
+      "name": "nkcc",
+      "description": "NKCC1 forward transport",
+      "resource": "N"
+    },
+    {
+      "id": "G2",
+      "name": "pump",
+      "description": "total Na/K ATPase cycle demand",
+      "resource": "Pa+Pb"
+    },
+    {
+      "id": "G3",
+      "name": "alkalinity",
+      "description": "gross NHE1 and NBC alkalinity supply",
+      "resource": "H+2B"
+    },
+    {
+      "id": "G4",
+      "name": "ae2",
+      "description": "positive AE2 chloride loading",
+      "resource": "max(E,0)"
+    },
+    {
+      "id": "G5",
+      "name": "co2",
+      "description": "net CO2 supply to cell",
+      "resource": "Db+Da=H"
+    },
+    {
+      "id": "G6",
+      "name": "potassium",
+      "description": "total K channel efflux",
+      "resource": "Ka+Kb"
+    }
+  ],
+  "structural_test_protocol": "One group per worker. Minimise its nonnegative shared resource needed for WT J=1, then cap that resource at this algebraic threshold in both genotypes and maximise KO J. Establish evidence status before accepting any restriction. Derive feasible threshold relations analytically where possible; no grid and no target deficit. These are limiting diagnostics, not measured physiological capacities.",
+  "computational_M": 100,
+  "single_M_sensitivity": 1000,
+  "output_normalisation": {
+    "J_min": 0,
+    "J_max": 1,
+    "WT_reference": 1,
+    "physical_output_capacity": false
+  },
+  "max_joint_optimisations": 1,
+  "joint_gate": "Only if no defensible single change suffices and returned mathematics demonstrates necessity; absent evidence is not justification for joint fitting.",
+  "exhaustive_subsets": false,
+  "multidimensional_sweeps": false,
+  "new_kinetics": false,
+  "parallel_workers_max": 6,
+  "recursive_spawning": false
+}

@@ -1,0 +1,26 @@
+{
+  "instruction_commit": "f807ae372c62aed45b8f58c6b62c27800418f04c",
+  "starting_commit": "9553d04442aeef5b0a8e0ba5f9df07f0986d7074",
+  "instructions": {
+    "46h_milestoned_cbm_structural_screening_execution.md": {
+      "blob": "378337fb1fb52ca69aea2e8bbc5654958c4169bd",
+      "url": "https://github.com/esig626/ae4-salivary-transport-control/blob/f807ae372c62aed45b8f58c6b62c27800418f04c/prompts/46h_milestoned_cbm_structural_screening_execution.md"
+    },
+    "46i_parallel_agent_cbm_execution_addendum.md": {
+      "blob": "33d3caaec163aafa446a740de162112ab1211454",
+      "url": "https://github.com/esig626/ae4-salivary-transport-control/blob/f807ae372c62aed45b8f58c6b62c27800418f04c/prompts/46i_parallel_agent_cbm_execution_addendum.md"
+    },
+    "46d_anti_combinatorial_model_search_discipline.md": {
+      "blob": "278eabb461bdf41ecd82669653be98549cc93486",
+      "url": "https://github.com/esig626/ae4-salivary-transport-control/blob/f807ae372c62aed45b8f58c6b62c27800418f04c/prompts/46d_anti_combinatorial_model_search_discipline.md"
+    },
+    "46e_cbm_structural_screening_before_kinetic_model_discovery.md": {
+      "blob": "36650632ec39c5d97f3bf529eb14182cf8e094d5",
+      "url": "https://github.com/esig626/ae4-salivary-transport-control/blob/f807ae372c62aed45b8f58c6b62c27800418f04c/prompts/46e_cbm_structural_screening_before_kinetic_model_discovery.md"
+    },
+    "46g_use_local_cbm_core_and_isolate_carbonscope.md": {
+      "blob": "7ba7922cd63fbe4fd6f461a8e3a104866679e9ab",
+      "url": "https://github.com/esig626/ae4-salivary-transport-control/blob/f807ae372c62aed45b8f58c6b62c27800418f04c/prompts/46g_use_local_cbm_core_and_isolate_carbonscope.md"
+    }
+  }
+}
