@@ -1,0 +1,18 @@
+{
+  "NHE_bound_random_checks": 128,
+  "bounds_scope": "Random checks supplement the algebraic inequality; they are not its proof.",
+  "independent_nearby_WT_null_roots": 128,
+  "largest_sampled_NHE_to_bound_ratio": 0.9761054535190213,
+  "log_parameter_steps": [
+    0.001,
+    0.0005
+  ],
+  "max_IFT_relative_error": 6.104805193153012e-06,
+  "max_eigenvalue_method_relative_difference": 6.6806152370751195e-09,
+  "max_elasticity_step_disagreement": 3.2269673863063187e-06,
+  "max_equilibrium_residual": 5.23511175413731e-12,
+  "max_expression_gain_FD_relative_error": 1.4032961573791449e-08,
+  "parameter_count": 16,
+  "status": "passed",
+  "uncertainty_interval_inferred": false
+}

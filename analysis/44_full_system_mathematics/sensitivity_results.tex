@@ -1,0 +1,27 @@
+\subsection{Sensitivity crosswalk with Task 43}
+The sixteen selected parameters are uncertain effective settings or inherited calibrated capacities. Each is perturbed independently by $p\exp(\pm h)$, with $h=10^{-3}$ and $5\times10^{-4}$; both genotypes are solved afresh at each perturbed point. These steps are numerical checks and do not define uncertainty intervals. No defensible physiological interval is available from the provenance audit, so no global robustness claim is made.
+\begin{center}\small
+\begin{tabular}{lrrrrr}\hline
+Parameter & $E_Q$ & $\partial\mathrm{pH}/\partial\log p$ & $E_D$ & $E_{C_N}$ & $E_{\tau_{\rm WT}}$\\\hline
+NBC capacity & 0.01992 & 0.06483 & 2.085 & -0.06438 & 0.107\\
+AE4 amount & 0.0008114 & -0.07246 & 0.08494 & 0.02339 & -0.06397\\
+NKCC scale & 0.05536 & -0.001558 & -1.494 & 0.06404 & 0.1901\\
+NHE amount & -0.003261 & 0.07084 & -0.2293 & 0.007679 & -0.01473\\
+Pump capacity & 0.5259 & 0.1206 & 4.634 & -0.2734 & -1.522\\
+CaCC conductance & 0.03247 & -0.005524 & -0.2212 & 0.01105 & 0.008274\\
+Cell buffer amount & -0.001575 & 0.001396 & -0.2063 & 0.009504 & 0.3086\\
+Apical water permeability & 0.002129 & -8.317e-05 & -0.003558 & 0.0002239 & -3.74e-05\\
+AE4 activation time & 0 & 0 & 0 & 0 & 0\\
+AE4 activation gain & 0.0001623 & -0.01449 & 0.01699 & 0.004678 & -0.01279\\
+Apical pump fraction & 0.04956 & -0.003571 & -0.05983 & 0.003151 & 0.04517\\
+NHE stimulation gain & -0.003261 & 0.07084 & -0.2293 & 0.007678 & -0.01473\\
+Basolateral CO$_2$ permeability & -0.004448 & -0.08319 & -0.4338 & 0.05062 & -0.06818\\
+AE2 capacity & -7.335e-05 & 0.000363 & -0.03056 & -0.03383 & 7.508e-05\\
+NBC saturation width & -0.01435 & -0.0467 & -1.502 & 0.01777 & -0.07263\\
+NKCC stimulation gain & 0.05536 & -0.001558 & -1.494 & 0.06404 & 0.1901\\
+\hline\end{tabular}\end{center}
+Here $E_Y=\partial\log Y/\partial\log p$ and $D=1-Q_{\rm null}/Q_{\rm WT}$ is the stationary deficit. Its small baseline value makes $E_D$ potentially large; the machine readable table also supplies percentage point derivatives. pH is already logarithmic, so its unnormalised derivative is shown; the hydrogen concentration elasticity is $-\log(10)\partial\mathrm{pH}/\partial\log p$. All derivatives are partial sensitivities at the inherited parameter point, without recalibration.
+Pump capacity has the largest local effect on WT secretion and on the stationary null deficit. The latter is also sensitive to NBC capacity and its assumed saturation width, and to effective NKCC capacity. These are priorities for experimental constraint. The calculations do not show that a finite parameter change overturns a conclusion, and cannot establish that the small null phenotype persists throughout an unknown uncertainty range. The exact balance identities survive these capacity changes within the specified architecture; their numerical consequences need not.
+The equilibrium total alkalinity support ratio is identically one and cannot demonstrate robustness. The saved results instead give the NBC share $J_B/J_4$, the observed non NBC share $(J_H-J_2)/(2J_4)$, and a conditional capacity ratio $(H_{\max}+J_{2,\max})/(2J_4)$. The bound assumes the fixed bath, positive sodium and $\mathrm{pH}_i\geq6.6$. It permits AE2 to supply alkalinity at its maximal reverse capacity. Its local sensitivity is useful, but it does not prove the available capacity over an unknown parameter interval.
+The AE4 activation time has no local effect on constant stimulus equilibria. Its eigenvalue is $-1/\tau_4$ and is separated from the slower chemical mode at this point; a zero local slow mode sensitivity does not establish that activation timing is irrelevant to finite time secretion. The buffer calculation holds the fixed charge and impermeant osmole pools fixed while changing only buffer amount. NKCC capacity and its stimulated multiplier produce the same stationary perturbation because only their product enters at constant full stimulation.
+Independent root perturbations validate the IFT derivatives at both steps, and expression perturbations validate the chloride compensation gain at both steps for every nearby parameter point. Fixed state parameter derivatives use the smaller steps $10^{-5}$ and $5\times10^{-6}$ to resolve cancellation in the buffer response. Decay sensitivities additionally use fourth order differentiation of the chemical block at two steps, together with the exact regulatory eigenvalue; the block triangular structure retains all eleven dynamical eigenvalues. The supplied files retain root residuals, physiological gate results, Jacobian step checks and all derivative comparisons. The separate inverse family calculation supplies the Task 41 crossing sensitivity.
