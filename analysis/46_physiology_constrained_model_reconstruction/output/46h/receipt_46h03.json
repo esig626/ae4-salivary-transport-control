@@ -1,0 +1,41 @@
+{
+  "milestone": "46H03",
+  "input_commit": "36eea1ce2bac17eda5d6b625d6b9bba6a5b3ec1b",
+  "commands": [
+    "python analysis/46_physiology_constrained_model_reconstruction/cbm/analyse_region.py --genotype KO --group GROUP --output OUTPUT (GROUP=chloride,sodium,potassium,carbon,summary)"
+  ],
+  "solver_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "highspy": "1.12.0"
+  },
+  "checks": {
+    "disjoint_worker_groups": 4,
+    "complete_reactions": 21,
+    "full_region_endpoints": 42,
+    "no_objective_retention": true,
+    "all_full_balance_rows_checked": true,
+    "shared_frozen_builder": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+    "independent_witness_review": true,
+    "predeclared_M_comparison": true,
+    "vendor_unchanged": true
+  },
+  "principal_results": [
+    "KO reference chloride export J=1 is attainable with a complete conserved witness. Full-region J spans0 to1 only because1 is the reporting truncation.",
+    "11 of21 flux intervals change when computational M increases100 to1000. Absolute physical capacities/maxima remain unidentified; finite reference-output feasibility persists for every M>=1.",
+    "AE4 deletion is the only changed bound; the shared-capacity KO still permits reference output. No assay flux equality has been imposed."
+  ],
+  "products_sha256": {
+    "output/46h/h03/KO_FVA.csv": "8ac5a7a7f7726871f80ab272eaae139f539f731b79104395ceb7e0a3b0fc28b7",
+    "output/46h/h03/h03_carbon.json": "804962991a6a871d03a10bdd4d2cb8631a634108d863c02e4ea5754f8cf23a4b",
+    "output/46h/h03/h03_chloride.json": "cdc80aaf0867a68f5990eab5981de6e24ef346a7ddd068fe254ef6f8ca03aafc",
+    "output/46h/h03/h03_potassium.json": "d554482a59883ad3eda7fa63098aba45925c946d09d74be11ff8b7b295448058",
+    "output/46h/h03/h03_sodium.json": "a599e830dac626e5fcb68701b3bad4ea5265446e673cd9e79202a818eed1b17c",
+    "output/46h/h03/independent_verification.json": "d13dd925bb4937c500c1793078d0f46da320782f62bec03457f4f2135a0ad992",
+    "output/46h/h03/summary.json": "b8b9e156056ad24420bf5c24adb12f3354063e91421d85721dd65378ccc4a8c3",
+    "KO_REGION.md": "d37b4a83bdc4a3d7069d6fe13d843df51c389888ffa33c76961d1199b36b904c",
+    "cbm/analyse_region.py": "3e03b821de3b80fd48159420f127c62a44ad9e1206e12a595b118d84ec6cf222"
+  },
+  "next": "46H04: freeze the protocol-matched NKCC evidence interpretation and analyse paired WT/KO constraints.",
+  "publication_rule": "Containing Git commit is checkpoint identity; next milestone records it after remote SHA/clean tree verification."
+}

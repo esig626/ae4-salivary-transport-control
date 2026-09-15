@@ -1,0 +1,11 @@
+{
+  "milestone": "46H02",
+  "genotype": "WT",
+  "group": "carbon",
+  "status": "failed_before_optimisation",
+  "builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+  "command": "python cbm/analyse_region.py --genotype WT --group carbon --output /workspace/scratch/053e595d1c90/h02_carbon.json",
+  "error": "CanonicalModelError: objective direction must be 'maximise' or 'minimise'",
+  "scientific_results": null,
+  "vendor_modified": false
+}

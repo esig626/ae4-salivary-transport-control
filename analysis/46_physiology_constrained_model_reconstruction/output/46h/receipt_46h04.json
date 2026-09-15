@@ -1,0 +1,26 @@
+{
+  "milestone": "46H04",
+  "input_commit": "cb18477adc393d5a18ea6f2ab8f41f4dc42376fc",
+  "scientific_optimisations": 0,
+  "checks": {
+    "protocol_interpretation_frozen_before_h05": true,
+    "assay_context_preserved": true,
+    "numerical_equivalence_tolerance_found": false,
+    "exact_wt_ko_nkcc_equality_imposed": false,
+    "arbitrary_equivalence_band_imposed": false,
+    "reserved_phenotype_used": false,
+    "new_dynamics_added": false,
+    "vendor_unchanged": true
+  },
+  "principal_results": [
+    "The preserved NKCC assay is an initial uptake experiment under bicarbonate-free, carbonic-anhydrase-inhibited and CaCC-inhibited conditions and provides no numerical equivalence tolerance.",
+    "The frozen sustained zero-storage CBM cannot faithfully encode that transient assay without new dynamics and inhibitor-specific assumptions, so the assay remains a qualitative protocol-specific diagnostic.",
+    "No evidence-supported cross-genotype numerical constraint removes the H03 KO J=1 witness at H04."
+  ],
+  "products_sha256": {
+    "H04_PAIRED_EVIDENCE.md": "d4ea76b609a5b01b95be39cc09906954f91d470eb9b336f06ef2176a638ac933",
+    "output/46h/h04/paired_protocol.json": "20cd81cbf24b7416978d9bcaeaf9a4a361fe1b6659b3ff005be9b309ff80fd68"
+  },
+  "next": "46H05: exactly six targeted coupling questions C1-C6 from the frozen constraint budget.",
+  "publication_rule": "Containing Git commit is checkpoint identity; next milestone records it after remote verification."
+}

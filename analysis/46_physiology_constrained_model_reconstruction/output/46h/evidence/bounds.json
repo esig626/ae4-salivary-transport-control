@@ -1,0 +1,327 @@
+{
+  "task": "46H00 WT physiology and numerical bound evidence review",
+  "worker": "physiology_bounds_evidence",
+  "frozen_base": "9553d04442aeef5b0a8e0ba5f9df07f0986d7074",
+  "source_pins": {
+    "task43": "547f113d9123ab1976774639a69483faf40cef34",
+    "task44": "e5fa9840bf96be3147c6118daee4942468c78f8b"
+  },
+  "inputs": [
+    {
+      "path": "analysis/43_parameter_provenance/output/parameter_inventory.csv",
+      "commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "sha256": "62508403456b859ce37ae3d7ad6c65544849ec6fbcffbaebc2662e0abdef8d2b"
+    },
+    {
+      "path": "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/equilibria.json",
+      "commit": "9553d04442aeef5b0a8e0ba5f9df07f0986d7074",
+      "sha256": "af7c0498734984751c6fb4ea57c14838bc685f11b55926370a6a2de424c42069"
+    }
+  ],
+  "main_finding": "Preserved provenance does not establish a measured finite salivary capacity bound for any principal transport route. Imported rates, conductances and abundance parameters must not become physiological CBM bounds without an additional source.",
+  "measured_absolute_transport_capacity_bounds_found": [],
+  "parameter_evidence": [
+    {
+      "name": "homeostasis.nkcc1_capacity_fmol_s",
+      "value": "0.32",
+      "units": "fmol s^-1",
+      "classification": "inactive_legacy",
+      "active": "False",
+      "justification": "Not used by selected Palk NKCC1 or Cha NHE1 flux. Retained for older models and payload compatibility.",
+      "uncertainty_status": "not_a_measured_uncertainty_parameter",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "homeostasis.nhe1_capacity_fmol_s",
+      "value": "0.007440980590414482",
+      "units": "fmol s^-1",
+      "classification": "inactive_legacy",
+      "active": "False",
+      "justification": "Not used by selected Palk NKCC1 or Cha NHE1 flux. Retained for older models and payload compatibility.",
+      "uncertainty_status": "not_a_measured_uncertainty_parameter",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "homeostasis.nhe1_cha_carrier_amount_fmol",
+      "value": "2.339370005697548e-05",
+      "units": "fmol of NHE1 carriers",
+      "classification": "WT_constraint_derived",
+      "active": "True",
+      "justification": "One salivary carrier amount calibrated against a resting pH target 6.91 on the selected R09 background. It is not the cardiac carrier count or a direct salivary abundance measurement.",
+      "uncertainty_status": "conditional_derivation_no_experimental_interval",
+      "source_path": "src/modern_full_model/task31_nhe1_repair.py"
+    },
+    {
+      "name": "homeostasis.ae2_capacity_fmol_s",
+      "value": "0.005",
+      "units": "fmol s^-1",
+      "classification": "effective_assumption",
+      "active": "True",
+      "justification": "small placeholder capacity; AE2-null is a validation gate",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "homeostasis.co2_basolateral_permeability_fmol_s_mM",
+      "value": "0.02",
+      "units": "fmol s^-1 mM^-1",
+      "classification": "effective_assumption",
+      "active": "True",
+      "justification": "linear neutral CO2 exchange coefficient",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "homeostasis.co2_apical_permeability_fmol_s_mM",
+      "value": "0.01",
+      "units": "fmol s^-1 mM^-1",
+      "classification": "effective_assumption",
+      "active": "True",
+      "justification": "linear neutral CO2 exchange coefficient",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "membranes.nak_capacity_fmol_s",
+      "value": "0.08",
+      "units": "fmol cycles s^-1",
+      "classification": "effective_assumption",
+      "active": "True",
+      "justification": "total pump capacity shared between membranes",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "membranes.apical_pump_fraction",
+      "value": "0.075075",
+      "units": "fraction",
+      "classification": "effective_assumption",
+      "active": "True",
+      "justification": "apical localization is supported; quantitative fraction is not measured",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "membranes.apical_k_fraction",
+      "value": "0.3",
+      "units": "fraction",
+      "classification": "effective_assumption",
+      "active": "True",
+      "justification": "apical K current is supported; quantitative fraction is not measured",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "membranes.g_k_total_S",
+      "value": "1.4e-08",
+      "units": "S",
+      "classification": "effective_assumption",
+      "active": "True",
+      "justification": "total Ca-activated K conductance shared between membranes",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "membranes.g_cl_apical_S",
+      "value": "3.14e-08",
+      "units": "S",
+      "classification": "effective_assumption",
+      "active": "True",
+      "justification": "apical Ca-activated Cl conductance",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "membranes.g_para_na_S",
+      "value": "3e-10",
+      "units": "S",
+      "classification": "inherited_model_setting",
+      "active": "True",
+      "justification": "historical-lineage paracellular Na pathway; value not frozen Source metadata identifies a model lineage; independent experimental measurement is not established here.",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "membranes.g_para_k_S",
+      "value": "5e-11",
+      "units": "S",
+      "classification": "inherited_model_setting",
+      "active": "True",
+      "justification": "historical-lineage paracellular K pathway; value not frozen Source metadata identifies a model lineage; independent experimental measurement is not established here.",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "membranes.g_para_cl_S",
+      "value": "2.5e-10",
+      "units": "S",
+      "classification": "effective_assumption",
+      "active": "True",
+      "justification": "charge-complete paracellular Cl pathway",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "membranes.g_para_hco3_S",
+      "value": "5e-11",
+      "units": "S",
+      "classification": "effective_assumption",
+      "active": "True",
+      "justification": "charge-complete paracellular bicarbonate pathway",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "name": "ae4.carrier_amount_fmol",
+      "value": "0.1501264265070657",
+      "units": "fmol",
+      "classification": "inherited_effective_setting",
+      "active": "True",
+      "justification": "Shared-carrier model setting. Thermodynamic construction fixes forward/reverse ratios, not this absolute abundance or attempt rate.",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "reference/native_wt_contract.json; src/modern_full_model/transporters.py"
+    },
+    {
+      "name": "nbc.capacity_fmol_s",
+      "value": "0.11570913197464398",
+      "units": "fmol/s",
+      "classification": "WT_architecture_derived",
+      "active": "True",
+      "justification": "Derived from an assumed 70/30 positive chloride loading architecture at the Task 31 reference state, a 2.3 NHE1 multiplier and coupled electrical closure. Derived conditional on those assumptions, not measured or identified by knockout data.",
+      "uncertainty_status": "conditional_derivation_no_experimental_interval",
+      "source_path": "src/modern_full_model/nbc_minimal.py; analysis/36_minimal_nahco3_alkalinity/design.md"
+    },
+    {
+      "name": "nbc.nhe1_stimulated_multiplier",
+      "value": "2.3",
+      "units": "dimensionless",
+      "classification": "effective_assumption",
+      "active": "True",
+      "justification": "Inherited source-fixed 2.3 multiplier. Fixing it before a test prevents retuning but does not make its transfer to this tissue/protocol uncertainty-free.",
+      "uncertainty_status": "genuinely_unknown_for_physiological_transfer",
+      "source_path": "src/modern_full_model/nbc_minimal.py; analysis/36_minimal_nahco3_alkalinity/design.md"
+    },
+    {
+      "name": "nkcc.alpha_eff_fmol_s",
+      "value": "0.017334746894096052",
+      "units": "fmol/s",
+      "classification": "WT_constraint_derived",
+      "active": "True",
+      "justification": "J_N,rest divided by the published shape at the accepted resting concentrations. The resting flux is itself an inherited model value, not a direct new measurement.",
+      "uncertainty_status": "conditional_derivation_no_experimental_interval",
+      "source_path": "analysis/39_palk_nkcc1_full_validation/validation_common.py"
+    }
+  ],
+  "wt_reference_state": {
+    "values": {
+      "A_i_mM": 18.856839943856667,
+      "B": 0.07168031498057374,
+      "CaCC": 0.3731066029588879,
+      "E": -0.0007480591962109469,
+      "H": 0.006036202571074455,
+      "J4": 0.07507244586422407,
+      "N": 0.1493911081454395,
+      "P": 0.06319046758833112,
+      "T_i_mM": 8.267987002798224,
+      "V_i_pL": 1.3898795472368413,
+      "V_l_pL": 0.10792033555431901,
+      "Va_V": -0.029598190456235417,
+      "Vb_V": -0.0791034237007674,
+      "charge_max_fmol": 1.4210854715202004e-14,
+      "cl_i_mM": 53.29853852934953,
+      "cl_l_mM": 147.67722534587452,
+      "current_residual_A": 3.877409121342317e-26,
+      "hco3_i_mM": 7.430796764701037,
+      "k_i_mM": 110.2371540788869,
+      "max_amount_rhs": 1.7708057242771247e-14,
+      "max_volume_rhs": 6.749483784374011e-14,
+      "na_i_mM": 18.082632569931363,
+      "osm_lumen_mOsm": 301.5346947581826,
+      "paraCl": 0.13917596726486717,
+      "ph_i": 7.0503862758502045,
+      "ph_l": 6.679276618985074,
+      "q_pL_s": 0.0015840671108638016,
+      "time_s": 1.0
+    },
+    "classification": "inherited model output; not new physiology evidence or transporter capacity"
+  },
+  "legacy_physiological_gates": [
+    {
+      "quantity": "Na_i",
+      "interval_mM": [
+        0,
+        40
+      ],
+      "status": "inherited acceptance gate; not a measured CBM flux bound"
+    },
+    {
+      "quantity": "K_i",
+      "interval_mM": [
+        50,
+        200
+      ],
+      "status": "inherited acceptance gate; not a measured CBM flux bound"
+    },
+    {
+      "quantity": "Cl_i",
+      "interval_mM": [
+        30,
+        80
+      ],
+      "status": "inherited acceptance gate; not a measured CBM flux bound"
+    },
+    {
+      "quantity": "pH_i",
+      "interval": [
+        6.6,
+        7.3
+      ],
+      "status": "inherited acceptance gate; numerical inversion bracket 3 to11 is not physiology"
+    },
+    {
+      "quantity": "cell_volume",
+      "interval_pL": [
+        0,
+        3
+      ],
+      "status": "inherited acceptance gate; no water conversion to CBM chloride proxy justified"
+    }
+  ],
+  "partition_evidence": {
+    "assumed_WT_NKCC_share": 0.7,
+    "Task37_context_band": [
+      0.65,
+      0.75
+    ],
+    "status": "Task43 explicitly labels 70/30 construction assumed; Task37 calls 65 to75 percent experimental context rather than a gate. Do not impose either as a measured sustained flux partition."
+  },
+  "accepted_computational_protocol": {
+    "output_coordinate": "J normalised to a WT reference value1; J<=1 is a reporting truncation, not a physiological capacity",
+    "unknown_capacity_bound_M": 100,
+    "one_predeclared_bound_check_M": 1000,
+    "classification": "numerical big-M / computational bound",
+    "shared_WT_KO": true,
+    "necessary_caveat": "Screen maximum1 means WT reference output is attainable. Absolute maximum and possible output above1 remain unidentified. Principal existence claims should be supported by a finite feasible witness with inactive big-M bounds and/or exact identities. Full-region FVA intervals that expand with M are numerical ranges, not physiological limits."
+  },
+  "threshold_tests_classification": "A minimum resource sufficient for WT J=1 is an algebraically derived diagnostic threshold conditional on the frozen architecture and normalisation. It is not a measurement and cannot be accepted as a biological repair without independent quantitative evidence.",
+  "restrictions": {
+    "LP_runs": 0,
+    "dynamic_runs": 0,
+    "Task44_rerun": false,
+    "Task46G_rerun": false,
+    "git_writes": false,
+    "canonical_edits": false,
+    "CarbonScope_access": false,
+    "hypothesis_variants_created": false
+  },
+  "missing_measurements": [
+    "Protocol matched sustained WT and AE4 null NKCC1 uptake with intracellular Na K Cl",
+    "Functional pump turnover and membrane distribution",
+    "Maximum NHE acid extrusion measured with buffer capacity",
+    "NBC bicarbonate entry capacity and molecular identification",
+    "AE2 directional flux and abundance",
+    "Matched apical chloride current and secretion proxy calibration",
+    "CO2 exchange capacity and sustained carbon supply",
+    "Effective K recycling capacity"
+  ]
+}

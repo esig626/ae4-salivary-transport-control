@@ -1,0 +1,96 @@
+{
+  "audit": "H04 revised utility and paired diagnostics independent code review",
+  "input_commit": "cb18477adc393d5a18ea6f2ab8f41f4dc42376fc",
+  "source_sha256": {
+    "lp_tools.py": "004387bb5dc9dbd41e369fad61ea72971e250035bb1273a867cfa66b61b14564",
+    "test_lp_tools.py": "03b2fd99727a8df1ab112aff3978515cba8e710f6c35ca09eb3057fb91179363",
+    "paired_diagnostics.py": "ce8640be09c77b9c44e7422b8cbf6c2701c84c68eece60dcc8edc73e6d4b55ce"
+  },
+  "protocol_sha256": "2af084ee9fe8093d32596e4ffafca73c52404399f69bc84ef7ea190b0b49c02e",
+  "stored_utility_tests_sha256": "12d0a9a321a4b676de2bfcae4a8fc1bc26a2637b5df9f211f3b576b60c9e8a19",
+  "current_output_sha256": {
+    "h04_maximum.json": "c60f8fb2ca5556e36b3bb7c34dc64fbc68d75e22405154d8f7caa1c6128e7bad",
+    "h04_replacement.json": "8692446e9fd33ae07c86560b30c2c46ee16368d90233c2fc6afcbda85b4e073a",
+    "h04_assay_current.json": "64dd033dbc81f5a3329937b8d1b6df79777eb5c99f02c7121b3c576e870af44c"
+  },
+  "current_vector_audits": {
+    "h04_maximum.json:result": {
+      "WT": {
+        "all13_balances_exact": true,
+        "all21_bounds_hold": true,
+        "fixed_values_correct": true,
+        "rational_reconstruction_error": 1.2212453270876722e-15
+      },
+      "KO": {
+        "all13_balances_exact": true,
+        "all21_bounds_hold": true,
+        "fixed_values_correct": true,
+        "rational_reconstruction_error": 0.0
+      }
+    },
+    "h04_replacement.json:KO_NKCC_minimum": {
+      "WT": {
+        "all13_balances_exact": true,
+        "all21_bounds_hold": true,
+        "fixed_values_correct": true,
+        "rational_reconstruction_error": 0.0
+      },
+      "KO": {
+        "all13_balances_exact": true,
+        "all21_bounds_hold": true,
+        "fixed_values_correct": true,
+        "rational_reconstruction_error": 0.0
+      }
+    },
+    "h04_replacement.json:KO_NKCC_maximum": {
+      "WT": {
+        "all13_balances_exact": true,
+        "all21_bounds_hold": true,
+        "fixed_values_correct": true,
+        "rational_reconstruction_error": 0.0
+      },
+      "KO": {
+        "all13_balances_exact": true,
+        "all21_bounds_hold": true,
+        "fixed_values_correct": true,
+        "rational_reconstruction_error": 1.1102230246251565e-16
+      }
+    },
+    "h04_assay_current.json:steady_blocked_assay_NKCC_maximum": {
+      "WT": {
+        "all13_balances_exact": true,
+        "all21_bounds_hold": true,
+        "fixed_values_correct": true,
+        "rational_reconstruction_error": 0.0
+      },
+      "KO": {
+        "all13_balances_exact": true,
+        "all21_bounds_hold": true,
+        "fixed_values_correct": true,
+        "rational_reconstruction_error": 0.0
+      }
+    }
+  },
+  "method": "Source inspection, pure model construction and independent algebra for saved utility results. No scientific solve or test rerun.",
+  "checks": {
+    "prefix_indexing": "PASS: 42 reaction IDs and22 independent rows preserve original terms and bounds exactly in disjoint WT:/KO: blocks.",
+    "objective_signs": "PASS: all adapters explicitly use maximise or minimise; paired default maximises KO:J and NKCC extrema use KO:N with the requested direction.",
+    "finite_affine_slack": "PASS: c.v+s-cap*u=0, u=1,s>=0 is exactly c.v<=cap. The bound |cap|+sum|c_i|max(|l_i|,|u_i|) dominates every possible feasible slack for the finite original boxes.",
+    "fixed_witness_semantics": "PASS: every WT reaction is fixed at the complete published witness; KO only fixes J=1 in the replacement calculation. The maximum calculation fixes only WT J, with shared non-AE4 bounds.",
+    "analytical_utility_tests": "PASS: independent expected values [1.5,1,4,1] match the saved results.",
+    "assay_scope": "PASS: A=E=B=J=0 implies2N=0 from intracellular chloride balance. Initial positive uptake requires storage and cannot be represented by these stationary constraints."
+  },
+  "independent_test_reasoning": [
+    "Toy conservation gives in=out, so in+out<=3 implies max out=1.5 within in<=2.",
+    "Fixing out=1 forces in=1.",
+    "Two independent toy copies each attain out=2, so maximal combined out=4.",
+    "KO out-WT out<=-1 and WT out<=2 imply KO out<=1; WT out=2 and KO out=1 attain the bound."
+  ],
+  "integration_notes": [
+    "The superseded paired_analysis.py was removed; the current canonical entry point reviewed here is paired_diagnostics.py.",
+    "The current assay explicitly labels N,N,2N as the NKCC contribution. No assertion is made that all other initial transport contributions vanish."
+  ],
+  "errors": [],
+  "scientific_optimisations_performed": 0,
+  "pass": true
+}

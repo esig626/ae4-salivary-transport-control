@@ -1,0 +1,586 @@
+{
+  "task": "46H00 stoichiometry evidence review",
+  "frozen_base": "9553d04442aeef5b0a8e0ba5f9df07f0986d7074",
+  "vector_order": [
+    "Na",
+    "K",
+    "Cl",
+    "TIC",
+    "TA"
+  ],
+  "sources": {
+    "ae4": {
+      "path": "src/modern_full_model/ae4_equal_cation_routing.py",
+      "checkout": "/workspace/scratch/692dd1f74fa6/ae4-salivary-transport-control",
+      "commit": "9553d04442aeef5b0a8e0ba5f9df07f0986d7074",
+      "blob": "7adb78d9ac34bc5b7119002fd11532c36a453e65",
+      "lines": "1-6,24-63",
+      "matches_task44_blob": true
+    },
+    "transporters": {
+      "path": "src/modern_full_model/transporters.py",
+      "checkout": "/workspace/scratch/692dd1f74fa6/ae4-salivary-transport-control",
+      "commit": "9553d04442aeef5b0a8e0ba5f9df07f0986d7074",
+      "blob": "66738cf1963ee5bcb72cb0ebef809266df83d157",
+      "lines": "1-36,45-72"
+    },
+    "membranes": {
+      "path": "src/modern_full_model/membranes.py",
+      "checkout": "/workspace/scratch/692dd1f74fa6/ae4-salivary-transport-control",
+      "commit": "9553d04442aeef5b0a8e0ba5f9df07f0986d7074",
+      "blob": "5cc8250e8a27e395d657c9008720663877231956",
+      "lines": "3-19,215-249,286-304,380-411,462-491",
+      "matches_task44_blob": true
+    },
+    "nbc": {
+      "path": "src/modern_full_model/nbc_minimal.py",
+      "checkout": "/workspace/scratch/692dd1f74fa6/ae4-salivary-transport-control",
+      "commit": "9553d04442aeef5b0a8e0ba5f9df07f0986d7074",
+      "blob": "e43a097d109e450d6e7c2fd09f73cd62329fb008",
+      "lines": "1-28,162-186,220-239,431-465",
+      "matches_task44_blob": true
+    },
+    "model": {
+      "path": "src/modern_full_model/model.py",
+      "checkout": "/workspace/scratch/692dd1f74fa6/ae4-salivary-transport-control",
+      "commit": "9553d04442aeef5b0a8e0ba5f9df07f0986d7074",
+      "blob": "e49e0d9120d87dacaa37f58d5d0d08dd3f6384d9",
+      "lines": "624-642,645-690",
+      "matches_task44_blob": true
+    },
+    "parameters": {
+      "path": "src/modern_full_model/parameters.py",
+      "checkout": "/workspace/scratch/692dd1f74fa6/ae4-salivary-transport-control",
+      "commit": "9553d04442aeef5b0a8e0ba5f9df07f0986d7074",
+      "blob": "7cf42ee2305985186595ee90c8be637c7f2ed5bf",
+      "lines": "270-348"
+    },
+    "exact44": {
+      "path": "analysis/44_full_system_mathematics/exact_results.tex",
+      "checkout": "/workspace/scratch/32c3c5dd39a9/task44",
+      "commit": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "blob": "e1e6775f6b86fb9c86b6ce3a3e783a25bcaa8a42",
+      "lines": "12-25,40-73,341-438"
+    },
+    "provenance43": {
+      "path": "analysis/43_parameter_provenance/report.tex",
+      "checkout": "/workspace/scratch/32c3c5dd39a9/task43",
+      "commit": "547f113d9123ab1976774639a69483faf40cef34",
+      "blob": "23cfff1dcef912bc9408e594068491a270b292b1",
+      "lines": "28-30,33-95"
+    }
+  },
+  "reactions": [
+    {
+      "reaction": "NKCC1",
+      "positive_direction": "bath Na + K + 2Cl into cell",
+      "cell_vector": [
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": 0,
+      "lumen_charge": 0,
+      "evidence_status": "source transport stoichiometry",
+      "source": "membranes:215-249,286-304",
+      "notes": "Inward sign is a convention, not proof that every physiological state supports inward flux. Do not transfer Palk kinetic reversal as an independent thermodynamic constraint."
+    },
+    {
+      "reaction": "AE4",
+      "positive_direction": "bath Cl into cell; cell 0.5Na + 0.5K + 2HCO3 into bath",
+      "cell_vector": [
+        -0.5,
+        -0.5,
+        1,
+        -2,
+        -2
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": 0.0,
+      "lumen_charge": 0,
+      "evidence_status": "inherited equal ensemble source allocation; unmeasured whole cycle",
+      "source": "ae4:24-63",
+      "notes": "Not Na entry. A two-cycle integer form is (-1,-1,+2,-4,-4), with flux rescaling. Equal routing is not established by the 2025 paper or the carrier parent detailed balance."
+    },
+    {
+      "reaction": "AE2",
+      "positive_direction": "bath Cl into cell; cell HCO3 into bath",
+      "cell_vector": [
+        0,
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": 0,
+      "lumen_charge": 0,
+      "evidence_status": "source transport stoichiometry",
+      "source": "membranes:215-249,286-304",
+      "notes": "Reversible sign convention. Frozen WT model uses reverse AE2; do not silently prohibit bicarbonate entry via reverse AE2."
+    },
+    {
+      "reaction": "NHE1",
+      "positive_direction": "bath Na into cell; cell H into bath",
+      "cell_vector": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": 0,
+      "lumen_charge": 0,
+      "evidence_status": "source transport stoichiometry and alkalinity accounting",
+      "source": "membranes:124-126,215-249,286-304",
+      "notes": "TA +1; TIC 0. Proton extrusion is not removal of TIC."
+    },
+    {
+      "reaction": "NBC",
+      "positive_direction": "bath Na + 2HCO3 into cell",
+      "cell_vector": [
+        1,
+        0,
+        0,
+        2,
+        2
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": -1,
+      "lumen_charge": 0,
+      "evidence_status": "inherited structural NBC surrogate; molecular identity unresolved",
+      "source": "nbc:1-28,220-239",
+      "notes": "Electrogenic cell charge -1 per inward cycle; do not impose per reaction electroneutrality. Capacity from 70/30 model construction is not measured."
+    },
+    {
+      "reaction": "pump_b",
+      "positive_direction": "cell 3Na to bath; bath 2K to cell",
+      "cell_vector": [
+        -3,
+        2,
+        0,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": -1,
+      "lumen_charge": 0,
+      "evidence_status": "source pump stoichiometry; capacity and partition inherited assumptions",
+      "source": "membranes:380-396,462-470",
+      "notes": "One ATP per ordinary pump cycle if explicit minimal energy bookkeeping is included; old model has no ATP state. No additional metabolic network justified here."
+    },
+    {
+      "reaction": "pump_a",
+      "positive_direction": "cell 3Na to lumen; lumen 2K to cell",
+      "cell_vector": [
+        -3,
+        2,
+        0,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        3,
+        -2,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": -1,
+      "lumen_charge": 1,
+      "evidence_status": "source pump stoichiometry; quantitative apical fraction assumption",
+      "source": "membranes:380-396,462-476",
+      "notes": "Apical fraction partitions capacity, not necessarily realised flux. It must not be imposed as an exact flux ratio without a declared new assumption."
+    },
+    {
+      "reaction": "CaCC",
+      "positive_direction": "cell Cl to lumen",
+      "cell_vector": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "cell_charge": 1,
+      "lumen_charge": -1,
+      "evidence_status": "source apical chloride channel",
+      "source": "membranes:400-405,452-476",
+      "notes": "Charge transfer +1 to cell and -1 to lumen; current sign differs from chloride molar sign. Sustained chloride export is not automatically saliva water flow."
+    },
+    {
+      "reaction": "K_b",
+      "positive_direction": "cell K to bath",
+      "cell_vector": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": -1,
+      "lumen_charge": 0,
+      "evidence_status": "source potassium conductance",
+      "source": "membranes:398-404,452-470",
+      "notes": "Capacity/conductance magnitude is not directly measured in this construction."
+    },
+    {
+      "reaction": "K_a",
+      "positive_direction": "cell K to lumen",
+      "cell_vector": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": -1,
+      "lumen_charge": 1,
+      "evidence_status": "source potassium conductance; quantitative partition assumption",
+      "source": "membranes:398-404,452-476",
+      "notes": "Apical partition is a conductance partition, not an exact realised flux ratio."
+    },
+    {
+      "reaction": "CO2_b",
+      "positive_direction": "bath CO2 to cell",
+      "cell_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": 0,
+      "lumen_charge": 0,
+      "evidence_status": "source neutral carbon exchange",
+      "source": "model:624-655",
+      "notes": "No direct TA or charge source."
+    },
+    {
+      "reaction": "CO2_a",
+      "positive_direction": "lumen CO2 to cell",
+      "cell_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "cell_charge": 0,
+      "lumen_charge": 0,
+      "evidence_status": "source neutral carbon exchange",
+      "source": "model:628-631,649-665",
+      "notes": "May be lumped with basal CO2 only for cell-only conclusions, with loss of distinct lumen carbon bookkeeping documented."
+    },
+    {
+      "reaction": "para_Na",
+      "positive_direction": "lumen Na to bath",
+      "cell_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": 0,
+      "lumen_charge": -1,
+      "evidence_status": "source paracellular transport; quantitative conductances inherited",
+      "source": "membranes:406-411,455-476",
+      "notes": "Raw code positive sign is lumen to bath. Reverse if constructor instead chooses bath to lumen."
+    },
+    {
+      "reaction": "para_K",
+      "positive_direction": "lumen K to bath",
+      "cell_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": 0,
+      "lumen_charge": -1,
+      "evidence_status": "source paracellular transport; quantitative conductances inherited",
+      "source": "membranes:406-411,455-476",
+      "notes": "Raw code positive sign is lumen to bath. Reverse if constructor instead chooses bath to lumen."
+    },
+    {
+      "reaction": "para_Cl",
+      "positive_direction": "lumen Cl to bath",
+      "cell_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "cell_charge": 0,
+      "lumen_charge": 1,
+      "evidence_status": "source paracellular transport; quantitative conductances inherited",
+      "source": "membranes:406-411,455-476",
+      "notes": "Raw code positive sign is lumen to bath. Reverse if constructor instead chooses bath to lumen."
+    },
+    {
+      "reaction": "para_HCO3",
+      "positive_direction": "lumen HCO3 to bath",
+      "cell_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "cell_charge": 0,
+      "lumen_charge": 1,
+      "evidence_status": "source paracellular transport; quantitative conductances inherited",
+      "source": "membranes:406-411,455-476",
+      "notes": "Raw code positive sign is lumen to bath. Reverse if constructor instead chooses bath to lumen."
+    },
+    {
+      "reaction": "out_Na",
+      "positive_direction": "lumen Na to downstream reservoir",
+      "cell_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": 0,
+      "lumen_charge": -1,
+      "evidence_status": "bookkeeping not independent transport chemistry",
+      "source": "model:636-642,662-666",
+      "notes": "Original outflows equal Q times corresponding lumen concentration. If represented by independent CBM variables, electroneutrality and admissible composition must be explicit; no literal water-flow claim follows from free independent sinks."
+    },
+    {
+      "reaction": "out_K",
+      "positive_direction": "lumen K to downstream reservoir",
+      "cell_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "cell_charge": 0,
+      "lumen_charge": -1,
+      "evidence_status": "bookkeeping not independent transport chemistry",
+      "source": "model:636-642,662-666",
+      "notes": "Original outflows equal Q times corresponding lumen concentration. If represented by independent CBM variables, electroneutrality and admissible composition must be explicit; no literal water-flow claim follows from free independent sinks."
+    },
+    {
+      "reaction": "out_Cl",
+      "positive_direction": "lumen Cl to downstream reservoir",
+      "cell_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "cell_charge": 0,
+      "lumen_charge": 1,
+      "evidence_status": "bookkeeping not independent transport chemistry",
+      "source": "model:636-642,662-666",
+      "notes": "Original outflows equal Q times corresponding lumen concentration. If represented by independent CBM variables, electroneutrality and admissible composition must be explicit; no literal water-flow claim follows from free independent sinks."
+    },
+    {
+      "reaction": "out_TIC",
+      "positive_direction": "lumen TIC to downstream reservoir",
+      "cell_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "cell_charge": 0,
+      "lumen_charge": 0,
+      "evidence_status": "bookkeeping not independent transport chemistry",
+      "source": "model:636-642,662-666",
+      "notes": "Original outflows equal Q times corresponding lumen concentration. If represented by independent CBM variables, electroneutrality and admissible composition must be explicit; no literal water-flow claim follows from free independent sinks."
+    },
+    {
+      "reaction": "out_TA",
+      "positive_direction": "lumen TA to downstream reservoir",
+      "cell_vector": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lumen_vector": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "cell_charge": 0,
+      "lumen_charge": 1,
+      "evidence_status": "bookkeeping not independent transport chemistry",
+      "source": "model:636-642,662-666",
+      "notes": "Original outflows equal Q times corresponding lumen concentration. If represented by independent CBM variables, electroneutrality and admissible composition must be explicit; no literal water-flow claim follows from free independent sinks."
+    }
+  ],
+  "source_exact_identities": [
+    {
+      "identity": "2 J4 = H + 2 B - E at intracellular steady state",
+      "source": "exact44:341-365"
+    },
+    {
+      "identity": "CaCC = 6(P_a+P_b) - H at intracellular steady state for equal AE4 routing",
+      "source": "exact44:414-438"
+    },
+    {
+      "identity": "cell charge = Na + K - Cl - TA - fixed_anions; lumen charge = Na + K - Cl - TA",
+      "source": "exact44:63-73; model:671-681"
+    }
+  ],
+  "warnings": [
+    "Inherited concentrations, law coefficients, capacities, conductances and apical fractions do not become directly measured capacities merely by being frozen.",
+    "No evidence reviewed here supports fixing WT and KO realised fluxes equal solely from shared capacities.",
+    "Charge is a redundant combination of balances for the final steady system but individual NBC, pumps and channels are electrogenic.",
+    "Thermodynamic direction filtering requires separately documented physiological state/affinity; source signs alone are not global direction bounds.",
+    "AE4 equal routing is stipulated ensemble bookkeeping; parent carrier detailed balance does not validate substituted whole-cycle kinetics."
+  ],
+  "actions": {
+    "ran_dynamic_model": false,
+    "ran_LP": false,
+    "modified_canonical_repository": false,
+    "accessed_carbonscope": false,
+    "committed_or_pushed": false
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "milestone": "46H02",
+  "worker_group": "sodium",
+  "genotype": "WT",
+  "frozen_input_commit": "41bd8d9be52b6fd0122d1f568de1f3e884c54d65",
+  "builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+  "command": "PYTHONDONTWRITEBYTECODE=1 python analysis/46_physiology_constrained_model_reconstruction/cbm/analyse_region.py --genotype WT --group sodium --output /workspace/scratch/053e595d1c90/h02_sodium.json",
+  "status": "implementation_failure_before_optimisation",
+  "error": "CanonicalModelError: objective direction must be maximise or minimise",
+  "cause": "Builder passes direction max to LinearObjective instead of required maximise.",
+  "scientific_optimisations": 0,
+  "canonical_edits": false
+}

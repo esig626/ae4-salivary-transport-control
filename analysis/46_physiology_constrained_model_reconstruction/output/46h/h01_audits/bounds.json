@@ -1,0 +1,53 @@
+{
+  "task": "46H01 bounds and provenance audit",
+  "base_sha": "5f791e3907fa6769364c5fc65ccb31881b32c006",
+  "builder_sha256": "cc8920b6f64f0bb279363efcdcb8ce4f0077394c66487a21704d497c9b9ef76f",
+  "checks": {
+    "builder_hash_matches_frozen_draft": true,
+    "all_non_A_bounds_shared": true,
+    "KO_A_zero": true,
+    "WT_A_screen_bound": true,
+    "output_normalisation_shared": true,
+    "all_unknown_flux_magnitudes_at_M": true,
+    "E_CO2_paracellular_signed": true,
+    "forward_sector_explicit": true,
+    "component_outflows_nonnegative": true,
+    "all_csv_bounds_match_builder": true,
+    "all_bound_interpretations_disclaim_measurement": true,
+    "WT_A_classification_includes_computational": false
+  },
+  "status": "scientific bounds pass; metadata correction requested",
+  "findings": [
+    {
+      "severity": "minor",
+      "id": "A_classification",
+      "finding": "A upper_WT=100 is computational but its classification field currently identifies only KO genotype deletion. All interpretations correctly disclaim measured capacity.",
+      "required_change": "Classify A as WT computational big M; conditional screening sign; KO algebraic genotype zero. No numeric bound change."
+    },
+    {
+      "severity": "clarification",
+      "id": "J_interpretation",
+      "finding": "J class correctly says computational normalisation. Generic interpretation mentions M100/1000 even though J upper1 remains fixed.",
+      "suggested_change": "Make explicit that J upper1 truncates the reporting region at the WT reference output and is not a measured capacity."
+    },
+    {
+      "severity": "scope",
+      "id": "conditional_direction",
+      "finding": "Forward N,A,H,B,pumps,K,J signs are conditional sector assumptions, not proven global thermodynamics. Protocol explicitly makes this distinction. AE2 remains reversible, retaining inherited reverse WT AE2 possibility."
+    },
+    {
+      "severity": "scope",
+      "id": "physiology",
+      "finding": "No imported old model cap or apical capacity fraction appears in the network. Flux balance does not verify concentrations, pH, volume, voltage or water flow, as stated in protocol."
+    }
+  ],
+  "actions": {
+    "scientific_optimisations": 0,
+    "dynamic_runs": 0,
+    "builder_constructed_for_inspection": true,
+    "canonical_writes": false,
+    "git_writes": false,
+    "vendor_changes": false,
+    "CarbonScope_access": false
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "bit_identical_numeric_values": 67060,
+  "compensation": {
+    "extra_NKCC_chloride_fmol": 36.33700753324831,
+    "local_gain": 0.9290107417794803,
+    "lost_AE4_chloride_fmol": 41.05550196187763,
+    "relative_NKCC_increase": 0.23163449507535327,
+    "signed_integrated_compensation": 0.8850703510333229,
+    "steady_null_deficit": 0.00946172794275757
+  },
+  "continuation_roots_checked": 8,
+  "deficits": {
+    "ae4_5pct": 0.03417577608024125,
+    "ae4_null": 0.038574862971679114,
+    "wt": 0.0
+  },
+  "eigenvalues_checked": 88,
+  "failures": [],
+  "independent_dense_state_evaluations": 1806,
+  "issues_preserved": [
+    {
+      "issue": "Initial replay comparison loop used absent field cell_volume_pL and skipped volume extrema.",
+      "resolution": "This independent verifier compares all 34 minimum and maximum diagnostic fields, including volume_i_pL, for every case; existing replay output is preserved."
+    },
+    {
+      "issue": "Accepted solver endpoint states between integer seconds are represented by replay summary extrema and gate maxima, not separate state CSV rows.",
+      "resolution": "Compared those summary extrema, conservation maxima and counters against frozen production reference; independently reevaluated all 602 saved grid states for each case."
+    }
+  ],
+  "logical_or_gate_checks": 3886,
+  "maximum_dense_conservation_tolerance_ratio": 0.006128431095930864,
+  "numeric_categories": {
+    "compensation": 12,
+    "deficit": 5,
+    "diagnostics": 63210,
+    "eigenvalues": 176,
+    "endpoint": 39,
+    "extrema": 204,
+    "frozen_diagnostics": 1188,
+    "integrals": 6,
+    "quadrature": 1806,
+    "ratios": 33,
+    "rest": 35,
+    "root_observables": 224,
+    "root_states": 104,
+    "secretion": 9,
+    "slowmode": 16
+  },
+  "numeric_comparisons": 67067,
+  "production_checked_states_reported": {
+    "ae4_5pct": 934,
+    "ae4_null": 934,
+    "wt": 934
+  },
+  "replay_input_sha256": {
+    "ae4_5pct_states.csv": "e6ef79d3674e433740859147bc0323d2c64e484ce374a3c31cc591f57ed3878a",
+    "ae4_5pct_summary.json": "bc378f11d5865b95bc163e0f23abe77f800c11cc4abd1c5ccd7e3ec12e4a0f49",
+    "ae4_5pct_trajectory.csv": "e2469693f6d476a089a214a290479f297b5d80e3964eff6b089556c3139078d0",
+    "ae4_null_states.csv": "eebe08fed29b31d4f722ff123bf3f44fcc01398b474241b72d89a223209869d1",
+    "ae4_null_summary.json": "cddc7cabe37b0b52a5be0aab08ee1bb023521cb54f035732b2951d36337d369d",
+    "ae4_null_trajectory.csv": "756dbbeef1ae4b0a6351e76cbdefdbbd8b722c0bbf1329f189079c81053a7881",
+    "compensation.json": "5d85f447b29922a36bfa427a1a10281d5234f5dca0462d23f279f0dc473873d0",
+    "equilibria.json": "af7c0498734984751c6fb4ea57c14838bc685f11b55926370a6a2de424c42069",
+    "implicit_verification.json": "67d49bbdfbf9dbf645a73bed9c402a1da2afdc2768ba8f714463e52184111b2e",
+    "verification.json": "2c9dbe59611ecd9a2ff88151f9002bff72b18c9b17386a7122e8ecf6639e1da2",
+    "wt_states.csv": "c5098e4b61cffe65c1110e8fc54b72ac849f5ccfc66d4ea03c7cc3023d5b1991",
+    "wt_summary.json": "29921f99bb9a581deeaf48049284756ce2886b3c80f3064fc898f483d111f53e",
+    "wt_trajectory.csv": "966b21e72cca1f1afb97de1459bcd56821d1d0d04831172928f4719fdefb4b74"
+  },
+  "source_pins": {
+    "task43": {
+      "clean_after": true,
+      "clean_before": true,
+      "head": "547f113d9123ab1976774639a69483faf40cef34"
+    },
+    "task44": {
+      "clean_after": true,
+      "clean_before": true,
+      "head": "e5fa9840bf96be3147c6118daee4942468c78f8b"
+    }
+  },
+  "status": "passed",
+  "tolerated_difference_examples": [
+    {
+      "absolute_error": 1.4210854715202004e-14,
+      "actual": 78.43608854852874,
+      "allowed_error": 7.844608854852875e-09,
+      "expected": 78.43608854852876,
+      "label": "integrals.wt.nkcc1_cycles"
+    },
+    {
+      "absolute_error": 2.842170943040401e-14,
+      "actual": 36.33700753324831,
+      "allowed_error": 3.634700753324831e-09,
+      "expected": 36.33700753324828,
+      "label": "compensation.extra_NKCC_chloride_fmol.replay"
+    },
+    {
+      "absolute_error": 2.842170943040401e-14,
+      "actual": 36.33700753324831,
+      "allowed_error": 3.634700753324831e-09,
+      "expected": 36.33700753324828,
+      "label": "compensation.extra_NKCC_chloride_fmol.reference"
+    },
+    {
+      "absolute_error": 6.661338147750939e-16,
+      "actual": 0.8850703510333229,
+      "allowed_error": 8.950703510333229e-11,
+      "expected": 0.8850703510333222,
+      "label": "compensation.signed_integrated_compensation.replay"
+    },
+    {
+      "absolute_error": 6.661338147750939e-16,
+      "actual": 0.8850703510333229,
+      "allowed_error": 8.950703510333229e-11,
+      "expected": 0.8850703510333222,
+      "label": "compensation.signed_integrated_compensation.reference"
+    },
+    {
+      "absolute_error": 2.220446049250313e-16,
+      "actual": 0.23163449507535327,
+      "allowed_error": 2.416344950753533e-11,
+      "expected": 0.23163449507535305,
+      "label": "compensation.relative_NKCC_increase.replay"
+    },
+    {
+      "absolute_error": 2.220446049250313e-16,
+      "actual": 0.23163449507535327,
+      "allowed_error": 2.416344950753533e-11,
+      "expected": 0.23163449507535305,
+      "label": "compensation.relative_NKCC_increase.reference"
+    }
+  ],
+  "tolerated_numeric_values": 7,
+  "verification_scope": "Read saved products and freshly evaluate saved states; no integration, root solve, parameter search or output overwrite.",
+  "verification_script_sha256": "34efc4d15520b1f90cead8391d512a60471e6469509e5139656b07635d7adf60"
+}

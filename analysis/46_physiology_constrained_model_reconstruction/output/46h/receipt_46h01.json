@@ -1,0 +1,49 @@
+{
+  "milestone": "46H01",
+  "input_commit": "5f791e3907fa6769364c5fc65ccb31881b32c006",
+  "commands": [
+    "python analysis/46_physiology_constrained_model_reconstruction/cbm/build_cbm.py",
+    "python analysis/46_physiology_constrained_model_reconstruction/cbm/verify_rank.py /tmp/task46h_rank_review.json",
+    "Five independent exact source/matrix/charge/bound audits; see h01_audits"
+  ],
+  "solver_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "highspy": "1.12.0"
+  },
+  "checks": {
+    "workers": 5,
+    "source_stoichiometry": true,
+    "TIC_TA": true,
+    "charge": true,
+    "rank": 11,
+    "nullity": 10,
+    "exact_nullspace_vectors": 10,
+    "shared_capacities": true,
+    "scientific_optimisations": 0,
+    "metadata_only_correction_verified": true,
+    "vendor_unchanged": true
+  },
+  "principal_results": [
+    "One 21 flux network is frozen, with 13 recorded rows and 11 independent equalities. Its nullspace has dimension 10; both charge audit rows are redundant and neutral outflow is independent.",
+    "All five audits pass. The sole correction clarifies the computational provenance of the WT AE4 bound; no equation or numerical bound changed.",
+    "No physiological capacity or full WT state validation is inferred from the computational box. No KO phenotype optimisation was performed."
+  ],
+  "products_sha256": {
+    "cbm/NETWORK_AUDIT.md": "a564ae6dfbfa5a33de1edbe27d596b6d345f694b18c25558c9b787efc92aef6e",
+    "cbm/balance_ledger.csv": "18dd6a0fcd2c40ecbfb51433f3d6b788460c395527c5cfbb49725b94f45726c2",
+    "cbm/bounds_provenance.csv": "cbd18072664eb6c124686f6e25b2787e477e70f4a53ca596b76ca888ca9068b3",
+    "cbm/build_cbm.py": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+    "cbm/network_identity.json": "8adc39c32536534a88b5ee9c357e257e3be513623cb427e52ed3d5c61b680bbc",
+    "cbm/reaction_ledger.csv": "f8565dcc6872d46f904f78df30b4187bba6ab7f9c4818d90560f5ec18dba122a",
+    "cbm/stoichiometric_matrix.csv": "73fdcc7328eca7633bc806c3c26a4006cc87d93a6a569f816e0ebdcfb608b613",
+    "cbm/verify_rank.py": "c63b8fc2bec57d4398cf90c1dfcd9c830f700d13d01eef1e9a82359ccab17a6b",
+    "output/46h/h01_audits/bounds.json": "9ab063ac63f9f8b462c6ca9cc3c817b153717d5490ff29b7d11511925acac79a",
+    "output/46h/h01_audits/carbon.json": "346023d01af46e46bfdb7f06b53c4f06bc309dda6a0e1c04a6dabae023d9e6da",
+    "output/46h/h01_audits/charge.json": "128fd89ade26e91d84ce96a1480a1793fe793f8c9ac9a303f06a2bb9bff37b6a",
+    "output/46h/h01_audits/rank.json": "6e1c9b2eceb242c0e2b146420958b44b7ae1446d85900f1f14da4456ac3836bf",
+    "output/46h/h01_audits/stoich.json": "f0faa1fbe38bd05cf3a9dbc92a0c42748aee1efcf397de2d92904a9cc9f9dc3e"
+  },
+  "next": "46H02: WT full-region FVA in parallel, one complete maximum-output witness, bound audit and predeclared M comparison.",
+  "publication_rule": "Containing Git commit is checkpoint identity; next milestone records it after remote SHA/clean tree verification."
+}

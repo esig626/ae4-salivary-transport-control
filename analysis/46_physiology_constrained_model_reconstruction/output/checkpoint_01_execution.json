@@ -1,0 +1,14 @@
+{
+  "source_sha": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+  "replay_script_sha256": "16baaf9bf179a126d8eff3a7dcfc08cea20250e515a2140fed881cef0e49763f",
+  "source_comments_note": "Post-run no-op clarification makes explicit that volume extrema are covered by the independent verifier; numerical execution logic is unchanged.",
+  "integrations_total": 5,
+  "successful_replay_integrations": 4,
+  "preceding_WT_integration_with_serialisation_failure": 1,
+  "continuation_roots": 8,
+  "independently_solved_nearby_roots": 4,
+  "optimisation_calls": 0,
+  "parameter_changes": 0,
+  "model_equation_changes": 0,
+  "historical_checkpoints_modified": false
+}

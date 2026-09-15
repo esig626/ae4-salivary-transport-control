@@ -1,0 +1,58 @@
+{
+  "milestone": "46H00",
+  "input_commit": "9553d04442aeef5b0a8e0ba5f9df07f0986d7074",
+  "instruction_commit": "f807ae372c62aed45b8f58c6b62c27800418f04c",
+  "worker_domains": [
+    "NKCC evidence",
+    "stoichiometry",
+    "WT bounds",
+    "carbon and charge"
+  ],
+  "worker_scientific_base": "9553d04442aeef5b0a8e0ba5f9df07f0986d7074",
+  "commands": [
+    "git fetch origin",
+    "git merge --ff-only origin/analysis/task-46-physiology-constrained-model-reconstruction",
+    "Read pinned source reports and compare source Git blobs; see individual worker receipts",
+    "Validate budget counts and SHA256 of every product"
+  ],
+  "checks": {
+    "base_exact": true,
+    "remote_base_verified": true,
+    "clean_tree_before_work": true,
+    "prior_checkpoint_present": true,
+    "all_workers_collected": true,
+    "scientific_optimisations": 0,
+    "task44_reruns": 0,
+    "task46g_reruns": 0,
+    "vendor_changed": false,
+    "carbon_scope_accessed": false,
+    "coupling_budget": 6,
+    "structural_budget": 6
+  },
+  "solver_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "highspy": "1.12.0"
+  },
+  "products_sha256": {
+    "CBM_PROTOCOL.md": "e236f5373b350733fa84f492cf25bdd268a6d0ea53573d9852b805a3e234d31a",
+    "CBM_EVIDENCE_SPLIT.md": "9b8521565fca0606aa4cb193bdd01f25b6bc6826ab8d9cfbc2c393d89d54caa8",
+    "output/46h/constraint_budget.json": "5c07c2d9d93b91c97cbf0c67d927e307be7e353504b59ac52d7990d7d50c2360",
+    "output/46h/instruction_pins.json": "e5afd721b5c7cc2b0c6b7df88d33deadda45036d331c742a6ba9f0d7878cbf9b",
+    "output/46h/evidence/bounds.json": "351e4f072f278437b2fa96f094f76f5f6747872b9bd13795348f467aefeed9b4",
+    "output/46h/evidence/bounds.md": "5456b9fce606f8bca124f43fcdeb267bc322315aed4e0397fda02225adb27219",
+    "output/46h/evidence/carbon.json": "70631bc14ce354fc9b257d7044ca2ac49f41efaa59eb1c47c1844ad26b3cf867",
+    "output/46h/evidence/carbon.md": "d75a9e94d001b8e033a76ab82b053b07383be2e3f346ec02a1c98bf503399feb",
+    "output/46h/evidence/nkcc_evidence.json": "ced68163a04d37ca74c7c113aeb3f19ed0171d661da651803c9c2687406d77bf",
+    "output/46h/evidence/nkcc_evidence.md": "67c89eb1ddd9df502aa8a3e785de0d8cdd4a57796c39085b3d368b97c91028f9",
+    "output/46h/evidence/stoichiometry.json": "cbb92d6585dcf7554555bcb5982851eeba7aa4ed04ac0f197f572a232a8c4cd6",
+    "output/46h/evidence/stoichiometry.md": "eda421c735ebaae478dbd5df1602b5dec4a083234c4a78da97a0820ec5d9c225"
+  },
+  "principal_results": [
+    "No supported absolute salivary flux capacity found",
+    "No justified NKCC numerical equivalence tolerance",
+    "One conditional network and six resource groups frozen",
+    "Quantitative phenotype remains withheld from construction"
+  ],
+  "next": "46H01 network construction and independent audits"
+}

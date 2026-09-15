@@ -1,0 +1,10 @@
+{
+  "status": "implementation_serialisation_failure",
+  "numerical_stage": "WT integration completed and trajectory/state CSV written; summary JSON encoding failed before other cases",
+  "exception": "TypeError: Object of type bool is not JSON serializable",
+  "cause": "NumPy boolean in activation endpoint comparison",
+  "source_script_sha256": "406a7f24932341e5fcb232c774ad3ac844441e45b6e572c91ec51759d39f5d1b",
+  "scientific_equations_changed": false,
+  "outputs_preserved": "output/checkpoint_01_baseline",
+  "remedy": "Convert NumPy scalar values to native JSON values; rerun with a new output directory"
+}

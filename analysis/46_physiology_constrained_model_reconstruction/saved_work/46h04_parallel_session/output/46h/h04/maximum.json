@@ -1,0 +1,75 @@
+{
+  "diagnostic": "maximum",
+  "input_commit": "cb18477adc393d5a18ea6f2ab8f41f4dc42376fc",
+  "builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+  "numerical_NKCC_tolerance": null,
+  "normal_stimulation_flux_equality_imposed": false,
+  "result": {
+    "objective": 1.0,
+    "fluxes": {
+      "WT:N": 25.5,
+      "WT:A": 50.0,
+      "WT:E": -100.0,
+      "WT:H": 0.0,
+      "WT:B": 0.0,
+      "WT:Pb": 0.0,
+      "WT:Pa": 0.16666666666666666,
+      "WT:Kb": 0.8333333333333321,
+      "WT:Ka": 0.0,
+      "WT:J": 1.0,
+      "WT:Db": -0.0,
+      "WT:Da": -0.0,
+      "WT:pNa": -99.5,
+      "WT:pK": -0.3333333333333333,
+      "WT:pCl": 1.0,
+      "WT:pHCO3": -100.0,
+      "WT:oNa": 100.0,
+      "WT:oK": 0.0,
+      "WT:oCl": 0.0,
+      "WT:oHCO3": 100.0,
+      "WT:oCO2": 0.0,
+      "KO:N": 0.0,
+      "KO:A": 0.0,
+      "KO:E": 1.0,
+      "KO:H": 0.0,
+      "KO:B": 0.5,
+      "KO:Pb": 0.0,
+      "KO:Pa": 0.16666666666666666,
+      "KO:Kb": 0.3333333333333333,
+      "KO:Ka": 0.0,
+      "KO:J": 1.0,
+      "KO:Db": -0.0,
+      "KO:Da": -0.0,
+      "KO:pNa": -99.5,
+      "KO:pK": -0.3333333333333333,
+      "KO:pCl": 1.0,
+      "KO:pHCO3": -100.0,
+      "KO:oNa": 100.0,
+      "KO:oK": 0.0,
+      "KO:oCl": 0.0,
+      "KO:oHCO3": 100.0,
+      "KO:oCO2": 0.0
+    },
+    "diagnostics": {
+      "max_lower_bound_violation": 0.0,
+      "max_upper_bound_violation": 0.0,
+      "max_mass_balance_residual": 0.0,
+      "objective_recalculation_error": 0.0
+    }
+  },
+  "normalised_KO_maximum": 1.0,
+  "interpretation": "No quantitative cross-genotype stimulated NKCC relation follows from the distinct assay; paired region retains only shared capacities and WT J=1.",
+  "independent_full_vector_verification": {
+    "WT": {
+      "max_full_balance_residual": 1.1934897514720433e-15,
+      "max_bound_violation": 0.0,
+      "valid": true
+    },
+    "KO": {
+      "max_full_balance_residual": 2.7755575615628914e-17,
+      "max_bound_violation": 0.0,
+      "valid": true
+    }
+  },
+  "witness_qualification": "Optimiser-selected pair touches numerical M and has oCl=0. It establishes J attainability only; use published compact witnesses for interpretable through-flow examples. No physiological WT flux partition is identified."
+}

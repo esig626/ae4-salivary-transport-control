@@ -1,0 +1,156 @@
+{
+  "worker": "carbon_charge_evidence",
+  "milestone": "46H00",
+  "base": "9553d04442aeef5b0a8e0ba5f9df07f0986d7074",
+  "task43_source": "547f113d9123ab1976774639a69483faf40cef34",
+  "task44_source": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+  "calculation_scope": "Read-only evidence and exact symbolic identities; no scientific LP or dynamics",
+  "verified_source_blobs": {
+    "src/modern_full_model/acid_base.py": "669bd8554329ffcb5c9c70bce891415cda233fec",
+    "src/modern_full_model/model.py": "e49e0d9120d87dacaa37f58d5d0d08dd3f6384d9",
+    "src/modern_full_model/membranes.py": "5cc8250e8a27e395d657c9008720663877231956",
+    "src/modern_full_model/nbc_minimal.py": "e43a097d109e450d6e7c2fd09f73cd62329fb008",
+    "src/modern_full_model/ae4_equal_cation_routing.py": "7adb78d9ac34bc5b7119002fd11532c36a453e65",
+    "src/modern_full_model/states.py": "0a2d351830e1004bccd55c4ce609e640634eca03",
+    "src/modern_full_model/parameters.py": "7cf42ee2305985186595ee90c8be637c7f2ed5bf",
+    "analysis/44_full_system_mathematics/exact_results.tex": "e1e6775f6b86fb9c86b6ce3a3e783a25bcaa8a42",
+    "analysis/44_full_system_mathematics/literature_comparison.tex": "f007b7f10681e40c208ac66b48909c1b7181313e"
+  },
+  "notation": {
+    "N": "NKCC inward cycle",
+    "H": "NHE Na inward/H outward cycle",
+    "E": "AE2 Cl inward/HCO3 outward cycle",
+    "B": "NBC 1Na 2HCO3 inward cycle",
+    "A": "AE4 equal-routing Cl inward cycle",
+    "P": "Pa+Pb pump cycles",
+    "K": "Ka+Kb K exit",
+    "C": "apical Cl exit",
+    "Db": "CO2 bath to cell signed flux",
+    "Da": "CO2 lumen to cell signed flux",
+    "jp_s": "paracellular lumen to bath signed flux",
+    "out_s": "luminal outflow amount rate"
+  },
+  "cell_steady_balances": {
+    "Na": "N+H+B-A/2-3P=0",
+    "K": "N-A/2+2P-K=0",
+    "Cl": "2N+E+A-C=0",
+    "TIC": "-E+2B-2A+Db+Da=0",
+    "TA": "H-E+2B-2A=0"
+  },
+  "lumen_steady_balances": {
+    "Na": "3Pa-jp_Na-out_Na=0",
+    "K": "-2Pa+Ka-jp_K-out_K=0",
+    "Cl": "C-jp_Cl-out_Cl=0",
+    "TIC": "-jp_HCO3-Da-out_TIC=0",
+    "TA": "-jp_HCO3-out_TA=0"
+  },
+  "chemical_definitions": {
+    "TIC": "CO2+HCO3+CO3",
+    "TA": "HCO3+2CO3+Bminus+OH-H",
+    "bulk_charge": "Na+K-Cl-TA-fixed_cell_anion",
+    "source_map_TIC": "j_HCO3+j_CO3+j_CO2",
+    "source_map_TA": "j_HCO3+2j_CO3-j_H+j_OH",
+    "carbonate_amount_closure": "nTA=nTIC*(alpha_HCO3+2alpha_CO3)+nBuffer*g(pH)+V*(OH-H)"
+  },
+  "exact_identities": [
+    "2A=H+2B-E",
+    "Db+Da=H",
+    "C=6P-H",
+    "K=5P-H-B",
+    "C=P+K+B",
+    "out_TIC-out_TA=-Da",
+    "out_Na+out_K-out_Cl-out_TA=0 for an electrically neutral secreted fluid"
+  ],
+  "reaction_charge_cell": {
+    "NKCC": 0,
+    "NHE": 0,
+    "AE2": 0,
+    "AE4_equal": 0,
+    "NBC": -1,
+    "NaK_pump": -1,
+    "K_exit": -1,
+    "apical_Cl_exit": 1,
+    "CO2_exchange": 0
+  },
+  "mandatory_bookkeeping": [
+    "CO2 bath and apical exchange are separately signed; do not force both positive without state evidence.",
+    "No apical transcellular bicarbonate channel appears in this pinned parent; luminal bicarbonate enters through paracellular transport.",
+    "Luminal bicarbonate contributes +1 TIC and +1 TA per inward HCO3; apical CO2 contributes TIC only.",
+    "Luminal solute outflows remove every balanced amount, and must obey neutral outflow charge if neutral saliva is assumed.",
+    "If P and K are aggregated in cell balances retain Pa and Ka or declared source allocation variables for luminal Na/K bookkeeping.",
+    "No independent arbitrary acid/TA sink is present in the pinned parent. Adding one would change architecture and could erase genuine alkalinity constraints.",
+    "Finite buffer cannot be used as a sustained source of TA; closed hydration and dissociation conserve TIC/TA.",
+    "At steady state amount storage derivatives are zero. This excludes transient storage depletion or accumulation and does not prove physiological pH/volume."
+  ],
+  "direction_policy": [
+    "Use nonnegative loading/export variables only as a clearly stated conditional transport sector, not a globally proven thermodynamic domain.",
+    "NHE inward affinity is ln(Na_o*H_i/(Na_i*H_o)); AE2 inward affinity ln(Cl_o*HCO3_i/(Cl_i*HCO3_o)); NKCC inward ideal stoichiometric affinity ln(Na_o*K_o*Cl_o^2/(Na_i*K_i*Cl_i^2)).",
+    "NBC inward affinity is ln(Na_o*HCO3_o^2/(Na_i*HCO3_i^2))+Vb/VT. Its sign cannot follow from stoichiometry alone.",
+    "Passive CO2 direction follows the compartment CO2 gradient; paracellular and channel directions additionally require electrochemical potentials.",
+    "A frozen dynamic reference supplies a sign only at that state. It does not validate directions throughout the LP region.",
+    "Equal AE4 cation routing is a parent model construction, not an experimentally established whole-cycle stoichiometry or universal thermodynamic guarantee."
+  ],
+  "bound_provenance_warnings": [
+    "CO2 permeability values 0.02 and 0.01 fmol/s/mM are NEW_MODELING_DECISION; not measured capacities.",
+    "NBC default capacity 0.11570913197464398 fmol/s is an algebraically constructed WT feasibility scale, not measured abundance.",
+    "AE2 0.005 fmol/s is a placeholder capacity; not directly measured physiology.",
+    "Task44 conditional NHE upper bound 0.08202591 and AE4-without-NBC upper bound 0.04351295 fmol/s rely on inherited kinetic model, carrier amounts and pH>=6.6; they cannot silently become independent experimental bounds.",
+    "Speciation pH bracket [3,11] is numerical, not a physiological admissibility range.",
+    "Apical pump/K fractions 0.10 are modelling values; retain topology but do not call these measured localisation fractions.",
+    "Steady TA balance constrains flux support, not physiological pH: feasible TIC/TA amount concentrations and volume remain untested unless additional evidence is imposed."
+  ],
+  "sources": [
+    {
+      "path": "src/modern_full_model/acid_base.py",
+      "lines": "64-83, 157-194",
+      "claim": "TIC/TA definitions, speciation, source signatures"
+    },
+    {
+      "path": "src/modern_full_model/ae4_equal_cation_routing.py",
+      "lines": "33-55",
+      "claim": "Exact equal routing source vector (-1/2,-1/2,+1,-2,-2)"
+    },
+    {
+      "path": "src/modern_full_model/membranes.py",
+      "lines": "286-306",
+      "claim": "NHE, AE2, NKCC cell sources"
+    },
+    {
+      "path": "src/modern_full_model/nbc_minimal.py",
+      "lines": "162-243, 431-444",
+      "claim": "NBC electrochemical affinity, exact source vector, membrane/lumen sources"
+    },
+    {
+      "path": "src/modern_full_model/model.py",
+      "lines": "625-703",
+      "claim": "Signed CO2 exchanges, full lumen outflow, charge and carbon residuals"
+    },
+    {
+      "path": "analysis/44_full_system_mathematics/exact_results.tex",
+      "lines": "12-26, 40-69, 342-445",
+      "claim": "Full conserved balances, parent TA and chloride identities"
+    },
+    {
+      "path": "analysis/44_full_system_mathematics/literature_comparison.tex",
+      "lines": "43-60",
+      "claim": "Assay alkalinisation and resting pH cannot fix normal stimulus NHE flux"
+    }
+  ],
+  "minimal_lumen_species_convention": {
+    "out_HCO3": "nonnegative bicarbonate outflow",
+    "out_CO2": "nonnegative neutral CO2 outflow",
+    "out_TA": "out_HCO3",
+    "out_TIC": "out_HCO3+out_CO2",
+    "neglected_terms": [
+      "luminal CO3",
+      "free H and OH",
+      "tiny luminal buffer contribution"
+    ],
+    "induced_balances": [
+      "Da=-out_CO2",
+      "jp_HCO3=-out_HCO3",
+      "Db=H+out_CO2"
+    ],
+    "limitation": "Explicit carbonate approximation; induced signed flux sector is not proof of passive electrochemical feasibility."
+  }
+}

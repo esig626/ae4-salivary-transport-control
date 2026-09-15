@@ -1,0 +1,32 @@
+{
+  "milestone": "46H04",
+  "parent_checkpoint": "cb18477adc393d5a18ea6f2ab8f41f4dc42376fc",
+  "assay": {
+    "observable": "bumetanide-sensitive initial chloride uptake",
+    "reported_comparison": "no detectable genotype difference",
+    "context": [
+      "bicarbonate-free",
+      "carbonic anhydrase inhibited",
+      "CaCC inhibited"
+    ],
+    "numerical_equivalence_tolerance": null,
+    "translation": "qualitative_protocol_specific_diagnostic_only"
+  },
+  "model_mismatch": {
+    "assay": "transient initial uptake with possible intracellular chloride storage",
+    "cbm": "sustained zero-storage amount balance",
+    "protocol_matched_numeric_constraint_accepted": false,
+    "reason": "would require new transient/inhibitor-specific model assumptions forbidden by frozen protocol"
+  },
+  "paired_rules": {
+    "same_stoichiometric_matrix": true,
+    "same_non_genotype_bounds": true,
+    "ko_only_change": "A=0",
+    "realised_flux_equalities": [],
+    "nkcc_cross_genotype_equality": false,
+    "arbitrary_equivalence_band": false,
+    "reserved_phenotype_used": false
+  },
+  "consequence": "No evidence-supported cross-genotype numerical constraint removes the H03 KO J=1 witness at H04.",
+  "next": "46H05: exactly six targeted coupling questions C1-C6 from the frozen constraint budget."
+}

@@ -1,0 +1,29 @@
+{
+  "genotype": "KO",
+  "group": "potassium",
+  "input_commit": "36eea1ce2bac17eda5d6b625d6b9bba6a5b3ec1b",
+  "builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+  "M": 100,
+  "fraction_of_optimum": null,
+  "native_api": "prepare_highs_flux_region plus unchanged _ReusableWorker.begin_pass/solve_endpoint",
+  "ranges": {
+    "Kb": {
+      "minimum": 0.0,
+      "maximum": 0.8333333333333334
+    },
+    "Ka": {
+      "minimum": 0.0,
+      "maximum": 0.8333333333333334
+    },
+    "pK": {
+      "minimum": -100.0,
+      "maximum": 0.8333333333333331
+    },
+    "oK": {
+      "minimum": 0.0,
+      "maximum": 100.0
+    }
+  },
+  "endpoints": 8,
+  "elapsed_seconds": 0.05275035599970579
+}

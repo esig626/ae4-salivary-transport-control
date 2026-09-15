@@ -1,0 +1,176 @@
+{
+  "audit": "H01 independent rational rank and nullspace audit",
+  "method": "CSV parsed as fractions.Fraction; standalone Gauss-Jordan elimination; no builder import or scientific LP",
+  "published_base": "5f791e3907fa6769364c5fc65ccb31881b32c006",
+  "builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+  "original_builder_sha256_observed_before_audit": "cc8920b6f64f0bb279363efcdcb8ce4f0077394c66487a21704d497c9b9ef76f",
+  "metadata_change": "Orchestrator corrected only the AE4 bound provenance label after the original hash was independently observed. Exact matrix supplied to this audit is unchanged according to orchestrator; this report records its own matrix digest.",
+  "matrix_sha256": "73fdcc7328eca7633bc806c3c26a4006cc87d93a6a569f816e0ebdcfb608b613",
+  "auditor_script_sha256": "65c73957488e704fcbc0bab420f620af385bf47b8bc4596b0ad9af3068e008cf",
+  "matrix_shape": [
+    13,
+    21
+  ],
+  "full_rank": 11,
+  "right_nullity": 10,
+  "left_nullity": 2,
+  "independent_rows": [
+    "Na_i",
+    "K_i",
+    "Cl_i",
+    "TIC_i",
+    "TA_i",
+    "Na_l",
+    "K_l",
+    "Cl_l",
+    "TIC_l",
+    "TA_l",
+    "neutral_outflow"
+  ],
+  "pivot_reactions": [
+    "N",
+    "A",
+    "H",
+    "B",
+    "Pb",
+    "Pa",
+    "Ka",
+    "J",
+    "Da",
+    "pHCO3",
+    "oNa"
+  ],
+  "free_reactions": [
+    "E",
+    "Kb",
+    "Db",
+    "pNa",
+    "pK",
+    "pCl",
+    "oK",
+    "oCl",
+    "oHCO3",
+    "oCO2"
+  ],
+  "rank_without_neutral_outflow": 10,
+  "right_nullspace_basis": [
+    {
+      "N": "-1/4",
+      "A": "-1/2",
+      "E": "1"
+    },
+    {
+      "N": "1/2",
+      "A": "-1",
+      "B": "-1",
+      "Kb": "1"
+    },
+    {
+      "N": "-1/6",
+      "A": "1/3",
+      "H": "1",
+      "B": "-1/6",
+      "Pb": "1/6",
+      "Db": "1"
+    },
+    {
+      "N": "1/3",
+      "A": "-2/3",
+      "B": "-2/3",
+      "Pb": "-1/3",
+      "Pa": "1/3",
+      "Ka": "2/3",
+      "pNa": "1"
+    },
+    {
+      "N": "1/2",
+      "A": "-1",
+      "B": "-1",
+      "Ka": "1",
+      "pK": "1"
+    },
+    {
+      "N": "1/12",
+      "A": "5/6",
+      "B": "5/6",
+      "Pb": "1/6",
+      "J": "1",
+      "pCl": "1"
+    },
+    {
+      "N": "1/6",
+      "A": "-1/3",
+      "B": "-1/3",
+      "Pb": "1/3",
+      "Pa": "-1/3",
+      "Ka": "1/3",
+      "oNa": "-1",
+      "oK": "1"
+    },
+    {
+      "N": "5/12",
+      "A": "1/6",
+      "B": "1/6",
+      "Pb": "-1/6",
+      "Pa": "1/3",
+      "Ka": "2/3",
+      "J": "1",
+      "oNa": "1",
+      "oCl": "1"
+    },
+    {
+      "N": "1/3",
+      "A": "-2/3",
+      "B": "-2/3",
+      "Pb": "-1/3",
+      "Pa": "1/3",
+      "Ka": "2/3",
+      "pHCO3": "-1",
+      "oNa": "1",
+      "oHCO3": "1"
+    },
+    {
+      "N": "1/6",
+      "A": "-1/3",
+      "H": "-1",
+      "B": "1/6",
+      "Pb": "-1/6",
+      "Da": "-1",
+      "oCO2": "1"
+    }
+  ],
+  "left_nullspace_basis": [
+    {
+      "Na_i": "-1",
+      "K_i": "-1",
+      "Cl_i": "1",
+      "TA_i": "1",
+      "charge_i": "1"
+    },
+    {
+      "Na_l": "-1",
+      "K_l": "-1",
+      "Cl_l": "1",
+      "TA_l": "1",
+      "charge_l": "1"
+    }
+  ],
+  "checks": {
+    "published_H00_head_matches": true,
+    "frozen_builder_matches": true,
+    "full_rank_matches": true,
+    "nullity_matches": true,
+    "independent_rows_match": true,
+    "all_right_basis_residuals_exactly_zero": true,
+    "right_basis_linearly_independent": true,
+    "all_left_basis_residuals_exactly_zero": true,
+    "neutral_outflow_increases_rank_by_one": true,
+    "builder_still_matches_after_audit": true
+  },
+  "findings": [
+    "Both charge rows are exact linear combinations of compartment Na, K, Cl and TA balance rows.",
+    "Neutral outflow is independent of the first ten component balance rows and must be retained.",
+    "The real stoichiometric solution space has dimension ten before inequality constraints. This dimension alone makes no claim about feasible flux directions or thermodynamics."
+  ],
+  "pass": true
+}
