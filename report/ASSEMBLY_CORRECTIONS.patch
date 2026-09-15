@@ -1,0 +1,47 @@
+--- a/report/assemble.py
++++ b/report/assemble.py
+@@ -45,7 +45,7 @@
+                  ('×', '$\\times$'), ('α', '$\\alpha$'), ('ρ', '$\\rho$'), ('τ', '$\\tau$'),
+                  ('µ', '$\\mu$'), ('μ', '$\\mu$'), ('≈', '$\\simeq$')]:
+         s = s.replace(a, b)
+-    return s
++    return re.sub(r'\b[0-9a-f]{32,64}\b', lambda m: r'\nolinkurl{' + m.group(0) + '}', s)
+ 
+ 
+ def pathtex(value: object) -> str:
+@@ -81,6 +81,8 @@
+     records = []
+     if supplied:
+         src = Path(supplied).resolve()
++        if not src.is_dir():
++            raise ValueError('Missing exact source directory: ' + str(src))
+         files = [(p.relative_to(src).as_posix(), p.read_bytes()) for p in sorted(src.rglob('*')) if p.is_file()]
+     else:
+         data = subprocess.check_output(['git', 'archive', '--format=tar', revision, original], cwd=ROOT)
+@@ -98,6 +100,8 @@
+                 stream = archive.extractfile(member)
+                 assert stream is not None
+                 files.append((relative, stream.read()))
++    if not files:
++        raise ValueError('No source files were retrieved for ' + name)
+     for relative, data in files:
+         target = dest / relative
+         target.parent.mkdir(parents=True, exist_ok=True)
+@@ -191,7 +195,7 @@
+     out.append(table('Separate physiological and thermodynamic classifications at every root.',
+         ['Class', '$e_4$', 'Physiology', 'Failed gate', '$A_4/(RT)$', 'Flux compatibility'],
+         [[esc(r['mechanism']), num(r['expression'], 3), 'Pass' if r['full_inherited_physiological'] else 'Fail',
+-          esc(', '.join(r['failed_gates']) or 'None'), num(r['forward_affinity_over_RT']), esc(r['actual_flux_thermodynamics'])]
++          esc(', '.join(str(x.get('name', x.get('gate', x))) if isinstance(x, dict) else str(x) for x in r['failed_gates']) or 'None'), num(r['forward_affinity_over_RT']), esc(r['actual_flux_thermodynamics'])]
+          for r in review['equilibrium_rows']], 'lrlp{.25\\linewidth}rl', True))
+     out.append(obs_table('Root, state charge and current residual diagnostics. Independent residuals use the dimensionless vector field.',
+         [('residual_max', '$\\|F\\|_\\infty$'), ('condition_number', '$\\kappa(J)$'),
+@@ -347,7 +351,7 @@
+                 if isinstance(v, dict) and depth < 2:
+                     ans += scalars(v, key, depth+1)
+                 elif not isinstance(v, (list,dict)):
+-                    val = num(v,10) if isinstance(v,(int,float,bool)) or v is None else esc(v)
++                    val = num(v,10) if isinstance(v,(int,float,bool)) or v is None else (pathtex(v) if isinstance(v,str) and '/' in v and ' ' not in v else esc(v))
+                     ans.append([pathtex(key), val])
+         return ans
+     for name in files:
