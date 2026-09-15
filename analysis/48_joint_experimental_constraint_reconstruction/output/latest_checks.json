@@ -1,15 +1,11 @@
 {
-  "milestone": "48D",
-  "decision": "no equation correction accepted",
-  "existing_AE4_PKA": true,
-  "R1_insertion": "skipped: activation already exists and is exercised",
-  "existing_gain_reidentification": "not attempted: isolated assay mapping blocked and AE4-only gain cannot change knockout invariance",
-  "R2": "not accepted: no unique independently supported correction identifies the remaining beta response and assay dependencies",
+  "milestone": "48E",
+  "result": "clean negative reconstruction result",
+  "full_joint_fit": "not performed or claimed",
+  "new_runs": 0,
   "new_parameters": 0,
-  "new_mechanisms": 0,
-  "new_simulations": 0,
-  "prior_prediction_checkpoint": "d603bd535bd0924c118a3a74040aa833e48ec117",
-  "pre_final_comparison_predictions": "48C diagnostics are frozen and reused; no new corrected architecture exists",
-  "future_whole_gland_retuning": false,
-  "residual_file_sha256": "0d6d9fe2cc39d5fcd5cc9aa55a53a97c21316e95bd84995a20f1038c250ea085"
+  "final_and_baseline_residual_bytes_equal": true,
+  "shared_vector_unchanged": true,
+  "accepted_architecture": null,
+  "D_remote_checkpoint": "93bd81376b20148b4ef193f0cec92e8325a81fb4"
 }

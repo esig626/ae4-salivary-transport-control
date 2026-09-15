@@ -1,0 +1,15 @@
+{
+  "status": "not numerically cross validated; primary joint reconstruction failed",
+  "retuning": false,
+  "NKCC1_KO": {
+    "source": "https://pubmed.ncbi.nlm.nih.gov/10831596/",
+    "known_observation": "muscarinic parotid saliva reduced over60%; bumetanide sensitive uptake lost",
+    "model_test": "no new run; exact deletion removes represented NKCC source but does not establish the whole gland direction/magnitude"
+  },
+  "NHE1_KO": {
+    "source": "https://www.jbc.org/article/S0021-9258(20)89821-4/fulltext",
+    "known_observation": "over95% NHE loss, impaired prolonged secretion, increased NKCC expression",
+    "model_test": "no new run; primary shared deletion model contains no chronic expression compensation"
+  },
+  "reason": "The task makes these checks subsequent to a successful primary fit; none exists. Different gland/stimulus and chronic adaptation must not be claimed as matched validations."
+}
