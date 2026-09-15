@@ -1,0 +1,190 @@
+{
+  "genotype": "WT",
+  "builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+  "maximum_truncated_J": 1.0,
+  "minimum_J": 0.0,
+  "witness": {
+    "N": 0.25,
+    "A": 0.5,
+    "E": 0.0,
+    "H": 0.0,
+    "B": 0.5,
+    "Pb": 0.16666666666666666,
+    "Pa": 0.0,
+    "Kb": 0.3333333333333333,
+    "Ka": 0.0,
+    "J": 1,
+    "Db": 0.0,
+    "Da": 0.0,
+    "pNa": -1,
+    "pK": 0.0,
+    "pCl": 0.0,
+    "pHCO3": 0.0,
+    "oNa": 1,
+    "oK": 0.0,
+    "oCl": 1,
+    "oHCO3": 0.0,
+    "oCO2": 0.0
+  },
+  "witness_validation": {
+    "max_full_balance_residual": 2.7755575615628914e-17,
+    "max_bound_violation": 0.0,
+    "valid": true
+  },
+  "solver_maximum_witness": {
+    "N": 25.083333333333332,
+    "A": 50.833333333333336,
+    "E": -100.0,
+    "H": 0.0,
+    "B": 0.8333333333333357,
+    "Pb": 0.0,
+    "Pa": 0.16666666666666666,
+    "Kb": 0.0,
+    "Ka": 0.0,
+    "J": 1.0,
+    "Db": -0.0,
+    "Da": -0.0,
+    "pNa": -99.5,
+    "pK": -0.3333333333333333,
+    "pCl": 1.0,
+    "pHCO3": -100.0,
+    "oNa": 100.0,
+    "oK": 0.0,
+    "oCl": 0.0,
+    "oHCO3": 100.0,
+    "oCO2": 0.0
+  },
+  "solver_maximum_validation": {
+    "max_full_balance_residual": 2.3869795029440866e-15,
+    "max_bound_violation": 0.0,
+    "valid": true
+  },
+  "solver_minimum_witness": {
+    "N": 0.0,
+    "A": 0.0,
+    "E": -0.0,
+    "H": 0.0,
+    "B": 0.0,
+    "Pb": 0.0,
+    "Pa": 0.0,
+    "Kb": 0.0,
+    "Ka": 0.0,
+    "J": 0.0,
+    "Db": -0.0,
+    "Da": -0.0,
+    "pNa": -100.0,
+    "pK": -0.0,
+    "pCl": -0.0,
+    "pHCO3": -100.0,
+    "oNa": 100.0,
+    "oK": 0.0,
+    "oCl": 0.0,
+    "oHCO3": 100.0,
+    "oCO2": 0.0
+  },
+  "maximum_active_bounds": [
+    "E:lower",
+    "H:lower",
+    "Pb:lower",
+    "Kb:lower",
+    "Ka:lower",
+    "J:upper",
+    "pHCO3:lower",
+    "oNa:upper",
+    "oK:lower",
+    "oCl:lower",
+    "oHCO3:upper",
+    "oCO2:lower"
+  ],
+  "alternative_M": 1000,
+  "alternative_ranges": {
+    "N": {
+      "minimum": 0.0,
+      "maximum": 250.5
+    },
+    "A": {
+      "minimum": 0.0,
+      "maximum": 502.49999999999994
+    },
+    "E": {
+      "minimum": -1000.0,
+      "maximum": 1.0
+    },
+    "H": {
+      "minimum": 0.0,
+      "maximum": 4.999999999999999
+    },
+    "B": {
+      "minimum": 0.0,
+      "maximum": 0.8333333333333144
+    },
+    "Pb": {
+      "minimum": 0.0,
+      "maximum": 0.9999999999999809
+    },
+    "Pa": {
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "Kb": {
+      "minimum": 0.0,
+      "maximum": 0.8333333333333142
+    },
+    "Ka": {
+      "minimum": 0.0,
+      "maximum": 0.8333333333333142
+    },
+    "J": {
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "Db": {
+      "minimum": 0.0,
+      "maximum": 1000.0
+    },
+    "Da": {
+      "minimum": -1000.0,
+      "maximum": 0.0
+    },
+    "pNa": {
+      "minimum": -1000.0,
+      "maximum": 3.0
+    },
+    "pK": {
+      "minimum": -1000.0,
+      "maximum": 0.8333333333333334
+    },
+    "pCl": {
+      "minimum": -1000.0,
+      "maximum": 1.0
+    },
+    "pHCO3": {
+      "minimum": -1000.0,
+      "maximum": 0.0
+    },
+    "oNa": {
+      "minimum": 0.0,
+      "maximum": 1000.0
+    },
+    "oK": {
+      "minimum": 0.0,
+      "maximum": 1000.0
+    },
+    "oCl": {
+      "minimum": 0.0,
+      "maximum": 1000.0
+    },
+    "oHCO3": {
+      "minimum": 0.0,
+      "maximum": 1000.0
+    },
+    "oCO2": {
+      "minimum": 0.0,
+      "maximum": 1000.0
+    }
+  },
+  "absolute_physical_maximum": "unidentified; the uncapped homogeneous model has an output-carrying ray, not a finite capacity prediction",
+  "ray_proof": "Multiply the reported complete witness by any positive scalar after removing computational box and J reporting truncation. All homogeneous balances and signs are preserved.",
+  "finite_witness_big_M_invariance": "Every non-output absolute flux is at most1, hence the reference-output witness remains feasible for all M>=1.",
+  "FVA_endpoint_vectors_are_not_joint_states": true
+}

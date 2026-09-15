@@ -1,0 +1,44 @@
+{
+  "genotype": "WT",
+  "group": "sodium",
+  "input_commit": "41bd8d9be52b6fd0122d1f568de1f3e884c54d65",
+  "builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+  "M": 100,
+  "fraction_of_optimum": null,
+  "native_api": "prepare_highs_flux_region plus unchanged _ReusableWorker.begin_pass/solve_endpoint",
+  "ranges": {
+    "H": {
+      "minimum": 0.0,
+      "maximum": 4.999999999999999
+    },
+    "B": {
+      "minimum": 0.0,
+      "maximum": 0.8333333333333333
+    },
+    "Pb": {
+      "minimum": 0.0,
+      "maximum": 0.9999999999999998
+    },
+    "Pa": {
+      "minimum": 0.0,
+      "maximum": 0.9999999999999998
+    },
+    "pNa": {
+      "minimum": -100.0,
+      "maximum": 2.9999999999999925
+    },
+    "oNa": {
+      "minimum": 0.0,
+      "maximum": 100.0
+    }
+  },
+  "endpoints": 12,
+  "elapsed_seconds": 0.0321635750005953,
+  "worker_interpretation": [
+    "All six assigned WT fluxes have zero as an individually feasible lower endpoint; extrema need not be jointly attainable.",
+    "NHE1 H is bounded above by 5, NBC B by 5/6, and each pump branch by 1 in the declared J <= 1 normalisation. These are conditional structural limits, not experimentally measured capacities.",
+    "Paracellular sodium ranges from -100 to 3, and sodium outflow from 0 to 100. The lower paracellular endpoint and upper output endpoint touch computational M and are not physiological sodium predictions.",
+    "The broad sodium reservoir-to-lumen/output directions therefore remain underdetermined even though cellular sodium/pump relationships are constrained by charge and ion balance.",
+    "No objective retention was applied; this is full-region FVA, not an optimal-secretion slice."
+  ]
+}

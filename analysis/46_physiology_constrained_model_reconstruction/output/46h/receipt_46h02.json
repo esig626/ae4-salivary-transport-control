@@ -1,0 +1,43 @@
+{
+  "milestone": "46H02",
+  "input_commit": "41bd8d9be52b6fd0122d1f568de1f3e884c54d65",
+  "commands": [
+    "python analysis/46_physiology_constrained_model_reconstruction/cbm/analyse_region.py --genotype WT --group GROUP --output OUTPUT (GROUP=chloride,sodium,potassium,carbon,summary)"
+  ],
+  "solver_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "highspy": "1.12.0"
+  },
+  "checks": {
+    "disjoint_worker_groups": 4,
+    "complete_reactions": 21,
+    "full_region_endpoints": 42,
+    "no_objective_retention": true,
+    "all_full_balance_rows_checked": true,
+    "shared_frozen_builder": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+    "independent_witness_review": true,
+    "predeclared_M_comparison": true,
+    "vendor_unchanged": true
+  },
+  "principal_results": [
+    "WT reference chloride export J=1 is attainable with a complete conserved witness. Full-region J spans0 to1 only because1 is the reporting truncation.",
+    "14 of21 flux intervals change when computational M increases100 to1000. Absolute physical capacities/maxima remain unidentified; finite reference-output feasibility persists for every M>=1.",
+    "No biological objective retention, phenotype fitting or new kinetics. Earlier pre-solve objective spelling error was corrected in the caller, leaving the frozen builder, numerical matrix and bounds unchanged."
+  ],
+  "products_sha256": {
+    "output/46h/h02/WT_FVA.csv": "9aaae627cc5f3e08835262cd3506a2f45abfc9353c22f4aa5a6c8a674b4b5a54",
+    "output/46h/h02/h02_carbon.json": "e353d1d2f525b429ebd4150988b3d033da28343c371867d088783d9be9cd9f80",
+    "output/46h/h02/h02_chloride.json": "083b1759ab112c9bd623d847460bed225245c284c6d78308e65e05dc6504be54",
+    "output/46h/h02/h02_potassium.json": "ae31f8f29d2c911cf19a78c78c97c524eda4936fd69fd376b5531694f3530f33",
+    "output/46h/h02/h02_sodium.json": "55935b42b953ec82f0e3eb935919a0933819f31541443b17e85dbb6e9078737c",
+    "output/46h/h02/independent_verification.json": "edd8a9690f1bba4b66aab4631b9cda2b8a4ac7b879472b8d0a9f321c685fa099",
+    "output/46h/h02/summary.json": "bec0e76a56180d38201c2f424ed0411a0578ee435d00587122d8d922f535a1b6",
+    "WT_REGION.md": "0f7268bfab2858a29f2d896c3514a65268c1b3a44f0cb296e4c328303dd3588f",
+    "cbm/analyse_region.py": "3e03b821de3b80fd48159420f127c62a44ad9e1206e12a595b118d84ec6cf222",
+    "output/46h/h02/h02_carbon_failure.json": "ce8453faaf183d7a9777aed6586f5003f91eeb75d007a560e21bb3e869efcdfc",
+    "output/46h/h02/h02_sodium_attempt01_failure.json": "c4310729402778132a5379cf84e68be81fed447f71596e43dd025bd93e7b39e7"
+  },
+  "next": "46H03: AE4-null full-region FVA with shared capacities.",
+  "publication_rule": "Containing Git commit is checkpoint identity; next milestone records it after remote SHA/clean tree verification."
+}

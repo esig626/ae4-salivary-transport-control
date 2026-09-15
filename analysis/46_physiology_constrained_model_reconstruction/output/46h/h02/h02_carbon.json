@@ -1,0 +1,33 @@
+{
+  "genotype": "WT",
+  "group": "carbon",
+  "input_commit": "41bd8d9be52b6fd0122d1f568de1f3e884c54d65",
+  "builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+  "M": 100,
+  "fraction_of_optimum": null,
+  "native_api": "prepare_highs_flux_region plus unchanged _ReusableWorker.begin_pass/solve_endpoint",
+  "ranges": {
+    "Db": {
+      "minimum": 0.0,
+      "maximum": 100.0
+    },
+    "Da": {
+      "minimum": -100.0,
+      "maximum": 0.0
+    },
+    "pHCO3": {
+      "minimum": -100.0,
+      "maximum": 0.0
+    },
+    "oHCO3": {
+      "minimum": 0.0,
+      "maximum": 100.0
+    },
+    "oCO2": {
+      "minimum": 0.0,
+      "maximum": 100.0
+    }
+  },
+  "endpoints": 10,
+  "elapsed_seconds": 0.02954563599996618
+}
