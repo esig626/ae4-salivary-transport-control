@@ -63,3 +63,31 @@ jobs:
           path: manuscript/AE4_manuscript_current.pdf
           if-no-files-found: error
           retention-days: 30
+
+  publish:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: manuscript
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download verified manuscript
+        uses: actions/download-artifact@v4
+        with:
+          name: AE4-manuscript
+          path: manuscript
+
+      - name: Publish stable manuscript PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add manuscript/AE4_manuscript_current.pdf
+          if git diff --cached --quiet; then
+            echo "Compiled manuscript is already current"
+            exit 0
+          fi
+          git commit -m "Update compiled manuscript PDF"
+          git push origin HEAD:main
