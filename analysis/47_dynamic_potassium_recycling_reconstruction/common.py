@@ -30,7 +30,8 @@ BRANCH = 'analysis/task-47-dynamic-potassium-recycling-reconstruction'
 
 def dump(path, data):
     Path(path).parent.mkdir(parents=True, exist_ok=True)
-    Path(path).write_text(json.dumps(data, indent=2, sort_keys=True, allow_nan=False) + '\n')
+    Path(path).write_text(json.dumps(data, indent=2, sort_keys=True, allow_nan=False,
+                                   default=lambda value: value.item()) + '\n')
 
 def csv_write(path, rows):
     Path(path).parent.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,44 @@
+{
+  "endpoint_basal_reversal_change_mV": -0.620691542282531,
+  "endpoint_basal_voltage_change_mV": 0.6013417140123267,
+  "endpoint_extra_basal_drive_mV": 1.2220332562948577,
+  "endpoint_log_product_attribution": {
+    "cl": -0.08305342431959649,
+    "k": 0.0232236861198239,
+    "na": -0.0052842898539517125
+  },
+  "endpoint_log_product_change": -0.0651140280537243,
+  "k_channel_increase_percent": 18.06709985971218,
+  "nkcc_increase_percent": 23.163449507535308,
+  "no_null_magnitude_comparison": true,
+  "no_parameter_change": true,
+  "potassium_attribution": {
+    "extra_k_channel_export_fmol": 24.480107393217622,
+    "extra_k_storage_integrated_rhs_fmol": 15.432726591077554,
+    "extra_nkcc_k_fmol": 18.16850376662414,
+    "extra_pump_k_influx_fmol": 1.2165792367321728,
+    "removed_ae4_k_export_fmol": 20.527750980938816
+  },
+  "pump_increase_percent": 1.858991247163102,
+  "replaced_ae4_chloride_fraction": 0.8850703510333222,
+  "source_reversal_products": {
+    "ideal_bath_reversal_mM4": 11539641.936598634,
+    "selected_reversal_mM4": 7837380.573248408
+  },
+  "storage_quadrature_error_fmol": {
+    "ae4_null": {
+      "cl": -3.693833902485011e-05,
+      "k": 2.757370201500464e-06,
+      "na": 6.925752336917057e-05
+    },
+    "wt": {
+      "cl": 8.625791293681573e-06,
+      "k": 2.1205170858351607e-05,
+      "na": 5.918140076621725e-05
+    }
+  },
+  "window_s": [
+    60,
+    600
+  ]
+}

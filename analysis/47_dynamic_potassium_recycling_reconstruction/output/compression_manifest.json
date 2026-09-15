@@ -1,0 +1,22 @@
+{
+  "output/ae4_null/states.csv.gz": {
+    "compressed_sha256": "9f4d907c8b429550981ef24854ad289db62a891b9a457cf237c9f85b944ad3a2",
+    "uncompressed_bytes": 150805,
+    "uncompressed_sha256": "eebe08fed29b31d4f722ff123bf3f44fcc01398b474241b72d89a223209869d1"
+  },
+  "output/ae4_null/trajectory.csv.gz": {
+    "compressed_sha256": "13da8f7a6888ef5108eee7e5d1b86954e5665973d65d4a92b245e65ae2665cb0",
+    "uncompressed_bytes": 1014782,
+    "uncompressed_sha256": "58f105a18441ed9c1f6f177f85b0f5d9d79759b99c57827d74c719da6bac06ad"
+  },
+  "output/wt/states.csv.gz": {
+    "compressed_sha256": "444f3e222cf23ed69109cc50fd1807291496f0d5b741a261e668d0f41845322b",
+    "uncompressed_bytes": 151061,
+    "uncompressed_sha256": "c5098e4b61cffe65c1110e8fc54b72ac849f5ccfc66d4ea03c7cc3023d5b1991"
+  },
+  "output/wt/trajectory.csv.gz": {
+    "compressed_sha256": "7a42d45c342666245ff6a70f978b6bf0a917295be3334174f2b00a7edbe2b99d",
+    "uncompressed_bytes": 1091412,
+    "uncompressed_sha256": "0f528c40e90b743810e15032b36e32d4bbd972fbdfbf970c37e14233c0501bfa"
+  }
+}
