@@ -1,0 +1,20 @@
+Use repository esig626/ae4-salivary-transport-control.
+
+Work only on branch:
+analysis/task-48-joint-experimental-constraint-reconstruction
+
+Read, in order:
+1. AGENTS.md
+2. prompts/48_joint_experimental_constraint_reconstruction.md
+3. prompts/48a_parallel_agents_and_crash_safe_publication.md
+4. analysis/48_joint_experimental_constraint_reconstruction/constraints_seed.json
+5. analysis/48_joint_experimental_constraint_reconstruction/CURRENT_STATUS.md
+6. analysis/47_dynamic_potassium_recycling_reconstruction/DYNAMIC_POTASSIUM_RECYCLING_REPORT.md
+
+Execute Task 48 exactly.
+
+Use one orchestrator and up to five parallel workers as prescribed. Only the orchestrator owns the canonical branch, integrates changes, runs authoritative inference, commits and pushes.
+
+Publish every milestone 48A through 48F immediately to GitHub with CURRENT_STATUS.md and a machine-readable checkpoint receipt before dependent work begins. Never wait until the end to push. Never force-push. If the workspace dies, resume from the latest verified remote milestone instead of repeating completed work.
+
+Do not broaden into mechanism search. Do not repeat Task 47. Do not fit only the approximately 35% saliva phenotype. The target is the full joint experimental fingerprint using genotype-appropriate resting states and one shared admissible parameterisation.
