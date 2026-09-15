@@ -1,0 +1,26 @@
+name: Technical report source and build
+on:
+  push:
+    branches: [report/tasks-43-44-technical-analysis]
+    paths: [report/**, .github/workflows/technical-report.yml]
+permissions:
+  contents: read
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Export pinned source records
+        run: |
+          mkdir -p source_export
+          git archive --format=tar 547f113d9123ab1976774639a69483faf40cef34 analysis/43_parameter_provenance > source_export/task43.tar
+          git archive --format=tar e5fa9840bf96be3147c6118daee4942468c78f8b > source_export/task44_repository.tar
+          git archive --format=tar 850706dd6b64d68793d7bca89adc65679c73d4b0 > source_export/main_repository.tar
+      - uses: actions/upload-artifact@v4
+        with:
+          name: technical-report-pinned-sources
+          path: source_export/
+          retention-days: 7
+          if-no-files-found: error
