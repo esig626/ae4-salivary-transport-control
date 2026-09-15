@@ -1,0 +1,27 @@
+{
+  "milestone": "46H04",
+  "input_head_before_h04": "cb18477adc393d5a18ea6f2ab8f41f4dc42376fc",
+  "defensible_cross_genotype_nkcc_constraint": null,
+  "WT_reference_J": 1.0,
+  "maximum_KO_J": 1.0,
+  "proof": {
+    "upper_bound": "The frozen reporting region imposes J <= 1.",
+    "attainability": "H02 contains a validated WT J=1 witness and H03 contains a validated KO J=1 witness. H04 adds no evidence-supported numerical cross-genotype relation, so the two witnesses are jointly admissible in the paired formulation.",
+    "new_scientific_optimisation_required": false
+  },
+  "NKCC_at_KO_J1": {
+    "minimum": 0.0,
+    "maximum": 0.5,
+    "interpretation": "Strong NKCC recruitment is optional, not structurally required, at maximal reported KO output. The endpoints follow from the frozen H03 region with J fixed to 1."
+  },
+  "old_model_style_approximately_90_percent_chloride_replacement": "merely allowed by loose constraints; not structurally required. The preserved isolated NKCC assay cannot numerically exclude it in this sustained normal-stimulation CBM because no transferable tolerance is justified.",
+  "assay_matched_diagnostic": {
+    "frozen_cell_chloride_identity": "2*N + A + E - J = 0",
+    "assay_restrictions_for_structural_check": "A=0, E=0, J=0",
+    "reduced_identity": "2*N=0",
+    "positive_initial_NKCC_uptake_representable_under_zero_storage": false,
+    "conclusion": "A positive initial uptake observable requires transient intracellular chloride storage and therefore cannot be faithfully represented by the frozen sustained CBM."
+  },
+  "paired_utility": "cbm/paired_lp.py",
+  "exact_normal_stimulation_NKCC_equality_run": false
+}
