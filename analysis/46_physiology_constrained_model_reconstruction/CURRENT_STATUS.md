@@ -1,17 +1,17 @@
-# Current status: 46H03 complete
+# Current status: 46H04 complete
 
 Branch: `analysis/task-46-physiology-constrained-model-reconstruction`.
-Parent: `36eea1ce2bac17eda5d6b625d6b9bba6a5b3ec1b`.
-Current checkpoint: `CHECKPOINT_46H03_KO_REGION.md`.
+Parent: `cb18477adc393d5a18ea6f2ab8f41f4dc42376fc`.
+Current checkpoint: `CHECKPOINT_46H04_PAIRED_EVIDENCE.md`.
 
-KO reference chloride export J=1 is attainable with a complete conserved witness. Full-region J spans0 to1 only because1 is the reporting truncation.
+The protocol-matched NKCC evidence does not justify a numerical cross-genotype constraint for the sustained CBM. The preserved assay is an initial chloride uptake experiment under bicarbonate-free, carbonic-anhydrase-inhibited and CaCC-inhibited conditions and provides no numerical equivalence tolerance.
 
-11 of21 flux intervals change when computational M increases100 to1000. Absolute physical capacities/maxima remain unidentified; finite reference-output feasibility persists for every M>=1.
+The frozen CBM enforces sustained zero-storage amount balances, so a faithful representation of that assay would require new transient and inhibitor-specific assumptions. The assay therefore remains a qualitative protocol-specific diagnostic only.
 
-AE4 deletion is the only changed bound; the shared-capacity KO still permits reference output. No assay flux equality has been imposed.
+No realised WT/KO flux equality or arbitrary NKCC equivalence band has been imposed. No reserved phenotype was used. Consequently the valid H03 KO J=1 witness is not removed by evidence at H04.
 
-Receipt: `output/46h/receipt_46h03.json`.
+Receipt: `output/46h/receipt_46h04.json`.
 
-Next: 46H04: freeze the protocol-matched NKCC evidence interpretation and analyse paired WT/KO constraints.
+Next: 46H05: execute exactly the six targeted coupling questions C1-C6 from `output/46h/constraint_budget.json`.
 
-Before any dependent work, fetch and fast forward only, confirm this checkpoint remotely, match remote SHA to HEAD and verify a clean tree. Read CBM_PROTOCOL.md and CBM_EVIDENCE_SPLIT.md. No Task44/46G reruns, new kinetics, CarbonScope access, manuscript changes or merge to main.
+Before dependent work, confirm the remote H04 state. No Task44/46G reruns, new kinetics, CarbonScope access, manuscript changes or merge to main.
