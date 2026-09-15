@@ -1,0 +1,291 @@
+{
+  "milestone": "46H01",
+  "worker": "charge_audit",
+  "frozen_base_commit": "5f791e3907fa6769364c5fc65ccb31881b32c006",
+  "builder_path": "/workspace/scratch/692dd1f74fa6/ae4-salivary-transport-control/analysis/46_physiology_constrained_model_reconstruction/cbm/build_cbm.py",
+  "builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+  "expected_builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+  "method": "Independent AST extraction; exact Fraction projections and forward Gaussian elimination. No builder import or LP.",
+  "charge_functional_species_order": [
+    "Na",
+    "K",
+    "Cl",
+    "TIC",
+    "TA"
+  ],
+  "charge_vector": [
+    1,
+    1,
+    -1,
+    0,
+    -1
+  ],
+  "reactions": [
+    "N",
+    "A",
+    "E",
+    "H",
+    "B",
+    "Pb",
+    "Pa",
+    "Kb",
+    "Ka",
+    "J",
+    "Db",
+    "Da",
+    "pNa",
+    "pK",
+    "pCl",
+    "pHCO3",
+    "oNa",
+    "oK",
+    "oCl",
+    "oHCO3",
+    "oCO2"
+  ],
+  "columns": [
+    {
+      "reaction": "N",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": 0,
+      "cell_plus_lumen_charge": 0,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "A",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": 0,
+      "cell_plus_lumen_charge": 0,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "E",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": 0,
+      "cell_plus_lumen_charge": 0,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "H",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": 0,
+      "cell_plus_lumen_charge": 0,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "B",
+      "cell_charge_per_forward_unit": -1,
+      "lumen_charge_per_forward_unit": 0,
+      "cell_plus_lumen_charge": -1,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "Pb",
+      "cell_charge_per_forward_unit": -1,
+      "lumen_charge_per_forward_unit": 0,
+      "cell_plus_lumen_charge": -1,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "Pa",
+      "cell_charge_per_forward_unit": -1,
+      "lumen_charge_per_forward_unit": 1,
+      "cell_plus_lumen_charge": 0,
+      "is_internal_cell_lumen_transfer": true
+    },
+    {
+      "reaction": "Kb",
+      "cell_charge_per_forward_unit": -1,
+      "lumen_charge_per_forward_unit": 0,
+      "cell_plus_lumen_charge": -1,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "Ka",
+      "cell_charge_per_forward_unit": -1,
+      "lumen_charge_per_forward_unit": 1,
+      "cell_plus_lumen_charge": 0,
+      "is_internal_cell_lumen_transfer": true
+    },
+    {
+      "reaction": "J",
+      "cell_charge_per_forward_unit": 1,
+      "lumen_charge_per_forward_unit": -1,
+      "cell_plus_lumen_charge": 0,
+      "is_internal_cell_lumen_transfer": true
+    },
+    {
+      "reaction": "Db",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": 0,
+      "cell_plus_lumen_charge": 0,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "Da",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": 0,
+      "cell_plus_lumen_charge": 0,
+      "is_internal_cell_lumen_transfer": true
+    },
+    {
+      "reaction": "pNa",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": -1,
+      "cell_plus_lumen_charge": -1,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "pK",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": -1,
+      "cell_plus_lumen_charge": -1,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "pCl",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": 1,
+      "cell_plus_lumen_charge": 1,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "pHCO3",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": 1,
+      "cell_plus_lumen_charge": 1,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "oNa",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": -1,
+      "cell_plus_lumen_charge": -1,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "oK",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": -1,
+      "cell_plus_lumen_charge": -1,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "oCl",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": 1,
+      "cell_plus_lumen_charge": 1,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "oHCO3",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": 1,
+      "cell_plus_lumen_charge": 1,
+      "is_internal_cell_lumen_transfer": false
+    },
+    {
+      "reaction": "oCO2",
+      "cell_charge_per_forward_unit": 0,
+      "lumen_charge_per_forward_unit": 0,
+      "cell_plus_lumen_charge": 0,
+      "is_internal_cell_lumen_transfer": false
+    }
+  ],
+  "charge_i_row": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "-1",
+    "-1",
+    "-1",
+    "-1",
+    "-1",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "charge_l_row": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0",
+    "1",
+    "-1",
+    "0",
+    "0",
+    "-1",
+    "-1",
+    "1",
+    "1",
+    "-1",
+    "-1",
+    "1",
+    "1",
+    "0"
+  ],
+  "neutral_outflow_row": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "1",
+    "-1",
+    "-1",
+    "0"
+  ],
+  "rank_biological_rows": 10,
+  "rank_with_charge_rows": 10,
+  "rank_with_neutral_outflow": 11,
+  "charge_rows_redundant": true,
+  "neutral_outflow_independent": true,
+  "exact_identities": {
+    "cell_charge": "Na_i + K_i - Cl_i - TA_i",
+    "lumen_charge": "Na_l + K_l - Cl_l - TA_l",
+    "cell_current_zero": "J - B - Pb - Pa - Kb - Ka = 0",
+    "neutral_outflow": "oNa + oK - oCl - oHCO3 = 0",
+    "lumen_current_zero_with_neutral_outflow": "Pa + Ka - J - pNa - pK + pCl + pHCO3 = 0",
+    "whole_cell_bath_current_zero": "B + Pb + Kb + pNa + pK - pCl - pHCO3 = 0"
+  },
+  "interpretation": [
+    "NBC inward one sodium plus two bicarbonates adds charge -1 per forward cycle to the cell.",
+    "Each Na/K pump exports net one positive charge from the cell per forward cycle. The apical pump adds that charge to the lumen.",
+    "K conductances and CaCC carry intended membrane current; their nonzero column charge is not a conservation defect.",
+    "Carbon dioxide changes TIC without TA or charge. Bicarbonate changes TIC and TA together.",
+    "Outflow neutrality is an explicit independent sustained secretion closure; individual ionic output columns need not be neutral.",
+    "Cell and lumen charge rows follow exactly from their Na/K/Cl/TA balances and therefore remain audit rows rather than independent solver equations.",
+    "The charge vector assumes fixed impermeant charge amounts and neutral retained buffer totals; it does not independently verify membrane potentials or global thermodynamic feasibility."
+  ],
+  "scientific_optimisations": 0,
+  "pass": true,
+  "errors": [],
+  "initial_draft_sha256": "cc8920b6f64f0bb279363efcdcb8ce4f0077394c66487a21704d497c9b9ef76f",
+  "metadata_revision": "Orchestrator advised one bounds classification string correction. Charge audit actually read revised builder; matrix and numerical bounds unchanged per orchestrator."
+}

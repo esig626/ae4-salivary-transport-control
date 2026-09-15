@@ -1,0 +1,14 @@
+id,meaning,retained_in_solver,storage_assumption
+Na_i,cell sodium,True,zero sustained amount storage
+K_i,cell potassium,True,zero sustained amount storage
+Cl_i,cell chloride,True,zero sustained amount storage
+TIC_i,cell total inorganic carbon,True,zero sustained amount storage
+TA_i,cell total alkalinity,True,zero sustained amount storage
+Na_l,lumen sodium,True,zero sustained amount storage
+K_l,lumen potassium,True,zero sustained amount storage
+Cl_l,lumen chloride,True,zero sustained amount storage
+TIC_l,lumen total inorganic carbon,True,zero sustained amount storage
+TA_l,lumen total alkalinity,True,zero sustained amount storage
+charge_i,cell charge audit Na+K-Cl-TA,False,exact charge constraint
+charge_l,lumen charge audit Na+K-Cl-TA,False,exact charge constraint
+neutral_outflow,charge neutral luminal outflow,True,exact charge constraint

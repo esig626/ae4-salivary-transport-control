@@ -1,14 +1,17 @@
-# Current status: Task 46H00 protocol and evidence frozen
+# Current status: 46H01 complete
 
 Branch: `analysis/task-46-physiology-constrained-model-reconstruction`.
-Parent: `9553d04442aeef5b0a8e0ba5f9df07f0986d7074`.
-Current immutable checkpoint: `CHECKPOINT_46H00_PROTOCOL.md`.
-The containing commit identifies this milestone after publication.
+Parent: `5f791e3907fa6769364c5fc65ccb31881b32c006`.
+Current checkpoint: `CHECKPOINT_46H01_NETWORK.md`.
 
-Completed four independent evidence reviews; froze one architecture policy, six coupling questions and six single resource tests. Source evidence does not justify finite absolute capacities or a numerical NKCC cross-genotype tolerance. The screen will explicitly distinguish normalised flux feasibility, exact identities and unresolved physiology. No scientific CBM optimisation yet.
+One 21 flux network is frozen, with 13 recorded rows and 11 independent equalities. Its nullspace has dimension 10; both charge audit rows are redundant and neutral outflow is independent.
 
-Receipt: `output/46h/receipt_46h00.json`. Read `CBM_PROTOCOL.md` and `CBM_EVIDENCE_SPLIT.md` before resuming.
+All five audits pass. The sole correction clarifies the computational provenance of the WT AE4 bound; no equation or numerical bound changed.
 
-Next: 46H01 network, exact matrix, bounds and independent audits. Begin only after the remote SHA matches this checkpoint and the tree is clean. Task44 and Task46G remain complete and must not be rerun. No new kinetics, CarbonScope access, manuscript changes or merge to main.
+No physiological capacity or full WT state validation is inferred from the computational box. No KO phenotype optimisation was performed.
 
-Resume: fetch origin, fast forward only on this branch, inspect the current checkpoint/receipt, verify remote SHA and clean tree, then perform its declared next milestone.
+Receipt: `output/46h/receipt_46h01.json`.
+
+Next: 46H02: WT full-region FVA in parallel, one complete maximum-output witness, bound audit and predeclared M comparison.
+
+Before any dependent work, fetch and fast forward only, confirm this checkpoint remotely, match remote SHA to HEAD and verify a clean tree. Read CBM_PROTOCOL.md and CBM_EVIDENCE_SPLIT.md. No Task44/46G reruns, new kinetics, CarbonScope access, manuscript changes or merge to main.

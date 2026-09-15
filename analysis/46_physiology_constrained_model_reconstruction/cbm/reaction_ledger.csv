@@ -1,0 +1,22 @@
+id,meaning,cell_Na_K_Cl_TIC_TA,lumen_Na_K_Cl_TIC_TA,signed,source
+N,NKCC1 bath to cell,"[1, 1, 2, 0, 0]","[0, 0, 0, 0, 0]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+A,AE4 equal routing chloride entry,"[-0.5, -0.5, 1, -2, -2]","[0, 0, 0, 0, 0]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+E,AE2 chloride entry,"[0, 0, 1, -1, -1]","[0, 0, 0, 0, 0]",True,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+H,NHE1 proton extrusion,"[1, 0, 0, 0, 1]","[0, 0, 0, 0, 0]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+B,NBC one Na and two bicarbonates entry,"[1, 0, 0, 2, 2]","[0, 0, 0, 0, 0]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+Pb,Basolateral Na/K ATPase,"[-3, 2, 0, 0, 0]","[0, 0, 0, 0, 0]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+Pa,Apical Na/K ATPase,"[-3, 2, 0, 0, 0]","[3, -2, 0, 0, 0]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+Kb,Basolateral K efflux,"[0, -1, 0, 0, 0]","[0, 0, 0, 0, 0]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+Ka,Apical K efflux,"[0, -1, 0, 0, 0]","[0, 1, 0, 0, 0]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+J,Apical chloride export,"[0, 0, -1, 0, 0]","[0, 0, 1, 0, 0]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+Db,CO2 bath to cell,"[0, 0, 0, 1, 0]","[0, 0, 0, 0, 0]",True,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+Da,CO2 lumen to cell,"[0, 0, 0, 1, 0]","[0, 0, 0, -1, 0]",True,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+pNa,Paracellular Na lumen to bath,"[0, 0, 0, 0, 0]","[-1, 0, 0, 0, 0]",True,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+pK,Paracellular K lumen to bath,"[0, 0, 0, 0, 0]","[0, -1, 0, 0, 0]",True,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+pCl,Paracellular Cl lumen to bath,"[0, 0, 0, 0, 0]","[0, 0, -1, 0, 0]",True,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+pHCO3,Paracellular bicarbonate lumen to bath,"[0, 0, 0, 0, 0]","[0, 0, 0, -1, -1]",True,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+oNa,Luminal sodium outflow,"[0, 0, 0, 0, 0]","[-1, 0, 0, 0, 0]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+oK,Luminal potassium outflow,"[0, 0, 0, 0, 0]","[0, -1, 0, 0, 0]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+oCl,Luminal chloride outflow,"[0, 0, 0, 0, 0]","[0, 0, -1, 0, 0]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+oHCO3,Luminal bicarbonate outflow,"[0, 0, 0, 0, 0]","[0, 0, 0, -1, -1]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md
+oCO2,Luminal dissolved CO2 outflow,"[0, 0, 0, 0, 0]","[0, 0, 0, -1, 0]",False,output/46h/evidence/stoichiometry.json; minimal bicarbonate/CO2 outflow split in CBM_PROTOCOL.md

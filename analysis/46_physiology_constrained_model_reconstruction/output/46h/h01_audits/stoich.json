@@ -1,0 +1,106 @@
+{
+  "task": "46H01 independent stoichiometry audit",
+  "published_base": "5f791e3907fa6769364c5fc65ccb31881b32c006",
+  "builder_sha256": "cc8920b6f64f0bb279363efcdcb8ce4f0077394c66487a21704d497c9b9ef76f",
+  "status": "PASS",
+  "method": "Independent source-derived expected signatures; parse builder AST without executing it; exact Fraction checks against CSV; no LP/ODE execution",
+  "reaction_checks": [
+    {
+      "reaction": "N",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "A",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "E",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "H",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "B",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "Pb",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "Pa",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "Kb",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "Ka",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "J",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "Db",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "Da",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "pNa",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "pK",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "pCl",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "pHCO3",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "oNa",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "oK",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "oCl",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "oHCO3",
+      "source_signature_matches": true
+    },
+    {
+      "reaction": "oCO2",
+      "source_signature_matches": true
+    }
+  ],
+  "all_21_source_signatures_match": true,
+  "ledger_and_matrix_match": true,
+  "all_internal_apical_transfers_conserve_each_coordinate": true,
+  "equal_routing_chloride_identity_exact": true,
+  "WT_KO_shared_non_AE4_bounds": true,
+  "required_qualifications": [
+    "Forward N,A,H,B,K,J signs define the frozen conditional secretion sector; they are not global thermodynamic statements.",
+    "Nonnegative bicarbonate and CO2 luminal outflow is the declared minimal carbonate approximation, not full carbonate speciation.",
+    "No pump or K flux fractions are fixed to model capacity fractions.",
+    "External bath and downstream sink are unbalanced reservoirs; global net source terms are physically attributed to those reservoirs."
+  ],
+  "blocking_findings": [],
+  "scientific_optimisations": 0
+}

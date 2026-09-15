@@ -1,0 +1,33 @@
+{
+  "milestone": "46H01",
+  "published_input": "5f791e3907fa6769364c5fc65ccb31881b32c006",
+  "builder_sha256": "cc8920b6f64f0bb279363efcdcb8ce4f0077394c66487a21704d497c9b9ef76f",
+  "matrix_sha256": "73fdcc7328eca7633bc806c3c26a4006cc87d93a6a569f816e0ebdcfb608b613",
+  "audit": "TIC/TA, signed CO2, minimal carbonate outflow, explicit sources and sinks",
+  "checks": {
+    "builder_frozen_hash": true,
+    "cell_TIC_exact": true,
+    "cell_TA_exact": true,
+    "lumen_TIC_exact": true,
+    "lumen_TA_exact": true,
+    "cell_TIC_minus_TA": true,
+    "lumen_TIC_minus_TA": true,
+    "global_TIC": true,
+    "global_TA": true,
+    "global_TIC_minus_TA": true,
+    "neutral_outflow": true,
+    "no_free_acid_or_TA_exchange": true,
+    "CO2_signed": true,
+    "species_outflows_nonnegative": true
+  },
+  "pass": true,
+  "errors": [],
+  "scientific_optimisations": 0,
+  "interpretation": "All carbon and alkalinity terms match pinned source or declared minimal luminal chemistry. Apical CO2 cancels across compartments; internal chemistry creates neither conserved quantity. Every net carbon/TA exchange is a named reservoir exchange or named outflow. No arbitrary TA drain exists. Steady rows imply Db+Da=H, Da=-oCO2, pHCO3=-oHCO3 and Db=H+oCO2.",
+  "limitations": [
+    "Minimal lumen chemistry explicitly neglects carbonate, H/OH and tiny buffer; it is not exact full speciation.",
+    "With H and oCO2 nonnegative the balance constraints imply Db>=0, Da<=0; those implied signs do not demonstrate concentration gradients.",
+    "An open external bath can supply carbon, sodium and other solutes through declared transport; this is not a hidden source.",
+    "LP bookkeeping does not establish physiological pH, composition, membrane potentials or energy adequacy."
+  ]
+}
