@@ -2,44 +2,69 @@ name: Task 44 full system analysis
 on:
   push:
     branches: [analysis/task-44-full-system-mathematics]
+    paths:
+      - 'analysis/44_full_system_mathematics/**'
+      - '.github/workflows/task44-analysis.yml'
+      - '!analysis/44_full_system_mathematics/output/**'
+      - '!analysis/44_full_system_mathematics/*.pdf'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
+concurrency:
+  group: task44-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   analysis:
+    if: github.actor != 'github-actions[bot]' && github.ref == 'refs/heads/analysis/task-44-full-system-mathematics'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Save exact source snapshot
-        run: |
-          git rev-parse HEAD > source-sha.txt
-          git archive --format=tar.gz -o source-snapshot.tar.gz HEAD
-          git bundle create source-history.bundle HEAD refs/remotes/origin/main
-      - uses: actions/upload-artifact@v4
-        with:
-          name: task44-source-snapshot
-          path: |
-            source-snapshot.tar.gz
-            source-history.bundle
-            source-sha.txt
-          retention-days: 7
-          if-no-files-found: error
       - uses: actions/setup-python@v5
-        if: ${{ hashFiles('analysis/44_full_system_mathematics/run_analysis.py') != '' }}
+        if: hashFiles('analysis/44_full_system_mathematics/READY') != ''
         with:
           python-version: '3.12'
-      - name: Run full system analysis
-        if: ${{ hashFiles('analysis/44_full_system_mathematics/run_analysis.py') != '' }}
+          cache: pip
+      - name: Install analysis and report dependencies
+        if: hashFiles('analysis/44_full_system_mathematics/READY') != ''
         run: |
           python -m pip install -r requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends cm-super poppler-utils texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-science > /tmp/task44-tex-install.log
+      - name: Run and verify full system analysis
+        if: hashFiles('analysis/44_full_system_mathematics/READY') != ''
+        run: |
           python analysis/44_full_system_mathematics/run_analysis.py
+          python analysis/44_full_system_mathematics/verify.py
+          git diff --exit-code c4d4f207f702d8eee09ab94d2d90ae90552dd641 -- src manuscript model results archive
+          printf '{"source_commit":"%s","workflow_run":"%s","base_main":"c4d4f207f702d8eee09ab94d2d90ae90552dd641"}\n' "$GITHUB_SHA" "$GITHUB_RUN_ID" > analysis/44_full_system_mathematics/output/build_provenance.json
+      - name: Build complete standalone report
+        if: hashFiles('analysis/44_full_system_mathematics/READY') != ''
+        run: bash analysis/44_full_system_mathematics/build.sh
       - uses: actions/upload-artifact@v4
-        if: ${{ always() && hashFiles('analysis/44_full_system_mathematics/run_analysis.py') != '' }}
+        if: always() && hashFiles('analysis/44_full_system_mathematics/READY') != ''
         with:
-          name: task44-analysis-results
-          path: analysis/44_full_system_mathematics/output/
-          if-no-files-found: error
+          name: task44-verified-report-and-results
+          path: |
+            analysis/44_full_system_mathematics/output/
+            analysis/44_full_system_mathematics/AE4_full_system_analysis.pdf
+            analysis/44_full_system_mathematics/report.tex
+            analysis/44_full_system_mathematics/build.log
           retention-days: 30
+          if-no-files-found: error
+      - name: Publish verified Task 44 checkpoint
+        if: success() && hashFiles('analysis/44_full_system_mathematics/READY') != ''
+        env:
+          BRANCH: analysis/task-44-full-system-mathematics
+        run: |
+          git fetch origin "$BRANCH"
+          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add analysis/44_full_system_mathematics/output/ analysis/44_full_system_mathematics/AE4_full_system_analysis.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish verified Task 44 analysis and standalone report"
+            git push origin "HEAD:$BRANCH"
+          fi
