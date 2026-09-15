@@ -1,0 +1,250 @@
+{
+  "frozen_prediction_files_unchanged": 88,
+  "files": [
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/.gitignore",
+      "bytes": 57,
+      "sha256": "5c6137fe58c981983779f3926ff4f2c0677b62ecbd7e2b825d1d1b21973cff72"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/BASELINE_DIAGNOSTICS.md",
+      "bytes": 5305,
+      "sha256": "98a17da2efd1d959460c42571b5eab509f9d2ba60dc137de21bb4a797a926dbf"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/CHECKPOINT_01_AUDIT.md",
+      "bytes": 856,
+      "sha256": "bc1de93e9a29b63dbf6e71b6a912685d5923930a97474afa79c7a02e8d02e1bb"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/CHECKPOINT_02_BASELINE.md",
+      "bytes": 1222,
+      "sha256": "64de84ae6e7a6d7f61c0377e13051042cb879f10e3d6a3b58e0ea4509d73cace"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/CHECKPOINT_04_VALIDATION.md",
+      "bytes": 1331,
+      "sha256": "92f0cb99ec7d17d4c5fb817afebfc2af314739802e2ca6aa7a170abae6581014"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/CHECKPOINT_05_FINAL.md",
+      "bytes": 2957,
+      "sha256": "2abe845811c5e87804ed41f5aac906d0843aec01c82da3fc8f086c5d9911d0be"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/DYNAMIC_POTASSIUM_RECYCLING_REPORT.md",
+      "bytes": 13642,
+      "sha256": "015fd11aa0746b9655907d8802ea9a4cbe46622995907cf855a77deff6d4ff65"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/EQUATION_AUDIT.md",
+      "bytes": 7491,
+      "sha256": "f4597e7b058267ae1561edeb04c6e69e743b825f419c67ad5c2375eafcee2e9c"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/PREDICTION_CHECKPOINT.md",
+      "bytes": 2972,
+      "sha256": "e0f35cea5322872796be5c9f2297311391ad62054f54ffdbde6baa05dc30113e"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/PREDICTION_MANIFEST.json",
+      "bytes": 12276,
+      "sha256": "fdc67b8ecb25b92fa56e58cf67ffc93c6a5304f716c2f4953f7854f630849350"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/PROTOCOL.md",
+      "bytes": 3895,
+      "sha256": "97915aa072972019196e317ba0d16f8df1290aa08d7ca9e5023321cf0fbabf9a"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/PROVENANCE_COMPLEMENT.md",
+      "bytes": 1833,
+      "sha256": "029e94e5da8a0b60bb925639f740cd09cf42c0e3e7a8f609136927dcfe1b11a2"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/README.md",
+      "bytes": 2559,
+      "sha256": "703efd05887f72e975da1586ca2009b6e67589c9f90b821c74461d9dab150236"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/REMOTE_PREDICTION_RECEIPT.json",
+      "bytes": 450,
+      "sha256": "5261800fe1001b1374ab39125dcded7b862ba6cb186aa4c4ebdb56af1b61f5f0"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/build_figures.py",
+      "bytes": 5139,
+      "sha256": "96510ef6f8a273174637bb741b30f156f5870ed9b856f563b841ec8b011f9ac1"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/common.py",
+      "bytes": 4981,
+      "sha256": "3078ffecbb015df2f08345d6fd9afded00ff8a0550c59ad38b29aa506ab0d6e5"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/figures/dynamic_recycling.png",
+      "bytes": 234106,
+      "sha256": "14464c5ff950baa258bd1f261dc02bdbd1e20dcc10be89b1de12d1192ec2049a"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/figures/dynamic_recycling.svg",
+      "bytes": 65994,
+      "sha256": "7699dc40e7a9056d37d70e89b8205cfd6263ee02192fc2a4971b4626c4c8b78f"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/figures/ion_balance_attribution.png",
+      "bytes": 140843,
+      "sha256": "d9277af4a70199bc6cf7a667c89610d83ed4e8b38be375276fac045a72cb6376"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/figures/ion_balance_attribution.svg",
+      "bytes": 29434,
+      "sha256": "a2cd39befc45c2d702acc4a8b1b5d3f8c306ef7b3768144e232abb465f96652b"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/input/active_parameters.json",
+      "bytes": 3845,
+      "sha256": "1a4a4708de6d1752add85b99135b421f96c54c141a018390c64de50368ec774e"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/input/source_manifest.json",
+      "bytes": 19763,
+      "sha256": "646245ff5ff9eb1d15f076b1429263104a44c96e97559cf75acfab4c4c8225b0"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/EXECUTION_NOTES.md",
+      "bytes": 958,
+      "sha256": "a138115f03832ae425a12cc551b0c82d239d997c83648b855659f4a1da92577a"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/ae4_5pct/states.csv.gz",
+      "bytes": 66721,
+      "sha256": "87ead3613527b3665af84bfc48599529b2b8ed1b4aa44b6ad7ba98cb6b6ca301"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/ae4_5pct/summary.json",
+      "bytes": 24174,
+      "sha256": "5b98d977b8de267419b39619e80663b193570d4fa1e3013e9c8dcb909cd295ad"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/ae4_5pct/trajectory.csv.gz",
+      "bytes": 393348,
+      "sha256": "8c3766ff5369fc55bc6a60f3ef5ed95b8c02ff1de673a3662cf5543abc03225a"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/ae4_null/local_derivatives.csv",
+      "bytes": 1820,
+      "sha256": "b1d0a123fafa675869b0c3e22f61868b652f1a23dbc316032eee3421fb3486a7"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/ae4_null/states.csv.gz",
+      "bytes": 67157,
+      "sha256": "9f4d907c8b429550981ef24854ad289db62a891b9a457cf237c9f85b944ad3a2"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/ae4_null/summary.json",
+      "bytes": 23263,
+      "sha256": "275d0f019878815b7b836df3d8ad3eae998679af8d37698e467f882cc9702997"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/ae4_null/trajectory.csv.gz",
+      "bytes": 370979,
+      "sha256": "13da8f7a6888ef5108eee7e5d1b86954e5665973d65d4a92b245e65ae2665cb0"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/audit_verification.json",
+      "bytes": 9120,
+      "sha256": "16b87f0f22f6014377ce342b3d7c38a5dd3e6d0cee58d5ee3eb50722b614c14f"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/baseline_interpretation.json",
+      "bytes": 1404,
+      "sha256": "4c425977ba3c822ea7e9610ec53c1b8b1d6fc1fb3b3423899fb4a80cc9b04858"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/compression_manifest.json",
+      "bytes": 1584,
+      "sha256": "8c2fa6077465082d202e5afcac04b77ac25d7239ab88b711328030465fe6a8bc"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/final_validation.csv",
+      "bytes": 515,
+      "sha256": "0d8122ec44dce3eccd9c5033ddafcb53a562e63b16791359e2c289298d302fa8"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/final_validation.json",
+      "bytes": 2222,
+      "sha256": "8a221ce1fea70058993d2888ce97d800f272889dfcb9029f15ecbc84c58ce465"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/final_verification.json",
+      "bytes": 2400,
+      "sha256": "4cfc2e0896c2933c0648629313f15b94df93ffe241c7d2885bc5f54e22091792"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/wt/local_derivatives.csv",
+      "bytes": 1822,
+      "sha256": "f2af0f4e90849fd5c3b2380efde33c34178d6444a4e90660554480bc90bd5b49"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/wt/states.csv.gz",
+      "bytes": 67535,
+      "sha256": "444f3e222cf23ed69109cc50fd1807291496f0d5b741a261e668d0f41845322b"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/wt/summary.json",
+      "bytes": 24411,
+      "sha256": "85bf232fb568bf9795235148bdada354158580e18f88244a5fd2b951b435d764"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/output/wt/trajectory.csv.gz",
+      "bytes": 393831,
+      "sha256": "7a42d45c342666245ff6a70f978b6bf0a917295be3334174f2b00a7edbe2b99d"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/package_outputs.py",
+      "bytes": 936,
+      "sha256": "69a44675faf2193f49fd0782af0e1af2bcfe36bedfd92a4e30fde7a39e0f6089"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/parameter_provenance.csv",
+      "bytes": 31578,
+      "sha256": "64a7312e90cb0533dbe7f9a0fc02b7a6b69df1ad5c6c6d1002626bf4a2553a91"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/recover_wt_summary.py",
+      "bytes": 2802,
+      "sha256": "a568b1cd9eae4786ff9a715be5ed0e47676301a348db2ee1d7fc0061ef823439"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/reproduce_in_scratch.py",
+      "bytes": 1634,
+      "sha256": "d61eabece61c032d3ba9363a841aae82acbcb0f1a33527c8a859a3801992a975"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/run_diagnostics.py",
+      "bytes": 13252,
+      "sha256": "557283f29a2859da9493e011cf8daa1fcca2ac9db6fe83e3c4186ed5105a3e21"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/summarise_baseline.py",
+      "bytes": 10165,
+      "sha256": "a44920b5df5be47f96e221847da83744079dd0234969acfc3a1e201b4d602a00"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/validate_predictions.py",
+      "bytes": 3330,
+      "sha256": "a27ccc89fb27b412b5f5d7d3af80f85e761d0c679b346707f8660d901755009d"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/verify_results.py",
+      "bytes": 6054,
+      "sha256": "54709c7fbaa849503e72e22acc8bb05e8fe0fb2bac9af82ee8bc1f525cdf59af"
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/write_report.py",
+      "bytes": 15784,
+      "sha256": "5b5379a4a4a9c2bf84311f94dd0f2b59584fa538e62f81ccb391849cb32eeb82"
+    }
+  ]
+}

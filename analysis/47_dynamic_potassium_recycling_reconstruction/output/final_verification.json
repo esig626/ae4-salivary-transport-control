@@ -1,0 +1,69 @@
+{
+  "cases": {
+    "ae4_5pct": {
+      "cumulative_quadrature_error_pL": 0.0,
+      "max_errors": {
+        "cl_concentration": 0,
+        "dynamic_cbm": 2.0816681711721685e-16,
+        "electrical_sum": 2.565170298396424e-13,
+        "k_apical": 8.326672684688674e-17,
+        "k_basal": 8.326672684688674e-17,
+        "k_concentration": 0,
+        "k_storage": 1.942890293094024e-16,
+        "na_concentration": 0,
+        "na_storage": 1.1102230246251565e-16,
+        "nkcc": 2.7755575615628914e-17,
+        "pump": 2.0816681711721685e-17
+      },
+      "min_ideal_nkcc_affinity": 0.7317779591217486,
+      "min_pump_reserve_fmol_s": 0.011729438774695088,
+      "saved_states_checked": 602
+    },
+    "ae4_null": {
+      "cumulative_quadrature_error_pL": 3.3306690738754696e-16,
+      "max_errors": {
+        "cl_concentration": 0,
+        "dynamic_cbm": 1.8474805019152996e-16,
+        "electrical_sum": 2.5474067300024217e-13,
+        "k_apical": 5.551115123125783e-17,
+        "k_basal": 8.326672684688674e-17,
+        "k_concentration": 0,
+        "k_storage": 1.6653345369377348e-16,
+        "na_concentration": 0,
+        "na_storage": 8.326672684688674e-17,
+        "nkcc": 2.7755575615628914e-17,
+        "pump": 2.0816681711721685e-17
+      },
+      "min_ideal_nkcc_affinity": 0.7337470160220089,
+      "min_pump_reserve_fmol_s": 0.011580328393877168,
+      "saved_states_checked": 602
+    },
+    "wt": {
+      "cumulative_quadrature_error_pL": 0.0,
+      "max_errors": {
+        "cl_concentration": 0,
+        "dynamic_cbm": 1.6653345369377348e-16,
+        "electrical_sum": 2.436384427539906e-13,
+        "k_apical": 8.326672684688674e-17,
+        "k_basal": 8.326672684688674e-17,
+        "k_concentration": 0,
+        "k_storage": 1.6653345369377348e-16,
+        "na_concentration": 0,
+        "na_storage": 1.249000902703301e-16,
+        "nkcc": 2.7755575615628914e-17,
+        "pump": 2.0816681711721685e-17
+      },
+      "min_ideal_nkcc_affinity": 0.6946987850002017,
+      "min_pump_reserve_fmol_s": 0.0115266013293868,
+      "saved_states_checked": 602
+    }
+  },
+  "frozen_files_unchanged": 88,
+  "independent_saved_states_checked": 1806,
+  "local_derivative_checks": 24,
+  "lossless_archives_checked": 6,
+  "max_scaled_local_derivative_error": 2.1066507049660634e-09,
+  "production_integrations_in_this_verifier": 0,
+  "production_model_imported": false,
+  "status": "PASS"
+}
