@@ -1,0 +1,3 @@
+__pycache__/
+output/*/trajectory.csv
+output/*/states.csv

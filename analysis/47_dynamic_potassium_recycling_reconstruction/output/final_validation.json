@@ -1,0 +1,52 @@
+{
+  "benchmark": {
+    "central_null_deficit_percent": 35.0,
+    "comparison": "Descriptive whole gland benchmark versus primary acinar model; no new fitted observation model",
+    "five_percent_condition": "Computational expression intervention, not a separately established experimental magnitude",
+    "source": "User supplied central benchmark; Pe\u00f1a-M\u00fcnzenmayer et al. 2015, DOI 10.1074/jbc.M114.612895"
+  },
+  "biological_scope": "The binding ceiling is absent from the frozen model; biological capacities and missing kinetic dependencies remain unidentifiable from current evidence.",
+  "correction_made": false,
+  "nkcc_compensation_reduced_by_new_mechanism": false,
+  "null_direction_recovered": true,
+  "null_magnitude_gap_percentage_points": 31.142513702832055,
+  "prediction_commit": "56ab6a00cb4b75c70e5857d2c58e7d46731d4d5f",
+  "results": [
+    {
+      "ae4_expression": 1.0,
+      "all_inherited_gates_passed": true,
+      "case": "wt",
+      "cumulative_deficit_percent": 0.0,
+      "cumulative_outflow_pL": 0.992524544081835,
+      "early_0_60_deficit_percent": 0.0,
+      "endpoint_flow_deficit_percent": 0.0,
+      "late_60_600_deficit_percent": 0.0,
+      "nkcc_compensation_percent": 0.0
+    },
+    {
+      "ae4_expression": 0.0,
+      "all_inherited_gates_passed": true,
+      "case": "ae4_null",
+      "cumulative_deficit_percent": 3.8574862971679447,
+      "cumulative_outflow_pL": 0.9542380457978495,
+      "early_0_60_deficit_percent": 1.3704554067833552,
+      "endpoint_flow_deficit_percent": 2.828334199407545,
+      "late_60_600_deficit_percent": 4.16352984899927,
+      "nkcc_compensation_percent": 23.163449507535304
+    },
+    {
+      "ae4_expression": 0.05,
+      "all_inherited_gates_passed": true,
+      "case": "ae4_5pct",
+      "cumulative_deficit_percent": 3.417577608024125,
+      "cumulative_outflow_pL": 0.9586042475091506,
+      "early_0_60_deficit_percent": 1.28012211087426,
+      "endpoint_flow_deficit_percent": 2.4073216636683603,
+      "late_60_600_deficit_percent": 3.6806038835554555,
+      "nkcc_compensation_percent": 20.81935078944255
+    }
+  ],
+  "retuned_after_freeze": false,
+  "unchanged_frozen_files": 88,
+  "wt_acceptable_under_inherited_gates": true
+}

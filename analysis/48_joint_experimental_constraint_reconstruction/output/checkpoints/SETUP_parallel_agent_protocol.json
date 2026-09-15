@@ -1,0 +1,14 @@
+{
+  "milestone": "SETUP_parallel_agent_protocol",
+  "scientific_base": "0a6adda00f0bb57d527f341412ceffa348b67a76",
+  "task48_stage_commit": "f89a7b0b2cd0ce369fdbe5a3603cf22eec12dcc7",
+  "parallel_addendum_commit": "f2fcfa2eb5d5f9484225bffadb02b0093bbb4da4",
+  "status_commit_parent": "f2fcfa2eb5d5f9484225bffadb02b0093bbb4da4",
+  "scientific_inference_run": false,
+  "orchestrator_only_canonical_branch": true,
+  "max_parallel_workers": 5,
+  "required_milestones": ["48A", "48B", "48C", "48D_if_needed", "48E", "48F"],
+  "push_after_each_milestone": true,
+  "force_push_allowed": false,
+  "next_step": "Launch Codex, read both Task 48 prompt files, execute 48A with prescribed parallel workers."
+}

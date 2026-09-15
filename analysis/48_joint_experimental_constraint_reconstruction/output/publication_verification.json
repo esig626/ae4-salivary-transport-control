@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "preserved_original_files": 1934,
+  "unchanged_executed_source_files": 72,
+  "verified_published_checkpoint_receipts": [
+    {
+      "milestone": "48A",
+      "sha": "d0a6eee026d9cf39ab7b774d8f5149908850774f",
+      "parent_sha": "5c945c4a7857657b5f7c76d5bf9e3d3abc7d5721",
+      "file_hashes_valid": true
+    },
+    {
+      "milestone": "48B",
+      "sha": "8ee7c3662bb07707850006b4142185cede3fdb82",
+      "parent_sha": "d0a6eee026d9cf39ab7b774d8f5149908850774f",
+      "file_hashes_valid": true
+    },
+    {
+      "milestone": "48C",
+      "sha": "d603bd535bd0924c118a3a74040aa833e48ec117",
+      "parent_sha": "8ee7c3662bb07707850006b4142185cede3fdb82",
+      "file_hashes_valid": true
+    },
+    {
+      "milestone": "48D",
+      "sha": "93bd81376b20148b4ef193f0cec92e8325a81fb4",
+      "parent_sha": "d603bd535bd0924c118a3a74040aa833e48ec117",
+      "file_hashes_valid": true
+    },
+    {
+      "milestone": "48E",
+      "sha": "7d4185937e29977fe20eeb01ac9e52f3b3bbad8b",
+      "parent_sha": "93bd81376b20148b4ef193f0cec92e8325a81fb4",
+      "file_hashes_valid": true
+    }
+  ],
+  "positive_genotype_rests": 3,
+  "positive_protocol_trajectories": 12,
+  "shared_parameter_hash": "d3e9b1ad8aaf165dcfccb7b1d2032352ebf53c40a3e9ec4131ae70ee9b79e781",
+  "exact_genotype_initial_states": true,
+  "final_residuals_equal_baseline": true,
+  "new_scientific_solves_in_verification": 0,
+  "final_receipt_note": "A newly created 48F receipt is checked by its containing commit and remote verification after publication."
+}

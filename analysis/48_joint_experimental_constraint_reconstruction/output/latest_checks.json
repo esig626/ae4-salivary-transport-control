@@ -1,0 +1,19 @@
+{
+  "milestone": "48F",
+  "verification_passed": true,
+  "preserved_original_files": 1934,
+  "unchanged_executed_source_files": 72,
+  "protocol_regression_tests_passed": 9,
+  "independent_rest_review": "pass",
+  "independent_observation_report_review": "pass",
+  "scientific_work": {
+    "rest_solves": 3,
+    "trajectories": 12,
+    "parameter_optimisations": 0,
+    "new_mechanisms": 0
+  },
+  "result": "authorised negative stopping condition",
+  "full_joint_optimum_obtained": false,
+  "no_new_science_since_48C": true,
+  "stop_after_task48": true
+}

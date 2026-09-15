@@ -1,0 +1,15 @@
+{
+  "accepted_rest_roots": 3,
+  "baseline_residual_rows": 48,
+  "completed_trajectories": 12,
+  "decision": "inherited architecture rejected conditional on common source faithful observation rule; full numeric likelihood unavailable",
+  "locally_stable_roots": 3,
+  "mapped_scored_rows": 12,
+  "max_rest_charge_fmol": 0.0,
+  "max_rest_scaled_rhs": 3.9644170173074645e-09,
+  "milestone": "48C",
+  "minimum_two_row_chi_square": 108.28729281767953,
+  "new_equation_mechanisms": 0,
+  "parameter_optimisations": 0,
+  "structural_core_RHS_identity": 0.0
+}

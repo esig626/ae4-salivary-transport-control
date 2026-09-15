@@ -1,0 +1,542 @@
+[
+  {
+    "path": "AGENTS.md",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "309ba4f390afacfc7450a71520c8ef63d5a0aa45"
+  },
+  {
+    "path": "README.md",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "ea26a69ec44c3b5a01b84e6fe317caf3247fb4f6"
+  },
+  {
+    "path": "analysis/37_wt_nbc_validation/run_focused_tests.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "a04ede9bf5679601ede3ce20807935528dbc288e"
+  },
+  {
+    "path": "analysis/37_wt_nbc_validation/run_phase_a.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "be7d245cc1a2e8c3a122cb03c51beec4f85193bb"
+  },
+  {
+    "path": "analysis/37_wt_nbc_validation/run_wt.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "3d69c029f1d1ae53bcbc9d3c26b9c41bf1d4f9a3"
+  },
+  {
+    "path": "analysis/37_wt_nbc_validation/validation_common.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "20d8d2fc8bbbc82284fda352bbe3dd3d0a853bb2"
+  },
+  {
+    "path": "analysis/40_ae4_equal_cation_routing/run_case.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "e3e127b00864b9b6b3e2d165f72eae97805aa37d"
+  },
+  {
+    "path": "analysis/40_ae4_equal_cation_routing/run_preflight.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "cb7923f574402d0727fe4537d2b31525d5d389ef"
+  },
+  {
+    "path": "analysis/40_ae4_equal_cation_routing/run_rest.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "8f72985bab1eb026e7cf4bc3e7d90dec71ecae1d"
+  },
+  {
+    "path": "analysis/40_ae4_equal_cation_routing/summarize_results.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "7f7c770f0d4a893419cbbb067b55564af46efd38"
+  },
+  {
+    "path": "analysis/40_ae4_equal_cation_routing/validation_common.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "067c26bf360866370cfd4058bb51d71748ed9902"
+  },
+  {
+    "path": "analysis/40_ae4_equal_cation_routing/write_report.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "2f9087537af8dfb55fd199d2ede4a163adc1739c"
+  },
+  {
+    "path": "analysis/46_physiology_constrained_model_reconstruction/DYNAMIC_RECONSTRUCTION_HANDOFF.md",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "addf69a5a8fc3659dd0a6e6107844346bb742fc8"
+  },
+  {
+    "path": "analysis/46_physiology_constrained_model_reconstruction/replay_baseline.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "d701554d0e8c06de37a9270b651dcda01702fa51"
+  },
+  {
+    "path": "analysis/46_physiology_constrained_model_reconstruction/verify_baseline.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "0590709f967be10269ea879830be7df4a7f9b41b"
+  },
+  {
+    "path": "model/README.md",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "356d2f32dbb848e4bcd76676590a891c766bb1ae"
+  },
+  {
+    "path": "model/SOURCE_MAP.md",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "7c6619398ce91aef2a66188f97c96449de5b6ec0"
+  },
+  {
+    "path": "model/equations.md",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "88695610e6786a788ca32a77941097c14e8f0ad9"
+  },
+  {
+    "path": "model/fluxes.md",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "9a6f6f8cd41aae1abba407dbc0e578b71275523e"
+  },
+  {
+    "path": "model/observables.md",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "e0614c3df274e5cca334925b3e5dfe6cafd56f49"
+  },
+  {
+    "path": "model/parameters.md",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "c95b54d528425e54947a14c2826d3b0b1d972243"
+  },
+  {
+    "path": "model/states.md",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "e794a62d22a62f01a3cfd8042a41e3ffd7b56abe"
+  },
+  {
+    "path": "prompts/47_dynamic_potassium_recycling_reconstruction.md",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "254776658a42fe07b125d2ac3704d210afed7070"
+  },
+  {
+    "path": "requirements.txt",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "471f776f67541bcaadd042782a1c0a438d0009f3"
+  },
+  {
+    "path": "results/40_ae4_equal_cation_routing/source_verification.json",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "f6cbdb02d4641cc278bd953a83becb14dd50f905"
+  },
+  {
+    "path": "results/40_ae4_equal_cation_routing/wt_rest.json",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "fb90994dc9c8de4b62317b37555b10af91c4b5bb"
+  },
+  {
+    "path": "src/modern_full_model/__init__.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "3cef0cd91fa99d39745e9e7275e9a4499ea46a57"
+  },
+  {
+    "path": "src/modern_full_model/absolute_hydraulic_diagnostic.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "b079cf74320bb14104d6f1ad9eaf16838ed0274d"
+  },
+  {
+    "path": "src/modern_full_model/acid_base.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "669bd8554329ffcb5c9c70bce891415cda233fec"
+  },
+  {
+    "path": "src/modern_full_model/ae4_cacc_recruitment.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "0c4a3b2434847cfa7ec53330b2d95a74fc0e9eab"
+  },
+  {
+    "path": "src/modern_full_model/ae4_catalan2025.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "bb331a3d2dac612341a23193672897eb3eab79b9"
+  },
+  {
+    "path": "src/modern_full_model/ae4_equal_cation_routing.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "7adb78d9ac34bc5b7119002fd11532c36a453e65"
+  },
+  {
+    "path": "src/modern_full_model/ae4_routing_only.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "f7ceb851df9e0cb8f4d8a9cb1c540055aa342d54"
+  },
+  {
+    "path": "src/modern_full_model/calibration.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "9e17afdd7c5e2890191416c3cecfd8916233e5a5"
+  },
+  {
+    "path": "src/modern_full_model/camp_pka.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "e0fe3fdf2837d97ee8e235fe1a72dc9854c594b8"
+  },
+  {
+    "path": "src/modern_full_model/freeze_g5_joint.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "293666bd5e0787dcc757ee566ede865673441038"
+  },
+  {
+    "path": "src/modern_full_model/genotype_evaluation.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "4e008099403f5a57754cc712dc8f048989a93c06"
+  },
+  {
+    "path": "src/modern_full_model/independent.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "7acd694634d1f4391d851b481b5b2d3c5995fd53"
+  },
+  {
+    "path": "src/modern_full_model/independent_genotype.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "9a0cecec7e718a19361efe3d303eaf946c01d072"
+  },
+  {
+    "path": "src/modern_full_model/independent_native.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "c7791a860985faf5da15533d4b163bacb5f1f436"
+  },
+  {
+    "path": "src/modern_full_model/membranes.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "5cc8250e8a27e395d657c9008720663877231956"
+  },
+  {
+    "path": "src/modern_full_model/model.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "e49e0d9120d87dacaa37f58d5d0d08dd3f6384d9"
+  },
+  {
+    "path": "src/modern_full_model/native_dynamic_contract.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "f935cf1bdae6b5af7c986013181d27dfd8b6437d"
+  },
+  {
+    "path": "src/modern_full_model/native_source_panel.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "04a4c94e72cd3d02f6c2bb34e27dc9b5d7439b93"
+  },
+  {
+    "path": "src/modern_full_model/nbc_minimal.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "e43a097d109e450d6e7c2fd09f73cd62329fb008"
+  },
+  {
+    "path": "src/modern_full_model/nhe1_cha2009.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "6090805662155915e894804e1a4dbf2acb594241"
+  },
+  {
+    "path": "src/modern_full_model/nkcc1_capacity_limited.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "669ba9f2ea35d6b7fa002d7ae8c5d81cadc6fe03"
+  },
+  {
+    "path": "src/modern_full_model/nkcc1_palk2010.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "2ece14c5ef2a72f292dbd1d1964fbc30c60782be"
+  },
+  {
+    "path": "src/modern_full_model/nkcc_stimulation.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "2483585e0452e8666b1ba77854c3d104cc0897b9"
+  },
+  {
+    "path": "src/modern_full_model/parameters.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "7cf42ee2305985186595ee90c8be637c7f2ed5bf"
+  },
+  {
+    "path": "src/modern_full_model/pooled_ae4.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "80755f39401d95872d3faa78451f14fb8ce3fbd3"
+  },
+  {
+    "path": "src/modern_full_model/report_calcium_fast_screen.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "6e825de1c6257e8bcc6561219eca1fdfbc18efff"
+  },
+  {
+    "path": "src/modern_full_model/run_absolute_hydraulic_diagnostic.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "12b43ad17a9185301dea464d9d782c29cbadb448"
+  },
+  {
+    "path": "src/modern_full_model/run_ae4_carbon_nhe1_compensation.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "742ffc9c963a33e32dd1a28de7d7b6dadd6f034b"
+  },
+  {
+    "path": "src/modern_full_model/run_ae4_routing_only.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "92b5b400c0a5406fafaa7adf2c7350d0275a9d57"
+  },
+  {
+    "path": "src/modern_full_model/run_ae4_routing_re_equilibrated.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "dadbd2b87db67a01329f4288cac0127d8285a5e1"
+  },
+  {
+    "path": "src/modern_full_model/run_analysis.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "c3279588fdd37ed8eced464b1bb6f4fe25ad2fb7"
+  },
+  {
+    "path": "src/modern_full_model/run_calcium_fast_screen.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "b438ff6a1a00b37d78ac6a7399cc44136e560d94"
+  },
+  {
+    "path": "src/modern_full_model/run_g5_ae2_validation.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "bb3f17bb13bcd3a2f5bafa1a7c081923d13415d3"
+  },
+  {
+    "path": "src/modern_full_model/run_g5_cross_root_profile.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "5d1ad110fb4bbd65e72c1d95d6ba153bad55b6d9"
+  },
+  {
+    "path": "src/modern_full_model/run_g5_joint_repair_profile.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "d6adeb73287bd29bf886e6dd7f9b2406943ec32b"
+  },
+  {
+    "path": "src/modern_full_model/run_g5_nearby_robustness.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "fdc83864cca7e6de43f19c1213a971032d409edb"
+  },
+  {
+    "path": "src/modern_full_model/run_independent_native.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "2dcbf2e120ba12bc94ef29e17996e7c4398302df"
+  },
+  {
+    "path": "src/modern_full_model/run_independent_native_ae2.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "ff8c419e5c23a7ec411fddb70493dce0907bf854"
+  },
+  {
+    "path": "src/modern_full_model/run_independent_native_dynamic.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "5f450cbf39fba26899750be769e902dcf5cbcd76"
+  },
+  {
+    "path": "src/modern_full_model/run_independent_native_genotypes.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "68e534e3ebb4a3d126844ada726e4a52afdbe3f9"
+  },
+  {
+    "path": "src/modern_full_model/run_native_dynamic_contract.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "908749374c8f8c834268e00e604facaeecfaf6f3"
+  },
+  {
+    "path": "src/modern_full_model/run_native_genotype_evaluation.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "bba3dcbaea2ebb8523413cbb5cefebf7785f62d2"
+  },
+  {
+    "path": "src/modern_full_model/run_native_source_panel.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "b06f8124aa07d2047b05eab0292923b18448c240"
+  },
+  {
+    "path": "src/modern_full_model/run_nkcc_stimulation_profile.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "abb1807d384c9909fc8e0967b02eb87718b81735"
+  },
+  {
+    "path": "src/modern_full_model/run_vbeta_diagnostic.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "3904274d3669029b86567ef8e35d5cda4e331641"
+  },
+  {
+    "path": "src/modern_full_model/run_wt_calibration.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "d4212e92b618daff386a40158be3f70569ae7f0c"
+  },
+  {
+    "path": "src/modern_full_model/states.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "0a2d351830e1004bccd55c4ce609e640634eca03"
+  },
+  {
+    "path": "src/modern_full_model/task14_blind.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "a13590c7d475b98f61fa89dbfa2999452f19a099"
+  },
+  {
+    "path": "src/modern_full_model/task14_compare.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "00ce5ddc25977b9c4a831359f2a64eaaeec66c08"
+  },
+  {
+    "path": "src/modern_full_model/task14_report.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "65b408d66a0fe989c7482f5830baca36c0b20deb"
+  },
+  {
+    "path": "src/modern_full_model/task14_reveal.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "283c3f1808f3d55c5266a8addb1aa502273f0fc8"
+  },
+  {
+    "path": "src/modern_full_model/task14b_five_percent.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "8270145f914bac0a87087f149574705f08e010bf"
+  },
+  {
+    "path": "src/modern_full_model/task16_postfreeze.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "f042101f9b890ae97d7b02242edf5c7886cac89f"
+  },
+  {
+    "path": "src/modern_full_model/task16_wt_allocation.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "42d9f6d2888c88cfe2eb769b5df52a21e0abc618"
+  },
+  {
+    "path": "src/modern_full_model/task16_wt_diagnostics.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "2a0809ee89a0046695b410b475af1df28f318620"
+  },
+  {
+    "path": "src/modern_full_model/task17_fixed_wt.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "8d812ddee3b62fb827c4d6021b111ffda70d8957"
+  },
+  {
+    "path": "src/modern_full_model/task17_postfreeze.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "2437183adffbcfa050b35528c3d5e4fb758e9366"
+  },
+  {
+    "path": "src/modern_full_model/task18_fixed_wt.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "804fd084eb003bf20df651b302583179ec75b7c6"
+  },
+  {
+    "path": "src/modern_full_model/task18_postfreeze.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "8a65f91ffe68342fb83a8b177ec4ca089e42ae15"
+  },
+  {
+    "path": "src/modern_full_model/task19_pump_coupling.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "8822824579308a2b8501850e0b75d96cb4c79e5f"
+  },
+  {
+    "path": "src/modern_full_model/task19_reporting.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "66444ba5f949270ba80c2676731196bfd4b8e96d"
+  },
+  {
+    "path": "src/modern_full_model/task20_fixed_wt.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "ba32c45ac17c94b5366f4c77211765bc21a78543"
+  },
+  {
+    "path": "src/modern_full_model/task20_postfreeze.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "650f1d0d49496d8ff95cb0637705c60b1d85dddf"
+  },
+  {
+    "path": "src/modern_full_model/task30_nhe1_repair.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "2219945085de0bdd3a97daec8a098370fbda7a26"
+  },
+  {
+    "path": "src/modern_full_model/task31_nhe1_repair.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "5129f12bc8198c97aa22fa738f28b4c82ed0723a"
+  },
+  {
+    "path": "src/modern_full_model/task41_selected.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "a08333f2be066d493d617a7c31b4fdcbfd078c42"
+  },
+  {
+    "path": "src/modern_full_model/transporters.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "66738cf1963ee5bcb72cb0ebef809266df83d157"
+  },
+  {
+    "path": "src/modern_full_model/validation.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "62e88ea22fe132a4f656963fa48959f366fad79d"
+  },
+  {
+    "path": "src/modern_full_model/vbeta_diagnostic.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "ffe5c92e505cc5c9df316a4527911189e408157e"
+  },
+  {
+    "path": "src/modern_full_model/water.py",
+    "ref": "acd554eb430ae25968ef56e3a9acdd816ca4e688",
+    "blob_sha": "911d70765f9da1d1bdae5cedf7405b4fb7f2a3af"
+  },
+  {
+    "path": "analysis/43_parameter_provenance/FINAL_STATUS.md",
+    "ref": "547f113d9123ab1976774639a69483faf40cef34",
+    "blob_sha": "30f3364ef5a49e01ca88f3e1e7e69fddcf672907"
+  },
+  {
+    "path": "analysis/43_parameter_provenance/provenance_metadata.py",
+    "ref": "547f113d9123ab1976774639a69483faf40cef34",
+    "blob_sha": "45987b09ea6d7149f0415b9006c8ac9460e356fe"
+  },
+  {
+    "path": "analysis/43_parameter_provenance/report.tex",
+    "ref": "547f113d9123ab1976774639a69483faf40cef34",
+    "blob_sha": "23cfff1dcef912bc9408e594068491a270b292b1"
+  },
+  {
+    "path": "analysis/43_parameter_provenance/output/parameter_inventory.csv",
+    "ref": "547f113d9123ab1976774639a69483faf40cef34",
+    "blob_sha": "f5aa089b5c3febdb41ed21aee23316f80a37b12c"
+  },
+  {
+    "path": "analysis/44_full_system_mathematics/FINAL_STATUS.md",
+    "ref": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+    "blob_sha": "1a80ee3c1abb5081847869025586c8c67bfb0c67"
+  },
+  {
+    "path": "analysis/44_full_system_mathematics/core.py",
+    "ref": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+    "blob_sha": "aff211847c2ba58c746b783c40c26ce0bbff6aca"
+  },
+  {
+    "path": "analysis/44_full_system_mathematics/exact_results.tex",
+    "ref": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+    "blob_sha": "e1e6775f6b86fb9c86b6ce3a3e783a25bcaa8a42"
+  },
+  {
+    "path": "analysis/44_full_system_mathematics/equilibrium_results.tex",
+    "ref": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+    "blob_sha": "82bc2075fd24bedc53c9b2565e87d77b1fb64bd5"
+  },
+  {
+    "path": "analysis/44_full_system_mathematics/sensitivity_results.tex",
+    "ref": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+    "blob_sha": "a578fb55f6ce129e98361ce9bc7c7b78bb36f0fc"
+  },
+  {
+    "path": "analysis/44_full_system_mathematics/output/active_parameters.json",
+    "ref": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+    "blob_sha": "5dd8b98db949b2cbd39511a46a73e0d0136e6a0b"
+  },
+  {
+    "path": "analysis/44_full_system_mathematics/output/compensation_comparison.json",
+    "ref": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+    "blob_sha": "e2ad3642218c235d1f334b3091d5171e57070771"
+  },
+  {
+    "path": "analysis/44_full_system_mathematics/output/parameter_sensitivity.csv",
+    "ref": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+    "blob_sha": "b6fd45540af7eb60ce54d0cb0713f976cb9025a4"
+  }
+]

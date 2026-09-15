@@ -1,0 +1,17 @@
+{
+  "scope": "observation operators and statistical claims in final report and ten decisions",
+  "reviewer": "independent observation worker",
+  "result": "no material error found",
+  "checked": [
+    "common optical operator and window qualification",
+    "estimated SE versus SD and unknown covariance",
+    "no joint optimum claim",
+    "unavailable assays retained",
+    "conditional NHE and AE2 conclusions",
+    "no arbitrary equivalence bands"
+  ],
+  "not_independently_rechecked_by_this_reviewer": [
+    "new numerical trajectories",
+    "bath projection"
+  ]
+}

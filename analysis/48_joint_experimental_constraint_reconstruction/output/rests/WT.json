@@ -1,0 +1,142 @@
+{
+  "bath_projection": {
+    "TIC_mM": 26.284441219363032,
+    "carbonate_titrant_accounting_mEq_L": 0.06315764851580496,
+    "charge_checks": {
+      "bath_charge_mM": 0.0,
+      "cell_charge_fmol": 0.0,
+      "lumen_charge_fmol": 7.105427357601002e-16
+    },
+    "divalent_charge_mEq_L": 4.0,
+    "qualification": "effective positive B+ reservoir; unreported HEPES/titrant chemistry omitted",
+    "spectator_osmoles_mM": 17.0,
+    "total_spectator_charge_mEq_L": 4.063157648515805,
+    "tracked_ions_mM": {
+      "Cl": 128.3,
+      "HCO3": 25.0,
+      "K": 4.3,
+      "Na": 145.0
+    }
+  },
+  "cache_key": "76e55724ae44c9ff840b21134637478c552cc80b57ba94e0d92c283fb1670078",
+  "charge_residuals_fmol": {
+    "cell": 0.0,
+    "lumen": 0.0
+  },
+  "core_eigenvalues_per_s": [
+    [
+      -17.962912019130503,
+      0.0
+    ],
+    [
+      -10.321166565300107,
+      0.0
+    ],
+    [
+      -0.19999999941339114,
+      0.0
+    ],
+    [
+      -0.1063431999960753,
+      0.0
+    ],
+    [
+      -0.00347744266344424,
+      0.0
+    ],
+    [
+      -0.0047438651607112445,
+      0.0
+    ],
+    [
+      -0.050062525513405016,
+      0.0
+    ],
+    [
+      -0.033624575477067785,
+      0.0
+    ],
+    [
+      -0.03611297833444209,
+      0.0
+    ],
+    [
+      -0.03816969314496228,
+      0.0
+    ]
+  ],
+  "full_rhs": [
+    5.248579348915428e-13,
+    2.9784508193131387e-13,
+    6.152300890960305e-13,
+    3.24424731870665e-13,
+    2.0771231956651093e-13,
+    2.8404268954257406e-12,
+    -1.2870260412967127e-13,
+    2.7873536811995336e-14,
+    -2.1452284393319587e-13,
+    -2.648792643555886e-13,
+    1.1356800916351162e-13,
+    -4.1780359553988955e-13,
+    0.0
+  ],
+  "genotype": "WT",
+  "locally_stable": true,
+  "nfev": 26,
+  "observables": {
+    "ae2_fmol_s": -0.0020760874273370302,
+    "ae4_fmol_s": 0.005549800351254686,
+    "cl_i_mM": 57.85495030913425,
+    "dcl_dt_mM_s": -1.2997420119956894e-10,
+    "hco3_l_mM": 4.4902365812252105,
+    "k_i_mM": 122.85284792705396,
+    "max_charge_fmol": 0.0,
+    "max_current_residual_A": 1.2924697071141057e-26,
+    "na_i_mM": 11.952206317073285,
+    "nbc_fmol_s": 0.0,
+    "nhe_fmol_s": 0.009023513275380054,
+    "nkcc_cycle_fmol_s": 0.1298776641370829,
+    "ph_i": 6.883124544391061,
+    "q_pL_s": 0.0009825176639125493,
+    "time_s": 0.0,
+    "volume_pL": 1.259615564408113
+  },
+  "positive_core": true,
+  "regulatory_eigenvalue_per_s": -0.03333333333333333,
+  "scaled_rhs_max": 3.9644170173074645e-09,
+  "scaling": "1000 s times RHS divided by seed amount or volume",
+  "seed_status": "saved WT state is numerical seed only",
+  "shared_parameter_hash": "d3e9b1ad8aaf165dcfccb7b1d2032352ebf53c40a3e9ec4131ae70ee9b79e781",
+  "solver_message": "The solution converged.",
+  "solver_success": true,
+  "state": [
+    15.055185106002481,
+    154.74735938078015,
+    72.87499588744348,
+    6.836686123489921,
+    18.865786393394316,
+    1.259615564408113,
+    14.216378018882194,
+    2.5915944350789935,
+    16.33651274594835,
+    0.5446105834960513,
+    0.4714597080128371,
+    0.10491258831956275,
+    0.0
+  ],
+  "state_names": [
+    "na_i_fmol",
+    "k_i_fmol",
+    "cl_i_fmol",
+    "tic_i_fmol",
+    "alk_i_fmol",
+    "volume_i_pL",
+    "na_l_fmol",
+    "k_l_fmol",
+    "cl_l_fmol",
+    "tic_l_fmol",
+    "alk_l_fmol",
+    "volume_l_pL",
+    "ae4_effective_activation_fraction"
+  ]
+}
