@@ -1,0 +1,23 @@
+{
+  "base_main": "c4d4f207f702d8eee09ab94d2d90ae90552dd641",
+  "status": "FIRST_NUMERICAL_CHECKPOINT_NOT_FINAL_REPORT",
+  "model_source_changed": false,
+  "frozen_outputs_changed": false,
+  "C0_mM": 145.0,
+  "cell_volume_scale_pL": 1.4533343925874602,
+  "lumen_volume_scale_pL": 0.10538840735368742,
+  "initial_stimulated_nkcc_cycle_scale_fmol_s": 0.2246180790956952,
+  "time_scale_s": 938.1857763791215,
+  "independent_dynamic_coordinates": 11,
+  "algebraic_elimination": "Only redundant charge coordinates; full carbon, alkalinity, volume and lumen retained.",
+  "WT_equilibrium_pH": 7.0503862758502045,
+  "WT_slowest_local_decay_s": 345.81857187521103,
+  "null_slowest_local_decay_s": 459.91603120958723,
+  "WT_local_chloride_compensation_gain": 0.929010742737828,
+  "WT_secretion_expression_elasticity": 0.0008113706538803141,
+  "target_lower_cumulative_deficit": 0.303,
+  "first_numerical_rho_crossing": 0.8950726881779194,
+  "crossing_scope": "600 s adaptive integrated outflow in the fixed Task 41 family; not a proven global lower bound.",
+  "important_correction": "The model already contains slow modes; a missing slow regulatory state is not established.",
+  "initial_root_attempts": "22 equilibria obtained; four large continuation steps left the valid numerical domain. Those failed attempts are retained and will be retried from documented nearby C0 seeds, not reinterpreted as nonexistence."
+}
