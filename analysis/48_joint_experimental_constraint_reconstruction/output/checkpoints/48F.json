@@ -1,0 +1,394 @@
+{
+  "milestone": "48F",
+  "parent_sha": "7d4185937e29977fe20eeb01ac9e52f3b3bbad8b",
+  "scientific_start_sha": "5c945c4a7857657b5f7c76d5bf9e3d3abc7d5721",
+  "output_commit": "commit containing this receipt; git log -1 -- this path",
+  "produced_files": [
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/BASELINE_RESIDUALS.md",
+      "sha256": "fdd210858202c4b04cac088608ec36409ad7f305a680e9787a16063522f5b8c2"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/CHECKPOINT_INDEX.md",
+      "sha256": "843e5d6f415478998e8382e7efe7a73cdf73310198d123c431cde76650154c11"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/CODEX_PARALLEL_LAUNCH.txt",
+      "sha256": "46192c772c905e92aaa5939354c87e067fb2a693de5aaa5e318a03d8477a6073"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/CODEX_START_HERE.md",
+      "sha256": "0beccc8eb29019e8c368705f445310a0ffeddd3c389a4ae83aa4c86c456adb37"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/CORRECTION_GATE.md",
+      "sha256": "9b02506c8c65955a0da955ad46f5d5ad87a3c89f5220cce816854181ec2457c2"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/EXECUTABLE_LAYER.md",
+      "sha256": "1fa0cfd426eb148da95dde5dacfc2423b83218cd3e843807c7193702e1cc41f0"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/EXPERIMENTAL_CONSTRAINT_LEDGER.md",
+      "sha256": "5b1a9fb81c4345b80306b5e6204e5215cf203a0b053ce35f5bc8c1dd7258d735"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/FINAL_INFERENCE_STATUS.md",
+      "sha256": "9feeae37694f8ab65b999d999b94b402c1aef0745a1476b26c379857932ff616"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/FINAL_REPORT.md",
+      "sha256": "a97c9f21a74af64f976a6a37de2a77d5a4139bf63c32039ca4044a293e617755"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/JOINT_EXPERIMENTAL_CONSTRAINT_REPORT.md",
+      "sha256": "7e8b58bd942cc48c3b9942a402597ab7d26da03bdf1530ad26c4a52b89797e92"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/OBSERVATION_OPERATORS.md",
+      "sha256": "4116061173f5d5e3e8b2c5a7ea8009a48131e7e5a038b513c467cf8fee91926d"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/PARAMETER_ADMISSIBILITY.md",
+      "sha256": "76c20eb3dfb78b96f84d12b52d66aac6efb60e96daa9729f6a54afce126e8efd"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/PREDECLARED_EXECUTION.md",
+      "sha256": "93da11c8aeb25d898e0de69acb20a4849844180816b6072e44acb929ebb8ff55"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/PROTOCOL_MAP.md",
+      "sha256": "886537ff7c5d49254d7753074eead17906eef7c50e9efd8615b1796091e0bcd2"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/README.md",
+      "sha256": "3401d213082fb550515249a1c4cd9398b2a0a4fd3770b04af463f6ec9e046d2e"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/RECONSTRUCTION_DECISION.md",
+      "sha256": "86966ce14eda5580ddb0fcaf7b638491de4fee20ead15f1f998cd6480af753eb"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/STRUCTURAL_FEASIBILITY.md",
+      "sha256": "dca94b04669a93e4a8af1d39f521b793f1d726501558c140f044418a4061140b"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/constraints.json",
+      "sha256": "80c26cff86e88c45689c75051d35f61b059c64c33861affd8538849ce4a1b346"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/constraints_seed.json",
+      "sha256": "aa0c52f2b3dbf60c6cd9da087282d138c7aab995561fed29a21fe5b06bc2bc8b"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/input/43_FINAL_STATUS.md",
+      "sha256": "d15813202ad612f87f75317d6986f9ae7d1691c885352cdd4471b26c4b598c8a"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/input/43_parameter_inventory.json",
+      "sha256": "1e3d5763a171dfd64b95fbb72a8a35eae4bbd3fcd1a61939c2886808296d994b"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/input/44_FINAL_STATUS.md",
+      "sha256": "c5f37257883e085e8eaeafc0e3c896ab1c579a1bca7a1ac3d9a1a6801ebd9b7e"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/input/44_parameter_sensitivity.csv",
+      "sha256": "e72a4d01296a40be04a8067d058135343bca57c1764b7f048b1ce443516e1ba1"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/input/companion_sources.json",
+      "sha256": "f6319435df60716fb31e4184bed3493156132d51eccb00a7f2082afa49f9e8ff"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/baseline_checks.json",
+      "sha256": "10a28e9d5baa2ed71190a0506ab7a777b673fcfca0b580148bf1b2e1d10c53ea"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/baseline_residuals.csv",
+      "sha256": "0d6d9fe2cc39d5fcd5cc9aa55a53a97c21316e95bd84995a20f1038c250ea085"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/baseline_residuals.json",
+      "sha256": "f035426c7b2c507e7f8f3bb676231b63c92f4354a48586d739ba97f88d0a78fb"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/checkpoints/48A.json",
+      "sha256": "e691e7dd9a953e940b4b71974bcae03dd21cc0d9f822e3b285f97eb451f00a35"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/checkpoints/48B.json",
+      "sha256": "62d638f1c310d643373b92817ee486ff938f8a64c49622bc040414adb4d84b44"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/checkpoints/48C.json",
+      "sha256": "10507f3f109e3752327d964621969a39c2aae02b6f41712c8983b60386463534"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/checkpoints/48D.json",
+      "sha256": "e46d446f4ac42e1a9d641996aa94fe501d4b6f7975b102c60b12b258d25de7fa"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/checkpoints/48E.json",
+      "sha256": "4f9fb1c5d531eb4112b8147d3164ee0206034d0f0746704a2fd733265acdd2e9"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/checkpoints/SETUP_parallel_agent_protocol.json",
+      "sha256": "b9e1d81f6a488ddfbf6de6196103cbdf07c40bc04328f635e1f804caa207bfb4"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/correction_decision.json",
+      "sha256": "b26933269fba3578d6a5312af6d7542be6335f0ecf2ca566ff76c0e81feead9d"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/executed_source_hashes.json",
+      "sha256": "025646234613fb3b3ec8505886013cec199eb582b74273f39e2d8c03df0c0788"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/final_report_review.json",
+      "sha256": "73856d8fa013431a0ed5c173e6deeca18319904c6c03f2a8c612ef6ab561aba5"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/final_residuals.csv",
+      "sha256": "0d6d9fe2cc39d5fcd5cc9aa55a53a97c21316e95bd84995a20f1038c250ea085"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/final_residuals.json",
+      "sha256": "f035426c7b2c507e7f8f3bb676231b63c92f4354a48586d739ba97f88d0a78fb"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/identifiability.json",
+      "sha256": "48d80bebdc056a273c1ad135feb4ea799a1106b13bc9939d4a079fcc16a461d9"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/independent_rest_review.json",
+      "sha256": "d34db5d3737e0e79d1f6f11cbe9c08ed84467b26201ea7ea58be9e0fabda0069"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/latest_checks.json",
+      "sha256": "c07212428fd9224574fde174cfce05a5134b5aba543c953d8d4c24d9206d5dbd"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/parameter_vector.json",
+      "sha256": "678cec57bcdd383813a09afc31b9775f51826db49a0666eb2f02c1b214ac0720"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_coverage.json",
+      "sha256": "867d857f5d2cd51f952e14bea1e29a125b5df446667f82c78596d9d3d8b5e4e5"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE2_KO__CCH_IPR.csv",
+      "sha256": "79eb6db1eb10e98274aa4c6ae088b5cb106d16ba5ba4c4b539fe19c3ef065efb"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE2_KO__CCH_IPR.json",
+      "sha256": "afe6df45634cf2997d9fcf1d6a46ff4f0ccc49ed019b56a85407a807124a6a30"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE2_KO__CCH_ONLY.csv",
+      "sha256": "4921ca767e614c8f3dd984d73a2dfc01a0826d5235936dd17d8eb5ab4ed06446"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE2_KO__CCH_ONLY.json",
+      "sha256": "80a90beab92b0720b3bb76354e4ce1de2ed8aebb8c537020cff6b058eabe3e88"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE2_KO__IPR_ONLY.csv",
+      "sha256": "95b86cd116a910facd999f4e9c05108086139367877ecf83bbf148ea127a239a"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE2_KO__IPR_ONLY.json",
+      "sha256": "0e45553cce8c98b04086366fd87365380d8c0caf9a78e63de138fe4d92cf4997"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE2_KO__NHE_EIPA.csv",
+      "sha256": "804f597f7a02f428bd8065aa8804d5710db2e1eb953330c66e9685a206b18eeb"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE2_KO__NHE_EIPA.json",
+      "sha256": "c59d7b5ac482d6fae8f476a20f13b09d8b88b5acdad7ac9329d3bc6c1aa946bf"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE4_KO__CCH_IPR.csv",
+      "sha256": "7d5a3c63fc53e470e6be0357230495f3437613da08aaa743b4e061138dbbb963"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE4_KO__CCH_IPR.json",
+      "sha256": "e3b9a50566b0166295c5023f96d0e66cf324670cbb4518f94486860d5c5e62b9"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE4_KO__CCH_ONLY.csv",
+      "sha256": "157afac917f4f6a74970dbaccdde2a621acd66b9d1a186263e40d361f82da5fe"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE4_KO__CCH_ONLY.json",
+      "sha256": "afbb0778aaa481947706c4ac964080390ff8d01d40957e3a9f57a11e7c252002"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE4_KO__IPR_ONLY.csv",
+      "sha256": "7c714f152776919f0382fb01efb11b05985ae8e1bebf7126f706ae09fbea7bd1"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE4_KO__IPR_ONLY.json",
+      "sha256": "575be832fa9b3beac24ac489b72e5b2188fbf1c1f6bb57ebfc2777936b00e473"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE4_KO__NHE_EIPA.csv",
+      "sha256": "18615a8039156b5167a067d1178c0bbb32afc9d02af5f3bcb9c842ab03377d44"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE4_KO__NHE_EIPA.json",
+      "sha256": "d40ec6eae46bcf7b23be547c7d70203652846d4faa5f63c73493a57bb67ec19c"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/WT__CCH_IPR.csv",
+      "sha256": "7cbbe0dc490fb66de911a505d9e4f9f56e74bc59c43d2008d2e07516047c769e"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/WT__CCH_IPR.json",
+      "sha256": "713db23d3be81ba4ae6156bb36b9984e1ae239b214a293384e92c6d1103457e1"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/WT__CCH_ONLY.csv",
+      "sha256": "9d0dc2ab92f567f3d77c379ae093e1cf9904f0012098b3a1500386eb4098203e"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/WT__CCH_ONLY.json",
+      "sha256": "0205b0b543fc0aa43ed726e7b2984daeff5fe4d69955c99b6248b8e540987209"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/WT__IPR_ONLY.csv",
+      "sha256": "52491822da2b6ef08987d19ded2ad326faba99cb839fedaf9f37a6e7b8155ffa"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/WT__IPR_ONLY.json",
+      "sha256": "d9f51a97bc75957dd4d0c5db689e95f69027e1644b8924bb56d7cd70f40280c9"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/WT__NHE_EIPA.csv",
+      "sha256": "ac0c677c040dcfcb4fe29c56dfd67a6333463aa14d59a10c5bff4dc75ca6346c"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/WT__NHE_EIPA.json",
+      "sha256": "8a1245421e6067e69def4e58cabea51c0c0076060cc77c76dfffbc056c4c803f"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_tests.json",
+      "sha256": "50a3faf29cfe6a086da66bf001899b0b24bdf1aa9f2b2a43ff1e24fe31b3db77"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/publication_verification.json",
+      "sha256": "91f40808fb5e1d297bea88f41b69ceb07060c71008672e775263ce8f04bcef5a"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/qualitative_checks.json",
+      "sha256": "16b9f08af13134bd4e1e141c5bb5c194d11dc4b43ff1447292d6f77e593dcfae"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/rests/AE2_KO.json",
+      "sha256": "1bf2115b9a97d8d9f4e015ebc3d20704481ad3fb8347c1dd7c23eead374aa215"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/rests/AE4_KO.json",
+      "sha256": "b5c9cd1b6a6c76faf9ea8fa66624f42791e8e39dedd428cbb6a3125111ac920a"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/rests/WT.json",
+      "sha256": "b9c260b176bd75a1359bec0162bc65c17d3d7774de4dd07d32ef9ec33f5ad6ad"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/secondary_validation.json",
+      "sha256": "b42b3d96b0cc2e4717918d8f2067a8f91c3aee768960b66e753ccbcdcae92ebf"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/output/structural_contrast.json",
+      "sha256": "9a13e1d40fc29cac7939d87fcb7b3b37a784d046d5fa6b70a9e19ae7421eacdf"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/parameter_admissibility.json",
+      "sha256": "57891db6e540ce42c4d08a0fc3ed62a95d2cf014678513d33d5bf07b4dd47696"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/protocol_inventory.json",
+      "sha256": "6072db04f795e21ea2bfb671a0cbffd1d58f8fa794c6b9d55d28ac64ac201dea"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/protocol_layer.py",
+      "sha256": "41b9ddc16e75a03bba2137542e036cd5aafd1e41268f2f9daed1cca9ec9217e9"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/run_baseline.py",
+      "sha256": "303d761711173168c9d586d2b794634b8688b1221f984137bdf2c656a0c3901f"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/summarise_baseline.py",
+      "sha256": "947e287d6f7dc3e942b187d2d8dca338df693b7eccb7511bbc3e7f5ea7250f51"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/test_protocol_layer.py",
+      "sha256": "82388a1a717f29b01062cb1e81f439c0768039608970c3c02b356649fa7995fd"
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/verify_publication.py",
+      "sha256": "2a43128d9982bc26e5af1f4af633ac2171382d0e7bac48f94b0c44db574a030d"
+    }
+  ],
+  "tests": {
+    "milestone": "48F",
+    "verification_passed": true,
+    "preserved_original_files": 1934,
+    "unchanged_executed_source_files": 72,
+    "protocol_regression_tests_passed": 9,
+    "independent_rest_review": "pass",
+    "independent_observation_report_review": "pass",
+    "scientific_work": {
+      "rest_solves": 3,
+      "trajectories": 12,
+      "parameter_optimisations": 0,
+      "new_mechanisms": 0
+    },
+    "result": "authorised negative stopping condition",
+    "full_joint_optimum_obtained": false,
+    "no_new_science_since_48C": true,
+    "stop_after_task48": true
+  },
+  "key_result": "Article facing negative decision published; all prior science preserved; stop Task 48",
+  "prior_remote_verifications": [
+    {
+      "milestone": "48A",
+      "sha": "d0a6eee026d9cf39ab7b774d8f5149908850774f",
+      "parent_sha": "5c945c4a7857657b5f7c76d5bf9e3d3abc7d5721",
+      "verified_utc": "2026-09-15T23:12:46.185720+00:00",
+      "verification": "GitHub ref read plus git fetch; same local and remote tree"
+    },
+    {
+      "milestone": "48B",
+      "sha": "8ee7c3662bb07707850006b4142185cede3fdb82",
+      "parent_sha": "d0a6eee026d9cf39ab7b774d8f5149908850774f",
+      "verified_utc": "2026-09-15T23:18:52.557734+00:00",
+      "verification": "GitHub ref read and git fetch; local index equals remote tree"
+    },
+    {
+      "milestone": "48C",
+      "sha": "d603bd535bd0924c118a3a74040aa833e48ec117",
+      "parent_sha": "8ee7c3662bb07707850006b4142185cede3fdb82",
+      "verified_utc": "2026-09-15T23:26:22.554639+00:00",
+      "verification": "GitHub ref read and git fetch; local index equals remote tree"
+    },
+    {
+      "milestone": "48D",
+      "sha": "93bd81376b20148b4ef193f0cec92e8325a81fb4",
+      "parent_sha": "d603bd535bd0924c118a3a74040aa833e48ec117",
+      "verified_utc": "2026-09-15T23:27:42.505682+00:00",
+      "verification": "GitHub ref read and git fetch; local index equals remote tree"
+    },
+    {
+      "milestone": "48E",
+      "sha": "7d4185937e29977fe20eeb01ac9e52f3b3bbad8b",
+      "parent_sha": "93bd81376b20148b4ef193f0cec92e8325a81fb4",
+      "verified_utc": "2026-09-15T23:28:40.699856+00:00",
+      "verification": "GitHub ref read and git fetch; local index equals remote tree"
+    }
+  ],
+  "utc": "2026-09-15T23:33:31.818413+00:00"
+}
