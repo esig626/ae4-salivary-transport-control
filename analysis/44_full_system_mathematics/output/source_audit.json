@@ -1,0 +1,763 @@
+{
+  "base_main": "c4d4f207f702d8eee09ab94d2d90ae90552dd641",
+  "files": [
+    {
+      "actual_blob": "309ba4f390afacfc7450a71520c8ef63d5a0aa45",
+      "matches_task40": false,
+      "path": "AGENTS.md"
+    },
+    {
+      "actual_blob": "e38ed1a821fa647ea07d6db92d29d011f9c3dabc",
+      "matches_task40": true,
+      "path": "analysis/30_nhe1_model_repair/final_answer.md"
+    },
+    {
+      "actual_blob": "1f0f585b58023be9262140eea1f992d1c5c9ff7e",
+      "matches_task40": true,
+      "path": "analysis/30_nhe1_model_repair/focused_test.log"
+    },
+    {
+      "actual_blob": "dbadb8eccf74d83b576887d37f7a19b203d375e4",
+      "matches_task40": true,
+      "path": "analysis/30_nhe1_model_repair/nhe1_law_comparison.md"
+    },
+    {
+      "actual_blob": "fdce7acc6c273f35be054648e5df95e21a4c5f70",
+      "matches_task40": true,
+      "path": "analysis/31_nhe1_mechanistic_repair/continuation_test.log"
+    },
+    {
+      "actual_blob": "a80628e18a1b1e3c81b4df885270ae8ddcd85842",
+      "matches_task40": true,
+      "path": "analysis/31_nhe1_mechanistic_repair/final_answer.md"
+    },
+    {
+      "actual_blob": "7061823be1706d7b5fbeee251f71cdcff8a6c7c7",
+      "matches_task40": true,
+      "path": "analysis/31_nhe1_mechanistic_repair/focused_test.log"
+    },
+    {
+      "actual_blob": "ec27f3ee861e5e491c7b162f94cc851a9692640d",
+      "matches_task40": true,
+      "path": "analysis/31_nhe1_mechanistic_repair/nhe1_source_and_equations.md"
+    },
+    {
+      "actual_blob": "ba476c26d429d9d7d185e07f2424bac8acf2152c",
+      "matches_task40": true,
+      "path": "analysis/31_nhe1_mechanistic_repair/numerical_execution.log"
+    },
+    {
+      "actual_blob": "ea88c5a50c8d6c96f96eee4a9f976edfaa97e4b8",
+      "matches_task40": true,
+      "path": "analysis/31_nhe1_mechanistic_repair/source_reconstruction_test.log"
+    },
+    {
+      "actual_blob": "9190a52b837cc4c281a7be43253c29392b638c6d",
+      "matches_task40": true,
+      "path": "analysis/36_minimal_nahco3_alkalinity/design.md"
+    },
+    {
+      "actual_blob": "23b15f1e2f32ad856c80ef117f219e1d3f068e10",
+      "matches_task40": true,
+      "path": "analysis/36_minimal_nahco3_alkalinity/manual_verification.md"
+    },
+    {
+      "actual_blob": "83008ea8512571d002d67c636127ed1b4d6ed0a5",
+      "matches_task40": true,
+      "path": "analysis/37_wt_nbc_validation/final_answer.md"
+    },
+    {
+      "actual_blob": "53597a7fb658a046c09dc5b065659e14e06a7c1f",
+      "matches_task40": true,
+      "path": "analysis/37_wt_nbc_validation/focused_test.log"
+    },
+    {
+      "actual_blob": "2207580083a242411657903c6d87bb8b71a82f8c",
+      "matches_task40": true,
+      "path": "analysis/37_wt_nbc_validation/numerical_execution.log"
+    },
+    {
+      "actual_blob": "a04ede9bf5679601ede3ce20807935528dbc288e",
+      "matches_task40": true,
+      "path": "analysis/37_wt_nbc_validation/run_focused_tests.py"
+    },
+    {
+      "actual_blob": "be7d245cc1a2e8c3a122cb03c51beec4f85193bb",
+      "matches_task40": true,
+      "path": "analysis/37_wt_nbc_validation/run_phase_a.py"
+    },
+    {
+      "actual_blob": "3d69c029f1d1ae53bcbc9d3c26b9c41bf1d4f9a3",
+      "matches_task40": true,
+      "path": "analysis/37_wt_nbc_validation/run_wt.py"
+    },
+    {
+      "actual_blob": "20d8d2fc8bbbc82284fda352bbe3dd3d0a853bb2",
+      "matches_task40": true,
+      "path": "analysis/37_wt_nbc_validation/validation_common.py"
+    },
+    {
+      "actual_blob": "f229626baba13c0241a15921b31548ce0910482a",
+      "matches_task40": true,
+      "path": "analysis/38_ae4_perturbation_validation/ae4_5pct_execution.log"
+    },
+    {
+      "actual_blob": "bd22b7aeb64734d7b58b934161f6c7bb3a3e046d",
+      "matches_task40": true,
+      "path": "analysis/38_ae4_perturbation_validation/ae4_null_execution.log"
+    },
+    {
+      "actual_blob": "d3e497bb90011bc9f7d37e740f9ae3f74049ae61",
+      "matches_task40": true,
+      "path": "analysis/38_ae4_perturbation_validation/final_answer.md"
+    },
+    {
+      "actual_blob": "89890b29d2ae5139ac70c605826ee4b6a1d32cad",
+      "matches_task40": true,
+      "path": "analysis/38_ae4_perturbation_validation/run_perturbation.py"
+    },
+    {
+      "actual_blob": "2a548bf390a0eb24efd742389db16c7cd59192a3",
+      "matches_task40": true,
+      "path": "analysis/38_ae4_perturbation_validation/summarize_results.py"
+    },
+    {
+      "actual_blob": "ac1078dfc3415ffffefceb1071aebd915bbb093a",
+      "matches_task40": true,
+      "path": "analysis/39_palk_nkcc1_full_validation/ae4_5pct_execution.log"
+    },
+    {
+      "actual_blob": "f75ea39824ad28e447c8396d069f0b61a6296c92",
+      "matches_task40": true,
+      "path": "analysis/39_palk_nkcc1_full_validation/ae4_null_execution.log"
+    },
+    {
+      "actual_blob": "4aeb6498a446650ef2d007d62afa7bb58597ac6e",
+      "matches_task40": true,
+      "path": "analysis/39_palk_nkcc1_full_validation/final_answer.md"
+    },
+    {
+      "actual_blob": "372afcae5dc5452765263532dda615b56d8fe014",
+      "matches_task40": true,
+      "path": "analysis/39_palk_nkcc1_full_validation/focused_test.log"
+    },
+    {
+      "actual_blob": "c9310897c679908518533f283de641ea25a47d29",
+      "matches_task40": true,
+      "path": "analysis/39_palk_nkcc1_full_validation/initial_test_assertion.log"
+    },
+    {
+      "actual_blob": "e4764fefea4a956e7a696c26e0317a5302dde87d",
+      "matches_task40": true,
+      "path": "analysis/39_palk_nkcc1_full_validation/run_case.py"
+    },
+    {
+      "actual_blob": "80b29b7170ef0e4d0a13be82cf8159b526b5f479",
+      "matches_task40": true,
+      "path": "analysis/39_palk_nkcc1_full_validation/run_preflight.py"
+    },
+    {
+      "actual_blob": "f5672236aea99cc1abacbfad9ad3a47efe9ab1f1",
+      "matches_task40": true,
+      "path": "analysis/39_palk_nkcc1_full_validation/source_contract.md"
+    },
+    {
+      "actual_blob": "d72e8f12ae2123277aa73a0de82adcb1c47f3bc0",
+      "matches_task40": true,
+      "path": "analysis/39_palk_nkcc1_full_validation/source_equation_verification.md"
+    },
+    {
+      "actual_blob": "73693e45bd1b59eacc6c56e67b526b7a4289ea47",
+      "matches_task40": true,
+      "path": "analysis/39_palk_nkcc1_full_validation/summarize_results.py"
+    },
+    {
+      "actual_blob": "f74d13e12038478dffe001869b232967d19fcfdc",
+      "matches_task40": true,
+      "path": "analysis/39_palk_nkcc1_full_validation/validation_common.py"
+    },
+    {
+      "actual_blob": "fde3c678f6b1a4a4415e7faae8be2756faea3938",
+      "matches_task40": true,
+      "path": "analysis/39_palk_nkcc1_full_validation/wt_execution.log"
+    },
+    {
+      "actual_blob": "107dead11e6a0884cfff2f6060f065a934106246",
+      "matches_task40": true,
+      "path": "analysis/40_ae4_equal_cation_routing/source_contract.md"
+    },
+    {
+      "actual_blob": "a036aa8799cca29b2d51e7b65e4f313ecd8676b5",
+      "matches_task40": true,
+      "path": "prompts/28_transport_relationship_repair.md"
+    },
+    {
+      "actual_blob": "f50049ec07b507164c04f95b3a0dd1618f47ba5e",
+      "matches_task40": true,
+      "path": "prompts/29_exact_null_feasibility_audit.md"
+    },
+    {
+      "actual_blob": "8381eacbbcc991e1b832dff454219776ce4760ca",
+      "matches_task40": true,
+      "path": "prompts/30_nhe1_model_repair.md"
+    },
+    {
+      "actual_blob": "267b6a5a99523efa0dfe312f972dd810c1996e18",
+      "matches_task40": true,
+      "path": "prompts/31_nhe1_mechanistic_repair.md"
+    },
+    {
+      "actual_blob": "6af1429f1bc68920829f40ee4c47ab83dbf62832",
+      "matches_task40": true,
+      "path": "prompts/37_wt_nbc_validation.md"
+    },
+    {
+      "actual_blob": "e5df2f3fba5c899052a6d4c14ffd0f1c2c4fbf54",
+      "matches_task40": true,
+      "path": "prompts/38_ae4_perturbation_validation.md"
+    },
+    {
+      "actual_blob": "8311478c2b180b5e8eb5e560b4ed2c9394bb9950",
+      "matches_task40": true,
+      "path": "prompts/39_palk_nkcc1_full_validation.md"
+    },
+    {
+      "actual_blob": "e570aed1d18d7e10f188a14e82e5d685fa1caa85",
+      "matches_task40": true,
+      "path": "prompts/40_ae4_equal_cation_routing.md"
+    },
+    {
+      "actual_blob": "b704dd050d20436f8455ad0c7a4df580c80d8da0",
+      "matches_task40": true,
+      "path": "reference/2018_model_concordance.md"
+    },
+    {
+      "actual_blob": "b1d469b59853e1302ed74ab48ba0f4eb9d602018",
+      "matches_task40": true,
+      "path": "reference/R09_wt_rest.json"
+    },
+    {
+      "actual_blob": "cc323374c4e3e76f5b9293f8535fee179e6b803e",
+      "matches_task40": true,
+      "path": "reference/R10_wt_rest.json"
+    },
+    {
+      "actual_blob": "47fe22869fa74be28b923aabb119269cf2887810",
+      "matches_task40": true,
+      "path": "reference/import_manifest.json"
+    },
+    {
+      "actual_blob": "8198b25c48e83d197d72a888121da731a9133b29",
+      "matches_task40": true,
+      "path": "reference/native_wt_contract.json"
+    },
+    {
+      "actual_blob": "9c29f4157c53c714747b9e8ccc60dd6caacaf7a9",
+      "matches_task40": true,
+      "path": "reference/routed_rest_reference.csv"
+    },
+    {
+      "actual_blob": "5e65527944347afe4b36db640822f56e70c41246",
+      "matches_task40": true,
+      "path": "reference/routing_numerical_contract.json"
+    },
+    {
+      "actual_blob": "feaca09993cfe0e67e41548f94f2829da60faef4",
+      "matches_task40": true,
+      "path": "reference/sources.md"
+    },
+    {
+      "actual_blob": "5f8afa9e3787c55dd33dde91497aebbbf6465906",
+      "matches_task40": true,
+      "path": "reference/task28_partial_handoff.md"
+    },
+    {
+      "actual_blob": "bf319d1e369c45c537cf5425c236f7ab4e4eab65",
+      "matches_task40": true,
+      "path": "reference/task29_final_answer.md"
+    },
+    {
+      "actual_blob": "06823ec63d618fff853f2281c92e181275c04fb3",
+      "matches_task40": true,
+      "path": "reference/task30_handoff.md"
+    },
+    {
+      "actual_blob": "471f776f67541bcaadd042782a1c0a438d0009f3",
+      "matches_task40": true,
+      "path": "requirements.txt"
+    },
+    {
+      "actual_blob": "96d8e25a1d68d1213943d3e741ef753d6687482a",
+      "matches_task40": true,
+      "path": "results/30_nhe1_model_repair/budget.json"
+    },
+    {
+      "actual_blob": "a0c8c3c8db65752e56a7d30fa6297ab07a7e8390",
+      "matches_task40": true,
+      "path": "results/30_nhe1_model_repair/contract.json"
+    },
+    {
+      "actual_blob": "8741934204b2222caf8f98975b3432349daf5ffd",
+      "matches_task40": true,
+      "path": "results/30_nhe1_model_repair/flux_ledger.csv"
+    },
+    {
+      "actual_blob": "b6377d1c98f6fb0d7e171a412afa3b3ffee87ff3",
+      "matches_task40": true,
+      "path": "results/30_nhe1_model_repair/incomplete_case.json"
+    },
+    {
+      "actual_blob": "e7fb4e38845ce89b84fdd5e1adacd3aa1da3e587",
+      "matches_task40": true,
+      "path": "results/30_nhe1_model_repair/resting_attempts/R09_wt_g_evaluation_1.json"
+    },
+    {
+      "actual_blob": "37d089cfd3384531fb796588a790907d2450e6a9",
+      "matches_task40": true,
+      "path": "results/30_nhe1_model_repair/resting_attempts/R09_wt_g_evaluation_2.json"
+    },
+    {
+      "actual_blob": "e3251428a417f5dd36b1cfe935df7c177b1378f7",
+      "matches_task40": true,
+      "path": "results/30_nhe1_model_repair/resting_attempts/R09_wt_g_evaluation_3.json"
+    },
+    {
+      "actual_blob": "8069ae33f12007b10c7ffebeb8a2e321f2686229",
+      "matches_task40": true,
+      "path": "results/30_nhe1_model_repair/resting_states.csv"
+    },
+    {
+      "actual_blob": "31dbbb98f57f5bf8140af09177c77511b259469a",
+      "matches_task40": true,
+      "path": "results/30_nhe1_model_repair/verification.json"
+    },
+    {
+      "actual_blob": "5c1b95c343b8aba9a71ab14cdf6337cbda55af88",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/budget.json"
+    },
+    {
+      "actual_blob": "d499be26024ad55ed1bcbe60744dc6db6ccd29a6",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/calibration.json"
+    },
+    {
+      "actual_blob": "e30f17822bf563f1103c526c7c9159b610f64687",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/contract.json"
+    },
+    {
+      "actual_blob": "560b985c04dc4e56863def712d8bc113f9a0cb28",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/density_freeze.json"
+    },
+    {
+      "actual_blob": "c13d3d034645b6279ae694e8f469cebb049e6943",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/execution_summary.json"
+    },
+    {
+      "actual_blob": "8cdf7bd90acf44695d2756fcd2adcc8a6ebb88e6",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/flux_ledger.csv"
+    },
+    {
+      "actual_blob": "d18d99fb02c6b30122100f51bd1d55e262706bef",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/nhe1_parameters.json"
+    },
+    {
+      "actual_blob": "db93804918512e3c4ad5c02ae1e15bf2682ab0ee",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/185f5cee3bcec7a023cf82e4092872114f2292732ad9c4bab68ecf4e062f76e3.json"
+    },
+    {
+      "actual_blob": "fb9e3c2dfd5f70ff90964cdc823da59945b1ceb5",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/4ac4b74f3b56397f6a169611dfed9c1660e2f64ca42cac3bcd37dec84331b111.json"
+    },
+    {
+      "actual_blob": "a04b6ecaa4c466d3fe2a18a944772f8f1debd8a3",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/5a70eeb7a6479f21828fca069de5f60a575edc9b8e18961e3c24ccef734b06ee.json"
+    },
+    {
+      "actual_blob": "6799f291bbb3622d9f6ed523615b79f268ab75e4",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/7c0aa512bbd240e267a04715fd96f8c48cb280101c2dbd0584c1a9e0e19eace7.json"
+    },
+    {
+      "actual_blob": "d9c70e6a8d15770dae266c7b7b9de5d275e8a58e",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/7eb1f1368bb53dd8469bd4b2d1ad764b8b61e908e879fa2ba52477b7cfb47e8b.json"
+    },
+    {
+      "actual_blob": "a2f01534684ead13ea2c90ebf908dc14dee5cabf",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/ac3184559ce5f6ed95640e0c3005c264c3b7c4616f274eb6fb52579398a6154f.json"
+    },
+    {
+      "actual_blob": "bfafda7b43f2add633da8b40c911795295d81494",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/cf6377e0e2165d91ae1bb2060fa77606ae2234e637b3e5804c59a78a16204080.json"
+    },
+    {
+      "actual_blob": "c9af9d212e83edd808fdb427e6ae92182c41a853",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/d961b83eaa5d274bd0443ac6d94495fa6bc4ac3e62b532630d6df5eac6870336.json"
+    },
+    {
+      "actual_blob": "54f1b4e5c033698df77280159eabf782ddd92bae",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/resting_states.csv"
+    },
+    {
+      "actual_blob": "bab19ba0c0fa0e698c16d7eb1a719bc90b5ee782",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/source_table_s1.json"
+    },
+    {
+      "actual_blob": "9743d60510af8ab79ae8b5bb304c3bb0de112cb2",
+      "matches_task40": true,
+      "path": "results/31_nhe1_mechanistic_repair/verification.json"
+    },
+    {
+      "actual_blob": "62e2254bd38a5b473c5f61c41efcdb25aeb700a5",
+      "matches_task40": true,
+      "path": "results/37_wt_nbc_validation/budget.json"
+    },
+    {
+      "actual_blob": "9da445533dfe62dbce264dbfb6b639a4e3ff162c",
+      "matches_task40": true,
+      "path": "results/37_wt_nbc_validation/rest_nesting.json"
+    },
+    {
+      "actual_blob": "14e5e35bbb61ce6a4e910eb9d2d8f42f5ee86ca7",
+      "matches_task40": true,
+      "path": "results/37_wt_nbc_validation/source_verification.json"
+    },
+    {
+      "actual_blob": "694a83315e3ff031b398ec07ed4925bcad0e9e68",
+      "matches_task40": true,
+      "path": "results/37_wt_nbc_validation/wt_chloride_partition.json"
+    },
+    {
+      "actual_blob": "c29cc28b87bb773456971fc29ebec1898a059d6f",
+      "matches_task40": true,
+      "path": "results/37_wt_nbc_validation/wt_integrated_fluxes.csv"
+    },
+    {
+      "actual_blob": "17780fcb8a6e7f3c8ecc07b3aa33ff2ed01f0a3a",
+      "matches_task40": true,
+      "path": "results/37_wt_nbc_validation/wt_timeseries.csv"
+    },
+    {
+      "actual_blob": "8e11ac9da0662acbcb04474f40a95711042ff9c9",
+      "matches_task40": true,
+      "path": "results/37_wt_nbc_validation/wt_verification.json"
+    },
+    {
+      "actual_blob": "5cf6f8df83d37dc4bcfe12599f7ac439e91b525d",
+      "matches_task40": true,
+      "path": "results/38_ae4_perturbation_validation/ae4_5pct_integrated_fluxes.csv"
+    },
+    {
+      "actual_blob": "0fbadef2f2e0e4ca27e676f0c8176a9bfc0f5470",
+      "matches_task40": true,
+      "path": "results/38_ae4_perturbation_validation/ae4_5pct_timeseries.csv"
+    },
+    {
+      "actual_blob": "16fa630675a4d0bbad4178629dbca6331e1f9738",
+      "matches_task40": true,
+      "path": "results/38_ae4_perturbation_validation/ae4_5pct_verification.json"
+    },
+    {
+      "actual_blob": "d9a5e1bee96e00c126cd8bbbdfe79d70289125fc",
+      "matches_task40": true,
+      "path": "results/38_ae4_perturbation_validation/ae4_null_integrated_fluxes.csv"
+    },
+    {
+      "actual_blob": "ad7dea00f7507b9dca5ea5d915b07f7845431d4d",
+      "matches_task40": true,
+      "path": "results/38_ae4_perturbation_validation/ae4_null_timeseries.csv"
+    },
+    {
+      "actual_blob": "abda61cddedf3693a9535e2affc68f2ee56e79ba",
+      "matches_task40": true,
+      "path": "results/38_ae4_perturbation_validation/ae4_null_verification.json"
+    },
+    {
+      "actual_blob": "2611ac1a1d99c16c30d3557623b61150325c7c2c",
+      "matches_task40": true,
+      "path": "results/38_ae4_perturbation_validation/budget.json"
+    },
+    {
+      "actual_blob": "5b19020c7a04c4f49fd178e789ef854ba0c67272",
+      "matches_task40": true,
+      "path": "results/38_ae4_perturbation_validation/comparison_summary.json"
+    },
+    {
+      "actual_blob": "565b367c2ce272369e32034c1f8381b44d2162a8",
+      "matches_task40": true,
+      "path": "results/38_ae4_perturbation_validation/cumulative_secretion_comparison.csv"
+    },
+    {
+      "actual_blob": "a0d90798bf854a4705ef11c751056a1d4ac4eea0",
+      "matches_task40": true,
+      "path": "results/38_ae4_perturbation_validation/flow_comparison.csv"
+    },
+    {
+      "actual_blob": "e9929e246dc491dd71e911badfaf3b219e40e07b",
+      "matches_task40": true,
+      "path": "results/38_ae4_perturbation_validation/frozen_inputs.json"
+    },
+    {
+      "actual_blob": "371314904c8ee6647d78ac5f25e0e663b2894602",
+      "matches_task40": true,
+      "path": "results/38_ae4_perturbation_validation/integrated_flux_comparison.csv"
+    },
+    {
+      "actual_blob": "fa22629d9f340fd60af809b80cdc03f2465fe989",
+      "matches_task40": true,
+      "path": "results/38_ae4_perturbation_validation/intracellular_comparison.csv"
+    },
+    {
+      "actual_blob": "85b2d37dd712744474aa73f4ada413e7470eff4b",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/ae4_5pct_integrated_fluxes.csv"
+    },
+    {
+      "actual_blob": "23f01a391f0f0422014b37e106819931a881492e",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/ae4_5pct_timeseries.csv"
+    },
+    {
+      "actual_blob": "2e47e0f8a52508c96cd32413cffced744eb72882",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/ae4_5pct_verification.json"
+    },
+    {
+      "actual_blob": "2524e2fc1d0390c23d1979522c09805441111db8",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/ae4_null_integrated_fluxes.csv"
+    },
+    {
+      "actual_blob": "dd80db49a4a66219bff70787f942d2fada53d8a1",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/ae4_null_timeseries.csv"
+    },
+    {
+      "actual_blob": "94d7250ed545e12e6fd89d4fe9f49ce41a071462",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/ae4_null_verification.json"
+    },
+    {
+      "actual_blob": "80d3c510aed516e3910cbd509535cff16467a2be",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/alpha_eff_freeze.json"
+    },
+    {
+      "actual_blob": "cf803b477467ac30fcab9113e6936edcd20d866d",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/budget.json"
+    },
+    {
+      "actual_blob": "3e88ae2b7de30cd0ee137c99fdee4d5cfd3942f6",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/comparison_summary.json"
+    },
+    {
+      "actual_blob": "73867d1d7f9c00e5e9534a197cccfc568cc75985",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/flow_and_cumulative_comparison.csv"
+    },
+    {
+      "actual_blob": "c0a5df5e7278d8cbff753bee1e5c93211598a4d6",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/frozen_inputs.json"
+    },
+    {
+      "actual_blob": "7f8c6c2840493115a8728ec15df19d75f061477f",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/initial_test_assertion.json"
+    },
+    {
+      "actual_blob": "aa1b7050417e83b07cf0518a76b7c321292a49c5",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/integrated_flux_comparison.csv"
+    },
+    {
+      "actual_blob": "29f0e441359b873fc9fc59303a2d36bd97f61a64",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/intracellular_comparison.csv"
+    },
+    {
+      "actual_blob": "2b1f4751e1be560b7c10a3862fc92deaaefbbc56",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/nkcc1_compensation_comparison.csv"
+    },
+    {
+      "actual_blob": "295d8d123932fb6e1a0a03726ef9e48214d97e92",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/publication_audit.json"
+    },
+    {
+      "actual_blob": "26c3ed1b979619f0b9eed8240ae555a462519b82",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/rest_nesting.json"
+    },
+    {
+      "actual_blob": "b7900247f52271d8b6c749affcc08ae38345a1fc",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/source_verification.json"
+    },
+    {
+      "actual_blob": "690ff0463a04495c84e00971b1b0f0fc9e59c6a3",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/wt_integrated_fluxes.csv"
+    },
+    {
+      "actual_blob": "b24dbf3f221906ed0f61af60e316f025b4680642",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/wt_timeseries.csv"
+    },
+    {
+      "actual_blob": "ed5607095038328cb4640232f8ec06ae31297d73",
+      "matches_task40": true,
+      "path": "results/39_palk_nkcc1_full_validation/wt_verification.json"
+    },
+    {
+      "actual_blob": "6dded7fac89a2a7bef4a9377504cf55343fbe294",
+      "matches_task40": true,
+      "path": "scripts/check_phase28_inputs.py"
+    },
+    {
+      "actual_blob": "2d3f01f0c77959b43d3066098ea0ea8701a53eab",
+      "matches_task40": true,
+      "path": "scripts/run_task30_nhe1_repair.py"
+    },
+    {
+      "actual_blob": "3cef0cd91fa99d39745e9e7275e9a4499ea46a57",
+      "matches_task40": true,
+      "path": "src/modern_full_model/__init__.py"
+    },
+    {
+      "actual_blob": "669bd8554329ffcb5c9c70bce891415cda233fec",
+      "matches_task40": true,
+      "path": "src/modern_full_model/acid_base.py"
+    },
+    {
+      "actual_blob": "f7ceb851df9e0cb8f4d8a9cb1c540055aa342d54",
+      "matches_task40": true,
+      "path": "src/modern_full_model/ae4_routing_only.py"
+    },
+    {
+      "actual_blob": "e0fe3fdf2837d97ee8e235fe1a72dc9854c594b8",
+      "matches_task40": true,
+      "path": "src/modern_full_model/camp_pka.py"
+    },
+    {
+      "actual_blob": "5cc8250e8a27e395d657c9008720663877231956",
+      "matches_task40": true,
+      "path": "src/modern_full_model/membranes.py"
+    },
+    {
+      "actual_blob": "e49e0d9120d87dacaa37f58d5d0d08dd3f6384d9",
+      "matches_task40": true,
+      "path": "src/modern_full_model/model.py"
+    },
+    {
+      "actual_blob": "e43a097d109e450d6e7c2fd09f73cd62329fb008",
+      "matches_task40": true,
+      "path": "src/modern_full_model/nbc_minimal.py"
+    },
+    {
+      "actual_blob": "6090805662155915e894804e1a4dbf2acb594241",
+      "matches_task40": true,
+      "path": "src/modern_full_model/nhe1_cha2009.py"
+    },
+    {
+      "actual_blob": "2ece14c5ef2a72f292dbd1d1964fbc30c60782be",
+      "matches_task40": true,
+      "path": "src/modern_full_model/nkcc1_palk2010.py"
+    },
+    {
+      "actual_blob": "2483585e0452e8666b1ba77854c3d104cc0897b9",
+      "matches_task40": true,
+      "path": "src/modern_full_model/nkcc_stimulation.py"
+    },
+    {
+      "actual_blob": "7cf42ee2305985186595ee90c8be637c7f2ed5bf",
+      "matches_task40": true,
+      "path": "src/modern_full_model/parameters.py"
+    },
+    {
+      "actual_blob": "0a2d351830e1004bccd55c4ce609e640634eca03",
+      "matches_task40": true,
+      "path": "src/modern_full_model/states.py"
+    },
+    {
+      "actual_blob": "2219945085de0bdd3a97daec8a098370fbda7a26",
+      "matches_task40": true,
+      "path": "src/modern_full_model/task30_nhe1_repair.py"
+    },
+    {
+      "actual_blob": "5129f12bc8198c97aa22fa738f28b4c82ed0723a",
+      "matches_task40": true,
+      "path": "src/modern_full_model/task31_nhe1_repair.py"
+    },
+    {
+      "actual_blob": "66738cf1963ee5bcb72cb0ebef809266df83d157",
+      "matches_task40": true,
+      "path": "src/modern_full_model/transporters.py"
+    },
+    {
+      "actual_blob": "62e88ea22fe132a4f656963fa48959f366fad79d",
+      "matches_task40": true,
+      "path": "src/modern_full_model/validation.py"
+    },
+    {
+      "actual_blob": "911d70765f9da1d1bdae5cedf7405b4fb7f2a3af",
+      "matches_task40": true,
+      "path": "src/modern_full_model/water.py"
+    },
+    {
+      "actual_blob": "9d16c9b0146e52a57ff3794bc7b190c8219c1811",
+      "matches_task40": true,
+      "path": "tests/test_phase28_setup.py"
+    },
+    {
+      "actual_blob": "cf71c7466f3cc7a5d5a70579166198e0e876710b",
+      "matches_task40": true,
+      "path": "tests/test_task30_nhe1.py"
+    },
+    {
+      "actual_blob": "eddadcdae3b224bca7960ff73e0b1c37bb45eafe",
+      "matches_task40": true,
+      "path": "tests/test_task31_continuation.py"
+    },
+    {
+      "actual_blob": "f88b672402208d19777b45e5e843dbaccb417e1e",
+      "matches_task40": true,
+      "path": "tests/test_task31_nhe1.py"
+    },
+    {
+      "actual_blob": "489685da37bc271e5c60e580b58d1430ba87bdca",
+      "matches_task40": true,
+      "path": "tests/test_task36_minimal_nbc.py"
+    },
+    {
+      "actual_blob": "8e98e5977b337276a80d0eade9c6bc4ed49566f1",
+      "matches_task40": true,
+      "path": "tests/test_task39_palk_nkcc1.py"
+    }
+  ],
+  "parameter_hashes": {
+    "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+    "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+    "nkcc1_core": "80c412da616a723120032cbff5ecd6184bb32782ec68e6a0d6de6195f5082249",
+    "regulation": "4d560edc26dbb7b9538c0447b9c8d60401804911a0bb40620d9892923ba7ab4b",
+    "stimulus": "93eba70092faaa9497c80ce30d979726a77b092cf04c0ff4cd106d3774a2c4f4",
+    "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+  }
+}

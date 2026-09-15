@@ -8,7 +8,7 @@ from modern_full_model.nhe1_cha2009 import published_cha_kinetics
 from modern_full_model.nkcc1_palk2010 import A1,A2_MM,A3,A4_MM
 OUT=Path(__file__).resolve().parent/'output';OUT.mkdir(exist_ok=True)
 
-def main():
+def main(skip_inverse=False):
     start=perf_counter();rest,stim,y0,task,audit=reference();m=clone(stim);sc=Scaling(m,y0)
     write_json(OUT/'source_audit.json',dict(base_main=BASE_SHA,files=audit,parameter_hashes=task.parameter_hashes(stim)))
     write_json(OUT/'active_parameters.json',{n:asdict(getattr(stim,n)) for n in ['parameters','ae4_parameters','nbc_parameters','nkcc1_kinetics','regulatory_model','stimulus']})
@@ -136,46 +136,48 @@ def main():
         E=expm(j*t);modes.append(dict(time_s=t,linear_dQ_de=float(qx@((np.eye(len(z))-E)@final)),
           asymptotic_dQ_de=float(qx@final),scaled_state_amplification=float(np.linalg.norm(E,2))))
     write_csv(OUT/'local_step_response.csv',modes)
-    samples=[];cache={};wtQ=float(wt.y[-1,-1]);g0=Genotype('null',ae4_expression=0.)
-    def trial(rho,tight=False):
-        key=(float(rho),tight)
-        if key in cache:return cache[key]
-        mm=cacc(m,float(rho));sol=integrate(mm,y0,g0,rtol=2e-9 if tight else 1e-8,max_step=1. if tight else 2.)
-        failures={};ratiosmax=0.;phmin=100.;phmax=0.;clmin=1e9
-        for t in np.unique(np.r_[ts,sol.t]):
-            y=sol.sol(t)[:-1];ev=mm.evaluate(t,y,genotype=g0);r,ff,ratios=task.parent.diagnose(mm,t,y,ev)
-            for f in ff:failures.setdefault(f['gate'],float(t))
-            ratiosmax=max(ratiosmax,max(ratios.values()));phmin=min(phmin,r['ph_i']);phmax=max(phmax,r['ph_i']);clmin=min(clmin,r['cl_i_mM'])
-        q=[observe(mm,t,sol.sol(t)[:-1],g0)['q_pL_s'] for t in ts]
-        rec=dict(rho=float(rho),b=1-float(rho),adaptive_deficit=1-float(sol.y[-1,-1])/wtQ,
-          sampled_deficit=1-float(np.trapezoid(q,ts))/qsample,cumulative_adaptive_pL=float(sol.y[-1,-1]),
-          physiological=not failures,failed_gates=failures,ph_min=phmin,ph_max=phmax,cl_min=clmin,
-          max_conservation_ratio=ratiosmax,nfev=int(sol.nfev),tight=tight)
-        cache[key]=rec;samples.append(rec);write_json(OUT/'inverse_samples.json',samples)
-        print('INVERSE',rho,rec['adaptive_deficit'],rec['physiological'],flush=True);return rec
-    for rho in [0.,.25,.5,.75,.85,.89,1-.10511872843288446,.90,.925,.95]:trial(rho)
-    threshold=brentq(lambda r:trial(r)['adaptive_deficit']-.303,.89,.90,xtol=2e-7)
-    check=trial(threshold,True);nearby=[trial(threshold+d) for d in [-1e-4,1e-4]]
-    write_json(OUT/'inverse_threshold.json',dict(target_lower_deficit=.303,target_upper_deficit=.397,
-      numerical_first_crossing_rho=threshold,tight_check=check,nearby=nearby,
-      selected_task41_reproduction=trial(1-.10511872843288446),
-      monotone_at_sampled_points=bool(np.all(np.diff([r['adaptive_deficit'] for r in sorted([v for k,v in cache.items() if not k[1]],key=lambda r:r['rho'])])>0)),
-      scope='First numerical crossing in sampled connected family, not a proven global or universal lower bound.'))
-    legacy_threshold=brentq(lambda r:trial(r)['sampled_deficit']-.303,.89,.90,xtol=2e-7)
-    write_json(OUT/'inverse_legacy_threshold.json',dict(numerical_rho=legacy_threshold,check=trial(legacy_threshold,True),quadrature='Original one-second grid including 0 and 1e-6 s'))
-    for rho in [0.,.5,.85,threshold]:
-        try:res=stationary(cacc(m,rho),sc,np.array(roots[0.]['state']),g0)
-        except Exception as ex:res=dict(error=str(ex),status='not_established')
-        write_json(OUT/('inverse_equilibrium_'+str(round(rho,7))+'.json'),res)
-    mm=cacc(m,threshold);long=integrate(mm,y0,g0,end=3600.,max_step=5.)
-    lg=[]
-    for tt in np.arange(0.,3601.,5.):lg.append(observe(mm,tt,long.sol(tt)[:-1],g0))
-    write_csv(OUT/'inverse_long_time.csv',lg)
-    crossing=None
-    for a,b in zip(lg,lg[1:]):
-        if a['ph_i']<7.3<=b['ph_i']:
-            crossing=brentq(lambda tt:observe(mm,tt,long.sol(tt)[:-1],g0)['ph_i']-7.3,a['time_s'],b['time_s']);break
-    write_json(OUT/'inverse_long_time_summary.json',dict(ph_gate_crossing_s=crossing,end_ph=lg[-1]['ph_i'],end_s=3600.,rho=threshold,protocol='constant stimulus extension, not Task 41 validation'))
+    cache={}
+    if not skip_inverse:
+        samples=[];cache={};wtQ=float(wt.y[-1,-1]);g0=Genotype('null',ae4_expression=0.)
+        def trial(rho,tight=False):
+            key=(float(rho),tight)
+            if key in cache:return cache[key]
+            mm=cacc(m,float(rho));sol=integrate(mm,y0,g0,rtol=2e-9 if tight else 1e-8,max_step=1. if tight else 2.)
+            failures={};ratiosmax=0.;phmin=100.;phmax=0.;clmin=1e9
+            for t in np.unique(np.r_[ts,sol.t]):
+                y=sol.sol(t)[:-1];ev=mm.evaluate(t,y,genotype=g0);r,ff,ratios=task.parent.diagnose(mm,t,y,ev)
+                for f in ff:failures.setdefault(f['gate'],float(t))
+                ratiosmax=max(ratiosmax,max(ratios.values()));phmin=min(phmin,r['ph_i']);phmax=max(phmax,r['ph_i']);clmin=min(clmin,r['cl_i_mM'])
+            q=[observe(mm,t,sol.sol(t)[:-1],g0)['q_pL_s'] for t in ts]
+            rec=dict(rho=float(rho),b=1-float(rho),adaptive_deficit=1-float(sol.y[-1,-1])/wtQ,
+              sampled_deficit=1-float(np.trapezoid(q,ts))/qsample,cumulative_adaptive_pL=float(sol.y[-1,-1]),
+              physiological=not failures,failed_gates=failures,ph_min=phmin,ph_max=phmax,cl_min=clmin,
+              max_conservation_ratio=ratiosmax,nfev=int(sol.nfev),tight=tight)
+            cache[key]=rec;samples.append(rec);write_json(OUT/'inverse_samples.json',samples)
+            print('INVERSE',rho,rec['adaptive_deficit'],rec['physiological'],flush=True);return rec
+        for rho in [0.,.25,.5,.75,.85,.89,1-.10511872843288446,.90,.925,.95]:trial(rho)
+        threshold=brentq(lambda r:trial(r)['adaptive_deficit']-.303,.89,.90,xtol=2e-7)
+        check=trial(threshold,True);nearby=[trial(threshold+d) for d in [-1e-4,1e-4]]
+        write_json(OUT/'inverse_threshold.json',dict(target_lower_deficit=.303,target_upper_deficit=.397,
+          numerical_first_crossing_rho=threshold,tight_check=check,nearby=nearby,
+          selected_task41_reproduction=trial(1-.10511872843288446),
+          monotone_at_sampled_points=bool(np.all(np.diff([r['adaptive_deficit'] for r in sorted([v for k,v in cache.items() if not k[1]],key=lambda r:r['rho'])])>0)),
+          scope='First numerical crossing in sampled connected family, not a proven global or universal lower bound.'))
+        legacy_threshold=brentq(lambda r:trial(r)['sampled_deficit']-.303,.89,.90,xtol=2e-7)
+        write_json(OUT/'inverse_legacy_threshold.json',dict(numerical_rho=legacy_threshold,check=trial(legacy_threshold,True),quadrature='Original one-second grid including 0 and 1e-6 s'))
+        for rho in [0.,.5,.85,threshold]:
+            try:res=stationary(cacc(m,rho),sc,np.array(roots[0.]['state']),g0)
+            except Exception as ex:res=dict(error=str(ex),status='not_established')
+            write_json(OUT/('inverse_equilibrium_'+str(round(rho,7))+'.json'),res)
+        mm=cacc(m,threshold);long=integrate(mm,y0,g0,end=3600.,max_step=5.)
+        lg=[]
+        for tt in np.arange(0.,3601.,5.):lg.append(observe(mm,tt,long.sol(tt)[:-1],g0))
+        write_csv(OUT/'inverse_long_time.csv',lg)
+        crossing=None
+        for a,b in zip(lg,lg[1:]):
+            if a['ph_i']<7.3<=b['ph_i']:
+                crossing=brentq(lambda tt:observe(mm,tt,long.sol(tt)[:-1],g0)['ph_i']-7.3,a['time_s'],b['time_s']);break
+        write_json(OUT/'inverse_long_time_summary.json',dict(ph_gate_crossing_s=crossing,end_ph=lg[-1]['ph_i'],end_s=3600.,rho=threshold,protocol='constant stimulus extension, not Task 41 validation'))
     nb=[];seed=np.array(roots[1.]['state'])
     for fraction in [1.,.75,.5,.25,0.]:
         try:
@@ -187,8 +189,13 @@ def main():
     assert all(r['jacobian_relative_step_error']<1e-4 for r in results)
     assert all(r['validation_relative_error']<1e-4 for r in sens)
     assert all(r['FD_relative_error']<1e-4 for r in pars)
-    write_json(OUT/'execution_summary.json',dict(status='complete',elapsed_s=perf_counter()-start,equilibrium_rows=len(results),
+    write_json(OUT/'execution_summary.json',dict(status='baseline_complete_inverse_separate' if skip_inverse else 'complete',elapsed_s=perf_counter()-start,equilibrium_rows=len(results),
       root_failures=len(failures),expression_sensitivities=len(sens),parameter_sensitivities=len(pars),inverse_integrations=len(cache),
       production_sources_modified=False,frozen_results_modified=False,numpy=np.__version__,scipy=__import__('scipy').__version__))
     print('COMPLETE',perf_counter()-start,flush=True)
-if __name__=='__main__':main()
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--skip-inverse', action='store_true', help='Run inverse_analysis.py separately for the hardened Task 45 inverse panel.')
+    args=parser.parse_args()
+    main(skip_inverse=args.skip_inverse)

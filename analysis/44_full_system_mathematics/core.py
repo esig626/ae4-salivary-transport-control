@@ -30,7 +30,7 @@ def write_csv(path,rows):
     Path(path).parent.mkdir(parents=True,exist_ok=True)
     keys=list(dict.fromkeys(k for row in rows for k in row))
     with Path(path).open('w',newline='') as f:
-        w=csv.DictWriter(f,keys);w.writeheader();w.writerows(rows)
+        w=csv.DictWriter(f,keys,lineterminator="\n");w.writeheader();w.writerows(rows)
 
 def reference():
     spec=importlib.util.spec_from_file_location('task40_readonly',ROOT/'analysis/40_ae4_equal_cation_routing/validation_common.py')
@@ -144,7 +144,15 @@ def jacobian(fun,x,step=1e-5):
     cols=[]
     for k in range(len(x)):
         delta=np.zeros(len(x));delta[k]=step*max(abs(x[k]),.1)
-        cols.append((fun(x+delta)-fun(x-delta))/(2*delta[k]))
+        # The retained regulatory coordinate is physically in [0,1]. The
+        # production evaluator clips out-of-domain trials; centring at r=1
+        # would halve the column. Use a second-order inward derivative.
+        if len(x)==len(KEEP) and k==len(x)-1 and x[k]+delta[k]>1.:
+            cols.append((3*fun(x)-4*fun(x-delta)+fun(x-2*delta))/(2*delta[k]))
+        elif len(x)==len(KEEP) and k==len(x)-1 and x[k]-delta[k]<0.:
+            cols.append((-3*fun(x)+4*fun(x+delta)-fun(x+2*delta))/(2*delta[k]))
+        else:
+            cols.append((fun(x+delta)-fun(x-delta))/(2*delta[k]))
     return np.stack(cols,axis=-1)
 
 def stationary(model,scale,seed,g=WT):
