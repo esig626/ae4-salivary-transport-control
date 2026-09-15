@@ -1,17 +1,17 @@
-# Current status: 46H02 complete
+# Current status: 46H03 complete
 
 Branch: `analysis/task-46-physiology-constrained-model-reconstruction`.
-Parent: `41bd8d9be52b6fd0122d1f568de1f3e884c54d65`.
-Current checkpoint: `CHECKPOINT_46H02_WT_REGION.md`.
+Parent: `36eea1ce2bac17eda5d6b625d6b9bba6a5b3ec1b`.
+Current checkpoint: `CHECKPOINT_46H03_KO_REGION.md`.
 
-WT reference chloride export J=1 is attainable with a complete conserved witness. Full-region J spans0 to1 only because1 is the reporting truncation.
+KO reference chloride export J=1 is attainable with a complete conserved witness. Full-region J spans0 to1 only because1 is the reporting truncation.
 
-14 of21 flux intervals change when computational M increases100 to1000. Absolute physical capacities/maxima remain unidentified; finite reference-output feasibility persists for every M>=1.
+11 of21 flux intervals change when computational M increases100 to1000. Absolute physical capacities/maxima remain unidentified; finite reference-output feasibility persists for every M>=1.
 
-No biological objective retention, phenotype fitting or new kinetics. Earlier pre-solve objective spelling error was corrected in the caller, leaving the frozen builder, numerical matrix and bounds unchanged.
+AE4 deletion is the only changed bound; the shared-capacity KO still permits reference output. No assay flux equality has been imposed.
 
-Receipt: `output/46h/receipt_46h02.json`.
+Receipt: `output/46h/receipt_46h03.json`.
 
-Next: 46H03: AE4-null full-region FVA with shared capacities.
+Next: 46H04: freeze the protocol-matched NKCC evidence interpretation and analyse paired WT/KO constraints.
 
 Before any dependent work, fetch and fast forward only, confirm this checkpoint remotely, match remote SHA to HEAD and verify a clean tree. Read CBM_PROTOCOL.md and CBM_EVIDENCE_SPLIT.md. No Task44/46G reruns, new kinetics, CarbonScope access, manuscript changes or merge to main.

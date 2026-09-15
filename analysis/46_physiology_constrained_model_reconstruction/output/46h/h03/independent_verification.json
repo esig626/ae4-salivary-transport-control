@@ -1,0 +1,499 @@
+{
+  "audit": "H03 independent witness, uncapped ray and M comparison",
+  "input_commit": "36eea1ce2bac17eda5d6b625d6b9bba6a5b3ec1b",
+  "builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+  "matrix_sha256": "73fdcc7328eca7633bc806c3c26a4006cc87d93a6a569f816e0ebdcfb608b613",
+  "script_sha256": "012d89c19ff7a9ae13881d95f9671b2d0f02c7fcaa22c6c75f2fcca399d29a91",
+  "input_sha256": {
+    "h03_summary.json": "b8b9e156056ad24420bf5c24adb12f3354063e91421d85721dd65378ccc4a8c3",
+    "h03_chloride.json": "cdc80aaf0867a68f5990eab5981de6e24ef346a7ddd068fe254ef6f8ca03aafc",
+    "h03_sodium.json": "a599e830dac626e5fcb68701b3bad4ea5265446e673cd9e79202a818eed1b17c",
+    "h03_potassium.json": "d554482a59883ad3eda7fa63098aba45925c946d09d74be11ff8b7b295448058",
+    "h03_carbon.json": "804962991a6a871d03a10bdd4d2cb8631a634108d863c02e4ea5754f8cf23a4b"
+  },
+  "method": "Standalone fractions.Fraction evaluation of CSV equations and bounds, exact recovery of declared simple rational witness, and comparison of saved FVA endpoints. No LP or FVA rerun.",
+  "witness_validation": {
+    "rational_vector": {
+      "N": "1/2",
+      "A": "0",
+      "E": "0",
+      "H": "0",
+      "B": "0",
+      "Pb": "1/6",
+      "Pa": "0",
+      "Kb": "5/6",
+      "Ka": "0",
+      "J": "1",
+      "Db": "0",
+      "Da": "0",
+      "pNa": "-1",
+      "pK": "0",
+      "pCl": "0",
+      "pHCO3": "0",
+      "oNa": "1",
+      "oK": "0",
+      "oCl": "1",
+      "oHCO3": "0",
+      "oCO2": "0"
+    },
+    "max_rational_reconstruction_difference": 0.0,
+    "all13_row_residuals": {
+      "Na_i": "0",
+      "K_i": "0",
+      "Cl_i": "0",
+      "TIC_i": "0",
+      "TA_i": "0",
+      "Na_l": "0",
+      "K_l": "0",
+      "Cl_l": "0",
+      "TIC_l": "0",
+      "TA_l": "0",
+      "charge_i": "0",
+      "charge_l": "0",
+      "neutral_outflow": "0"
+    },
+    "all21_bounds_satisfied": true,
+    "maximum_absolute_flux": "1"
+  },
+  "bound_differences": {
+    "A": {
+      "WT": [
+        "0.0",
+        "100.0"
+      ],
+      "KO": [
+        "0.0",
+        "0.0"
+      ]
+    }
+  },
+  "only_A_bound_changed": true,
+  "saved_solver_witness_validation": {
+    "solver_maximum_witness": {
+      "rational_vector": {
+        "N": "0",
+        "A": "0",
+        "E": "1",
+        "H": "0",
+        "B": "1/2",
+        "Pb": "0",
+        "Pa": "1/6",
+        "Kb": "1/3",
+        "Ka": "0",
+        "J": "1",
+        "Db": "0",
+        "Da": "0",
+        "pNa": "-199/2",
+        "pK": "-1/3",
+        "pCl": "1",
+        "pHCO3": "-100",
+        "oNa": "100",
+        "oK": "0",
+        "oCl": "0",
+        "oHCO3": "100",
+        "oCO2": "0"
+      },
+      "max_rational_reconstruction_difference": 0.0,
+      "all13_row_residuals": {
+        "Na_i": "0",
+        "K_i": "0",
+        "Cl_i": "0",
+        "TIC_i": "0",
+        "TA_i": "0",
+        "Na_l": "0",
+        "K_l": "0",
+        "Cl_l": "0",
+        "TIC_l": "0",
+        "TA_l": "0",
+        "charge_i": "0",
+        "charge_l": "0",
+        "neutral_outflow": "0"
+      },
+      "all21_bounds_satisfied": true,
+      "maximum_absolute_flux": "100"
+    },
+    "solver_minimum_witness": {
+      "rational_vector": {
+        "N": "0",
+        "A": "0",
+        "E": "0",
+        "H": "0",
+        "B": "0",
+        "Pb": "0",
+        "Pa": "0",
+        "Kb": "0",
+        "Ka": "0",
+        "J": "0",
+        "Db": "0",
+        "Da": "0",
+        "pNa": "-100",
+        "pK": "0",
+        "pCl": "0",
+        "pHCO3": "-100",
+        "oNa": "100",
+        "oK": "0",
+        "oCl": "0",
+        "oHCO3": "100",
+        "oCO2": "0"
+      },
+      "max_rational_reconstruction_difference": 0.0,
+      "all13_row_residuals": {
+        "Na_i": "0",
+        "K_i": "0",
+        "Cl_i": "0",
+        "TIC_i": "0",
+        "TA_i": "0",
+        "Na_l": "0",
+        "K_l": "0",
+        "Cl_l": "0",
+        "TIC_l": "0",
+        "TA_l": "0",
+        "charge_i": "0",
+        "charge_l": "0",
+        "neutral_outflow": "0"
+      },
+      "all21_bounds_satisfied": true,
+      "maximum_absolute_flux": "100"
+    }
+  },
+  "finite_witness_invariance": {
+    "minimum_sufficient_M": "1",
+    "proof": "Every component of the complete witness has absolute value at most 1, its J is exactly 1, and all sign constraints hold. Consequently this same KO witness obeys every box bound for every M >= 1.",
+    "conclusion": "The existence of KO J=1 and the truncated maximum 1 do not depend on increasing M above 1."
+  },
+  "uncapped_ray": {
+    "vector": {
+      "N": "1/2",
+      "A": "0",
+      "E": "0",
+      "H": "0",
+      "B": "0",
+      "Pb": "1/6",
+      "Pa": "0",
+      "Kb": "5/6",
+      "Ka": "0",
+      "J": "1",
+      "Db": "0",
+      "Da": "0",
+      "pNa": "-1",
+      "pK": "0",
+      "pCl": "0",
+      "pHCO3": "0",
+      "oNa": "1",
+      "oK": "0",
+      "oCl": "1",
+      "oHCO3": "0",
+      "oCO2": "0"
+    },
+    "scalar_domain": "t >= 0",
+    "proof": "For the exact nonzero witness w, S w=0 and w respects every retained sign. Thus S(t w)=0 and the signs hold for every t >= 0. Removing both artificial M caps and the J reporting truncation admits this full ray, with J(t w)=t.",
+    "conclusion": "The uncapped network has no finite maximum J. A finite physical secretion capacity is unidentified by this network.",
+    "thermodynamic_caveat": "This is a stoichiometric and directional statement within the frozen conditional sector; it does not establish global thermodynamic or kinetic feasibility."
+  },
+  "M_comparison": {
+    "N": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 0.5,
+        "M1000": 0.5,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "A": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "E": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 1.0,
+        "M1000": 1.0,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "H": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 1.0,
+        "M1000": 1.0,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "B": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 0.5,
+        "M1000": 0.5,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "Pb": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 0.3333333333333333,
+        "M1000": 0.3333333333333333,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "Pa": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 0.3333333333333333,
+        "M1000": 0.3333333333333333,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "Kb": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 0.8333333333333334,
+        "M1000": 0.8333333333333333,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "Ka": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 0.8333333333333334,
+        "M1000": 0.8333333333333334,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "J": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 1.0,
+        "M1000": 1.0,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "Db": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 100.0,
+        "M1000": 1000.0,
+        "depends_on_M_in_saved_comparison": true
+      }
+    },
+    "Da": {
+      "minimum": {
+        "M100": -100.0,
+        "M1000": -1000.0,
+        "depends_on_M_in_saved_comparison": true
+      },
+      "maximum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "pNa": {
+      "minimum": {
+        "M100": -100.0,
+        "M1000": -1000.0,
+        "depends_on_M_in_saved_comparison": true
+      },
+      "maximum": {
+        "M100": 1.0,
+        "M1000": 1.0,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "pK": {
+      "minimum": {
+        "M100": -100.0,
+        "M1000": -1000.0,
+        "depends_on_M_in_saved_comparison": true
+      },
+      "maximum": {
+        "M100": 0.8333333333333331,
+        "M1000": 0.8333333333333333,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "pCl": {
+      "minimum": {
+        "M100": -100.0,
+        "M1000": -1000.0,
+        "depends_on_M_in_saved_comparison": true
+      },
+      "maximum": {
+        "M100": 1.0,
+        "M1000": 1.0,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "pHCO3": {
+      "minimum": {
+        "M100": -100.0,
+        "M1000": -1000.0,
+        "depends_on_M_in_saved_comparison": true
+      },
+      "maximum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      }
+    },
+    "oNa": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 100.0,
+        "M1000": 1000.0,
+        "depends_on_M_in_saved_comparison": true
+      }
+    },
+    "oK": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 100.0,
+        "M1000": 1000.0,
+        "depends_on_M_in_saved_comparison": true
+      }
+    },
+    "oCl": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 100.0,
+        "M1000": 1000.0,
+        "depends_on_M_in_saved_comparison": true
+      }
+    },
+    "oHCO3": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 100.0,
+        "M1000": 1000.0,
+        "depends_on_M_in_saved_comparison": true
+      }
+    },
+    "oCO2": {
+      "minimum": {
+        "M100": 0.0,
+        "M1000": 0.0,
+        "depends_on_M_in_saved_comparison": false
+      },
+      "maximum": {
+        "M100": 100.0,
+        "M1000": 1000.0,
+        "depends_on_M_in_saved_comparison": true
+      }
+    }
+  },
+  "changed_endpoint_count": 11,
+  "changed_endpoints": [
+    "Db:maximum",
+    "Da:minimum",
+    "pNa:minimum",
+    "pK:minimum",
+    "pCl:minimum",
+    "pHCO3:minimum",
+    "oNa:maximum",
+    "oK:maximum",
+    "oCl:maximum",
+    "oHCO3:maximum",
+    "oCO2:maximum"
+  ],
+  "unchanged_endpoint_count": 31,
+  "unchanged_endpoints": [
+    "N:minimum",
+    "N:maximum",
+    "A:minimum",
+    "A:maximum",
+    "E:minimum",
+    "E:maximum",
+    "H:minimum",
+    "H:maximum",
+    "B:minimum",
+    "B:maximum",
+    "Pb:minimum",
+    "Pb:maximum",
+    "Pa:minimum",
+    "Pa:maximum",
+    "Kb:minimum",
+    "Kb:maximum",
+    "Ka:minimum",
+    "Ka:maximum",
+    "J:minimum",
+    "J:maximum",
+    "Db:minimum",
+    "Da:maximum",
+    "pNa:maximum",
+    "pK:maximum",
+    "pCl:maximum",
+    "pHCO3:maximum",
+    "oNa:minimum",
+    "oK:minimum",
+    "oCl:minimum",
+    "oHCO3:minimum",
+    "oCO2:minimum"
+  ],
+  "comparison_caveat": "Changed endpoints demonstrate computational box dependence; unchanged endpoints at these two choices alone do not establish a physiological bound. Coordinate extrema are not asserted to be jointly attainable.",
+  "all_reactions_covered_once": true,
+  "scientific_optimisations_performed": 0,
+  "pass": true
+}

@@ -1,0 +1,37 @@
+{
+  "genotype": "KO",
+  "group": "chloride",
+  "input_commit": "36eea1ce2bac17eda5d6b625d6b9bba6a5b3ec1b",
+  "builder_sha256": "561b6f17dd710dfa49ca0dfb611fcae36d1bb30840cd9cb668f2c70c94fb3552",
+  "M": 100,
+  "fraction_of_optimum": null,
+  "native_api": "prepare_highs_flux_region plus unchanged _ReusableWorker.begin_pass/solve_endpoint",
+  "ranges": {
+    "N": {
+      "minimum": 0.0,
+      "maximum": 0.5
+    },
+    "A": {
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    "E": {
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "J": {
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "pCl": {
+      "minimum": -100.0,
+      "maximum": 1.0
+    },
+    "oCl": {
+      "minimum": 0.0,
+      "maximum": 100.0
+    }
+  },
+  "endpoints": 12,
+  "elapsed_seconds": 0.06508471399956761
+}
