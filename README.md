@@ -1,6 +1,6 @@
 # AE4 Salivary Transport Control
 
-This repository contains a source-audited reconstruction of the AE4 salivary secretion model, its finite mechanism tests, and the manuscript now being prepared for the *Bulletin of Mathematical Biology*. The earlier project is retained under `archive/` as historical and provenance material.
+This repository contains a source-audited reconstruction of the AE4 salivary secretion model, its finite mechanism tests, and the current manuscript being prepared for the *Bulletin of Mathematical Biology*. The earlier project is retained under `archive/` as historical and provenance material.
 
 The scientific starting point is [A Mathematical Model Supports a Key Role for Ae4 (Slc4a9) in Salivary Gland Secretion](https://doi.org/10.1007/s11538-017-0370-6).
 
@@ -23,21 +23,23 @@ The resulting interpretation is narrow but useful: the biological importance of 
 
 ## Manuscript
 
-The first complete article draft is under `manuscript/`.
+The current source-audited article is under `manuscript/`.
 
 Working title:
 
 > **AE4 control of salivary secretion nearly a decade later: acid-base balance, transporter stoichiometry and missing network regulation**
 
-The manuscript is organised around six figures and includes the full reconstructed model, BibTeX references, `cleveref` cross-references, a claim ledger and deterministic figure-building code.
+**Current compiled manuscript:** [`manuscript/AE4_manuscript_current.pdf`](manuscript/AE4_manuscript_current.pdf)
 
-Build it with:
+The tracked PDF is a convenience copy of the complete manuscript. The LaTeX source and frozen figure values remain authoritative. A GitHub Actions workflow independently rebuilds the figures and manuscript whenever manuscript source changes.
+
+To build locally from the repository root:
 
 ```bash
 bash manuscript/build.sh
 ```
 
-The author list, affiliations, funding and contribution statements still require agreement before submission.
+The corrected 2018 source archive has been audited against the new article, and its bibliography has been consolidated into `manuscript/references.bib`. The remaining submission work is listed in [`docs/MANUSCRIPT_STATUS.md`](docs/MANUSCRIPT_STATUS.md). Author order, affiliations, funding, contributions and competing-interest statements still require agreement and are deliberately not invented here.
 
 ## Repository map
 
@@ -48,8 +50,8 @@ The author list, affiliations, funding and contribution statements still require
 - `analysis/`: numbered scientific analyses in execution order
 - `tests/`: regression, conservation and reproducibility tests
 - `results/`: machine-readable outputs used for figures and tables
-- `figures/`: project figures outside the article draft
-- `manuscript/`: article source, figures, data and build scripts
+- `figures/`: project figures outside the article
+- `manuscript/`: article source, frozen figure data, build scripts and current compiled PDF
 - `docs/`: research plans, decisions and result ledgers
 - `prompts/`: reproducible scientific task prompts
 

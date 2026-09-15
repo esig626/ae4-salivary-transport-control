@@ -1,0 +1,65 @@
+name: Build manuscript
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "manuscript/**"
+      - ".github/workflows/build-manuscript.yml"
+      - "!manuscript/AE4_manuscript_current.pdf"
+  pull_request:
+    paths:
+      - "manuscript/**"
+      - ".github/workflows/build-manuscript.yml"
+      - "!manuscript/AE4_manuscript_current.pdf"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  manuscript:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install LaTeX toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            cm-super \
+            poppler-utils \
+            texlive-latex-base \
+            texlive-latex-extra \
+            texlive-fonts-recommended \
+            texlive-science
+
+      - name: Build complete manuscript
+        run: bash manuscript/build.sh
+
+      - name: Check manuscript output
+        run: |
+          test -s manuscript/main.pdf
+          pdfinfo manuscript/main.pdf | grep -E '^(Pages|Page size|File size):'
+
+      - name: Stage stable PDF name
+        run: cp manuscript/main.pdf manuscript/AE4_manuscript_current.pdf
+
+      - name: Upload compiled manuscript
+        uses: actions/upload-artifact@v4
+        with:
+          name: AE4-manuscript
+          path: manuscript/AE4_manuscript_current.pdf
+          if-no-files-found: error
+          retention-days: 30
