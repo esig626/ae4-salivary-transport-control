@@ -14,3 +14,10 @@ else
 fi
 pdflatex -interaction=nonstopmode -halt-on-error main.tex
 pdflatex -interaction=nonstopmode -halt-on-error main.tex
+pdflatex -interaction=nonstopmode -halt-on-error main.tex
+
+if grep -Eq "undefined citations|undefined references|Label\(s\) may have changed|Rerun to get cross-references right" main.log; then
+  echo "Manuscript build did not converge cleanly" >&2
+  grep -E "undefined citations|undefined references|Label\(s\) may have changed|Rerun to get cross-references right" main.log >&2 || true
+  exit 1
+fi
