@@ -1,12 +1,12 @@
 # AE4 Salivary Transport Control
 
-This repository contains a source-audited reconstruction of the AE4 salivary secretion model, its finite mechanism tests, and the current manuscript being prepared for the *Bulletin of Mathematical Biology*. The earlier project is retained under `archive/` as historical and provenance material.
+This repository contains a reconstruction of the Solute Carrier Family 9 Anion Transporter 4, in a salivary secretion model, its finite mechanism tests, and the current manuscript being prepared for the *Bulletin of Mathematical Biology*. The earlier project is retained under `archive/` as historical and provenance material.
 
 The scientific starting point is [A Mathematical Model Supports a Key Role for Ae4 (Slc4a9) in Salivary Gland Secretion](https://doi.org/10.1007/s11538-017-0370-6).
 
-## Scientific question
 
-Why does loss of AE4 produce a substantial secretory phenotype while loss of AE2 produces little or no effect, and which parts of the mechanism proposed in 2018 survive a conservation-explicit reconstruction using the intervening experimental literature?
+
+## Why does loss of AE4 produce a substantial secretory phenotype while loss of AE2 produces little or no effect, and which parts of the mechanism proposed in 2018 survive a conservation-explicit reconstruction using the intervening experimental literature?
 
 ## Current conclusions
 
@@ -19,7 +19,7 @@ The main findings are:
 3. **Catalán 2025 stoichiometry alone is insufficient.** Seven predeclared source classes were frozen before phenotype comparison. None recovers the approximately 35% AE4-null secretion phenotype under the inherited scalar AE4 kinetic law. Three carbonate classes fail the stimulated wild-type pH gate.
 4. **A constructive regulatory coupling can recover the magnitude.** A target-selected AE4-dependent reduction in stimulated CaCC recruitment gives 23.16% loss at 5% AE4 and 30.26% in the null while passing the declared 600 s gates. This is a modelling hypothesis, not independent biological validation, and it does not reproduce the complete sodium or temporal phenotype.
 
-The resulting interpretation is narrow but useful: the biological importance of AE4 survives the decade, but cation stoichiometry alone does not explain the knockout. Acid-base supply, NKCC1 compensation and sustained regulation of apical chloride exit remain the decisive unresolved mechanisms.
+The biological importance of AE4 survives the decade, but cation stoichiometry alone does not explain the knockout. Acid-base supply, NKCC1 compensation and sustained regulation of apical chloride exit remain the decisive unresolved mechanisms.
 
 ## Manuscript
 
@@ -55,10 +55,5 @@ The corrected 2018 source archive has been audited against the new article, and 
 - `docs/`: research plans, decisions and result ledgers
 - `prompts/`: reproducible scientific task prompts
 
-## Scientific rules
 
-- Historical outputs are not automatically results of the reconstructed project.
-- The approximately 35% experimental AE4-loss secretion reduction is not a calibration target unless a task is explicitly labelled target-selected.
-- Numerical failure, physiological failure and biological mismatch are reported separately.
-- Failed mechanism classes are retained rather than removed after comparison.
-- `archive/` is not rewritten.
+
