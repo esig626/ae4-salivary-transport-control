@@ -1,0 +1,25 @@
+{
+  "additional_ipr_only_ko_prediction": 0.0,
+  "exact_contrast_parameter_jacobian": "zero for every admissible shared parameter, including AE4 gain and time constant",
+  "experimental_contrast": 1.4,
+  "hypothesis": "Shared expected AE4 KO uptake for CCh and CCh plus IPR under a common source faithful observation rule",
+  "independent_contrast_standard_errors": 10.406118047460327,
+  "independent_mean_error_contrast_se": 0.13453624047073712,
+  "ipr_only_observation": 0.2,
+  "ipr_only_se": 0.03,
+  "likelihood_qualification": "Reported SE Gaussian working mean model; no global calibrated p value and no completed full joint likelihood.",
+  "maximum_contrast_se_any_covariance": 0.19,
+  "minimum_standard_errors_any_covariance": 7.368421052631579,
+  "minimum_two_row_chi_square": 108.28729281767953,
+  "optical_qualification": "Matched normalisation and recovery-window rule. Arbitrary cohort optical gains or differing windows are not introduced.",
+  "predicted_contrast": 0.0,
+  "relaxed_mean_is_full_model_prediction": false,
+  "relaxed_optimal_common_mean": 1.5265193370165746,
+  "relaxed_two_row_standardised_residuals": [
+    -7.734806629834252,
+    6.961325966850829
+  ],
+  "runtime_core_rhs_max_difference": 0.0,
+  "source": "Pe\u00f1a M\u00fcnzenmayer 2015 Table 1, AE4 KO CCh n=6 and combined n=9",
+  "units": "1e-3 s^-1"
+}

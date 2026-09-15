@@ -1,0 +1,84 @@
+{
+  "bath_projection": {
+    "TIC_mM": 26.284441219363032,
+    "carbonate_titrant_accounting_mEq_L": 0.06315764851580496,
+    "charge_checks": {
+      "bath_charge_mM": 0.0,
+      "cell_charge_fmol": 0.0,
+      "lumen_charge_fmol": 7.105427357601002e-16
+    },
+    "divalent_charge_mEq_L": 4.0,
+    "qualification": "effective positive B+ reservoir; unreported HEPES/titrant chemistry omitted",
+    "spectator_osmoles_mM": 17.0,
+    "total_spectator_charge_mEq_L": 4.063157648515805,
+    "tracked_ions_mM": {
+      "Cl": 128.3,
+      "HCO3": 25.0,
+      "K": 4.3,
+      "Na": 145.0
+    }
+  },
+  "bicarbonate_fmol": 2.6469516930867254,
+  "cl_range_mM": [
+    57.85495030913425,
+    57.88277887311691
+  ],
+  "duration_s": 600,
+  "final_state": [
+    15.047307136699924,
+    154.63595054269635,
+    72.8479434656804,
+    6.768422271257272,
+    18.773552007771237,
+    1.2589468450620391,
+    14.216601153177066,
+    2.591552211846748,
+    16.33668286154211,
+    0.5441822514935771,
+    0.47147050348169844,
+    0.10491235330868123,
+    0.999999997938771
+  ],
+  "genotype": "WT",
+  "initial_state": [
+    15.055185106002481,
+    154.74735938078015,
+    72.87499588744348,
+    6.836686123489921,
+    18.865786393394316,
+    1.259615564408113,
+    14.216378018882194,
+    2.5915944350789935,
+    16.33651274594835,
+    0.5446105834960513,
+    0.4714597080128371,
+    0.10491258831956275,
+    0.0
+  ],
+  "maximum_charge_fmol": 2.5579538487363607e-13,
+  "maximum_current_residual_A": 4.2005265481208437e-26,
+  "ph_change_first_10s": -2.9091557446569993e-05,
+  "ph_change_first_10s_status": "qualitative numerical diagnostic, not BCECF amplitude or source slope window",
+  "ph_range": [
+    6.88134271907943,
+    6.883124544391061
+  ],
+  "positive_core": true,
+  "prediction_status": "unfitted conditional inherited model diagnostic",
+  "protocol": "IPR_ONLY",
+  "rest_cache_key": "76e55724ae44c9ff840b21134637478c552cc80b57ba94e0d92c283fb1670078",
+  "shared_parameter_hash": "d3e9b1ad8aaf165dcfccb7b1d2032352ebf53c40a3e9ec4131ae70ee9b79e781",
+  "solver": {
+    "atol": 1e-10,
+    "max_step_s": 2.0,
+    "method": "BDF",
+    "nfev": 715,
+    "rtol": 1e-08
+  },
+  "water_pL": 0.5895318384111561,
+  "water_windows_pL": {
+    "0_120": 0.11791450042571479,
+    "120_180": 0.05895732345401487,
+    "180_600": 0.4126600145314264
+  }
+}

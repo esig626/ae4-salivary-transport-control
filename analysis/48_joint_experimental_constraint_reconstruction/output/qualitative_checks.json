@@ -1,0 +1,26 @@
+{
+  "AE2_water_ratio": 1.000022870775389,
+  "AE4_timing": {
+    "0_120": 1.0106016419228632,
+    "120_180": 1.0057104302406077,
+    "180_600": 1.0032870889302214
+  },
+  "NHE": {
+    "AE2_KO": {
+      "EIPA_first10s_pH_change": 0.00849598785536898,
+      "combined_first10s_pH_change": 0.018416895721527382
+    },
+    "AE4_KO": {
+      "EIPA_first10s_pH_change": 0.0009103082433501442,
+      "combined_first10s_pH_change": 0.0018240728323037914
+    },
+    "WT": {
+      "EIPA_first10s_pH_change": 0.008432458269245657,
+      "combined_first10s_pH_change": 0.0182564939390657
+    }
+  },
+  "NHE_qualification": "positive pH direction is insufficient: KO alkalinisation is much smaller and simultaneous EIPA does not reverse it; source inhibitor preincubation/window and BCECF calibration not identified, so this is a conditional diagnostic",
+  "NKCC_isolation": "unavailable; no physiological compensation claim inferred from a different assay",
+  "bicarbonate": "conditional gland ratio retained; no claim about missing duct bicarbonate handling",
+  "initial_Cl_exit": "fluorescence amplitude unavailable without calibration; no false quantitative pass"
+}

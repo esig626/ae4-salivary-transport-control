@@ -11,8 +11,5 @@
   "minimum_two_row_chi_square": 108.28729281767953,
   "new_equation_mechanisms": 0,
   "parameter_optimisations": 0,
-  "structural_core_RHS_identity": 0.0,
-  "independent_saved_root_review": "pass; linear versus log coordinate Jacobians agree",
-  "all_requested_source_numerics_accounted_for": true,
-  "KO_same_core_trajectory_max_abs_difference": 4.152603594320681e-09
+  "structural_core_RHS_identity": 0.0
 }

@@ -1,0 +1,94 @@
+{
+  "audit_type": "saved states only; no root solver, integration or inference",
+  "evaluations": 123,
+  "results": [
+    {
+      "genotype": "WT",
+      "raw_rhs_max": 2.8404268954257406e-12,
+      "saved_rhs_max_difference": 0.0,
+      "charge_residuals": {
+        "cell": 0.0,
+        "lumen": 0.0
+      },
+      "alkalinity_balance": 2.0771231956651093e-13,
+      "omitted_alkalinity_rows": [
+        2.0771231956651093e-13,
+        1.1356800916351162e-13
+      ],
+      "slowest_decay_seconds": 287.56764576228784,
+      "linear_coordinate_stability_checks": [
+        {
+          "relative_step": 1e-05,
+          "maximum_real_eigenvalue": -0.003477442681857944,
+          "maximum_imaginary_magnitude": 0.0,
+          "maximum_eigenvalue_relative_difference_vs_saved": 5.295185553674488e-09
+        },
+        {
+          "relative_step": 2e-06,
+          "maximum_real_eigenvalue": -0.0034774427281517462,
+          "maximum_imaginary_magnitude": 0.0,
+          "maximum_eigenvalue_relative_difference_vs_saved": 1.8607785244164233e-08
+        }
+      ]
+    },
+    {
+      "genotype": "AE4_KO",
+      "raw_rhs_max": 3.885780586188048e-16,
+      "saved_rhs_max_difference": 0.0,
+      "charge_residuals": {
+        "cell": 0.0,
+        "lumen": 0.0
+      },
+      "alkalinity_balance": 2.6291902682773483e-16,
+      "omitted_alkalinity_rows": [
+        2.6291902682773483e-16,
+        -5.811323644522304e-17
+      ],
+      "slowest_decay_seconds": 6343.940536959911,
+      "linear_coordinate_stability_checks": [
+        {
+          "relative_step": 1e-05,
+          "maximum_real_eigenvalue": -0.00015763073549406953,
+          "maximum_imaginary_magnitude": 0.0,
+          "maximum_eigenvalue_relative_difference_vs_saved": 1.277163306752127e-08
+        },
+        {
+          "relative_step": 2e-06,
+          "maximum_real_eigenvalue": -0.00015763071420897128,
+          "maximum_imaginary_magnitude": 0.0,
+          "maximum_eigenvalue_relative_difference_vs_saved": 1.2225976455330784e-07
+        }
+      ]
+    },
+    {
+      "genotype": "AE2_KO",
+      "raw_rhs_max": 2.4160237612619317e-12,
+      "saved_rhs_max_difference": 0.0,
+      "charge_residuals": {
+        "cell": 0.0,
+        "lumen": 0.0
+      },
+      "alkalinity_balance": 1.557018403097743e-13,
+      "omitted_alkalinity_rows": [
+        1.557018403097743e-13,
+        8.165169929075233e-14
+      ],
+      "slowest_decay_seconds": 287.484386652249,
+      "linear_coordinate_stability_checks": [
+        {
+          "relative_step": 1e-05,
+          "maximum_real_eigenvalue": -0.0034784497936787935,
+          "maximum_imaginary_magnitude": 0.0,
+          "maximum_eigenvalue_relative_difference_vs_saved": 5.436389932402761e-09
+        },
+        {
+          "relative_step": 2e-06,
+          "maximum_real_eigenvalue": -0.0034784498434895527,
+          "maximum_imaginary_magnitude": 0.0,
+          "maximum_eigenvalue_relative_difference_vs_saved": 1.975620550404207e-08
+        }
+      ]
+    }
+  ],
+  "tests_passed": true
+}
