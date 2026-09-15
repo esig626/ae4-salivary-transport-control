@@ -3,6 +3,7 @@ from pathlib import Path
 import json
 D=Path(__file__).resolve().parent/'output'
 a=json.loads((D/'parameter_inventory.json').read_text())
+(D/'audit_counts.tex').write_text('\\newcommand{\\InventoryCount}{'+str(len(a))+'}\n\\newcommand{\\ActiveCount}{'+str(sum(r['active'] for r in a))+'}\n')
 def esc(s):
     return str(s).replace('\\','\\textbackslash{}').replace('&','\\&').replace('%','\\%').replace('#','\\#').replace('_','\\_').replace('$','\\$')
 def val(v):

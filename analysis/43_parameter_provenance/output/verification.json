@@ -1,5 +1,19 @@
 {
-  "inventory_assertions": 4,
+  "active_records": 104,
+  "all_actual_nested_dataclass_fields_covered": true,
+  "all_record_source_paths_resolve": true,
+  "cha_fixed_exponents_verified": true,
+  "frozen_initial_state_hash_verified": true,
+  "machine_readable_schema_verified": true,
+  "metadata_only_agonist_doses_verified": true,
+  "new_sensitivity_simulations_on_task43": 0,
+  "parameter_fits": 0,
   "passed": true,
-  "production_parameter_hashes_verified": true
+  "production_parameter_hashes_verified": true,
+  "production_source_manifest_entries": 75,
+  "protected_source_changes": [],
+  "records": 131,
+  "saved_outputs_match_recomputation": true,
+  "scope": "Inventory reconstruction, selected input law checks, original parameter and state hashes, source files, uncertainty semantics and CSV/JSON consistency.",
+  "sensitivity_crosswalk_present": false
 }

@@ -103,11 +103,37 @@
 \path{protocol.arm} & \path{CCH_IPR} & Yes & protocol setting \\
 \path{protocol.onset_s} & 0 & Yes & protocol setting \\
 \path{protocol.duration_s} & 600 & Yes & protocol setting \\
-\path{protocol.cch_dose_uM} & 0.3 & Yes & protocol setting \\
-\path{protocol.ipr_dose_uM} & 5 & Yes & protocol setting \\
+\path{protocol.cch_dose_uM} & 0.3 & No & protocol setting \\
+\path{protocol.ipr_dose_uM} & 5 & No & protocol setting \\
 \path{protocol.resting_calcium_uM} & 0.058 & Yes & protocol setting \\
 \path{protocol.stimulated_calcium_uM} & 0.25 & Yes & protocol setting \\
 \path{protocol.beta_occupancy_on} & 1 & Yes & protocol setting \\
 \path{Task41.b} & 0.105118728 & No & target selected \\
+\path{cha.intracellular_modifier_hill} & 3 & Yes & published kinetic coefficient \\
+\path{cha.extracellular_modifier_hill} & 1 & Yes & published kinetic coefficient \\
+\path{nkcc.law} & \path{palk_benjamin_2010_eq17} & Yes & law selection \\
+\path{ae4.law} & \path{equal_routing_adapter} & Yes & law selection \\
+\path{regulation.family} & \path{R1} & Yes & law selection \\
+\path{regulation.construct} & \path{WT} & Yes & protocol setting \\
+\path{nkcc_activation.family} & \path{N1_CCH_ALGEBRAIC} & Yes & law selection \\
+\path{nbc_design.TARGET_NKCC1_POSITIVE_CL_SHARE} & 0.7 & No & effective assumption \\
+\path{nbc_design.TASK31_R09_NKCC1_CL_FMOL_S} & 0.256244405 & No & WT architecture derived \\
+\path{nbc_design.TASK31_R09_NHE1_FMOL_S} & 0.00789058049 & No & WT architecture derived \\
+\path{nbc_design.DERIVED_AE4_CL_FMOL_S} & 0.109819031 & No & WT architecture derived \\
+\path{nbc_design.DERIVED_STIMULATED_NHE1_FMOL_S} & 0.0181483351 & No & WT architecture derived \\
+\path{nbc_design.DERIVED_REQUIRED_NBC_CYCLE_FMOL_S} & 0.100744863 & No & WT architecture derived \\
+\path{frozen_initial.na_i_fmol} & 16.7203587 & Yes & WT constraint derived \\
+\path{frozen_initial.k_i_fmol} & 170.002009 & Yes & WT constraint derived \\
+\path{frozen_initial.cl_i_fmol} & 88.031802 & Yes & WT constraint derived \\
+\path{frozen_initial.tic_i_fmol} & 8.26351181 & Yes & WT constraint derived \\
+\path{frozen_initial.alk_i_fmol} & 20.6288031 & Yes & WT constraint derived \\
+\path{frozen_initial.volume_i_pL} & 1.45333439 & Yes & WT constraint derived \\
+\path{frozen_initial.na_l_fmol} & 13.1277687 & Yes & WT constraint derived \\
+\path{frozen_initial.k_l_fmol} & 2.71897261 & Yes & WT constraint derived \\
+\path{frozen_initial.cl_l_fmol} & 15.3786879 & Yes & WT constraint derived \\
+\path{frozen_initial.tic_l_fmol} & 0.540262316 & Yes & WT constraint derived \\
+\path{frozen_initial.alk_l_fmol} & 0.468053423 & Yes & WT constraint derived \\
+\path{frozen_initial.volume_l_pL} & 0.105388407 & Yes & WT constraint derived \\
+\path{frozen_initial.ae4_effective_activation_fraction} & 0 & Yes & WT constraint derived \\
 \end{longtable}
 \normalsize

@@ -1,18 +1,20 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 \usepackage[margin=26mm]{geometry}
 \usepackage{amsmath,amssymb,booktabs,longtable,microtype,natbib}
 \usepackage[hidelinks]{hyperref}
 \usepackage[nameinlink,noabbrev]{cleveref}
 \usepackage{url}
+\input{output/audit_counts.tex}
 \title{Parameter provenance and conditional justification of the reconstructed AE4 model}
 \author{Technical report for the AE4 project}
 \date{15 September 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
-This report inventories the actual Task 40 production objects, rather than treating dataclass defaults as the model parameter set. Each numerical value, protocol setting and inactive legacy field is classified by its role and provenance. The inventory contains 105 records, of which 86 are marked active; these are not 86 independently fitted physiological parameters. Published kinetic coefficients, transferred model settings, quantities derived from WT constraints, effective assumptions, numerical controls and the separate Task 41 inverse parameter are distinguished. No parameter is refitted, no experimental uncertainty interval is invented, and no historical model or result is changed. Several quantities are mathematically derived but remain conditional on unmeasured assumptions, most notably the NBC capacity constructed from a 70/30 chloride loading partition. The accompanying full system analysis provides local sensitivity evidence, not a substitute for experimental parameter identification.
+This report inventories the actual Task 40 production objects, rather than treating dataclass defaults as the model parameter set. Each numerical value, protocol setting and inactive legacy field is classified by its role and provenance. The inventory contains \InventoryCount{} records, of which \ActiveCount{} are marked active; these are not independently fitted physiological parameters. Published kinetic coefficients, transferred model settings, quantities derived from WT constraints, effective assumptions, numerical controls and the separate Task 41 inverse parameter are distinguished. No parameter is refitted, no experimental uncertainty interval is invented, and no historical model or result is changed. Several quantities are mathematically derived but remain conditional on unmeasured assumptions, most notably the NBC capacity constructed from a 70/30 chloride loading partition. The accompanying full system analysis provides local sensitivity evidence, not a substitute for experimental parameter identification.
 \end{abstract}
 
 \section{Source of the audit}
@@ -23,7 +25,7 @@ The model lineage includes the original AE4 reconstruction \citep{VeraSiguenza20
 \section{What counts as a justification}
 A published numerical coefficient has a source, but transfer from another tissue or model still needs an applicability argument. A value determined by a balance equation is justified conditional on the concentrations, fluxes and structural assumptions used in that balance. A value selected to keep a reference trajectory within physiological limits is an effective modelling choice; acceptance of that trajectory does not make the value measured, unique, or known within an uncertainty interval. A numerical inversion bracket is not a physiological observation. A parameter selected using the knockout phenotype must remain labelled as an inverse design choice.
 
-The inventory records value, units, original metadata, active role, classification, source path, mathematical justification, default value and whether the active value differs from that default. Its uncertainty field states explicitly when no measured interval has been established. Classification is conservative: inherited metadata identifies a lineage, not a newly verified measurement of salivary transporter abundance.
+The inventory records value, units, original metadata, active role, classification, exact code locations, the equation role and source, mathematical justification, default value and whether the active value differs from that default. Separate fields state what constrains each quantity, what does not justify it, its logical domain, its uncertainty status, its relevance to manuscript conclusions, and an experiment that could constrain it. Classification is conservative: inherited metadata identifies a lineage, not a newly verified measurement of salivary transporter abundance. Each physiological uncertainty interval remains explicitly null in the machine readable inventory. Logical positivity or fractional bounds are not substituted for experimental uncertainty.
 
 The current categories include physical constants; published kinetic coefficients; inherited model conversions or settings; reference and WT constraint derived values; WT architecture derived values; effective assumptions; numerical brackets and regularisation; protocol and law selections; inactive legacy values; constructor seeds; and the target selected Task 41 parameter. These categories should not be collapsed into a single ``from the literature'' column.
 
@@ -51,6 +53,8 @@ The active NHE1 law is the eight state Cha reduction with its Mod2 term. Printed
  N_H=2.339370005697548\times10^{-5}\ \mathrm{fmol}.
 \]
 This was determined against a resting pH target of 6.91 on the selected R09 background. The derivation fixes one scale conditional on that background and target. It does not identify a cardiac carrier count as a salivary measurement, nor does it prove unique joint identification of the carrier amount, buffer pool and other pH pathways.
+
+The completion audit also records the fixed Mod2 exponents $n_H=3$ and $m_H=1$, which were absent from the earlier inventory because they are module constants rather than dataclass fields. Both are part of the selected kinetic law. Their inclusion corrects an inventory omission without changing the model.
 
 Legacy tanh NHE capacity and older NHE kinetic fields remain in the dataclass for other models, but are inactive in production. The active stimulus multiplier is 2.3. Calling it fixed before the test documents absence of retuning; it does not establish that its transfer to every tissue and stimulus is exact. The mathematical companion report shows explicitly how the alkalinity bound depends on this multiplier and $N_H$.
 
@@ -92,6 +96,12 @@ The numerical pH bracket from 3 to 11 only enables inversion; the actual inherit
 
 Finally, the Task 41 residual CaCC recruitment coefficient $b=0.10511872843288446$ is target selected. It is not an active parameter of the parent Task 40 model and is not reclassified as literature supported merely because the resulting trajectory has an appropriate secretion magnitude.
 
+The CCh and IPR dose fields, $0.3$ and $5\ \mu$M respectively, are experiment labels in this implementation. The selected input callable returns prescribed calcium and beta activation from the input arm and time window; it does not map those dose values through a dose response law. They are therefore retained as protocol metadata but marked inactive for the selected right hand side. The previous inventory incorrectly marked both active. Changing the nominal dose labels alone cannot change the model trajectory.
+
+The frozen initial state is now recorded separately, with all twelve conserved amount and volume coordinates and the AE4 regulatory fraction. The twelve constructor reference fields remain distinct. The upstream NBC design quantities, selected transport laws, R1 regulatory family and WT construct are also explicit. These additions explain the larger record count; they add no fitted degrees of freedom.
+
+The additional file \path{output/numerical_controls.json} records the production integration specification, conservation tolerances, pH inversion tolerances and voltage bracket. In particular, $[-0.5,0.5]$ V is the implemented voltage search bracket and not a measured physiological voltage interval. Exact unit conversions are stated separately from physiological settings.
+
 \section{What the mathematical analysis adds to justification}
 The separate Task 44 report uses the unchanged reference parameter set and retains carbon, alkalinity, volume, lumen and electrical feedback. It supplies exact structural identities and a conditional NHE supply bound, then evaluates local stationary sensitivities. These calculations help identify which assumptions affect which conclusions. They do not estimate experimental uncertainty intervals.
 
@@ -104,7 +114,9 @@ The remaining parameter work is substantive rather than typographical: independe
 \section{Reproducibility and use in the manuscript}
 Run \texttt{python analysis/43\_parameter\_provenance/audit.py} from the repository root. It verifies the production parameter hashes and writes both CSV and JSON inventories under this task's \texttt{output} directory. Each record contains source paths and justification notes beyond the abbreviated table below. \texttt{prepare\_report.py} typesets the table from those records. The report and the full inventory belong on the Task 43 branch, separate from the mathematical analysis and from the main manuscript.
 
-The inventory has 105 records and 86 active flags. This is an inventory of configuration and roles, not a count of independent degrees of freedom: it includes physical constants, protocol settings, law selections, derived values and other nonfit quantities. Five legacy fields and twelve constructor seed fields are explicitly separated. The Task 41 inverse coefficient is also outside the parent model.
+The inventory has \InventoryCount{} records and \ActiveCount{} active flags. This is an inventory of configuration and roles, not a count of independent degrees of freedom: it includes physical constants, protocol settings, law selections, derived values and other nonfit quantities. Five legacy fields and twelve constructor seed fields are explicitly separated. The Task 41 inverse coefficient is also outside the parent model.
+
+Run \path{analysis/43_parameter_provenance/verify.py} to compare the saved CSV/JSON products with a fresh reconstruction, check every nested production field, verify source hashes, confirm the fixed Cha exponents and demonstrate that changing dose labels leaves the selected input unchanged. The audit performs no fresh sensitivity simulations. The source manifest contains SHA256 values for the production modules and frozen inputs; verification also checks that protected paths are unchanged from recovered Task 43 checkpoint \texttt{693f44c0b05e92faec737aa7793c3a99ec76445c}.
 
 No model source, historical analysis, frozen trajectory or main manuscript is modified by this audit. The exact original metadata is retained in the machine readable inventory, while the new classification states what that metadata does and does not justify.
 

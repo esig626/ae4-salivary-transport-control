@@ -9,7 +9,8 @@ from collections import Counter
 ROOT=Path(__file__).resolve().parents[2];OUT=Path(__file__).resolve().parent/'output';OUT.mkdir(exist_ok=True)
 sys.path.insert(0,str(ROOT/'src'))
 from modern_full_model.parameters import parameter_records,FullModelParameters
-from modern_full_model.nhe1_cha2009 import published_cha_kinetics
+from modern_full_model.nhe1_cha2009 import (published_cha_kinetics,
+    INTRACELLULAR_MODIFIER_HILL,EXTRACELLULAR_MODIFIER_HILL)
 from modern_full_model.nkcc1_palk2010 import A1,A2_MM,A3,A4_MM
 from modern_full_model.validation import sha256_object
 spec=importlib.util.spec_from_file_location('task40_readonly',ROOT/'analysis/40_ae4_equal_cation_routing/validation_common.py')
@@ -86,11 +87,61 @@ for n,v in asdict(reg.nkcc1_regulatory_model).items():
 for n,v in asdict(model.stimulus).items():
     add('protocol.'+n,v,'s' if n.endswith('_s') else 'uM' if n.endswith('_uM') else 'configuration','protocol_setting','src/modern_full_model/validation.py','Declared experimental-input representation, including a step waveform; this is not evidence for measured intracellular calcium kinetics.')
 add('Task41.b',.10511872843288446,'dimensionless','target_selected','src/modern_full_model/task41_selected.py','Residual CaCC recruitment in the deliberately inverse Task 41 construction. Not part of the parent Task 40 parameter set.',active=False)
+for n,v in [('intracellular_modifier_hill',INTRACELLULAR_MODIFIER_HILL),
+            ('extracellular_modifier_hill',EXTRACELLULAR_MODIFIER_HILL)]:
+    add('cha.'+n,v,'dimensionless','published_kinetic_coefficient',
+        'src/modern_full_model/nhe1_cha2009.py',
+        'Cha 2009 Eq. 5 Mod2 exponent; a fixed published exponent, not an identified salivary abundance.')
+add('nkcc.law',model.nkcc1_kinetics.law,'model identifier','law_selection',
+    'src/modern_full_model/nkcc1_palk2010.py','Explicit Palk/Benjamin law selected by the Task 39 builder and inherited by Task 40.')
+add('ae4.law',model.ae4_evaluator.__name__,'model identifier','law_selection',
+    'src/modern_full_model/ae4_equal_cation_routing.py','Equal cation routing fixes source shares at one half each while retaining the inherited total scalar cycle flux.')
+add('regulation.family',reg.ae4_regulatory_model.family,'model identifier','law_selection',
+    'src/modern_full_model/camp_pka.py','One retained effective AE4 activation state; no measured separation of cAMP and PKA kinetics.')
+add('regulation.construct',reg.ae4_regulatory_model.construct.value,'construct identifier','protocol_setting',
+    'src/modern_full_model/camp_pka.py','WT construct selects unit response scale in the gain map.')
+add('nkcc_activation.family',reg.nkcc1_regulatory_model.family,'model identifier','law_selection',
+    'src/modern_full_model/nkcc_stimulation.py','Selected instantaneous calcium recruitment family; no added NKCC dynamic state.')
+from modern_full_model import nbc_minimal as nbc
+for n in ['TARGET_NKCC1_POSITIVE_CL_SHARE','TASK31_R09_NKCC1_CL_FMOL_S','TASK31_R09_NHE1_FMOL_S',
+          'DERIVED_AE4_CL_FMOL_S','DERIVED_STIMULATED_NHE1_FMOL_S','DERIVED_REQUIRED_NBC_CYCLE_FMOL_S']:
+    add('nbc_design.'+n,getattr(nbc,n),'dimensionless' if n.endswith('SHARE') else 'fmol/s',
+        'effective_assumption' if n.endswith('SHARE') else 'WT_architecture_derived',
+        'src/modern_full_model/nbc_minimal.py; analysis/36_minimal_nahco3_alkalinity/design.md',
+        'Design input or conditional derived quantity upstream of the frozen NBC capacity; not independently evaluated in the production RHS. The 70/30 share is assumed, and the reference fluxes are modelled.',active=False)
+frozen_rest=json.loads((ROOT/'results/40_ae4_equal_cation_routing/wt_rest.json').read_text())
+assert sha256_object(frozen_rest['state_vector'])==freeze['frozen_rest_state_sha256']
+for n,v in zip(model.state_names,frozen_rest['state_vector']):
+    add('frozen_initial.'+n,v,'pL' if 'volume' in n else 'dimensionless' if 'fraction' in n else 'fmol',
+        'WT_constraint_derived','results/40_ae4_equal_cation_routing/wt_rest.json',
+        'Solved, accepted WT resting state used as the shared initial condition for production genotype trajectories; not the constructor seed and not an independent measurement.')
+from provenance_metadata import enrich_inventory,write_source_manifest
+enrich_inventory(rows,ROOT)
+write_source_manifest(rows,ROOT,OUT)
+from modern_full_model.validation import PRODUCTION_RADAU, CONSERVATION_RESIDUAL_TOLERANCES
+from modern_full_model.camp_pka import INTEGRATION_TRIAL_TOLERANCE
+(OUT/'numerical_controls.json').write_text(json.dumps({
+    'classification':'numerical controls and unit conventions, not physiological uncertainty',
+    'production_solver':asdict(PRODUCTION_RADAU),
+    'conservation_tolerances':dict(CONSERVATION_RESIDUAL_TOLERANCES),
+    'regulatory_trial_tolerance':INTEGRATION_TRIAL_TOLERANCE,
+    'ph_inversion':{'lower':model.parameters.acid_base.ph_lower,'upper':model.parameters.acid_base.ph_upper,
+                    'xtol':1e-12,'rtol':1e-13,'source':'src/modern_full_model/acid_base.py:speciate'},
+    'voltage_inversion':{'lower_V':-.5,'upper_V':.5,'xtol_V':1e-14,'rtol':1e-13,
+                         'source':'src/modern_full_model/nbc_minimal.py:evaluate_membrane_closure_with_nbc'},
+    'unit_conventions':{'mM_times_pL_equals_fmol':True,'fmol_per_mol':1e15,'ms_per_s':1000},
+    'note':'Tolerances are audited from retained source or production specifications. They do not bound model error or parameter uncertainty.'
+},indent=2,sort_keys=True)+'\n')
 with (OUT/'parameter_inventory.csv').open('w',newline='') as f:
-    keys=list(dict.fromkeys(k for r in rows for k in r));w=csv.DictWriter(f,keys);w.writeheader();w.writerows(rows)
+    keys=list(dict.fromkeys(k for r in rows for k in r));w=csv.DictWriter(f,keys,lineterminator='\n');w.writeheader();w.writerows(rows)
 (OUT/'parameter_inventory.json').write_text(json.dumps(rows,indent=2,default=str,allow_nan=False)+'\n')
 summary=dict(base_main='c4d4f207f702d8eee09ab94d2d90ae90552dd641',records=len(rows),active_records=sum(r['active'] for r in rows),
   classifications=dict(Counter(r['classification'] for r in rows)),active_parameters_hashes=task.parameter_hashes(model),
-  calibrated_uncertainty_intervals=0,parameter_fits_performed=0,model_or_frozen_outputs_modified=False)
+  calibrated_uncertainty_intervals=0,parameter_fits_performed=0,model_or_frozen_outputs_modified=False,
+  frozen_initial_state_sha256=freeze['frozen_rest_state_sha256'],
+  coverage='All fields of the actual nested production objects, fixed Cha exponents, selected laws, NBC design assumptions, and frozen initial state. Arithmetic unit conversions and numerical solver tolerances are documented separately, not counted as physiological parameters.',
+  corrections=['Cha Mod2 exponents added','Agonist doses are protocol metadata, not inputs used by the selected RHS',
+               'Law identifiers, WT construct, NBC construction quantities and actual frozen initial state added'],
+  uncertainty_interpretation='Logical domains and physiology gates are not measured uncertainty intervals; all effective parameter intervals remain unestablished.')
 (OUT/'audit_summary.json').write_text(json.dumps(summary,indent=2,sort_keys=True)+'\n')
 print(json.dumps(summary,indent=2))
