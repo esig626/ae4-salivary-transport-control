@@ -19,7 +19,6 @@ The main findings are:
 3. **Catalán 2025 stoichiometry alone is insufficient.** Seven predeclared source classes were frozen before phenotype comparison. None recovers the approximately 35% AE4-null secretion phenotype under the inherited scalar AE4 kinetic law. Three carbonate classes fail the stimulated wild-type pH gate.
 4. **A constructive regulatory coupling can recover the magnitude.** A target-selected AE4-dependent reduction in stimulated CaCC recruitment gives 23.16% loss at 5% AE4 and 30.26% in the null while passing the declared 600 s gates. This is a modelling hypothesis, not independent biological validation, and it does not reproduce the complete sodium or temporal phenotype.
 
-The biological importance of AE4 survives the decade, but cation stoichiometry alone does not explain the knockout. Acid-base supply, NKCC1 compensation and sustained regulation of apical chloride exit remain the decisive unresolved mechanisms.
 
 ## Manuscript
 
