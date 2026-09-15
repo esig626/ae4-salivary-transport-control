@@ -2,25 +2,59 @@ name: Technical report source and build
 on:
   push:
     branches: [report/tasks-43-44-technical-analysis]
-    paths: [report/**, .github/workflows/technical-report.yml]
+    paths: [report/BUILD_REQUEST.txt, .github/workflows/technical-report.yml]
 permissions:
   contents: read
 jobs:
-  sources:
+  report:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Export pinned source records
+      - name: Export report sources
         run: |
           mkdir -p source_export
-          git archive --format=tar 547f113d9123ab1976774639a69483faf40cef34 analysis/43_parameter_provenance > source_export/task43.tar
-          git archive --format=tar e5fa9840bf96be3147c6118daee4942468c78f8b > source_export/task44_repository.tar
-          git archive --format=tar 850706dd6b64d68793d7bca89adc65679c73d4b0 > source_export/main_repository.tar
+          git archive --format=tar HEAD report > source_export/report_source.tar
       - uses: actions/upload-artifact@v4
         with:
-          name: technical-report-pinned-sources
+          name: technical-report-writing-source
           path: source_export/
           retention-days: 7
+          if-no-files-found: error
+      - name: Install report toolchain
+        if: hashFiles('report/BUILD_REQUEST.txt') != ''
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends cm-super lmodern poppler-utils latexmk texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-science
+      - name: Assemble and compile the full report
+        if: hashFiles('report/BUILD_REQUEST.txt') != ''
+        run: bash report/build.sh
+      - name: Publish verified report files on the report branch
+        if: hashFiles('report/BUILD_REQUEST.txt') != ''
+        run: |
+          git fetch origin report/tasks-43-44-technical-analysis
+          test "$(git rev-parse origin/report/tasks-43-44-technical-analysis)" = "$GITHUB_SHA"
+          git switch -c report-publication
+          git add -f report/evidence report/generated report/SOURCE_MANIFEST.json report/COVERAGE.md report/BUILD_VERIFICATION.json report/AE4_mathematical_analysis_report.pdf
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Publish complete source grounded mathematical report and evidence'
+            git push origin HEAD:report/tasks-43-44-technical-analysis
+          fi
+      - name: Prepare complete reading package
+        if: hashFiles('report/BUILD_REQUEST.txt') != ''
+        run: |
+          mkdir -p reading_package
+          git archive --format=tar HEAD report > reading_package/report.tar
+          cp report/AE4_mathematical_analysis_report.pdf reading_package/
+      - uses: actions/upload-artifact@v4
+        if: hashFiles('report/BUILD_REQUEST.txt') != ''
+        with:
+          name: AE4-complete-technical-report
+          path: reading_package/
+          retention-days: 30
           if-no-files-found: error
