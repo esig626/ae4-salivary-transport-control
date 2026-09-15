@@ -1,26 +1,9 @@
-# Current status — milestone 01: Task 44 failure baseline replay
+# Checkpoint 01 — Task 44 failure baseline replay
 
 - Milestone: 01, reproduce the unchanged relevant Task 44 baseline.
 - Branch: `analysis/task-46-physiology-constrained-model-reconstruction`.
 - Branch head before milestone: `6b8fc26df59da943e2656cf3237ee603311c00a7`.
 - Previous remotely verified checkpoint: 00 at that same SHA.
-
-## Recovery verification on 15 September 2026
-
-Resumed from the requested checkpoint 00 commit with the unpublished milestone
-01 payload already staged. Fetched the remote branch and confirmed it remained
-at that same commit; fast-forward reconciliation was already up to date.
-Preserved `CHECKPOINT_01.md`, the replay scripts and every recovered numerical
-output byte for byte. The fresh independent verifier again passed 67,067
-numerical comparisons and 3,886 logical checks, including 1,806 fresh state
-evaluations and 88 eigenvalue comparisons. Its complete output is byte-identical
-to `output/checkpoint_01_independent_verification.json`. The recovery receipt is
-`output/checkpoint_01_recovery.json`; it records hashes and the exact command.
-No additional integrations or root solves were required for recovery.
-
-This resumption completes and publishes milestone 01 only. Milestone 02 remains
-unstarted; the next-milestone instructions below are a handoff for a later
-authorised resumption.
 
 ## Completed
 

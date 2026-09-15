@@ -1,0 +1,71 @@
+{
+  "additional_integrations_on_recovery": 0,
+  "additional_root_solves_on_recovery": 0,
+  "bit_identical_numeric_values": 67060,
+  "eigenvalues_checked": 88,
+  "failures": [],
+  "fresh_verification_command": "PYTHONDONTWRITEBYTECODE=1 python analysis/46_physiology_constrained_model_reconstruction/verify_baseline.py --source43 /workspace/scratch/ce655be6164c/source43 --source44 /workspace/scratch/ce655be6164c/source44 --output /workspace/scratch/461d1b5502ce/checkpoint_01_recovery_verification.json",
+  "fresh_verification_identical_to_recovered_record": true,
+  "independent_dense_state_evaluations": 1806,
+  "intentional_recovered_file_update": "CURRENT_STATUS.md: append recovery verification and milestone 01-only stopping scope.",
+  "logical_or_gate_checks": 3886,
+  "milestone": "01: reproduce Task 44 failure baseline",
+  "numeric_comparisons": 67067,
+  "protected_remote_refs_before_publication": {
+    "refs/heads/analysis/task-43-parameter-provenance": "547f113d9123ab1976774639a69483faf40cef34",
+    "refs/heads/analysis/task-44-full-system-mathematics": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+    "refs/heads/main": "850706dd6b64d68793d7bca89adc65679c73d4b0",
+    "refs/heads/manuscript/bmb-ae4-decade-reassessment": "bac1cb7d8801c955191ada7cc79861dbb98a8c0d"
+  },
+  "publication_gate": "The containing commit identifies checkpoint 01. After the non-forced Task 46 ref update, fetch and fast-forward the local branch, require a clean working tree and verify the remote head equals the containing commit. Recheck protected refs. No next milestone is authorised in this resumption.",
+  "recovered_files_unchanged_count": 26,
+  "recovered_files_unchanged_sha256": {
+    "analysis/46_physiology_constrained_model_reconstruction/BASELINE_REPRODUCTION.md": "81430841e6a73c705e4fea50b29017c680c149cae4e89689de4f553f2aa282f4",
+    "analysis/46_physiology_constrained_model_reconstruction/CHECKPOINT_00.md": "dabf79b4be3dc1ca3be62d36aa73010f88b9863d1032a73e3273c7936827dc0a",
+    "analysis/46_physiology_constrained_model_reconstruction/CHECKPOINT_01.md": "df737dfe98073fff993933a920ff81ce5d64ee90a6ebbddbb341f487fdbd1698",
+    "analysis/46_physiology_constrained_model_reconstruction/PROTOCOL.md": "7b8e75db7b3debb201f8a53757ee4f5b53e41af9a43ef71ba16673c5ca24cff0",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_attempt01_failure.json": "c4262b4ececdc7d069787ec40d9c23ccd049de9c3d154582a6a8c3eed44f5be9",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_baseline/wt_states.csv": "c5098e4b61cffe65c1110e8fc54b72ac849f5ccfc66d4ea03c7cc3023d5b1991",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_baseline/wt_trajectory.csv": "966b21e72cca1f1afb97de1459bcd56821d1d0d04831172928f4719fdefb4b74",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_execution.json": "3da0d4c0813828d73a80572dee51b17417fd1f62f33edece893b1b87c0080659",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_independent_verification.json": "9b55a07b6a73c8530e47e623fc581ca237446fe1ec8a4aef282b9c1727c89904",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/ae4_5pct_states.csv": "e6ef79d3674e433740859147bc0323d2c64e484ce374a3c31cc591f57ed3878a",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/ae4_5pct_summary.json": "bc378f11d5865b95bc163e0f23abe77f800c11cc4abd1c5ccd7e3ec12e4a0f49",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/ae4_5pct_trajectory.csv": "e2469693f6d476a089a214a290479f297b5d80e3964eff6b089556c3139078d0",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/ae4_null_states.csv": "eebe08fed29b31d4f722ff123bf3f44fcc01398b474241b72d89a223209869d1",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/ae4_null_summary.json": "cddc7cabe37b0b52a5be0aab08ee1bb023521cb54f035732b2951d36337d369d",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/ae4_null_trajectory.csv": "756dbbeef1ae4b0a6351e76cbdefdbbd8b722c0bbf1329f189079c81053a7881",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/compensation.json": "5d85f447b29922a36bfa427a1a10281d5234f5dca0462d23f279f0dc473873d0",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/equilibria.json": "af7c0498734984751c6fb4ea57c14838bc685f11b55926370a6a2de424c42069",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/implicit_verification.json": "67d49bbdfbf9dbf645a73bed9c402a1da2afdc2768ba8f714463e52184111b2e",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/verification.json": "2c9dbe59611ecd9a2ff88151f9002bff72b18c9b17386a7122e8ecf6639e1da2",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/wt_states.csv": "c5098e4b61cffe65c1110e8fc54b72ac849f5ccfc66d4ea03c7cc3023d5b1991",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/wt_summary.json": "29921f99bb9a581deeaf48049284756ce2886b3c80f3064fc898f483d111f53e",
+    "analysis/46_physiology_constrained_model_reconstruction/output/checkpoint_01_replay/wt_trajectory.csv": "966b21e72cca1f1afb97de1459bcd56821d1d0d04831172928f4719fdefb4b74",
+    "analysis/46_physiology_constrained_model_reconstruction/replay_baseline.py": "16baaf9bf179a126d8eff3a7dcfc08cea20250e515a2140fed881cef0e49763f",
+    "analysis/46_physiology_constrained_model_reconstruction/source_pins.json": "aa1208d7d016f70e0a1bae63ed97216bd6815ccf99fac728835648e48d88a403",
+    "analysis/46_physiology_constrained_model_reconstruction/verify_baseline.py": "34efc4d15520b1f90cead8391d512a60471e6469509e5139656b07635d7adf60",
+    "analysis/46_physiology_constrained_model_reconstruction/verify_checkpoint.py": "1b98b56ff7c518de7c29cf0dd1b3fe5d23f78247f63ee6975b5fad6e42f47549"
+  },
+  "recovered_staged_tree_sha_before_status_update": "7eafccb3c976578037cef38e910498ca1a94fff0",
+  "recovery_scope": "Inspect and verify the interrupted unpublished milestone 01, then publish it. Milestone 02 is not started.",
+  "remote_task46_head_at_recovery": "6b8fc26df59da943e2656cf3237ee603311c00a7",
+  "resume_sha": "6b8fc26df59da943e2656cf3237ee603311c00a7",
+  "retained_verification_record": "output/checkpoint_01_independent_verification.json",
+  "source_pins": {
+    "task43": {
+      "clean_after": true,
+      "clean_before": true,
+      "head": "547f113d9123ab1976774639a69483faf40cef34"
+    },
+    "task44": {
+      "clean_after": true,
+      "clean_before": true,
+      "head": "e5fa9840bf96be3147c6118daee4942468c78f8b"
+    }
+  },
+  "status": "passed",
+  "tolerated_numeric_values": 7,
+  "verification_record_sha256": "9b55a07b6a73c8530e47e623fc581ca237446fe1ec8a4aef282b9c1727c89904",
+  "verified_at_utc": "2026-09-15T09:55:54.245964+00:00"
+}

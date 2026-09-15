@@ -58,6 +58,18 @@ the next checkpoint records that SHA. Final publication reporting must list all
 checkpoint SHAs. Numerical outputs use immutable `output/checkpoint_XX_*` names.
 Earlier checkpoint files and outputs are never overwritten.
 
+Shell Git reads work, but shell pushes have no configured write credentials.
+Use the connected GitHub integration for publication: create the verified tree
+and commit on the current remote parent, then update only the Task 46 ref with
+`force=false`. Fetch that commit and fast-forward the local branch. Stage the
+exact reviewed files first so the identical incoming tree can be checked.
+If an untracked-file collision prevents fast-forward, preserve the local
+payload in a stash, fast-forward, and verify file hashes; do not reapply a
+duplicate payload or reset/rebase divergent history. Never invent or obtain
+shell credentials. The first failed shell-push commit was left untouched in
+its original scratch clone; checkpoint 00 was published with the identical
+Git tree through the integration and independently checked in a new clone.
+
 On recovery, fetch and read the latest remotely published checkpoint, confirm
 its commit, and execute only its declared next work. Do not restart completed
 scientific milestones. An interrupted local stage is uncompleted until verified
