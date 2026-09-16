@@ -1,15 +1,19 @@
-# Task 52 current status
+# Task52 current status
 
-**State:** STAGED / NOT STARTED SCIENTIFICALLY.
+**State: 52A COMPLETE — awaiting independent remote verification.**
 
-Prepared branch: `analysis/task-52-chloride-reservoir-final-test`.
+Branch: `analysis/task-52-chloride-reservoir-final-test`.
+Operational start: `eacfe603faa3ce0b2aa26814b348a1ae44417cdc`.
+Scientific chassis: exact accepted pre-Palk Task37 `2ba0e4e0c2a9e940aa96ed86c3c72456afd0e3aa`.
 
-Scientific parent: merged canonical main `d2b14c2821dd7e38703620389097cc8f1052977a`.
+The complete binding stack, including R51H and R51I, has been read.
+Source/parameter/rest/result provenance and the isolated dependency plan pass.
+The eight cases, inherited stiff solver and physical gates, observation windows,
+and independent chloride mass-balance quadrature are frozen prospectively.
+Task37 donor-weighted AE4 routing is retained; the later equal-routing
+stationary identity is not imposed on this chassis.
+Task50 archive independently remains `b16c30094b95f61a73d8f1977cd58e79c7bb50f6`.
 
-Exactly one scientific/Codex shot remains and Task52 consumes it.
-
-No Task52 model evaluation, trajectory, fit, optimisation or stationary solve has yet been run.
-
-Controlling question: whether the full pre-Palk conservation model retains the substantial chloride-export effect seen in R51I when genotype onset chloride is measurement-constrained, AE4 supply is WT-only, non-AE4 chloride supply is matched across genotypes, and apical secretory demand is shared.
-
-Task50 archive remains untouched and is benchmark only.
+Model evaluations: 0. Production trajectories: 0. Stationary solves/fits/searches: 0.
+Next: 52B implementation/fixed-state checks only after remotely verified52A.
+No Task53; stop after final remotely verified52F.

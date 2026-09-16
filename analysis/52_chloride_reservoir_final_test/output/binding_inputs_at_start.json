@@ -1,0 +1,22 @@
+{
+  "operational_start": "eacfe603faa3ce0b2aa26814b348a1ae44417cdc",
+  "read_completely_before_scientific_decisions": true,
+  "sha256": {
+    "AGENTS.md": "e3673d21d9e49fc78aeac15c41540641427ccef2ea424c7614195389a5e1a9a0",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/BETA_NKCC_VRAC_RECONSTRUCTION_REPORT.md": "f644568cecccda57321677614fe7abf37057fc301a50996b2dfac58010b5b952",
+    "analysis/52_chloride_reservoir_final_test/CODEX_START_HERE.md": "533ceaa25de4b9262e28cd099a04964002133119a8f052f026e1f22669a5d9d8",
+    "analysis/README.md": "16a43b7eef0c1662783b00a3ad44d48a40ac125d997d232d3cbbc5faf8a34f3a",
+    "analysis/pre_task52_algebraic_gate/CHLORIDE_RESERVOIR_SOLUTION.md": "67e49c386d7ed43a017e86938f8641a1341772ee9bd266973da2816e608f8653",
+    "analysis/pre_task52_algebraic_gate/PRE_TASK52_ALGEBRAIC_GATE.md": "86a0f14b2dfcb943f2d470c3dcbb75fcd55c7cea440914704bcdf0a9dae66ebd",
+    "analysis/pre_task52_algebraic_gate/REDUCED_RESERVOIR_SIMULATION.md": "cea19be2827a801c69ed9ba43c7dec05fb45aaa8d659bc807e75a8e090b0fc53",
+    "docs/MANDATORY_RESEARCH_LEDGER.md": "a0c4717179fa4aa98d03916e3aeb2dddcc6fb638cd8bfef77a786400bc69306b",
+    "docs/MANDATORY_RESEARCH_LEDGER_PRE_TASK52_APPENDIX.md": "44a3a95a43d3ea4469c7d21576c8180cd3e04dbf2280eb8e13ca0d80e86907d3",
+    "docs/MANDATORY_RESEARCH_LEDGER_R51H.md": "3c2fd4aa5239c461ae1daa4393d87d8fd1fe9ec05038b82b22d534321ee4078e",
+    "docs/MANDATORY_RESEARCH_LEDGER_R51I.md": "357eb72135233a5a972c82a6629b45b2acda6bd2eeae9286d0e862585f0fca11",
+    "docs/MANDATORY_RESEARCH_LEDGER_TASK52_START.md": "156cf09488a56fcee4db08ee19966e6e0742075a6336d3ea46d150952dca7924",
+    "docs/PHENOTYPE_TARGET_CONVENTION.md": "d6e53620e3a08cca4717488ea4e8ab12ec4a50cdc5b85f909f711074d222dfd2",
+    "docs/RESULTS_LEDGER.md": "ae2e64905e55a46549a1abecd26268d126a1d26ecee928f8e2162483a101c0f8",
+    "docs/TASK50_EFFECTIVE_COUPLING_BENCHMARK.md": "8a39d9a6ce4864e3fd97b03952f1089aaa68ee00ebf6134771120c5e0d010753",
+    "prompts/52_chloride_reservoir_final_test.md": "441c08b512d98b80ab3bbf09b5919fdb2e1233277041f859f5413f874f6ee605"
+  }
+}

@@ -107,3 +107,20 @@ A fluid deficit without this mass accounting is not sufficient to claim the rese
 Success means independently fixed/shared physiology plus the measured reservoir produces a substantial, persistent fluid deficit with all physical/conservation gates passing.
 
 Failure is final. Do not add another mechanism. Task50 remains the target-calibrated quantitative proof of missing beta-conditioned coupling if Task52 does not succeed.
+
+## D52-11 — exact Task37 source isolation and numerical audit
+
+Before model evaluation, the complete binding stack and overlapping Task37–51
+reports were read. R51H/R51I and the Task52-start ledger control over the older
+R51G recommendation. Materialise exact Task37 source dependencies in a task-local
+snapshot only after verified 52A: current optional NKCC selectors can import the
+forbidden Palk module. Use Task37's original donor-weighted AE4 allocation;
+do not substitute Task40's 50:50 routing. The required chloride identity is
+routing-independent; R51G's equal-routing stationary identity is not a Task37
+constraint. No closed scientific axis is reopened.
+
+Inherited solver/physical gates and the prospective independent quadrature,
+onset handling, failure handling, exact eight-case matrix and reporting windows
+are fixed in ARCHITECTURE_AND_NUMERICS_FREEZE.md and output/case_matrix_52A.json.
+The projection is a deterministic equation solve only; no resting-model solve,
+parameter fit or production trajectory occurs before its authorised boundary.

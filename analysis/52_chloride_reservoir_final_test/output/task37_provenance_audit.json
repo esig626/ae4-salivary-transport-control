@@ -1,0 +1,680 @@
+{
+  "ae4_regulation_static_source": {
+    "basal_capacity_multiplier": 1.0,
+    "class": "R1EffectiveActivation",
+    "construct": "WT",
+    "coupling_scale": 1.0,
+    "fully_activated_increment": 0.25,
+    "onset_regulatory_coordinate": 0.0,
+    "tau_activation_s": 30.0
+  },
+  "basis": [
+    "R36-R37",
+    "R38",
+    "R39-R40",
+    "R51H",
+    "R51I",
+    "R52A scientific parent",
+    "D52-03",
+    "D52-04",
+    "D52-08"
+  ],
+  "candidate_plan": {
+    "copy_after_remotely_verified_52A": [
+      "src/modern_full_model/__init__.py",
+      "src/modern_full_model/acid_base.py",
+      "src/modern_full_model/ae4_routing_only.py",
+      "src/modern_full_model/camp_pka.py",
+      "src/modern_full_model/membranes.py",
+      "src/modern_full_model/model.py",
+      "src/modern_full_model/nbc_minimal.py",
+      "src/modern_full_model/nhe1_cha2009.py",
+      "src/modern_full_model/nkcc_stimulation.py",
+      "src/modern_full_model/parameters.py",
+      "src/modern_full_model/states.py",
+      "src/modern_full_model/task30_nhe1_repair.py",
+      "src/modern_full_model/task31_nhe1_repair.py",
+      "src/modern_full_model/transporters.py",
+      "src/modern_full_model/validation.py",
+      "src/modern_full_model/water.py",
+      "reference/R09_wt_rest.json",
+      "reference/native_wt_contract.json",
+      "results/31_nhe1_mechanistic_repair/rest_checkpoints/185f5cee3bcec7a023cf82e4092872114f2292732ad9c4bab68ecf4e062f76e3.json"
+    ],
+    "dynamic_import_eval_exec_calls": [],
+    "external_import_roots": [
+      "__future__",
+      "csv",
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "numpy.typing",
+      "os",
+      "pathlib",
+      "scipy.integrate",
+      "scipy.optimize",
+      "time",
+      "types",
+      "typing"
+    ],
+    "factory": "MinimalNbcModel(task31_nhe1_repair.build_model(task31_nhe1_repair.load_background(\"R09\"), carrier_amount_fmol=2.339370005697548e-05, stimulated=True))",
+    "forbidden_hits": [],
+    "forbidden_module_names": [
+      "nkcc1_palk2010",
+      "ae4_cacc_recruitment",
+      "task41_selected",
+      "task50_effective_coupling",
+      "ae4_equal_cation_routing"
+    ],
+    "onset_state": "Accepted Task31 rest_checkpoints/185f5cee...json core_state followed by the inherited zero regulatory coordinate; Task52 then applies its separately prescribed measured-state projection.",
+    "package_loading": "Load copied modern_full_model as an isolated package rooted at frozen_task37/src/modern_full_model; preserve relative imports; no current package imports.",
+    "prohibited_calls": "No Task30/31 calibration, stationary solve, main/run driver, background search, or historical trajectory execution. Only data loading/factory construction and authorised Task52 evaluations after 52A.",
+    "relative_reference_resolution": "task30_nhe1_repair.REFERENCE_DIRECTORY resolves from __file__.parents[2]/reference, hence frozen_task37/reference when exact relative layout is retained.",
+    "snapshot_destination": "analysis/52_chloride_reservoir_final_test/frozen_task37"
+  },
+  "checks": {
+    "active_parameter_hash_static_reconstruction": true,
+    "ae4_parameter_hash": true,
+    "all_task37_source_audit_blobs_match": true,
+    "complete_initial_state_hash": true,
+    "forbidden_dependency_absent": true,
+    "nbc_parameter_hash": true,
+    "no_dynamic_import_eval_exec_calls": true,
+    "original_reference_payload_hash": true,
+    "rest_core_state_hash": true,
+    "rest_plus_regulator_matches_task37_initial": true
+  },
+  "classification": "FILE/GIT/STATIC-SOURCE PROVENANCE AUDIT; NO NEW MODEL EVALUATION",
+  "conservation_tolerances": {
+    "ae4_charge_fmol_s": 1e-10,
+    "apical_current_A": 1e-20,
+    "basolateral_current_A": 1e-20,
+    "buffer_site_accounting_fmol_s": 1e-10,
+    "carbon_accounting_fmol_s": 1e-10,
+    "cell_bulk_charge_rate_fmol_s": 1e-10,
+    "cell_speciation_alkalinity_mM": 1e-09,
+    "homeostasis_charge_fmol_s": 1e-10,
+    "lumen_bulk_charge_rate_minus_outflow_fmol_s": 1e-10,
+    "lumen_speciation_alkalinity_mM": 1e-09,
+    "water_volume_accounting_pL_s": 1e-12
+  },
+  "historical_headline_quadrature": "Trapezoidal on integer seconds plus t=0 and 1e-6; headline windows 0-600 and 60-600; Task37 only saved 60-second readout table, not complete 1-second trace.",
+  "historical_result_and_report_hashes": [
+    {
+      "byte_length": 812,
+      "current_identical": true,
+      "current_worktree_sha256": "094642482ff56b25efba4eb87374082b27f5a8c1ffc4aaf7d56f9d737efef615",
+      "path": "results/37_wt_nbc_validation/budget.json",
+      "task37_git_blob": "62e2254bd38a5b473c5f61c41efcdb25aeb700a5",
+      "task37_sha256": "094642482ff56b25efba4eb87374082b27f5a8c1ffc4aaf7d56f9d737efef615"
+    },
+    {
+      "byte_length": 6459,
+      "current_identical": true,
+      "current_worktree_sha256": "259a0476fa70b382da94adad01fa795c9c69e2788cb7ac982f615fb3bba8f093",
+      "path": "results/37_wt_nbc_validation/rest_nesting.json",
+      "task37_git_blob": "9da445533dfe62dbce264dbfb6b639a4e3ff162c",
+      "task37_sha256": "259a0476fa70b382da94adad01fa795c9c69e2788cb7ac982f615fb3bba8f093"
+    },
+    {
+      "byte_length": 4393,
+      "current_identical": true,
+      "current_worktree_sha256": "40fcba3f3f3b5d94bd2c1e3f28f69e6931bbc5727fa5056281bc1db9eb2a8554",
+      "path": "results/37_wt_nbc_validation/source_verification.json",
+      "task37_git_blob": "14e5e35bbb61ce6a4e910eb9d2d8f42f5ee86ca7",
+      "task37_sha256": "40fcba3f3f3b5d94bd2c1e3f28f69e6931bbc5727fa5056281bc1db9eb2a8554"
+    },
+    {
+      "byte_length": 548,
+      "current_identical": true,
+      "current_worktree_sha256": "e569346c840b24b2451d66c599e6ebcc36505b9d79d5d07444a2adbd3eeaffb9",
+      "path": "results/37_wt_nbc_validation/wt_chloride_partition.json",
+      "task37_git_blob": "694a83315e3ff031b398ec07ed4925bcad0e9e68",
+      "task37_sha256": "e569346c840b24b2451d66c599e6ebcc36505b9d79d5d07444a2adbd3eeaffb9"
+    },
+    {
+      "byte_length": 646,
+      "current_identical": true,
+      "current_worktree_sha256": "b5e7a46bec467c7ecb6b0c7d439cb8fd0dd37075ae59a75cd91d0beb3ec14e1d",
+      "path": "results/37_wt_nbc_validation/wt_integrated_fluxes.csv",
+      "task37_git_blob": "c29cc28b87bb773456971fc29ebec1898a059d6f",
+      "task37_sha256": "b5e7a46bec467c7ecb6b0c7d439cb8fd0dd37075ae59a75cd91d0beb3ec14e1d"
+    },
+    {
+      "byte_length": 4835,
+      "current_identical": true,
+      "current_worktree_sha256": "184b1021709a8726e6bc7fccd7e887be6306d10320fac144a94c45417d4d9b19",
+      "path": "results/37_wt_nbc_validation/wt_timeseries.csv",
+      "task37_git_blob": "17780fcb8a6e7f3c8ecc07b3aa33ff2ed01f0a3a",
+      "task37_sha256": "184b1021709a8726e6bc7fccd7e887be6306d10320fac144a94c45417d4d9b19"
+    },
+    {
+      "byte_length": 8047,
+      "current_identical": true,
+      "current_worktree_sha256": "e56da842b38d172095a75cf8cbcf0603fcbad6ff3f5af8703fa7638852b22791",
+      "path": "results/37_wt_nbc_validation/wt_verification.json",
+      "task37_git_blob": "8e11ac9da0662acbcb04474f40a95711042ff9c9",
+      "task37_sha256": "e56da842b38d172095a75cf8cbcf0603fcbad6ff3f5af8703fa7638852b22791"
+    },
+    {
+      "byte_length": 8388,
+      "current_identical": true,
+      "current_worktree_sha256": "7e785b72ad89b0a00393633e1f7ebc47a43e6365924221d95e97e3212e70e963",
+      "path": "analysis/37_wt_nbc_validation/final_answer.md",
+      "task37_git_blob": "83008ea8512571d002d67c636127ed1b4d6ed0a5",
+      "task37_sha256": "7e785b72ad89b0a00393633e1f7ebc47a43e6365924221d95e97e3212e70e963"
+    },
+    {
+      "byte_length": 8615,
+      "current_identical": true,
+      "current_worktree_sha256": "fa0b3577e17f3bdee3bbc0e247bae75986dd48eebc3919477b68441380ecc251",
+      "path": "analysis/37_wt_nbc_validation/validation_common.py",
+      "task37_git_blob": "20d8d2fc8bbbc82284fda352bbe3dd3d0a853bb2",
+      "task37_sha256": "fa0b3577e17f3bdee3bbc0e247bae75986dd48eebc3919477b68441380ecc251"
+    },
+    {
+      "byte_length": 16173,
+      "current_identical": true,
+      "current_worktree_sha256": "cea8fd154bb8a4436e00d26b8e71ea9e3224f8e7a08fa552b6f49dcbc0faed85",
+      "path": "analysis/37_wt_nbc_validation/run_wt.py",
+      "task37_git_blob": "3d69c029f1d1ae53bcbc9d3c26b9c41bf1d4f9a3",
+      "task37_sha256": "cea8fd154bb8a4436e00d26b8e71ea9e3224f8e7a08fa552b6f49dcbc0faed85"
+    },
+    {
+      "byte_length": 6615,
+      "current_identical": true,
+      "current_worktree_sha256": "81d4e3b03b627f5ec8ee007d551628f88860b5eb101c4cf05b44362e3992a85e",
+      "path": "analysis/36_minimal_nahco3_alkalinity/design.md",
+      "task37_git_blob": "9190a52b837cc4c281a7be43253c29392b638c6d",
+      "task37_sha256": "81d4e3b03b627f5ec8ee007d551628f88860b5eb101c4cf05b44362e3992a85e"
+    },
+    {
+      "byte_length": 2605,
+      "current_identical": true,
+      "current_worktree_sha256": "30f08d2484d2abb8883e429512b8a1c3a819cc697cff8aee564119dd79d43540",
+      "path": "analysis/36_minimal_nahco3_alkalinity/manual_verification.md",
+      "task37_git_blob": "23b15f1e2f32ad856c80ef117f219e1d3f068e10",
+      "task37_sha256": "30f08d2484d2abb8883e429512b8a1c3a819cc697cff8aee564119dd79d43540"
+    },
+    {
+      "byte_length": 5759,
+      "current_identical": true,
+      "current_worktree_sha256": "c3b173be61dc2da9a066a8f8ed2ece7929e55a80b759be19ec63cb71c7e691d6",
+      "path": "analysis/31_nhe1_mechanistic_repair/final_answer.md",
+      "task37_git_blob": "a80628e18a1b1e3c81b4df885270ae8ddcd85842",
+      "task37_sha256": "c3b173be61dc2da9a066a8f8ed2ece7929e55a80b759be19ec63cb71c7e691d6"
+    }
+  ],
+  "inherited_protocol": {
+    "arm": "CCH_IPR",
+    "beta_occupancy_on": 1.0,
+    "cch_dose_uM": 0.3,
+    "duration_s": 600.0,
+    "ipr_dose_uM": 5.0,
+    "onset_s": 0.0,
+    "resting_calcium_uM": 0.058,
+    "stimulated_calcium_uM": 0.25
+  },
+  "loader_data_inputs": [
+    {
+      "byte_length": 5526,
+      "current_identical": true,
+      "current_worktree_sha256": "f18eec4d9f902d869ee4b4e2b197546c4278c0b08f17209862fca383dc03e868",
+      "path": "reference/R09_wt_rest.json",
+      "task37_git_blob": "b1d469b59853e1302ed74ab48ba0f4eb9d602018",
+      "task37_sha256": "f18eec4d9f902d869ee4b4e2b197546c4278c0b08f17209862fca383dc03e868"
+    },
+    {
+      "byte_length": 215314,
+      "current_identical": true,
+      "current_worktree_sha256": "6d283961421a6718a54fd7c86e6575bd5c032a93e649923777b02295cee97f29",
+      "path": "reference/native_wt_contract.json",
+      "task37_git_blob": "8198b25c48e83d197d72a888121da731a9133b29",
+      "task37_sha256": "6d283961421a6718a54fd7c86e6575bd5c032a93e649923777b02295cee97f29"
+    },
+    {
+      "byte_length": 6501,
+      "current_identical": true,
+      "current_worktree_sha256": "0fda58227f71ff6f0a48c8a078c0578ae5f814ed963abc146384adbf7f59dd19",
+      "path": "results/31_nhe1_mechanistic_repair/rest_checkpoints/185f5cee3bcec7a023cf82e4092872114f2292732ad9c4bab68ecf4e062f76e3.json",
+      "task37_git_blob": "db93804918512e3c4ad5c02ae1e15bf2682ab0ee",
+      "task37_sha256": "0fda58227f71ff6f0a48c8a078c0578ae5f814ed963abc146384adbf7f59dd19"
+    }
+  ],
+  "nkcc_regulation_static_source": {
+    "class": "N1AlgebraicNkcc1",
+    "fully_activated_multiplier": 1.75,
+    "resting_calcium_uM": 0.058,
+    "stimulated_calcium_uM": 0.1
+  },
+  "nonzero_source_diagnostics": {
+    "minimal_nbc_carbon_source_fmol_s": "2*J_NBC",
+    "minimal_nbc_charge_source_fmol_s": "-J_NBC"
+  },
+  "overall_pass": true,
+  "parameter_lineage": {
+    "active_whole_cell_parameters": {
+      "acid_base": {
+        "carbon_pka1": 6.1,
+        "carbon_pka2": 10.3,
+        "cell_buffer_pka": 7.0,
+        "lumen_buffer_pka": 7.0,
+        "ph_lower": 3.0,
+        "ph_upper": 11.0,
+        "water_pkw": 14.0
+      },
+      "bath": {
+        "buffer_total_mM": 0.0,
+        "cl_mM": 126.16159280366088,
+        "k_mM": 5.0,
+        "na_mM": 145.0,
+        "ph": 7.4,
+        "tic_mM": 25.0,
+        "untracked_osmolyte_mM": 0.0
+      },
+      "constants": {
+        "faraday_C_mol": 96485.33212,
+        "gas_constant_J_mol_K": 8.31446261815324,
+        "temperature_K": 310.15
+      },
+      "geometry": {
+        "cell_buffer_total_fmol": 30.0,
+        "cell_impermeant_osmoles_fmol": 124.69936937124379,
+        "fixed_cell_anion_equivalents_fmol": 78.06176220594485,
+        "lumen_buffer_total_fmol": 1e-09
+      },
+      "homeostasis": {
+        "ae2_capacity_fmol_s": 0.005,
+        "co2_apical_permeability_fmol_s_mM": 0.01,
+        "co2_basolateral_permeability_fmol_s_mM": 0.02,
+        "nhe1_capacity_fmol_s": 0.007440980590414482,
+        "nhe1_cha_carrier_amount_fmol": 2.339370005697548e-05,
+        "nhe1_model": "cha_2009_eight_state_mod2",
+        "nhe1_published_g_fmol_s": 0.0305,
+        "nhe1_published_k_h_mM": 0.00045,
+        "nhe1_published_k_na_mM": 15.0,
+        "nkcc1_capacity_fmol_s": 0.32,
+        "thermodynamic_saturation_log_width": 2.0
+      },
+      "initial": {
+        "cell_cl_mM": 40.0,
+        "cell_k_mM": 140.0,
+        "cell_na_mM": 15.0,
+        "cell_ph": 7.2,
+        "cell_tic_mM": 20.0,
+        "cell_volume_pL": 1.0,
+        "lumen_cl_mM": 126.16159279650834,
+        "lumen_k_mM": 5.0,
+        "lumen_na_mM": 145.0,
+        "lumen_ph": 7.4,
+        "lumen_tic_mM": 25.0,
+        "lumen_volume_pL": 0.1
+      },
+      "membranes": {
+        "apical_k_fraction": 0.3,
+        "apical_pump_fraction": 0.075075,
+        "calcium_half_uM": 0.26,
+        "calcium_hill": 1.46,
+        "g_apical_background_S": 0.0,
+        "g_basolateral_background_S": 0.0,
+        "g_cl_apical_S": 3.14e-08,
+        "g_k_total_S": 1.4e-08,
+        "g_para_cl_S": 2.5e-10,
+        "g_para_hco3_S": 5e-11,
+        "g_para_k_S": 5e-11,
+        "g_para_na_S": 3e-10,
+        "nak_capacity_fmol_s": 0.08,
+        "nak_k_half_mM": 1.5,
+        "nak_na_half_mM": 10.0
+      },
+      "water": {
+        "apical_hydraulic_pL_s_mOsm": 0.00432,
+        "basolateral_hydraulic_pL_s_mOsm": 0.0515,
+        "lumen_dead_volume_pL": 0.1,
+        "outflow_rate_s": 0.2,
+        "paracellular_hydraulic_pL_s_mOsm": 0.00026
+      }
+    },
+    "ae4_parameters": {
+      "carrier_amount_fmol": 0.1501264265070657,
+      "common_cl_attempt_rate_s": 1.0,
+      "cooperative_gate": null,
+      "k_loaded_attempt_rate_s": 1.9,
+      "na_loaded_attempt_rate_s": 0.1
+    },
+    "hashes": {
+      "ae4": "6c634251c09a6a06d697aa7a3b4ec20d4ee69db039537df1506c22d38a561e5a",
+      "nbc": "4fd085686c98ae3e1aa227f38670d28f1aafb8059841b68557b077e43642eaad",
+      "whole_cell": "ac05ebb3d2b2dde30a94eb8d928b363ba128c8c5e2a099374373be5446146ca0"
+    },
+    "inherited_payload_sha256": "3fea661073f649b34cae8fb164fae53e15a5bec58998850af71574f8e24d6d30",
+    "nbc_parameters": {
+      "capacity_fmol_s": 0.11570913197464398,
+      "fully_recruited_calcium_uM": 0.25,
+      "log_width": 2.0,
+      "nhe1_stimulated_multiplier": 2.3,
+      "resting_calcium_uM": 0.058
+    },
+    "rest_checkpoint_label": "R09_WT_density_5",
+    "rest_core_state_sha256": "d77c1907e3e7124061721d606148a733f858cce2ef591c4e9f16e5cb7fc2469d",
+    "root_id": "N_ABS_NKCC_S4_PNOM_KMID_AE4NA05_P1_H1:B00",
+    "routing_family_label": "AE4NA05",
+    "task37_full_initial_sha256": "879a650761e9044691ab6b2a9b1bfc3be8f951ece176925117596cc2baa31abe"
+  },
+  "physical_gates": {
+    "all_12_core_coordinates_positive": true,
+    "all_states_rhs_diagnostics_finite": true,
+    "cl_i_mM": "30<=Cl<=80",
+    "hco3_i_mM": "0<HCO3<100",
+    "k_i_mM": "50<=K<=200",
+    "na_i_mM": "<40",
+    "ph_i": "6.6<=pH<=7.3",
+    "tic_i_mM": ">0",
+    "volume_i_pL": "0<V<3"
+  },
+  "qualifications": [
+    "Current four core modules membranes/model/nbc_minimal/nkcc_stimulation differ and include optional later NKCC support. Exact historical snapshot is required even if selecting generic kinetics today.",
+    "Task37 AE4 uses donor-weighted r=Na/(Na+K), choosing intracellular donor for nonnegative chloride flux and extracellular donor for negative flux; equal weights mean concentration weighting, not fixed r=1/2. Preserve this routing.",
+    "R51G/Task40 stationary J=6P-H presumes fixed r=1/2 and must not be transferred unchanged to Task37. The exact required chloride reservoir budget does not depend on r and remains valid.",
+    "Accepted Task37 rest is not source-exact Cl:60.30496692587399 mM. Task52 measured-state projections are onset states and no stationary claim is licensed.",
+    "reference/R09_wt_rest.json identifies inherited root/parameters; its core_state is the earlier background. The accepted Task31 R09_WT_density_5 checkpoint, not that earlier reference core_state or model.initial_state(), supplies Task37 onset core.",
+    "The R09 root label AE4NA05 is historical routing metadata; WT expression is exactly1.0, not5%.",
+    "NHE carrier amount is WT-pH calibrated; NBC capacity is derived structural WT feasibility scale; generic NKCC width/capacity and effective regulation are model choices, not newly source-identified physiological constants.",
+    "Task37 state gates are numerical monitored-point checks, not continuous-time certified enclosures; historical broader stationary gates must not replace its stricter production limits.",
+    "Inherited source contains unused stationary/optimisation utility functions; AST/import presence does not authorise calling them.",
+    "Task52 independent flux quadrature and reservoir error tolerance are frozen separately by root before production; they are not claimed as inherited Task37 gates."
+  ],
+  "scope": "Static AST import closure and file/Git hashes. No scientific modules imported or evaluated; no snapshot source materialised during 52A.",
+  "solver": {
+    "amount_atol_fmol": 1e-10,
+    "label": "production_radau",
+    "max_step_s": 2.0,
+    "method": "Radau",
+    "regulatory_atol_fraction": 1e-10,
+    "rtol": 1e-07,
+    "volume_atol_pL": 1e-12
+  },
+  "solver_onset": "REST at t=0; active for 0<t<=600; Radau begins t=1e-6 with unchanged initial state; accepted endpoints and integer-second dense points are checked chronologically.",
+  "source_modules": [
+    {
+      "byte_length": 423,
+      "current_identical": true,
+      "current_worktree_sha256": "721ec58e52c171e5261d769f5136acb5566574710c909dd917a36d048240f8a5",
+      "imports": [],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/__init__.py",
+      "task37_git_blob": "3cef0cd91fa99d39745e9e7275e9a4499ea46a57",
+      "task37_sha256": "721ec58e52c171e5261d769f5136acb5566574710c909dd917a36d048240f8a5"
+    },
+    {
+      "byte_length": 8133,
+      "current_identical": true,
+      "current_worktree_sha256": "cf123937b6cf085b0cbad01fc464fca9eadbb56888802e427900473c1a737a31",
+      "imports": [
+        "src/modern_full_model/parameters.py"
+      ],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/acid_base.py",
+      "task37_git_blob": "669bd8554329ffcb5c9c70bce891415cda233fec",
+      "task37_sha256": "cf123937b6cf085b0cbad01fc464fca9eadbb56888802e427900473c1a737a31"
+    },
+    {
+      "byte_length": 4436,
+      "current_identical": true,
+      "current_worktree_sha256": "ef3a55d6a74fbdc1a07a6f89c19533376aec7bee98cfbafa5f73cf4e01f63a10",
+      "imports": [
+        "src/modern_full_model/model.py",
+        "src/modern_full_model/nkcc_stimulation.py",
+        "src/modern_full_model/transporters.py"
+      ],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/ae4_routing_only.py",
+      "task37_git_blob": "f7ceb851df9e0cb8f4d8a9cb1c540055aa342d54",
+      "task37_sha256": "ef3a55d6a74fbdc1a07a6f89c19533376aec7bee98cfbafa5f73cf4e01f63a10"
+    },
+    {
+      "byte_length": 17234,
+      "current_identical": true,
+      "current_worktree_sha256": "b03ef7c794017a1a312fc9bd47188a9bc430e63c8b9c6be4dbfb6c93147eaf03",
+      "imports": [],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/camp_pka.py",
+      "task37_git_blob": "e0fe3fdf2837d97ee8e235fe1a72dc9854c594b8",
+      "task37_sha256": "b03ef7c794017a1a312fc9bd47188a9bc430e63c8b9c6be4dbfb6c93147eaf03"
+    },
+    {
+      "byte_length": 18024,
+      "current_identical": false,
+      "current_worktree_sha256": "c4200328179cd70156590dd10eb0859505ff03d2005652fd1ae2c9b692f85fea",
+      "imports": [
+        "src/modern_full_model/nhe1_cha2009.py",
+        "src/modern_full_model/parameters.py"
+      ],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/membranes.py",
+      "task37_git_blob": "8fd2f35804121f11635764231d0669ddd4ffbb64",
+      "task37_sha256": "ce8dc517be7e264f1c2b5af88f25b898eb4a6517dca384c928b91dcbff76d539"
+    },
+    {
+      "byte_length": 32266,
+      "current_identical": false,
+      "current_worktree_sha256": "a391600986aed9204cddb3aede884f6c420a5d9ba7de232d255900ec9e84027c",
+      "imports": [
+        "src/modern_full_model/acid_base.py",
+        "src/modern_full_model/membranes.py",
+        "src/modern_full_model/parameters.py",
+        "src/modern_full_model/states.py",
+        "src/modern_full_model/transporters.py",
+        "src/modern_full_model/water.py"
+      ],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/model.py",
+      "task37_git_blob": "14b1912b0c58b0fb3ae18ff639eeb6a726081c46",
+      "task37_sha256": "46c769e7ed16a7970244846e10990fc73130aa05b370617f27433c0281fdc878"
+    },
+    {
+      "byte_length": 29509,
+      "current_identical": false,
+      "current_worktree_sha256": "48230ad9b6c0bbb017d8545d0c46ca6fc83eb0d6ade57f1ced96da7fd28bcfaf",
+      "imports": [
+        "src/modern_full_model/membranes.py",
+        "src/modern_full_model/model.py"
+      ],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/nbc_minimal.py",
+      "task37_git_blob": "c4bf124d497b74d68c1cbe09cf47c04c933bd244",
+      "task37_sha256": "988668f6761bffa852d03b74c7020fa5115d542f848dead489cfaf4a6a8f165e"
+    },
+    {
+      "byte_length": 6965,
+      "current_identical": true,
+      "current_worktree_sha256": "de76dccffadb75fcaecee90402161af1db48f5db88ea152164f504a974d0e5c1",
+      "imports": [],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/nhe1_cha2009.py",
+      "task37_git_blob": "6090805662155915e894804e1a4dbf2acb594241",
+      "task37_sha256": "de76dccffadb75fcaecee90402161af1db48f5db88ea152164f504a974d0e5c1"
+    },
+    {
+      "byte_length": 21111,
+      "current_identical": false,
+      "current_worktree_sha256": "c272da41b93dea37986e293fdb0936f994dade13b4a65e093057575f58788475",
+      "imports": [
+        "src/modern_full_model/membranes.py",
+        "src/modern_full_model/model.py"
+      ],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/nkcc_stimulation.py",
+      "task37_git_blob": "6a8ace8dacffe153fbb3d8bbd7188dd0c28f4fd7",
+      "task37_sha256": "8ea8cb187d334725b35fb0d5cc694e83ed876534b70d38a4c01c7effd1d02843"
+    },
+    {
+      "byte_length": 24546,
+      "current_identical": true,
+      "current_worktree_sha256": "5a3037ec9849e8202134c664b2a87205f73e2e17edde781ee4fef0bc57b1a39b",
+      "imports": [],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/parameters.py",
+      "task37_git_blob": "7cf42ee2305985186595ee90c8be637c7f2ed5bf",
+      "task37_sha256": "5a3037ec9849e8202134c664b2a87205f73e2e17edde781ee4fef0bc57b1a39b"
+    },
+    {
+      "byte_length": 8413,
+      "current_identical": true,
+      "current_worktree_sha256": "a037f9690960c3b52e738bc4051601adf76bf345b3a32b191770e2469255fd22",
+      "imports": [],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/states.py",
+      "task37_git_blob": "0a2d351830e1004bccd55c4ce609e640634eca03",
+      "task37_sha256": "a037f9690960c3b52e738bc4051601adf76bf345b3a32b191770e2469255fd22"
+    },
+    {
+      "byte_length": 55573,
+      "current_identical": true,
+      "current_worktree_sha256": "7d48386bf081212c2e81aeb6f0d28e47c9d3c9edec4d2f4ab3b80f762f34b105",
+      "imports": [
+        "src/modern_full_model/acid_base.py",
+        "src/modern_full_model/ae4_routing_only.py",
+        "src/modern_full_model/camp_pka.py",
+        "src/modern_full_model/membranes.py",
+        "src/modern_full_model/model.py",
+        "src/modern_full_model/nkcc_stimulation.py",
+        "src/modern_full_model/parameters.py",
+        "src/modern_full_model/states.py",
+        "src/modern_full_model/transporters.py",
+        "src/modern_full_model/validation.py"
+      ],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/task30_nhe1_repair.py",
+      "task37_git_blob": "2219945085de0bdd3a97daec8a098370fbda7a26",
+      "task37_sha256": "7d48386bf081212c2e81aeb6f0d28e47c9d3c9edec4d2f4ab3b80f762f34b105"
+    },
+    {
+      "byte_length": 25335,
+      "current_identical": true,
+      "current_worktree_sha256": "976b62f8aadf87dbb5badb156d40ea974b53eee0e21acd8fd7a08d64543e07d4",
+      "imports": [
+        "src/modern_full_model/ae4_routing_only.py",
+        "src/modern_full_model/camp_pka.py",
+        "src/modern_full_model/model.py",
+        "src/modern_full_model/nhe1_cha2009.py",
+        "src/modern_full_model/nkcc_stimulation.py",
+        "src/modern_full_model/task30_nhe1_repair.py",
+        "src/modern_full_model/validation.py"
+      ],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/task31_nhe1_repair.py",
+      "task37_git_blob": "5129f12bc8198c97aa22fa738f28b4c82ed0723a",
+      "task37_sha256": "976b62f8aadf87dbb5badb156d40ea974b53eee0e21acd8fd7a08d64543e07d4"
+    },
+    {
+      "byte_length": 20713,
+      "current_identical": true,
+      "current_worktree_sha256": "4177a444fa97e430c345fc1fb73f333b5b6623c3ea3cd84769cb9d6dca76061a",
+      "imports": [],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/transporters.py",
+      "task37_git_blob": "66738cf1963ee5bcb72cb0ebef809266df83d157",
+      "task37_sha256": "4177a444fa97e430c345fc1fb73f333b5b6623c3ea3cd84769cb9d6dca76061a"
+    },
+    {
+      "byte_length": 39652,
+      "current_identical": true,
+      "current_worktree_sha256": "e8dd7d9bee588ecab6032a9fb35f41907a112b08d6e8448ca1d7ab60fee7b4b8",
+      "imports": [
+        "src/modern_full_model/camp_pka.py",
+        "src/modern_full_model/model.py",
+        "src/modern_full_model/states.py"
+      ],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/validation.py",
+      "task37_git_blob": "62e88ea22fe132a4f656963fa48959f366fad79d",
+      "task37_sha256": "e8dd7d9bee588ecab6032a9fb35f41907a112b08d6e8448ca1d7ab60fee7b4b8"
+    },
+    {
+      "byte_length": 4515,
+      "current_identical": true,
+      "current_worktree_sha256": "d93494f93411123a9c9bdaea5c177c89714ee5ab0794717c586bfd87647671ba",
+      "imports": [
+        "src/modern_full_model/parameters.py"
+      ],
+      "matches_task37_published_source_audit": true,
+      "path": "src/modern_full_model/water.py",
+      "task37_git_blob": "911d70765f9da1d1bdae5cedf7405b4fb7f2a3af",
+      "task37_sha256": "d93494f93411123a9c9bdaea5c177c89714ee5ab0794717c586bfd87647671ba"
+    }
+  ],
+  "task37_accepted_commit": "2ba0e4e0c2a9e940aa96ed86c3c72456afd0e3aa",
+  "task37_accepted_state": {
+    "observables_from_saved_result": {
+      "cl_i_mM": 60.30496692587399,
+      "cl_l_mM": 145.91441438704814,
+      "hco3_i_mM": 4.909374551508538,
+      "hco3_l_mM": 4.447012642264572,
+      "k_i_mM": 116.76320932871538,
+      "k_l_mM": 25.67998080632129,
+      "na_i_mM": 11.636125748680639,
+      "na_l_mM": 124.68503924961041,
+      "osm_bath_mOsm": 301.1615928036609,
+      "osm_cell_mOsm": 301.1812011970861,
+      "osm_lumen_mOsm": 301.4149586650029,
+      "ph_i": 6.910000223494689,
+      "ph_l": 6.911304792909554,
+      "tic_i_mM": 5.671746232991451,
+      "tic_l_mM": 5.1355242220230615,
+      "v_apical_mV": -31.531295131004576,
+      "v_basolateral_mV": -67.10109365819838,
+      "v_transepithelial_mV": -35.56979852719381,
+      "volume_i_pL": 1.4484260832245268,
+      "volume_l_pL": 0.10537853692674652
+    },
+    "state_names": [
+      "na_i_fmol",
+      "k_i_fmol",
+      "cl_i_fmol",
+      "tic_i_fmol",
+      "alk_i_fmol",
+      "volume_i_pL",
+      "na_l_fmol",
+      "k_l_fmol",
+      "cl_l_fmol",
+      "tic_l_fmol",
+      "alk_l_fmol",
+      "volume_l_pL",
+      "ae4_effective_activation_fraction"
+    ],
+    "state_vector": [
+      16.854068042069564,
+      169.12287795271675,
+      87.3472870434283,
+      8.215105181295272,
+      20.56789674541318,
+      1.4484260832245268,
+      13.13912701277791,
+      2.70611880567707,
+      15.376247504630147,
+      0.5411740288686584,
+      0.46899831382483304,
+      0.10537853692674652,
+      0.0
+    ]
+  },
+  "task37_commit_parents": [
+    "d925785512a33b241ec24843660ff3ef88458549"
+  ],
+  "task37_prepared_commit": "d925785512a33b241ec24843660ff3ef88458549",
+  "task37_tree": "daf5e2cd3042d0dbd7734bcfd2fca4dc711f634e",
+  "task52_requested_start": "eacfe603faa3ce0b2aa26814b348a1ae44417cdc",
+  "task52_required_branch": "analysis/task-52-chloride-reservoir-final-test",
+  "work_budget": {
+    "fits": 0,
+    "model_evaluations": 0,
+    "model_imports": 0,
+    "parameter_searches": 0,
+    "stationary_solves": 0,
+    "trajectories": 0
+  }
+}

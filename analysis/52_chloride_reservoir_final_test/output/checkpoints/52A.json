@@ -1,0 +1,22 @@
+{
+  "artifacts": {
+    "analysis/52_chloride_reservoir_final_test/ARCHITECTURE_AND_NUMERICS_FREEZE.md": "64bdf6cd5c2a656eb17c106723d7f817e9e39752a492b3bc894d28a66207d0fb",
+    "analysis/52_chloride_reservoir_final_test/CODEX_START_HERE.md": "533ceaa25de4b9262e28cd099a04964002133119a8f052f026e1f22669a5d9d8",
+    "analysis/52_chloride_reservoir_final_test/CURRENT_STATUS.md": "83e216e9079f27a93c904e1fde60ef9046b3f28d413578ab99b2baf11bc026fc",
+    "analysis/52_chloride_reservoir_final_test/DECISION_LOG.md": "6567ab89a9b891cd873121404b4664359b93f58bbed1c1f478c0909dc20e9831",
+    "analysis/52_chloride_reservoir_final_test/NOVELTY_CHECK.md": "2355eb620344c01e432b55bf48989c62929bb6597cceeb14c87d5c9c16d89e8f",
+    "analysis/52_chloride_reservoir_final_test/TASK37_PROVENANCE.md": "fbc1a78267c3f914ad6a556fc0f5b83afad0b487d93610e414e4b6ab0a23513a",
+    "analysis/52_chloride_reservoir_final_test/checkpoint.py": "02adb9f26854bdd046e737e61186fefcc88076e3a262e04415144d8e9dd41d03",
+    "analysis/52_chloride_reservoir_final_test/output/binding_inputs_at_start.json": "118d45e0fe78542751cad962369a04e69849978c2be43ed9ed769ae803ec1ff4",
+    "analysis/52_chloride_reservoir_final_test/output/case_matrix_52A.json": "bf481af85e8445d3655856ad90a8ad7dc600a462f877cbf409c932a83dfb8189",
+    "analysis/52_chloride_reservoir_final_test/output/remote_start_verification.json": "552da34ef4f1dbc41f4f3914713fae1080a01db3fb418ee154a3e8489a4af4a8",
+    "analysis/52_chloride_reservoir_final_test/output/task37_provenance_audit.json": "26a05e5108f3d987b25bfa4d753baa634dbf80f973855267dccafdff935cdf89",
+    "analysis/52_chloride_reservoir_final_test/output/task50_archive_start.json": "deb35b205aa9ef826544f390f829d5b051c998cecbcc3d09ab96727f848ebd7a",
+    "docs/MANDATORY_RESEARCH_LEDGER.md": "cfefeb916c98daf40385df426451db2a2fb74b23fbee497121f3fefc16371c12"
+  },
+  "branch": "analysis/task-52-chloride-reservoir-final-test",
+  "checkpoint": "52A",
+  "commit_reference": "The commit containing this immutable receipt",
+  "description": "Exact Task37 source/parameter/rest audit; architecture, eight cases, numerical gates and quadrature frozen before model evaluation",
+  "parent_commit": "eacfe603faa3ce0b2aa26814b348a1ae44417cdc"
+}

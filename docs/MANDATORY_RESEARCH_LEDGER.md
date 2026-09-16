@@ -758,3 +758,35 @@ Final report: `analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/BE
 Total Task51 work is17 distinct software tests over18 invocations,102 verification core evaluations,2 calibration trajectories and3,638 calibration core evaluations:3,740 core evaluations overall. There were zero accepted fits, accepted-model phenotype trajectories, resting solves or post-reveal model evaluations. The final audit is file/Git only. Historical assertion/publication transport corrections remain traceable and changed no scientific law or selected parameter.
 
 Publish and independently verify51F, then stop. This is the controlling result for the completed Task51 shot, superseding its prospective question without rewriting earlier exclusions. One funded/scientific shot remains after Task51; Task52 remains unstarted. No new mechanism, post-reveal retuning, archive change or automatic Task52 execution is authorised by this closeout.
+
+## 21. R52A — final chloride-reservoir test: exact pre-Palk provenance
+
+Task52 begins from the user-specified remote head
+`eacfe603faa3ce0b2aa26814b348a1ae44417cdc` on
+`analysis/task-52-chloride-reservoir-final-test`. The complete binding stack,
+including R51H/R51I and the Task52-start continuation, controls this final shot.
+R51H supersedes R51G's prospective beta-NKCC/swelling recommendation; no new
+mechanism search is authorised.
+
+SOURCE/PROVENANCE QUALIFICATION: the accepted Task37 snapshot is
+`2ba0e4e0c2a9e940aa96ed86c3c72456afd0e3aa`. Its AE4 source allocation is
+donor-weighted, not Task40's later equal cation allocation. Task52 retains
+the exact Task37 routing and stoichiometry as required. R51G's equal-routing
+stationary pump/NHE identity is therefore not imposed on this chassis.
+The mandatory chloride-reservoir identity is routing-independent and remains
+exact. This qualifies application of later-lineage algebra, not its validity
+within the original equal-routing model.
+
+The planned isolated, byte-exact Task37 source snapshot excludes Palk and
+Task41/50 scientific dependencies, including optional imports in later generic
+selectors. The exact eight-case matrix, inherited solver/physical gates,
+observation windows and independent reservoir quadrature checks are frozen
+in Task52 ARCHITECTURE_AND_NUMERICS_FREEZE.md and output/case_matrix_52A.json.
+Matched NKCC/AE2 supply and effective apical attribution of the source-scale
+auxiliary conductances remain MODEL IDEALISATIONS. No parameter is selected
+from the AE4 phenotype. The Task50 archive ref independently remains
+`b16c30094b95f61a73d8f1977cd58e79c7bb50f6`.
+
+No Task52 model evaluation, production trajectory, stationary solve or fit
+has occurred at 52A. Publish and independently verify this boundary before
+implementation. Task52 consumes the final shot; no Task53 is authorised.
