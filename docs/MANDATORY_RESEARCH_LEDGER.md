@@ -702,3 +702,15 @@ If yes, the source-backed mechanism provides a mechanistic replacement for the a
 If no, Task 50 remains the preserved quantitative demonstration that an additional beta-conditioned network interaction of substantial strength is required, while the molecular identity remains unresolved.
 
 If independent source data cannot identify/bound the required beta-NKCC and VRAC parameters sufficiently to make a held-out prediction, report non-identifiability. Do not use the AE4 phenotype to close the parameters.
+
+## 15. R51A — source/architecture freeze for the upstream beta-NKCC test
+
+Task51 starts from the user's verified operational head ad0e7344c8ba79552cbf54714b42e7131bcc1142 on its designated branch; scientific parent is4bb2c898. The separately verified Task50 archive remains b16c3009. This is the penultimate authorised scientific shot; Task52 remains unstarted.
+
+SOURCE FACT/provenance qualification: primary abstracts confirm rat submandibular2.5-fold and rat parotid3-fold NKCC responses. The JCI1992 first author is Paulais (Paulais and Turner), qualifying earlier short citations without changing evidence. The Catalan main article was retrieved; official SI routes returned HTML challenge/access errors, so SI was not inspected. Direct apical conductance mapping remains UNRESOLVED, not proven absent from the supplement. The Figure2 ECl cannot be transferred to Figure5's nystatin IPR protocol.
+
+ASSUMPTION/SENSITIVITY: the predeclared fallback fixes M_beta2.5, with3 sensitivity at the same g, and one scalar g calibration to mouse narrative swelling0.125. The prospective model observation is mean300–600s relative volume, explicitly not a measured source window or timing fit. The approximately16% terminal graphical proxy and reported12.5% narrative remain discrepant. No complete uncertainty interval follows from the narrative SEM.
+
+FORMAL DEDUCTION: at an exact AE4-null IPR rest with inward basal NKCC N0 and M_beta>1, the new 1Na:1K:2Cl source gives V''(0+)=(Lb+La)*4*(M_beta-1)*N0/Vref>0. Thus any finite positive g can open the prescribed swelling gate locally in time. This qualifies R49 only after changing the upstream input; it does not assert a calibrated sustained response or phenotype success. The sustained export identity still applies to total CaCC+VRAC chloride export.
+
+The exact regulator/current architecture, two-track protocol, source/observation roles and bounded deterministic inference are frozen in Task51 SOURCE_ARCHITECTURE_FREEZE.md and D51-12–14 before model evaluation. Task50 multiplier is excluded. All earlier exclusions remain closed. No scientific source edit, model evaluation, fit or trajectory has yet occurred.

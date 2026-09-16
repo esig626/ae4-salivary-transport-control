@@ -93,3 +93,15 @@ Task 50 is the quantitative reference result, not a fitting target.
 **Decision:** publish and remotely verify 51A through 51F before dependent work. Every checkpoint that establishes a new fact/failure/qualification must update `docs/MANDATORY_RESEARCH_LEDGER.md` in the same dependency boundary.
 
 Do not start Task 52 automatically.
+
+## D51-12 — accepted source/architecture and operational start (51A)
+
+Ledger reread: §§0,1.7,2,3.1,R39–R50E,5,6,8,9,14. The user-specified operational head ad0e7344 supersedes the older D51-01 wording only for checkout; scientific parent remains4bb2c898. Two-shot budget applies. Read-only primary-source advisers verified the beta-NKCC anchors; Paulais is the correct first author of JCI1992. SI access failed at official routes, recorded in SOURCE_ARCHITECTURE_FREEZE.md, so no direct conductance identification is claimed. The prescribed swelling fallback is accepted; this does not reopen a closed axis. All old source/results/archive files remain frozen.
+
+## D51-13 — exact implementation and early-time implication (51A)
+
+Ledger §§1.7,2,3.1,R48,R49,14.2 were reread. Accept the exact additive regulator adapter and unchanged Task49 current. Both NKCC-recomputing layers must receive the changed multiplier. The conditional V-second-derivative proof in SOURCE_ARCHITECTURE_FREEZE.md removes the old exact deadlock; sustained behaviour awaits computation. Task50/41 conductance wrappers are absent. No new signalling state, synergy, core, stoichiometry, cap or other pathway change is authorised.
+
+## D51-14 — fixed fallback/protocol/observation plan before compute (51A)
+
+Ledger §§1.1,1.7,2,R40,R48,R49,6,9,14.3 and phenotype convention reread. Central M_beta2.5, sensitivity3 with identical g. One scalar g solve against WT Track2 mean300–600s relative swelling0.125, bracket0 to1e-6S and Brent tolerance1e-13S/max40 iterations, as detailed in the freeze. This is an explicit amplitude-map assumption, not a source clock fit, and narrative/figure discrepancy remains. Two tracks, cached rests, solver settings, diagnostics, numerical budget and conditional SPQ limitations are fixed in that document. No AE4/Task50 value is a calibration residual. Non-identification is reportable through51F, without substituting the Task49 theorem.

@@ -1,0 +1,552 @@
+[
+  {
+    "ref": "refs/heads/analysis/task-43-parameter-provenance",
+    "node_id": "REF_kwDOUFlnxdoAMHJlZnMvaGVhZHMvYW5hbHlzaXMvdGFzay00My1wYXJhbWV0ZXItcHJvdmVuYW5jZQ",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/analysis/task-43-parameter-provenance",
+    "object": {
+      "sha": "547f113d9123ab1976774639a69483faf40cef34",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/547f113d9123ab1976774639a69483faf40cef34"
+    }
+  },
+  {
+    "ref": "refs/heads/analysis/task-44-full-system-mathematics",
+    "node_id": "REF_kwDOUFlnxdoAM3JlZnMvaGVhZHMvYW5hbHlzaXMvdGFzay00NC1mdWxsLXN5c3RlbS1tYXRoZW1hdGljcw",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/analysis/task-44-full-system-mathematics",
+    "object": {
+      "sha": "e5fa9840bf96be3147c6118daee4942468c78f8b",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/e5fa9840bf96be3147c6118daee4942468c78f8b"
+    }
+  },
+  {
+    "ref": "refs/heads/analysis/task-46-physiology-constrained-model-reconstruction",
+    "node_id": "REF_kwDOUFlnxdoAR3JlZnMvaGVhZHMvYW5hbHlzaXMvdGFzay00Ni1waHlzaW9sb2d5LWNvbnN0cmFpbmVkLW1vZGVsLXJlY29uc3RydWN0aW9u",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/analysis/task-46-physiology-constrained-model-reconstruction",
+    "object": {
+      "sha": "6da2063bc6ec16dc6f164e51d9fb3ea76678bbf1",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/6da2063bc6ec16dc6f164e51d9fb3ea76678bbf1"
+    }
+  },
+  {
+    "ref": "refs/heads/analysis/task-47-dynamic-potassium-recycling-reconstruction",
+    "node_id": "REF_kwDOUFlnxdoARnJlZnMvaGVhZHMvYW5hbHlzaXMvdGFzay00Ny1keW5hbWljLXBvdGFzc2l1bS1yZWN5Y2xpbmctcmVjb25zdHJ1Y3Rpb24",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/analysis/task-47-dynamic-potassium-recycling-reconstruction",
+    "object": {
+      "sha": "0a6adda00f0bb57d527f341412ceffa348b67a76",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/0a6adda00f0bb57d527f341412ceffa348b67a76"
+    }
+  },
+  {
+    "ref": "refs/heads/analysis/task-48-joint-experimental-constraint-reconstruction",
+    "node_id": "REF_kwDOUFlnxdoASHJlZnMvaGVhZHMvYW5hbHlzaXMvdGFzay00OC1qb2ludC1leHBlcmltZW50YWwtY29uc3RyYWludC1yZWNvbnN0cnVjdGlvbg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/analysis/task-48-joint-experimental-constraint-reconstruction",
+    "object": {
+      "sha": "13b55a78df6d572b783b627aab3ecfb12289643c",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/13b55a78df6d572b783b627aab3ecfb12289643c"
+    }
+  },
+  {
+    "ref": "refs/heads/analysis/task-49-camp-vrac-secretory-branch-reconstruction",
+    "node_id": "REF_kwDOUFlnxdoARXJlZnMvaGVhZHMvYW5hbHlzaXMvdGFzay00OS1jYW1wLXZyYWMtc2VjcmV0b3J5LWJyYW5jaC1yZWNvbnN0cnVjdGlvbg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/analysis/task-49-camp-vrac-secretory-branch-reconstruction",
+    "object": {
+      "sha": "ab7f1cb054b8c8150343653727773f1ca59ebbcf",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/ab7f1cb054b8c8150343653727773f1ca59ebbcf"
+    }
+  },
+  {
+    "ref": "refs/heads/analysis/task-50-minimal-beta-conditioned-effective-coupling",
+    "node_id": "REF_kwDOUFlnxdoAR3JlZnMvaGVhZHMvYW5hbHlzaXMvdGFzay01MC1taW5pbWFsLWJldGEtY29uZGl0aW9uZWQtZWZmZWN0aXZlLWNvdXBsaW5n",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/analysis/task-50-minimal-beta-conditioned-effective-coupling",
+    "object": {
+      "sha": "244a436548f7a443ebc8316cd284f0489e8c2278",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/244a436548f7a443ebc8316cd284f0489e8c2278"
+    }
+  },
+  {
+    "ref": "refs/heads/analysis/task-51-beta-nkcc-swelling-vrac-mechanistic-reconstruction",
+    "node_id": "REF_kwDOUFlnxdoATnJlZnMvaGVhZHMvYW5hbHlzaXMvdGFzay01MS1iZXRhLW5rY2Mtc3dlbGxpbmctdnJhYy1tZWNoYW5pc3RpYy1yZWNvbnN0cnVjdGlvbg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/analysis/task-51-beta-nkcc-swelling-vrac-mechanistic-reconstruction",
+    "object": {
+      "sha": "ad0e7344c8ba79552cbf54714b42e7131bcc1142",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/ad0e7344c8ba79552cbf54714b42e7131bcc1142"
+    }
+  },
+  {
+    "ref": "refs/heads/archive/pre-phase2-main-20260913",
+    "node_id": "REF_kwDOUFlnxdoAK3JlZnMvaGVhZHMvYXJjaGl2ZS9wcmUtcGhhc2UyLW1haW4tMjAyNjA5MTM",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/archive/pre-phase2-main-20260913",
+    "object": {
+      "sha": "b9d4e769747e636ad79d44a23c64c729f31b506d",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/b9d4e769747e636ad79d44a23c64c729f31b506d"
+    }
+  },
+  {
+    "ref": "refs/heads/archive/pre-phase2-task27-20260913",
+    "node_id": "REF_kwDOUFlnxdoALXJlZnMvaGVhZHMvYXJjaGl2ZS9wcmUtcGhhc2UyLXRhc2syNy0yMDI2MDkxMw",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/archive/pre-phase2-task27-20260913",
+    "object": {
+      "sha": "b88ca91740459b10efa55905c57bfd1dd9cbb91f",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/b88ca91740459b10efa55905c57bfd1dd9cbb91f"
+    }
+  },
+  {
+    "ref": "refs/heads/archive/task-50-working-effective-coupling-benchmark",
+    "node_id": "REF_kwDOUFlnxdoAP3JlZnMvaGVhZHMvYXJjaGl2ZS90YXNrLTUwLXdvcmtpbmctZWZmZWN0aXZlLWNvdXBsaW5nLWJlbmNobWFyaw",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/archive/task-50-working-effective-coupling-benchmark",
+    "object": {
+      "sha": "b16c30094b95f61a73d8f1977cd58e79c7bb50f6",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/b16c30094b95f61a73d8f1977cd58e79c7bb50f6"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/ae4-mechanism-reconstruction",
+    "node_id": "REF_kwDOUFlnxdoALXJlZnMvaGVhZHMvY29kZXgvYWU0LW1lY2hhbmlzbS1yZWNvbnN0cnVjdGlvbg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/ae4-mechanism-reconstruction",
+    "object": {
+      "sha": "833037a42005f26a825ed8181e062c0d3eec3ae9",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/833037a42005f26a825ed8181e062c0d3eec3ae9"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/constrained-phenotype-reconstruction",
+    "node_id": "REF_kwDOUFlnxdoANXJlZnMvaGVhZHMvY29kZXgvY29uc3RyYWluZWQtcGhlbm90eXBlLXJlY29uc3RydWN0aW9u",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/constrained-phenotype-reconstruction",
+    "object": {
+      "sha": "d06e0df8d70e6256d7000f08abee9a4b76f8fd1f",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/d06e0df8d70e6256d7000f08abee9a4b76f8fd1f"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/full-forensic-reconstruction",
+    "node_id": "REF_kwDOUFlnxdoALXJlZnMvaGVhZHMvY29kZXgvZnVsbC1mb3JlbnNpYy1yZWNvbnN0cnVjdGlvbg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/full-forensic-reconstruction",
+    "object": {
+      "sha": "d06e0df8d70e6256d7000f08abee9a4b76f8fd1f",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/d06e0df8d70e6256d7000f08abee9a4b76f8fd1f"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/identifiability-discrimination",
+    "node_id": "REF_kwDOUFlnxdoAL3JlZnMvaGVhZHMvY29kZXgvaWRlbnRpZmlhYmlsaXR5LWRpc2NyaW1pbmF0aW9u",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/identifiability-discrimination",
+    "object": {
+      "sha": "a63d986812707a1f967ddea99ca8beea2b43a620",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/a63d986812707a1f967ddea99ca8beea2b43a620"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/manuscript-ae4-decade-reassessment",
+    "node_id": "REF_kwDOUFlnxdoAM3JlZnMvaGVhZHMvY29kZXgvbWFudXNjcmlwdC1hZTQtZGVjYWRlLXJlYXNzZXNzbWVudA",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/manuscript-ae4-decade-reassessment",
+    "object": {
+      "sha": "cc755da66359d7debbc4b2b81a16a104ed2a88fb",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/cc755da66359d7debbc4b2b81a16a104ed2a88fb"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/phase-00-inventory",
+    "node_id": "REF_kwDOUFlnxdoAI3JlZnMvaGVhZHMvY29kZXgvcGhhc2UtMDAtaW52ZW50b3J5",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/phase-00-inventory",
+    "object": {
+      "sha": "2f71f23098037037836853fd96814a0e286cc0af",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/2f71f23098037037836853fd96814a0e286cc0af"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/state-resolved-ae4-cycle",
+    "node_id": "REF_kwDOUFlnxdoAKXJlZnMvaGVhZHMvY29kZXgvc3RhdGUtcmVzb2x2ZWQtYWU0LWN5Y2xl",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/state-resolved-ae4-cycle",
+    "object": {
+      "sha": "a090fb28f3e570cc9ae56bb962ad4e80633b509f",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/a090fb28f3e570cc9ae56bb962ad4e80633b509f"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-13b-modern-full-model",
+    "node_id": "REF_kwDOUFlnxdoAK3JlZnMvaGVhZHMvY29kZXgvdGFzay0xM2ItbW9kZXJuLWZ1bGwtbW9kZWw",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-13b-modern-full-model",
+    "object": {
+      "sha": "8171429e315e761a4045002039557a193e2ef344",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/8171429e315e761a4045002039557a193e2ef344"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-13c-calcium-input-sweep",
+    "node_id": "REF_kwDOUFlnxdoALXJlZnMvaGVhZHMvY29kZXgvdGFzay0xM2MtY2FsY2l1bS1pbnB1dC1zd2VlcA",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-13c-calcium-input-sweep",
+    "object": {
+      "sha": "2f54e7c4f87b6da746d3a8427c7bdca40a77c3de",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/2f54e7c4f87b6da746d3a8427c7bdca40a77c3de"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-14-scale-free-genotype-holdout",
+    "node_id": "REF_kwDOUFlnxdoANHJlZnMvaGVhZHMvY29kZXgvdGFzay0xNC1zY2FsZS1mcmVlLWdlbm90eXBlLWhvbGRvdXQ",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-14-scale-free-genotype-holdout",
+    "object": {
+      "sha": "a2fde97e30d79601e7455d9f1d77d8d67609cb49",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/a2fde97e30d79601e7455d9f1d77d8d67609cb49"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-14b-five-percent-ae4-check",
+    "node_id": "REF_kwDOUFlnxdoAMHJlZnMvaGVhZHMvY29kZXgvdGFzay0xNGItZml2ZS1wZXJjZW50LWFlNC1jaGVjaw",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-14b-five-percent-ae4-check",
+    "object": {
+      "sha": "4d4403f279fc36aec940c9e4759486d02f07e3f6",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/4d4403f279fc36aec940c9e4759486d02f07e3f6"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-15-ae4-sign-slip-audit",
+    "node_id": "REF_kwDOUFlnxdoALHJlZnMvaGVhZHMvY29kZXgvdGFzay0xNS1hZTQtc2lnbi1zbGlwLWF1ZGl0",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-15-ae4-sign-slip-audit",
+    "object": {
+      "sha": "7dd37ec2dcbc134ada6e20045e514e8f318d7b42",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/7dd37ec2dcbc134ada6e20045e514e8f318d7b42"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-16-wt-chloride-allocation",
+    "node_id": "REF_kwDOUFlnxdoAL3JlZnMvaGVhZHMvY29kZXgvdGFzay0xNi13dC1jaGxvcmlkZS1hbGxvY2F0aW9u",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-16-wt-chloride-allocation",
+    "object": {
+      "sha": "4ca525ee10412a616b597fe169b150e3d061fdf7",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/4ca525ee10412a616b597fe169b150e3d061fdf7"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-17-fixed-wt-flux-repartition",
+    "node_id": "REF_kwDOUFlnxdoAMnJlZnMvaGVhZHMvY29kZXgvdGFzay0xNy1maXhlZC13dC1mbHV4LXJlcGFydGl0aW9u",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-17-fixed-wt-flux-repartition",
+    "object": {
+      "sha": "fb2afcf3e23af1d19b297280ad67953370f7c9a9",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/fb2afcf3e23af1d19b297280ad67953370f7c9a9"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-18-fixed-wt-inverse-rebalance",
+    "node_id": "REF_kwDOUFlnxdoAM3JlZnMvaGVhZHMvY29kZXgvdGFzay0xOC1maXhlZC13dC1pbnZlcnNlLXJlYmFsYW5jZQ",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-18-fixed-wt-inverse-rebalance",
+    "object": {
+      "sha": "7e2ecbbefcbce4a2fb488c238718b39593e27a6c",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/7e2ecbbefcbce4a2fb488c238718b39593e27a6c"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-19-ae4-loss-nak-pump-coupling",
+    "node_id": "REF_kwDOUFlnxdoAM3JlZnMvaGVhZHMvY29kZXgvdGFzay0xOS1hZTQtbG9zcy1uYWstcHVtcC1jb3VwbGluZw",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-19-ae4-loss-nak-pump-coupling",
+    "object": {
+      "sha": "5d0f11587a11767cda523225aa21337555a7a1bb",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/5d0f11587a11767cda523225aa21337555a7a1bb"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-20-ae4-pooled-cation-no-slip",
+    "node_id": "REF_kwDOUFlnxdoAMnJlZnMvaGVhZHMvY29kZXgvdGFzay0yMC1hZTQtcG9vbGVkLWNhdGlvbi1uby1zbGlw",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-20-ae4-pooled-cation-no-slip",
+    "object": {
+      "sha": "f6bd93ef9639b603dae1ac556e8a8d6482b92746",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/f6bd93ef9639b603dae1ac556e8a8d6482b92746"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-21-pooled-ae4-wt-physiology-recalibration",
+    "node_id": "REF_kwDOUFlnxdoAP3JlZnMvaGVhZHMvY29kZXgvdGFzay0yMS1wb29sZWQtYWU0LXd0LXBoeXNpb2xvZ3ktcmVjYWxpYnJhdGlvbg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-21-pooled-ae4-wt-physiology-recalibration",
+    "object": {
+      "sha": "db734f52b8d71d670fcf793beab922967212bdd6",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/db734f52b8d71d670fcf793beab922967212bdd6"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-22-physiological-wt-domain",
+    "node_id": "REF_kwDOUFlnxdoAMHJlZnMvaGVhZHMvY29kZXgvdGFzay0yMi1waHlzaW9sb2dpY2FsLXd0LWRvbWFpbg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-22-physiological-wt-domain",
+    "object": {
+      "sha": "694d21f25c0813f91e62b4fa069e16d08450db66",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/694d21f25c0813f91e62b4fa069e16d08450db66"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-25-carbon-nhe1-compensation",
+    "node_id": "REF_kwDOUFlnxdoAMXJlZnMvaGVhZHMvY29kZXgvdGFzay0yNS1jYXJib24tbmhlMS1jb21wZW5zYXRpb24",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-25-carbon-nhe1-compensation",
+    "object": {
+      "sha": "266067261d2f715f19a3b7e8afcd830a0a60ade9",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/266067261d2f715f19a3b7e8afcd830a0a60ade9"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-26-ae4-exact-null",
+    "node_id": "REF_kwDOUFlnxdoAJ3JlZnMvaGVhZHMvY29kZXgvdGFzay0yNi1hZTQtZXhhY3QtbnVsbA",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-26-ae4-exact-null",
+    "object": {
+      "sha": "124e52dd03199707c77ac354fd7cd3e0c8bba768",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/124e52dd03199707c77ac354fd7cd3e0c8bba768"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-27-ae4-inverse-phenotype-repair",
+    "node_id": "REF_kwDOUFlnxdoANXJlZnMvaGVhZHMvY29kZXgvdGFzay0yNy1hZTQtaW52ZXJzZS1waGVub3R5cGUtcmVwYWly",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-27-ae4-inverse-phenotype-repair",
+    "object": {
+      "sha": "b88ca91740459b10efa55905c57bfd1dd9cbb91f",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/b88ca91740459b10efa55905c57bfd1dd9cbb91f"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-28-transport-relationships",
+    "node_id": "REF_kwDOUFlnxdoAMHJlZnMvaGVhZHMvY29kZXgvdGFzay0yOC10cmFuc3BvcnQtcmVsYXRpb25zaGlwcw",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-28-transport-relationships",
+    "object": {
+      "sha": "7da784a241753e209954257bfe33e21c2031d791",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/7da784a241753e209954257bfe33e21c2031d791"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-29-exact-null-feasibility-audit",
+    "node_id": "REF_kwDOUFlnxdoANXJlZnMvaGVhZHMvY29kZXgvdGFzay0yOS1leGFjdC1udWxsLWZlYXNpYmlsaXR5LWF1ZGl0",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-29-exact-null-feasibility-audit",
+    "object": {
+      "sha": "199656bee8bce8cbaad4cadec81a158d8331121f",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/199656bee8bce8cbaad4cadec81a158d8331121f"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-30-nhe1-model-repair",
+    "node_id": "REF_kwDOUFlnxdoAKnJlZnMvaGVhZHMvY29kZXgvdGFzay0zMC1uaGUxLW1vZGVsLXJlcGFpcg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-30-nhe1-model-repair",
+    "object": {
+      "sha": "4c74f74ff25103d11335cb38a26a9a3557aca7c6",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/4c74f74ff25103d11335cb38a26a9a3557aca7c6"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-31-nhe1-mechanistic-repair",
+    "node_id": "REF_kwDOUFlnxdoAMHJlZnMvaGVhZHMvY29kZXgvdGFzay0zMS1uaGUxLW1lY2hhbmlzdGljLXJlcGFpcg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-31-nhe1-mechanistic-repair",
+    "object": {
+      "sha": "fb4bc7d9a569051f5e41cf84837046cba6952d4f",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/fb4bc7d9a569051f5e41cf84837046cba6952d4f"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-32-wt-chloride-calibration",
+    "node_id": "REF_kwDOUFlnxdoAMHJlZnMvaGVhZHMvY29kZXgvdGFzay0zMi13dC1jaGxvcmlkZS1jYWxpYnJhdGlvbg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-32-wt-chloride-calibration",
+    "object": {
+      "sha": "81bd0749fd5a72f13d2ebcf0d18155b5b8371b05",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/81bd0749fd5a72f13d2ebcf0d18155b5b8371b05"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-33-fixed-water-nkcc70-ae4-optimisation",
+    "node_id": "REF_kwDOUFlnxdoAPHJlZnMvaGVhZHMvY29kZXgvdGFzay0zMy1maXhlZC13YXRlci1ua2NjNzAtYWU0LW9wdGltaXNhdGlvbg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-33-fixed-water-nkcc70-ae4-optimisation",
+    "object": {
+      "sha": "fe754f409972ac873c4afaf3bcbb94c90feaf435",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/fe754f409972ac873c4afaf3bcbb94c90feaf435"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-33-nkcc70-chloride-partition",
+    "node_id": "REF_kwDOUFlnxdoAMnJlZnMvaGVhZHMvY29kZXgvdGFzay0zMy1ua2NjNzAtY2hsb3JpZGUtcGFydGl0aW9u",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-33-nkcc70-chloride-partition",
+    "object": {
+      "sha": "dc5099abeeb030aa55fe776dcbcd1f5556bfed9d",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/dc5099abeeb030aa55fe776dcbcd1f5556bfed9d"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-34-stimulated-nhe1-alkalinity-ae4",
+    "node_id": "REF_kwDOUFlnxdoAN3JlZnMvaGVhZHMvY29kZXgvdGFzay0zNC1zdGltdWxhdGVkLW5oZTEtYWxrYWxpbml0eS1hZTQ",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-34-stimulated-nhe1-alkalinity-ae4",
+    "object": {
+      "sha": "89139a419e4f80828f904f0bde7688676ff03a62",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/89139a419e4f80828f904f0bde7688676ff03a62"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-35-source-fixed-nhe1-activation",
+    "node_id": "REF_kwDOUFlnxdoANXJlZnMvaGVhZHMvY29kZXgvdGFzay0zNS1zb3VyY2UtZml4ZWQtbmhlMS1hY3RpdmF0aW9u",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-35-source-fixed-nhe1-activation",
+    "object": {
+      "sha": "72531600a6fd9a99e9990d29675afb787041739f",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/72531600a6fd9a99e9990d29675afb787041739f"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-36-minimal-nahco3-alkalinity",
+    "node_id": "REF_kwDOUFlnxdoAMnJlZnMvaGVhZHMvY29kZXgvdGFzay0zNi1taW5pbWFsLW5haGNvMy1hbGthbGluaXR5",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-36-minimal-nahco3-alkalinity",
+    "object": {
+      "sha": "3ae2b2d5cb28e51f34d020040e8f2d7c70af5911",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/3ae2b2d5cb28e51f34d020040e8f2d7c70af5911"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-37-wt-nbc-validation",
+    "node_id": "REF_kwDOUFlnxdoAKnJlZnMvaGVhZHMvY29kZXgvdGFzay0zNy13dC1uYmMtdmFsaWRhdGlvbg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-37-wt-nbc-validation",
+    "object": {
+      "sha": "2ba0e4e0c2a9e940aa96ed86c3c72456afd0e3aa",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/2ba0e4e0c2a9e940aa96ed86c3c72456afd0e3aa"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-38-ae4-perturbation-validation",
+    "node_id": "REF_kwDOUFlnxdoANHJlZnMvaGVhZHMvY29kZXgvdGFzay0zOC1hZTQtcGVydHVyYmF0aW9uLXZhbGlkYXRpb24",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-38-ae4-perturbation-validation",
+    "object": {
+      "sha": "d4bce14c5caed4e05587e237f002814f0f27e226",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/d4bce14c5caed4e05587e237f002814f0f27e226"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-39-palk-nkcc1-full-validation",
+    "node_id": "REF_kwDOUFlnxdoAM3JlZnMvaGVhZHMvY29kZXgvdGFzay0zOS1wYWxrLW5rY2MxLWZ1bGwtdmFsaWRhdGlvbg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-39-palk-nkcc1-full-validation",
+    "object": {
+      "sha": "8fd6b61643ded2cf0be001d7c00c0c5e84aeb5bd",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/8fd6b61643ded2cf0be001d7c00c0c5e84aeb5bd"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-40-ae4-equal-cation-routing",
+    "node_id": "REF_kwDOUFlnxdoAMXJlZnMvaGVhZHMvY29kZXgvdGFzay00MC1hZTQtZXF1YWwtY2F0aW9uLXJvdXRpbmc",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-40-ae4-equal-cation-routing",
+    "object": {
+      "sha": "86f135e075aa91a70a752b650d7bb894353fee04",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/86f135e075aa91a70a752b650d7bb894353fee04"
+    }
+  },
+  {
+    "ref": "refs/heads/codex/task-42-catalan-2025-ae4-mechanism-classes",
+    "node_id": "REF_kwDOUFlnxdoAO3JlZnMvaGVhZHMvY29kZXgvdGFzay00Mi1jYXRhbGFuLTIwMjUtYWU0LW1lY2hhbmlzbS1jbGFzc2Vz",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/codex/task-42-catalan-2025-ae4-mechanism-classes",
+    "object": {
+      "sha": "072f7e6a694e064555120641049936bb69da0a51",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/072f7e6a694e064555120641049936bb69da0a51"
+    }
+  },
+  {
+    "ref": "refs/heads/integration/tasks-30-38-consolidation",
+    "node_id": "REF_kwDOUFlnxdoAMHJlZnMvaGVhZHMvaW50ZWdyYXRpb24vdGFza3MtMzAtMzgtY29uc29saWRhdGlvbg",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/integration/tasks-30-38-consolidation",
+    "object": {
+      "sha": "5d91fadc6083a1279afdc49a612f09b3e72e0678",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/5d91fadc6083a1279afdc49a612f09b3e72e0678"
+    }
+  },
+  {
+    "ref": "refs/heads/main",
+    "node_id": "REF_kwDOUFlnxa9yZWZzL2hlYWRzL21haW4",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/main",
+    "object": {
+      "sha": "4bb2c89870fe3f4d4bb887cf9d40ba7de377a725",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/4bb2c89870fe3f4d4bb887cf9d40ba7de377a725"
+    }
+  },
+  {
+    "ref": "refs/heads/manuscript/bmb-ae4-decade-reassessment",
+    "node_id": "REF_kwDOUFlnxdoAMXJlZnMvaGVhZHMvbWFudXNjcmlwdC9ibWItYWU0LWRlY2FkZS1yZWFzc2Vzc21lbnQ",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/manuscript/bmb-ae4-decade-reassessment",
+    "object": {
+      "sha": "bac1cb7d8801c955191ada7cc79861dbb98a8c0d",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/bac1cb7d8801c955191ada7cc79861dbb98a8c0d"
+    }
+  },
+  {
+    "ref": "refs/heads/manuscript/bmb-second-pass",
+    "node_id": "REF_kwDOUFlnxdoAJXJlZnMvaGVhZHMvbWFudXNjcmlwdC9ibWItc2Vjb25kLXBhc3M",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/manuscript/bmb-second-pass",
+    "object": {
+      "sha": "8b5bfd1d682f82970c8ff6a55a48f823ae5a9f13",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/8b5bfd1d682f82970c8ff6a55a48f823ae5a9f13"
+    }
+  },
+  {
+    "ref": "refs/heads/manuscript/corrected-archive-audit",
+    "node_id": "REF_kwDOUFlnxdoALXJlZnMvaGVhZHMvbWFudXNjcmlwdC9jb3JyZWN0ZWQtYXJjaGl2ZS1hdWRpdA",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/manuscript/corrected-archive-audit",
+    "object": {
+      "sha": "a2e45d11f2a0f11e50fb6077de56393ad9be98b4",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/a2e45d11f2a0f11e50fb6077de56393ad9be98b4"
+    }
+  },
+  {
+    "ref": "refs/heads/manuscript/submission-cleanup",
+    "node_id": "REF_kwDOUFlnxdoAKHJlZnMvaGVhZHMvbWFudXNjcmlwdC9zdWJtaXNzaW9uLWNsZWFudXA",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/manuscript/submission-cleanup",
+    "object": {
+      "sha": "da9792e3988e6941580973cdb272c54fa96bc5b0",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/da9792e3988e6941580973cdb272c54fa96bc5b0"
+    }
+  },
+  {
+    "ref": "refs/heads/report/tasks-43-44-technical-analysis",
+    "node_id": "REF_kwDOUFlnxdoAMHJlZnMvaGVhZHMvcmVwb3J0L3Rhc2tzLTQzLTQ0LXRlY2huaWNhbC1hbmFseXNpcw",
+    "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/refs/heads/report/tasks-43-44-technical-analysis",
+    "object": {
+      "sha": "db083adcb01abaee28cb904b06e1dfcf9039c810",
+      "type": "commit",
+      "url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/commits/db083adcb01abaee28cb904b06e1dfcf9039c810"
+    }
+  }
+]
