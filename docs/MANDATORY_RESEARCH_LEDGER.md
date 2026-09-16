@@ -818,3 +818,28 @@ All inherited conservation gates remain unchanged. This is implementation
 verification, not evidence yet for a secretion phenotype. See Task52
 IMPLEMENTATION_VERIFICATION.md and output/verification_attempt_01.json.
 Publish and independently verify52B before52C; no retuning or new case follows.
+
+## 23. R52D — fresh recovery execution blocked by frozen output serialisation
+
+SOFTWARE EXECUTION FAILURE / UNRESOLVED numerical result. The fresh recovery
+branch `analysis/task-52D-recovery-from-52C` started exactly at verified52C
+`36f7c3d0bb2353bf55ac0ed9e22582720097c829`. All52 checkpoint artifact hashes,
+all50 immutable scientific/input hashes, the freeze SHA and ledger prefix
+passed, with Python/NumPy/SciPy versions matching the freeze. No52A/B/C
+scientific rerun or recovery of previous unpublished52D work occurred.
+
+The sole fresh process started central matched-supply CCh+IPR case01 at G_aux0.
+The frozen reporter then raised its diagnostic-column assertion before saving
+any trajectory/summary. Exact-zero inactive NBC lacks two current keys emitted
+by active NBC; the runner requires identical onset/subsequent column tuples.
+This is a source-level software blocker, not a biological failure or verified
+600s result. No numerical endpoint, secretion headline or chloride budget can
+be reported. Cases02/03 were not launched; the stage record remains incomplete.
+
+The original traceback/start/stage records are preserved. No completed52D
+checkpoint is claimed. All50 scientific/input hashes remain unchanged; no
+fallback, tuning, mechanism search,52E or52F followed. The frozen no-replay and
+failure rules require explicit authority for a reporting-only correction and
+fresh attempt. See Task52 SOFTWARE_BLOCKER_52D.md and output/failure_52D.json.
+This append qualifies execution readiness of52C's frozen reporter without
+rewriting its historical static review or changing its scientific freeze.

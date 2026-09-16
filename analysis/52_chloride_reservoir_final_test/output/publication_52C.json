@@ -1,0 +1,281 @@
+{
+  "artifact_count": 52,
+  "artifacts": [
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/ARCHITECTURE_AND_NUMERICS_FREEZE.md",
+      "remote_content_verified": true,
+      "sha256": "64bdf6cd5c2a656eb17c106723d7f817e9e39752a492b3bc894d28a66207d0fb"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/CODEX_START_HERE.md",
+      "remote_content_verified": true,
+      "sha256": "533ceaa25de4b9262e28cd099a04964002133119a8f052f026e1f22669a5d9d8"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/CURRENT_STATUS.md",
+      "remote_content_verified": true,
+      "sha256": "5b5a20324aaf11f80f1754bbd9a09385eaf4fae0bae3bcdb0b5dfbb80e1fb904"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/DECISION_LOG.md",
+      "remote_content_verified": true,
+      "sha256": "8d6ebc9eeb8ba79ca340c4589826d6455c0a72029d6f53ed3e1e3f6dd97bbd4f"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/IMPLEMENTATION_VERIFICATION.md",
+      "remote_content_verified": true,
+      "sha256": "18c5980acf4a9c1f950beb0607555516c746284fb87b95e94f9fd875fb2cb9cd"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/NOVELTY_CHECK.md",
+      "remote_content_verified": true,
+      "sha256": "2355eb620344c01e432b55bf48989c62929bb6597cceeb14c87d5c9c16d89e8f"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/NUMERICAL_FREEZE.md",
+      "remote_content_verified": true,
+      "sha256": "891bfb9b008df469d25047414a32341b100c318a550363eca897bd052db347f3"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/PROJECTION_DERIVATION.md",
+      "remote_content_verified": true,
+      "sha256": "6977788881239c0291704fbfc6bf52fc57ec6242b9c3cc3e642ee05c20f358b6"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/TASK37_PROVENANCE.md",
+      "remote_content_verified": true,
+      "sha256": "fbc1a78267c3f914ad6a556fc0f5b83afad0b487d93610e414e4b6ab0a23513a"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/checkpoint.py",
+      "remote_content_verified": true,
+      "sha256": "02adb9f26854bdd046e737e61186fefcc88076e3a262e04415144d8e9dd41d03"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/diagnostics.py",
+      "remote_content_verified": true,
+      "sha256": "11b5ff66e35052672072be76a64a52a0d9bc265e78f2da3eb36482b9a7b35f30"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/freeze_inputs.py",
+      "remote_content_verified": true,
+      "sha256": "01c19eed08cf1a915cb1c2b928b24016d0c7c8e3b31387bfb2cd39543069eea1"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/reference/R09_wt_rest.json",
+      "remote_content_verified": true,
+      "sha256": "f18eec4d9f902d869ee4b4e2b197546c4278c0b08f17209862fca383dc03e868"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/reference/native_wt_contract.json",
+      "remote_content_verified": true,
+      "sha256": "6d283961421a6718a54fd7c86e6575bd5c032a93e649923777b02295cee97f29"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/results/31_nhe1_mechanistic_repair/rest_checkpoints/185f5cee3bcec7a023cf82e4092872114f2292732ad9c4bab68ecf4e062f76e3.json",
+      "remote_content_verified": true,
+      "sha256": "0fda58227f71ff6f0a48c8a078c0578ae5f814ed963abc146384adbf7f59dd19"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/__init__.py",
+      "remote_content_verified": true,
+      "sha256": "721ec58e52c171e5261d769f5136acb5566574710c909dd917a36d048240f8a5"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/acid_base.py",
+      "remote_content_verified": true,
+      "sha256": "cf123937b6cf085b0cbad01fc464fca9eadbb56888802e427900473c1a737a31"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/ae4_routing_only.py",
+      "remote_content_verified": true,
+      "sha256": "ef3a55d6a74fbdc1a07a6f89c19533376aec7bee98cfbafa5f73cf4e01f63a10"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/camp_pka.py",
+      "remote_content_verified": true,
+      "sha256": "b03ef7c794017a1a312fc9bd47188a9bc430e63c8b9c6be4dbfb6c93147eaf03"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/membranes.py",
+      "remote_content_verified": true,
+      "sha256": "ce8dc517be7e264f1c2b5af88f25b898eb4a6517dca384c928b91dcbff76d539"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/model.py",
+      "remote_content_verified": true,
+      "sha256": "46c769e7ed16a7970244846e10990fc73130aa05b370617f27433c0281fdc878"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/nbc_minimal.py",
+      "remote_content_verified": true,
+      "sha256": "988668f6761bffa852d03b74c7020fa5115d542f848dead489cfaf4a6a8f165e"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/nhe1_cha2009.py",
+      "remote_content_verified": true,
+      "sha256": "de76dccffadb75fcaecee90402161af1db48f5db88ea152164f504a974d0e5c1"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/nkcc_stimulation.py",
+      "remote_content_verified": true,
+      "sha256": "8ea8cb187d334725b35fb0d5cc694e83ed876534b70d38a4c01c7effd1d02843"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/parameters.py",
+      "remote_content_verified": true,
+      "sha256": "5a3037ec9849e8202134c664b2a87205f73e2e17edde781ee4fef0bc57b1a39b"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/states.py",
+      "remote_content_verified": true,
+      "sha256": "a037f9690960c3b52e738bc4051601adf76bf345b3a32b191770e2469255fd22"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/task30_nhe1_repair.py",
+      "remote_content_verified": true,
+      "sha256": "7d48386bf081212c2e81aeb6f0d28e47c9d3c9edec4d2f4ab3b80f762f34b105"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/task31_nhe1_repair.py",
+      "remote_content_verified": true,
+      "sha256": "976b62f8aadf87dbb5badb156d40ea974b53eee0e21acd8fd7a08d64543e07d4"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/transporters.py",
+      "remote_content_verified": true,
+      "sha256": "4177a444fa97e430c345fc1fb73f333b5b6623c3ea3cd84769cb9d6dca76061a"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/validation.py",
+      "remote_content_verified": true,
+      "sha256": "e8dd7d9bee588ecab6032a9fb35f41907a112b08d6e8448ca1d7ab60fee7b4b8"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/water.py",
+      "remote_content_verified": true,
+      "sha256": "d93494f93411123a9c9bdaea5c177c89714ee5ab0794717c586bfd87647671ba"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/binding_inputs_at_start.json",
+      "remote_content_verified": true,
+      "sha256": "118d45e0fe78542751cad962369a04e69849978c2be43ed9ed769ae803ec1ff4"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/case_matrix_52A.json",
+      "remote_content_verified": true,
+      "sha256": "bf481af85e8445d3655856ad90a8ad7dc600a462f877cbf409c932a83dfb8189"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/checkpoints/52A.json",
+      "remote_content_verified": true,
+      "sha256": "e795f5ec6bb432dd848d7e2c0578c31b5a931abd51c951101296e20c0dc552d8"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/checkpoints/52B.json",
+      "remote_content_verified": true,
+      "sha256": "1aee0b8cf1776bf612a1f337e34708a7f40ac1634468e4b9f55e76378181ca3a"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/dependency_audit_52C.json",
+      "remote_content_verified": true,
+      "sha256": "57188d6920f138f8eb4ef72c869e8328659e1d3077b87877f2be4606d57617ea"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/frozen_task37_snapshot.json",
+      "remote_content_verified": true,
+      "sha256": "118db641a84fc63f51e7fff48de25ccd0f1679e4916ec3a33dac5e2029faeb30"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/implementation_static_review.md",
+      "remote_content_verified": true,
+      "sha256": "fd501092588e1d2f46d0937aa6c458eee77b1197f29326411f1c5163f39e31f8"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/parameter_and_case_freeze.json",
+      "remote_content_verified": true,
+      "sha256": "9cebb8fcf85557643f6c7838ff57f9fb9603f5a7479cbe6fb63ba8c40b417ba2"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/projected_onsets.json",
+      "remote_content_verified": true,
+      "sha256": "e7b023734b7f9948e7e018c7a21950f0c3c41d27fd79b464857fb589f00d5439"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/publication_52A.json",
+      "remote_content_verified": true,
+      "sha256": "a54c9024628edf089981295dda9b9ed7ea60b8d112acbdbbbcb95857f38ee735"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/publication_52B.json",
+      "remote_content_verified": true,
+      "sha256": "33961244b4c4ff51b974a722737c19093b5079acf2d3f13099475a847cb3420a"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/remote_start_verification.json",
+      "remote_content_verified": true,
+      "sha256": "552da34ef4f1dbc41f4f3914713fae1080a01db3fb418ee154a3e8489a4af4a8"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/runner_static_review.md",
+      "remote_content_verified": true,
+      "sha256": "1462128791848a414a79738fb347cacd6fb0e50430edc5cf221be9eb31e8136e"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/task37_provenance_audit.json",
+      "remote_content_verified": true,
+      "sha256": "26a05e5108f3d987b25bfa4d753baa634dbf80f973855267dccafdff935cdf89"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/task50_archive_start.json",
+      "remote_content_verified": true,
+      "sha256": "deb35b205aa9ef826544f390f829d5b051c998cecbcc3d09ab96727f848ebd7a"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/verification_attempt_01.json",
+      "remote_content_verified": true,
+      "sha256": "8350bcb003eb6c1f28bb62af7ae13f901d8572b007db34c6714ee1e59a8703c4"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/project_onset.py",
+      "remote_content_verified": true,
+      "sha256": "8494b9e7b42e77d5079aed6e5bec22afdab6fd7d01409d48b899f9881bdcbd21"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/run_frozen_cases.py",
+      "remote_content_verified": true,
+      "sha256": "d5988680b99638fa91ed0e6e82a70f6b1d6bca581ee102438060d6e1025909ce"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/task52_model.py",
+      "remote_content_verified": true,
+      "sha256": "67a8f372f39c27e68227464a8d6241be021163bd8b1d2e2230020b8efa692b9d"
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/verify_implementation.py",
+      "remote_content_verified": true,
+      "sha256": "7cffe39b88fb2e295c8df4415395d6e689fb655e68632a4f632ee4d0df3d19b2"
+    },
+    {
+      "path": "docs/MANDATORY_RESEARCH_LEDGER.md",
+      "remote_content_verified": true,
+      "sha256": "3c5a4a6c9d09ee67d15866d4a4327fe99bdfdd786fbfd98e537e2e8532712c74"
+    }
+  ],
+  "branch": "analysis/task-52D-recovery-from-52C",
+  "checkpoint": "52C",
+  "commit_sha": "36f7c3d0bb2353bf55ac0ed9e22582720097c829",
+  "freeze_sha256": "9cebb8fcf85557643f6c7838ff57f9fb9603f5a7479cbe6fb63ba8c40b417ba2",
+  "immutable_scientific_input_count": 50,
+  "parent_commit": "8ff3b82da2891e47bb968f137dce50e240640491",
+  "pass": true,
+  "receipt_match": true,
+  "receipt_sha256": "631ebe62cc02106936bf409038d34f6aaf30f6f2e9b7d9c3661325005d1cea93",
+  "ref_match": true,
+  "remote_branch_sha": "36f7c3d0bb2353bf55ac0ed9e22582720097c829",
+  "scope": "Existing52C freeze validation only; no52A/52B/52C scientific rerun.",
+  "tree_match": true,
+  "tree_sha": "83996c089e575722ffe4635d9da53327ab1f6411",
+  "verification_transport": "Fresh Git clone and independent explicit remote branch fetch; every checkpoint blob read from FETCH_HEAD and SHA256 compared with local and recorded hash. Independent GitHub connector ref/commit GET confirms SHA and tree.",
+  "verified_at_utc": "2026-09-16T21:16:35.307312+00:00"
+}

@@ -154,3 +154,49 @@ No scientific axis is reopened, and no trajectory is authorised at52B.
 ## D52-13 — immutable52C numerical freeze
 
 After independently verified52B, freeze all four projected onset states,50 source/input identities and exactly eight cases. The production runner directly advances the26-coordinate paired RHS, preserves accepted endpoints plus integer-second diagnostics, and stops on the first sampled physical/conservation failure. Independent8-point and4-point Gauss quadratures include explicit2DN mass-term checks and separately bounded onset epsilon accounting. Failure records preserve partial coverage and unvalidated accepted endpoints. Static review corrections concern bookkeeping only; the tested scientific implementation is byte-unchanged. No scientific evaluation, integration, parameter change or tuning occurred at52C.
+
+## D52-14 — fresh 52D execution from immutable 52C on the recovery branch
+
+The current user instruction authorises only `analysis/task-52D-recovery-from-52C`
+starting exactly at `36f7c3d0bb2353bf55ac0ed9e22582720097c829`, and only the
+three central combined-stimulus 52D cases. It supersedes the old operational
+branch name and automatic continuation through 52E/52F. No earlier unpublished
+52D work is recovered, compared, reconstructed or reused.
+
+Before numerical execution, fresh clone/remote fetch and independent GitHub
+ref/commit reads agree on HEAD and tree. All 52 recorded 52C artifact SHA256
+checks, all 50 immutable source/input SHA256 checks, the freeze SHA and ledger
+prefix pass. `output/publication_52C.json` records this validation of the
+existing freeze; no 52A, 52B or 52C scientific work is repeated. Runtime Python,
+NumPy and SciPy versions equal the freeze. An independent read-only audit
+confirms these checks and the runner's required output coverage.
+
+The frozen runner contains the old branch literal. The auditable operational
+launcher `output/launch_52D_recovery.py` changes only that literal in the
+input-verification function in memory to the explicitly authorised branch.
+Every other integrity gate and every scientific function remains unchanged.
+For receipt generation only, `checkpoint.BRANCH` will likewise use the actual
+recovery branch. Existing scientific source/input files remain byte-identical.
+
+The scientific scope is exactly D52-07 cases 1–3, D52-09 reservoir accounting,
+and D52-13 frozen numerics, grounded in master ledger R52A/R52B and the
+R51H/R51I/Task52-start continuations. No closed axis is reopened. Use one
+scientific process and one BLAS thread, the stored central onsets, unchanged
+600 s target, Radau settings, quadrature and failure gates. Preserve every
+attempt. Publish the three-case 52D summaries/checkpoint and new ledger result,
+commit/push immediately, independently verify remote hashes, then stop.
+No 52E, 52F, tuning, additional case, mechanism search or final classification.
+
+## D52-15 — stop on frozen output-schema failure; no scientific replay
+
+The first fresh52D process exited1 at run_frozen_cases.py's diagnostic-column
+assertion before saving case01 arrays/summary. Static inspection identifies
+active NBC current keys absent at exact-zero onset. This is not an explicit
+Radau solver-status failure and therefore does not license BDF or a replay under
+D52-13/NUMERICAL_FREEZE. No valid terminal time, numerical result or mass budget
+is established. Cases02/03 remain unlaunched. Preserve the failure evidence,
+append the new operational qualification to master-ledger R52D, and publish an
+incomplete status. Do not create a completed52D checkpoint or run52E/52F.
+Master-ledger R52A/R52B and R51H/R51I scientific scope is unchanged; no closed
+axis is reopened. All50 immutable source/input hashes still pass. A bounded
+serialisation-only remedy is described, not applied, in SOFTWARE_BLOCKER_52D.md.
