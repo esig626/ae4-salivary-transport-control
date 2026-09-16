@@ -1,0 +1,137 @@
+{
+  "version": 2,
+  "utc": "2026-09-16T00:34:21.299047+00:00",
+  "reason": "Independent validation identified clipped Fig5C marker support in the version1 corridor.",
+  "affected_outputs": "Fig5C derived marker envelopes only; other panel values and all primary assets unchanged.",
+  "old_files_preserved": "digitisation_v1/",
+  "new_method": "Threshold150 atx\u00b11 overy58..200 forx<740, y58..90 forx>=740. Excludes drug bar and IPR label. Early symbols mayoverlap; flagged, not treatedas SEM.",
+  "protocol_key_change": {
+    "old": "current_clamp_mV",
+    "new": "holding_potential_mV",
+    "unchanged_value": -60
+  },
+  "changes": [
+    {
+      "time_s": 50.0,
+      "old_y_pixels": [
+        175.0,
+        195.0
+      ],
+      "new_y_pixels": [
+        175.0,
+        196.0
+      ]
+    },
+    {
+      "time_s": 75.0,
+      "old_y_pixels": [
+        179.0,
+        191.0
+      ],
+      "new_y_pixels": [
+        179.0,
+        192.0
+      ]
+    },
+    {
+      "time_s": 100.0,
+      "old_y_pixels": [
+        167.0,
+        187.0
+      ],
+      "new_y_pixels": [
+        165.0,
+        187.0
+      ]
+    },
+    {
+      "time_s": 150.0,
+      "old_y_pixels": [
+        148.0,
+        167.0
+      ],
+      "new_y_pixels": [
+        145.0,
+        167.0
+      ]
+    },
+    {
+      "time_s": 175.0,
+      "old_y_pixels": [
+        138.0,
+        156.0
+      ],
+      "new_y_pixels": [
+        133.0,
+        156.0
+      ]
+    },
+    {
+      "time_s": 200.0,
+      "old_y_pixels": [
+        129.0,
+        144.0
+      ],
+      "new_y_pixels": [
+        123.0,
+        144.0
+      ]
+    },
+    {
+      "time_s": 225.0,
+      "old_y_pixels": [
+        120.0,
+        134.0
+      ],
+      "new_y_pixels": [
+        116.0,
+        134.0
+      ]
+    },
+    {
+      "time_s": 250.0,
+      "old_y_pixels": [
+        112.0,
+        125.0
+      ],
+      "new_y_pixels": [
+        107.0,
+        125.0
+      ]
+    },
+    {
+      "time_s": 275.0,
+      "old_y_pixels": [
+        103.0,
+        115.0
+      ],
+      "new_y_pixels": [
+        96.0,
+        115.0
+      ]
+    },
+    {
+      "time_s": 300.0,
+      "old_y_pixels": [
+        95.0,
+        106.0
+      ],
+      "new_y_pixels": [
+        89.0,
+        106.0
+      ]
+    },
+    {
+      "time_s": 325.0,
+      "old_y_pixels": [
+        86.0,
+        98.0
+      ],
+      "new_y_pixels": [
+        82.0,
+        98.0
+      ]
+    }
+  ],
+  "authoritative_inference": false
+}

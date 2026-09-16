@@ -1,0 +1,67 @@
+{
+  "calibration_after_reveal": false,
+  "checkpoint": "49E",
+  "deferred_numeric_observations": "All other beta-containing AE4/AE2 endpoints remain unavailable, including combined uptake and secretion. No old-parent output is relabelled as a new VRAC prediction.",
+  "exact_prediction_comparison": {
+    "model_minus_data_in_reported_SE": -6.666666666666667,
+    "n": 7,
+    "observable": "AE4_KO initial_Cl_uptake_IPR",
+    "observation_map": "A constant chemical state gives zero SPQ slope for any fixed time-independent optical calibration.",
+    "observed_SE": 0.03,
+    "observed_mean": 0.2,
+    "predicted_mean": 0.0,
+    "scope": "Every finite nonnegative conductance in the single frozen positive-swelling law at exact own-genotype rest.",
+    "statistical_limit": "Descriptive discrepancy in reported SE units, not a calibrated p-value or joint likelihood.",
+    "units": "1e-3_s-1"
+  },
+  "frozen_prediction_sha256": "4859c96373687cd391247d15ef427a22cb0fe067f8457843112941a843ef16ab",
+  "heldout_ledger_sha256": "80c26cff86e88c45689c75051d35f61b059c64c33861affd8538849ce4a1b346",
+  "interpretation": "Reject this sole predeclared gate as a sufficient reconstruction, not the experimental existence of a cAMP/VRAC pathway.",
+  "new_trajectories": 0,
+  "parameter_updates": 0,
+  "questions": [
+    {
+      "id": 1,
+      "question": "KO CCh versus combined invariance removed?",
+      "reason": "The extra current can depend on beta at swollen states, but no conductance was identified. KO IPR-only still has an exact no-initiation invariant. This does not prove combined-stimulus equality for all states.",
+      "status": "not quantitatively established"
+    },
+    {
+      "id": 2,
+      "question": "CCh preserved with selective beta impairment?",
+      "status": "CCh exactly nests; beta prediction unavailable"
+    },
+    {
+      "id": 3,
+      "question": "KO IPR uptake in correct direction?",
+      "status": "fails: exact zero instead of positive 0.20 +/- 0.03"
+    },
+    {
+      "id": 4,
+      "question": "Combined early preservation and later loss?",
+      "status": "unavailable"
+    },
+    {
+      "id": 5,
+      "question": "Ten-minute cumulative deficit?",
+      "status": "unavailable; 35 percent not fitted"
+    },
+    {
+      "id": 6,
+      "question": "AE2 secretion neutrality?",
+      "status": "unavailable for beta-containing protocols"
+    },
+    {
+      "id": 7,
+      "question": "Task41 immediate-deficit and AE4-TMEM16A coupling avoided?",
+      "status": "no direct AE4-expression factor; timing unavailable"
+    },
+    {
+      "id": 8,
+      "question": "Resting mismatch?",
+      "status": "unchanged: beta=0 exactly nests parent; StageII follows remote49E"
+    }
+  ],
+  "status": "PREDECLARED_SWELLING_GATE_FAILS_KO_IPR_INITIATION; FULL_NUMERICAL_RECONSTRUCTION_UNAVAILABLE",
+  "verified_49D_sha": "c1e7d3afa2e3c4f037c3a5f1c3bc4a5b6eaa3e3c"
+}

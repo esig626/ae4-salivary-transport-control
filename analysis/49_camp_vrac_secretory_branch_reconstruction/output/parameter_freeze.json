@@ -1,0 +1,25 @@
+{
+  "AE4_heldout_data_used": false,
+  "beta_NKCC_changed": false,
+  "blockers": [
+    "No verified matched blocked apical current, swelling and chloride driving-force map.",
+    "Perforated whole-cell current is not a measured apical conductance; total and blocked components differ.",
+    "WT current-parent IPR samples shrink instead of activating the predeclared swelling gate.",
+    "Independent gland shapes/ratios have not supplied a demonstrated finite identifiable scale under these activation/observation restrictions."
+  ],
+  "calibrated_conductance_S": null,
+  "diagnostic_fixture_conductance_is_parameter": false,
+  "finite_identified_envelope_S": null,
+  "frozen_inherited_parameter_sha256": "1a4a4708de6d1752add85b99135b421f96c54c141a018390c64de50368ec774e",
+  "law": "g_V beta max(V_i/V_rest_genotype - 1,0)",
+  "limits": "This is an unresolved/failed identification gate, not proof that the unavailable supplement lacks data or that every possible observation map is impossible.",
+  "model_source_sha256": "30d41e4e08e54f1dc58580bc458595c22f555189c20fa9085e9d9cd431604e94",
+  "new_parameters_inferred": 0,
+  "next": "Publish immutable unavailable-prediction record at49D, then49E limitations, thenStageII after remote49E.",
+  "optimisation_calls": 0,
+  "post_reveal_retuning": false,
+  "production_eligible": false,
+  "production_trajectories": 0,
+  "source_manifest_sha256": "97297538727306c35e7fd760b6fbbe478e9d602519bab6d8ca8fae89bc014796",
+  "status": "BLOCKED_INDEPENDENT_CALIBRATION"
+}

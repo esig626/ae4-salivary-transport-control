@@ -1,0 +1,698 @@
+{
+  "article_doi": "10.1073/pnas.1415739112",
+  "pmcid": "PMC4343136",
+  "extraction_date": "2026-09-16",
+  "coordinate_origin": "upper-left original JPEG; x right, y down; not resized crops",
+  "method": "Manual pixel picks persisted before affine conversion; Fig5C deterministic vertical-envelope extraction.",
+  "version": 2,
+  "correction": "Version1 +/-10px corridors clipped portions of the Fig5C symbol envelope. Version2 uses broad image regions with explicit bar/text exclusion; all original Version1 files are preserved in digitisation_v1/.",
+  "figure5C_regions": {
+    "x_below_740_y_px": [
+      58,
+      200
+    ],
+    "x_at_least_740_y_px": [
+      58,
+      90
+    ],
+    "dark_threshold": 150,
+    "strip_width_px": 3,
+    "early_symbol_overlap_time_le_s": 75
+  },
+  "axis_anchor_halfwidth_px": 1.0,
+  "point_pick_halfwidth_px": 1.5,
+  "reported_digitisation_error": "1.5px mapped to y units only; axis uncertainty is separately declared; not biological SEM.",
+  "source_hashes": {
+    "figure4.jpg": "73624ef8deed612811f87742d9a0bbf68ead352f99b7667bbf1c82e372ee1a62",
+    "figure5.jpg": "3eac55e4c5fa40fbccca61751b5ae9dd2b3026af73180142ad43f72d4ca888d2"
+  },
+  "axes": {
+    "4A": {
+      "file": "figure4.jpg",
+      "x": [
+        [
+          128.5,
+          0
+        ],
+        [
+          386.5,
+          10
+        ]
+      ],
+      "y": [
+        [
+          418.5,
+          0
+        ],
+        [
+          40.5,
+          3
+        ]
+      ],
+      "x_unit": "min",
+      "y_unit": "uL/min"
+    },
+    "4B": {
+      "file": "figure4.jpg",
+      "y": [
+        [
+          425.5,
+          0
+        ],
+        [
+          41.5,
+          15
+        ]
+      ],
+      "y_unit": "uL/10min"
+    },
+    "5A": {
+      "file": "figure5.jpg",
+      "y": [
+        [
+          300,
+          0
+        ],
+        [
+          43,
+          45
+        ]
+      ],
+      "y_unit": "uL/10min"
+    },
+    "5B": {
+      "file": "figure5.jpg",
+      "x": [
+        [
+          301.5,
+          0
+        ],
+        [
+          473,
+          10
+        ]
+      ],
+      "y": [
+        [
+          294.5,
+          0
+        ],
+        [
+          45.5,
+          6
+        ]
+      ],
+      "x_unit": "min",
+      "y_unit": "uL/min"
+    },
+    "5C": {
+      "file": "figure5.jpg",
+      "x": [
+        [
+          611,
+          0
+        ],
+        [
+          774,
+          500
+        ]
+      ],
+      "y": [
+        [
+          302,
+          0.8
+        ],
+        [
+          45,
+          1.2
+        ]
+      ],
+      "x_unit": "s",
+      "y_unit": "F0/F (label also V/V0)"
+    },
+    "5E": {
+      "file": "figure5.jpg",
+      "y": [
+        [
+          681,
+          0
+        ],
+        [
+          425,
+          400
+        ]
+      ],
+      "y_unit": "pA absolute change"
+    }
+  },
+  "series": {
+    "4A_control": {
+      "panel": "4A",
+      "n": 6,
+      "picks": [
+        [
+          128.5,
+          418.5,
+          null,
+          null
+        ],
+        [
+          154,
+          308,
+          299,
+          318
+        ],
+        [
+          180,
+          280.5,
+          270,
+          291.5
+        ],
+        [
+          206,
+          280.5,
+          272,
+          289
+        ],
+        [
+          232,
+          291,
+          281,
+          300.5
+        ],
+        [
+          258,
+          287.5,
+          278.5,
+          297.5
+        ],
+        [
+          284,
+          296.5,
+          285,
+          308.5
+        ],
+        [
+          309,
+          298,
+          284,
+          312
+        ],
+        [
+          335,
+          290.5,
+          274.5,
+          308.5
+        ],
+        [
+          361,
+          282.5,
+          270,
+          294.5
+        ],
+        [
+          387,
+          301.5,
+          288.5,
+          314
+        ]
+      ]
+    },
+    "4A_Tmem16A_KO": {
+      "panel": "4A",
+      "n": 6,
+      "picks": [
+        [
+          128.5,
+          418.5,
+          null,
+          null
+        ],
+        [
+          154,
+          335,
+          321,
+          350.5
+        ],
+        [
+          180,
+          324,
+          302.5,
+          345.5
+        ],
+        [
+          206,
+          318,
+          297.5,
+          339
+        ],
+        [
+          232,
+          330,
+          315,
+          345
+        ],
+        [
+          258,
+          328.5,
+          310.5,
+          346.5
+        ],
+        [
+          284,
+          328.5,
+          312.5,
+          344.5
+        ],
+        [
+          309,
+          322.5,
+          304,
+          340.5
+        ],
+        [
+          335,
+          327,
+          310,
+          344.5
+        ],
+        [
+          361,
+          335.5,
+          319,
+          352.5
+        ],
+        [
+          387,
+          325.5,
+          308.5,
+          342.5
+        ]
+      ]
+    },
+    "4B_control": {
+      "panel": "4B",
+      "n": 6,
+      "picks": [
+        [
+          650,
+          169,
+          150,
+          null
+        ]
+      ]
+    },
+    "4B_Tmem16A_KO": {
+      "panel": "4B",
+      "n": 6,
+      "picks": [
+        [
+          699,
+          242,
+          207,
+          null
+        ]
+      ]
+    },
+    "5A_control": {
+      "panel": "5A",
+      "n": 8,
+      "picks": [
+        [
+          113,
+          191,
+          170,
+          null
+        ]
+      ]
+    },
+    "5A_bicarbonate_free": {
+      "panel": "5A",
+      "n": 8,
+      "picks": [
+        [
+          135,
+          286,
+          280,
+          null
+        ]
+      ]
+    },
+    "5A_low_chloride": {
+      "panel": "5A",
+      "n": 8,
+      "picks": [
+        [
+          157,
+          298,
+          null,
+          null
+        ]
+      ]
+    },
+    "5B_control": {
+      "panel": "5B",
+      "n": 8,
+      "picks": [
+        [
+          301.5,
+          294.5,
+          null,
+          null
+        ],
+        [
+          319,
+          213,
+          null,
+          null
+        ],
+        [
+          336,
+          227.5,
+          219,
+          null
+        ],
+        [
+          353,
+          220.5,
+          205,
+          null
+        ],
+        [
+          370,
+          221,
+          205,
+          null
+        ],
+        [
+          387,
+          214.5,
+          195,
+          null
+        ],
+        [
+          405,
+          216.5,
+          199.5,
+          null
+        ],
+        [
+          422,
+          216.5,
+          195,
+          null
+        ],
+        [
+          439,
+          219.5,
+          202,
+          null
+        ],
+        [
+          456,
+          218.5,
+          199,
+          null
+        ],
+        [
+          473,
+          218.5,
+          195.5,
+          null
+        ]
+      ]
+    },
+    "5B_Clcn2_KO": {
+      "panel": "5B",
+      "n": 8,
+      "picks": [
+        [
+          301.5,
+          294.5,
+          null,
+          null
+        ],
+        [
+          319,
+          225,
+          null,
+          232
+        ],
+        [
+          336,
+          239,
+          null,
+          247
+        ],
+        [
+          353,
+          237,
+          228,
+          246
+        ],
+        [
+          370,
+          235.5,
+          null,
+          243
+        ],
+        [
+          387,
+          234.5,
+          228,
+          null
+        ],
+        [
+          405,
+          240,
+          null,
+          247.5
+        ],
+        [
+          422,
+          241.5,
+          null,
+          248.5
+        ],
+        [
+          439,
+          242,
+          233,
+          250
+        ],
+        [
+          456,
+          247.5,
+          241,
+          254
+        ],
+        [
+          473,
+          243,
+          null,
+          249.5
+        ]
+      ]
+    },
+    "5B_DCPIB": {
+      "panel": "5B",
+      "n": 8,
+      "picks": [
+        [
+          301.5,
+          294.5,
+          null,
+          null
+        ],
+        [
+          319,
+          275.5,
+          null,
+          null
+        ],
+        [
+          336,
+          277.5,
+          null,
+          null
+        ],
+        [
+          353,
+          280.5,
+          null,
+          null
+        ],
+        [
+          370,
+          282.5,
+          null,
+          null
+        ],
+        [
+          387,
+          284,
+          null,
+          null
+        ],
+        [
+          405,
+          286,
+          null,
+          null
+        ],
+        [
+          422,
+          287.5,
+          null,
+          null
+        ],
+        [
+          439,
+          288,
+          null,
+          null
+        ],
+        [
+          456,
+          288,
+          null,
+          null
+        ],
+        [
+          473,
+          288,
+          null,
+          null
+        ]
+      ]
+    },
+    "5B_NPPB": {
+      "panel": "5B",
+      "n": 6,
+      "picks": [
+        [
+          301.5,
+          294.5,
+          null,
+          null
+        ],
+        [
+          319,
+          294.5,
+          null,
+          null
+        ],
+        [
+          336,
+          294.5,
+          null,
+          null
+        ],
+        [
+          353,
+          294.5,
+          null,
+          null
+        ],
+        [
+          370,
+          294.5,
+          null,
+          null
+        ],
+        [
+          387,
+          294.5,
+          null,
+          null
+        ],
+        [
+          405,
+          294.5,
+          null,
+          null
+        ],
+        [
+          422,
+          294.5,
+          null,
+          null
+        ],
+        [
+          439,
+          294.5,
+          null,
+          null
+        ],
+        [
+          456,
+          294.5,
+          null,
+          null
+        ],
+        [
+          473,
+          294.5,
+          null,
+          null
+        ]
+      ]
+    },
+    "5E_IPR_induced": {
+      "panel": "5E",
+      "n": 4,
+      "picks": [
+        [
+          541,
+          547.5,
+          525,
+          null
+        ]
+      ]
+    },
+    "5E_IPR_DCPIB_block_magnitude": {
+      "panel": "5E",
+      "n": 4,
+      "picks": [
+        [
+          556,
+          612,
+          601,
+          null
+        ]
+      ]
+    },
+    "5E_hypotonic_induced": {
+      "panel": "5E",
+      "n": 3,
+      "picks": [
+        [
+          606,
+          566.5,
+          510,
+          null
+        ]
+      ]
+    },
+    "5E_hypotonic_DCPIB_block_magnitude": {
+      "panel": "5E",
+      "n": 3,
+      "picks": [
+        [
+          622,
+          621.5,
+          618,
+          null
+        ]
+      ]
+    }
+  },
+  "cautions": [
+    "Fig5E grey bars are magnitudes BLOCKED by DCPIB, not residual currents after blockade.",
+    "Fig5B NPPB markers conceal tiny or absent SEM. Do not declare exact zero.",
+    "Whole-gland secretion is not normalised per acinar cell. Different control cohorts have materially different outputs.",
+    "Fig5C trace endpoint differs from narrative 12.5\u00b10.2% swelling; both are preserved and discrepancy not resolved.",
+    "Current and swelling were measured in different experiments; no paired gain is inferred.",
+    "Digitisation does not licence an Ohmic law for a reported outward-rectifying conductance."
+  ]
+}
