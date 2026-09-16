@@ -1,0 +1,10 @@
+{
+  "unit_tests": 9,
+  "passed": 9,
+  "production_trajectories": 0,
+  "inference_calls": 0,
+  "resting_solves": 0,
+  "frozen_source_files_verified": 72,
+  "conductance_fixture_S": 1e-08,
+  "fixture_is_calibration": false
+}

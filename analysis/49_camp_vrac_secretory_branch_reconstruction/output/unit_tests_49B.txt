@@ -1,0 +1,14 @@
+test_current_and_amount_conservation_with_nbc (__main__.VracTests.test_current_and_amount_conservation_with_nbc) ... ok
+test_direct_two_voltage_equations (__main__.VracTests.test_direct_two_voltage_equations) ... ok
+test_fixed_voltage_reversal_and_chloride_sign (__main__.VracTests.test_fixed_voltage_reversal_and_chloride_sign) ... ok
+test_integration_dispatch_uses_wrapper (__main__.VracTests.test_integration_dispatch_uses_wrapper) ... ok
+test_no_direct_ae4_expression_factor (__main__.VracTests.test_no_direct_ae4_expression_factor) ... ok
+test_rest_and_cch_exact_nesting (__main__.VracTests.test_rest_and_cch_exact_nesting) ... ok
+test_tmem16a_independence (__main__.VracTests.test_tmem16a_independence) ... ok
+test_unchanged_parameter_objects_and_pump (__main__.VracTests.test_unchanged_parameter_objects_and_pump) ... ok
+test_zero_scale_and_closed_volume_gate (__main__.VracTests.test_zero_scale_and_closed_volume_gate) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.028s
+
+OK

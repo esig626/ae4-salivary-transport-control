@@ -1,0 +1,11 @@
+# 49B separate-current implementation
+
+`vrac_model.py` wraps the unmodified Task 48 model. It reuses Task 13B's single positive-swelling gate and solves the two current equations with the new chloride conductance included. TMEM16A remains `cl_apical`; VRAC is `vrac_apical`; their sum is `cl_apical_total`. The corresponding intracellular/luminal chloride sources are equal and opposite. Electrogenic NBC is reevaluated at the resulting basolateral voltage under its unchanged law. The other currents change only as their unchanged laws require at the new voltages.
+
+Nine focused unit tests pass. They include an independent two-variable solution of the original current equations, amount/current/carbon closure, exact REST and CCh nesting, Nernst reversal, TMEM16A independence, no direct AE4 factor, immutable inherited parameters and integration dispatch through the wrapper. Test states with 10% imposed swelling and `g=1e-8 S` are synthetic numerical fixtures, not calibration values or physiological initial states. No production trajectory, parameter optimisation or resting solve was run.
+
+This is a verified implementation, **not an accepted biological reconstruction**. It has no default conductance. Historical unlicensed-capacity provenance remains explicit. 49C must decide whether independent cAMP measurements identify a permissible scale and activate the gate. The raw independent figure assets were frozen at 49A; digitisation derived from those unchanged figures will be included before any 49C numerical use.
+
+All inherited model sources and old analyses/results remain byte-identical to the requested start. All work is local to Task 49. Beta-NKCC recruitment, NKCC kinetics, AE4/AE2/NHE1/NBC laws, pump/K/TMEM16A laws, calcium, geometry, water and paracellular laws were not changed.
+
+The shell's attempted 49A push failed because it has no write credential. Publication therefore uses the connected GitHub Git Data API. Tree hashes are matched exactly to the local commit, the branch is advanced with `force=false`, and the remote ref is independently fetched before dependent work. The local unpushed transport commit is aligned to that verified remote commit without changing its file tree. No published history is rewritten.
