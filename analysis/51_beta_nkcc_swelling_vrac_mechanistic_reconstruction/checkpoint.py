@@ -84,10 +84,14 @@ def sync(name,metadata):
     for kind in ['author','committer']:
         a=m[kind];stamp=int(datetime.fromisoformat(a['date'].replace('Z','+00:00')).timestamp())
         lines.append(f'{kind} {a["name"]} <{a["email"]}> {stamp} +0000')
-    raw=('\n'.join(lines)+'\n\n'+m['message']).encode();found=False
-    for b in [raw,raw+b'\n']:
-        if hashlib.sha1(b'commit '+str(len(b)).encode()+b'\0'+b).hexdigest()==m['sha']:
-            subprocess.run(['git','hash-object','-t','commit','-w','--stdin'],cwd=ROOT,input=b,check=True,stdout=subprocess.DEVNULL);found=True;break
+    raw='\n'.join(lines)+'\n\n'+m['message'];found=False
+    offsets=['+0000']+[f'{s}{v//60:02}{v%60:02}' for s in ['+','-'] for v in range(0,15*60,15)]
+    for offset in offsets:
+        for ending in ['', '\n']:
+            b=(raw.replace(' +0000\n',' '+offset+'\n')+ending).encode()
+            if hashlib.sha1(b'commit '+str(len(b)).encode()+b'\0'+b).hexdigest()==m['sha']:
+                subprocess.run(['git','hash-object','-t','commit','-w','--stdin'],cwd=ROOT,input=b,check=True,stdout=subprocess.DEVNULL);found=True;break
+        if found:break
     if not found:raise RuntimeError('Remote raw commit reconstruction mismatch')
     git('reset','--soft',m['sha']);git('update-ref','refs/remotes/origin/'+BRANCH,m['sha'])
     record=dict(checkpoint=name,sha=m['sha'],remote_sha=m['sha'],tree=m['tree']['sha'],verified=True,

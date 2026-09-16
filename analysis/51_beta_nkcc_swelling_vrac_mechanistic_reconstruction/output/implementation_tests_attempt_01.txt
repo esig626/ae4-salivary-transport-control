@@ -1,0 +1,30 @@
+test_additive_multiplier_and_exact_source_signature (test_task51.Task51Tests.test_additive_multiplier_and_exact_source_signature) ... FAIL
+test_beta_disabled_exact_task49_regression (test_task51.Task51Tests.test_beta_disabled_exact_task49_regression) ... ok
+test_bumetanide_masks_new_nkcc_arm (test_task51.Task51Tests.test_bumetanide_masks_new_nkcc_arm) ... ok
+test_complete_parent_nesting_two_tracks (test_task51.Task51Tests.test_complete_parent_nesting_two_tracks) ... ok
+test_current_and_amount_conservation_with_nbc (test_task51.Task51Tests.test_current_and_amount_conservation_with_nbc) ... ok
+test_direct_two_voltage_equations (test_task51.Task51Tests.test_direct_two_voltage_equations) ... ok
+test_fixed_voltage_reversal_and_chloride_sign (test_task51.Task51Tests.test_fixed_voltage_reversal_and_chloride_sign) ... ok
+test_integration_dispatch_uses_wrapper (test_task51.Task51Tests.test_integration_dispatch_uses_wrapper) ... ok
+test_no_direct_ae4_expression_factor (test_task51.Task51Tests.test_no_direct_ae4_expression_factor) ... ok
+test_no_forbidden_model_imports_or_extra_states (test_task51.Task51Tests.test_no_forbidden_model_imports_or_extra_states) ... ok
+test_palk_reversal_unchanged (test_task51.Task51Tests.test_palk_reversal_unchanged) ... ok
+test_rest_and_cch_exact_nesting (test_task51.Task51Tests.test_rest_and_cch_exact_nesting) ... ok
+test_tmem16a_independence (test_task51.Task51Tests.test_tmem16a_independence) ... ok
+test_total_export_balance_identity (test_task51.Task51Tests.test_total_export_balance_identity) ... ok
+test_unchanged_parameter_objects_and_pump (test_task51.Task51Tests.test_unchanged_parameter_objects_and_pump) ... ok
+test_vrac_disabled_keeps_regulated_transport (test_task51.Task51Tests.test_vrac_disabled_keeps_regulated_transport) ... ok
+test_zero_scale_and_closed_volume_gate (test_task51.Task51Tests.test_zero_scale_and_closed_volume_gate) ... ok
+
+======================================================================
+FAIL: test_additive_multiplier_and_exact_source_signature (test_task51.Task51Tests.test_additive_multiplier_and_exact_source_signature)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1d2a1cb91f4e/ae4-salivary-transport-control/analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/test_task51.py", line 46, in test_additive_multiplier_and_exact_source_signature
+    self.assertEqual(a.diagnostics.membranes,b.diagnostics.membranes)
+AssertionError: Membr[683 chars]4e-11}, cell_sources_fmol_s={'na': -0.13612627[559 chars]0.0}) != Membr[683 chars]4e-11, 'vrac_apical': 0.0, 'cl_apical_total': [623 chars]0.0})
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.083s
+
+FAILED (failures=1)

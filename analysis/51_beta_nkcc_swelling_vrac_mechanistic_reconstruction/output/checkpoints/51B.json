@@ -1,0 +1,43 @@
+{
+  "artifact_sha256": {
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/CODEX_START_HERE.md": "936826f17d4a53415116dcb8c472476f736ed449226fafa0c253f62ccf7ec844",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/CURRENT_STATUS.md": "e2ca06281c813eb6004d79dbf8531ac049a4e1e34098917df93c08dd8c99f679",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/DECISION_LOG.md": "7679c1d5dd239eb3747245cd029d6e9738a14b7bc22a0d3e2946e042f29fa34d",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/IMPLEMENTATION_VERIFICATION.md": "a3da9461f9ceaec0e883a8ca870c03c89a65e1c2b4de934956bbaa6f2b75e73f",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/NOVELTY_CHECK.md": "4ad354596f5c3629eeae4050b7c9c16a8b41f37df33e8164fc3e28647a0f3547",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/SOURCE_ARCHITECTURE_FREEZE.md": "09d91704317dab6636977cde51dbd32cdacbebd04b6c9a1ae45446297e409ac4",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/checkpoint.py": "b749e10d00d014c1b3421191a97c8b098794cb57f571a64c6d72c4f4cbab5f3f",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/input/frozen_inputs.json": "8f60641674a12f1a2affb610caa5eace73779dc9fdf7c3274863c8074a204d97",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/input/remote_heads_51A.json": "841eb13f2e5e7cb7e55d8f2ad8524304f9ce684aa2f07353c7e2eac3a91b6fd4",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/output/implementation_tests_attempt_01.txt": "f7fd0704bdd52dacb7c1b458359cfea82810c587cb3d03b582bcc3d838087560",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/output/implementation_tests_attempt_02.txt": "db0b2ef1f96aebdcfc8aa8cd9cbe26d39c572fa2aba2d13473abcafc72f60810",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/output/implementation_verification.json": "9ead55e4b47abb4a1d04132ba52b8d62c5c26a2ed05bb2b7979a92f3ddb06136",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/output/implementation_verification_attempt_01.json": "f5cf78d093e7b0fe6201b0a1c4bf63f3242545d9cbbd5503052118063373b06e",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/output/implementation_verification_attempt_02.json": "8286ea3595de9b7379fbe7c2e2c25c4729bfb5d5aa8e787225f050268cef4f53",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/output/publication_verification.json": "29cdb06cc8bd37f58510c8c1e889149635f1140e45066198f7986e5be7582fde",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/run_verification.py": "295266c7c3955594e532b0f3d420dc3c97e1863e759fd8d74d47a8281bc3d283",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/task51_model.py": "4fb4f64cb438ddbc632a3f3405896c647e87267d237c9d9e4101bea06f7cd571",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/test_task51.py": "8c927103453af2c442056f78b5442d0540473a2d59f9f568bd2f18ea34ef5f19",
+    "docs/MANDATORY_RESEARCH_LEDGER.md": "9bb8ffb2d0d2992a450c7d4f79dba935d2fdb42b2ee865d53099b880be797d29"
+  },
+  "branch": "analysis/task-51-beta-nkcc-swelling-vrac-mechanistic-reconstruction",
+  "checkpoint": "51B",
+  "created_utc": "2026-09-16T06:08:48.267526+00:00",
+  "frozen_input_hashes_verified": 92,
+  "next_step": "Execute predeclared independent scalar identification only after remote51B verification.",
+  "parent_sha": "9935d1b1ad5a7cfad78236b29cdc70ad5eeb5be8",
+  "publication": "Independent remote ref and commit/tree/receipt are read after publication. Verification enters the next boundary; final SHA is externally recorded.",
+  "requested_start_sha": "ad0e7344c8ba79552cbf54714b42e7131bcc1142",
+  "status": "Single mechanism implemented; all17 distinct nesting, stoichiometry and conservation tests pass.",
+  "verified_dependencies": [
+    {
+      "checkpoint": "51A",
+      "remote_sha": "9935d1b1ad5a7cfad78236b29cdc70ad5eeb5be8",
+      "sha": "9935d1b1ad5a7cfad78236b29cdc70ad5eeb5be8",
+      "transport": "Connected Git Data API; independent ref and commit/tree/receipt verification",
+      "tree": "9d4013481968c1f11e5c6c79ee3ec5eae7ac96b9",
+      "verified": true,
+      "verified_utc": "2026-09-16T06:04:14.585873+00:00"
+    }
+  ]
+}

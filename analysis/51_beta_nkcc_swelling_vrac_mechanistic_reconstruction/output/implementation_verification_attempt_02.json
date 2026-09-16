@@ -1,0 +1,13 @@
+{
+  "core_evaluations": 8,
+  "errors": 0,
+  "failures": 0,
+  "parameter_fits": 0,
+  "passed": true,
+  "production_trajectories": 0,
+  "source_sha256": {
+    "task51_model.py": "4fb4f64cb438ddbc632a3f3405896c647e87267d237c9d9e4101bea06f7cd571",
+    "test_task51.py": "8c927103453af2c442056f78b5442d0540473a2d59f9f568bd2f18ea34ef5f19"
+  },
+  "tests": 1
+}

@@ -105,3 +105,11 @@ Ledger §§1.7,2,3.1,R48,R49,14.2 were reread. Accept the exact additive regulat
 ## D51-14 — fixed fallback/protocol/observation plan before compute (51A)
 
 Ledger §§1.1,1.7,2,R40,R48,R49,6,9,14.3 and phenotype convention reread. Central M_beta2.5, sensitivity3 with identical g. One scalar g solve against WT Track2 mean300–600s relative swelling0.125, bracket0 to1e-6S and Brent tolerance1e-13S/max40 iterations, as detailed in the freeze. This is an explicit amplitude-map assumption, not a source clock fit, and narrative/figure discrepancy remains. Two tracks, cached rests, solver settings, diagnostics, numerical budget and conditional SPQ limitations are fixed in that document. No AE4/Task50 value is a calibration residual. Non-identification is reportable through51F, without substituting the Task49 theorem.
+
+## D51-15 — literal verification correction before dependent compute (51B)
+
+Reconsulted ledger R51A, §§2,3.1 and phenotype convention. Seventeen software tests ran;16 passed. The source-signature test compared entire membrane dictionaries and failed because the unchanged Task49 zero-current branch adds vrac_apical/cl_apical_total keys. Its numerical checks passed up to that metadata comparison. Correct only the assertion to compare every inherited membrane key exactly; do not change a model law, parameter or tolerance. Preserve attempt01 and rerun only this test (including its previously unreached combined-stimulus case). No production or inference has run. Also correct checkpoint raw-commit timezone reconstruction after the independently successful remote51A verification; this is publication metadata only.
+
+## D51-16 — accept implementation, require51B before inference
+
+Reconsulted ledger R51A and the frozen phenotype convention; all17 required distinct software tests now pass. Accept implementation only, not physiology. Model SHA is fixed in implementation_verification.json. No scientific law or closed axis changed during the literal assertion repair. Next execute only the predeclared independent one-scalar fallback after remote51B verification, logging every solve/trajectory and retaining failed identification if encountered.

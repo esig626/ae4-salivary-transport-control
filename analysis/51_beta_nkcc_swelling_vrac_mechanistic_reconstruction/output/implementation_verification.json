@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "unique_tests_passed": 17,
+  "test_invocations": 18,
+  "core_evaluations": 102,
+  "production_trajectories": 0,
+  "parameter_fits": 0,
+  "correction": "Metadata-only assertion projection; original 16 passes plus corrected targeted pass; model unchanged",
+  "model_sha256": "4fb4f64cb438ddbc632a3f3405896c647e87267d237c9d9e4101bea06f7cd571"
+}
