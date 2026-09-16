@@ -790,3 +790,31 @@ from the AE4 phenotype. The Task50 archive ref independently remains
 No Task52 model evaluation, production trajectory, stationary solve or fit
 has occurred at 52A. Publish and independently verify this boundary before
 implementation. Task52 consumes the final shot; no Task53 is authorised.
+
+## 22. R52B — prescribed projected onsets and conserved paired implementation
+
+SOFTWARE VERIFICATION / MODEL IDEALISATION. The exact Task37 snapshot and
+paired supply/shared auxiliary model pass16 fixed-state checks in one attempt,
+with no production trajectory, stationary solve or fit. All source snapshot
+hashes and runtime origins pass; Palk/Task41/Task50 are absent. Task37
+source bytes and donor-weighted AE4 routing remain unchanged.
+
+The central measured-Cl/pH projection is physically admissible. It retains
+Na11.6361257487mM andV1.4484260832pL in both genotypes. WT K/TIC are
+116.0229700/16.5973441mM; KO114.8307223/31.3895918mM. Imposed Cl/pH are
+50.10/6.91 WT and36.50/6.89 KO. The alternate concentration-preserving
+projection keeps TIC5.671746233mM, with WT/KO V1.2932920128/1.1298857751pL
+and K114.1369847/110.4377840mM. Largest charge/osmotic residuals are
+1.4211e-14fmol/5.6844e-14mOsm. Recovered pH and inherited physical/speciation
+checks pass. These nuisance coordinates, especially the central TIC difference,
+are projection assumptions; no chronic equilibrium is claimed.
+
+WT parent RHS nests exactly with zero auxiliary current. Null AE4 is exactly
+zero. Matched and x1.05/x1.10 NKCC/AE2 cycle sources are imposed exactly with
+complete signed stoichiometry; local NHE1/NBC/pump/K/voltage/water remain local.
+Identical native/auxiliary/total current laws and source signs pass, including
+IPR-only zero-NBC recruitment, beta-zero nesting and chloride cancellation.
+All inherited conservation gates remain unchanged. This is implementation
+verification, not evidence yet for a secretion phenotype. See Task52
+IMPLEMENTATION_VERIFICATION.md and output/verification_attempt_01.json.
+Publish and independently verify52B before52C; no retuning or new case follows.

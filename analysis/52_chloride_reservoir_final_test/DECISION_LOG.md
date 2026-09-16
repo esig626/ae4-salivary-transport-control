@@ -124,3 +124,29 @@ onset handling, failure handling, exact eight-case matrix and reporting windows
 are fixed in ARCHITECTURE_AND_NUMERICS_FREEZE.md and output/case_matrix_52A.json.
 The projection is a deterministic equation solve only; no resting-model solve,
 parameter fit or production trajectory occurs before its authorised boundary.
+
+## D52-12 — conservative implementation and fixed-state verification
+
+After independently verified 52A (`acf3e132ce698d64a220b52a966c8472e86405a3`),
+the exact historical snapshot is materialised without modifying its bytes.
+R51H/R51I, Task52-start sections2–6 and D52-04–09 remain controlling.
+For each fixed active protocol, adding `G_aux/gate(Ca_active)` to a temporary
+copy of the maximal chloride conductance adds exactly `beta*G_aux` to the
+effective conductance. Dispatch to the original parent at beta zero preserves
+off-state identity. Both genotypes share the same two templates. This inserts
+the auxiliary current into the unchanged full NBC and IPR-only current
+closures; no biological conductance or water parameter is fitted. Diagnostics
+retain explicitly named native TMEM16A, auxiliary and total currents.
+
+The KO NKCC/AE2 override is applied after the final local NBC/homeostasis
+evaluation with source increment `(dN,dN,2*dN+dE,-dE,-dE)`. Charge/carbon
+diagnostics are rebuilt; NHE1/NBC/pump/K/current/water remain local. At fixed
+state those two overridden pathways are electroneutral and do not enter the
+electrical closure. Alternate projection retains Na and TIC concentrations,
+with unchanged finite-buffer, fixed-charge and fixed-osmole amounts.
+
+Verification is confined to prescribed projected onsets, the original accepted
+state and a synthetic reversed chloride-driving fixture. All physical and
+conservation gates retain52A tolerances; source-vector/equality tests use exact
+identity where algebra requires it and round-off tolerances otherwise.
+No scientific axis is reopened, and no trajectory is authorised at52B.
