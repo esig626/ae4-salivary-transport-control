@@ -1,0 +1,98 @@
+{
+  "checkpoint": "49A",
+  "source": "Catalan et al. PNAS 2015",
+  "doi": "10.1073/pnas.1415739112",
+  "pmcid": "PMC4343136",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4343136/",
+  "primary_html_sha256": "e21792240f8f4851b6aa70540660a28a09b97f678be0cfb8c6dc5e8c8e4addea",
+  "figures": {
+    "figure4.jpg": "73624ef8deed612811f87742d9a0bbf68ead352f99b7667bbf1c82e372ee1a62",
+    "figure5.jpg": "3eac55e4c5fa40fbccca61751b5ae9dd2b3026af73180142ad43f72d4ca888d2"
+  },
+  "numerical_parameters_inferred": false,
+  "supplement_status": "Not yet verified; no missing protocol constant may be guessed.",
+  "law": "g_V * beta * max(V_i / V_rest_genotype - 1, 0)",
+  "eligible_parameters": [
+    "g_V_S_only"
+  ],
+  "prohibited_calibration": [
+    "AE4_KO_secretion",
+    "AE4_KO_combined_uptake",
+    "AE4_KO_early_late_timing"
+  ],
+  "observations": [
+    {
+      "id": "IPR_swelling",
+      "value": 12.5,
+      "SE": 0.2,
+      "unit": "percent",
+      "locator": "Results VRAC section; Fig5C",
+      "use": "independent activation/direction/timing gate"
+    },
+    {
+      "id": "CCh_shrinkage",
+      "value": 10.0,
+      "SE": 1.0,
+      "unit": "percent decrease",
+      "locator": "Results VRAC section; Fig5C",
+      "use": "independent control"
+    },
+    {
+      "id": "IPR_swelling_and_secretion_half_time",
+      "relation": ">",
+      "value": 60.0,
+      "unit": "s",
+      "locator": "Discussion final VRAC paragraph",
+      "use": "qualitative timing inequality"
+    },
+    {
+      "id": "IPR_low_Cl_inhibition",
+      "value": 98.0,
+      "SE": null,
+      "unit": "percent",
+      "locator": "Results VRAC section; Fig5A",
+      "use": "qualitative/domain-qualified only"
+    },
+    {
+      "id": "WT_TMEM16A_KO_IPR",
+      "n_control": 6,
+      "n_KO": 6,
+      "p": 0.092,
+      "locator": "Fig4AB",
+      "unit": "uL and uL/min",
+      "values": "figure digitisation required",
+      "use": "independent gate; non-significance is not equality"
+    },
+    {
+      "id": "IPR_current",
+      "voltage_mV": -60,
+      "IPR_uM": 5,
+      "DCPIB_uM": 50,
+      "n_IPR": 4,
+      "n_hypotonic": 3,
+      "unit": "pA, not pA/pF",
+      "locator": "Fig5D/E and caption",
+      "blockade": "partial; block magnitude distinct from total induced current",
+      "values": "figure digitisation required",
+      "use": "potential calibration only with identified driving force, volume and apical mapping"
+    },
+    {
+      "id": "blocker_secretion",
+      "DCPIB_uM": 50,
+      "NPPB_uM": 100,
+      "n_control": 8,
+      "n_DCPIB": 8,
+      "n_NPPB": 6,
+      "locator": "Fig5B",
+      "values": "figure digitisation required",
+      "use": "independent branch evidence; no fitted drug multipliers"
+    },
+    {
+      "id": "chronic_TMEM16A_KO_other_proteins",
+      "AQP5_reduction_percent": 29,
+      "NKCC1_reduction_percent": 51,
+      "locator": "main Results discussion of FigS4",
+      "use": "ideal-mask qualification only; no parameter change allowed"
+    }
+  ]
+}

@@ -1,34 +1,15 @@
 # Task 49 current status
 
-## Canonical branch
+Checkpoint: **49A**
 
-`analysis/task-49-camp-vrac-secretory-branch-reconstruction`
+Evidence and exclusions frozen; prior Vbeta diagnostic explicitly acknowledged.
 
-## Scientific parent
+Branch: `analysis/task-49-camp-vrac-secretory-branch-reconstruction`. Requested start: `2bf53b773c14f3c49f539957ea3f1964bc8d227f`.
 
-Merged Tasks 47-48:
+Previous verified remote head: `2bf53b773c14f3c49f539957ea3f1964bc8d227f`.
 
-`5ca70c61e8ccc49f084bac1b91ea05c612d197e8`
+Next: After remote verification, implement the sole separate VRAC current and run unit/conservation checks for 49B.
 
-## Current state
+The 49a addendum controls: VRAC only in Stage I, no beta-NKCC change; fixed full source basis in Stage II, no pathway subsets or searches. No AE4 phenotype calibration or post-reveal retuning. Only the orchestrator writes canonical files, runs inference/trajectories and publishes.
 
-Task 49 has been staged but no Task 49 scientific inference, parameter calibration or production trajectory has been run.
-
-The task is restricted to one previously untested, independently source-backed architectural reconstruction:
-
-- retain the existing CCh/Ca -> TMEM16A branch;
-- add the documented beta/cAMP-associated, volume-regulated apical chloride conductance;
-- add the independently documented beta/cAMP input to NKCC1 regulation without replacing the Palk/Benjamin core law;
-- do not alter AE4 stoichiometry, NHE1, NBC, pump, K channels, Ca amplitude or Task 48 genotype resting-state machinery.
-
-The binding no-repeat ledger is `EXCLUSION_LEDGER.md`.
-
-## Publication discipline
-
-Milestones 49A through 49F must each be committed and pushed immediately. Every milestone must update this file and write a machine-readable checkpoint receipt under `output/checkpoints/`. The orchestrator must verify the remote SHA before dependent work begins.
-
-Only the orchestrator may modify the canonical branch, integrate worker outputs, run authoritative inference/production trajectories, or accept scientific changes.
-
-## Next step
-
-Launch Codex from the current remote Task 49 head. Read `CODEX_START_HERE.md` and execute `prompts/49_camp_vrac_secretory_branch_reconstruction.md` using up to five parallel workers for milestone 49A.
+Restart: inspect output/publication_verification.json and checkpoint receipts; verify remote head and reuse all published results. A blocked checkpoint is a recorded gate failure, not a successful fit or simulation.

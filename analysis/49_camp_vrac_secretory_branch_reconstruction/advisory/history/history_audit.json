@@ -1,0 +1,280 @@
+{
+  "role": "advisory_repository_history_audit",
+  "pinned_ref": "2bf53b773c14f3c49f539957ea3f1964bc8d227f",
+  "canonical_files_modified": false,
+  "model_runs": 0,
+  "inference_runs": 0,
+  "tests_rerun": 0,
+  "commits": 0,
+  "pushes": 0,
+  "exclusions": [
+    {
+      "task": "12",
+      "status": "verified_chassis_scoped",
+      "reference": "analysis/12_ae4_mechanism_reconstruction/final_answer.md",
+      "finding": "C1\u2013C8/rest-compatible positive-PKA variants failed; AE4-null vector field independent of AE4 kinetics. Do not promote finite tested-family exclusion to a global impossibility theorem."
+    },
+    {
+      "task": "13C",
+      "status": "verified",
+      "reference": "analysis/13C_calcium_fast_screen/final_answer.md",
+      "finding": "0.10/0.25/0.50 uM calcium panel did not meet absolute WT flow requirement; calcium escalation is not an AE4-specific correction."
+    },
+    {
+      "task": "19",
+      "status": "verified_with_numerical_qualification",
+      "reference": "analysis/19_ae4_loss_nak_pump_coupling/final_answer.md",
+      "finding": "50% pump cases oppose harmful AE4-pump interaction. Task classification is NUMERICALLY INCONCLUSIVE because 10% pump failed resting continuation; it does not prove no possible pump mechanism."
+    },
+    {
+      "task": "31",
+      "status": "verified_bounded",
+      "reference": "analysis/31_nhe1_mechanistic_repair/final_answer.md",
+      "finding": "Cha NHE implemented; WT Cl 60.305 mM misses data; two exact-null resting attempts did not close within limits. This is bounded numerical failure, not proof no root exists."
+    },
+    {
+      "task": "36",
+      "status": "verified",
+      "reference": "analysis/36_minimal_nahco3_alkalinity/design.md",
+      "finding": "NBC is explicitly a stimulus-recruited increment; zero basal gate chosen to nest Task31 rest, not measured native absence."
+    },
+    {
+      "task": "37",
+      "status": "verified",
+      "reference": "analysis/37_wt_nbc_validation/final_answer.md",
+      "finding": "Valid stimulated WT; integrated positive Cl loading 79.9248% NKCC / 20.0752% AE4 / 0% AE2."
+    },
+    {
+      "task": "38",
+      "status": "verified_acute_shared_rest",
+      "reference": "analysis/38_ae4_perturbation_validation/final_answer.md",
+      "finding": "Acute shared-WT-rest AE4 null retains 98.1605% WT cumulative flow; compensation remains large."
+    },
+    {
+      "task": "39",
+      "status": "verified",
+      "reference": "analysis/39_palk_nkcc1_full_validation/final_answer.md",
+      "finding": "Source-fixed Palk/Benjamin core increases null NKCC compensation to 33.1013%; null deficit 0.627320%. Core accepts only intracellular substrates."
+    },
+    {
+      "task": "40",
+      "status": "verified",
+      "reference": "analysis/40_ae4_equal_cation_routing/final_answer.md",
+      "finding": "Equal routing null deficit 3.857486%; NKCC replaces about 88.51% of lost AE4 loading."
+    },
+    {
+      "task": "41",
+      "status": "verified_target_selected",
+      "reference": "analysis/41_ae4_loss_algebraic_design/final_answer.md",
+      "finding": "AE4-dependent stimulated CaCC recruitment selected against secretion target; 30.26% loss is not validation; temporal pattern and mutant Cl/pH/volume fail."
+    },
+    {
+      "task": "42",
+      "status": "verified_fixed_cycle_scope",
+      "reference": "analysis/42_catalan_2025_ae4_mechanism_classes/final_answer.md",
+      "finding": "Seven source classes; no held-out success under inherited scalar law. Three carbonate classes fail WT pH. Preserves source-class/kinetics qualification."
+    },
+    {
+      "task": "46",
+      "status": "verified",
+      "reference": "analysis/46_physiology_constrained_model_reconstruction/DYNAMIC_RECONSTRUCTION_HANDOFF.md",
+      "finding": "Full reference export remains feasible with AE4 absent; isolated NKCC initial-rate assay cannot justify an arbitrary sustained cap."
+    },
+    {
+      "task": "47",
+      "status": "verified_frozen_architecture",
+      "reference": "analysis/47_dynamic_potassium_recycling_reconstruction/DYNAMIC_POTASSIUM_RECYCLING_REPORT.md",
+      "finding": "K efflux +18.0671%, pump +1.8590%; no binding K/pump ceiling on frozen trajectories; not a physiological capacity validation."
+    },
+    {
+      "task": "48",
+      "status": "verified_conditional_observation_rule",
+      "reference": "analysis/48_joint_experimental_constraint_reconstruction/JOINT_EXPERIMENTAL_CONSTRAINT_REPORT.md",
+      "finding": "AE4-null core beta invariance gives CCh=combined and zero contrast Jacobian in all 33 allowed shared parameter directions; genotype rest remains high-Cl/alkaline."
+    }
+  ],
+  "literal_ledger_defect": {
+    "path": "analysis/49_camp_vrac_secretory_branch_reconstruction/EXCLUSION_LEDGER.md",
+    "line": 121,
+    "status": "contradicted_by_pinned_repository",
+    "claim": "No implementation or prior test under VRAC/LRRC8/DCPIB/volume-regulated anion channel.",
+    "counterexample": "Task13B Vbeta/VRAC diagnostic implemented gV * beta_input * max(Vi/Vrest - 1, 0), with source/current tests and exact-rest trajectory audit.",
+    "corrected_claim": "Absent from active production equations, but previously implemented and tested as a production-ineligible diagnostic.",
+    "scope": "No calibrated/integrated production VRAC pathway found; historical diagnostic outcome is not a global exclusion on the different Task48 chassis.",
+    "historical_results": {
+      "root_count": 389,
+      "row_count": 778,
+      "activated_root_count": 69,
+      "wt_passing_root_count": 10,
+      "wt_passing_activated_root_count": 0,
+      "maximum_rectified_gate": 0.018722112837563643,
+      "status": "V1_GATE_BEHAVIOR_MIXED_CAPACITY_REMAINS_UNLICENSED",
+      "capacity_status": "UNLICENSED_NO_WHOLE_CELL_CURRENT_MAP"
+    },
+    "interim_prose_warning": "Task13B vbeta_diagnostic.md still describes interim 35 roots; final JSON contains 389. Use final machine-readable record."
+  },
+  "nbc_provenance": {
+    "design_lines": [
+      58,
+      68,
+      70,
+      74,
+      78,
+      129
+    ],
+    "source_file": "src/modern_full_model/nbc_minimal.py",
+    "gate": "u_sec = clip((Ca-0.058)/(0.25-0.058),0,1)",
+    "rate": "J_B = G_B u_sec tanh(A_B / 2)",
+    "affinity": "A_B=log(Na_e HCO3_e^2/(Na_i HCO3_i^2))+V_b/V_T",
+    "source_Na_K_Cl_TIC_TA": [
+      1,
+      0,
+      0,
+      2,
+      2
+    ],
+    "charge_into_cell_per_cycle": -1,
+    "basolateral_outward_conventional_current": "F J_B",
+    "interpretation": "A zero gate removes a represented source direction at rest; this does not establish that it is the uniquely required resting correction. Fixed-basis residual geometry must decide."
+  },
+  "reference_manifest": [
+    {
+      "path": "analysis/12_ae4_mechanism_reconstruction/final_answer.md",
+      "pinned_sha256": "69d9a07788a5b5b75a77c893d6ff77582df1137b870fc3ab24f5f1fbf6b0321f",
+      "bytes": 24847,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/13C_calcium_fast_screen/final_answer.md",
+      "pinned_sha256": "c078e32483d78f09e1ed5b8f636fefac5f85e7357f470aad047023f1f9f8a7a3",
+      "bytes": 11657,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/19_ae4_loss_nak_pump_coupling/final_answer.md",
+      "pinned_sha256": "ead6933182ad3da11bbb9730c9f831eb5a4d2508cdb586bd38b003960fd57033",
+      "bytes": 3317,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/31_nhe1_mechanistic_repair/final_answer.md",
+      "pinned_sha256": "c3b173be61dc2da9a066a8f8ed2ece7929e55a80b759be19ec63cb71c7e691d6",
+      "bytes": 5759,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/36_minimal_nahco3_alkalinity/design.md",
+      "pinned_sha256": "81d4e3b03b627f5ec8ee007d551628f88860b5eb101c4cf05b44362e3992a85e",
+      "bytes": 6615,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/37_wt_nbc_validation/final_answer.md",
+      "pinned_sha256": "7e785b72ad89b0a00393633e1f7ebc47a43e6365924221d95e97e3212e70e963",
+      "bytes": 8388,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/38_ae4_perturbation_validation/final_answer.md",
+      "pinned_sha256": "78b4494960430694e46026b0e2058a487d8c7907c7a690b3527ed472a5a8d319",
+      "bytes": 16802,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/39_palk_nkcc1_full_validation/final_answer.md",
+      "pinned_sha256": "550d2999d57a84311638bcb74d3033a0db8c29389e8888931ae0b2ce487d2e8c",
+      "bytes": 13862,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/40_ae4_equal_cation_routing/final_answer.md",
+      "pinned_sha256": "5211ceb43ee1e21d5a7648ae075bd562c859a848795e050d95eed9b0bc74c2fe",
+      "bytes": 18624,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/41_ae4_loss_algebraic_design/final_answer.md",
+      "pinned_sha256": "b6e9d587083c83414266331ec72b715882093ed8309294ae0ca72fafa6f2a188",
+      "bytes": 11164,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/42_catalan_2025_ae4_mechanism_classes/final_answer.md",
+      "pinned_sha256": "6c0fa0f3ec3be616bee894ac0221008413653901484af20f916b09f956ceccf7",
+      "bytes": 7476,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/46_physiology_constrained_model_reconstruction/DYNAMIC_RECONSTRUCTION_HANDOFF.md",
+      "pinned_sha256": "418e3447a17febfbfefad7df43b456d8ffc8c04baf7294f617f83ababb84992a",
+      "bytes": 3360,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/47_dynamic_potassium_recycling_reconstruction/DYNAMIC_POTASSIUM_RECYCLING_REPORT.md",
+      "pinned_sha256": "015fd11aa0746b9655907d8802ea9a4cbe46622995907cf855a77deff6d4ff65",
+      "bytes": 13642,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/48_joint_experimental_constraint_reconstruction/JOINT_EXPERIMENTAL_CONSTRAINT_REPORT.md",
+      "pinned_sha256": "7e8b58bd942cc48c3b9942a402597ab7d26da03bdf1530ad26c4a52b89797e92",
+      "bytes": 15406,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/49_camp_vrac_secretory_branch_reconstruction/EXCLUSION_LEDGER.md",
+      "pinned_sha256": "d419b9de6935b4fec824f02a3abe59e8c49697d6e9a9ff12fb1bb3be7b229102",
+      "bytes": 7616,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "src/modern_full_model/vbeta_diagnostic.py",
+      "pinned_sha256": "8cb8e303ad3d39e50ff0434d98494bc5822ad809a720b6ecfe476312ceb18f17",
+      "bytes": 11969,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "src/modern_full_model/run_vbeta_diagnostic.py",
+      "pinned_sha256": "57ab6cbd860e3d22d3d5e90971b8241de94f3a4e02290d7b6e7a8cdf44659b5c",
+      "bytes": 9879,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "tests/test_modern_vbeta_diagnostic.py",
+      "pinned_sha256": "98d62a779b2a80f81a9b0a87dc15ab8d734da8def187459f58ce2f2f016f7b38",
+      "bytes": 6307,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/13B_modern_full_model/vbeta_diagnostic.md",
+      "pinned_sha256": "75e799ccb7be0cda5b74b26cc8c88b768c1205038f6a48b4bc2929de86474148",
+      "bytes": 3527,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "analysis/13B_modern_full_model/evidence_ledger.md",
+      "pinned_sha256": "8b4a0af771b8e6eaf2643cac6af0eddc6c1817ab1dbe29cb79d82e632de9dc7b",
+      "bytes": 38367,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "results/13B_modern_full_model/vbeta_native_exact_rest_summary.json",
+      "pinned_sha256": "f8c514fd54fc764fa22f6f3d88aa40d26c5a9f11401352ed7afaf4677cca91e2",
+      "bytes": 5092,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "src/modern_full_model/nbc_minimal.py",
+      "pinned_sha256": "48230ad9b6c0bbb017d8545d0c46ca6fc83eb0d6ade57f1ced96da7fd28bcfaf",
+      "bytes": 29655,
+      "working_file_matches_pinned": true
+    },
+    {
+      "path": "src/modern_full_model/nkcc1_palk2010.py",
+      "pinned_sha256": "2b4b58450589dbf2b4765c35dbeee9062815574903490654864640c2fffd60a6",
+      "bytes": 2637,
+      "working_file_matches_pinned": true
+    }
+  ]
+}

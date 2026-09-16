@@ -1,5 +1,13 @@
 # Task 49 exclusion ledger: do not repeat completed work
 
+## Task 49A factual audit correction (original entries retained below)
+
+The original statement below that no VRAC implementation or prior test existed is contradicted by the pinned repository. Task 13B already contains `src/modern_full_model/vbeta_diagnostic.py`, its runner and unit tests, and `analysis/13B_modern_full_model/vbeta_diagnostic.md`. Its exact law is `gV * beta * max(Vi/Vrest - 1, 0)`. The final saved summary, rather than the stale interim 35-root prose, records 389 roots, 69 with activation, 10 passing the old WT rest gate, and zero passing both gates. It remained an unlicensed diagnostic outside production electrical closure. Those calculations must not be rerun or presented as new Task 49 work.
+
+The correct scope is: **the cAMP channel is absent from the active Task 48 production equations; its minimal diagnostic topology has already been tested on older states.** Task 49 reuses that gate, audits the current published Task 48 state/protocol and inserts the separate current only as a conservation-tested, task-local implementation pending independent calibration. It does not reopen the old root panel. See `advisory/history/history_audit.json` for pinned references and qualifications.
+
+The overriding 49a addendum also revokes all older permission below to change beta-NKCC in Stage I. Stage II audits the measured resting equations without presuming NBC is the answer.
+
 This file exists because the repository, not conversational recollection, is the scientific memory of the project. Every item below has already been executed sufficiently to exclude it from Task 49 unless Task 49 discovers a literal implementation defect in the cited work.
 
 ## AE4-only reconstruction
