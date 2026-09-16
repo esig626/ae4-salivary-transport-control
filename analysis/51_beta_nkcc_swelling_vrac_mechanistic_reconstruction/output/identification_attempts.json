@@ -1,0 +1,16 @@
+[
+  {
+    "case": "calibration_00",
+    "g_V_S": 0.0,
+    "physiologically_admissible": true,
+    "residual": -0.06749195852646679,
+    "status": "COMPLETE"
+  },
+  {
+    "case": "calibration_01",
+    "g_V_S": 1e-06,
+    "physiologically_admissible": true,
+    "residual": -0.1006337924047061,
+    "status": "COMPLETE"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "artifact_sha256": {
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/CODEX_START_HERE.md": "936826f17d4a53415116dcb8c472476f736ed449226fafa0c253f62ccf7ec844",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/CURRENT_STATUS.md": "5479998e4079c247d161a9cfbb454b477b8d5573b8d84a13e7cb569694dda7fc",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/DECISION_LOG.md": "16f315d666f94db8f27b6791e8c4b41e016a584902fcbec1aada4eaa4103567b",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/NOVELTY_CHECK.md": "4ad354596f5c3629eeae4050b7c9c16a8b41f37df33e8164fc3e28647a0f3547",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/SOURCE_ARCHITECTURE_FREEZE.md": "09d91704317dab6636977cde51dbd32cdacbebd04b6c9a1ae45446297e409ac4",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/checkpoint.py": "b08ec3645a55ed6b6f0f9ffa7f9d8eb4e598222b43397a77a16c71d77a2ebe49",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/input/frozen_inputs.json": "8f60641674a12f1a2affb610caa5eace73779dc9fdf7c3274863c8074a204d97",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/input/remote_heads_51A.json": "841eb13f2e5e7cb7e55d8f2ad8524304f9ce684aa2f07353c7e2eac3a91b6fd4",
+    "analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/output/publication_verification.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "docs/MANDATORY_RESEARCH_LEDGER.md": "60a8558f4266a5e8827e229ab48939ed7098504332335e6fd51a85da3fd26dbe"
+  },
+  "branch": "analysis/task-51-beta-nkcc-swelling-vrac-mechanistic-reconstruction",
+  "checkpoint": "51A",
+  "created_utc": "2026-09-16T06:02:40.948342+00:00",
+  "frozen_input_hashes_verified": 92,
+  "next_step": "Implement and verify the one mechanism only after remote 51A verification.",
+  "parent_sha": "ad0e7344c8ba79552cbf54714b42e7131bcc1142",
+  "publication": "Independent remote ref and commit/tree/receipt are read after publication. Verification enters the next boundary; final SHA is externally recorded.",
+  "requested_start_sha": "ad0e7344c8ba79552cbf54714b42e7131bcc1142",
+  "status": "Source and architecture frozen; prescribed swelling fallback selected with explicit observation-map qualifications.",
+  "verified_dependencies": []
+}

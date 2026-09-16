@@ -1,0 +1,137 @@
+# Task 51 decision log
+
+This log is binding. Every new scientific decision must cite the relevant `docs/MANDATORY_RESEARCH_LEDGER.md` entry before dependent compute.
+
+## D51-01 — canonical start
+
+**Decision:** Task 51 starts only from merged `main` commit `4bb2c89870fe3f4d4bb887cf9d40ba7de377a725` on branch `analysis/task-51-beta-nkcc-swelling-vrac-mechanistic-reconstruction`.
+
+**Ledger basis:** Tasks 49 and 50 are complete and merged; two scientific shots remain.
+
+## D51-02 — preserve Task 50 independently
+
+**Decision:** the Task 50 effective-coupling model is a frozen benchmark, not the Task 51 parent mechanism. Do not edit or repoint `archive/task-50-working-effective-coupling-benchmark` and do not import its multiplier into Task 51 equations.
+
+**Benchmark:** `docs/TASK50_EFFECTIVE_COUPLING_BENCHMARK.md`.
+
+## D51-03 — one permitted mechanistic chain
+
+**Decision:** test exactly
+
+`beta/IPR -> beta/cAMP NKCC1 activation -> solute loading -> swelling -> Task49 VRAC-like current -> secretion`
+
+with existing
+
+`beta/PKA -> AE4 activation`.
+
+No alternate mechanism family may be introduced during Task 51.
+
+**Ledger basis:** R48 exact beta-blind KO defect; R49 swelling-only self-start failure; R50 target-calibrated proof that a substantial beta-conditioned network effect is sufficient; section 1.7/R50E source evidence.
+
+## D51-04 — NKCC core frozen
+
+**Decision:** retain the source-fixed Palk/Benjamin NKCC concentration-response core, exact 1Na:1K:2Cl stoichiometry and all thermodynamic/reversal properties. Add only the minimum beta contribution to the existing activity multiplier. At beta=0 the Task 51 NKCC law must exactly nest the parent regulator.
+
+No NKCC cap, transporter-law replacement or mechanism search is authorised.
+
+## D51-05 — minimum beta-regulation law
+
+**Decision:** use the smallest no-interaction algebraic combination of the existing Ca/CCh activity arm and one beta/cAMP arm. Do not introduce Ca×beta synergy, a signalling ODE, phosphorylation state, delay or Hill coefficient unless a primary source makes that extra degree unavoidable.
+
+The preferred structure is additive above baseline so beta=0 exactly preserves the inherited Ca arm and IPR-only beta stimulation can increase NKCC from rest.
+
+The exact algebraic form must be written and source-audited before implementation.
+
+## D51-06 — beta-NKCC quantitative treatment
+
+**Decision:** direct rat salivary NKCC data establish sign and plausible scale but are not exact mouse-SMG constants.
+
+Primary source anchors:
+
+- rat submandibular IPR response approximately 2.5-fold (PMID `9880083`);
+- rat parotid approximately 3-fold functional response and K1/2 21.5 nM (PMID `1313447`);
+- approximately 20 nM phosphorylation half-maximal response and stronger recruitment context from PMID `7559664`;
+- PKA/cAMP regulatory support from PMIDs `10600770`, `11880270`.
+
+Use mouse-SMG IPR swelling/current observations to identify/check the effective mouse strength wherever possible. Do not select the beta gain from AE4 secretion.
+
+## D51-07 — VRAC law and conductance identification hierarchy
+
+**Decision:** reuse the Task 49 conservation-tested positive-swelling VRAC-like current law. Do not search alternate gate families.
+
+Parameter-identification hierarchy, fixed before AE4 reveal:
+
+1. First retrieve/use the Catalán supplementary information and derive a conductance map from the IPR-induced/DCPIB-sensitive current only if the intracellular/extracellular chloride conditions and current decomposition support that derivation.
+2. If a direct current-to-conductance map remains non-identifiable, the predeclared fallback is one scalar VRAC conductance calibration to the independent mouse-SMG IPR swelling magnitude (approximately 12.5%) while the beta-NKCC gain is independently source-fixed/bounded. The current and blocker data then serve as validation/consistency checks.
+3. Do not use whole-gland AE4 phenotype or Task 50 output to identify VRAC.
+
+This hierarchy is an observation-map fallback, not a mechanism search.
+
+## D51-08 — independent calibration data only
+
+**Decision:** before the pre-AE4 freeze, calibration/constraint data may include direct beta-NKCC salivary studies, Catalán mouse-SMG IPR swelling, current/voltage and blocker information, and non-AE4 beta-pathway controls. The JBC 2015 AE4 phenotype and Task 50 benchmark are held out.
+
+## D51-09 — immutable reveal boundary
+
+**Decision:** after the mechanistic parameters and all source/protocol mappings are fixed, publish a remote immutable prediction checkpoint containing WT, AE4 5%, AE4 null and AE2/control predictions. Only then reveal/compare:
+
+- AE4-null 10-minute secretion deficit;
+- AE4-null CCh vs CCh+IPR uptake contrast;
+- AE4-null IPR-only uptake;
+- Task 50 benchmark outputs.
+
+No post-reveal retuning.
+
+## D51-10 — success interpretation
+
+**Decision:** success does not require exact 35.000% or exact Task 50 numbers. A successful source-backed mechanism must prospectively generate a substantial persistent AE4-loss deficit of the same order, improve/remove the beta-blind IPR-only structural failure, preserve CCh-only nesting, and not destroy AE2 specificity or physical/conservation constraints.
+
+Task 50 is the quantitative reference result, not a fitting target.
+
+## D51-11 — crash-safe publication
+
+**Decision:** publish and remotely verify 51A through 51F before dependent work. Every checkpoint that establishes a new fact/failure/qualification must update `docs/MANDATORY_RESEARCH_LEDGER.md` in the same dependency boundary.
+
+Do not start Task 52 automatically.
+
+## D51-12 — accepted source/architecture and operational start (51A)
+
+Ledger reread: §§0,1.7,2,3.1,R39–R50E,5,6,8,9,14. The user-specified operational head ad0e7344 supersedes the older D51-01 wording only for checkout; scientific parent remains4bb2c898. Two-shot budget applies. Read-only primary-source advisers verified the beta-NKCC anchors; Paulais is the correct first author of JCI1992. SI access failed at official routes, recorded in SOURCE_ARCHITECTURE_FREEZE.md, so no direct conductance identification is claimed. The prescribed swelling fallback is accepted; this does not reopen a closed axis. All old source/results/archive files remain frozen.
+
+## D51-13 — exact implementation and early-time implication (51A)
+
+Ledger §§1.7,2,3.1,R48,R49,14.2 were reread. Accept the exact additive regulator adapter and unchanged Task49 current. Both NKCC-recomputing layers must receive the changed multiplier. The conditional V-second-derivative proof in SOURCE_ARCHITECTURE_FREEZE.md removes the old exact deadlock; sustained behaviour awaits computation. Task50/41 conductance wrappers are absent. No new signalling state, synergy, core, stoichiometry, cap or other pathway change is authorised.
+
+## D51-14 — fixed fallback/protocol/observation plan before compute (51A)
+
+Ledger §§1.1,1.7,2,R40,R48,R49,6,9,14.3 and phenotype convention reread. Central M_beta2.5, sensitivity3 with identical g. One scalar g solve against WT Track2 mean300–600s relative swelling0.125, bracket0 to1e-6S and Brent tolerance1e-13S/max40 iterations, as detailed in the freeze. This is an explicit amplitude-map assumption, not a source clock fit, and narrative/figure discrepancy remains. Two tracks, cached rests, solver settings, diagnostics, numerical budget and conditional SPQ limitations are fixed in that document. No AE4/Task50 value is a calibration residual. Non-identification is reportable through51F, without substituting the Task49 theorem.
+
+## D51-15 — literal verification correction before dependent compute (51B)
+
+Reconsulted ledger R51A, §§2,3.1 and phenotype convention. Seventeen software tests ran;16 passed. The source-signature test compared entire membrane dictionaries and failed because the unchanged Task49 zero-current branch adds vrac_apical/cl_apical_total keys. Its numerical checks passed up to that metadata comparison. Correct only the assertion to compare every inherited membrane key exactly; do not change a model law, parameter or tolerance. Preserve attempt01 and rerun only this test (including its previously unreached combined-stimulus case). No production or inference has run. Also correct checkpoint raw-commit timezone reconstruction after the independently successful remote51A verification; this is publication metadata only.
+
+## D51-16 — accept implementation, require51B before inference
+
+Reconsulted ledger R51A and the frozen phenotype convention; all17 required distinct software tests now pass. Accept implementation only, not physiology. Model SHA is fixed in implementation_verification.json. No scientific law or closed axis changed during the literal assertion repair. Next execute only the predeclared independent one-scalar fallback after remote51B verification, logging every solve/trajectory and retaining failed identification if encountered.
+
+## D51-17 — independent fallback execution details (before first trajectory)
+
+Ledger R51A–B, §§1.7,2,6,14.3 and phenotype convention reread. Execute the frozen scalar solve exactly. Use all inherited conservation tolerances; record inherited physiological ranges Na0–40,K50–200,Cl30–80mM,pH6.6–7.3,cell volume0–3pL without retuning or erasing failures. A selected conductance must satisfy these checks. Record every calibration endpoint/root trajectory, not only a final fit; predeclare that an unbracketed residual is an unresolved identification failure, not a theorem of global mechanism impossibility. Save compact10s diagnostics plus onset1/2/5s and13-state vectors, while all solver endpoints and integer-second samples are audited and integrals use the full1s grid. This recording compression changes no scientific observation. The scalar bracket endpoints are numerical trials, not production parameter choices.
+
+## D51-18 — accept scalar identification failure, no rescue (51C)
+
+Reconsulted ledger R51A–B, §§1.7,3.1,6,9,14.3 and phenotype convention. Frozen g-bracket endpoints produce5.750804%/2.436621% mean swelling rather than12.5%, with both numerical/physiological audits passing. Accept only the observed non-bracketing and no identified g; do not assert global monotonicity/impossibility. g remains null, not zero. Additional accepted-model beta controls, sensitivity trajectories and two-track secretion predictions are unavailable; no g is borrowed from synthetic tests or the bracket. Publish51C immediately, then freeze unavailable outcomes and the parameter-independent local initiation proof at51D. No closed axis is reopened, and no phenotype comparison precedes51D.
+
+## D51-19 — immutable pre-reveal scope after failed identification (51D)
+
+Reconsulted ledger R51A–C, §§1.1,2,3.1,R48,R49,14 and phenotype convention. Remote51C verified at f35e30150d733c4aad6867c99b3a55aa31a0b531. Freeze every requested beta-containing Track1/2 case as unavailable because g is null; do not use bracket endpoints as alternative predictions. Reference hash-verified cached CCh/REST outcomes by exact beta-zero nesting. Evaluate only the already derived local AE4-null initiation formulas with cached N0/V0 and frozen hydraulic coefficients for the two predeclared source gains. These are approximate coefficients of an exact-equilibrium theorem, not a trajectory or SPQ recovery slope. Preserve the cached tiny rest residual qualification. This requires no model call, fit or new initial-state solve. Publish51D before comparison.
+
+Publication transport note: the first51C tree attempt detected CRLF normalisation in CSV transport before any remote commit/ref update. Preserve raw UTF-8 bytes in bundles; the successful remote tree exactly matches the original committed files/receipts. No scientific file/data was changed to accommodate transport.
+
+## D51-20 — held-out reveal after independently verified51D
+
+Reconsulted ledger §§1.1–1.4,2,R48,R49,R50E,R51A–D, phenotype convention and the frozen Task50 benchmark. The reveal boundary is e66763952907d8d70b0c2778e08da43611ac67c1, verified before comparison. Accept only the local initiation implication; quantitative AE4-null/5% secretion, SPQ contrast, AE2 specificity and NKCC compensation remain unavailable. Do not substitute calibration endpoints, equate concentration derivatives to SPQ slopes or label absence of prediction as numerical failure. Read unchanged Task48 rest and Task50 result files for comparison; no model call or source change. Hash-check the51D model/runner/identifier/source map/parameters/predictions before writing51E. The chronic rest discrepancy persists by exact beta-zero nesting. No retuning follows reveal.
+
+## D51-21 — final scoped decision and stop
+
+Reconsulted ledger §§1.1–1.7,2,3.1,R49,R50E,R51A–E and the binding source/phenotype/benchmark conventions after independently verified51E at07d7a6b31652c2de10e1fe03bda0af97c31357db. The controlling classification is UNRESOLVED / independently unidentified full model, with a formal local initiation advance. Do not upgrade it to prospective phenotype success, a global exclusion or proven structural non-identifiability. The scoped fallback failure and inaccessible SI must remain prominent. Final verification reads files/Git only and rechecks all published receipt hashes at their own commits, unchanged scientific inputs, immutable prediction/parameter files, ledger prefix and the Task50 archive ref. No new model run, rescue, source remapping or parameter change is authorised. Publish51F with the final report/ledger/receipt, independently verify it, then stop with Task52 unstarted and one scientific shot remaining.

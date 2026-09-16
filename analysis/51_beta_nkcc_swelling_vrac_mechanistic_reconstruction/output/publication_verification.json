@@ -1,0 +1,47 @@
+[
+  {
+    "checkpoint": "51A",
+    "remote_sha": "9935d1b1ad5a7cfad78236b29cdc70ad5eeb5be8",
+    "sha": "9935d1b1ad5a7cfad78236b29cdc70ad5eeb5be8",
+    "transport": "Connected Git Data API; independent ref and commit/tree/receipt verification",
+    "tree": "9d4013481968c1f11e5c6c79ee3ec5eae7ac96b9",
+    "verified": true,
+    "verified_utc": "2026-09-16T06:04:14.585873+00:00"
+  },
+  {
+    "checkpoint": "51B",
+    "remote_sha": "f386421bf7c69181bc8c28f73e963432524748a4",
+    "sha": "f386421bf7c69181bc8c28f73e963432524748a4",
+    "transport": "Connected Git Data API; independent ref and commit/tree/receipt verification",
+    "tree": "56c0516be2b0d741018614a5e8d729fa4d778716",
+    "verified": true,
+    "verified_utc": "2026-09-16T06:09:30.405946+00:00"
+  },
+  {
+    "checkpoint": "51C",
+    "remote_sha": "f35e30150d733c4aad6867c99b3a55aa31a0b531",
+    "sha": "f35e30150d733c4aad6867c99b3a55aa31a0b531",
+    "transport": "Connected Git Data API; independent ref and commit/tree/receipt verification",
+    "tree": "d4bc029cd2964ea62308a0ef06f604a0625209f5",
+    "verified": true,
+    "verified_utc": "2026-09-16T06:18:02.867612+00:00"
+  },
+  {
+    "checkpoint": "51D",
+    "remote_sha": "e66763952907d8d70b0c2778e08da43611ac67c1",
+    "sha": "e66763952907d8d70b0c2778e08da43611ac67c1",
+    "transport": "Connected Git Data API; independent ref and commit/tree/receipt verification",
+    "tree": "7cf673a78634d629883b966ab9f9a53441bfe20b",
+    "verified": true,
+    "verified_utc": "2026-09-16T06:24:14.558640+00:00"
+  },
+  {
+    "checkpoint": "51E",
+    "remote_sha": "07d7a6b31652c2de10e1fe03bda0af97c31357db",
+    "sha": "07d7a6b31652c2de10e1fe03bda0af97c31357db",
+    "transport": "Connected Git Data API; independent ref and commit/tree/receipt verification",
+    "tree": "7cd2066abbf069891174306f82f3c80412f208e5",
+    "verified": true,
+    "verified_utc": "2026-09-16T06:27:56.976985+00:00"
+  }
+]

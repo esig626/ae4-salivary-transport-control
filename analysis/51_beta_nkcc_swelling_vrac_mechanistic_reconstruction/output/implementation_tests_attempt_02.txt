@@ -1,0 +1,6 @@
+test_additive_multiplier_and_exact_source_signature (test_task51.Task51Tests.test_additive_multiplier_and_exact_source_signature) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.010s
+
+OK

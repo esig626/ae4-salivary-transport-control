@@ -1,0 +1,15 @@
+{
+  "verified_utc": "2026-09-16T06:29:07.430Z",
+  "archive": {
+    "request_url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/ref/heads/archive/task-50-working-effective-coupling-benchmark",
+    "ref": "refs/heads/archive/task-50-working-effective-coupling-benchmark",
+    "sha": "b16c30094b95f61a73d8f1977cd58e79c7bb50f6"
+  },
+  "task51": {
+    "request_url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/ref/heads/analysis/task-51-beta-nkcc-swelling-vrac-mechanistic-reconstruction",
+    "ref": "refs/heads/analysis/task-51-beta-nkcc-swelling-vrac-mechanistic-reconstruction",
+    "sha": "07d7a6b31652c2de10e1fe03bda0af97c31357db"
+  },
+  "verified": true,
+  "read_only": true
+}

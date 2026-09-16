@@ -1,0 +1,101 @@
+{
+  "all_other_original_repository_files_unchanged": true,
+  "archive_remote_verification": {
+    "ref": "refs/heads/archive/task-50-working-effective-coupling-benchmark",
+    "request_url": "https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/ref/heads/archive/task-50-working-effective-coupling-benchmark",
+    "sha": "b16c30094b95f61a73d8f1977cd58e79c7bb50f6"
+  },
+  "branch": "analysis/task-51-beta-nkcc-swelling-vrac-mechanistic-reconstruction",
+  "cached_parent_result_references_checked": 6,
+  "checkpoint_audits": [
+    {
+      "checkpoint": "51A",
+      "passed": true,
+      "receipt_artifacts_checked": 10,
+      "sha": "9935d1b1ad5a7cfad78236b29cdc70ad5eeb5be8",
+      "tree": "9d4013481968c1f11e5c6c79ee3ec5eae7ac96b9"
+    },
+    {
+      "checkpoint": "51B",
+      "passed": true,
+      "receipt_artifacts_checked": 19,
+      "sha": "f386421bf7c69181bc8c28f73e963432524748a4",
+      "tree": "56c0516be2b0d741018614a5e8d729fa4d778716"
+    },
+    {
+      "checkpoint": "51C",
+      "passed": true,
+      "receipt_artifacts_checked": 30,
+      "sha": "f35e30150d733c4aad6867c99b3a55aa31a0b531",
+      "tree": "d4bc029cd2964ea62308a0ef06f604a0625209f5"
+    },
+    {
+      "checkpoint": "51D",
+      "passed": true,
+      "receipt_artifacts_checked": 33,
+      "sha": "e66763952907d8d70b0c2778e08da43611ac67c1",
+      "tree": "7cf673a78634d629883b966ab9f9a53441bfe20b"
+    },
+    {
+      "checkpoint": "51E",
+      "passed": true,
+      "receipt_artifacts_checked": 36,
+      "sha": "07d7a6b31652c2de10e1fe03bda0af97c31357db",
+      "tree": "7cd2066abbf069891174306f82f3c80412f208e5"
+    }
+  ],
+  "final_publication_rule": "51F ref/commit/tree/receipt verified independently after publication; final SHA recorded outside the branch to avoid a seventh commit",
+  "numerical_work_counts": {
+    "accepted_model_phenotype_trajectories": 0,
+    "accepted_parameter_fits": 0,
+    "calibration_core_evaluations": 3638,
+    "calibration_trajectories": 2,
+    "distinct_software_tests": 17,
+    "new_model_evaluations_in_final_audit": 0,
+    "post_reveal_model_evaluations": 0,
+    "resting_solves": 0,
+    "test_invocations": 18,
+    "total_core_evaluations": 3740,
+    "verification_core_evaluations": 102
+  },
+  "original_frozen_input_hashes_checked": 92,
+  "original_ledger_prefix_sha256": "ced5de6dbeda20c2d2ce74f4e3db89daa334cc8cf140c32bb2c9a75e8a0ec873",
+  "original_ledger_preserved_as_exact_prefix": true,
+  "outside_task_changes": [
+    "docs/MANDATORY_RESEARCH_LEDGER.md"
+  ],
+  "passed": true,
+  "requested_start": "ad0e7344c8ba79552cbf54714b42e7131bcc1142",
+  "source_model_parameters_predictions_unchanged": {
+    "SOURCE_ARCHITECTURE_FREEZE.md": {
+      "sha256": "09d91704317dab6636977cde51dbd32cdacbebd04b6c9a1ae45446297e409ac4",
+      "since": "51D"
+    },
+    "identify.py": {
+      "sha256": "a5e4ba527b60cbf11209c5ec8ea0e98948cd0a4d73f4d58b37d01e5a99348364",
+      "since": "51C"
+    },
+    "output/heldout_comparison.json": {
+      "sha256": "07277b8436a79175461171a3be431ee7cf6be823e064adc5e65ad50ed78f9701",
+      "since": "51E"
+    },
+    "output/parameter_freeze.json": {
+      "sha256": "5451ceba2f6e55cdb7ad32586dde2b41f7179ea1e432874a610fe67daacc668a",
+      "since": "51C"
+    },
+    "output/pre_AE4_predictions.json": {
+      "sha256": "cc686dfa73de41e666ffc672c577500ecc3a6981d185d5ffe4c62a4d74080904",
+      "since": "51D"
+    },
+    "task51_model.py": {
+      "sha256": "4fb4f64cb438ddbc632a3f3405896c647e87267d237c9d9e4101bea06f7cd571",
+      "since": "51B"
+    },
+    "trajectory.py": {
+      "sha256": "6964584fbe1612fc3792da35d52a38796f0cd30fe3ded9cb3adc4d23af504f31",
+      "since": "51C"
+    }
+  },
+  "total_historical_receipt_hashes_checked": 128,
+  "verified_dependency_head": "07d7a6b31652c2de10e1fe03bda0af97c31357db"
+}

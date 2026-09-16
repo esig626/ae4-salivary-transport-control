@@ -1,0 +1,229 @@
+{
+  "AE2_control": "Shared WT alias; distinct experimental strain means not fitted",
+  "classification": "UNRESOLVED_FULL_RECONSTRUCTION_WITH_FORMAL_LOCAL_INITIATION",
+  "frozen_input_manifest_sha256": "8f60641674a12f1a2affb610caa5eace73779dc9fdf7c3274863c8074a204d97",
+  "heldout_comparison_performed": false,
+  "local_AE4_null_prediction": {
+    "active_payload_sha256": "1a4a4708de6d1752add85b99135b421f96c54c141a018390c64de50368ec774e",
+    "assumptions": [
+      "exact genotype rest",
+      "basal calcium",
+      "beta input right step to one",
+      "intact inward NKCC",
+      "positive hydraulic coefficients",
+      "regular positive state domain",
+      "finite nonnegative conductance"
+    ],
+    "basal_N0_fmol_s": 0.1325727515622257,
+    "cached_parent_cl_derivative_mM_s": -2.1592060823895095e-15,
+    "cases": [
+      {
+        "M_beta": 2.5,
+        "delta_N_fmol_s": 0.19885912734333855,
+        "delta_initial_cl_derivative_mM_s": 0.276521177621324,
+        "exact_equilibrium_volume_acceleration_pL_s2": 0.030870824269644607,
+        "relative_swelling_t2_coefficient_s_minus2": 0.010731763730468054,
+        "statement": "Positive loading and volume curvature. Positive finite g opens VRAC locally; no sustained quantitative prediction."
+      },
+      {
+        "M_beta": 3.0,
+        "delta_N_fmol_s": 0.2651455031244514,
+        "delta_initial_cl_derivative_mM_s": 0.36869490349509865,
+        "exact_equilibrium_volume_acceleration_pL_s2": 0.041161099026192804,
+        "relative_swelling_t2_coefficient_s_minus2": 0.014309018307290736,
+        "statement": "Positive loading and volume curvature. Positive finite g opens VRAC locally; no sustained quantitative prediction."
+      }
+    ],
+    "classification": "FORMAL_DEDUCTION_WITH_CACHED_NUMERICAL_COEFFICIENTS",
+    "hydraulic_sum_pL_s_mOsm": 0.055819999999999995,
+    "qualification": "Exact fixed-state increment; approximate cached coefficients for exact-equilibrium theorem. Not an SPQ recovery slope or sustained secretion prediction.",
+    "reference_volume_pL": 1.4382922064339096,
+    "rest_sha256": "b5c9cd1b6a6c76faf9ea8fa66624f42791e8e39dedd428cbb6a3125111ac920a"
+  },
+  "model_sha256": "4fb4f64cb438ddbc632a3f3405896c647e87267d237c9d9e4101bea06f7cd571",
+  "new_fits": 0,
+  "new_model_evaluations": 0,
+  "new_trajectories": 0,
+  "parameter_freeze_sha256": "5451ceba2f6e55cdb7ad32586dde2b41f7179ea1e432874a610fe67daacc668a",
+  "predictions": [
+    {
+      "M_beta": 2.5,
+      "arm": "CCH_IPR",
+      "cumulative_secretion_pL": null,
+      "deficit_percent": null,
+      "genotype": "WT",
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track1"
+    },
+    {
+      "M_beta": 3.0,
+      "arm": "CCH_IPR",
+      "cumulative_secretion_pL": null,
+      "deficit_percent": null,
+      "genotype": "WT",
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track1"
+    },
+    {
+      "M_beta": 2.5,
+      "arm": "CCH_IPR",
+      "cumulative_secretion_pL": null,
+      "deficit_percent": null,
+      "genotype": "AE4_5PCT",
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track1"
+    },
+    {
+      "M_beta": 3.0,
+      "arm": "CCH_IPR",
+      "cumulative_secretion_pL": null,
+      "deficit_percent": null,
+      "genotype": "AE4_5PCT",
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track1"
+    },
+    {
+      "M_beta": 2.5,
+      "arm": "CCH_IPR",
+      "cumulative_secretion_pL": null,
+      "deficit_percent": null,
+      "genotype": "AE4_KO",
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track1"
+    },
+    {
+      "M_beta": 3.0,
+      "arm": "CCH_IPR",
+      "cumulative_secretion_pL": null,
+      "deficit_percent": null,
+      "genotype": "AE4_KO",
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track1"
+    },
+    {
+      "M_beta": 2.5,
+      "arm": "CCH_ONLY",
+      "cumulative_secretion_pL": null,
+      "genotype": "WT",
+      "identified_spq_uptake": null,
+      "parent_csv": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/WT__CCH_ONLY.csv",
+      "parent_csv_sha256": "9d0dc2ab92f567f3d77c379ae093e1cf9904f0012098b3a1500386eb4098203e",
+      "parent_json": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/WT__CCH_ONLY.json",
+      "parent_json_sha256": "0205b0b543fc0aa43ed726e7b2984daeff5fe4d69955c99b6248b8e540987209",
+      "qualification": "No new solve; beta-zero full-RHS identity; fluorescence calibration remains unavailable",
+      "status": "EXACT_PARENT_IVP_CACHED_RESULT_REFERENCE",
+      "track": "track2"
+    },
+    {
+      "M_beta": 2.5,
+      "arm": "IPR_ONLY",
+      "cumulative_secretion_pL": null,
+      "genotype": "WT",
+      "identified_spq_uptake": null,
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track2"
+    },
+    {
+      "M_beta": 2.5,
+      "arm": "CCH_IPR",
+      "cumulative_secretion_pL": null,
+      "genotype": "WT",
+      "identified_spq_uptake": null,
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track2"
+    },
+    {
+      "M_beta": 2.5,
+      "arm": "CCH_ONLY",
+      "cumulative_secretion_pL": null,
+      "genotype": "AE4_KO",
+      "identified_spq_uptake": null,
+      "parent_csv": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE4_KO__CCH_ONLY.csv",
+      "parent_csv_sha256": "157afac917f4f6a74970dbaccdde2a621acd66b9d1a186263e40d361f82da5fe",
+      "parent_json": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE4_KO__CCH_ONLY.json",
+      "parent_json_sha256": "afbb0778aaa481947706c4ac964080390ff8d01d40957e3a9f57a11e7c252002",
+      "qualification": "No new solve; beta-zero full-RHS identity; fluorescence calibration remains unavailable",
+      "status": "EXACT_PARENT_IVP_CACHED_RESULT_REFERENCE",
+      "track": "track2"
+    },
+    {
+      "M_beta": 2.5,
+      "arm": "IPR_ONLY",
+      "cumulative_secretion_pL": null,
+      "genotype": "AE4_KO",
+      "identified_spq_uptake": null,
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track2"
+    },
+    {
+      "M_beta": 2.5,
+      "arm": "CCH_IPR",
+      "cumulative_secretion_pL": null,
+      "genotype": "AE4_KO",
+      "identified_spq_uptake": null,
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track2"
+    },
+    {
+      "M_beta": 2.5,
+      "arm": "CCH_ONLY",
+      "cumulative_secretion_pL": null,
+      "genotype": "AE2_KO",
+      "identified_spq_uptake": null,
+      "parent_csv": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE2_KO__CCH_ONLY.csv",
+      "parent_csv_sha256": "4921ca767e614c8f3dd984d73a2dfc01a0826d5235936dd17d8eb5ab4ed06446",
+      "parent_json": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE2_KO__CCH_ONLY.json",
+      "parent_json_sha256": "80a90beab92b0720b3bb76354e4ce1de2ed8aebb8c537020cff6b058eabe3e88",
+      "qualification": "No new solve; beta-zero full-RHS identity; fluorescence calibration remains unavailable",
+      "status": "EXACT_PARENT_IVP_CACHED_RESULT_REFERENCE",
+      "track": "track2"
+    },
+    {
+      "M_beta": 2.5,
+      "arm": "IPR_ONLY",
+      "cumulative_secretion_pL": null,
+      "genotype": "AE2_KO",
+      "identified_spq_uptake": null,
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track2"
+    },
+    {
+      "M_beta": 2.5,
+      "arm": "CCH_IPR",
+      "cumulative_secretion_pL": null,
+      "genotype": "AE2_KO",
+      "identified_spq_uptake": null,
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track2"
+    },
+    {
+      "M_beta": 3.0,
+      "arm": "IPR_ONLY",
+      "cumulative_secretion_pL": null,
+      "genotype": "WT",
+      "identified_spq_uptake": null,
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track2"
+    },
+    {
+      "M_beta": 3.0,
+      "arm": "IPR_ONLY",
+      "cumulative_secretion_pL": null,
+      "genotype": "AE4_KO",
+      "identified_spq_uptake": null,
+      "status": "UNAVAILABLE_NO_IDENTIFIED_G",
+      "track": "track2"
+    }
+  ],
+  "resting_model": "Exactly unchanged by beta-zero nesting; cached genotype rest limitations retained",
+  "source_architecture_sha256": "09d91704317dab6636977cde51dbd32cdacbebd04b6c9a1ae45446297e409ac4",
+  "verified_51C": {
+    "checkpoint": "51C",
+    "remote_sha": "f35e30150d733c4aad6867c99b3a55aa31a0b531",
+    "sha": "f35e30150d733c4aad6867c99b3a55aa31a0b531",
+    "transport": "Connected Git Data API; independent ref and commit/tree/receipt verification",
+    "tree": "d4bc029cd2964ea62308a0ef06f604a0625209f5",
+    "verified": true,
+    "verified_utc": "2026-09-16T06:18:02.867612+00:00"
+  }
+}

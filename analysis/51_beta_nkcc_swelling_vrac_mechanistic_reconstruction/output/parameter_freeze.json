@@ -1,0 +1,56 @@
+{
+  "M_beta": 2.5,
+  "M_beta_sensitivity": 3.0,
+  "attempts": [
+    {
+      "case": "calibration_00",
+      "g_V_S": 0.0,
+      "physiologically_admissible": true,
+      "residual": -0.06749195852646679,
+      "status": "COMPLETE"
+    },
+    {
+      "case": "calibration_01",
+      "g_V_S": 1e-06,
+      "physiologically_admissible": true,
+      "residual": -0.1006337924047061,
+      "status": "COMPLETE"
+    }
+  ],
+  "cross_species_status": "Rat submandibular central, rat parotid sensitivity; not mouse confidence bounds",
+  "current_mapping": "UNRESOLVED; SI inaccessible and apical/current/volume mapping unidentified",
+  "endpoint_residuals": [
+    -0.06749195852646679,
+    -0.1006337924047061
+  ],
+  "g_V_S": null,
+  "heldout_data_used": false,
+  "identification_code_sha256": "a5e4ba527b60cbf11209c5ec8ea0e98948cd0a4d73f4d58b37d01e5a99348364",
+  "independent_validation": {
+    "TMEM16A_off": "NOT_RUN_NO_ACCEPTED_CONDUCTANCE",
+    "VRAC_blockade": "g=0 endpoint retained only as an identification trial; no accepted paired validation",
+    "WT_swelling": "Positive in both numerical trials; target magnitude not attained at bracket endpoints",
+    "patch_current": "QUANTITATIVE_COMPARISON_UNAVAILABLE_OBSERVATION_MAP",
+    "source_sensitivity_M_beta_3": "FIXED_PROSPECTIVELY_BUT_NO_ACCEPTED_G_FOR_TRAJECTORIES"
+  },
+  "maxiter": 40,
+  "model_sha256": "4fb4f64cb438ddbc632a3f3405896c647e87267d237c9d9e4101bea06f7cd571",
+  "no_frozen_prediction_model": true,
+  "observation": "Mean relative cell volume minus one",
+  "observation_window_s": [
+    300,
+    600
+  ],
+  "outcome": "FALLBACK_NOT_BRACKETED",
+  "parameter_status": "UNIDENTIFIED",
+  "predeclared_scalar_bracket_S": [
+    0.0,
+    1e-06
+  ],
+  "qualification": "No accepted scalar conductance. Two endpoints do not prove absence of interior or other roots; no search or target rescue is authorised.",
+  "route": "PREDECLARED_SWELLING_FALLBACK",
+  "runner_sha256": "6964584fbe1612fc3792da35d52a38796f0cd30fe3ded9cb3adc4d23af504f31",
+  "source_mapping_status": "ASSUMPTION/SENSITIVITY; source narrative magnitude, not measured averaging window",
+  "target_relative_swelling": 0.125,
+  "xtol_S": 1e-13
+}
