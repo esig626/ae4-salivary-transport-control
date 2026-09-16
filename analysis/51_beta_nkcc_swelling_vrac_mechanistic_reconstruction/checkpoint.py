@@ -72,7 +72,7 @@ def bundle(name,destination):
     for p in git('diff','--name-only',parent,'HEAD').splitlines():
         f=ROOT/p
         if not f.is_file():raise RuntimeError('Deletion forbidden')
-        entries.append(dict(path=p,mode='100644',type='blob',content=f.read_text(),expected_sha=git('hash-object',p)))
+        entries.append(dict(path=p,mode='100644',type='blob',content=f.read_bytes().decode('utf-8'),expected_sha=git('hash-object',p)))
     dump(Path(destination),dict(checkpoint=name,parent=parent,base_tree=git('rev-parse',parent+'^{tree}'),
         expected_tree=git('rev-parse','HEAD^{tree}'),message=message,entries=entries))
     print(json.dumps(dict(checkpoint=name,files=len(entries),local_tree=git('rev-parse','HEAD^{tree}'))))
