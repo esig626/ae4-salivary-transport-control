@@ -558,3 +558,58 @@ New 50C model evaluations, trajectories, stationary solves and fits: zero.
 One reporter filename error was corrected without scientific changes and is
 preserved in `output/reuse_attempt_01.json`. See Task 50 `FROZEN_RESULT_REUSE.md`,
 `output/inherited_phenotype.json` and `output/frozen_reuse_manifest.json`.
+
+## 13. R50D: final minimal beta conditioned construction
+
+**Controlling Task 50 result: COMPLETE WITH AUTHORISED PRECISION QUALIFICATION.**
+**Classification: TARGET-CALIBRATED CONSTRUCTION.** The fixed coefficient remains
+exactly `lambda=0.89488127156712`. One new wrapper changes only apical chloride
+conductance through the declared factor before the inherited current closure.
+No earlier scientific source, state, protocol, transporter parameter or frozen
+result was changed. No signalling ODE or adjustable parameter was added.
+
+Exact WT, REST, AE4 null CCh only and AE2 knockout parent identities hold.
+At beta one the algebra is identical to the displayed Task 41 equation, while
+comparison to its full frozen coefficient retains the R50A precision
+qualification. The user's explicit authorisation, recorded in D50-06, supersedes
+the original audit's operational stop only. It does not supersede the exact
+coefficient inequality or turn fixed state comparisons into a trajectory bound.
+
+Ten software tests pass, including 21 exact parent comparisons and six active
+comparisons. All 28 reused artefacts match the original Task 41 publication.
+The inherited cumulative deficits are 23.1634% at 5% AE4 and 30.2612% at null;
+the saved observations establish finite window persistence. These magnitudes
+were already phenotype calibrated and are not independent validation or newly
+simulated Task 50 outputs. No molecular AE4 to TMEM16A interaction is identified.
+
+The final report is
+`analysis/50_minimal_beta_conditioned_effective_coupling/MINIMAL_EFFECTIVE_COUPLING_REPORT.md`.
+The unresolved chronic resting adaptation, IPR only null uptake, microscopic
+identity, pH/volume limitations and long duration validity remain explicit.
+All earlier exclusions remain closed.
+
+The original 50A audit was verified at
+`e4c72143fe7d71ae0034d15887312062626b4636`; the authorised 50A continuation
+was verified at `cc69edfb88fbcf17b6d60e0cbc70c0130c0d978a` before source edits.
+50B was verified at `537ce3204d11a1a6cc51b1dd39032d12cb42df5e` before reuse.
+50C was verified at `88997ef6888498e6ea6bdd9bd4acd7e5ec108dbc`, including
+all ten receipt hashes, before final reporting. The final 50D publication
+receipt records its exact remotely verified commit after publication.
+
+Across Task 50 there were 80 core evaluations, all in software verification
+and constructor checks; zero production trajectories, stationary solves,
+parameter fits or mechanism searches. The historical setup and reporter errors
+remain recorded. The two original verification logs are included explicitly in
+50D after the repository's generic ignore rule excluded them from 50B; the JSON
+test records were already published. Final integrity verification uses file
+and Git checks only. Stop after remotely verified 50D. Tasks 51 and 52 and the
+two remaining scientific shots remain unstarted.
+
+R50D final integrity audit: all 39 artefact hashes across the original 50A,
+authorised 50A continuation, 50B and 50C receipts match at their own published
+commits. The three tested source hashes and all 28 frozen artefacts also match.
+Earlier scientific source, analyses, results, archive and manuscript files are
+unchanged. Binding instructions, phenotype convention and execution prompt are
+unchanged; the earlier ledger contents are preserved as an exact prefix. The
+audit passed without any model evaluation. Its record is
+`analysis/50_minimal_beta_conditioned_effective_coupling/output/final_integrity_audit.json`.

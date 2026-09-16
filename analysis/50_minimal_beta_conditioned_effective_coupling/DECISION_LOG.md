@@ -228,3 +228,30 @@ accepted results; update the cumulative ledger and verify source/checkpoint
 integrity without rerunning numerical tests or trajectories. Report chronic
 resting adaptation, IPR only uptake, microscopic identity and long duration
 validity as unresolved. Publish 50D and stop. No Task 51 is authorised.
+
+## D50-11 — final report and publication integrity
+
+**Decision before final integrity checks:** close Task 50 under the explicit
+precision authorisation in D50-06. The 50C commit
+`88997ef6888498e6ea6bdd9bd4acd7e5ec108dbc` was independently fetched, its tree
+matched the local index, and all ten receipt artefact hashes were verified
+before beginning 50D. Write the final report from the accepted 50A to 50C
+records. Preserve exact parent identities and qualify frozen mutant reuse.
+
+**Ledger basis:** sections 10 to 12, R50A continuation, R50B and R50C, and the
+phenotype convention were consulted again. No closed axis is reopened and no
+new scientific comparison or numerical calculation is needed. The original
+exact coefficient contradiction remains true; user authorisation resolves the
+operational stop, not that mathematical fact.
+
+**Integrity scope:** verify the tested source hashes, the 28 reused artefacts,
+the receipts at their original published commits, the required branch, and
+preservation of earlier scientific source, analyses, frozen results and
+instructions. These are file and Git checks only. Publish the two existing
+verification logs explicitly, since the repository's general `*.log` ignore
+rule excluded them from 50B; their JSON records were already published.
+Do not rerun tests, model evaluations, integrations, stationary solves or fits.
+
+Update both ledgers and status in 50D, publish and remotely verify it, then
+record the verified publication SHA in a metadata closeout. Stop after that
+verification. Tasks 51 and 52 remain unstarted.

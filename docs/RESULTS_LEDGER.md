@@ -124,3 +124,21 @@ window persistence only. Evidence: Task 50 `FROZEN_RESULT_REUSE.md` and its two
 machine readable output records. No new model evaluation or integration was
 run; no global trajectory error bound, independent validation, chronic rest
 repair, IPR only uptake repair or microscopic mechanism is established.
+
+## Task 50D final reduced construction
+
+**R50D-01:** Task 50 is complete with the user authorised numerical precision
+qualification, preserving exactly `lambda=0.89488127156712`. Exact parent nesting
+and the ten passing software tests support one fixed beta conditioned scalar.
+Twenty eight frozen artefacts supply the inherited 23.1634% and 30.2612%
+cumulative deficits, with finite window persistence only. Classification:
+TARGET-CALIBRATED CONSTRUCTION. No new production trajectory, stationary solve
+or fit was run; chronic resting adaptation, IPR only uptake and microscopic
+identity remain unresolved. The original exact coefficient discrepancy remains
+true and qualified reuse is not a global trajectory error bound.
+
+Evidence: Task 50 `MINIMAL_EFFECTIVE_COUPLING_REPORT.md` and `output/` receipts.
+Implementation was verified at `537ce3204d11a1a6cc51b1dd39032d12cb42df5e`;
+reuse was verified at `88997ef6888498e6ea6bdd9bd4acd7e5ec108dbc`. Tolerances
+remain those predeclared in D50-07. Master ledger R50D is the controlling result.
+Stop at 50D; Tasks 51 and 52 remain unstarted.
