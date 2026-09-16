@@ -9,6 +9,8 @@ Use one session for two independent architectural failures:
 1. prospectively reconstruct the missing TMEM16A-independent beta/cAMP volume-regulated apical chloride pathway using independent cAMP-pathway data, with **no simultaneous beta-NKCC modification**;
 2. after publishing that result, solve the measured WT/AE4-KO/AE2-KO resting-state residual/source-signature inverse problem in conserved coordinates.
 
+The resting-state inverse problem is **not a subset search**. Form the residual vectors at the measured states and the Jacobian/source-signature matrix for the already represented pathways. Use rank/SVD/projection and, where needed, one constrained continuous least-squares solve to ask whether the measured residual lies in the span of the existing source directions and which direction is identifiable. Do **not** enumerate transporter subsets, mechanism combinations, on/off patterns, parameter subsets, source-vector combinations, or candidate families. Do not run all pairs, all triples, best-subset regression, sparse combinatorial selection, Cartesian grids, or evolutionary/random mechanism searches. If the residual geometry does not identify a unique correction direction, publish non-identifiability and stop that correction stage.
+
 Outcome required: either a validated stimulated branch plus a localized resting correction, or a mathematically explicit source/equation deficiency. Do not stop after the first negative subtest.
 
 ## Shot 2 — Task 50
@@ -35,6 +37,9 @@ Across all four runs:
 
 - no rerunning excluded Tasks 12-48 ideas;
 - no broad mechanism searches or Cartesian sweeps;
+- no combinatorial subset enumeration of transporters, mechanisms, source directions, parameters, or corrections;
+- no all-pairs/all-triples/all-subsets search and no best-subset or evolutionary/random model selection;
+- residual localisation must use direct algebra, rank/SVD/projection, sensitivities, or one continuous constrained solve, not discrete search;
 - no fitting the ~35% AE4-null secretion deficit in isolation;
 - no genotype-specific fudge multipliers;
 - no post-reveal retuning;
