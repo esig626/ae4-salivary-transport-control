@@ -113,3 +113,11 @@ Reconsulted ledger R51A, §§2,3.1 and phenotype convention. Seventeen software 
 ## D51-16 — accept implementation, require51B before inference
 
 Reconsulted ledger R51A and the frozen phenotype convention; all17 required distinct software tests now pass. Accept implementation only, not physiology. Model SHA is fixed in implementation_verification.json. No scientific law or closed axis changed during the literal assertion repair. Next execute only the predeclared independent one-scalar fallback after remote51B verification, logging every solve/trajectory and retaining failed identification if encountered.
+
+## D51-17 — independent fallback execution details (before first trajectory)
+
+Ledger R51A–B, §§1.7,2,6,14.3 and phenotype convention reread. Execute the frozen scalar solve exactly. Use all inherited conservation tolerances; record inherited physiological ranges Na0–40,K50–200,Cl30–80mM,pH6.6–7.3,cell volume0–3pL without retuning or erasing failures. A selected conductance must satisfy these checks. Record every calibration endpoint/root trajectory, not only a final fit; predeclare that an unbracketed residual is an unresolved identification failure, not a theorem of global mechanism impossibility. Save compact10s diagnostics plus onset1/2/5s and13-state vectors, while all solver endpoints and integer-second samples are audited and integrals use the full1s grid. This recording compression changes no scientific observation. The scalar bracket endpoints are numerical trials, not production parameter choices.
+
+## D51-18 — accept scalar identification failure, no rescue (51C)
+
+Reconsulted ledger R51A–B, §§1.7,3.1,6,9,14.3 and phenotype convention. Frozen g-bracket endpoints produce5.750804%/2.436621% mean swelling rather than12.5%, with both numerical/physiological audits passing. Accept only the observed non-bracketing and no identified g; do not assert global monotonicity/impossibility. g remains null, not zero. Additional accepted-model beta controls, sensitivity trajectories and two-track secretion predictions are unavailable; no g is borrowed from synthetic tests or the bracket. Publish51C immediately, then freeze unavailable outcomes and the parameter-independent local initiation proof at51D. No closed axis is reopened, and no phenotype comparison precedes51D.
