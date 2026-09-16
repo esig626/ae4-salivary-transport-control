@@ -1,13 +1,13 @@
 # Task52 current status
 
-**State: 52B COMPLETE — awaiting independent remote verification.**
+**State:52C COMPLETE — awaiting independent remote verification.**
 
-52A verified at `acf3e132ce698d64a220b52a966c8472e86405a3`.
-The exact pre-Palk Task37 snapshot, prescribed projectors and paired matched
-supply/shared auxiliary-current model are implemented. All16 fixed-state
-checks pass in the first attempt. Both central and alternate projected genotype
-states preserve measured Cl/pH and pass unchanged physical/conservation gates.
+52B independently verified at `8ff3b82da2891e47bb968f137dce50e240640491`.
+The immutable machine-readable freeze contains all four measured onset states,
+the exact eight cases, inherited solver and conservation gates, independent
+8/4-point quadrature, diagnostic conventions, and50 source/input hashes.
+The runtime dependency audit passes with zero scientific evaluations at52C.
 
 Production trajectories:0. Stationary solves/fits/searches:0.
-Next:52C immutable model/input/case freeze, only after verified52B.
-No Task53; stop after remotely verified52F.
+Next:exactly the three52D central combined-stimulus cases, only after verified52C.
+No changes to frozen inputs or model; no Task53; stop after verified52F.

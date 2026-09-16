@@ -150,3 +150,7 @@ state and a synthetic reversed chloride-driving fixture. All physical and
 conservation gates retain52A tolerances; source-vector/equality tests use exact
 identity where algebra requires it and round-off tolerances otherwise.
 No scientific axis is reopened, and no trajectory is authorised at52B.
+
+## D52-13 — immutable52C numerical freeze
+
+After independently verified52B, freeze all four projected onset states,50 source/input identities and exactly eight cases. The production runner directly advances the26-coordinate paired RHS, preserves accepted endpoints plus integer-second diagnostics, and stops on the first sampled physical/conservation failure. Independent8-point and4-point Gauss quadratures include explicit2DN mass-term checks and separately bounded onset epsilon accounting. Failure records preserve partial coverage and unvalidated accepted endpoints. Static review corrections concern bookkeeping only; the tested scientific implementation is byte-unchanged. No scientific evaluation, integration, parameter change or tuning occurred at52C.
