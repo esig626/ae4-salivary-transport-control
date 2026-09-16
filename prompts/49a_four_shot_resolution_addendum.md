@@ -35,7 +35,7 @@ The first reconstruction is strictly the independently documented TMEM16A-indepe
 
 Use only independent cAMP-pathway data, primarily Catalan et al. PNAS 2015 (`10.1073/pnas.1415739112`), to identify the minimal conductance/gating law. Use WT/TMEM16A-KO IPR secretion, DCPIB/NPPB response, swelling/current timing and other directly relevant non-AE4-null observations. Digitise figures reproducibly if necessary and save calibration/error metadata.
 
-Prefer the minimum law with one conductance scale and state dependence already present in the model (beta input and/or fractional swelling). Do not add a Hill coefficient, arbitrary delay, genotype multiplier or synergy unless demanded by independent source data.
+Prefer the minimum law with one conductance scale and state dependence already present in the model (beta input and/or fractional swelling). Do not add a Hill coefficient, arbitrary delay, genotype multiplier or synergy unless demanded by independent source data. Do not create or compare a family of alternative VRAC laws. If the independent source cannot identify the single predeclared minimal law, report non-identifiability rather than branching into alternatives.
 
 ### Required prospective test
 
@@ -64,13 +64,22 @@ Use genotype-appropriate resting equilibria. Do not use stimulated secretion mag
 
 At each measured resting state, evaluate the inherited conserved-coordinate balance residuals for Na, K, Cl, TIC/alkalinity, charge/current and water/volume using the active source conventions. Quantify what steady source vector is missing for each genotype.
 
-Then solve the sparse source-signature inverse problem:
+Then perform **one direct source-space calculation**, not a model-selection search:
 
-> What smallest genotype-independent correction built from physiologically allowed existing pathway source signatures, or one clearly missing acid/base source signature, can make the measured WT, AE4-KO and AE2-KO resting states jointly compatible within their uncertainty?
+1. assemble the matrix whose columns are the already represented pathway source signatures evaluated at the measured states;
+2. compute its rank/SVD and project the measured residual vector onto its column space/cone;
+3. if a continuous coefficient estimate is needed, solve one constrained least-squares problem using all predeclared columns simultaneously;
+4. inspect the resulting identifiable direction and uncertainty.
 
-This is a constrained linear/nonlinear inverse balance problem, not a sweep over mechanisms.
+Absolutely do **not** enumerate subsets of those columns. No all-pairs, all-triples, all-subsets, best-subset selection, L0 search, pathway on/off combinations, mechanism menus, candidate-family loops, genetic/evolutionary search, random search, or Cartesian parameter grids. Do not repeatedly refit after dropping/adding pathways. The purpose is geometric localization in the fixed source basis, not selection among combinations.
 
-Explicitly test whether the required correction lies in the span/cone of the already represented pathway signatures (NKCC1, NHE1, AE2, AE4, NBC, pump/K handling, CO2/carbon handling) at rest. If it does, identify the exact equation/gating assumption preventing the necessary shared flux relation. If it does not, report the residual source direction and the minimum additional conserved-coordinate signature required.
+The question is:
+
+> Does the measured residual lie in the span/cone of the fixed existing source basis, and if so which continuous source direction is identifiable; if not, what orthogonal residual source direction remains?
+
+If the fixed basis is rank-deficient or the correction direction is not uniquely identifiable, publish that non-identifiability. Do not resolve it by discrete subset selection.
+
+Explicitly include the already represented pathway signatures (NKCC1, NHE1, AE2, AE4, NBC, pump/K handling, CO2/carbon handling) at rest. If the residual lies in their span, identify the exact equation/gating assumption preventing the required shared flux relation. If it does not, report the residual source direction and the minimum additional conserved-coordinate signature implied by the projection residual. This is a vector-space statement, not permission to search through hypothetical transporters.
 
 ### Important prior-architecture warning
 
@@ -83,13 +92,13 @@ Similarly, the source paper reports no detected genotype difference in stimulate
 Publish:
 
 - measured-state residual vectors;
-- source-signature matrix and rank/cone result;
-- sparse required correction with uncertainty;
-- whether an existing pathway law can realise it with shared parameters;
-- the exact next equation-level correction, if identified;
+- fixed source-signature matrix and rank/cone result;
+- continuous projected/required correction direction with uncertainty;
+- whether an existing shared pathway law can realise that direction;
+- the exact next equation-level correction, only if uniquely identified;
 - or a proof/diagnostic that the current pathway basis cannot span the measured resting phenotype.
 
-Do not perform a large parameter search. If one uniquely indicated shared correction is identified and can be implemented/tested within this same run without contaminating Stage-I calibration, implement it and publish it as a separate checkpoint. Otherwise stop the model edit and preserve the mathematical localization for Task 50.
+Do not perform a large parameter search or any combinatorial subset search. If one uniquely indicated shared correction is identified and can be implemented/tested within this same run without contaminating Stage-I calibration, implement it and publish it as a separate checkpoint. Otherwise stop the model edit and preserve the mathematical localization for Task 50.
 
 ## Stage III: combine only independently fixed pieces
 
