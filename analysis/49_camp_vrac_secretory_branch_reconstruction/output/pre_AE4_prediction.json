@@ -1,0 +1,179 @@
+{
+  "calibrated_prediction_generated": false,
+  "checkpoint": "49D",
+  "family": "one predeclared law, all finite g>=0; not a candidate-family search",
+  "heldout_evaluation_performed": false,
+  "new_trajectories": 0,
+  "numerical_rest_residual_rule": "Numerical equilibrium error is not an authorised source of activating swelling.",
+  "parameter_freeze": {
+    "AE4_heldout_data_used": false,
+    "beta_NKCC_changed": false,
+    "blockers": [
+      "No verified matched blocked apical current, swelling and chloride driving-force map.",
+      "Perforated whole-cell current is not a measured apical conductance; total and blocked components differ.",
+      "WT current-parent IPR samples shrink instead of activating the predeclared swelling gate.",
+      "Independent gland shapes/ratios have not supplied a demonstrated finite identifiable scale under these activation/observation restrictions."
+    ],
+    "calibrated_conductance_S": null,
+    "diagnostic_fixture_conductance_is_parameter": false,
+    "finite_identified_envelope_S": null,
+    "frozen_inherited_parameter_sha256": "1a4a4708de6d1752add85b99135b421f96c54c141a018390c64de50368ec774e",
+    "law": "g_V beta max(V_i/V_rest_genotype - 1,0)",
+    "limits": "This is an unresolved/failed identification gate, not proof that the unavailable supplement lacks data or that every possible observation map is impossible.",
+    "model_source_sha256": "30d41e4e08e54f1dc58580bc458595c22f555189c20fa9085e9d9cd431604e94",
+    "new_parameters_inferred": 0,
+    "next": "Publish immutable unavailable-prediction record at49D, then49E limitations, thenStageII after remote49E.",
+    "optimisation_calls": 0,
+    "post_reveal_retuning": false,
+    "production_eligible": false,
+    "production_trajectories": 0,
+    "source_manifest_sha256": "97297538727306c35e7fd760b6fbbe478e9d602519bab6d8ca8fae89bc014796",
+    "status": "BLOCKED_INDEPENDENT_CALIBRATION"
+  },
+  "predictions": [
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE4_WT",
+      "genotype": "WT",
+      "inherited_artifact": "analysis/48_joint_experimental_constraint_reconstruction/output/rests/WT.json",
+      "parameter_independent_status": "exact nesting; reuse published parent",
+      "protocol": "REST",
+      "sha256": "b9c260b176bd75a1359bec0162bc65c17d3d7774de4dd07d32ef9ec33f5ad6ad"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE4_WT",
+      "genotype": "WT",
+      "inherited_artifact": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/WT__CCH_ONLY.json",
+      "parameter_independent_status": "exact nesting; reuse published parent",
+      "protocol": "CCH_ONLY",
+      "sha256": "0205b0b543fc0aa43ed726e7b2984daeff5fe4d69955c99b6248b8e540987209"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE4_WT",
+      "genotype": "WT",
+      "parameter_independent_status": "unavailable without independently identified conductance",
+      "protocol": "IPR_ONLY",
+      "reason": "49C identification gate failed; no arbitrary scale promoted"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE4_WT",
+      "genotype": "WT",
+      "parameter_independent_status": "unavailable without independently identified conductance",
+      "protocol": "CCH_IPR",
+      "reason": "49C identification gate failed; no arbitrary scale promoted"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE4_KO",
+      "genotype": "AE4_KO",
+      "inherited_artifact": "analysis/48_joint_experimental_constraint_reconstruction/output/rests/AE4_KO.json",
+      "parameter_independent_status": "exact nesting; reuse published parent",
+      "protocol": "REST",
+      "sha256": "b5c9cd1b6a6c76faf9ea8fa66624f42791e8e39dedd428cbb6a3125111ac920a"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE4_KO",
+      "genotype": "AE4_KO",
+      "inherited_artifact": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE4_KO__CCH_ONLY.json",
+      "parameter_independent_status": "exact nesting; reuse published parent",
+      "protocol": "CCH_ONLY",
+      "sha256": "afbb0778aaa481947706c4ac964080390ff8d01d40957e3a9f57a11e7c252002"
+    },
+    {
+      "SPQ_slope_per_s": 0,
+      "calibrated_numerical_prediction": null,
+      "chemical_state": "constant exact genotype equilibrium",
+      "chloride_concentration_slope_mM_s": 0,
+      "cohort": "AE4_KO",
+      "condition": "exact own-genotype equilibrium; common time-independent optical map",
+      "genotype": "AE4_KO",
+      "parameter_independent_status": "exact-rest invariant for every finite nonnegative conductance",
+      "protocol": "IPR_ONLY",
+      "vrac_current_A": 0,
+      "water_flow": "constant resting outflow; no beta-induced increment"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE4_KO",
+      "genotype": "AE4_KO",
+      "parameter_independent_status": "unavailable without independently identified conductance",
+      "protocol": "CCH_IPR",
+      "reason": "49C identification gate failed; no arbitrary scale promoted"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE2_control",
+      "genotype": "WT",
+      "inherited_artifact": "analysis/48_joint_experimental_constraint_reconstruction/output/rests/WT.json",
+      "parameter_independent_status": "exact nesting; reuse published parent",
+      "protocol": "REST",
+      "sha256": "b9c260b176bd75a1359bec0162bc65c17d3d7774de4dd07d32ef9ec33f5ad6ad"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE2_control",
+      "genotype": "WT",
+      "inherited_artifact": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/WT__CCH_ONLY.json",
+      "parameter_independent_status": "exact nesting; reuse published parent",
+      "protocol": "CCH_ONLY",
+      "sha256": "0205b0b543fc0aa43ed726e7b2984daeff5fe4d69955c99b6248b8e540987209"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE2_control",
+      "genotype": "WT",
+      "parameter_independent_status": "unavailable without independently identified conductance",
+      "protocol": "IPR_ONLY",
+      "reason": "49C identification gate failed; no arbitrary scale promoted"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE2_control",
+      "genotype": "WT",
+      "parameter_independent_status": "unavailable without independently identified conductance",
+      "protocol": "CCH_IPR",
+      "reason": "49C identification gate failed; no arbitrary scale promoted"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE2_KO",
+      "genotype": "AE2_KO",
+      "inherited_artifact": "analysis/48_joint_experimental_constraint_reconstruction/output/rests/AE2_KO.json",
+      "parameter_independent_status": "exact nesting; reuse published parent",
+      "protocol": "REST",
+      "sha256": "1bf2115b9a97d8d9f4e015ebc3d20704481ad3fb8347c1dd7c23eead374aa215"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE2_KO",
+      "genotype": "AE2_KO",
+      "inherited_artifact": "analysis/48_joint_experimental_constraint_reconstruction/output/protocol_predictions/AE2_KO__CCH_ONLY.json",
+      "parameter_independent_status": "exact nesting; reuse published parent",
+      "protocol": "CCH_ONLY",
+      "sha256": "80a90beab92b0720b3bb76354e4ce1de2ed8aebb8c537020cff6b058eabe3e88"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE2_KO",
+      "genotype": "AE2_KO",
+      "parameter_independent_status": "unavailable without independently identified conductance",
+      "protocol": "IPR_ONLY",
+      "reason": "49C identification gate failed; no arbitrary scale promoted"
+    },
+    {
+      "calibrated_numerical_prediction": null,
+      "cohort": "AE2_KO",
+      "genotype": "AE2_KO",
+      "parameter_independent_status": "unavailable without independently identified conductance",
+      "protocol": "CCH_IPR",
+      "reason": "49C identification gate failed; no arbitrary scale promoted"
+    }
+  ],
+  "proof": "At exact KO rest, inherited core is beta-independent and positive-swelling gate is zero. The constant core with evolving disconnected AE4 activation solves the augmented ODE. Local uniqueness gives the invariant for every finite g.",
+  "status": "PRE_AE4_NUMERICAL_PREDICTION_UNAVAILABLE",
+  "verified_49C_sha": "253d4b213c7e73970ff742d68da3d0422373f2a6"
+}
