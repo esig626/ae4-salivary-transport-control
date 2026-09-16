@@ -31,7 +31,9 @@ Use one orchestrator and up to five parallel workers. Only the orchestrator may 
 This run has two sequential scientific obligations:
 
 1. reconstruct and prospectively test the independently documented TMEM16A-independent beta/cAMP volume-regulated apical chloride pathway, **without changing beta-NKCC regulation in parallel**;
-2. after that result is safely published, use the measured WT/AE4-KO/AE2-KO resting Cl/pH states as balance equations and solve the sparse conserved-coordinate source-signature inverse problem, rather than guessing another transporter.
+2. after that result is safely published, use the measured WT/AE4-KO/AE2-KO resting Cl/pH states as balance equations and perform the **single fixed-basis residual projection** prescribed in the addendum.
+
+The second stage is linear-algebraic/geometric localization, not model selection. **Do not enumerate transporter/pathway subsets or combinations.** No all-pairs, all-triples, all-subsets, mechanism menus, best-subset selection, candidate-family loops, Cartesian grids, random search or evolutionary search. Use the complete predeclared source-signature matrix once, compute rank/SVD/projection, and at most one continuous constrained least-squares solution. If it is not identifiable, publish that fact rather than searching subsets.
 
 Do not revisit anything in the exclusion ledger.
 
