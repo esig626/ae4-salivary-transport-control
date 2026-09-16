@@ -1,0 +1,37 @@
+{
+  "actual_SVD_invocations": 2,
+  "beta_NKCC_edits": 0,
+  "canonical_model_source_edits": 0,
+  "checkpoint": "49F",
+  "checkpoint_49H": {
+    "applicable": false,
+    "reason": "No uniquely identified lawful shared resting correction."
+  },
+  "checkpoint_49I": {
+    "applicable": false,
+    "reason": "Neither pair of independently accepted corrections exists."
+  },
+  "conductance_S": null,
+  "constrained_least_squares_calls": 0,
+  "distinct_rest_source_bases": 1,
+  "genotype_multiplier_fits": 0,
+  "next_equation": "H=G2*tanh(log((Cbar-H/D)/Ccrit)/w); all-genotype TA_dot=H+2B-E-2A and TIC_dot=C+2B-E-2A.",
+  "next_task_limit": "Resolve independent resting-state/source identification for this compatibility equation; no list of candidate pathways or search is prescribed.",
+  "parameter_fits": 0,
+  "post_reveal_retuning": false,
+  "production_trajectories": 0,
+  "replay_reason": "Identical basis/input replay after first export KeyError; explicitly disclosed in49G.",
+  "requested_stronger_resolution_achieved": false,
+  "stageI": "Not accepted: independent conductance unidentified; frozen exact KO IPR prediction conflicts with positive uptake.",
+  "stageII": "Conditional KO TA cone obstruction and scalar H=E=C compatibility equation localised; full source span contains residual; unique shared correction not identified.",
+  "tested_mechanisms": 1,
+  "unit_tests_passed": 9,
+  "verified_dependency": {
+    "checkpoint": "49G",
+    "remote_sha": "62fb3a1cf5abd0556eb81dec3e5d1e1e6a3d4382",
+    "sha": "62fb3a1cf5abd0556eb81dec3e5d1e1e6a3d4382",
+    "transport": "Connected GitHub API fast-forward; independent GET verified; exact local tree match",
+    "verified": true,
+    "verified_utc": "2026-09-16T01:05:56.322507+00:00"
+  }
+}

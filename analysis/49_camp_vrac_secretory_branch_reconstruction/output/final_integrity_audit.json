@@ -1,0 +1,45 @@
+{
+  "frozen_sources_checked": 72,
+  "frozen_sources_unchanged": true,
+  "new_tests_or_model_runs": 0,
+  "published_checkpoint_audits": [
+    {
+      "artifact_count": 16,
+      "checkpoint": "49A",
+      "commit": "e597ae7e800317ee52e71bc77d806e7cb9aadeb4",
+      "receipt_hashes_match_publication_tree": true
+    },
+    {
+      "artifact_count": 23,
+      "checkpoint": "49B",
+      "commit": "bcf70bbc833ea59ff894f76f018652415806360d",
+      "receipt_hashes_match_publication_tree": true
+    },
+    {
+      "artifact_count": 53,
+      "checkpoint": "49C",
+      "commit": "253d4b213c7e73970ff742d68da3d0422373f2a6",
+      "receipt_hashes_match_publication_tree": true
+    },
+    {
+      "artifact_count": 56,
+      "checkpoint": "49D",
+      "commit": "c1e7d3afa2e3c4f037c3a5f1c3bc4a5b6eaa3e3c",
+      "receipt_hashes_match_publication_tree": true
+    },
+    {
+      "artifact_count": 59,
+      "checkpoint": "49E",
+      "commit": "d6e0404a9b87279b507b998edea01ed0820e2b84",
+      "receipt_hashes_match_publication_tree": true
+    },
+    {
+      "artifact_count": 70,
+      "checkpoint": "49G",
+      "commit": "62fb3a1cf5abd0556eb81dec3e5d1e1e6a3d4382",
+      "receipt_hashes_match_publication_tree": true
+    }
+  ],
+  "scope": "Byte-level artifact/receipt audit only; no scientific recalculation.",
+  "stageI_freezes_unchanged_after_reveal": true
+}
