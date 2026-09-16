@@ -1,0 +1,32 @@
+[
+  {
+    "implementation": "separate current verified",
+    "numerical_prediction": null,
+    "observation": "TMEM16A-independent IPR output",
+    "reason": "No calibrated conductance; ideal acute deletion differs from chronic source knockout"
+  },
+  {
+    "implementation": "zero-current mask nests parent",
+    "numerical_prediction": null,
+    "observation": "DCPIB/NPPB inhibition",
+    "reason": "No drug potency or calibrated conductance; source blocked and total currents retained separately"
+  },
+  {
+    "implementation": "existing volume dynamics only",
+    "numerical_prediction": "cached parent sample audit",
+    "observation": "IPR swelling and delay",
+    "reason": "No positive gate at published times; source swelling positive"
+  },
+  {
+    "implementation": "blocked assay domain",
+    "numerical_prediction": null,
+    "observation": "chloride/bicarbonate dependence",
+    "reason": "Inherited substrate/bath/carbonate restrictions"
+  },
+  {
+    "implementation": "exact RHS nesting tested",
+    "numerical_prediction": "inherited published CCh trajectory, by exact nesting",
+    "observation": "CCh-only unchanged branch",
+    "reason": "beta=0 for every CCh-only state"
+  }
+]

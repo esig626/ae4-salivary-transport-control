@@ -1,0 +1,23 @@
+[
+  {
+    "file": "figure4.jpg",
+    "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f34a/4343136/6d958c887449/pnas.1415739112fig04.jpg",
+    "status": 200,
+    "bytes": 111660,
+    "type": "image/jpeg"
+  },
+  {
+    "file": "figure5.jpg",
+    "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f34a/4343136/2e1facd1b46d/pnas.1415739112fig05.jpg",
+    "status": 200,
+    "bytes": 79635,
+    "type": "image/jpeg"
+  },
+  {
+    "file": "pnas.201415739SI.pdf",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4343136/bin/pnas.201415739SI.pdf",
+    "status": 200,
+    "bytes": 1817,
+    "type": "text/html; charset=utf-8"
+  }
+]

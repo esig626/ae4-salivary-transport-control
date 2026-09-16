@@ -1,0 +1,83 @@
+{
+  "role": "advisory_only_not_scientific_acceptance",
+  "article": {
+    "title": "A fluid secretion pathway unmasked by acinar-specific Tmem16A gene ablation in the adult mouse salivary gland",
+    "doi": "10.1073/pnas.1415739112",
+    "pmcid": "PMC4343136",
+    "pmid": "25646474"
+  },
+  "verified_sources": [
+    {
+      "file": "article.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4343136/",
+      "content_type": "text/html",
+      "sha256": "e21792240f8f4851b6aa70540660a28a09b97f678be0cfb8c6dc5e8c8e4addea",
+      "bytes": 192871
+    },
+    {
+      "file": "figure4.jpg",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f34a/4343136/6d958c887449/pnas.1415739112fig04.jpg",
+      "content_type": "image/jpeg",
+      "sha256": "73624ef8deed612811f87742d9a0bbf68ead352f99b7667bbf1c82e372ee1a62",
+      "bytes": 111660
+    },
+    {
+      "file": "figure5.jpg",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f34a/4343136/2e1facd1b46d/pnas.1415739112fig05.jpg",
+      "content_type": "image/jpeg",
+      "sha256": "3eac55e4c5fa40fbccca61751b5ae9dd2b3026af73180142ad43f72d4ca888d2",
+      "bytes": 79635
+    }
+  ],
+  "protocol": {
+    "IPR_uM": 5,
+    "CCh_volume_assay_uM": 0.3,
+    "DCPIB_uM": 50,
+    "NPPB_uM": 100,
+    "gland_collection_min": 10,
+    "current_clamp_mV": -60,
+    "current_method": "nystatin-perforated whole-cell",
+    "current_voltage_protocol_mV": {
+      "start": -60,
+      "end": 100,
+      "step": 20
+    },
+    "bath_description_verified": "quasi-physiological external solution containing bicarbonate",
+    "bath_full_composition": null,
+    "temperature": null,
+    "hypotonicity": null,
+    "unverified_details_location": "Supporting Information inaccessible in current retrieval; not claimed absent"
+  },
+  "text_numeric": {
+    "IPR_swelling_fraction": {
+      "mean": 0.125,
+      "sem": 0.002
+    },
+    "CCh_shrinkage_fraction": {
+      "mean": 0.1,
+      "sem": 0.01
+    },
+    "low_chloride_secretion_reduction_fraction": 0.98,
+    "Fig4B_genotype_comparison_p": 0.092,
+    "Fig5E_IPR_p": 6e-05,
+    "Fig5E_hypotonic_p": 0.019
+  },
+  "parameter_map": {
+    "conductance_identified": false,
+    "reason": "No matched blocked apical current, swelling, chloride driving force and observation-to-model-cell map verified. Whole-cell total induced current includes possible DCPIB-insensitive components.",
+    "SI_absence_proven": false,
+    "source_supported_gate": "Qualitative beta/cAMP-associated slow swelling and anion conductance; exact rectified linear swelling gate is a model assumption.",
+    "permeability_selectivity": "Conductance treated as chloride in article; bicarbonate permeability not quantitatively established here."
+  },
+  "all_values_from_pixels": "digitised_points.csv and digitised_volume_trace.csv; machine-readable raw picks/axes in digitisation_metadata.json",
+  "uncertainty": {
+    "point_pick_pixels": 1.5,
+    "axis_anchor_pixels": 1,
+    "biological_SEM": "separate; unresolved is null",
+    "figure5C": "trace/marker bounds, not SEM"
+  },
+  "heldout_AE4_used": false,
+  "model_executed": false,
+  "canonical_files_modified": false,
+  "retrieval_time_utc": "2026-09-16T00:27:38.317678+00:00"
+}

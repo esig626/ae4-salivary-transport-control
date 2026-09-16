@@ -1,0 +1,67 @@
+{
+  "4B_control": {
+    "mean": 10.01953125,
+    "sem_upper": 0.7421875,
+    "unit": "uL/10min",
+    "digitisation_halfwidth": 0.05859375
+  },
+  "4B_Tmem16A_KO": {
+    "mean": 7.16796875,
+    "sem_upper": 1.3671875,
+    "unit": "uL/10min",
+    "digitisation_halfwidth": 0.05859375
+  },
+  "5A_control": {
+    "mean": 19.085603112840467,
+    "sem_upper": 3.6770428015564214,
+    "unit": "uL/10min",
+    "digitisation_halfwidth": 0.262645914396888
+  },
+  "5A_bicarbonate_free": {
+    "mean": 2.4513618677042803,
+    "sem_upper": 1.0505836575875485,
+    "unit": "uL/10min",
+    "digitisation_halfwidth": 0.2626459143968871
+  },
+  "5A_low_chloride": {
+    "mean": 0.35019455252918286,
+    "sem_upper": null,
+    "unit": "uL/10min",
+    "digitisation_halfwidth": 0.2626459143968871
+  },
+  "5E_IPR_induced": {
+    "mean": 208.59375,
+    "sem_upper": 35.15625,
+    "unit": "pA absolute change",
+    "digitisation_halfwidth": 2.34375
+  },
+  "5E_IPR_DCPIB_block_magnitude": {
+    "mean": 107.8125,
+    "sem_upper": 17.1875,
+    "unit": "pA absolute change",
+    "digitisation_halfwidth": 2.34375
+  },
+  "5E_hypotonic_induced": {
+    "mean": 178.90625,
+    "sem_upper": 88.28125,
+    "unit": "pA absolute change",
+    "digitisation_halfwidth": 2.34375
+  },
+  "5E_hypotonic_DCPIB_block_magnitude": {
+    "mean": 92.96875,
+    "sem_upper": 5.46875,
+    "unit": "pA absolute change",
+    "digitisation_halfwidth": 2.34375
+  },
+  "Figure5C_endpoint": {
+    "time_s_nominal": 450,
+    "x_pixel": 758,
+    "time_s_calibrated": 450.92024539877303,
+    "trace_y_min_pixel": 64.0,
+    "trace_y_max_pixel": 77.0,
+    "trace_mid": 1.1603112840466925,
+    "trace_lower": 1.1478599221789882,
+    "trace_upper": 1.172762645914397,
+    "uncertainty_type": "raster marker/trace envelope +1.5px; not SEM"
+  }
+}
