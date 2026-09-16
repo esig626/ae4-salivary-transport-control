@@ -200,3 +200,67 @@ incomplete status. Do not create a completed52D checkpoint or run52E/52F.
 Master-ledger R52A/R52B and R51H/R51I scientific scope is unchanged; no closed
 axis is reopened. All50 immutable source/input hashes still pass. A bounded
 serialisation-only remedy is described, not applied, in SOFTWARE_BLOCKER_52D.md.
+
+## D52-16 — authorised serialisation-only repair and one fresh 52D attempt
+
+Controlling authorisation: AUTHORIZATION_52D_REPORTER_RECOVERY.md at verified
+branch HEAD f2b56f903d33a0ac5f5c292db92cead8b6157f1f. It expressly supersedes
+D52-15's operational no-replay stop for this bounded reporting correction and
+one fresh execution of cases01–03. The earlier failure at9c0fde42 remains
+preserved byte-for-byte. Master-ledger R52A/R52B and R51H/R51I scientific
+architecture, D52-07 case definitions and D52-13 numerics remain controlling;
+no scientific decision, changed hypothesis or reopened axis is introduced.
+
+The new external run_reporter_recovery_52D.py leaves every frozen source/input
+file untouched. Four exact-match reporting substitutions adapt run_attempt
+in memory: name-based union encoding, NPZ boolean presence mask with NaN for
+absent fields, JSON endpoint nulls for absent fields, and finiteness metadata
+that checks original present values/states while accepting labelled missing
+entries. A genuine reported zero remains distinct from missing. Original
+named diagnostic definitions and values are preserved. All integration,
+observe/diagnose, physical/conservation, quadrature and summary formulae remain
+unchanged. Frozen input verification retains its50 hashes,52C receipt/freeze
+SHA and ledger-prefix gates; operational branch/authorisation-parent checks
+are explicit. New stage/case records go under output/reporter_recovery_52D/
+so the original attempted stage and case directory cannot be overwritten.
+
+File-only and synthetic-dictionary checks pass with zero scientific evaluations.
+Independent review confirms exactly four reporting edits and unchanged solver,
+gates, reservoir and headline calculations. The integration try/except,
+observe and window ASTs match the frozen function. Validation is recorded in
+output/reporter_recovery_validation.json. The authorisation HEAD, all52
+historical52C receipt hashes, all50 present scientific/input hashes and exact
+freeze SHA9cebb8fcf85557643f6c7838ff57f9fb9603f5a7479cbe6fb63ba8c40b417ba2
+were verified before compute. Runtime remains one scientific process/one BLAS
+thread. Execute only52D, preserve any inherited gate failure honestly, publish
+all three outcomes and stop without52E or52F.
+
+### D52-16 setup-path qualification before scientific execution
+
+The first reporter-recovery launch stopped before creating a stage record,
+case directory or model: the frozen main's receipt hash lookup followed the
+new output namespace rather than the unchanged input directory. Its traceback,
+launcher version and pre-run receipts are preserved in
+output/reporter_recovery_setup_failure_01/. Under the same authorised stage-
+replay bookkeeping scope, exactly that hash lookup is redirected to SOURCE_OUT.
+No scientific evaluation or production attempt occurred in this setup failure;
+the one authorised fresh three-case numerical execution remains pending.
+
+## D52-17 — publish the three frozen 52D numerical outcomes and stop
+
+All three authorised central cases completed 600 s on their first Radau
+scientific attempt after the reporting-only repair. Every original sampled
+physical/conservation gate and independent reservoir audit passes; no fallback
+or additional case occurred. All 50 immutable inputs remain byte-identical.
+Independent file-only review reconstructs headline integrals, checks complete
+integer grids, delta(t), the Gauss8/onset budget and Gauss4 cross-check, and
+verifies the presence mask and original failure evidence. It calls no model.
+
+Following master-ledger R52A/R52B, R51H/R51I and the current authorisation,
+report NUMERICAL PREDICTIONS under the frozen MODEL IDEALISATIONS only. The
+cumulative KO fluid deficits are 20.0394286%, 20.0757527% and 20.1015822%.
+This records the requested 52D summaries without experimental/Task50 comparison,
+mechanism search, sensitivity claims or 52F classification. Publish the normal
+52D checkpoint, summaries and complete compact outputs immediately, verify
+remote SHA/tree/output hashes independently, record publication, then stop.
+No scientific decision reopens a closed axis; 52E and 52F remain unexecuted.

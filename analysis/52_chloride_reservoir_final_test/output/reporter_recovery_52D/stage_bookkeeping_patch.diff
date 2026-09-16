@@ -1,0 +1,11 @@
+--- 52C/main
++++ authorised_output_namespace/main
+@@ -4,7 +4,7 @@
+     stage_path=OUT/f'execution_{args.stage}.json'
+     assert not stage_path.exists(),'Stage already attempted; no rerun permitted'
+     record={'stage':args.stage,'parent_commit':git('rev-parse','HEAD'),
+-        'freeze_sha256':sha(OUT/'parameter_and_case_freeze.json'),'cases':[], 'complete':False}
++        'freeze_sha256':sha(SOURCE_OUT/'parameter_and_case_freeze.json'),'cases':[], 'complete':False}
+     dump(stage_path,record)
+     with threadpool_limits(limits=1):
+         record['threadpools']=threadpool_info()

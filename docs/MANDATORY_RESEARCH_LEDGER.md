@@ -843,3 +843,44 @@ failure rules require explicit authority for a reporting-only correction and
 fresh attempt. See Task52 SOFTWARE_BLOCKER_52D.md and output/failure_52D.json.
 This append qualifies execution readiness of52C's frozen reporter without
 rewriting its historical static review or changing its scientific freeze.
+
+## 24. R52D continuation — authorised reporting recovery; three central cases complete
+
+NUMERICAL PREDICTION under frozen MODEL IDEALISATIONS. User authorisation at
+`f2b56f903d33a0ac5f5c292db92cead8b6157f1f` permits the bounded union-schema
+reporting repair and fresh 52D execution. This supersedes section 23's
+operational stop; its original failure evidence at `9c0fde42` remains intact.
+All 50 immutable scientific/input hashes, 52C onset states, parameters, solver,
+quadrature, diagnostic definitions and physical/conservation gates are unchanged.
+No Palk/Benjamin or Task41/Task50 coupling is loaded.
+
+Exactly three matched-supply, central-projection CCh+IPR cases reached 600 s
+with Radau, at G_aux = 0, 2.32e-9 and 4.49e-9 S. WT cumulative fluid is
+0.9729547286, 0.9786120576 and 0.9827438302 pL; KO is 0.7779801601,
+0.7821483215 and 0.7851967712 pL. KO cumulative deficits are 20.0394286%,
+20.0757527% and 20.1015822%; broad 60–600 s mean-flow deficits are
+19.7626910%, 19.7883156% and 19.8061034%. Endpoint flow deficits are
+20.9338821%, 20.8994193% and 20.8726980%. These are the frozen trapezoidal
+observations, not a fit or final mechanistic classification.
+
+The independent Gauss8 chloride differences are 41.60011831, 41.86355604
+and 42.05465167 fmol. Each uses initial delta = 19.69859473 fmol,
+D_N = D_E = 0, D_A = 46.63671309, 46.65241768, 46.66367903 fmol and final
+delta = 24.73518958, 24.48745644, 24.30762217 fmol. Absolute identity errors
+are 6.87e-8, 7.23e-8 and 7.49e-8 fmol, all below the unchanged 1e-5 gate;
+all 4/8-node cross-checks and separately bounded onset terms pass. All sampled
+physical/conservation gates pass. No BDF fallback was used.
+
+The serialiser preserves every original named diagnostic with a union schema,
+NaN plus presence mask for absent fields, and JSON null where needed. A separate
+pre-model output-path setup failure was preserved and corrected solely in
+bookkeeping; it created no scientific case. The fresh scientific execution
+has 3 parent factories, 5 constructor core evaluations, 21,583 paired and
+43,166 local evaluations. The earlier failed process's count remains unknown.
+
+Complete evidence: Task52 PRODUCTION_SUMMARY_52D.md, output/summary_52D.json,
+output/reporter_recovery_52D/ and output/checkpoints/52D.json. Independent
+saved-output audit verifies exact cases, onsets, grids, hashes, masks, matched
+supply/shared conductances, chloride amount differences and integrals without
+model evaluation. No extra case, tuning, mechanism search, 52E or 52F occurred.
+Stop after remote 52D publication verification; no final 52F classification.
