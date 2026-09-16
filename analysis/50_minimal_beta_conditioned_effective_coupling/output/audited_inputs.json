@@ -1,0 +1,60 @@
+{
+  "baseline": "8f5fefd9fc0b563a6bd963895211b4acf76972b0",
+  "files": [
+    {
+      "matches_frozen_sha256": true,
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/candidate8_common.py",
+      "sha256": "c3923d46238f06b2b405566cf9edf7ae8f08f8f07f6f2fd44a8a638a6ac2f407"
+    },
+    {
+      "matches_frozen_sha256": true,
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/candidate8_design.py",
+      "sha256": "02bc1c7c3b3191082c663c768ddaa5fc2728bd50eb7efdf6973ecd8880618478"
+    },
+    {
+      "matches_frozen_sha256": true,
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/freeze.py",
+      "sha256": "6c4d0cef085f46dd65654c6d3b8a207ee8934fcb203490e6c6f91f4a7c701912"
+    },
+    {
+      "matches_frozen_sha256": true,
+      "path": "analysis/41_ae4_loss_algebraic_design/candidate_08/run_case.py",
+      "sha256": "be13891ed6c8cd5f12a3d9f92dda12d8cff7efa6da1b49c5ed164a33b7cbaabe"
+    },
+    {
+      "matches_frozen_sha256": true,
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/design.json",
+      "sha256": "e6ebc4b96b5a6abfa6d18e0328bd011aa45a63b524cc869999019d0cac8ab455"
+    },
+    {
+      "matches_frozen_sha256": true,
+      "path": "src/modern_full_model/ae4_cacc_recruitment.py",
+      "sha256": "1adb937058a0bc1fa27cc789b99f2491d7d99d7b7c6e3dec4356ee12158c55aa"
+    },
+    {
+      "matches_frozen_sha256": true,
+      "path": "tests/test_task41_ae4_cacc_recruitment.py",
+      "sha256": "6eb028e1e13d4eb848a2dcf49d40db042c900d47cb17bbb1b3e3a34cd8c90e34"
+    },
+    {
+      "path": "src/modern_full_model/task41_selected.py",
+      "sha256": "56d55bbb196a5df2a86434f44a8be098eaa41345c0fbffa187dd72ccb44f7d67"
+    },
+    {
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/frozen_inputs.json",
+      "sha256": "a07070b5b0a6887d12a9f3794cf55f83d74422799606296bccc60aa13792abe4"
+    },
+    {
+      "path": "src/modern_full_model/nbc_minimal.py",
+      "sha256": "48230ad9b6c0bbb017d8545d0c46ca6fc83eb0d6ade57f1ced96da7fd28bcfaf"
+    },
+    {
+      "path": "src/modern_full_model/validation.py",
+      "sha256": "e8dd7d9bee588ecab6032a9fb35f41907a112b08d6e8448ca1d7ab60fee7b4b8"
+    },
+    {
+      "path": "analysis/40_ae4_equal_cation_routing/validation_common.py",
+      "sha256": "d6876eb527d6cbcbf3574eff35a5abc2e80f979c057aacbaef7785864b938616"
+    }
+  ]
+}

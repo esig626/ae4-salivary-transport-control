@@ -413,3 +413,54 @@ Task 41 and the proposed Task 50 effective coupling are explicitly **TARGET-CALI
 - We **do** have a constructive one-dimensional direction (Task 41) that produces the right secretion magnitude. Task 50's purpose is to reduce that construction to the smallest protocol-conditioned effective law and remove the unjustified molecular interpretation, not to discover another mechanism family.
 
 This ledger is mandatory project memory. Future agents are not permitted to replace it with recollection, a short conversation summary, or an ad hoc mechanism list.
+
+## 11. R50A: exact coefficient provenance qualification and audit stop
+
+Task 50 started at `8f5fefd9fc0b563a6bd963895211b4acf76972b0` on
+`analysis/task-50-minimal-beta-conditioned-effective-coupling`.
+
+**Classification:** FORMAL DEDUCTION / provenance qualification concerning a
+**TARGET-CALIBRATED CONSTRUCTION**. **Disposition: STOP at 50A, before scientific
+implementation.** This is not a biological rejection of the effective coupling.
+
+The generic identity
+`(1-a)+a[b+(1-b)e] = 1-(1-b)a(1-e)` is correct. The proposed Task 50 law also
+has exact formal WT, REST, AE4 null CCh only, and AE2 knockout parent nesting.
+
+However, R41 and section 7 above quote a shortened report value for `b`.
+The actual Task 41 candidate 08 design, frozen input manifest and public driver
+all store `b=0.10511872843288446`, preserved from commit
+`86f135e075aa91a70a752b650d7bb894353fee04`. All seven execution file hashes in
+that frozen manifest match at the Task 50 start. The mandated Task 50 literal
+`lambda=0.89488127156712` instead has exact decimal complement
+`0.10511872843288`.
+
+Consequently the Task 50 factor minus the actual frozen Task 41 factor at
+beta one is exactly `-4.46e-15*a*(1-e)` for those decimal literals. The
+fully stimulated null case is a counterexample to the required exact
+multiplier identity. The difference is tiny; no biological significance,
+numerical secretion difference or full RHS error bound has been established.
+
+**Relationship to prior entries:** this append qualifies the claim in section 7
+that the mandated literal was inherited *exactly* from the frozen computation.
+It does not invalidate Task 41's output or the algebraic construction and does
+not silently rewrite its historical coefficient or files. Exact identity to
+the rounded report equation must not be confused with identity to the frozen
+production model. Passing a numerical tolerance would be a different claim.
+
+The repository and all 53 fetched remote branch heads were searched for the
+beta conditioned Task 41 form and synonyms; no prior implementation was found
+in that scoped search. Existing Task 49 and earlier exclusions remain closed.
+
+The Task 50 prompt's stop rule applies before 50B. No scientific source edit,
+RHS evaluation, model test, trajectory, stationary solve, parameter search,
+fit or new phenotype prediction was run. No frozen mutant trajectory was
+relabelled as an exact Task 50 result. 50B, 50C and 50D are unexecuted; Task 51
+has not started. This execution is the designated Task 50 shot; the planned
+Task 51 and Task 52 shots remain unstarted.
+
+Evidence and the precise code mapping are in
+`analysis/50_minimal_beta_conditioned_effective_coupling/EQUIVALENCE_PROOF.md`,
+`DECISION_LOG.md`, `NOVELTY_CHECK.md` and the task's `output/` audit records.
+Continuing requires explicit resolution of the fixed literal versus exact
+frozen inheritance conflict; this audit selects neither alteration.

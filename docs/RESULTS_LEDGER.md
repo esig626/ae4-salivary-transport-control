@@ -75,3 +75,24 @@ substantive Task-13B classification and do not authorize held-out reveal.
 | R13B-F02 | The native WT contract has 800 production and 320 nearby cases; every numerical, solver, conservation, sustainment, co-stimulation, and regulatory gate passes, but zero of ten roots passes the absolute one-SMG scale | Final pre-reveal WT dynamic result | `dynamic_validation.md`, `heldout_validation.md` | Required scale `6362.31--8210.72`; one-SMG ceiling `3088.15386` | `native_dynamic_contract_gate.json`; `native_dynamic_contract_group_gate.csv` | This shared failure blocks genotype evaluation and holdout reveal |
 | R13B-F03 | The complete diagnostic high-capacity tier produces zero additional WT-rest-passing roots | Targeted-repair exclusion | `generation_log.md`, `wt_calibration.md` | Predeclared N and AN stress scales `12/16/24/32`; no phenotype access | `native_source_wt_summary.json`; `native_source_panel.csv` | Diagnostic tiers cannot rescue production and were not promoted |
 | R13B-F04 | Final classification is `FULL MODEL NOT IDENTIFIABLE FROM EXISTING DATA — ONE DECISION-CRITICAL MEASUREMENT SPECIFIED`; heldout reveal count remains zero | Controlling Task-13B outcome | `final_answer.md`, `heldout_validation.md`, `adversarial_audit.md` | Decision threshold `0.00291436--0.00323818 pL/s` per modeled 1.30-pL cell | `final_classification.json`; `reveal_log.json` | The result is scoped to the tested source classes; it does not argue against AE4 biology or the historical article |
+
+## Task 50A formal audit qualification
+
+**R50A-01:** The generic beta conditioned construction has formal WT, REST,
+AE4 null CCh only and AE2 knockout nesting. Its mandated
+`lambda=0.89488127156712` does not have the exact complement of the actual frozen
+Task 41 `b=0.10511872843288446`. Their factors differ by
+`-4.46e-15*a*(1-e)` at beta one under exact decimal arithmetic. The displayed
+report value `b=0.10511872843288` does satisfy the requested identity, but is a
+shortened coefficient.
+
+Status: new provenance qualification, not a numerical prediction. Scope:
+FORMAL DEDUCTION concerning a TARGET-CALIBRATED CONSTRUCTION. Evidence:
+`analysis/50_minimal_beta_conditioned_effective_coupling/EQUIVALENCE_PROOF.md`
+and `output/coefficient_audit.json`; start commit
+`8f5fefd9fc0b563a6bd963895211b4acf76972b0`; frozen Task 41 publication
+`86f135e075aa91a70a752b650d7bb894353fee04`. Seven frozen execution hashes pass.
+There is no numerical tolerance in the exact literal comparison. No model
+evaluation or production calculation was performed and no biological
+significance is inferred. Task 50 stops at its prescribed exact identity gate;
+the master ledger R50A records the qualification and preserves prior results.

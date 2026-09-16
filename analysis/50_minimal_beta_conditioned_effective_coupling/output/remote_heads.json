@@ -1,0 +1,214 @@
+[
+  {
+    "ref": "refs/remotes/origin/analysis/task-43-parameter-provenance",
+    "sha": "547f113d9123ab1976774639a69483faf40cef34"
+  },
+  {
+    "ref": "refs/remotes/origin/analysis/task-44-full-system-mathematics",
+    "sha": "e5fa9840bf96be3147c6118daee4942468c78f8b"
+  },
+  {
+    "ref": "refs/remotes/origin/analysis/task-46-physiology-constrained-model-reconstruction",
+    "sha": "6da2063bc6ec16dc6f164e51d9fb3ea76678bbf1"
+  },
+  {
+    "ref": "refs/remotes/origin/analysis/task-47-dynamic-potassium-recycling-reconstruction",
+    "sha": "0a6adda00f0bb57d527f341412ceffa348b67a76"
+  },
+  {
+    "ref": "refs/remotes/origin/analysis/task-48-joint-experimental-constraint-reconstruction",
+    "sha": "13b55a78df6d572b783b627aab3ecfb12289643c"
+  },
+  {
+    "ref": "refs/remotes/origin/analysis/task-49-camp-vrac-secretory-branch-reconstruction",
+    "sha": "ab7f1cb054b8c8150343653727773f1ca59ebbcf"
+  },
+  {
+    "ref": "refs/remotes/origin/analysis/task-50-minimal-beta-conditioned-effective-coupling",
+    "sha": "8f5fefd9fc0b563a6bd963895211b4acf76972b0"
+  },
+  {
+    "ref": "refs/remotes/origin/archive/pre-phase2-main-20260913",
+    "sha": "b9d4e769747e636ad79d44a23c64c729f31b506d"
+  },
+  {
+    "ref": "refs/remotes/origin/archive/pre-phase2-task27-20260913",
+    "sha": "b88ca91740459b10efa55905c57bfd1dd9cbb91f"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/ae4-mechanism-reconstruction",
+    "sha": "833037a42005f26a825ed8181e062c0d3eec3ae9"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/constrained-phenotype-reconstruction",
+    "sha": "d06e0df8d70e6256d7000f08abee9a4b76f8fd1f"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/full-forensic-reconstruction",
+    "sha": "d06e0df8d70e6256d7000f08abee9a4b76f8fd1f"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/identifiability-discrimination",
+    "sha": "a63d986812707a1f967ddea99ca8beea2b43a620"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/manuscript-ae4-decade-reassessment",
+    "sha": "cc755da66359d7debbc4b2b81a16a104ed2a88fb"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/phase-00-inventory",
+    "sha": "2f71f23098037037836853fd96814a0e286cc0af"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/state-resolved-ae4-cycle",
+    "sha": "a090fb28f3e570cc9ae56bb962ad4e80633b509f"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-13b-modern-full-model",
+    "sha": "8171429e315e761a4045002039557a193e2ef344"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-13c-calcium-input-sweep",
+    "sha": "2f54e7c4f87b6da746d3a8427c7bdca40a77c3de"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-14-scale-free-genotype-holdout",
+    "sha": "a2fde97e30d79601e7455d9f1d77d8d67609cb49"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-14b-five-percent-ae4-check",
+    "sha": "4d4403f279fc36aec940c9e4759486d02f07e3f6"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-15-ae4-sign-slip-audit",
+    "sha": "7dd37ec2dcbc134ada6e20045e514e8f318d7b42"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-16-wt-chloride-allocation",
+    "sha": "4ca525ee10412a616b597fe169b150e3d061fdf7"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-17-fixed-wt-flux-repartition",
+    "sha": "fb2afcf3e23af1d19b297280ad67953370f7c9a9"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-18-fixed-wt-inverse-rebalance",
+    "sha": "7e2ecbbefcbce4a2fb488c238718b39593e27a6c"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-19-ae4-loss-nak-pump-coupling",
+    "sha": "5d0f11587a11767cda523225aa21337555a7a1bb"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-20-ae4-pooled-cation-no-slip",
+    "sha": "f6bd93ef9639b603dae1ac556e8a8d6482b92746"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-21-pooled-ae4-wt-physiology-recalibration",
+    "sha": "db734f52b8d71d670fcf793beab922967212bdd6"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-22-physiological-wt-domain",
+    "sha": "694d21f25c0813f91e62b4fa069e16d08450db66"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-25-carbon-nhe1-compensation",
+    "sha": "266067261d2f715f19a3b7e8afcd830a0a60ade9"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-26-ae4-exact-null",
+    "sha": "124e52dd03199707c77ac354fd7cd3e0c8bba768"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-27-ae4-inverse-phenotype-repair",
+    "sha": "b88ca91740459b10efa55905c57bfd1dd9cbb91f"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-28-transport-relationships",
+    "sha": "7da784a241753e209954257bfe33e21c2031d791"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-29-exact-null-feasibility-audit",
+    "sha": "199656bee8bce8cbaad4cadec81a158d8331121f"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-30-nhe1-model-repair",
+    "sha": "4c74f74ff25103d11335cb38a26a9a3557aca7c6"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-31-nhe1-mechanistic-repair",
+    "sha": "fb4bc7d9a569051f5e41cf84837046cba6952d4f"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-32-wt-chloride-calibration",
+    "sha": "81bd0749fd5a72f13d2ebcf0d18155b5b8371b05"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-33-fixed-water-nkcc70-ae4-optimisation",
+    "sha": "fe754f409972ac873c4afaf3bcbb94c90feaf435"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-33-nkcc70-chloride-partition",
+    "sha": "dc5099abeeb030aa55fe776dcbcd1f5556bfed9d"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-34-stimulated-nhe1-alkalinity-ae4",
+    "sha": "89139a419e4f80828f904f0bde7688676ff03a62"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-35-source-fixed-nhe1-activation",
+    "sha": "72531600a6fd9a99e9990d29675afb787041739f"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-36-minimal-nahco3-alkalinity",
+    "sha": "3ae2b2d5cb28e51f34d020040e8f2d7c70af5911"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-37-wt-nbc-validation",
+    "sha": "2ba0e4e0c2a9e940aa96ed86c3c72456afd0e3aa"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-38-ae4-perturbation-validation",
+    "sha": "d4bce14c5caed4e05587e237f002814f0f27e226"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-39-palk-nkcc1-full-validation",
+    "sha": "8fd6b61643ded2cf0be001d7c00c0c5e84aeb5bd"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-40-ae4-equal-cation-routing",
+    "sha": "86f135e075aa91a70a752b650d7bb894353fee04"
+  },
+  {
+    "ref": "refs/remotes/origin/codex/task-42-catalan-2025-ae4-mechanism-classes",
+    "sha": "072f7e6a694e064555120641049936bb69da0a51"
+  },
+  {
+    "ref": "refs/remotes/origin/integration/tasks-30-38-consolidation",
+    "sha": "5d91fadc6083a1279afdc49a612f09b3e72e0678"
+  },
+  {
+    "ref": "refs/remotes/origin/main",
+    "sha": "746fe8bc701e8b2af28a0e686b5cb9a4deb5e10f"
+  },
+  {
+    "ref": "refs/remotes/origin/manuscript/bmb-ae4-decade-reassessment",
+    "sha": "bac1cb7d8801c955191ada7cc79861dbb98a8c0d"
+  },
+  {
+    "ref": "refs/remotes/origin/manuscript/bmb-second-pass",
+    "sha": "8b5bfd1d682f82970c8ff6a55a48f823ae5a9f13"
+  },
+  {
+    "ref": "refs/remotes/origin/manuscript/corrected-archive-audit",
+    "sha": "a2e45d11f2a0f11e50fb6077de56393ad9be98b4"
+  },
+  {
+    "ref": "refs/remotes/origin/manuscript/submission-cleanup",
+    "sha": "da9792e3988e6941580973cdb272c54fa96bc5b0"
+  },
+  {
+    "ref": "refs/remotes/origin/report/tasks-43-44-technical-analysis",
+    "sha": "db083adcb01abaee28cb904b06e1dfcf9039c810"
+  }
+]

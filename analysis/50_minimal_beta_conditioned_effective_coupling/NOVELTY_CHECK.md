@@ -88,3 +88,25 @@ Stop Task 50 without searching if any of the following occurs:
 5. charge/current/Cl source bookkeeping differs from Task 41 for reasons other than the declared beta factor.
 
 If any stop criterion is met, report it. Do not open another mechanism family or parameter search in this run.
+
+## 50A audit qualification
+
+The repository and all 53 fetched remote heads were searched using beta
+conditioning, AE4/CaCC/TMEM16A/apical/secretory and recruitment synonyms plus
+the reported coefficient literals. The exact heads, search expression, match
+counts and matching source blob identities are recorded under `output/`.
+No implemented beta conditioned version of the Task 41 factor was found in
+this search. The matching Task 18 and Task 21 source files concern fixed
+balance bookkeeping and capacity names, respectively.
+
+The algebra above is correct for the displayed shortened value of `b`.
+However, the frozen Task 41 design, input manifest and driver all use
+`b=0.10511872843288446`. The mandated Task 50 lambda has complement
+`0.10511872843288`, which is different. At beta one the factor difference is
+exactly `-4.46e-15*a*(1-e)` when the decimal literals are treated exactly.
+
+This precision qualification is appended without changing the predeclared
+question or frozen files. It is a failure of the required exact inheritance
+premise, not a failure of the generic algebra and not a biological falsification.
+See `EQUIVALENCE_PROOF.md` and `output/coefficient_audit.json`. Task 50 stops
+at 50A before implementation under the stated stop rule.

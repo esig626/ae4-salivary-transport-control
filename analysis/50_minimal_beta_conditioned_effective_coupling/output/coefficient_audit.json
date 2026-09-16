@@ -1,0 +1,26 @@
+{
+  "audit_result": "STOP_EXACT_FROZEN_COEFFICIENT_IDENTITY_FAILS",
+  "classification": "TARGET-CALIBRATED CONSTRUCTION",
+  "driver_and_frozen_parameter_literals_agree": true,
+  "formal_equivalence_to_actual_frozen_b": false,
+  "formal_equivalence_to_reported_rounded_b": true,
+  "formal_parent_nesting": {
+    "AE2_KO": true,
+    "CCh_only_AE4_null": true,
+    "REST": true,
+    "WT": true
+  },
+  "frozen_execution_hashes_verified": 7,
+  "frozen_task41_b_literal": "0.10511872843288446",
+  "mandated_lambda_literal": "0.89488127156712",
+  "new_model_evaluations": 0,
+  "new_parameter_fits_or_searches": 0,
+  "new_production_trajectories": 0,
+  "one_minus_frozen_task41_b_for_comparison_only": "0.89488127156711554",
+  "one_minus_mandated_lambda": "0.10511872843288",
+  "precision_note": "No numerical magnitude or biological failure is inferred from this exact provenance mismatch",
+  "reported_task41_b_literal": "0.10511872843288",
+  "scientific_source_modified": false,
+  "symbolic_factor_difference_at_beta1": "(-4.46e-15) * a * (1-e)",
+  "task50_minus_frozen_task41_factor_at_a1_beta1_e0": "-4.46E-15"
+}
