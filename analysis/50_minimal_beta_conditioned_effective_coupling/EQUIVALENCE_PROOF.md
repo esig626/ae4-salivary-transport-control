@@ -1,5 +1,9 @@
 # Task 50A algebra, source mapping and frozen coefficient audit
 
+Current disposition: the user has authorised continuation with the fixed lambda
+and numerical equivalence for the stored coefficient difference. The original
+audit below is preserved; see the continuation addendum at the end.
+
 **Disposition: STOP at 50A. The four parent nesting identities hold formally;
 exact equality with the actual frozen Task 41 coefficient does not.**
 
@@ -159,3 +163,25 @@ The overlapping Task 40, 41, 42, 48 and remote Task 49 final reports were read.
 The original source and reports remain untouched, including historical timing
 language superseded by the current phenotype convention. No excluded axis was
 reopened.
+
+## Continuation addendum: numerical comparison explicitly authorised
+
+Following publication of the original audit, the user authorised retaining
+`lambda=0.89488127156712` and using numerical equivalence for the coefficient
+rounding difference. This supersedes the operational stop, not the exact
+arithmetic finding. The four parent identities remain exact. At beta one,
+exact equivalence holds with the displayed Task 41 equation at
+`b=0.10511872843288`; comparison with the full stored coefficient is numerical.
+
+For `0<=a<=1` and the declared expression fractions `0<=e<=1`, the exact
+coefficient induced factor difference has magnitude at most `4.46e-15`.
+D50-07 fixes a factor allowance of `8e-15` and unit specific full evaluation
+allowances before any implementation check. The existing current closure and
+initial states are unchanged. No modified model result has yet been produced
+at this amended 50A boundary, and no trajectory error bound is asserted.
+
+If the software checks pass, Task 41's mutant phenotype summaries may be reused
+as numerically equivalent inherited results under the user's authorisation.
+They must not be labelled newly simulated, independently validated or exactly
+identical solutions for the two distinct coefficient literals. WT and the
+other off cases continue to have exact parent identity.

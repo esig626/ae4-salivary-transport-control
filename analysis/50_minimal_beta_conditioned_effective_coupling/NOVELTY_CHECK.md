@@ -110,3 +110,14 @@ question or frozen files. It is a failure of the required exact inheritance
 premise, not a failure of the generic algebra and not a biological falsification.
 See `EQUIVALENCE_PROOF.md` and `output/coefficient_audit.json`. Task 50 stops
 at 50A before implementation under the stated stop rule.
+
+## Authorised continuation after 50A
+
+The user explicitly authorised keeping the exact Task 50 lambda and treating
+the coefficient precision difference through numerical equivalence. This lifts
+only the rounding related stop above. D50-06 and D50-07 record the scope and
+comparison tolerances before dependent compute. The original novelty audit is
+reused; no further mechanism search is needed. All Task 40/41 frozen files
+remain unchanged. Exact parent nesting remains mandatory. The construction
+remains a TARGET-CALIBRATED CONSTRUCTION, with the frozen mutant numerical
+results eligible only for expressly qualified reuse after the checks pass.

@@ -1,0 +1,36 @@
+{
+  "artefacts": [
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/CURRENT_STATUS.md",
+      "sha256": "59dbbc28e0a360e5096a5ad6a51361e517b58453638800f517ff4cc3b7f4d4d6"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/DECISION_LOG.md",
+      "sha256": "f3a2d0c2417cc3750ebd47b69064e15fb74151b9a611ab8f947d3d21b672505e"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/NOVELTY_CHECK.md",
+      "sha256": "c0e7ffc0f2076c11975768080a90a494a24a7782f8b0dd64b6f20061661c53ab"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/EQUIVALENCE_PROOF.md",
+      "sha256": "b7e24fdd9d134dbdf7ee2ed8ac3434d64bbfbb6ddc4348d3b91a8351bbddb3fe"
+    },
+    {
+      "path": "docs/MANDATORY_RESEARCH_LEDGER.md",
+      "sha256": "cef6f7da987d0476706377d449af7ea2a9eb61628890a855ece264f43f770d5e"
+    }
+  ],
+  "checkpoint": "50A_continuation",
+  "classification": "TARGET-CALIBRATED CONSTRUCTION",
+  "decision_entries": [
+    "D50-06",
+    "D50-07"
+  ],
+  "fixed_lambda": "0.89488127156712",
+  "new_model_evaluations": 0,
+  "new_production_trajectories": 0,
+  "parent_sha": "9bb9c9513a5816b872d75fd7ab86ee621effdb73",
+  "scientific_source_changes": 0,
+  "status": "USER_AUTHORISED_NUMERICAL_EQUIVALENCE"
+}

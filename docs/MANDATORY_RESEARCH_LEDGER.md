@@ -470,3 +470,21 @@ on the designated Task 50 branch, independently fetched and remotely verified.
 All 12 checkpoint artefact hashes match at that commit. The verification record
 is `analysis/50_minimal_beta_conditioned_effective_coupling/output/publication_50A.json`.
 No dependent scientific work followed the failed gate.
+
+## 12. R50A continuation: user authorised numerical treatment of rounding
+
+After the verified audit closeout `9bb9c9513a5816b872d75fd7ab86ee621effdb73`,
+the user explicitly authorised retaining exactly `lambda=0.89488127156712`
+and treating the full frozen Task 41 coefficient difference through numerical
+equivalence. This supersedes R50A's operational stop only for that precision
+issue. The exact difference and historical audit remain valid and preserved.
+
+Task 50 may now proceed through 50B, 50C and 50D with the original scientific
+scope, fixed coefficient, exact parent nesting and publication requirements.
+The numerical software allowances and saved state fixtures are fixed in
+D50-07 before computation. Reuse of mutant Task 41 summaries must explicitly
+state the numerical precision qualification; no bit identity or global
+trajectory error bound is implied. The model remains a
+TARGET-CALIBRATED CONSTRUCTION. No fit, mechanism search, signalling ODE or
+new production trajectory is authorised merely by this precision clarification.
+This is continuation of Task 50; Tasks 51 and 52 remain unstarted.

@@ -97,3 +97,59 @@ instruction. No such change is made.
 **Why not a reopened axis:** only the existing coefficient and reuse premise
 are audited. No parameter is chosen, no alternative model is introduced, and
 Task 51 is not started. The run remains a TARGET-CALIBRATED CONSTRUCTION audit.
+
+## D50-06 — authorised continuation with the specified decimal
+
+**Authorisation:** after the published 50A audit the user answered "Yes please"
+to retaining exactly `lambda=0.89488127156712` and treating the stored coefficient
+rounding difference through numerical equivalence. This explicitly supersedes
+D50-05's stop for this precision issue only. It does not change the parameter,
+permit fitting or open another scientific task. This is continuation of Task 50.
+
+**Ledger basis:** R41, R50A, sections 5 to 10 and the phenotype convention,
+read again before this decision. The original audit, full frozen coefficient
+and exact difference remain valid historical facts. All other nesting and scope
+requirements remain binding. Classification: TARGET-CALIBRATED CONSTRUCTION.
+
+**Decision:** publish this amended 50A boundary before implementation. Keep the
+exact algebra for the displayed coefficient distinct from numerical comparison
+with the full frozen Task 41 coefficient. Reuse frozen mutant results only with
+that explicit qualification after the prescribed software checks pass.
+
+## D50-07 — minimal implementation and predeclared software comparisons
+
+**Decision before compute:** add one Task 50 wrapper that inherits the unchanged
+Task 41 conductance reconstruction, RHS dispatch and public integration helper.
+Override only the evaluation of the multiplier and its diagnostic labels.
+Use the existing normalised calcium activation, protocol beta input and genotype
+expression, with one fixed literal lambda and no configurable new parameter.
+Do not construct or store a second recruitment coefficient in the new wrapper.
+
+**Ledger basis:** R40, R41, R48, R50A, sections 2, 5, 7, 8 and D50-06. No closed
+mechanism axis is reopened. The inherited 12 core states and existing AE4
+regulatory coordinate remain unchanged; no signalling ODE is added.
+
+**Verification fixtures:** use the frozen Task 40 WT rest and saved final states
+of the three Task 41 candidate 08 cases. These are fixed software fixtures, not
+a parameter panel. Check the required factor boundaries and representative
+activation/expression values; exact parent equality in the off cases; complete
+RHS, currents, voltages, chloride sources and charge bookkeeping at beta one;
+unchanged fixed state water, AE4 and homeostasis evaluations; parameter identity
+apart from the single apical chloride conductance; and mocked integration
+dispatch. No integration or equilibrium solve is authorised by these tests.
+
+**Numerical tolerances fixed before seeing comparison output:** off case RHS and
+physical diagnostics must be bit identical. Factor comparison to the full frozen
+coefficient has absolute allowance `8e-15`, covering the known `4.46e-15`
+decimal discrepancy plus floating point evaluation. For active full model
+comparisons use relative tolerance `2e-12` and absolute tolerances `2e-13` for
+RHS and amount flux/source quantities, `2e-14 V` for voltages, `2e-25 A` for
+currents, and `1e-24 S` for conductances. Near zero RHS components require an
+absolute allowance because charge cancellation and the inherited voltage solve
+are not exact arithmetic. These are software comparisons, not biological
+equivalence bands. Apply the unchanged parent conservation gates as well.
+
+Report actual differences. Passing fixed state comparisons does not establish a
+global trajectory error bound or bit identity of the rounded mutant solutions.
+The existing production integrator and voltage closure tolerances remain
+unchanged. No threshold adjustment or parameter tuning is authorised.
