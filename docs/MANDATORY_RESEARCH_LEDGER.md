@@ -525,3 +525,36 @@ under the authorised rounding qualification is established on these fixtures;
 no exact mutant solution identity or global trajectory error bound is claimed.
 See `IMPLEMENTATION_VERIFICATION.md` and `output/verification_attempt_02.json`
 under the Task 50 directory. D50-09 requires remote 50B publication before reuse.
+
+### R50C: inherited phenotype retained through qualified frozen reuse
+
+50B was published and remotely verified at
+`537ce3204d11a1a6cc51b1dd39032d12cb42df5e`. The file only 50C audit verifies
+28 artefacts byte for byte against original Task 41 publication
+`86f135e075aa91a70a752b650d7bb894353fee04`, including saved trajectories,
+summaries, states, protocols and source. Shared parameter, initial state, onset
+and solver records match. The common rest hash remains
+`a0b96ef16e5967de4dfe2bdabb882f2a28d478e211f920bc19cd735a5a143acb`.
+
+**TARGET-CALIBRATED CONSTRUCTION:** the reused cumulative deficits are
+`23.163365263893244%` at 5% AE4 and `30.26115064458511%` at null AE4. Saved
+endpoint flow deficits are `20.108927720908575%` and `27.038018389118477%`.
+The effect is substantial across the saved 60 s cumulative observations through
+600 s, not only at one selected instant. This is finite window persistence,
+not a new uncertainty study, timing fit or long duration validation.
+
+The mutant outputs remain inherited Task 41 results under the user's explicit
+numerical precision authorisation. They are not newly simulated Task 50 outputs,
+bit identical solutions for unequal coefficients, independent validation or a
+rigorous global trajectory error bound. WT, REST, null CCh only and AE2
+knockout remain exact parent initial value problems. That identity alone does
+not establish agreement with the corresponding experimental assays.
+
+Chronic knockout resting Cl/pH adaptation, positive IPR only null uptake from
+genotype rest and the microscopic identity remain unresolved. The new factor
+is off when the calcium coordinate is zero, so it cannot repair the IPR only
+discrepancy. No source, bath, genotype rest or observation rule was changed.
+New 50C model evaluations, trajectories, stationary solves and fits: zero.
+One reporter filename error was corrected without scientific changes and is
+preserved in `output/reuse_attempt_01.json`. See Task 50 `FROZEN_RESULT_REUSE.md`,
+`output/inherited_phenotype.json` and `output/frozen_reuse_manifest.json`.

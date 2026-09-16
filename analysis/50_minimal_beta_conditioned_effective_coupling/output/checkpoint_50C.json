@@ -1,0 +1,54 @@
+{
+  "artefacts": [
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/CURRENT_STATUS.md",
+      "sha256": "2e8c448b0441d94e91454965c4776e55c7b8e4b6ad825373e84bc30fbc1573e6"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/DECISION_LOG.md",
+      "sha256": "a22c9a85e790a8efcc357f143adef1ca61661f5d230b934b71bd982e649fd420"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/FROZEN_RESULT_REUSE.md",
+      "sha256": "6aa765fe3065c9aad60166b6d1e90513af3fc2d41b2e9d483c0e50edc5899adb"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/frozen_reuse_manifest.json",
+      "sha256": "9aae54354fad8da6fb9cf51467686aa36900e80e8760b5392da2345509e8629a"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/inherited_phenotype.json",
+      "sha256": "d5d1100f6497b7f235be65665b11e52caebebabdff789182644452c910d532a1"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/publication_50B.json",
+      "sha256": "798b37689e9d1ad44c6713cf1b6c5a45b66f1caed6fcfe3d2fc2b1a001be3a2d"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/reuse_attempt_01.json",
+      "sha256": "33a1495aa8dbdfec917ce75f7fac479501d0682a3036823086dfce40c73e178c"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/reuse_frozen_results.py",
+      "sha256": "981b2c6c71b0b73fedfc7082a4e728527ec2c3e8b2416222d37861bfb1993748"
+    },
+    {
+      "path": "docs/MANDATORY_RESEARCH_LEDGER.md",
+      "sha256": "b0bb0c02eaeb48929a5accbceb8b2a27c54f155ffbf569c55467dad4cb323f40"
+    },
+    {
+      "path": "docs/RESULTS_LEDGER.md",
+      "sha256": "810e58a0db585915d30a502d9296d42d1c9be00c82e2d7a1ac0f0c2fcf243d9a"
+    }
+  ],
+  "checkpoint": "50C",
+  "classification": "TARGET-CALIBRATED CONSTRUCTION",
+  "frozen_files_verified": 28,
+  "master_ledger_result": "R50C",
+  "new_fits_or_searches": 0,
+  "new_model_evaluations": 0,
+  "new_production_trajectories": 0,
+  "new_stationary_solves": 0,
+  "parent_sha": "537ce3204d11a1a6cc51b1dd39032d12cb42df5e",
+  "status": "QUALIFIED_FROZEN_REUSE_ACCEPTED"
+}

@@ -110,3 +110,17 @@ global trajectory error bound. Evidence: Task 50 `IMPLEMENTATION_VERIFICATION.md
 and `output/verification_attempt_02.json`. Scientific source hashes are in that
 record. No production trajectory, stationary solve or fit was run. The earlier
 governance hash setup failure is preserved separately with zero evaluations.
+
+## Task 50C qualified reuse of the frozen phenotype
+
+**R50C-01:** Twenty eight artefacts match original Task 41 publication
+`86f135e075aa91a70a752b650d7bb894353fee04` byte for byte. Reused cumulative
+deficits are `23.163365263893244%` at 5% AE4 and `30.26115064458511%` at null,
+with endpoint flow deficits `20.108927720908575%` and `27.038018389118477%`.
+Status: inherited TARGET-CALIBRATED CONSTRUCTION, under the authorised numerical
+treatment of coefficient rounding and the verified 50B comparisons at
+`537ce3204d11a1a6cc51b1dd39032d12cb42df5e`. Saved observations establish finite
+window persistence only. Evidence: Task 50 `FROZEN_RESULT_REUSE.md` and its two
+machine readable output records. No new model evaluation or integration was
+run; no global trajectory error bound, independent validation, chronic rest
+repair, IPR only uptake repair or microscopic mechanism is established.

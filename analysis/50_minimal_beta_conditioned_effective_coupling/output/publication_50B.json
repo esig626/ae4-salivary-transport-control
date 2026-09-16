@@ -1,0 +1,7 @@
+{
+  "checkpoint": "50B",
+  "verified_remote_commit": "537ce3204d11a1a6cc51b1dd39032d12cb42df5e",
+  "verified_tree": "43a07845f95ff805b82f1c3a589f1fa29abdde88",
+  "artefact_hashes_verified": 12,
+  "method": "Independent fetch of named remote branch, GitHub checkpoint fetch, tree and receipt SHA-256 checks before 50C"
+}

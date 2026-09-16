@@ -1,0 +1,201 @@
+{
+  "files": [
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 10405,
+      "git_blob_sha1": "8fc7d05c03d95d1673e43a60da7e2413222acaec",
+      "path": "results/40_ae4_equal_cation_routing/ae4_5pct_verification.json",
+      "sha256": "9dd48f894a0cdbaa760deaad4744cac8af5b2dfd94834c51927c2895457d3c89"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 10129,
+      "git_blob_sha1": "b8ff106eb5137c1a06a250387eb7afb4768a9c09",
+      "path": "results/40_ae4_equal_cation_routing/ae4_null_verification.json",
+      "sha256": "b86a43236cbf67e41c0faa840436eb7713822e8a372abfb502f0fa6a7573e77e"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 2490,
+      "git_blob_sha1": "d4ef3bda62e9d70525e92c633d9b053941ad0893",
+      "path": "results/40_ae4_equal_cation_routing/frozen_inputs.json",
+      "sha256": "b61905264d7f22bd3efd3f1da214ad86a99e0250aebaad798f22af3ba8500b44"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 18678,
+      "git_blob_sha1": "fb90994dc9c8de4b62317b37555b10af91c4b5bb",
+      "path": "results/40_ae4_equal_cation_routing/wt_rest.json",
+      "sha256": "30c5a4663c95ae9f0b96f7022de8e339bfa092d66b6823ffc58f10494515c3e2"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 7650,
+      "git_blob_sha1": "e99a1c666c9bb26440c820db382d1724958a0c47",
+      "path": "results/40_ae4_equal_cation_routing/wt_timeseries.csv",
+      "sha256": "cd99c120be48fcb152b8514335fc3cf3c96282bbf3fc8e4815d870452e5a9dc4"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 10305,
+      "git_blob_sha1": "64349120e5cbd71446259c1d6f7e452ed377b64b",
+      "path": "results/40_ae4_equal_cation_routing/wt_verification.json",
+      "sha256": "58524722660696633526c417569c7d9f17043d498452a3aaa2a22a01a4928e72"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 426953,
+      "git_blob_sha1": "61a51b69e374f636c533415fcc618ddcf2e954eb",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_5pct_dense_timeseries.csv",
+      "sha256": "f6b7f7129625e7ecafa1a58e856ab87583ee6bfdba375855d6c83c7c569f4825"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 939,
+      "git_blob_sha1": "9e5ed07e0c088091f33d4615731b8c803c1782a0",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_5pct_integrated_fluxes.csv",
+      "sha256": "1d5183d152b5f12cecccc776556fad0c123bce1d61eb0401e135d4340b1f38c0"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 8414,
+      "git_blob_sha1": "c88595551b4788ae25a8a4dce40bb0824a9812f8",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_5pct_timeseries.csv",
+      "sha256": "43be0fd0460f16efde906dfdaf24bb5d1fedd8415c9ec87403da88bdb00304b2"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 10795,
+      "git_blob_sha1": "41548af6bb23a7539c590b565617352cce297a03",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_5pct_verification.json",
+      "sha256": "1bb1857bab2a0e67c15153558bbf794728ee98dcfd3f3d4b0db11681070a3995"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 354260,
+      "git_blob_sha1": "b388eee0f154734bcd46b4cc4da9d1b17776f88d",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_null_dense_timeseries.csv",
+      "sha256": "cc3312f49a24afb2d9216dce56be91ef82a84541edaef845384c38e0ce4b62f0"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 851,
+      "git_blob_sha1": "0d96161aeaed1885772068eb27793b96ccaf27ec",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_null_integrated_fluxes.csv",
+      "sha256": "2f87e08ca09b6d784b85da15a826191b9b679d2a8a6e3ae54097a21f9434e11d"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 7064,
+      "git_blob_sha1": "9e58467cc9ac2545f6072e51d68d431fb5704e80",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_null_timeseries.csv",
+      "sha256": "72478d183c9ef6e5877d9d4ec92d64be9b9ec18e1b613e3d98528bcc71afe1a5"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 10545,
+      "git_blob_sha1": "b30bd19655e42ff80413af0c2dc97720bcb3a9e3",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/ae4_null_verification.json",
+      "sha256": "06c8ab0d2d194bc1abc16f05d5f3b66105024897dda132256e8e1f401e1787c9"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 752,
+      "git_blob_sha1": "6e156e83c1ec502ee65b76419c0402f43a5a51e0",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/budget.json",
+      "sha256": "ab4aaa6f60f30bb5d35b0fbbee6621cc5dd42ca9489dc090b24f3feed55273ab"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 851,
+      "git_blob_sha1": "202786ad0e4fb11695e70ce6237e5a348ab156db",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/design.json",
+      "sha256": "e6ebc4b96b5a6abfa6d18e0328bd011aa45a63b524cc869999019d0cac8ab455"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 2897,
+      "git_blob_sha1": "3c578d7962c7ed6c2526299430fbe3c158e17721",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/frozen_inputs.json",
+      "sha256": "a07070b5b0a6887d12a9f3794cf55f83d74422799606296bccc60aa13792abe4"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 394229,
+      "git_blob_sha1": "d26923e6e5b6323824933ce0a99b13abcafaa1d2",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/wt_dense_timeseries.csv",
+      "sha256": "41a6b6f7dba10230c2ceaabcb50d30baf2498e181513f6221b7d47b5e8ecee7a"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 923,
+      "git_blob_sha1": "31cca652a786f95a24254ff870a3e286e149c1ae",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/wt_integrated_fluxes.csv",
+      "sha256": "03e5f92b646f2033d394826ccb56ef26235b057e1afe52162465971c8ea9d057"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 19126,
+      "git_blob_sha1": "a6e7632bb059a5990e110d1f6cae65a5d013f292",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/wt_rest.json",
+      "sha256": "3f1540a8c072502149b33a9ee824e590ad18fdbfa9c4501977b52fcbdfe7893a"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 7846,
+      "git_blob_sha1": "64bc5f8de76c7216b34a2296b58220f664288bd9",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/wt_timeseries.csv",
+      "sha256": "4a378a1c69db9ab7e8584a5a285ef83d09727a5f55608fe972ef4a313cee3a1a"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 10685,
+      "git_blob_sha1": "c5c784be2e3b0eaaf9a0a290982a8a64756f50aa",
+      "path": "results/41_ae4_loss_algebraic_design/candidate_08/wt_verification.json",
+      "sha256": "b0995043c561e2183c626738028feb4b5942c0de9f2344c19e3931ed5e7dd0f2"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 1325,
+      "git_blob_sha1": "cdc248676e2db3116e7dda30c426c7cc00ef19c2",
+      "path": "results/41_ae4_loss_algebraic_design/completion.json",
+      "sha256": "086ee0bd836d72a21ad9b494ec2fc589bebd561bf5438c3ceabe1ff9f991db10"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 2620,
+      "git_blob_sha1": "3f72fa413e674449d5726b01296ca6b84579c55e",
+      "path": "results/41_ae4_loss_algebraic_design/final_conservation_summary.csv",
+      "sha256": "042789d7f2b09ebafedfd1aabb258ab4b4d3392da291b4aa81ece71d7675c725"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 3249,
+      "git_blob_sha1": "fbc14310f14a20e94907c03392d893006d23d18c",
+      "path": "results/41_ae4_loss_algebraic_design/final_cumulative_deficit.csv",
+      "sha256": "48ff92581e0691f59781e4e76470276f70c1888eca2132ae319df8aff2278166"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 10228,
+      "git_blob_sha1": "a3be71e5674575fb1efe44b27b8a34b700d00e10",
+      "path": "results/41_ae4_loss_algebraic_design/final_summary.json",
+      "sha256": "adb43b7775beb2ad1e88dcf1a15bce29c84981a1a32eb8486c78db025f143cf8"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 3272,
+      "git_blob_sha1": "0c4a3b2434847cfa7ec53330b2d95a74fc0e9eab",
+      "path": "src/modern_full_model/ae4_cacc_recruitment.py",
+      "sha256": "1adb937058a0bc1fa27cc789b99f2491d7d99d7b7c6e3dec4356ee12158c55aa"
+    },
+    {
+      "byte_identical_to_frozen_publication": true,
+      "bytes": 1544,
+      "git_blob_sha1": "a08333f2be066d493d617a7c31b4fdcbfd078c42",
+      "path": "src/modern_full_model/task41_selected.py",
+      "sha256": "56d55bbb196a5df2a86434f44a8be098eaa41345c0fbffa187dd72ccb44f7d67"
+    }
+  ],
+  "frozen_publication_commit": "86f135e075aa91a70a752b650d7bb894353fee04"
+}

@@ -200,3 +200,31 @@ of mutant results carries the authorised coefficient precision qualification;
 it does not establish an exact solution identity or a global error bound.
 No new CCh only or AE2 trajectory is needed for the exact parent IVP statement.
 Do not transfer Task 48's different bath/genotype rest outputs to this parent.
+
+## D50-10 — accept qualified frozen reuse and prepare final closeout
+
+**Decision:** accept the file only reuse audit after remotely verified 50B commit
+`537ce3204d11a1a6cc51b1dd39032d12cb42df5e`. All 28 selected artefacts match
+the original Task 41 publication byte for byte. Shared parameter hashes, state
+vectors, protocols, onset and solver records agree. Reuse the frozen cumulative
+deficits `23.163365263893244%` and `30.26115064458511%`, with the rounding
+qualification authorised in D50-06. No new trajectory prediction is claimed.
+
+**Ledger basis:** R41, R50A continuation, R50B and the phenotype convention,
+consulted again before this decision. Saved observations and endpoint flow
+establish persistence on the recorded finite window only. They do not supply
+long duration or parameter robustness. Exact parent identities suffice for CCh
+only and AE2; different Task 48 protocols/resting states are not substituted.
+
+**Execution disclosure:** the first reporter attempt named an unavailable Task
+40 dense CSV and stopped during file reads. The path was corrected to the
+published `wt_timeseries.csv`; all Task 41 dense CSVs remain in the audit.
+`output/reuse_attempt_01.json` preserves this reporting error. No scientific
+equation, test tolerance, parameter or accepted output was changed. Both
+reporter attempts performed zero model evaluations and zero integrations.
+
+**After remote 50C verification:** write the final Task 50 report using these
+accepted results; update the cumulative ledger and verify source/checkpoint
+integrity without rerunning numerical tests or trajectories. Report chronic
+resting adaptation, IPR only uptake, microscopic identity and long duration
+validity as unresolved. Publish 50D and stop. No Task 51 is authorised.
