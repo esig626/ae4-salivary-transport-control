@@ -1,13 +1,10 @@
 # Task52 current status
 
-**State:52C COMPLETE — awaiting independent remote verification.**
+**52D PAUSED at a recording-software dependency boundary.**
 
-52B independently verified at `8ff3b82da2891e47bb968f137dce50e240640491`.
-The immutable machine-readable freeze contains all four measured onset states,
-the exact eight cases, inherited solver and conservation gates, independent
-8/4-point quadrature, diagnostic conventions, and50 source/input hashes.
-The runtime dependency audit passes with zero scientific evaluations at52C.
-
-Production trajectories:0. Stationary solves/fits/searches:0.
-Next:exactly the three52D central combined-stimulus cases, only after verified52C.
-No changes to frozen inputs or model; no Task53; stop after verified52F.
+52C verified at36f7c3d0bb2353bf55ac0ed9e22582720097c829.
+Firstcase01 attempt failed at output schema serialization; its scientific work
+and unavailable output are disclosed. Frozen scientific inputs remain unchanged.
+A separate recorder-only compatibility adapter is ready for independent remote
+verification before one identical-inputcase01 recovery and remaining52D cases.
+No phenotype tuning, altered laws/gates or additional scientific cases.

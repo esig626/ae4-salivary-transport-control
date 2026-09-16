@@ -154,3 +154,7 @@ No scientific axis is reopened, and no trajectory is authorised at52B.
 ## D52-13 — immutable52C numerical freeze
 
 After independently verified52B, freeze all four projected onset states,50 source/input identities and exactly eight cases. The production runner directly advances the26-coordinate paired RHS, preserves accepted endpoints plus integer-second diagnostics, and stops on the first sampled physical/conservation failure. Independent8-point and4-point Gauss quadratures include explicit2DN mass-term checks and separately bounded onset epsilon accounting. Failure records preserve partial coverage and unvalidated accepted endpoints. Static review corrections concern bookkeeping only; the tested scientific implementation is byte-unchanged. No scientific evaluation, integration, parameter change or tuning occurred at52C.
+
+## D52-14 — recording software recovery exception
+
+Preserve the initialcase01 serializationfailure. Normalize only the two rest/active diagnostic current aliases and key order through a separate hashed adapter; preserve every52C artifact. Publish/verify the dependency boundary before one identical-inputcase01 replay. This is an explicit exception to the prospective no-rerun policy, not a new scientific case or a rescue of a physical failure.

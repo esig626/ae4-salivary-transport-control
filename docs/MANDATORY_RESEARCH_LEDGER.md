@@ -818,3 +818,7 @@ All inherited conservation gates remain unchanged. This is implementation
 verification, not evidence yet for a secretion phenotype. See Task52
 IMPLEMENTATION_VERIFICATION.md and output/verification_attempt_01.json.
 Publish and independently verify52B before52C; no retuning or new case follows.
+
+##23. R52D-SOFTWARE — disclosed recorder failure and fixed-schema recovery
+
+The firstTask52 case01 attempt performed integration work but failed before output serialization because rest/active current dictionaries have different keys. No usable trajectory, scientific outcome or counters were retained; the attempted work is not zero. A separately hashed recorder-only adapter normalizes two existing NBC/current aliases and key order, leaving all52C scientific sources, inputs and numerical settings byte-unchanged. One same-input case01 replay is declared as a software-recovery exception to the prospective no-rerun policy. Preserve the failed attempt and publish/independently verify this boundary before recovery. No phenotype was available for tuning and no scientific law/gate is changed.

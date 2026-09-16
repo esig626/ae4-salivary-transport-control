@@ -1,0 +1,11 @@
+{
+  "adapter_sha256": "573c4c38cda64fd822b0527b74424c465162a69e64fa1aa031aa8716fc8ef3c7",
+  "pass": true,
+  "scientific_evaluations": {
+    "constructor_core_evaluations": 0,
+    "local_evaluations": 0,
+    "paired_evaluations": 0,
+    "parent_factories": 0
+  },
+  "synthetic_rows_only": true
+}

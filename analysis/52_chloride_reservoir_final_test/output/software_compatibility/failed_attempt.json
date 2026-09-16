@@ -1,0 +1,15 @@
+{
+  "attempt": 1,
+  "case_id": "case_01",
+  "cause": "Inherited rest current dictionary omits nbc_basolateral and basolateral_old; active closure includes both. Recorder incorrectly assumed identical key sequence.",
+  "exception": "AssertionError at run_frozen_cases.py line155: assert all(tuple(r)==columns for s in samples.values() for r in s[rows])",
+  "integration_evaluations": "unknown; computation occurred, no retained counters/samples; NOT zero",
+  "original_stage_record_sha256": "04d5144922205c083dd3ddd57b39bdde75a4b871db99bc629d73cfdf174ccf41",
+  "parameter_or_numerical_changes": null,
+  "position": "After integration loop; before any trajectory or summary serialization",
+  "recoverable_scientific_outputs": false,
+  "recovery": "One disclosed same-input/same-numerics replay ofcase01 after independent publication of recorder-only schema adapter; original attempt guards/files retained.",
+  "solver": "Radau",
+  "stage": "52D",
+  "status": "OUTPUT_SERIALIZATION_FAILURE"
+}
