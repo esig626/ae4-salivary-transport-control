@@ -16,12 +16,13 @@ Read `AGENTS.md`, then read in order:
 
 1. `analysis/49_camp_vrac_secretory_branch_reconstruction/EXCLUSION_LEDGER.md`
 2. `analysis/49_camp_vrac_secretory_branch_reconstruction/SOURCE_SEED.md`
-3. `prompts/49a_four_shot_resolution_addendum.md`
-4. `prompts/49_camp_vrac_secretory_branch_reconstruction.md`
-5. `analysis/48_joint_experimental_constraint_reconstruction/JOINT_EXPERIMENTAL_CONSTRAINT_REPORT.md`
-6. `analysis/48_joint_experimental_constraint_reconstruction/PROTOCOL_MAP.md`
-7. `analysis/48_joint_experimental_constraint_reconstruction/OBSERVATION_OPERATORS.md`
-8. `analysis/48_joint_experimental_constraint_reconstruction/constraints.json`
+3. `analysis/49_camp_vrac_secretory_branch_reconstruction/FOUR_SHOT_RESOLUTION_PLAN.md`
+4. `prompts/49a_four_shot_resolution_addendum.md`
+5. `prompts/49_camp_vrac_secretory_branch_reconstruction.md`
+6. `analysis/48_joint_experimental_constraint_reconstruction/JOINT_EXPERIMENTAL_CONSTRAINT_REPORT.md`
+7. `analysis/48_joint_experimental_constraint_reconstruction/PROTOCOL_MAP.md`
+8. `analysis/48_joint_experimental_constraint_reconstruction/OBSERVATION_OPERATORS.md`
+9. `analysis/48_joint_experimental_constraint_reconstruction/constraints.json`
 
 `prompts/49a_four_shot_resolution_addendum.md` overrides any conflicting instruction in the original Task 49 prompt.
 
