@@ -1,0 +1,11 @@
+{
+  "attempt": 1,
+  "status": "REPORTER_PATH_ERROR",
+  "missing_path": "results/40_ae4_equal_cation_routing/wt_dense_timeseries.csv",
+  "correction": "Use the published Task 40 wt_timeseries.csv; Task 41 dense files remain included",
+  "failed_reporter_sha256": "4c92132c9271355f117adbe74566207e7889e22b869b2fbb49ae43bde98b0a8f",
+  "new_model_evaluations": 0,
+  "new_trajectories": 0,
+  "new_fits": 0,
+  "scientific_gate_changed": false
+}

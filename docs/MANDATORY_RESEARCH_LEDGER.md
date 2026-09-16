@@ -9,16 +9,18 @@ A scientific checkpoint is not complete unless this ledger is updated in the sam
 ## 0. Current project state and remaining budget
 
 - Canonical repository: `esig626/ae4-salivary-transport-control`.
-- Canonical `main` before Task 50 staging includes merged Tasks 47-48 plus the repository-level research guardrails.
-- Task 49 is complete on `analysis/task-49-camp-vrac-secretory-branch-reconstruction`, final closeout `ab7f1cb054b8c8150343653727773f1ca59ebbcf`. Its scientific conclusions are part of the cumulative ledger even though its branch is not the production parent for Task 50.
-- **Three funded/scientific Codex execution shots remain.** Do not spend one rediscovering anything in this ledger.
+- Task 49 is complete on `analysis/task-49-camp-vrac-secretory-branch-reconstruction`, final closeout `ab7f1cb054b8c8150343653727773f1ca59ebbcf`.
+- Task 50 is complete on `analysis/task-50-minimal-beta-conditioned-effective-coupling`; the exact final branch head before this preservation/literature metadata update is `b16c30094b95f61a73d8f1977cd58e79c7bb50f6`, and the remotely verified scientific 50D publication boundary is `7cb032e8bb9372c910d0e5400712ea79beb23e8f`.
+- The exact Task 50 working phenotype model is additionally pinned on preservation branch `archive/task-50-working-effective-coupling-benchmark` at `b16c30094b95f61a73d8f1977cd58e79c7bb50f6`.
+- **Two funded/scientific Codex execution shots remain: Task 51 and Task 52.** Do not spend either rediscovering anything in this ledger.
 - The primary modelling target is the magnitude and direction of the AE4-loss secretion phenotype, not exact experimental timing. `docs/PHENOTYPE_TARGET_CONVENTION.md` is binding.
 
-Planned budget, unless new evidence forces a revision:
+Planned remaining budget, superseding the older pre-Task-50 three-shot plan because genuinely new independent literature evidence now identifies one precise mechanistic chain:
 
-1. **Shot 1 / Task 50:** one-parameter beta-conditioned effective secretory coupling, no search.
-2. **Shot 2 / Task 51:** robustness/uncertainty of the accepted reduced model only; no new mechanism family unless Task 50 falsifies the algebraic construction.
-3. **Shot 3 / Task 52:** final reproducibility, uncertainty, article-facing lock; no mechanism fishing.
+1. **Shot 1 / Task 51:** one predeclared literature-backed mechanistic reconstruction: `beta/IPR -> beta/cAMP activation of NKCC1 -> additional solute loading -> swelling -> VRAC-like apical anion conductance`, in parallel with the already represented `beta/PKA -> AE4` activation. Calibrate/constraint only from independent beta/NKCC/IPR/swelling/current data, freeze before AE4 phenotype reveal, and do not include the Task 50 multiplier.
+2. **Shot 2 / Task 52:** final reproducibility, robustness/uncertainty, model comparison and article-facing lock. No new mechanism family and no mechanism fishing.
+
+The frozen Task 50 benchmark remains the fallback proof-of-sufficiency result if Task 51 fails. See `docs/TASK50_EFFECTIVE_COUPLING_BENCHMARK.md`.
 
 ## 1. Source-backed experimental facts that constrain every model
 
@@ -80,6 +82,32 @@ Peña-Münzenmayer et al. JGP 2016, DOI `10.1085/jgp.201611571`:
 - Na and K both participate.
 - The model's equal Na/K source routing is a frozen effective allocation, **not a directly measured microscopic stoichiometry**.
 - A working `1 Cl : 1 monovalent cation : 2 HCO3` cycle is an inferred/effective representation, not a direct stoichiometric measurement.
+
+### 1.7 Beta/cAMP secretory pathway and NKCC1 regulation — binding Task 51 source evidence
+
+The detailed source record is `docs/TASK51_BETA_NKCC_SWELLING_VRAC_EVIDENCE.md`. The following facts are binding.
+
+**Catalán et al., PNAS 2015** — DOI `10.1073/pnas.1415739112`, PMID `25646474`, PMCID `PMC4343136`, adult mouse SMG:
+
+- TMEM16A is required for muscarinic/Ca-dependent secretion, but IPR/beta-adrenergic cAMP-dependent secretion persists after acinar-specific TMEM16A deletion.
+- The IPR response is also not abolished by CFTR or ClC-2 deletion.
+- DCPIB and NPPB markedly inhibit IPR secretion, supporting a distinct VRAC-like/volume-regulated anion conductance.
+- IPR causes cell swelling rather than the shrinkage associated with muscarinic secretion; the source reports approximately `12.5 +/- 0.2%` swelling. Task 49 preserved the discrepancy between this narrative number and its terminal graphical proxy rather than forcing agreement.
+- IPR activates an outwardly rectifying chloride conductance whose reversal is close to chloride equilibrium and whose current is partly DCPIB-sensitive.
+- Task 49 source metrology extracted approximately `208.6 +/- 35.2 pA` IPR-induced whole-cell current and approximately `107.8 +/- 17.2 pA` DCPIB-blocked component at the reported voltage condition. These values are source measurements, not yet a directly identified model apical conductance; whole-cell current need not be wholly apical and holding voltage alone is not chloride driving force.
+- The paper supports a causal interpretation in which beta stimulation increases solute loading/cell volume and a volume-sensitive apical anion pathway contributes to secretion. The molecular channel identity is not established.
+
+**Independent salivary NKCC1 beta/cAMP evidence:**
+
+- Turner et al. 1992, rat parotid, DOI `10.1172/JCI115695`, PMID `1313447`, PMCID `PMC442971`: brief isoproterenol increased the measured NKCC-dependent recovery rate approximately threefold; `K1/2 = 21.5 nM`; the effect was beta1-adrenergic, prevented by protein-kinase inhibitors and mimicked by cAMP interventions.
+- Tanimura et al. 1995, rat parotid, DOI `10.1074/jbc.270.42.25252`, PMID `7559664`: brief IPR regulates phosphorylation of the salivary NKCC protein; half-maximal IPR phosphorylation effect approximately `20 nM`; AlF4-induced cotransporter activation comparable with IPR was approximately sixfold. The sixfold number is contextual evidence of strong regulation, not a mouse-SMG constant.
+- Kurihara et al. 1999, DOI `10.1152/ajpcell.1999.277.6.C1184`, PMID `10600770`: beta stimulation increases NKCC activity/phosphorylation and high-affinity bumetanide-binding sites, consistent with recruitment/activation of previously quiescent transporters.
+- Kurihara et al. 2002, DOI `10.1152/ajpcell.00352.2001`, PMID `11880270`: cAMP mimics the upregulatory phosphorylation in permeabilised salivary acini and a PKA inhibitor blocks it; PKA participates in the regulatory pathway.
+- Rat submandibular acini, PMID `9880083`: isoproterenol increases NKCC-mediated NH4 influx approximately `2.5-fold`; forskolin mimics the response and inhibition of cAMP-dependent protein kinase blocks it. This is useful tissue-context evidence that the beta/cAMP effect is not confined to parotid, but it remains rat rather than mouse.
+
+**Species/protocol rule:** quantitative rat parotid/submandibular gains are not exact mouse-SMG constants. They establish direction, existence and plausible magnitude. Wherever possible, Task 51 must use mouse-SMG IPR swelling/current data to identify the effective beta-NKCC/VRAC strengths; rat measurements are priors/sensitivity bounds.
+
+**Existing AE4 beta arm:** Peña-Münzenmayer et al. AJP GI 2021, DOI `10.1152/ajpgi.00145.2021`, PMID `34585968`, PMCID `PMC8887885`, establishes beta/PKA activation of AE4 in mouse SMG and S173 dependence. The model already contains this effective regulation. Task 51 must not add it again.
 
 ## 2. Current production-model architecture and important parameter status
 
@@ -338,6 +366,8 @@ Do not spend a remaining shot on any of the following without genuinely new inde
 - transporter subsets, all-pairs/all-triples, Cartesian grids, best-subset/L0, stochastic/global/evolutionary searches;
 - exact experimental timing, onset, half-time or minute-wise fitting.
 
+**Task 51 exception to the NKCC/VRAC no-repeat wording:** one specific new chain is permitted because independent source evidence changes the equations relative to Task 49: beta/cAMP regulation of NKCC1 supplies the missing beta-responsive chemical input upstream of swelling. This does not reopen Palk-core replacement, NKCC caps, or alternative VRAC gate families.
+
 ## 6. Phenotype-target convention for all remaining work
 
 Binding rules from `docs/PHENOTYPE_TARGET_CONVENTION.md`:
@@ -348,9 +378,9 @@ Binding rules from `docs/PHENOTYPE_TARGET_CONVENTION.md`:
 - Collapse CCh/beta/cAMP/PKA/Ca signalling to the smallest effective scalar/algebraic input needed. Do not add signalling ODEs merely to manufacture timing.
 - Experimental timing is approximate biology, not an exact mathematical constraint.
 
-## 7. Current reduced hypothesis for Task 50 — NOT YET AN ESTABLISHED RESULT
+## 7. Current reduced hypothesis for Task 50 — historical pre-Task-50 entry
 
-The remaining constructive opportunity is to **recast Task 41 as a reduced effective network coupling**, rather than claim a molecular AE4->TMEM16A mechanism.
+The remaining constructive opportunity was to **recast Task 41 as a reduced effective network coupling**, rather than claim a molecular AE4->TMEM16A mechanism.
 
 Proposed one-parameter law:
 
@@ -361,7 +391,7 @@ where:
 - `a_Ca` is the existing normalized calcium/channel activation already in the parent model;
 - `beta` is the existing effective protocol input (`0` without IPR/beta stimulation, `1` in the standard beta-containing stimulated condition); it is not a cAMP/PKA dynamic state;
 - `e_AE4` is AE4 expression/activity fraction used only as the existing genotype coordinate;
-- `lambda = 1 - b = 0.89488127156712`, inherited exactly from Task 41's phenotype-calibrated selected value `b=0.10511872843288`.
+- `lambda = 1 - b = 0.89488127156712`, inherited from Task 41's phenotype-calibrated selected report value `b=0.10511872843288`, subject to the later exact precision qualification in R50A-R50D.
 
 Algebraic nesting expected before any numerical work:
 
@@ -369,13 +399,13 @@ Algebraic nesting expected before any numerical work:
 2. Rest: `a_Ca=0` -> multiplier exactly 1.
 3. AE4 KO + CCh only: `beta=0` -> multiplier exactly 1; exact parent CCh-only model.
 4. AE2 KO: AE4 remains present (`e_AE4=1`) -> multiplier exactly 1; exact parent model.
-5. AE4 KO + CCh+IPR at the standard fully beta-stimulated condition: `beta=1`; when the same calcium activation used by Task 41 applies, the law reduces to the selected Task 41 conductance factor and should reproduce its already frozen combined-stimulus phenotype.
+5. AE4 KO + CCh+IPR at the standard fully beta-stimulated condition: `beta=1`; when the same calcium activation used by Task 41 applies, the law reduces to the selected Task 41 conductance factor up to the later recorded literal-rounding qualification.
 
 Interpretation if implemented:
 
 - `lambda` is **an effective phenotype-calibrated network-coupling parameter**, not a biochemical constant and not evidence that AE4 physically recruits TMEM16A.
 - The scientific statement is only that a beta-conditioned AE4-dependent contribution to effective apical chloride secretory capacity is sufficient to generate the required phenotype while preserving WT/CCh-only/AE2 nesting.
-- Task 50 must not search over `lambda`; it is fixed from the already published Task 41 construction. If algebra/nesting fails, stop and report the contradiction.
+- Task 50 did not search over `lambda`; it was fixed from the already published Task 41 construction.
 
 ## 8. Mandatory decision protocol for Codex and all agents
 
@@ -401,15 +431,274 @@ Every result must be labelled as one of:
 - **NEGATIVE/EXCLUSION RESULT:** tested hypothesis failed within its declared domain.
 - **UNRESOLVED:** data/equations do not identify a unique conclusion.
 
-Task 41 and the proposed Task 50 effective coupling are explicitly **TARGET-CALIBRATED CONSTRUCTIONS** unless future independent evidence changes that status.
+Task 41 and Task 50 are explicitly **TARGET-CALIBRATED CONSTRUCTIONS** unless future independent evidence changes that status. Task 51, if successfully calibrated only from independent beta/NKCC/swelling/current data before AE4 phenotype reveal, may be classified as a **NUMERICAL PREDICTION** of the held-out AE4 phenotype, not as a target-calibrated construction.
 
 ## 10. What is still genuinely unresolved
 
-- We do not have an independently identified microscopic mechanism explaining why AE4 loss yields the large secretion phenotype.
+- We do not yet have an independently identified microscopic mechanism explaining why AE4 loss yields the large secretion phenotype.
 - The acute model does not explain the established knockout's chronic low-Cl / near-WT-pH resting adaptation.
-- The precise beta-associated pathway producing the positive IPR-only KO uptake is not identified by the current model.
+- The precise beta-associated pathway producing the positive IPR-only KO uptake is not yet reproduced by the current accepted model.
 - The isolated NKCC assay cannot be faithfully reconstructed by the current reduced NKCC law.
 - The current model's state compensation strongly masks AE4 loss unless an additional network coupling is introduced.
-- We **do** have a constructive one-dimensional direction (Task 41) that produces the right secretion magnitude. Task 50's purpose is to reduce that construction to the smallest protocol-conditioned effective law and remove the unjustified molecular interpretation, not to discover another mechanism family.
+- We **do** have a constructive one-dimensional direction (Task 41/Task 50) that produces the right secretion magnitude.
+- Task 50 is now frozen as the quantitative proof-of-sufficiency benchmark. Task 51 asks whether independently documented beta-NKCC -> swelling -> VRAC-like physiology can generate a comparable missing coupling without using the Task 50 multiplier or AE4 phenotype for calibration.
 
 This ledger is mandatory project memory. Future agents are not permitted to replace it with recollection, a short conversation summary, or an ad hoc mechanism list.
+
+## 11. R50A: exact coefficient provenance qualification and audit stop
+
+Task 50 started at `8f5fefd9fc0b563a6bd963895211b4acf76972b0` on
+`analysis/task-50-minimal-beta-conditioned-effective-coupling`.
+
+**Classification:** FORMAL DEDUCTION / provenance qualification concerning a
+**TARGET-CALIBRATED CONSTRUCTION**. **Disposition: STOP at 50A, before scientific
+implementation.** This is not a biological rejection of the effective coupling.
+
+The generic identity
+`(1-a)+a[b+(1-b)e] = 1-(1-b)a(1-e)` is correct. The proposed Task 50 law also
+has exact formal WT, REST, AE4 null CCh only, and AE2 knockout parent nesting.
+
+However, R41 and section 7 above quote a shortened report value for `b`.
+The actual Task 41 candidate 08 design, frozen input manifest and public driver
+all store `b=0.10511872843288446`, preserved from commit
+`86f135e075aa91a70a752b650d7bb894353fee04`. All seven execution file hashes in
+that frozen manifest match at the Task 50 start. The mandated Task 50 literal
+`lambda=0.89488127156712` instead has exact decimal complement
+`0.10511872843288`.
+
+Consequently the Task 50 factor minus the actual frozen Task 41 factor at
+beta one is exactly `-4.46e-15*a*(1-e)` for those decimal literals. The
+fully stimulated null case is a counterexample to the required exact
+multiplier identity. The difference is tiny; no biological significance,
+numerical secretion difference or full RHS error bound has been established.
+
+**Relationship to prior entries:** this append qualifies the claim in section 7
+that the mandated literal was inherited *exactly* from the frozen computation.
+It does not invalidate Task 41's output or the algebraic construction and does
+not silently rewrite its historical coefficient or files. Exact identity to
+the rounded report equation must not be confused with identity to the frozen
+production model. Passing a numerical tolerance would be a different claim.
+
+The repository and all 53 fetched remote branch heads were searched for the
+beta conditioned Task 41 form and synonyms; no prior implementation was found
+in that scoped search. Existing Task 49 and earlier exclusions remain closed.
+
+The Task 50 prompt's stop rule applies before 50B. No scientific source edit,
+RHS evaluation, model test, trajectory, stationary solve, parameter search,
+fit or new phenotype prediction was run. No frozen mutant trajectory was
+relabelled as an exact Task 50 result. 50B, 50C and 50D are unexecuted; Task 51
+has not started. This execution is the designated Task 50 shot; the planned
+Task 51 and Task 52 shots remain unstarted.
+
+Evidence and the precise code mapping are in
+`analysis/50_minimal_beta_conditioned_effective_coupling/EQUIVALENCE_PROOF.md`,
+`DECISION_LOG.md`, `NOVELTY_CHECK.md` and the task's `output/` audit records.
+Continuing requires explicit resolution of the fixed literal versus exact
+frozen inheritance conflict; this audit selects neither alteration.
+
+R50A publication: audit commit `e4c72143fe7d71ae0034d15887312062626b4636` was published
+on the designated Task 50 branch, independently fetched and remotely verified.
+All 12 checkpoint artefact hashes match at that commit. The verification record
+is `analysis/50_minimal_beta_conditioned_effective_coupling/output/publication_50A.json`.
+No dependent scientific work followed the failed gate.
+
+## 12. R50A continuation: user authorised numerical treatment of rounding
+
+After the verified audit closeout `9bb9c9513a5816b872d75fd7ab86ee621effdb73`,
+the user explicitly authorised retaining exactly `lambda=0.89488127156712`
+and treating the full frozen Task 41 coefficient difference through numerical
+equivalence. This supersedes R50A's operational stop only for that precision
+issue. The exact difference and historical audit remain valid and preserved.
+
+Task 50 may now proceed through 50B, 50C and 50D with the original scientific
+scope, fixed coefficient, exact parent nesting and publication requirements.
+The numerical software allowances and saved state fixtures are fixed in
+D50-07 before computation. Reuse of mutant Task 41 summaries must explicitly
+state the numerical precision qualification; no bit identity or global
+trajectory error bound is implied. The model remains a
+TARGET-CALIBRATED CONSTRUCTION. No fit, mechanism search, signalling ODE or
+new production trajectory is authorised merely by this precision clarification.
+This is continuation of Task 50; Tasks 51 and 52 remain unstarted.
+
+### R50B setup qualification
+
+The first software verification attempt stopped before tests or model evaluation
+because the old Task 40 fixture also hashes its historical `AGENTS.md`. A full
+150 file audit found exactly one difference: today's binding instructions.
+All 149 other inputs match. D50-08 authorises a task local loader that pins the
+current instructions while verifying unchanged scientific inputs, rather than
+changing old files or restoring obsolete instructions. The failed setup is
+preserved; no scientific tolerance or model parameter is changed.
+
+### R50B: fixed reduced coupling implemented and verified
+
+The new public `Task50EffectiveCouplingModel` implements exactly
+`1-0.89488127156712*a_Ca*beta*(1-e_AE4)` through the unchanged Task 41 conductance
+machinery before electrical closure. It adds no state or adjustable parameter
+and changes no other scientific source. Classification:
+**TARGET-CALIBRATED CONSTRUCTION**.
+
+Ten tests pass. Twenty one parent comparisons give bit identical complete RHS
+and physical diagnostics for WT, REST, CCh only null and AE2 knockout cases.
+Six beta one comparisons at frozen initial/final states have maximum RHS
+component difference `8.090750291955828e-15` in native units relative to the
+full stored Task 41 coefficient; the maximum factor difference is
+`4.5102810375396984e-15`. The predeclared numerical allowances and unchanged
+conservation gates pass. Currents, charge and chloride source bookkeeping are
+covered, and unrelated fixed state evaluations remain unchanged. Integration
+dispatch is tested with a mock, without an ODE integration.
+
+Attempt 02 used 80 core evaluations including constructor checks. Attempt 01
+was the governance hash setup failure recorded above and performed none.
+There are zero new production trajectories, stationary solves or fits. All
+seven frozen Task 41 execution hashes remain unchanged. Numerical equivalence
+under the authorised rounding qualification is established on these fixtures;
+no exact mutant solution identity or global trajectory error bound is claimed.
+See `IMPLEMENTATION_VERIFICATION.md` and `output/verification_attempt_02.json`
+under the Task 50 directory. D50-09 requires remote 50B publication before reuse.
+
+### R50C: inherited phenotype retained through qualified frozen reuse
+
+50B was published and remotely verified at
+`537ce3204d11a1a6cc51b1dd39032d12cb42df5e`. The file only 50C audit verifies
+28 artefacts byte for byte against original Task 41 publication
+`86f135e075aa91a70a752b650d7bb894353fee04`, including saved trajectories,
+summaries, states, protocols and source. Shared parameter, initial state, onset
+and solver records match. The common rest hash remains
+`a0b96ef16e5967de4dfe2bdabb882f2a28d478e211f920bc19cd735a5a143acb`.
+
+**TARGET-CALIBRATED CONSTRUCTION:** the reused cumulative deficits are
+`23.163365263893244%` at 5% AE4 and `30.26115064458511%` at null AE4. Saved
+endpoint flow deficits are `20.108927720908575%` and `27.038018389118477%`.
+The effect is substantial across the saved 60 s cumulative observations through
+600 s, not only at one selected instant. This is finite window persistence,
+not a new uncertainty study, timing fit or long duration validation.
+
+The mutant outputs remain inherited Task 41 results under the user's explicit
+numerical precision authorisation. They are not newly simulated Task 50 outputs,
+bit identical solutions for unequal coefficients, independent validation or a
+rigorous global trajectory error bound. WT, REST, null CCh only and AE2
+knockout remain exact parent initial value problems. That identity alone does
+not establish agreement with the corresponding experimental assays.
+
+Chronic knockout resting Cl/pH adaptation, positive IPR only null uptake from
+genotype rest and the microscopic identity remain unresolved. The new factor
+is off when the calcium coordinate is zero, so it cannot repair the IPR only
+discrepancy. No source, bath, genotype rest or observation rule was changed.
+New 50C model evaluations, trajectories, stationary solves and fits: zero.
+One reporter filename error was corrected without scientific changes and is
+preserved in `output/reuse_attempt_01.json`. See Task 50 `FROZEN_RESULT_REUSE.md`,
+`output/inherited_phenotype.json` and `output/frozen_reuse_manifest.json`.
+
+## 13. R50D: final minimal beta conditioned construction
+
+**Controlling Task 50 result: COMPLETE WITH AUTHORISED PRECISION QUALIFICATION.**
+**Classification: TARGET-CALIBRATED CONSTRUCTION.** The fixed coefficient remains
+exactly `lambda=0.89488127156712`. One new wrapper changes only apical chloride
+conductance through the declared factor before the inherited current closure.
+No earlier scientific source, state, protocol, transporter parameter or frozen
+result was changed. No signalling ODE or adjustable parameter was added.
+
+Exact WT, REST, AE4 null CCh only and AE2 knockout parent identities hold.
+At beta one the algebra is identical to the displayed Task 41 equation, while
+comparison to its full frozen coefficient retains the R50A precision
+qualification. The user's explicit authorisation, recorded in D50-06, supersedes
+the original audit's operational stop only. It does not supersede the exact
+coefficient inequality or turn fixed state comparisons into a trajectory bound.
+
+Ten software tests pass, including 21 exact parent comparisons and six active
+comparisons. All 28 reused artefacts match the original Task 41 publication.
+The inherited cumulative deficits are 23.1634% at 5% AE4 and 30.2612% at null;
+the saved observations establish finite window persistence. These magnitudes
+were already phenotype calibrated and are not independent validation or newly
+simulated Task 50 outputs. No molecular AE4 to TMEM16A interaction is identified.
+
+The final report is
+`analysis/50_minimal_beta_conditioned_effective_coupling/MINIMAL_EFFECTIVE_COUPLING_REPORT.md`.
+The unresolved chronic resting adaptation, IPR only null uptake, microscopic
+identity, pH/volume limitations and long duration validity remain explicit.
+All earlier exclusions remain closed.
+
+The original 50A audit was verified at
+`e4c72143fe7d71ae0034d15887312062626b4636`; the authorised 50A continuation
+was verified at `cc69edfb88fbcf17b6d60e0cbc70c0130c0d978a` before source edits.
+50B was verified at `537ce3204d11a1a6cc51b1dd39032d12cb42df5e` before reuse.
+50C was verified at `88997ef6888498e6ea6bdd9bd4acd7e5ec108dbc`, including
+all ten receipt hashes, before final reporting. The final 50D publication
+receipt records its exact remotely verified commit after publication.
+
+Across Task 50 there were 80 core evaluations, all in software verification
+and constructor checks; zero production trajectories, stationary solves,
+parameter fits or mechanism searches. The historical setup and reporter errors
+remain recorded. The two original verification logs are included explicitly in
+50D after the repository's generic ignore rule excluded them from 50B; the JSON
+test records were already published. Final integrity verification uses file
+and Git checks only. Stop after remotely verified 50D. Tasks 51 and 52 and the
+two remaining scientific shots remain unstarted.
+
+R50D final integrity audit: all 39 artefact hashes across the original 50A,
+authorised 50A continuation, 50B and 50C receipts match at their own published
+commits. The three tested source hashes and all 28 frozen artefacts also match.
+Earlier scientific source, analyses, results, archive and manuscript files are
+unchanged. Binding instructions, phenotype convention and execution prompt are
+unchanged; the earlier ledger contents are preserved as an exact prefix. The
+audit passed without any model evaluation. Its record is
+`analysis/50_minimal_beta_conditioned_effective_coupling/output/final_integrity_audit.json`.
+
+R50D publication verified: `7cb032e8bb9372c910d0e5400712ea79beb23e8f` on the designated
+Task 50 branch. An independent branch fetch and GitHub checkpoint fetch agree;
+the exact tree and all nine checkpoint artefact hashes match. The publication
+receipt is `analysis/50_minimal_beta_conditioned_effective_coupling/output/publication_50D.json`.
+The final metadata closeout records this verification without scientific
+evaluation. Task 50 is stopped after 50D; Tasks 51 and 52 remain unstarted.
+
+## 14. R50E preservation checkpoint and Task 51 mechanistic handoff
+
+**Classification:** repository preservation + SOURCE FACT / PREDECLARED HYPOTHESIS. No new scientific simulation, fit, trajectory or stationary solve is performed by this checkpoint.
+
+### 14.1 Frozen working phenotype model
+
+The exact working Task 50 multiplier model is preserved independently of all future mechanistic work:
+
+- preservation branch: `archive/task-50-working-effective-coupling-benchmark`;
+- pinned commit: `b16c30094b95f61a73d8f1977cd58e79c7bb50f6`;
+- scientific 50D publication boundary: `7cb032e8bb9372c910d0e5400712ea79beb23e8f`;
+- implementation: `src/modern_full_model/task50_effective_coupling.py`;
+- implementation blob: `e3a79489d20530d7e977a3f6c37f08c222060444`;
+- binding benchmark specification: `docs/TASK50_EFFECTIVE_COUPLING_BENCHMARK.md`.
+
+The fixed law is
+
+`1 - 0.89488127156712 * a_Ca * beta * (1 - e_AE4)`.
+
+The preserved phenotype benchmark is WT `0.992524544081835 pL`, AE4 5% `0.7626224586023684 pL` with `23.163365263893244%` cumulative deficit, and AE4 null `0.6921751966127494 pL` with `30.26115064458511%` cumulative deficit at 600 s. The null endpoint flow deficit is `27.038018389118477%`. The effect remains substantial across the saved 60-600 s cumulative window.
+
+This model remains the accepted **TARGET-CALIBRATED CONSTRUCTION / proof-of-sufficiency benchmark** even if Task 51 fails. Future work must not rewrite, repoint or silently incorporate its multiplier.
+
+### 14.2 Why the new mechanistic direction is not a repeat of Task 49
+
+Task 49 tested only `beta * positive swelling -> VRAC-like current` while beta-dependent NKCC regulation remained frozen. In AE4-null IPR-only stimulation the parent core therefore had no beta-responsive chemical input; exact rest stayed chemically static, swelling never became positive and the gate could not self-start.
+
+The newly admitted Task 51 chain changes the upstream equation for a source-backed reason: salivary NKCC1 is independently beta/cAMP regulated. The predeclared model is exactly
+
+`beta/IPR -> beta/cAMP increase of NKCC1 activity -> Na/K/Cl solute loading -> cell swelling -> VRAC-like apical anion conductance -> fluid secretion`,
+
+alongside the already represented
+
+`beta/PKA -> AE4 activation`.
+
+This is **one mechanism**, not a family search. The Palk/Benjamin NKCC concentration-response core and stoichiometry remain unchanged. The Task 49 current implementation may be reused, but the Task 50 AE4-dependent apical multiplier must be absent.
+
+### 14.3 Prospective scientific question
+
+After beta-NKCC and VRAC-like parameters are fixed or bounded exclusively from independent literature data, Task 51 must freeze the mechanistic model before reading/using the AE4 whole-gland deficit as an outcome.
+
+The held-out question is:
+
+> Does the independently reconstructed beta-NKCC -> swelling -> VRAC-like pathway, together with the already established beta->AE4 pathway, spontaneously generate a substantial and robust AE4-loss secretion deficit comparable in order to the Task 50 benchmark and the approximately 35% experimental phenotype?
+
+If yes, the source-backed mechanism provides a mechanistic replacement for the abstract Task 50 coupling.
+
+If no, Task 50 remains the preserved quantitative demonstration that an additional beta-conditioned network interaction of substantial strength is required, while the molecular identity remains unresolved.
+
+If independent source data cannot identify/bound the required beta-NKCC and VRAC parameters sufficiently to make a held-out prediction, report non-identifiability. Do not use the AE4 phenotype to close the parameters.

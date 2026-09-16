@@ -1,0 +1,12 @@
+{
+  "manifest": "analysis/40_ae4_equal_cation_routing/parent_source_manifest.json",
+  "files_checked": 150,
+  "mismatches": [
+    {
+      "path": "AGENTS.md",
+      "expected": "fef3dcebbc837c4cc2b18a83ccd9e95a4c37682d",
+      "actual": "94465907d246d530e78f18cf1237fad5088cfa51"
+    }
+  ],
+  "model_evaluations": 0
+}

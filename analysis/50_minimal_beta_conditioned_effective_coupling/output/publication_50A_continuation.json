@@ -1,0 +1,7 @@
+{
+  "checkpoint": "50A_continuation",
+  "verified_remote_commit": "cc69edfb88fbcf17b6d60e0cbc70c0130c0d978a",
+  "verified_tree": "e8ab11ee24a9e1386504b05a6c0a84ef93f19fbb",
+  "method": "Independently fetched named remote branch; checked tree and all receipt hashes before implementation",
+  "artefact_hashes_verified": 5
+}

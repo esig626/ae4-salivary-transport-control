@@ -1,0 +1,23 @@
+setUpClass (task50_verification_tests.Task50Tests) ... ERROR
+
+======================================================================
+ERROR: setUpClass (task50_verification_tests.Task50Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/37a12c1079b5/ae4-salivary-transport-control/tests/test_task50_effective_coupling.py", line 46, in setUpClass
+    _, cls.rest, cls.combined, cls.y0, _ = cls.parent.frozen_models_and_state()
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/37a12c1079b5/ae4-salivary-transport-control/analysis/40_ae4_equal_cation_routing/validation_common.py", line 67, in frozen_models_and_state
+    manifest = verify_frozen_sources()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/37a12c1079b5/ae4-salivary-transport-control/analysis/40_ae4_equal_cation_routing/validation_common.py", line 59, in verify_frozen_sources
+    verify_parent_sources()
+  File "/workspace/scratch/37a12c1079b5/ae4-salivary-transport-control/analysis/40_ae4_equal_cation_routing/validation_common.py", line 54, in verify_parent_sources
+    assert actual == entry["git_blob_sha1"], entry["path"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: AGENTS.md
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.049s
+
+FAILED (errors=1)

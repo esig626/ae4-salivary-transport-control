@@ -1,0 +1,53 @@
+{
+  "baseline_commit": "8f5fefd9fc0b563a6bd963895211b4acf76972b0",
+  "binding_instructions_and_prompt_unchanged": true,
+  "branch": "analysis/task-50-minimal-beta-conditioned-effective-coupling",
+  "checkpoint": "50D",
+  "classification": "TARGET-CALIBRATED CONSTRUCTION",
+  "frozen_files_verified": 28,
+  "frozen_publication_commit": "86f135e075aa91a70a752b650d7bb894353fee04",
+  "historical_ledger_contents_preserved_as_prefix": true,
+  "new_core_evaluations_during_final_audit": 0,
+  "new_parameter_fits_or_searches": 0,
+  "new_production_trajectories": 0,
+  "new_scientific_files": [
+    "src/modern_full_model/task50_effective_coupling.py",
+    "tests/test_task50_effective_coupling.py"
+  ],
+  "new_stationary_solves": 0,
+  "previous_checkpoint_receipts": [
+    {
+      "artefact_hashes_verified": 12,
+      "checkpoint": "50A",
+      "commit": "e4c72143fe7d71ae0034d15887312062626b4636"
+    },
+    {
+      "artefact_hashes_verified": 5,
+      "checkpoint": "50A_continuation",
+      "commit": "cc69edfb88fbcf17b6d60e0cbc70c0130c0d978a"
+    },
+    {
+      "artefact_hashes_verified": 12,
+      "checkpoint": "50B",
+      "commit": "537ce3204d11a1a6cc51b1dd39032d12cb42df5e"
+    },
+    {
+      "artefact_hashes_verified": 10,
+      "checkpoint": "50C",
+      "commit": "88997ef6888498e6ea6bdd9bd4acd7e5ec108dbc"
+    }
+  ],
+  "prior_scientific_source_results_archive_manuscript_unchanged": true,
+  "scope": "File hashes, Git objects and preserved records only; no scientific import or numerical evaluation",
+  "status": "PASS",
+  "task51_started": false,
+  "task52_started": false,
+  "tested_source_hashes_verified": {
+    "analysis/50_minimal_beta_conditioned_effective_coupling/run_verification.py": "a4c98c4dd58581dce62685d6876f27b56c6fb92fdf08e743fb4ffbaedcee1f87",
+    "src/modern_full_model/task50_effective_coupling.py": "fa04f7b057672aef220892ecd8a233526423fa2cd63be6e35587b6436bc7e54a",
+    "tests/test_task50_effective_coupling.py": "97d2329ea201b083f50b81e1afa341bfc3567f273ff638afa5304860e4c6584c"
+  },
+  "tests_passed_without_repeat": 10,
+  "total_core_evaluations_including_constructors": 80,
+  "verified_remote_parent": "88997ef6888498e6ea6bdd9bd4acd7e5ec108dbc"
+}

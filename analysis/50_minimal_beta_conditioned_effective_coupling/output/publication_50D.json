@@ -1,0 +1,12 @@
+{
+  "checkpoint": "50D",
+  "verified_remote_commit": "7cb032e8bb9372c910d0e5400712ea79beb23e8f",
+  "verified_tree": "6101f0ae5bfb0645b184ccb177690e866fc7e81e",
+  "artefact_hashes_verified": 9,
+  "github_checkpoint_blob": "7fa3c628a3ad2ab0d6afb1e0cb32eedf6ead2f54",
+  "method": "Independent fetch of named remote branch, GitHub checkpoint fetch, exact tree and all receipt SHA-256 checks",
+  "status": "VERIFIED_AND_STOPPED",
+  "classification": "TARGET-CALIBRATED CONSTRUCTION",
+  "task51_started": false,
+  "task52_started": false
+}

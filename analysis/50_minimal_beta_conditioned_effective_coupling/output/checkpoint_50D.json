@@ -1,0 +1,55 @@
+{
+  "artefacts": [
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/CURRENT_STATUS.md",
+      "sha256": "9932922b74a1d554ccdc683539b679a4d3110e42a68aec54894ba706b3412e18"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/DECISION_LOG.md",
+      "sha256": "8cdc78f8b4ba473458d7487c03211a9d7ff4fab53e211141a84a245aa1735157"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/MINIMAL_EFFECTIVE_COUPLING_REPORT.md",
+      "sha256": "9e0f26d1262824c6c36f1fe06cb3b08a110ca211bef288fa0aaf99333dc992aa"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/final_integrity_audit.json",
+      "sha256": "b8b9070342836a85b56c748e4cd817e1e6ffafd8738d86bc532ceda2f66c14f9"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/publication_50C.json",
+      "sha256": "a835db7eb9b2db9f8bd0d5bce9e06eefecef2f4a1b8be427c49ccb43daf39d5f"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/verification_attempt_01.log",
+      "sha256": "fd96e8c31bd1c592870c6f387bcc596d303b37065bc3ee416ff8eac0e0d831b6"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/verification_attempt_02.log",
+      "sha256": "4859c29828c4f5b9bcbea6484c2f27f880a1c9e1616d5d534b578c6e8957695e"
+    },
+    {
+      "path": "docs/MANDATORY_RESEARCH_LEDGER.md",
+      "sha256": "71f747e09ba8fc42713a56ecd1607cfb3848ed56d0f5057f2e2b9bb96c085732"
+    },
+    {
+      "path": "docs/RESULTS_LEDGER.md",
+      "sha256": "df00d427f45b08a384b23253daf62825322812bae189ccbd8ce2d974367ea814"
+    }
+  ],
+  "checkpoint": "50D",
+  "classification": "TARGET-CALIBRATED CONSTRUCTION",
+  "fixed_lambda": "0.89488127156712",
+  "frozen_artefacts_verified": 28,
+  "master_ledger_result": "R50D",
+  "new_fits_or_searches": 0,
+  "new_model_evaluations": 0,
+  "new_production_trajectories": 0,
+  "new_stationary_solves": 0,
+  "parent_sha": "88997ef6888498e6ea6bdd9bd4acd7e5ec108dbc",
+  "status": "COMPLETE_WITH_AUTHORISED_PRECISION_QUALIFICATION",
+  "task51_started": false,
+  "task52_started": false,
+  "tests_passed": 10,
+  "total_core_evaluations_including_constructors": 80
+}

@@ -1,0 +1,85 @@
+{
+  "artefacts": [
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/CODEX_START_HERE.md",
+      "sha256": "46047fa369dd1d684c93ef0750de5f73c1a0a037c53be6f01839b46422d9e70d"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/CURRENT_STATUS.md",
+      "sha256": "7cf9f0e34f4691b8a1e0ff95266113c4ae42295d9e363baed66daccc2b136cf8"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/DECISION_LOG.md",
+      "sha256": "5f57d2a8248728233d9e1ec067e9d4d420b01598ea1b1af94c86d381b8e05062"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/EQUIVALENCE_PROOF.md",
+      "sha256": "0ab9c97526cec1ecc98d70a8443c4ea18f3ab6fb0119809e7124d678266fff29"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/NOVELTY_CHECK.md",
+      "sha256": "e6c9816a52240dd03081ecfa65ee97a17d107054a1e6fdce1dcae95e45a636bc"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/audit_50a.py",
+      "sha256": "9d6ecf448d019512ef0f04da12b9cfb7e4dc85df3bd03a71c6c20b4d29846f5e"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/audited_inputs.json",
+      "sha256": "b10699971256f3a6776f449235dcd7b7aa3618cc2dc59cbdf9b7248a5ba08e71"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/coefficient_audit.json",
+      "sha256": "21b22fc2419af387c06416f875ffbf258938c8adc9c21840eed001ccc58e28dc"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/novelty_search.json",
+      "sha256": "e56e4844ba363614c954ba6a6d5c5cafc202bfd16ca1426020ec08a0bb56393d"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/remote_heads.json",
+      "sha256": "c20364016fe7f7844bf020acc2ecfb880086adca35ef8efb883a3d5fcaa26f6b"
+    },
+    {
+      "path": "docs/MANDATORY_RESEARCH_LEDGER.md",
+      "sha256": "b7625d5eeb531dd8ce4d76e28ce6f9e87fa12e810141f8b8b6570c7f60110e66"
+    },
+    {
+      "path": "docs/RESULTS_LEDGER.md",
+      "sha256": "c3704fd9e834fe9bc0fd1e75fef662214b888ff9212ed2995939a74e43b2cedd"
+    }
+  ],
+  "baseline_commit": "8f5fefd9fc0b563a6bd963895211b4acf76972b0",
+  "branch": "analysis/task-50-minimal-beta-conditioned-effective-coupling",
+  "checkpoint": "50A",
+  "classification": "TARGET-CALIBRATED CONSTRUCTION",
+  "decision_entries": [
+    "D50-04",
+    "D50-05"
+  ],
+  "dependent_work_authorised": false,
+  "gate_passed": false,
+  "master_ledger_result": "R50A",
+  "new_model_evaluations": 0,
+  "new_model_tests": 0,
+  "new_parameter_fits_or_searches": 0,
+  "new_production_trajectories": 0,
+  "new_stationary_solves": 0,
+  "not_executed": [
+    "50B",
+    "50C",
+    "50D",
+    "Task 51"
+  ],
+  "remote_verification": "Recorded after publication; this receipt makes no prospective verified-SHA claim",
+  "scientific_source_and_prior_frozen_outputs_unchanged": true,
+  "status": "AUDIT_COMPLETE_EXACT_INHERITANCE_GATE_FAILED",
+  "verification": [
+    "Exact decimal literal counterexample",
+    "Seven frozen execution SHA-256 matches",
+    "53 remote heads searched",
+    "Audit helper syntax checked",
+    "JSON output parses",
+    "Source/test/result diffs empty"
+  ]
+}

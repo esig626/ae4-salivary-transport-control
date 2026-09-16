@@ -1,0 +1,15 @@
+test_01_fixed_constant_factor_boundaries_and_domains (task50_verification_tests.Task50Tests.test_01_fixed_constant_factor_boundaries_and_domains) ... ok
+test_02_factor_numerical_equivalence_to_frozen_coefficient (task50_verification_tests.Task50Tests.test_02_factor_numerical_equivalence_to_frozen_coefficient) ... ok
+test_03_wt_and_ae2_exact_parent_nesting (task50_verification_tests.Task50Tests.test_03_wt_and_ae2_exact_parent_nesting) ... ok
+test_04_rest_and_ipr_exact_nesting_in_mutants (task50_verification_tests.Task50Tests.test_04_rest_and_ipr_exact_nesting_in_mutants) ... ok
+test_05_cch_only_full_rhs_and_diagnostics_nest_parent (task50_verification_tests.Task50Tests.test_05_cch_only_full_rhs_and_diagnostics_nest_parent) ... ok
+test_06_beta_one_full_rhs_current_and_source_equivalence (task50_verification_tests.Task50Tests.test_06_beta_one_full_rhs_current_and_source_equivalence) ... ok
+test_07_only_declared_conductance_changes_at_fixed_state (task50_verification_tests.Task50Tests.test_07_only_declared_conductance_changes_at_fixed_state) ... ok
+test_08_existing_beta_input_controls_the_new_term (task50_verification_tests.Task50Tests.test_08_existing_beta_input_controls_the_new_term) ... ok
+test_09_public_integrator_dispatch_uses_amended_rhs_without_integration (task50_verification_tests.Task50Tests.test_09_public_integrator_dispatch_uses_amended_rhs_without_integration) ... ok
+test_10_frozen_task41_execution_inputs_unchanged (task50_verification_tests.Task50Tests.test_10_frozen_task41_execution_inputs_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.099s
+
+OK
