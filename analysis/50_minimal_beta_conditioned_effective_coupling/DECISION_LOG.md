@@ -153,3 +153,50 @@ Report actual differences. Passing fixed state comparisons does not establish a
 global trajectory error bound or bit identity of the rounded mutant solutions.
 The existing production integrator and voltage closure tolerances remain
 unchanged. No threshold adjustment or parameter tuning is authorised.
+
+## D50-08 — retain current instructions while loading frozen scientific inputs
+
+**Decision before the next verification attempt:** the original Task 40 fixture
+loader rejects today's `AGENTS.md` against its historical governance hash before
+any test or model evaluation. The read only audit checks all 150 manifest files:
+149 match and only `AGENTS.md` differs. Its actual Git blob
+`94465907d246d530e78f18cf1237fad5088cfa51` is the binding Task 50 start version.
+
+Use a task local loader that verifies the 149 unchanged inputs and explicitly
+pins this current governance blob; also verify Task 40's own execution hashes,
+rest vector and parameter hashes. Then construct the same parent with the
+unchanged factory. Do not edit AGENTS, historical manifests, parent source or
+production runners. This corrects a fixture's historical governance assumption,
+not a scientific equation or an acceptance tolerance. Preserve attempt 01 and
+`output/legacy_manifest_audit.json`.
+
+**Ledger basis:** R40, R41, R50A continuation and section 8, checked again with
+the phenotype convention. Current instructions take precedence over archived
+instruction hashes. No closed axis is reopened. Attempt 01 performed zero
+model evaluations and zero tests, so no failed scientific comparison is hidden.
+
+## D50-09 — accept implementation checks and preserve the precision scope
+
+**Decision:** accept the ten passing tests in verification attempt 02 and publish
+50B before extracting phenotype summaries. The 21 parent comparisons are bit
+identical, and the six complete active evaluations agree within the unchanged
+D50-07 allowances. Largest factor difference is `4.5102810375396984e-15`;
+largest RHS component difference is `8.090750291955828e-15` in native units.
+The successful run used 80 core evaluations including constructor checks, zero
+production integrations, zero stationary solves and zero fits. Attempt 01 was
+the separately recorded governance hash setup issue, with zero evaluations.
+
+**Ledger basis:** R40, R41, R50A continuation, R50B setup qualification and the
+phenotype convention were checked again before accepting this result. The
+parent scientific files remain unchanged. This is software verification of a
+TARGET-CALIBRATED CONSTRUCTION, not independent biological validation.
+
+**Dependent work after remote verification:** verify/hash the frozen Task 40/41
+source, states, protocols and outputs and read the existing summary fields.
+Do not integrate any trajectory. Use the already reported cumulative and
+endpoint deficits and all saved 60 s cumulative observations to describe the
+finite window persistence without selecting a favourable time. Numerical reuse
+of mutant results carries the authorised coefficient precision qualification;
+it does not establish an exact solution identity or a global error bound.
+No new CCh only or AE2 trajectory is needed for the exact parent IVP statement.
+Do not transfer Task 48's different bath/genotype rest outputs to this parent.

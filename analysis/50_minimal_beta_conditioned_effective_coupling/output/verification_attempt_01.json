@@ -1,0 +1,23 @@
+{
+  "attempt": 1,
+  "checkpoint": "50B",
+  "classification": "TARGET-CALIBRATED CONSTRUCTION",
+  "comparisons": [],
+  "core_evaluations_including_constructor_checks": 0,
+  "error_bound_scope": "Fixed state comparisons only; no global trajectory error bound",
+  "exact_parent_comparisons": 0,
+  "max_absolute_differences": {},
+  "new_parameter_fits_or_searches": 0,
+  "new_production_trajectories": 0,
+  "new_stationary_solves": 0,
+  "source_hashes": {
+    "analysis/50_minimal_beta_conditioned_effective_coupling/run_verification.py": "a4c98c4dd58581dce62685d6876f27b56c6fb92fdf08e743fb4ffbaedcee1f87",
+    "src/modern_full_model/task50_effective_coupling.py": "fa04f7b057672aef220892ecd8a233526423fa2cd63be6e35587b6436bc7e54a",
+    "tests/test_task50_effective_coupling.py": "67310a3fba5ee5d91ae96e46ffe64155e032041f041e77a6d2902d6bbb7498cf"
+  },
+  "status": "FAIL",
+  "test_errors": 1,
+  "test_failures": 0,
+  "tests_run": 0,
+  "tolerance_source": "DECISION_LOG.md D50-07, published before implementation"
+}

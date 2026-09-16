@@ -488,3 +488,40 @@ trajectory error bound is implied. The model remains a
 TARGET-CALIBRATED CONSTRUCTION. No fit, mechanism search, signalling ODE or
 new production trajectory is authorised merely by this precision clarification.
 This is continuation of Task 50; Tasks 51 and 52 remain unstarted.
+
+### R50B setup qualification
+
+The first software verification attempt stopped before tests or model evaluation
+because the old Task 40 fixture also hashes its historical `AGENTS.md`. A full
+150 file audit found exactly one difference: today's binding instructions.
+All 149 other inputs match. D50-08 authorises a task local loader that pins the
+current instructions while verifying unchanged scientific inputs, rather than
+changing old files or restoring obsolete instructions. The failed setup is
+preserved; no scientific tolerance or model parameter is changed.
+
+### R50B: fixed reduced coupling implemented and verified
+
+The new public `Task50EffectiveCouplingModel` implements exactly
+`1-0.89488127156712*a_Ca*beta*(1-e_AE4)` through the unchanged Task 41 conductance
+machinery before electrical closure. It adds no state or adjustable parameter
+and changes no other scientific source. Classification:
+**TARGET-CALIBRATED CONSTRUCTION**.
+
+Ten tests pass. Twenty one parent comparisons give bit identical complete RHS
+and physical diagnostics for WT, REST, CCh only null and AE2 knockout cases.
+Six beta one comparisons at frozen initial/final states have maximum RHS
+component difference `8.090750291955828e-15` in native units relative to the
+full stored Task 41 coefficient; the maximum factor difference is
+`4.5102810375396984e-15`. The predeclared numerical allowances and unchanged
+conservation gates pass. Currents, charge and chloride source bookkeeping are
+covered, and unrelated fixed state evaluations remain unchanged. Integration
+dispatch is tested with a mock, without an ODE integration.
+
+Attempt 02 used 80 core evaluations including constructor checks. Attempt 01
+was the governance hash setup failure recorded above and performed none.
+There are zero new production trajectories, stationary solves or fits. All
+seven frozen Task 41 execution hashes remain unchanged. Numerical equivalence
+under the authorised rounding qualification is established on these fixtures;
+no exact mutant solution identity or global trajectory error bound is claimed.
+See `IMPLEMENTATION_VERIFICATION.md` and `output/verification_attempt_02.json`
+under the Task 50 directory. D50-09 requires remote 50B publication before reuse.

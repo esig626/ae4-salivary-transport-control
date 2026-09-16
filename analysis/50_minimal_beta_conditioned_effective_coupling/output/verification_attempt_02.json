@@ -1,0 +1,63 @@
+{
+  "attempt": 2,
+  "checkpoint": "50B",
+  "classification": "TARGET-CALIBRATED CONSTRUCTION",
+  "comparisons": [
+    {
+      "case": "wt",
+      "max_abs_rhs_difference": 0.0,
+      "time_s": 1e-06
+    },
+    {
+      "case": "wt",
+      "max_abs_rhs_difference": 0.0,
+      "time_s": 600.0
+    },
+    {
+      "case": "ae4_5pct",
+      "max_abs_rhs_difference": 5.051514762044462e-15,
+      "time_s": 1e-06
+    },
+    {
+      "case": "ae4_5pct",
+      "max_abs_rhs_difference": 5.051514762044462e-15,
+      "time_s": 600.0
+    },
+    {
+      "case": "ae4_null",
+      "max_abs_rhs_difference": 7.327471962526033e-15,
+      "time_s": 1e-06
+    },
+    {
+      "case": "ae4_null",
+      "max_abs_rhs_difference": 8.090750291955828e-15,
+      "time_s": 600.0
+    }
+  ],
+  "core_evaluations_including_constructor_checks": 80,
+  "error_bound_scope": "Fixed state comparisons only; no global trajectory error bound",
+  "exact_parent_comparisons": 21,
+  "max_absolute_differences": {
+    "conductance_S": 1.4186147505284425e-22,
+    "conservation_A": 4.8467614016778965e-26,
+    "conservation_native_units": 6.938893903907228e-16,
+    "factor": 4.5102810375396984e-15,
+    "membrane_A": 7.237830359838992e-25,
+    "membrane_V": 2.8449465006019636e-16,
+    "membrane_fmol_s": 8.090750291955828e-15,
+    "rhs_native_units": 8.090750291955828e-15
+  },
+  "new_parameter_fits_or_searches": 0,
+  "new_production_trajectories": 0,
+  "new_stationary_solves": 0,
+  "source_hashes": {
+    "analysis/50_minimal_beta_conditioned_effective_coupling/run_verification.py": "a4c98c4dd58581dce62685d6876f27b56c6fb92fdf08e743fb4ffbaedcee1f87",
+    "src/modern_full_model/task50_effective_coupling.py": "fa04f7b057672aef220892ecd8a233526423fa2cd63be6e35587b6436bc7e54a",
+    "tests/test_task50_effective_coupling.py": "97d2329ea201b083f50b81e1afa341bfc3567f273ff638afa5304860e4c6584c"
+  },
+  "status": "PASS",
+  "test_errors": 0,
+  "test_failures": 0,
+  "tests_run": 10,
+  "tolerance_source": "DECISION_LOG.md D50-07, published before implementation"
+}

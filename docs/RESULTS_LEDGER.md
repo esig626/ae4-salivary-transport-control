@@ -96,3 +96,17 @@ There is no numerical tolerance in the exact literal comparison. No model
 evaluation or production calculation was performed and no biological
 significance is inferred. Task 50 stops at its prescribed exact identity gate;
 the master ledger R50A records the qualification and preserves prior results.
+
+## Task 50B reduced construction implementation
+
+**R50B-01:** Under the user's explicit numerical treatment of the coefficient
+rounding difference, ten tests pass for the fixed Task 50 law. There are 21
+bit identical parent comparisons and six beta one fixed state comparisons to
+frozen Task 41. Largest factor/RHS differences are `4.5103e-15` and `8.0908e-15`
+respectively, with unit specific tolerances predeclared in D50-07. Current,
+charge, chloride source and unrelated fixed state checks pass. This is software
+verification of a TARGET-CALIBRATED CONSTRUCTION, not biological validation or a
+global trajectory error bound. Evidence: Task 50 `IMPLEMENTATION_VERIFICATION.md`
+and `output/verification_attempt_02.json`. Scientific source hashes are in that
+record. No production trajectory, stationary solve or fit was run. The earlier
+governance hash setup failure is preserved separately with zero evaluations.

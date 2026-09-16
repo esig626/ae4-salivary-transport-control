@@ -1,19 +1,21 @@
 # Task 50 current status
 
-Status: **50A CONTINUATION AUTHORISED; IMPLEMENTATION PENDING**.
-
-Branch: `analysis/task-50-minimal-beta-conditioned-effective-coupling`.
-Original start: `8f5fefd9fc0b563a6bd963895211b4acf76972b0`.
-Resume head: `9bb9c9513a5816b872d75fd7ab86ee621effdb73`.
+Status: **50B PASS; FROZEN RESULT REUSE PENDING**.
 Classification: **TARGET-CALIBRATED CONSTRUCTION**.
+Branch: `analysis/task-50-minimal-beta-conditioned-effective-coupling`.
 
-The user authorised retaining exactly `lambda=0.89488127156712` and treating
-the full frozen Task 41 coefficient difference through numerical equivalence.
-This supersedes the previous operational stop only for rounding. The original
-50A audit and receipts remain preserved. Exact parent nesting is still required.
+The resumed 50A authorisation checkpoint was published and remotely verified
+at `cc69edfb88fbcf17b6d60e0cbc70c0130c0d978a` before source changes.
+Exactly `lambda=0.89488127156712` is retained. Parent nesting remains exact;
+comparison with Task 41's full stored coefficient is numerical as authorised.
 
-D50-06 and D50-07 record the authorisation, implementation scope and comparison
-allowances before dependent compute. The resumed 50A boundary must be published
-and remotely verified before source changes. 50B, 50C and 50D are pending.
-No scientific source edit or model calculation has yet been performed.
-Tasks 51 and 52 remain unstarted.
+50B implements the one fixed multiplier before unchanged current closure.
+All ten tests pass: 21 exact parent comparisons and six active comparisons.
+Largest RHS difference is `8.090750291955828e-15` in native units.
+There were 80 core evaluations including constructor checks, no production
+integrations, no stationary solves and no fits. The earlier setup failure
+performed no model evaluations and is preserved in the attempt 01 record.
+
+50B must be remotely verified before 50C. 50C and 50D remain pending.
+Tasks 51 and 52 remain unstarted. See IMPLEMENTATION_VERIFICATION.md,
+DECISION_LOG.md D50-06 through D50-09, and the output verification records.

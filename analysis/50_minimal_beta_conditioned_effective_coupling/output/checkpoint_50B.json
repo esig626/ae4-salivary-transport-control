@@ -1,0 +1,62 @@
+{
+  "artefacts": [
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/CURRENT_STATUS.md",
+      "sha256": "1541c9087699cbc3bccc62b45155094efceb88ae7fc018c06cf6191f72c1e810"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/DECISION_LOG.md",
+      "sha256": "d4dc957f8da93c007e464a1e0eb530e6af28ffee5720d99909ef1c47f1947011"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/IMPLEMENTATION_VERIFICATION.md",
+      "sha256": "bdd337f8a5f9f6b7e70b45995c296067e94ba6c0d46319f6b5ea0a437c5a23e5"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/legacy_manifest_audit.json",
+      "sha256": "fd2ec1134a1af7140fe655bd148b5a32b1c22dacfaccd80be847667b983036d6"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/publication_50A_continuation.json",
+      "sha256": "c1459586f9fc7f782df5d0513f928b8d37a8402de41ec19504cfc29bdc038f61"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/verification_attempt_01.json",
+      "sha256": "bd2e26316446592112425b414c5a73e22813cf02a74ba1772d6f4eb5e0aea2be"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/verification_attempt_02.json",
+      "sha256": "34b3f7412279ad9c7a639aeb416af8b9b5e192cc95037a59ff92a2e85bd35717"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/run_verification.py",
+      "sha256": "a4c98c4dd58581dce62685d6876f27b56c6fb92fdf08e743fb4ffbaedcee1f87"
+    },
+    {
+      "path": "docs/MANDATORY_RESEARCH_LEDGER.md",
+      "sha256": "d8ce66fc6852b06134879c87e939e5846c25d1e80d4acdc42b24bd782a1e53f3"
+    },
+    {
+      "path": "docs/RESULTS_LEDGER.md",
+      "sha256": "55cd18d15af3f4cc2d6bd1a509d8c88447c4b0a85020b26c307087fa2c63989b"
+    },
+    {
+      "path": "src/modern_full_model/task50_effective_coupling.py",
+      "sha256": "fa04f7b057672aef220892ecd8a233526423fa2cd63be6e35587b6436bc7e54a"
+    },
+    {
+      "path": "tests/test_task50_effective_coupling.py",
+      "sha256": "97d2329ea201b083f50b81e1afa341bfc3567f273ff638afa5304860e4c6584c"
+    }
+  ],
+  "checkpoint": "50B",
+  "classification": "TARGET-CALIBRATED CONSTRUCTION",
+  "master_ledger_result": "R50B",
+  "new_core_evaluations_including_constructors": 80,
+  "new_fits_or_searches": 0,
+  "new_production_trajectories": 0,
+  "new_stationary_solves": 0,
+  "parent_sha": "cc69edfb88fbcf17b6d60e0cbc70c0130c0d978a",
+  "status": "PASS",
+  "tests_passed": 10
+}
