@@ -1,0 +1,120 @@
+# Mandatory research ledger: AE4 salivary transport project
+
+This file is the compulsory cumulative scientific memory for all new research tasks in this repository.
+
+**Every scientific task, Codex run, agent, or new mechanism proposal must read this file before doing any calculation.** A new task must explicitly state which prior results were checked and why the proposed calculation is not a repetition. If that novelty check cannot be written from repository evidence, no scientific compute is authorised.
+
+The purpose is simple: do not spend compute rediscovering a failure already established elsewhere in the repository.
+
+## Canonical current state
+
+- `main` contains the canonical scientific lineage through merged Tasks 47 and 48 at merge commit `5ca70c61e8ccc49f084bac1b91ea05c612d197e8`.
+- Task 49 is complete on `analysis/task-49-camp-vrac-secretory-branch-reconstruction`, final closeout `ab7f1cb054b8c8150343653727773f1ca59ebbcf`; it is not yet merged into `main`.
+- The central experimental phenotype remains approximately 35% lower 10-min AE4-null secretion under CCh+IPR, with early secretion relatively preserved and the sustained deficit developing later.
+- The current conservation-explicit model does not reproduce that phenotype without a target-selected construction.
+
+## Hard no-repeat ledger
+
+### AE4-only laws, stoichiometry, cation routing, cooperativity and PKA
+
+**Closed as a solution class unless genuinely new independent evidence changes the equations.**
+
+- Task 12 (`analysis/12_ae4_mechanism_reconstruction/`) tested the declared C1-C8 AE4 mechanism families, moving resting roots, thermodynamics, Na/K transport, cooperativity/saturation and positive PKA gates. No source-admissible AE4-only model reproduced the phenotype. It also established that the chronic AE4-null resting state is wrong on the fixed chassis.
+- Task 20 / pooled-cation work and Task 40 equal-cation routing tested alternative cation handling.
+- Task 42 tested seven Catalan-2025-supported source/stoichiometric classes. None recovered the held-out phenotype; the largest valid null loss was far below the experimental magnitude.
+
+Do not launch another AE4 stoichiometry/routing/capacity/Hill/PKA search.
+
+### Calcium amplitude
+
+- Task 13C tested higher calcium inputs. Increasing calcium did not repair the WT absolute secretion-scale problem and did not identify the AE4-loss phenotype mechanism.
+
+Do not use another calcium-amplitude sweep as a phenotype repair.
+
+### Pump and potassium recycling
+
+- Task 19 tested Na/K-pump coupling/capacity; the valid 50% results opposed the proposed harmful AE4-specific interaction and the deepest reduction was numerically unresolved.
+- Task 47 explicitly tested dynamic K recycling in the current model. AE4-null K-channel efflux increased about 18%, pump turnover only about 1.9%, and no binding recycling ceiling emerged. The null secretion deficit remained about 3.86%.
+
+Do not revisit a generic pump-capacity or K-recycling ceiling without new measured kinetics that impose a new quantitative constraint.
+
+### NHE1, CO2 and chronic acid-base compensation
+
+**This problem was known long before Task 49.**
+
+- Task 12 already showed the fixed-chassis AE4-null resting state has much too high pH and insufficient chloride loss relative to the measured knockout.
+- `analysis/ae4_carbon_nhe1_compensation/` tested CO2 permeability up to x10 and NHE1 down to x0.25 across the retained roots. Alkalinisation and compensation persisted; no tested condition produced the required secretion decrease.
+- Task 28 was explicitly designed around excessive NHE1 proton extrusion / acid-base compensation and a WT chloride-allocation repair.
+- Task 29 was explicitly an exact-null algebraic feasibility audit. Its prompt derives the AE4-null steady identities `J_AE2 = J_NHE1` and `J_CO2 = J_NHE1` and asks whether the existing acid-base architecture can support measured-like null pH/Cl without another search.
+- Task 30 replaced the coarse NHE1 law with the published 2018 law. WT required calibration; the exact-null solve did not complete within the numerical budget.
+- Task 31 implemented the mechanistic Cha NHE1 model. WT could be calibrated, but no accepted exact-null resting state was obtained and candidate null states were too alkaline.
+- Task 36 introduced the electrogenic 1 Na : 2 HCO3 NBC-like pathway precisely because the old alkalinity balance lacked a degree of freedom during productive AE4 transport. Its zero REST recruitment was a nesting device, explicitly not evidence that native basal NBC is absent.
+- Task 37 validated that NBC architecture for WT stimulation.
+- Task 49G gave a cleaner algebraic/SVD/Farkas formulation of the same chronic resting incompatibility. That mathematical certificate is new; the scientific localisation to the NHE/AE2/CO2/alkalinity balance is not.
+
+Do not spend another run merely rediscovering that chronic AE4-null pH/Cl cannot be generated by the inherited acute acid-base laws. Do not rerun generic NHE scaling, CO2 permeability scaling, NHE law replacement, or "turn on basal NBC" as an obvious repair.
+
+### NKCC1 core law, hard caps and generic compensation limits
+
+- Task 39 replaced the generic NKCC core with the source-fixed Palk/Benjamin law. It increased relative compensation and reduced the already-small secretion phenotype.
+- Task 46 CBM work showed full reference chloride export is structurally feasible without AE4 under loose shared capacities. The isolated NKCC assay does not justify an exact WT=KO flux constraint during normal CCh+IPR stimulation.
+
+Do not repeat a Palk-law replacement, arbitrary NKCC hard cap, or generic capacity ceiling.
+
+### AE4-dependent TMEM16A/CaCC coupling
+
+- Task 41 constructed an AE4-expression-dependent stimulated CaCC recruitment law and obtained a target-range null secretion deficit. This was deliberately target-selected, produced the wrong timing/state behaviour and is not independent biological validation.
+
+Do not resurrect AE4-expression-dependent TMEM16A recruitment as though it were source-established.
+
+### Positive-swelling VRAC / beta-volume gate
+
+- Task 13B had already tested the exact positive-swelling Vbeta/VRAC-style diagnostic; Task 49 later recovered this history.
+- Task 49 inserted one separate conserved VRAC-like current into the active electrical/chloride closure. Independent data did not identify a usable conductance. More decisively, in the inherited AE4-null IPR-only model beta produces no chemical-state perturbation, so a strictly positive-swelling gate cannot initiate from exact rest. The resulting parameter-independent zero-uptake prediction conflicts with the positive AE4-null IPR uptake measurement.
+
+Do not rerun a VRAC law whose only trigger is positive swelling in the unchanged beta-blind knockout core.
+
+### Broad mechanism grids and combinatorial searches
+
+Closed by project policy. Previous work already generated large candidate panels and made clear that combinatorial searching wastes compute and weakens inference.
+
+Do not run transporter subsets, all-pairs/all-triples, Cartesian mechanism grids, L0/best-subset searches, stochastic/global optimisation, evolutionary searches, or broad parameter sweeps to force the 35% phenotype.
+
+## What is genuinely established and still unresolved
+
+The remaining scientific problem must be phrased from the experimental fingerprint, not from another mechanism guess:
+
+1. **Established AE4 knockout rest:** intracellular chloride is substantially lower while resting pH remains close to WT. The inherited acute transport model does not generate that chronic adapted state.
+2. **Muscarinic-only response:** AE4 KO has near-preserved CCh-only chloride uptake.
+3. **Beta-containing response:** AE4 KO retains a positive IPR-only uptake but is strongly impaired under beta-containing conditions. In the inherited model, deleting AE4 removes beta from the chemical core, which is structurally wrong.
+4. **Sustained gland secretion:** CCh+IPR secretion is initially relatively preserved and then diverges to a substantial sustained deficit.
+5. **Independent controls:** isolated NKCC activity and stimulated NHE response show no large genotype difference under their specific assay protocols; AE2 deletion is essentially secretion-neutral.
+
+Any future reconstruction has to satisfy these simultaneously.
+
+## Candidate directions that are NOT yet authorised
+
+The following are questions for zero-compute novelty/evidence audit only. They are not accepted mechanisms and must not be sent to Codex until the repository history and primary literature show that they are genuinely untested and sufficiently constrained.
+
+- Whether the documented beta/cAMP input to NKCC1, together with the independently documented cAMP-dependent apical anion pathway, forms one source-backed secretory module capable of initiating the AE4-null IPR response. This combined module must first be checked against all earlier beta/NKCC/VRAC work; testing the pieces separately again is forbidden.
+- Whether the scientific aim should separate **chronic genotype adaptation** from **acute 10-min secretion dynamics**, conditioning the acute model on experimentally measured genotype-specific resting states rather than asking the acute transporter laws to reproduce months of knockout adaptation. This requires a conservation-consistent formulation and a repository novelty audit before any simulation.
+
+Neither item is permission to compute. They are the only currently identified questions worth auditing before another funded run.
+
+## Mandatory pre-compute checklist
+
+Before ANY future numbered scientific task:
+
+1. Read this ledger, `docs/RESULTS_LEDGER.md`, `analysis/README.md`, and all final reports for overlapping mechanisms.
+2. Search `prompts/`, `analysis/`, `results/`, and remote branches for the proposed mechanism and synonyms.
+3. Write a `NOVELTY_CHECK.md` containing:
+   - proposed scientific question;
+   - every overlapping prior task/file;
+   - exact reason the new calculation is not already answered;
+   - independent data that identify any new parameter/equation;
+   - what result would falsify the proposal.
+4. The novelty check must be committed and reviewed **before** any trajectory, stationary solve, fit, parameter sweep or model edit.
+5. If the proposed task overlaps a closed item above without genuinely new evidence, stop. Do not compute.
+6. Every new result or failure must be added to this ledger immediately when the task finishes.
+
+The repository is the memory. A later agent is not permitted to substitute its own recollection for this file.
