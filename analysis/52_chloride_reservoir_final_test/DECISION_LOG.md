@@ -1,0 +1,109 @@
+# Task 52 decision log
+
+## D52-01 — final-shot scope
+
+Task52 is the last funded/scientific Codex shot. It is numerical only. No mechanism-family search is permitted.
+
+## D52-02 — controlling mechanism
+
+The only candidate is the chloride-reservoir/supply mechanism established in R51H and supported by the R51I reduced diagnostic:
+
+- chronic AE4 loss lowers the measured intracellular chloride reservoir;
+- WT retains ordinary beta/PKA-activated AE4 chloride supply;
+- non-AE4 chloride supply is experimentally controlled/matched across genotypes in the central model;
+- shared apical chloride demand converts the reservoir/supply difference into differential export;
+- no AE4-dependent channel multiplier is allowed.
+
+## D52-03 — Palk disposition
+
+Palk/Benjamin NKCC is excluded from the Task52 candidate. It may be cited only as a historical negative diagnostic explaining excessive compensation in Tasks39–51.
+
+## D52-04 — initial-state projection
+
+Central measurement-constrained initialisation:
+
+1. load accepted Task37 WT rest and active Task37 parameters;
+2. retain Task37 intracellular Na and cell volume for both genotypes;
+3. impose source central values WT Cl=50.10 mM, pH=6.91 and AE4-KO Cl=36.50 mM, pH=6.89;
+4. solve only intracellular K and TIC such that exact cell bulk electroneutrality and bath-isotonicity hold using unchanged fixed charge, finite buffer, impermeant osmoles and acid-base equations;
+5. derive TA from the existing speciation function;
+6. keep lumen state and geometry unchanged;
+7. reject before trajectories if either projected state is nonpositive or outside inherited broad physical limits.
+
+Predeclared projection sensitivity: retain Task37 intracellular Na and TIC and solve K plus cell volume from the same two constraints. No other projection may be invented after outputs are seen.
+
+These projected states are stimulation onset states, not claimed stationary solutions of the incomplete chronic KO transport model.
+
+## D52-05 — matched non-AE4 supply
+
+Use a paired WT/KO ODE.
+
+At each RHS evaluation:
+
+- evaluate pre-Palk NKCC and AE2 cycles from the WT state;
+- use those WT cycles in WT as usual;
+- impose the same cycle values and exact stoichiometric sources on KO;
+- KO NHE1, NBC, pump, K channels, CO2, water, lumen and electrical closure remain its own local functions of its own state;
+- WT AE4 is ordinary inherited AE4; KO AE4 is exact zero.
+
+Fixed KO supply sensitivities multiply the shared WT NKCC and AE2 cycles together by 1.05 or 1.10. These are diagnostics, not fits.
+
+## D52-06 — auxiliary beta demand
+
+Shared effective beta/IPR apical chloride current:
+
+`I_aux = beta * G_aux * (V_a - E_Cl)`.
+
+Exact same `G_aux` and law in WT and KO. Insert before final electrical closure, include in cell/lumen chloride sources and current diagnostics, and do not multiply secretion directly.
+
+Fixed values only:
+
+- 0 S;
+- 2.32e-9 S (DCPIB-sensitive source-scale equivalent);
+- 4.49e-9 S (total IPR-current source-scale upper sensitivity).
+
+No swelling gate is used in Task52. This is a protocol-level effective representation of the observed IPR-associated anion conductance, not a claim of direct molecular cAMP gating or complete apical attribution.
+
+## D52-07 — case matrix
+
+Combined CCh+IPR, 600 s:
+
+1. matched supply, central projection, G=0;
+2. matched supply, central projection, G=2.32e-9 S;
+3. matched supply, central projection, G=4.49e-9 S;
+4. central projection, G=2.32e-9 S, KO supply x1.05;
+5. central projection, G=2.32e-9 S, KO supply x1.10;
+6. alternate projection, matched supply, G=2.32e-9 S.
+
+Controls:
+
+7. CCh-only, central projection, matched supply, beta=0;
+8. IPR-only, central projection, matched supply, G=2.32e-9 S.
+
+No 5%-AE4 trajectory because no measured chronic 5%-AE4 chloride starting state exists.
+
+## D52-08 — no-reveal tuning rule
+
+All equations, projections, conductance values, supply sensitivities, solver settings, case matrix and acceptance diagnostics are frozen before any Task52 phenotype comparison.
+
+No output may trigger parameter changes or additional cases.
+
+## D52-09 — reservoir accounting
+
+For every paired case compute and numerically verify:
+
+`delta(t)=nCl_WT(t)-nCl_KO(t)`
+
+and
+
+`∫(J_WT-J_KO)dt = delta(0) + 2∫(N_WT-N_KO)dt + ∫(A_WT-A_KO)dt + ∫(E_WT-E_KO)dt - delta(T)`.
+
+Central matched-supply NKCC and AE2 differences should be zero to numerical tolerance by construction.
+
+A fluid deficit without this mass accounting is not sufficient to claim the reservoir mechanism.
+
+## D52-10 — interpretation
+
+Success means independently fixed/shared physiology plus the measured reservoir produces a substantial, persistent fluid deficit with all physical/conservation gates passing.
+
+Failure is final. Do not add another mechanism. Task50 remains the target-calibrated quantitative proof of missing beta-conditioned coupling if Task52 does not succeed.
