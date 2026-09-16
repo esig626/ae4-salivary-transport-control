@@ -166,12 +166,15 @@ on `analysis/task-50-minimal-beta-conditioned-effective-coupling`.
 | Authorised 50A continuation before implementation | `cc69edfb88fbcf17b6d60e0cbc70c0130c0d978a` |
 | 50B before frozen result reuse | `537ce3204d11a1a6cc51b1dd39032d12cb42df5e` |
 | 50C before final report | `88997ef6888498e6ea6bdd9bd4acd7e5ec108dbc` |
+| 50D final report and ledgers | `7cb032e8bb9372c910d0e5400712ea79beb23e8f` |
 
 The original audit verification closeout was
 `9bb9c9513a5816b872d75fd7ab86ee621effdb73`. Each scientific boundary updated
 the mandatory ledger before dependent work. Machine readable checkpoint and
 publication receipts are under `output/`; the final verified 50D commit is
-recorded in `output/publication_50D.json` after publication.
+recorded in `output/publication_50D.json`. All nine 50D artefact hashes match
+the fetched remote commit. Task 50 is stopped; the final metadata closeout
+records that verification without further scientific work.
 
 `run_verification.py` records test outcomes and tested source hashes;
 `reuse_frozen_results.py` reads existing files without importing a model or

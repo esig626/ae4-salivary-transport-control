@@ -142,3 +142,6 @@ Implementation was verified at `537ce3204d11a1a6cc51b1dd39032d12cb42df5e`;
 reuse was verified at `88997ef6888498e6ea6bdd9bd4acd7e5ec108dbc`. Tolerances
 remain those predeclared in D50-07. Master ledger R50D is the controlling result.
 Stop at 50D; Tasks 51 and 52 remain unstarted.
+
+R50D final report and ledger publication was remotely verified at
+`7cb032e8bb9372c910d0e5400712ea79beb23e8f`; all nine checkpoint hashes match.

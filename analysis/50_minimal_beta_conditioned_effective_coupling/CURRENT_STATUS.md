@@ -1,6 +1,6 @@
 # Task 50 current status
 
-Status: **50D COMPLETE WITH AUTHORISED PRECISION QUALIFICATION; PUBLICATION VERIFICATION PENDING**.
+Status: **50D VERIFIED AND STOPPED; AUTHORISED PRECISION QUALIFICATION RETAINED**.
 Classification: **TARGET-CALIBRATED CONSTRUCTION**.
 Branch: `analysis/task-50-minimal-beta-conditioned-effective-coupling`.
 
@@ -28,8 +28,9 @@ New production trajectories, stationary solves and fits: zero. Final integrity
 checks use only files and Git objects. The setup and reporting issues remain
 recorded; no scientific parameter, output or tolerance was changed to resolve them.
 
-Publish and remotely verify 50D, record the verified SHA, then stop. Tasks 51
-and 52 remain unstarted.
+50D was published and remotely verified at `7cb032e8bb9372c910d0e5400712ea79beb23e8f`.
+All nine checkpoint artefact hashes match. Task 50 is stopped after 50D.
+Tasks 51 and 52 remain unstarted.
 
 Final integrity audit: PASS. All 39 earlier checkpoint artefact hashes, three
 tested source hashes and 28 frozen artefacts match. Earlier scientific files

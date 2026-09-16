@@ -613,3 +613,10 @@ unchanged. Binding instructions, phenotype convention and execution prompt are
 unchanged; the earlier ledger contents are preserved as an exact prefix. The
 audit passed without any model evaluation. Its record is
 `analysis/50_minimal_beta_conditioned_effective_coupling/output/final_integrity_audit.json`.
+
+R50D publication verified: `7cb032e8bb9372c910d0e5400712ea79beb23e8f` on the designated
+Task 50 branch. An independent branch fetch and GitHub checkpoint fetch agree;
+the exact tree and all nine checkpoint artefact hashes match. The publication
+receipt is `analysis/50_minimal_beta_conditioned_effective_coupling/output/publication_50D.json`.
+The final metadata closeout records this verification without scientific
+evaluation. Task 50 is stopped after 50D; Tasks 51 and 52 remain unstarted.

@@ -1,0 +1,35 @@
+{
+  "artefacts": [
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/CURRENT_STATUS.md",
+      "sha256": "92196c95e28aaa7f3c8983df025875bf58e3bcadea87f19fe747646d9d16e436"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/MINIMAL_EFFECTIVE_COUPLING_REPORT.md",
+      "sha256": "a2e2b2676bb854ae8ba474db5d4b2f84b0fa3531cf2f9edb27c8585a82058e7e"
+    },
+    {
+      "path": "analysis/50_minimal_beta_conditioned_effective_coupling/output/publication_50D.json",
+      "sha256": "bb0b197a76c5009af54ec7535a920a6f119c20e35fbaca63ec3969af0923cd22"
+    },
+    {
+      "path": "docs/MANDATORY_RESEARCH_LEDGER.md",
+      "sha256": "856d6d5dc2ce02f25ea0de29283b7cd14a9b569c58fedfcb883218e086432cb9"
+    },
+    {
+      "path": "docs/RESULTS_LEDGER.md",
+      "sha256": "ae2e64905e55a46549a1abecd26268d126a1d26ecee928f8e2162483a101c0f8"
+    }
+  ],
+  "checkpoint": "50D_PUBLICATION_CLOSEOUT",
+  "classification": "TARGET-CALIBRATED CONSTRUCTION",
+  "new_fits_or_searches": 0,
+  "new_model_evaluations": 0,
+  "new_production_trajectories": 0,
+  "new_stationary_solves": 0,
+  "parent_sha": "7cb032e8bb9372c910d0e5400712ea79beb23e8f",
+  "status": "VERIFIED_AND_STOPPED",
+  "task51_started": false,
+  "task52_started": false,
+  "verified_scientific_commit": "7cb032e8bb9372c910d0e5400712ea79beb23e8f"
+}
