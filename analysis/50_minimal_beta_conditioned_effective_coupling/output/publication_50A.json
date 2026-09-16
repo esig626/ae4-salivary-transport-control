@@ -1,0 +1,26 @@
+{
+  "artefact_hashes_verified": 12,
+  "branch": "analysis/task-50-minimal-beta-conditioned-effective-coupling",
+  "checkpoint": "50A",
+  "checkpoint_git_blob_sha1": "d2291b1f310502e129df574e728e69684157ee95",
+  "dependent_scientific_work_performed": false,
+  "next_checkpoints": {
+    "50B": "NOT_EXECUTED",
+    "50C": "NOT_EXECUTED",
+    "50D": "NOT_EXECUTED",
+    "Task 51": "NOT_STARTED"
+  },
+  "publication_transport": "Connected GitHub API; identical tree to local commit. Shell push had no HTTPS credentials and did not publish.",
+  "receipt_scope": "checkpoint_50A.json hashes refer to the verified audit commit, before this publication record and status annotation",
+  "remote_gate_status": "AUDIT_COMPLETE_EXACT_INHERITANCE_GATE_FAILED",
+  "repository": "esig626/ae4-salivary-transport-control",
+  "source_tests_and_frozen_results_diff_from_start": "EMPTY",
+  "verification_methods": [
+    "Git fetch of named remote branch",
+    "Independent git ls-remote branch SHA",
+    "GitHub connector fetch of checkpoint at exact published commit",
+    "SHA-256 of all 12 receipt artefacts from fetched Git objects"
+  ],
+  "verified_remote_commit": "e4c72143fe7d71ae0034d15887312062626b4636",
+  "verified_remote_tree": "7ce4e1d2a364eb95975d86eeb4bf3b8ebca26e09"
+}

@@ -464,3 +464,9 @@ Evidence and the precise code mapping are in
 `DECISION_LOG.md`, `NOVELTY_CHECK.md` and the task's `output/` audit records.
 Continuing requires explicit resolution of the fixed literal versus exact
 frozen inheritance conflict; this audit selects neither alteration.
+
+R50A publication: audit commit `e4c72143fe7d71ae0034d15887312062626b4636` was published
+on the designated Task 50 branch, independently fetched and remotely verified.
+All 12 checkpoint artefact hashes match at that commit. The verification record
+is `analysis/50_minimal_beta_conditioned_effective_coupling/output/publication_50A.json`.
+No dependent scientific work followed the failed gate.

@@ -41,3 +41,8 @@ This was the designated Task 50 execution. Tasks 51 and 52 remain unstarted.
 Continuing requires an explicit resolution of fixed literal lambda versus
 exact inheritance of the full frozen coefficient. No correction, tolerance
 substitution, new mechanism or automatic Task 51 is authorised by this audit.
+
+Publication: audit commit `e4c72143fe7d71ae0034d15887312062626b4636` was independently fetched and
+verified at the named remote branch. All 12 receipt artefact hashes match at
+that commit. See `output/publication_50A.json`. This annotation adds no
+scientific result and does not lift the stop.
