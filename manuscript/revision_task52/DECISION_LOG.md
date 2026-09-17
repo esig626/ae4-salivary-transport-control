@@ -31,3 +31,13 @@ The supplied full bundle has final branch analysis/task-52-local-completion at e
 ## DMS-06: manuscript organisation and checks
 
 Revise the existing article by argument, not by a diary of task numbers. Centre chloride availability and continuing AE4 supply; compare the 2018 explanation, Catalan 2015 apical pathway evidence and Catalan 2025 molecular constraints. Include the scientific traps that changed interpretation, not the authentication difficulties. Build figures only from saved results. Compile LaTeX/BibTeX, check citations and inspect rendered pages before merging the manuscript. No compiled build product is to be added to version control.
+
+## DMS-07: manuscript-only revision of 18 September 2026
+
+The user explicitly requests the completed article, a compiled PDF and time series figures with EPS copies. No production, model evaluation, mechanism search, parameter change or repeat scientific task is authorised. The source baseline is main 764e32a648ee3b69265364788df5a59f76cb2843, plus this writing branch's existing decisions. Those results are already integrated; no additional scientific branch merge is required.
+
+Read the controlling ledger and R51H/R51I, phenotype convention, overlapping reports, frozen architecture/projection/numerics, the existing article and its archive audit. Central recorded trajectories and summaries are available and will be checked by file-only arithmetic. The additional supply/projection/protocol numbers in DMS-01 and DMS-03 remain reported continuation summaries: their raw trajectories are not in this source snapshot. Keep this limitation explicit; do not create substitute curves or claim those raw files have been independently checked.
+
+Append the article-facing interpretation without changing any historical classification. A roughly 20% result is not a failure merely because one experiment reports roughly 35%; the remaining limitations concern imposed onset states and supply, protocol specificity and the reported IPR pH failure. Distinguish the original model's weak NKCC response from the stronger compensation in later Palk/Benjamin reconstructions. Preserve the conditional scope of NBC necessity and source-vector exclusions.
+
+All eight replacement figures will have time on the horizontal axis and will use recorded samples only. Historical scalar outcomes and reported sensitivity endpoints belong in tables, not invented trajectories. Plot production can perform arithmetic and quadrature on saved samples, but cannot import scientific model modules or call a solver. Retain independently saved Gauss quadrature for the chloride identity; do not use coarse plotting samples as a conservation test.

@@ -145,3 +145,8 @@ Stop at 50D; Tasks 51 and 52 remain unstarted.
 
 R50D final report and ledger publication was remotely verified at
 `7cb032e8bb9372c910d0e5400712ea79beb23e8f`; all nine checkpoint hashes match.
+
+
+## Manuscript synthesis, 18 September 2026
+
+See M20260918 in the mandatory ledger. The revised manuscript centres the recorded conditional chloride availability result (20.04–20.10% cumulative deficit) and exact mass balance. Eight time series figures replace the old categorical plots. The historical original-model, compensation, source-class, swelling and calibrated-coupling results remain distinct. Further continuation sensitivities are labelled reported summaries, not newly verified arrays. No frozen scientific file or numerical result was changed.

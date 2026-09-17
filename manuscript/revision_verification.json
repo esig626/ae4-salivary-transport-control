@@ -1,0 +1,18 @@
+{
+  "scope": "manuscript-only; no model, fit or solver execution",
+  "protected_science_files_checked": 2107,
+  "protected_science_files_changed": [],
+  "pages": 25,
+  "figures": 8,
+  "formats_per_figure": [
+    "EPS",
+    "PDF",
+    "PNG"
+  ],
+  "latex_unresolved_references": false,
+  "latex_overfull_boxes": false,
+  "render_review": "All 25 pages rendered with MuPDF and inspected in five page sheets; figures also inspected separately.",
+  "numpy": "2.3.5",
+  "matplotlib": "3.10.8",
+  "basis": "central raw trajectories independently rechecked; continuation sensitivity outcomes labelled reported summaries"
+}

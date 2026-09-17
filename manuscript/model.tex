@@ -1,7 +1,7 @@
 \section{Model}
 \label{sec:model}
 
-The reconstructed model describes one acinar cell, a finite luminal compartment and an infinite extracellular bath. It retains the well-stirred approximation used in the original AE4 model, but replaces several concentration equations by conserved amount balances. This change is essential for acid--base chemistry, because internal protonation reactions may redistribute carbon species without creating carbon or alkalinity. A schematic comparison is shown in \cref{fig:model-evolution}.
+The reconstructed model describes one acinar cell, a finite luminal compartment and an infinite extracellular bath. It retains the well-stirred approximation used in the original AE4 model, but replaces several concentration equations by conserved amount balances. This change is essential for acid--base chemistry, because internal protonation reactions may redistribute carbon species without creating carbon or alkalinity. The historical compensating network and the final prescribed-supply comparison share these conservation equations, but not every constitutive assumption.
 
 \subsection{Compartments, amounts and concentrations}
 
@@ -20,7 +20,7 @@ Rather than evolve free bicarbonate and proton concentrations independently, we 
 \end{aligned}
 \label{eq:state-vector}
 \end{equation}
-augmented by the regulatory states described below. This amount formulation makes dilution, charge accounting and water transport explicit.
+augmented by one inherited AE4 regulatory coordinate per cell, giving 13 states per genotype. This amount formulation makes dilution, charge accounting and water transport explicit.
 
 \subsection{Carbonate chemistry and intracellular pH}
 \label{sec:acid-base}
@@ -76,14 +76,20 @@ The paracellular fluxes $J^p_s$ are positive from lumen to bath. The lumen is fi
 
 \subsubsection{NKCC1}
 
-NKCC1 transports one sodium, one potassium and two chloride ions inward per cycle. We use the two-state Palk--Benjamin steady flux \citep{Benjamin1997,Palk2010}, corrected to the concentration units used here,
+NKCC1 transports one sodium, one potassium and two chloride ions per inward cycle. The final reservoir construction retains the earlier reversible phenomenological law
 \begin{equation}
-    J_N=\alpha_N m_N(t)
-    \frac{a_1-a_2[\Na]_i[\K]_i[\Cl]_i^2}
-         {a_3+a_4[\Na]_i[\K]_i[\Cl]_i^2}.
-    \label{eq:nkcc1}
+ J_N^{\rm local}=m_N G_N\tanh(A_N/w_N),\qquad
+ A_N=\log\frac{[\Na]_e[\K]_e[\Cl]_e^2}{[\Na]_i[\K]_i[\Cl]_i^2}.
+ \label{eq:nkcc-prepalk}
 \end{equation}
-The factor $\alpha_N$ is fixed from the accepted wild-type resting state. The activity multiplier $m_N(t)$ is one at rest and rises algebraically with the normalised calcium stimulus to 1.75 at full activation. This modifies capacity, not stoichiometry or reversal.
+The historical Palk/Benjamin comparison instead used the reduced concentration response \citep{Benjamin1997,Palk2010}
+\begin{equation}
+ J_N=\alpha_N m_N
+ \frac{a_1-a_2[\Na]_i[\K]_i[\Cl]_i^2}
+      {a_3+a_4[\Na]_i[\K]_i[\Cl]_i^2}.
+ \label{eq:nkcc1}
+\end{equation}
+Its prefactor is fixed from the accepted wild type rest, with algebraic activity $m_N=1$ at rest and 1.75 at full muscarinic activation. This gain is an inherited effective construction, not a universal physiological constant. The reduced law in \cref{eq:nkcc1} does not describe extracellular chloride depletion and readdition faithfully. Its genotype response during normal model stimulation must therefore not be equated with the isolated NKCC assay. The final comparison deliberately excludes this later module and prescribes paired supply as described in \cref{sec:reservoir-comparison}.
 
 \subsubsection{NHE1}
 
@@ -137,16 +143,16 @@ This is a structural pathway rather than an assignment to a particular salivary 
 \end{equation}
 Here $V_T=RT/F$, and $V_b=\phi_i-\phi_e$ is the basolateral potential. The activation $u(t)$ is exactly zero at the resting calcium concentration and one at the standard stimulated calcium input. Thus the accepted resting model is an exact nesting limit. Each inward cycle adds one sodium amount, two units of TIC and two alkalinity equivalents. It carries one net negative charge into the cell, so the conventional current is $I_B=FJ_B$ in the cell-to-bath current convention and is included in basolateral current closure.
 
-The need for \cref{eq:nbc} follows directly from \cref{eq:cell-balances}. Without NBC, the sustained alkalinity balance is
+The role of this pathway can be read directly from \cref{eq:cell-balances}, conditional on the other transport capacities and state constraints. Without NBC, the sustained alkalinity balance is
 \begin{equation*}
     0=J_H-J_2+S_A^4.
 \end{equation*}
-For the original AE4 stoichiometry, $S_A^4=-2J_4$. Substantial AE4 chloride loading therefore requires either a comparably large NHE1 flux or another inward source of alkalinity. The NHE1 flux compatible with the measured pH and sodium state is too small to supply that requirement. With NBC, the sustained balance becomes
+For the original AE4 stoichiometry, $S_A^4=-2J_4$. Substantial AE4 chloride loading therefore requires either a comparably large NHE1 flux or another inward source of alkalinity. In the frozen reconstruction, the permitted NHE1 response was too small to support the declared productive AE4 load at an acceptable state. This is not a general proof that an NBC isoform is the only possible biological source of alkalinity. With NBC, the sustained balance becomes
 \begin{equation}
     0=J_H+2J_B-J_2+S_A^4,
     \label{eq:alkalinity-balance}
 \end{equation}
-which supplies precisely the missing degree of freedom without importing chloride directly.
+which provides an additional alkalinity source without importing chloride directly. Zero resting recruitment is an exact nesting choice, not evidence that native basal bicarbonate cotransport is absent.
 
 \subsection{AE4 transport and regulation}
 
@@ -170,7 +176,15 @@ Beta-adrenergic regulation is represented by one effective activation fraction $
     \qquad m_4(t)=1+g_4x_4,
     \label{eq:ae4-regulation}
 \end{equation}
-with $\tau_4=30$ s and $g_4=0.25$. This is the smallest dynamic representation consistent with the experimentally established beta/cAMP/PKA direction of regulation \citep{Pena2021}; it does not assert that the intermediate kinetics have been measured.
+with $\tau_4=30$ s and $g_4=0.25$. The existence and direction of beta/cAMP/PKA regulation are source supported \citep{Pena2021}, but the 30 s filter and the selected gain are inherited model assumptions. They are retained unchanged, not identified from an experimental timing target.
+
+The final reservoir model retains the donor weighted allocation of its earlier parent. With $f_d=[\Na]_d/([\Na]_d+[\K]_d)$, where the donor is intracellular for $J_4\geq0$ and extracellular for $J_4<0$, its source is
+\begin{equation}
+ (S^4_{\rm Na},S^4_{\rm K},S^4_{\rm Cl},S^4_T,S^4_A)
+ =(-f_d,-(1-f_d),1,-2,-2)J_4.
+ \label{eq:donor-routing}
+\end{equation}
+This is an effective allocation of the inherited scalar cycle, not a measurement of microscopic sodium and potassium stoichiometry. In particular, retaining a reversible scalar carrier law does not independently validate every effective source allocation attached to it.
 
 For the equal-routing model, the total scalar cycle $J_4$ is retained but its cation source is divided equally between sodium and potassium. The conserved-coordinate source is
 \begin{equation}
@@ -192,7 +206,7 @@ Catalán et al. experimentally constrained the residues and cation dependence of
 \footnotesize
 \begin{tabularx}{\textwidth}{lXXl}
 \toprule
-Class & Proposed cycle & Source vector & Affinity \\
+Class & Proposed cycle & Source vector & Reference affinity \\
 \midrule
 C0 & equal-routing $1:1:2$ control & $(-1/2,-1/2,1,-2,-2)$ & opposed \\
 C1 & $\Cl+\Na$ in, $\K+\HCO$ out & $(1,-1,1,-1,-1)$ & supported \\
@@ -205,7 +219,7 @@ C4b & $\Cl$ in, $\Na+\COthree$ out & $(-1,0,1,-1,-2)$ & opposed \\
 \end{tabularx}
 \end{table}
 
-The carbonate classes distinguish carbon from alkalinity: outward transport of one $\COthree$ removes one unit of TIC and two equivalents of TA. Representing carbonate as bicarbonate would therefore violate both the chemistry and charge balance. All seven source vectors in \cref{tab:mechanism-classes} are exactly electroneutral and reverse consistently when $J_4$ changes sign.
+The carbonate classes distinguish carbon from alkalinity: outward transport of one $\COthree$ removes one unit of TIC and two equivalents of TA. Representing carbonate as bicarbonate would therefore violate both the chemistry and charge balance. All seven source vectors in \cref{tab:mechanism-classes} are exactly electroneutral and change sign when $J_4$ reverses. The affinity labels refer only to the frozen reference state. Source electroneutrality and formal reversal do not establish agreement between the inherited scalar flux and the affinity of each proposed cycle. These classes are historical comparisons, not the definition of the final donor weighted model.
 
 \subsection{Membrane currents and voltage closure}
 
@@ -248,8 +262,84 @@ Water follows osmotic differences between the three compartments,
 \end{align*}
 The osmolarities include sodium, potassium, chloride, total inorganic carbon and the fixed intracellular osmolyte pool. The resulting volume equations are already included in \cref{eq:cell-balances,eq:lumen-balances}. The outflow law is a finite-lumen compliance closure. It is used consistently across all comparisons and is not interpreted as an independently measured ductal pressure law.
 
-\subsection{Stimulus, genotypes and numerical protocol}
+\subsection{Final chloride reservoir comparison}
+\label{sec:reservoir-comparison}
 
-The standard production stimulus combines muscarinic and beta-adrenergic activation for 600 s. Intracellular calcium is prescribed by the experimental protocol, as in the original single-cell model, while the beta input drives \cref{eq:ae4-regulation}. Wild type has AE4 expression $e_4=1$, the reduced-expression case has $e_4=0.05$, and the null has $e_4=0$. Unless explicitly stated, all genotypes begin from the same frozen wild-type resting state and all non-AE4 parameters remain fixed.
+The final experiment uses the accepted pre-Palk model, including \cref{eq:nkcc-prepalk,eq:donor-routing}, without the phenotype calibrated apical coupling. Wild type has full AE4 expression and knockout has zero. The two cells evolve as a paired 26 dimensional system. In the central construction, the knockout receives the instantaneous signed wild type NKCC1 and AE2 cycle rates,
+\begin{equation}
+ J_N^{\rm KO}(t)=J_N^{\rm WT}(t),\qquad
+ J_2^{\rm KO}(t)=J_2^{\rm WT}(t).
+ \label{eq:matched-supply}
+\end{equation}
+Each imposed rate is applied through the complete electroneutral source vector, not through a chloride only correction. All other local fluxes, pH, volumes, membrane potentials and lumen states respond independently. The absence of a detectable genotype effect in the isolated uptake experiment motivates examining this construction; it does not establish \cref{eq:matched-supply} under physiological stimulation. Matched supply is therefore an explicit conditional model comparison, not an inferred native regulation law.
 
-The system is integrated with an implicit Radau method. The numerical gates require positive amounts and volumes, intracellular sodium, potassium, chloride and pH within the predeclared physiological ranges, exact source-charge bookkeeping, current closure, carbon accounting and water conservation. The Catalán mechanism panel was fixed before calculation. All seven class predictions were committed at checkpoint \texttt{4cb75308...} before comparison with the held-out AE4 secretion phenotype. No class was tuned, discarded or rescued on the basis of its secretion prediction.
+Both genotypes have the same auxiliary apical chloride conductance,
+\begin{equation}
+\begin{aligned}
+ I_{\rm aux}&=\beta G_{\rm aux}(V_a-E_{\rm Cl}),\\
+ G_{\rm aux}&\in\{0,2.32,4.49\}\ {\rm nS}.
+\end{aligned}
+ \label{eq:shared-demand}
+\end{equation}
+It enters the complete current closure together with TMEM16A. Positive outward chloride flux corresponds to $E_{\rm Cl}-V_a>0$. The three strengths are predeclared shared alternatives, not independently identified apical conductances obtained directly from a whole cell patch current. They test whether the result requires a specific auxiliary demand strength. No factor depending on AE4 expression multiplies either channel.
+
+\subsubsection{Measured chloride and pH define onset, not chronic equilibria}
+
+The imposed onset values are $[\Cl]_i=50.10$ mM and pH 6.91 for wild type, and $[\Cl]_i=36.50$ mM and pH 6.89 for knockout \citep{Pena2015}. Simply replacing chloride alone would violate charge and osmotic consistency. We therefore use a deterministic projection, without a transport solve or pre-stimulation relaxation.
+
+Let $Q_f$ be the unchanged fixed anion equivalents, $B_f$ the finite buffer amount and $M_f$ the fixed osmotic amount including that buffer once. At imposed pH, define $a=\alpha_{\HCO}+2\alpha_{\COthree}$, $b=B_f/[1+10^{pK_B-\mathrm{pH}}]$ and $w=[\mathrm{OH}^-]-[\mathrm H^+]$. With bath osmolarity $O_e$, charge neutrality and isotonicity imply
+\begin{align}
+ O_e&=2[\Cl]_i+(1+a)T_i+w+(Q_f+b+M_f)/V_i,\\
+ [\K]_i&=[\Cl]_i+aT_i+w+(Q_f+b)/V_i-[\Na]_i.
+ \label{eq:onset-projection}
+\end{align}
+The central projection retains the parent sodium concentration and cell volume, solves the first equation for $T_i$, then the second for potassium. TA follows from the speciation formula. The lumen and regulatory coordinates remain unchanged. The alternate recorded projection retains sodium and TIC concentrations and solves instead for volume. Neither projection is a predicted genotype equilibrium.
+
+The resulting central onset states are listed in \cref{tab:onset}. The sizeable TIC difference is a consequence of this assumption, not an additional measurement. It prevents interpreting this paired comparison as an isolated chloride perturbation with every other intracellular concentration held fixed.
+\begin{table}[t]
+\centering
+\caption{Central projected onset states. Only chloride and pH are imposed from genotype measurements. Sodium and volume are inherited; potassium and TIC follow from the stated charge and osmotic projection.}
+\label{tab:onset}
+\begin{tabular}{lrr}
+\toprule
+Quantity & Wild type & AE4 knockout\\
+\midrule
+Intracellular chloride (mM) & 50.10 & 36.50\\
+pH & 6.91 & 6.89\\
+Intracellular sodium (mM) & 11.6361 & 11.6361\\
+Intracellular potassium (mM) & 116.0230 & 114.8307\\
+TIC concentration (mM) & 16.5973 & 31.3896\\
+Cell volume (pL) & 1.448426 & 1.448426\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{An exact chloride budget}
+
+Write $\delta(t)=n_{\rm Cl,i}^{\rm WT}(t)-n_{\rm Cl,i}^{\rm KO}(t)$ and
+\begin{equation*}
+ D_X(T)=\int_0^T\bigl(J_X^{\rm WT}(t)-J_X^{\rm KO}(t)\bigr)\,\dd t,
+ \qquad X\in\{N,2,4\}.
+\end{equation*}
+Define $D_{Cl,a}$ analogously for the difference in total apical chloride export, including both channels. Subtracting and integrating the cell chloride equations gives
+\begin{equation}
+ D_{Cl,a}(T)=\delta(0)+2D_N(T)+D_2(T)+D_4(T)-\delta(T).
+ \label{eq:reservoir-general}
+\end{equation}
+Under matched supply and complete knockout, this becomes
+\begin{equation}
+ D_{Cl,a}(T)=\delta(0)+\int_0^T J_4^{\rm WT}(t)\,\dd t-\delta(T).
+ \label{eq:reservoir-matched}
+\end{equation}
+This identity is independent of the cation allocation. It separates initial chloride availability, continuing AE4 input and the chloride advantage remaining at the end. It does not assert that the initial reservoir is exhausted. Nor does it equate apical chloride export with fluid outflow: paracellular return, luminal accumulation and luminal concentrations remain in \cref{eq:lumen-balances}.
+
+\subsection{Numerical protocol and evidence status}
+\label{sec:numerics}
+
+Combined CCh+IPR stimulation is applied for 600 s. Historical acute deletion comparisons start from their corresponding common frozen wild type rest; the final paired comparison instead uses \cref{tab:onset}. Calcium is prescribed and beta is an effective input, not a newly fitted signalling cascade. The final solver record uses Radau with relative tolerance $10^{-7}$, amount and regulatory absolute tolerances $10^{-10}$, volume tolerance $10^{-12}$ pL and maximum step 2 s. The continuous trajectory begins at $\epsilon=10^{-6}$ s from the unchanged onset state. The separate zero and right limit samples preserve the declared stimulus convention.
+
+The numerical checks cover positivity, the inherited physiological domain, source charge, current closure, water and carbon accounting at accepted endpoints and integer second samples. A physiological failure ends a valid trajectory at its first detected failed sample. Passing these checks is not a proof of continuous time validity, asymptotic stability or chronic genotype consistency. No failed trace is extended to create a 600 s outcome.
+
+Fluid and chloride headline integrals use the recorded one second trapezoidal rule, including the onset samples. The independent reservoir audit uses saved eight node Gauss--Legendre flux quadrature on each accepted integration step, with four node cross checks and a separately recorded onset contribution. Its absolute balance tolerance is $10^{-5}$ fmol and its quadrature comparison tolerance is $10^{-6}$ fmol. The coarser headline quadrature is not used to claim the tighter conservation accuracy.
+
+All manuscript figures are time series derived from existing files. For the central cases, a file only check verifies trajectory hashes, state differences and reported integrals without importing a model or calling a solver. The additional supply, projection and agonist comparisons in \cref{tab:reported-sensitivities} are explicitly reported summary results; their raw trajectories are not available in this manuscript source snapshot. We retain their stated outcomes and limitations without fabricating curves or claiming a fresh numerical verification.

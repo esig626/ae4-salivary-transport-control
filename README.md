@@ -56,3 +56,8 @@ The corrected 2018 source archive has been audited against the new article, and 
 
 
 
+
+
+## Revised AE4 manuscript, 18 September 2026
+
+The revised article in `manuscript/` centres the recorded chloride availability result, compares it with the original model and later failed/compensating constructions, and discusses Catalán 2015 and 2025. All eight active figures are time series, with EPS copies under `manuscript/figures/`. Build using `bash manuscript/build.sh`; the stable reading copy is `manuscript/AE4_manuscript_current.pdf`. See the manuscript README and M20260918 ledger entry for source scope and explicitly summary-only continuation sensitivities. No frozen science was changed or rerun.
