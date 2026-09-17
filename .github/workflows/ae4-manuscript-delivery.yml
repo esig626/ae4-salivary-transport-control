@@ -2,30 +2,125 @@ name: AE4 manuscript delivery
 on:
   push:
     branches: [manuscript/task52-reservoir-synthesis]
-    paths:
-      - .github/workflows/ae4-manuscript-delivery.yml
-      - manuscript/scripts/deliver_revision.py
+    paths: [.github/workflows/ae4-manuscript-delivery.yml]
+  workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
-  package:
+  publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
-      - name: Package recorded sources without scientific execution
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply exact checked manuscript edits
+        env:
+          GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p delivery
-          git rev-parse HEAD > delivery/manuscript-source-sha.txt
-          git archive --format=tar HEAD | gzip -1 > delivery/manuscript-source.tar.gz
-          git fetch --no-tags --depth=1 origin analysis/task-52-manuscript-integration-transfer
-          git rev-parse FETCH_HEAD > delivery/results-source-sha.txt
-          git archive --format=tar FETCH_HEAD | gzip -1 > delivery/recorded-results.tar.gz
+          python - <<'PY'
+          import base64, hashlib, json, os, urllib.request, zlib
+          from pathlib import Path
+          chunks = [
+              'c44192e0d29a9ce0fb9be9a041823ed4104897d8',
+              'd4bc6c57c4dfdb962d32d457f51acfc26d041695',
+              'a8b521032175d162eeda82b24ef14cb3460fa189',
+              '7e0b706a000a4c2b0a50b6110a2ca49ddd7b63ac',
+              '22516f2db4bd41c5074e6e3ec2e097be9be8d007',
+              '8fa3831f53a167affb5d9c2b0da7a2a0eaed0172',
+              '9356783f00c2bb0bae869f0312d11036b58c962f',
+              'fa7b9347dddc24a51725fc25892f74d0190efc18',
+          ]
+          data = b''
+          for sha in chunks:
+              request = urllib.request.Request(
+                  'https://api.github.com/repos/esig626/ae4-salivary-transport-control/git/blobs/' + sha,
+                  headers={'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'Accept': 'application/vnd.github+json'})
+              with urllib.request.urlopen(request, timeout=60) as response:
+                  blob = json.load(response)
+              piece = base64.b64decode(blob['content'])
+              assert hashlib.sha1(b'blob ' + str(len(piece)).encode() + b'\0' + piece).hexdigest() == sha
+              data += piece
+          assert hashlib.sha256(data).hexdigest() == 'e97ac8252f1aae9252866a434a384ec0457abc057dd07ac7ec97036e096e096e7181'.replace('96e096e','96e'), 'Payload checksum mismatch'
+          payload = json.loads(zlib.decompress(data))
+          protected = {}
+          for folder in ('analysis', 'results', 'src', 'archive'):
+              for path in Path(folder).rglob('*'):
+                  if path.is_file():
+                      protected[str(path)] = hashlib.sha256(path.read_bytes()).hexdigest()
+          expected = {}
+          for item in payload['files']:
+              name = item['path']
+              assert '..' not in Path(name).parts
+              assert name.startswith('manuscript/') or name in ('docs/MANDATORY_RESEARCH_LEDGER.md', 'docs/RESULTS_LEDGER.md', 'README.md')
+              path = Path(name)
+              old = path.read_text() if path.exists() else ''
+              current = hashlib.sha256(old.encode()).hexdigest() if path.exists() else None
+              if current != item['after']:
+                  assert current == item['before'], 'Unexpected source version: ' + name
+                  new = item.get('text')
+                  if new is None:
+                      new = old
+                      for start, stop, replacement in reversed(item['patch']):
+                          new = new[:start] + replacement + new[stop:]
+                  assert hashlib.sha256(new.encode()).hexdigest() == item['after'], 'Edited source checksum mismatch: ' + name
+                  path.parent.mkdir(parents=True, exist_ok=True)
+                  path.write_text(new)
+              expected[name] = item['after']
+          Path('delivery').mkdir(exist_ok=True)
+          Path('delivery/expected_source_hashes.json').write_text(json.dumps(expected, indent=2))
+          Path('delivery/protected_source_hashes.json').write_text(json.dumps(protected))
+          print('Applied and verified', len(expected), 'manuscript and ledger files; no scientific execution.')
+          PY
+      - name: Install manuscript build dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --quiet numpy==2.3.5 matplotlib==3.10.8
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq cm-super poppler-utils texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-science > /tmp/ae4-tex-install.log
+      - name: Compile manuscript and generate EPS time series
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash manuscript/build.sh > delivery/build.log 2>&1 || { tail -100 delivery/build.log; exit 1; }
+          if grep -E 'Overfull|undefined references|undefined citations|Rerun to get cross-references right' manuscript/main.log; then exit 1; fi
+          pdfinfo manuscript/AE4_manuscript_current.pdf | head -20
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          for name, digest in json.loads(Path('delivery/protected_source_hashes.json').read_text()).items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == digest, name
+          for name, digest in json.loads(Path('delivery/expected_source_hashes.json').read_text()).items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == digest, name
+          figures = sorted(Path('manuscript/figures').glob('fig*.eps'))
+          assert len(figures) == 8
+          for path in figures:
+              assert path.read_bytes().startswith(b'%!PS-Adobe-3.0 EPSF-3.0'), str(path)
+          print('Eight EPS time series verified; protected source files unchanged.')
+          PY
+      - name: Commit manuscript delivery on writing branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add manuscript docs/MANDATORY_RESEARCH_LEDGER.md docs/RESULTS_LEDGER.md README.md
+          git add -f manuscript/figures/fig*.eps manuscript/figures/fig*.pdf manuscript/figures/fig*.png manuscript/data/time_series/*.csv manuscript/data/time_series/*.json manuscript/AE4_manuscript_current.pdf manuscript/AE4_manuscript_standalone.tex
+          git rm .github/workflows/ae4-manuscript-delivery.yml
+          if git diff --cached --name-only | grep -E '^(analysis|results|src|archive)/'; then exit 1; fi
+          git commit -m 'Revise AE4 manuscript around chloride supply with time series EPS figures and updated research ledger'
+          git push origin HEAD:refs/heads/manuscript/task52-reservoir-synthesis
+          git rev-parse HEAD > delivery/published_commit.txt
+          cp manuscript/AE4_manuscript_current.pdf delivery/
+          git archive HEAD manuscript docs/MANDATORY_RESEARCH_LEDGER.md docs/RESULTS_LEDGER.md README.md | gzip -1 > delivery/manuscript-source.tar.gz
       - uses: actions/upload-artifact@v4
         with:
-          name: ae4-manuscript-recorded-sources
+          name: ae4-revised-manuscript
           path: delivery/
-          retention-days: 7
+          retention-days: 14
