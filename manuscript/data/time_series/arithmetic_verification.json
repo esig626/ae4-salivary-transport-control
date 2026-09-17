@@ -1,0 +1,32 @@
+{
+  "method": "File-only arithmetic on recorded data; no model evaluation",
+  "central": {
+    "case_01": {
+      "fluid_WT_pL": 0.9729547285685054,
+      "fluid_KO_pL": 0.7779801600700091,
+      "fluid_deficit_percent": 20.039428636660162,
+      "max_saved_grid_budget_error_fmol": 7.531766932974016e-08,
+      "endpoint_budget_error_fmol": 6.874628866171406e-08,
+      "saved_endpoint_budget_error_fmol": 6.874628866171406e-08,
+      "NPZ_SHA256_verified": true
+    },
+    "case_02": {
+      "fluid_WT_pL": 0.9786120576451717,
+      "fluid_KO_pL": 0.7821483215051038,
+      "fluid_deficit_percent": 20.07575265451126,
+      "max_saved_grid_budget_error_fmol": 7.943847764465238e-08,
+      "endpoint_budget_error_fmol": 7.2253648397691e-08,
+      "saved_endpoint_budget_error_fmol": 7.2253648397691e-08,
+      "NPZ_SHA256_verified": true
+    },
+    "case_03": {
+      "fluid_WT_pL": 0.9827438301522456,
+      "fluid_KO_pL": 0.7851967712218041,
+      "fluid_deficit_percent": 20.10158220986621,
+      "max_saved_grid_budget_error_fmol": 8.251870054376987e-08,
+      "endpoint_budget_error_fmol": 7.487736297662195e-08,
+      "saved_endpoint_budget_error_fmol": 7.487736297662195e-08,
+      "NPZ_SHA256_verified": true
+    }
+  }
+}

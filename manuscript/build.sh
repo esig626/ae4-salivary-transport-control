@@ -21,3 +21,12 @@ if grep -Eq "undefined citations|undefined references|Label\(s\) may have change
   grep -E "undefined citations|undefined references|Label\(s\) may have changed|Rerun to get cross-references right" main.log >&2 || true
   exit 1
 fi
+
+cp main.pdf AE4_manuscript_current.pdf
+python - <<'PYFLAT'
+from pathlib import Path
+s = Path('main.tex').read_text()
+for name in ('model', 'results', 'discussion'):
+    s = s.replace('\\input{' + name + '}', Path(name + '.tex').read_text())
+Path('AE4_manuscript_standalone.tex').write_text(s)
+PYFLAT

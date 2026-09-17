@@ -1,5 +1,3 @@
 # Manuscript figures
 
-This directory is populated by `manuscript/scripts/build_figures.py`. Generated PDF and PNG files are ignored by Git because they are deterministic products of the frozen values in `manuscript/data/figure_source_values.csv`.
-
-The PDF files are included by LaTeX. The PNG files are rapid-review previews. The plotting script performs no model integration and cannot modify any scientific result.
+All active figures are time series generated from saved records by `../scripts/build_figures.py`. Each has matching `.eps`, `.pdf` and `.png` files. The PDF versions are used by LaTeX. EPS copies are provided for journal preparation. Plotting data and source hashes are in `../data/time_series/`. No bar plots are used.

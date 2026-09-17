@@ -1,0 +1,39 @@
+{
+  "source_baseline": "764e32a648ee3b69265364788df5a59f76cb2843",
+  "figures": [
+    "fig01_chloride_loading",
+    "fig02_nkcc_compensation",
+    "fig03_class_ph",
+    "fig04_cumulative_deficits",
+    "fig05_fluid_flow",
+    "fig06_chloride",
+    "fig07_reservoir_budget",
+    "fig08_driving_force"
+  ],
+  "input_sha256": {
+    "analysis/52_chloride_reservoir_final_test/output/reporter_recovery_52D/cases/case_01/Radau_summary.json": "ae80a6bf2a82aedaea40a561196b153d16631499aee0177ed1fff0a45a166d9e",
+    "analysis/52_chloride_reservoir_final_test/output/reporter_recovery_52D/cases/case_01/Radau_trajectory.npz": "4548bde133fd51dcd0046146c7aec16d0cfa287e272513239915b5b40c301134",
+    "analysis/52_chloride_reservoir_final_test/output/reporter_recovery_52D/cases/case_02/Radau_summary.json": "8bee8705e61ebd27526e044a80201bffa2a64991f7db6bebfa2cd62a1bb29eb3",
+    "analysis/52_chloride_reservoir_final_test/output/reporter_recovery_52D/cases/case_02/Radau_trajectory.npz": "5c98a5468b00ac78ee9b425fa1791364883b17896746f9f6123febe0ab40961e",
+    "analysis/52_chloride_reservoir_final_test/output/reporter_recovery_52D/cases/case_03/Radau_summary.json": "0553b9544ff6711d09c735a8c2886f948854a797a936aca99a15f338a255759b",
+    "analysis/52_chloride_reservoir_final_test/output/reporter_recovery_52D/cases/case_03/Radau_trajectory.npz": "297e5f583d64c98e4511d30b3ea32d20beb109c4955b214da853f34bd24a0822",
+    "results/37_wt_nbc_validation/wt_timeseries.csv": "184b1021709a8726e6bc7fccd7e887be6306d10320fac144a94c45417d4d9b19",
+    "results/39_palk_nkcc1_full_validation/ae4_null_timeseries.csv": "56cb530a2086887fa3b605b483cae3cd81008fc3957cb8414a030d76f7f6defd",
+    "results/39_palk_nkcc1_full_validation/wt_timeseries.csv": "cecf552e497d2e418a9152840d7e70283fa21ca25c8196d57a7f84644a3dddd5",
+    "results/40_ae4_equal_cation_routing/ae4_null_timeseries.csv": "2ddd71525ebb1409c98466dab4f27680b7577f655300118340827f0d90ae2cbf",
+    "results/40_ae4_equal_cation_routing/wt_timeseries.csv": "cd99c120be48fcb152b8514335fc3cf3c96282bbf3fc8e4815d870452e5a9dc4",
+    "results/41_ae4_loss_algebraic_design/candidate_08/ae4_null_timeseries.csv": "72478d183c9ef6e5877d9d4ec92d64be9b9ec18e1b613e3d98528bcc71afe1a5",
+    "results/41_ae4_loss_algebraic_design/candidate_08/wt_timeseries.csv": "4a378a1c69db9ab7e8584a5a285ef83d09727a5f55608fe972ef4a313cee3a1a",
+    "results/42_catalan_2025_ae4_mechanism_classes/C0/wt_timeseries.csv": "a6b948f78ff3e226103c3a9053eaa8361805ad0dc720d44ebd4900c32c24d274",
+    "results/42_catalan_2025_ae4_mechanism_classes/C1/wt_timeseries.csv": "790ee84dd87ff496b2a1f18254e4e7db11f5e42c044b2b3c70a1963271a9e0a9",
+    "results/42_catalan_2025_ae4_mechanism_classes/C2/wt_timeseries.csv": "af8cb60f68ca6b7506a6b4d8666eafc7dd866799f8cb4eda8cf155e3fc3a45c7",
+    "results/42_catalan_2025_ae4_mechanism_classes/C3a/wt_timeseries.csv": "a70e2c9da5794ead8877e3edd151d8890ca4a9d2c05e1b070b569bdcfa4d3619",
+    "results/42_catalan_2025_ae4_mechanism_classes/C3b/wt_timeseries.csv": "97df04018316c4977fa117d9334341682c42c643ce01fb6596db4f06131dfd34",
+    "results/42_catalan_2025_ae4_mechanism_classes/C4a/wt_timeseries.csv": "08686a455d60b780bdea26c9f30f21c47218ab1018bbdc79ddfa622b4c631e6e",
+    "results/42_catalan_2025_ae4_mechanism_classes/C4b/wt_timeseries.csv": "5120b956921bbf50a6ead3d539794f119f10d6363d161e56d84145449bd15abb"
+  },
+  "all_axes": "Time after stimulation in seconds",
+  "historical_sampling": "Stored CSV grids: 60-second comparative samples and the finer saved class grids; joining lines are visual guides, not newly solved trajectories.",
+  "central_sampling": "Saved accepted-step and integer-second diagnostics; independently saved Gauss quadrature for the budget.",
+  "reported_sensitivities": "Not plotted: only summary values are present in the manuscript decision record."
+}
