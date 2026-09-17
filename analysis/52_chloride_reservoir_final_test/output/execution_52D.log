@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/output/launch_52D_recovery.py", line 34, in <module>
+    runner.main()
+  File "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/run_frozen_cases.py", line 265, in main
+    result=run_attempt(case,model,y0,'Radau',directory,freeze['case_matrix']['solver']);attempts.append('Radau')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/run_frozen_cases.py", line 155, in run_attempt
+    assert all(tuple(r)==columns for s in samples.values() for r in s['rows'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

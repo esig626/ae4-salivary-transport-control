@@ -1,0 +1,124 @@
+{
+  "checkpoint": "52A",
+  "commit_sha": "acf3e132ce698d64a220b52a966c8472e86405a3",
+  "tree_sha": "ef9fceb8cd5bde3e1ab93bc2f31a69f996a0f9ef",
+  "receipt_sha256": "e795f5ec6bb432dd848d7e2c0578c31b5a931abd51c951101296e20c0dc552d8",
+  "artifact_count": 13,
+  "parent_commit": "eacfe603faa3ce0b2aa26814b348a1ae44417cdc",
+  "remote_branch_sha": "acf3e132ce698d64a220b52a966c8472e86405a3",
+  "ref_match": true,
+  "tree_match": true,
+  "receipt_match": true,
+  "parent_match": true,
+  "recursive_tree_complete": true,
+  "artifacts": [
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/ARCHITECTURE_AND_NUMERICS_FREEZE.md",
+      "expected_sha256": "64bdf6cd5c2a656eb17c106723d7f817e9e39752a492b3bc894d28a66207d0fb",
+      "verified_content_sha256": "64bdf6cd5c2a656eb17c106723d7f817e9e39752a492b3bc894d28a66207d0fb",
+      "remote_blob_sha": "6e9d2103577827d5c0cd6a82323db10c3a5b87d9",
+      "local_blob_sha": "6e9d2103577827d5c0cd6a82323db10c3a5b87d9",
+      "pass": true
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/CODEX_START_HERE.md",
+      "expected_sha256": "533ceaa25de4b9262e28cd099a04964002133119a8f052f026e1f22669a5d9d8",
+      "verified_content_sha256": "533ceaa25de4b9262e28cd099a04964002133119a8f052f026e1f22669a5d9d8",
+      "remote_blob_sha": "ad690af5ad56febc4ae7c318c31c549c906da7f4",
+      "local_blob_sha": "ad690af5ad56febc4ae7c318c31c549c906da7f4",
+      "pass": true
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/CURRENT_STATUS.md",
+      "expected_sha256": "83e216e9079f27a93c904e1fde60ef9046b3f28d413578ab99b2baf11bc026fc",
+      "verified_content_sha256": "83e216e9079f27a93c904e1fde60ef9046b3f28d413578ab99b2baf11bc026fc",
+      "remote_blob_sha": "d516a29a8cfd4034e89244b8fae05c1f2232c5ac",
+      "local_blob_sha": "d516a29a8cfd4034e89244b8fae05c1f2232c5ac",
+      "pass": true
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/DECISION_LOG.md",
+      "expected_sha256": "6567ab89a9b891cd873121404b4664359b93f58bbed1c1f478c0909dc20e9831",
+      "verified_content_sha256": "6567ab89a9b891cd873121404b4664359b93f58bbed1c1f478c0909dc20e9831",
+      "remote_blob_sha": "f6614b15a1bda18ceeb43e581a725341164b57fd",
+      "local_blob_sha": "f6614b15a1bda18ceeb43e581a725341164b57fd",
+      "pass": true
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/NOVELTY_CHECK.md",
+      "expected_sha256": "2355eb620344c01e432b55bf48989c62929bb6597cceeb14c87d5c9c16d89e8f",
+      "verified_content_sha256": "2355eb620344c01e432b55bf48989c62929bb6597cceeb14c87d5c9c16d89e8f",
+      "remote_blob_sha": "639589d4cfa0702576597064dd1ec559e4f047ee",
+      "local_blob_sha": "639589d4cfa0702576597064dd1ec559e4f047ee",
+      "pass": true
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/TASK37_PROVENANCE.md",
+      "expected_sha256": "fbc1a78267c3f914ad6a556fc0f5b83afad0b487d93610e414e4b6ab0a23513a",
+      "verified_content_sha256": "fbc1a78267c3f914ad6a556fc0f5b83afad0b487d93610e414e4b6ab0a23513a",
+      "remote_blob_sha": "52e58cc5bcedfc72b2f9ee65968edac5c40b25d2",
+      "local_blob_sha": "52e58cc5bcedfc72b2f9ee65968edac5c40b25d2",
+      "pass": true
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/checkpoint.py",
+      "expected_sha256": "02adb9f26854bdd046e737e61186fefcc88076e3a262e04415144d8e9dd41d03",
+      "verified_content_sha256": "02adb9f26854bdd046e737e61186fefcc88076e3a262e04415144d8e9dd41d03",
+      "remote_blob_sha": "6779adb21c0a394fc374afce3b22c728c27db9e6",
+      "local_blob_sha": "6779adb21c0a394fc374afce3b22c728c27db9e6",
+      "pass": true
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/binding_inputs_at_start.json",
+      "expected_sha256": "118d45e0fe78542751cad962369a04e69849978c2be43ed9ed769ae803ec1ff4",
+      "verified_content_sha256": "118d45e0fe78542751cad962369a04e69849978c2be43ed9ed769ae803ec1ff4",
+      "remote_blob_sha": "7ad41f51a4488ac7cf95ce29e23253e0bc0e9c82",
+      "local_blob_sha": "7ad41f51a4488ac7cf95ce29e23253e0bc0e9c82",
+      "pass": true
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/case_matrix_52A.json",
+      "expected_sha256": "bf481af85e8445d3655856ad90a8ad7dc600a462f877cbf409c932a83dfb8189",
+      "verified_content_sha256": "bf481af85e8445d3655856ad90a8ad7dc600a462f877cbf409c932a83dfb8189",
+      "remote_blob_sha": "b96d3f5c6344cb79dc922e36cbec220e723f706d",
+      "local_blob_sha": "b96d3f5c6344cb79dc922e36cbec220e723f706d",
+      "pass": true
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/remote_start_verification.json",
+      "expected_sha256": "552da34ef4f1dbc41f4f3914713fae1080a01db3fb418ee154a3e8489a4af4a8",
+      "verified_content_sha256": "552da34ef4f1dbc41f4f3914713fae1080a01db3fb418ee154a3e8489a4af4a8",
+      "remote_blob_sha": "185e8edcf578081296808caa87c4499775eac8a3",
+      "local_blob_sha": "185e8edcf578081296808caa87c4499775eac8a3",
+      "pass": true
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/task37_provenance_audit.json",
+      "expected_sha256": "26a05e5108f3d987b25bfa4d753baa634dbf80f973855267dccafdff935cdf89",
+      "verified_content_sha256": "26a05e5108f3d987b25bfa4d753baa634dbf80f973855267dccafdff935cdf89",
+      "remote_blob_sha": "1f58ca9b67410edd0941c372c02161d2686ab5c7",
+      "local_blob_sha": "1f58ca9b67410edd0941c372c02161d2686ab5c7",
+      "pass": true
+    },
+    {
+      "path": "analysis/52_chloride_reservoir_final_test/output/task50_archive_start.json",
+      "expected_sha256": "deb35b205aa9ef826544f390f829d5b051c998cecbcc3d09ab96727f848ebd7a",
+      "verified_content_sha256": "deb35b205aa9ef826544f390f829d5b051c998cecbcc3d09ab96727f848ebd7a",
+      "remote_blob_sha": "833694288ae7e023eb23a7f9e8202ba84d64e070",
+      "local_blob_sha": "833694288ae7e023eb23a7f9e8202ba84d64e070",
+      "pass": true
+    },
+    {
+      "path": "docs/MANDATORY_RESEARCH_LEDGER.md",
+      "expected_sha256": "cfefeb916c98daf40385df426451db2a2fb74b23fbee497121f3fefc16371c12",
+      "verified_content_sha256": "cfefeb916c98daf40385df426451db2a2fb74b23fbee497121f3fefc16371c12",
+      "remote_blob_sha": "1d0fb92fd6c6364694803119481089241a7f9623",
+      "local_blob_sha": "1d0fb92fd6c6364694803119481089241a7f9623",
+      "pass": true
+    }
+  ],
+  "verification_transport": "Independent GitHub connector GET ref, exact Git commit, complete recursive Git tree and exact-ref receipt; remote tree blob IDs compared with byte-hashed local immutable commit artifacts",
+  "verifier": "repository_access independent infrastructure agent",
+  "pass": true,
+  "verified_at_utc": "2026-09-16T11:33:35.415588+00:00"
+}

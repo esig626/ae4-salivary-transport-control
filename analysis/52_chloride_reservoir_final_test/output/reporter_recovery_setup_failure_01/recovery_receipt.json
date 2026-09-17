@@ -1,0 +1,17 @@
+{
+  "authorisation_commit": "f2b56f903d33a0ac5f5c292db92cead8b6157f1f",
+  "changes": "union-schema serialization and authorised branch/parent/replay bookkeeping only",
+  "freeze_sha256": "9cebb8fcf85557643f6c7838ff57f9fb9603f5a7479cbe6fb63ba8c40b417ba2",
+  "immutable_inputs_verified": 50,
+  "launcher_sha256": "7a0ba824040323484189b157e117adf4df37c9dd7b6250f831d20610a0737c4f",
+  "original_failure_evidence_unchanged": true,
+  "preserved_failure_commit": "9c0fde42b5eb16746413801fae555c84cb32e201",
+  "runner_sha256": "d5988680b99638fa91ed0e6e82a70f6b1d6bca581ee102438060d6e1025909ce",
+  "scientific_base_commit": "36f7c3d0bb2353bf55ac0ed9e22582720097c829",
+  "scientific_evaluations_before_execution": {
+    "constructor_core_evaluations": 0,
+    "local_evaluations": 0,
+    "paired_evaluations": 0,
+    "parent_factories": 0
+  }
+}

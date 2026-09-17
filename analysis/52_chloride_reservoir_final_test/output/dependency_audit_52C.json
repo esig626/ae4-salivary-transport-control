@@ -1,0 +1,29 @@
+{
+  "escaped_snapshot": {},
+  "forbidden_loaded": [],
+  "loaded_scientific_modules": {
+    "task52_pre_palk": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/__init__.py",
+    "task52_pre_palk.acid_base": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/acid_base.py",
+    "task52_pre_palk.ae4_routing_only": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/ae4_routing_only.py",
+    "task52_pre_palk.camp_pka": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/camp_pka.py",
+    "task52_pre_palk.membranes": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/membranes.py",
+    "task52_pre_palk.model": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/model.py",
+    "task52_pre_palk.nbc_minimal": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/nbc_minimal.py",
+    "task52_pre_palk.nhe1_cha2009": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/nhe1_cha2009.py",
+    "task52_pre_palk.nkcc_stimulation": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/nkcc_stimulation.py",
+    "task52_pre_palk.parameters": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/parameters.py",
+    "task52_pre_palk.states": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/states.py",
+    "task52_pre_palk.task30_nhe1_repair": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/task30_nhe1_repair.py",
+    "task52_pre_palk.task31_nhe1_repair": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/task31_nhe1_repair.py",
+    "task52_pre_palk.transporters": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/transporters.py",
+    "task52_pre_palk.validation": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/validation.py",
+    "task52_pre_palk.water": "/workspace/scratch/95a09307e722/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/water.py"
+  },
+  "pass": true,
+  "scientific_evaluations": {
+    "constructor_core_evaluations": 0,
+    "local_evaluations": 0,
+    "paired_evaluations": 0,
+    "parent_factories": 0
+  }
+}

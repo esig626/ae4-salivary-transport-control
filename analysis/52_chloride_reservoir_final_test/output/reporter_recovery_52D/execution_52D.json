@@ -1,0 +1,86 @@
+{
+  "cases": [
+    {
+      "attempts": [
+        "Radau"
+      ],
+      "id": "case_01",
+      "selected_attempt": "Radau",
+      "status": "completed",
+      "summary_sha256": "ae80a6bf2a82aedaea40a561196b153d16631499aee0177ed1fff0a45a166d9e"
+    },
+    {
+      "attempts": [
+        "Radau"
+      ],
+      "id": "case_02",
+      "selected_attempt": "Radau",
+      "status": "completed",
+      "summary_sha256": "8bee8705e61ebd27526e044a80201bffa2a64991f7db6bebfa2cd62a1bb29eb3"
+    },
+    {
+      "attempts": [
+        "Radau"
+      ],
+      "id": "case_03",
+      "selected_attempt": "Radau",
+      "status": "completed",
+      "summary_sha256": "0553b9544ff6711d09c735a8c2886f948854a797a936aca99a15f338a255759b"
+    }
+  ],
+  "complete": true,
+  "dependency_audit": {
+    "escaped_snapshot": {},
+    "forbidden_loaded": [],
+    "loaded_scientific_modules": {
+      "task52_pre_palk": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/__init__.py",
+      "task52_pre_palk.acid_base": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/acid_base.py",
+      "task52_pre_palk.ae4_routing_only": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/ae4_routing_only.py",
+      "task52_pre_palk.camp_pka": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/camp_pka.py",
+      "task52_pre_palk.membranes": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/membranes.py",
+      "task52_pre_palk.model": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/model.py",
+      "task52_pre_palk.nbc_minimal": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/nbc_minimal.py",
+      "task52_pre_palk.nhe1_cha2009": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/nhe1_cha2009.py",
+      "task52_pre_palk.nkcc_stimulation": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/nkcc_stimulation.py",
+      "task52_pre_palk.parameters": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/parameters.py",
+      "task52_pre_palk.states": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/states.py",
+      "task52_pre_palk.task30_nhe1_repair": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/task30_nhe1_repair.py",
+      "task52_pre_palk.task31_nhe1_repair": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/task31_nhe1_repair.py",
+      "task52_pre_palk.transporters": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/transporters.py",
+      "task52_pre_palk.validation": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/validation.py",
+      "task52_pre_palk.water": "/workspace/scratch/1f85aea0d9d2/ae4-salivary-transport-control/analysis/52_chloride_reservoir_final_test/frozen_task37/src/modern_full_model/water.py"
+    },
+    "pass": true
+  },
+  "evaluation_counts": {
+    "constructor_core_evaluations": 5,
+    "local_evaluations": 43166,
+    "paired_evaluations": 21583,
+    "parent_factories": 3
+  },
+  "freeze_sha256": "9cebb8fcf85557643f6c7838ff57f9fb9603f5a7479cbe6fb63ba8c40b417ba2",
+  "parent_commit": "f2b56f903d33a0ac5f5c292db92cead8b6157f1f",
+  "stage": "52D",
+  "threadpools": [
+    {
+      "architecture": "SkylakeX",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.30"
+    },
+    {
+      "architecture": "SkylakeX",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.30"
+    }
+  ]
+}

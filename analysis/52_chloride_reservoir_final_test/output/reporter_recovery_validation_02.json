@@ -1,0 +1,15 @@
+{
+  "immutable_inputs_verified": 50,
+  "launcher_sha256": "b7036a4f899408436d3ce8ecbdf503718b089a3658b126334065f8fe77787aeb",
+  "pass": true,
+  "previous_validation": "reporter_recovery_validation.json",
+  "reporting_function_sha256": "4e24ceb39f10290714000aaf8bb502fe1071b1a804e98e4b6fa7727be7cb9f39",
+  "scientific_evaluations": {
+    "constructor_core_evaluations": 0,
+    "local_evaluations": 0,
+    "paired_evaluations": 0,
+    "parent_factories": 0
+  },
+  "setup_failure_preserved": "reporter_recovery_setup_failure_01",
+  "stage_bookkeeping_only_one_hash_path_changed": true
+}

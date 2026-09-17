@@ -1,0 +1,22 @@
+{
+  "adapted_run_attempt_sha256": "4e24ceb39f10290714000aaf8bb502fe1071b1a804e98e4b6fa7727be7cb9f39",
+  "frozen_inputs_verified": 50,
+  "launcher_sha256": "7a0ba824040323484189b157e117adf4df37c9dd7b6250f831d20610a0737c4f",
+  "missing_nan_mask_distinct_from_true_zero": true,
+  "original_run_attempt_sha256": "db3759241eee220998c5f3763ba914593fd71dd0b868887c61749f760f774768",
+  "pass": true,
+  "reordered_keys_preserved": true,
+  "roundtrip_original_named_values": true,
+  "scientific_evaluation_counts": {
+    "constructor_core_evaluations": 0,
+    "local_evaluations": 0,
+    "paired_evaluations": 0,
+    "parent_factories": 0
+  },
+  "test_scope": "serialization-only synthetic dictionaries; no model construction/evaluation",
+  "unchanged_AST_blocks": [
+    "observe",
+    "window",
+    "integration_try_except"
+  ]
+}

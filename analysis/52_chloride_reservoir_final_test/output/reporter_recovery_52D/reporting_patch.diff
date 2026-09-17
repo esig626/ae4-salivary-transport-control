@@ -1,0 +1,44 @@
+--- 52C/run_attempt
++++ authorised_serialisation/run_attempt
+@@ -83,9 +83,7 @@
+     times=np.array(sorted(samples))
+     if not len(times):
+         raise RuntimeError('No onset state could be evaluated; original exception: '+str(failure))
+-    columns=tuple(samples[times[0]]['rows'][0])
+-    assert all(tuple(r)==columns for s in samples.values() for r in s['rows'])
+-    values=np.array([[list(r.values()) for r in samples[t]['rows']] for t in times])
++    columns,values,observations_present=encode_observations(samples,times)
+     states=np.array([samples[t]['state'] for t in times])
+     kinds=np.array([samples[t]['kind'] for t in times])
+     index={k:i for i,k in enumerate(columns)}
+@@ -143,12 +141,15 @@
+     trapdiff={k:float(np.trapz(gv[:,0,index[k+'_fmol_s']]-gv[:,1,index[k+'_fmol_s']],gt)) for k in ('J','N','A','E')}
+     budget['headline_trapezoidal_identity_error_fmol']=float(trapdiff['J']-(delta[0]+2*trapdiff['N']+trapdiff['A']+trapdiff['E']-delta[-1]))
+     np.savez_compressed(directory/f'{method}_trajectory.npz',time_s=times,
+-        columns=np.array(columns),observations=values,paired_states=states,sample_kind=kinds,
++        columns=np.array(columns),observations=values,observations_present=observations_present,
++        missing_diagnostic_encoding=np.array('NaN with observations_present=False'),
++        paired_states=states,sample_kind=kinds,
+         delta_chloride_fmol=delta,quadrature_time_s=np.array(integral_times),
+         quadrature_flux_names=np.array(FLUXES),quadrature8_cumulative=np.array(integral_history),
+         raw_accepted_time_s=np.array(accepted_times),raw_accepted_paired_states=np.array(accepted_states),
+         raw_accepted_validated=np.array(accepted_times)<=last_valid_t)
+-    endpoint={g:{k:float(values[-1,i,index[k]]) for k in columns} for i,g in enumerate(GENOTYPES)}
++    endpoint={g:{k:(float(values[-1,i,index[k]]) if observations_present[-1,i,index[k]] else None)
++        for k in columns} for i,g in enumerate(GENOTYPES)}
+     extrema={g:{k:{'min':float(values[:,i,index[k]].min()),'max':float(values[:,i,index[k]].max())}
+         for k in ('ph_i','cl_i_mM','tic_i_mM','na_i_mM','k_i_mM','volume_i_pL','E_Cl_V','V_a_V',
+                   'chloride_driving_force_V','q_out_pL_s','J_fmol_s','J_aux_fmol_s','B_fmol_s','H_fmol_s')}
+@@ -170,7 +171,11 @@
+         'gauss8_integrals_0_T':{g:dict(zip(FLUXES,primary[i].tolist())) for i,g in enumerate(GENOTYPES)} if quadrature_coverage_complete else None,
+         'gauss8_partial_integrals':{'end_s':float(integral_times[-1]),
+             'values':{g:dict(zip(FLUXES,primary[i].tolist())) for i,g in enumerate(GENOTYPES)}},
+-        'finite_trajectory_arrays':bool(np.isfinite(values).all() and np.isfinite(states).all()),
++        'finite_trajectory_arrays':bool(np.isfinite(values[observations_present]).all() and
++            np.isnan(values[~observations_present]).all() and np.isfinite(states).all()),
++        'diagnostic_schema':{'encoding':'union of original names; NaN+presence mask in NPZ; null in JSON',
++            'column_count':len(columns),'missing_value_count':int((~observations_present).sum()),
++            'original_named_values_preserved':True},
+         'trajectory_sha256':sha(directory/f'{method}_trajectory.npz')}
+     dump(directory/f'{method}_summary.json',summary)
+     return summary

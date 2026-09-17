@@ -758,3 +758,129 @@ Final report: `analysis/51_beta_nkcc_swelling_vrac_mechanistic_reconstruction/BE
 Total Task51 work is17 distinct software tests over18 invocations,102 verification core evaluations,2 calibration trajectories and3,638 calibration core evaluations:3,740 core evaluations overall. There were zero accepted fits, accepted-model phenotype trajectories, resting solves or post-reveal model evaluations. The final audit is file/Git only. Historical assertion/publication transport corrections remain traceable and changed no scientific law or selected parameter.
 
 Publish and independently verify51F, then stop. This is the controlling result for the completed Task51 shot, superseding its prospective question without rewriting earlier exclusions. One funded/scientific shot remains after Task51; Task52 remains unstarted. No new mechanism, post-reveal retuning, archive change or automatic Task52 execution is authorised by this closeout.
+
+## 21. R52A — final chloride-reservoir test: exact pre-Palk provenance
+
+Task52 begins from the user-specified remote head
+`eacfe603faa3ce0b2aa26814b348a1ae44417cdc` on
+`analysis/task-52-chloride-reservoir-final-test`. The complete binding stack,
+including R51H/R51I and the Task52-start continuation, controls this final shot.
+R51H supersedes R51G's prospective beta-NKCC/swelling recommendation; no new
+mechanism search is authorised.
+
+SOURCE/PROVENANCE QUALIFICATION: the accepted Task37 snapshot is
+`2ba0e4e0c2a9e940aa96ed86c3c72456afd0e3aa`. Its AE4 source allocation is
+donor-weighted, not Task40's later equal cation allocation. Task52 retains
+the exact Task37 routing and stoichiometry as required. R51G's equal-routing
+stationary pump/NHE identity is therefore not imposed on this chassis.
+The mandatory chloride-reservoir identity is routing-independent and remains
+exact. This qualifies application of later-lineage algebra, not its validity
+within the original equal-routing model.
+
+The planned isolated, byte-exact Task37 source snapshot excludes Palk and
+Task41/50 scientific dependencies, including optional imports in later generic
+selectors. The exact eight-case matrix, inherited solver/physical gates,
+observation windows and independent reservoir quadrature checks are frozen
+in Task52 ARCHITECTURE_AND_NUMERICS_FREEZE.md and output/case_matrix_52A.json.
+Matched NKCC/AE2 supply and effective apical attribution of the source-scale
+auxiliary conductances remain MODEL IDEALISATIONS. No parameter is selected
+from the AE4 phenotype. The Task50 archive ref independently remains
+`b16c30094b95f61a73d8f1977cd58e79c7bb50f6`.
+
+No Task52 model evaluation, production trajectory, stationary solve or fit
+has occurred at 52A. Publish and independently verify this boundary before
+implementation. Task52 consumes the final shot; no Task53 is authorised.
+
+## 22. R52B — prescribed projected onsets and conserved paired implementation
+
+SOFTWARE VERIFICATION / MODEL IDEALISATION. The exact Task37 snapshot and
+paired supply/shared auxiliary model pass16 fixed-state checks in one attempt,
+with no production trajectory, stationary solve or fit. All source snapshot
+hashes and runtime origins pass; Palk/Task41/Task50 are absent. Task37
+source bytes and donor-weighted AE4 routing remain unchanged.
+
+The central measured-Cl/pH projection is physically admissible. It retains
+Na11.6361257487mM andV1.4484260832pL in both genotypes. WT K/TIC are
+116.0229700/16.5973441mM; KO114.8307223/31.3895918mM. Imposed Cl/pH are
+50.10/6.91 WT and36.50/6.89 KO. The alternate concentration-preserving
+projection keeps TIC5.671746233mM, with WT/KO V1.2932920128/1.1298857751pL
+and K114.1369847/110.4377840mM. Largest charge/osmotic residuals are
+1.4211e-14fmol/5.6844e-14mOsm. Recovered pH and inherited physical/speciation
+checks pass. These nuisance coordinates, especially the central TIC difference,
+are projection assumptions; no chronic equilibrium is claimed.
+
+WT parent RHS nests exactly with zero auxiliary current. Null AE4 is exactly
+zero. Matched and x1.05/x1.10 NKCC/AE2 cycle sources are imposed exactly with
+complete signed stoichiometry; local NHE1/NBC/pump/K/voltage/water remain local.
+Identical native/auxiliary/total current laws and source signs pass, including
+IPR-only zero-NBC recruitment, beta-zero nesting and chloride cancellation.
+All inherited conservation gates remain unchanged. This is implementation
+verification, not evidence yet for a secretion phenotype. See Task52
+IMPLEMENTATION_VERIFICATION.md and output/verification_attempt_01.json.
+Publish and independently verify52B before52C; no retuning or new case follows.
+
+## 23. R52D — fresh recovery execution blocked by frozen output serialisation
+
+SOFTWARE EXECUTION FAILURE / UNRESOLVED numerical result. The fresh recovery
+branch `analysis/task-52D-recovery-from-52C` started exactly at verified52C
+`36f7c3d0bb2353bf55ac0ed9e22582720097c829`. All52 checkpoint artifact hashes,
+all50 immutable scientific/input hashes, the freeze SHA and ledger prefix
+passed, with Python/NumPy/SciPy versions matching the freeze. No52A/B/C
+scientific rerun or recovery of previous unpublished52D work occurred.
+
+The sole fresh process started central matched-supply CCh+IPR case01 at G_aux0.
+The frozen reporter then raised its diagnostic-column assertion before saving
+any trajectory/summary. Exact-zero inactive NBC lacks two current keys emitted
+by active NBC; the runner requires identical onset/subsequent column tuples.
+This is a source-level software blocker, not a biological failure or verified
+600s result. No numerical endpoint, secretion headline or chloride budget can
+be reported. Cases02/03 were not launched; the stage record remains incomplete.
+
+The original traceback/start/stage records are preserved. No completed52D
+checkpoint is claimed. All50 scientific/input hashes remain unchanged; no
+fallback, tuning, mechanism search,52E or52F followed. The frozen no-replay and
+failure rules require explicit authority for a reporting-only correction and
+fresh attempt. See Task52 SOFTWARE_BLOCKER_52D.md and output/failure_52D.json.
+This append qualifies execution readiness of52C's frozen reporter without
+rewriting its historical static review or changing its scientific freeze.
+
+## 24. R52D continuation — authorised reporting recovery; three central cases complete
+
+NUMERICAL PREDICTION under frozen MODEL IDEALISATIONS. User authorisation at
+`f2b56f903d33a0ac5f5c292db92cead8b6157f1f` permits the bounded union-schema
+reporting repair and fresh 52D execution. This supersedes section 23's
+operational stop; its original failure evidence at `9c0fde42` remains intact.
+All 50 immutable scientific/input hashes, 52C onset states, parameters, solver,
+quadrature, diagnostic definitions and physical/conservation gates are unchanged.
+No Palk/Benjamin or Task41/Task50 coupling is loaded.
+
+Exactly three matched-supply, central-projection CCh+IPR cases reached 600 s
+with Radau, at G_aux = 0, 2.32e-9 and 4.49e-9 S. WT cumulative fluid is
+0.9729547286, 0.9786120576 and 0.9827438302 pL; KO is 0.7779801601,
+0.7821483215 and 0.7851967712 pL. KO cumulative deficits are 20.0394286%,
+20.0757527% and 20.1015822%; broad 60–600 s mean-flow deficits are
+19.7626910%, 19.7883156% and 19.8061034%. Endpoint flow deficits are
+20.9338821%, 20.8994193% and 20.8726980%. These are the frozen trapezoidal
+observations, not a fit or final mechanistic classification.
+
+The independent Gauss8 chloride differences are 41.60011831, 41.86355604
+and 42.05465167 fmol. Each uses initial delta = 19.69859473 fmol,
+D_N = D_E = 0, D_A = 46.63671309, 46.65241768, 46.66367903 fmol and final
+delta = 24.73518958, 24.48745644, 24.30762217 fmol. Absolute identity errors
+are 6.87e-8, 7.23e-8 and 7.49e-8 fmol, all below the unchanged 1e-5 gate;
+all 4/8-node cross-checks and separately bounded onset terms pass. All sampled
+physical/conservation gates pass. No BDF fallback was used.
+
+The serialiser preserves every original named diagnostic with a union schema,
+NaN plus presence mask for absent fields, and JSON null where needed. A separate
+pre-model output-path setup failure was preserved and corrected solely in
+bookkeeping; it created no scientific case. The fresh scientific execution
+has 3 parent factories, 5 constructor core evaluations, 21,583 paired and
+43,166 local evaluations. The earlier failed process's count remains unknown.
+
+Complete evidence: Task52 PRODUCTION_SUMMARY_52D.md, output/summary_52D.json,
+output/reporter_recovery_52D/ and output/checkpoints/52D.json. Independent
+saved-output audit verifies exact cases, onsets, grids, hashes, masks, matched
+supply/shared conductances, chloride amount differences and integrals without
+model evaluation. No extra case, tuning, mechanism search, 52E or 52F occurred.
+Stop after remote 52D publication verification; no final 52F classification.

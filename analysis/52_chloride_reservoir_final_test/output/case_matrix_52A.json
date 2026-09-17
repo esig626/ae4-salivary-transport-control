@@ -1,0 +1,139 @@
+{
+  "allowed_G_aux_S": [
+    0.0,
+    2.32e-09,
+    4.49e-09
+  ],
+  "allowed_ko_supply_multipliers": [
+    1.0,
+    1.05,
+    1.1
+  ],
+  "blas_threads": 1,
+  "cases": [
+    {
+      "G_aux_S": 0.0,
+      "checkpoint": "52D",
+      "id": "case_01",
+      "ko_supply_multiplier": 1.0,
+      "projection": "central",
+      "protocol": "CCH_IPR"
+    },
+    {
+      "G_aux_S": 2.32e-09,
+      "checkpoint": "52D",
+      "id": "case_02",
+      "ko_supply_multiplier": 1.0,
+      "projection": "central",
+      "protocol": "CCH_IPR"
+    },
+    {
+      "G_aux_S": 4.49e-09,
+      "checkpoint": "52D",
+      "id": "case_03",
+      "ko_supply_multiplier": 1.0,
+      "projection": "central",
+      "protocol": "CCH_IPR"
+    },
+    {
+      "G_aux_S": 2.32e-09,
+      "checkpoint": "52E",
+      "id": "case_04",
+      "ko_supply_multiplier": 1.05,
+      "projection": "central",
+      "protocol": "CCH_IPR"
+    },
+    {
+      "G_aux_S": 2.32e-09,
+      "checkpoint": "52E",
+      "id": "case_05",
+      "ko_supply_multiplier": 1.1,
+      "projection": "central",
+      "protocol": "CCH_IPR"
+    },
+    {
+      "G_aux_S": 2.32e-09,
+      "checkpoint": "52E",
+      "id": "case_06",
+      "ko_supply_multiplier": 1.0,
+      "projection": "alternate",
+      "protocol": "CCH_IPR"
+    },
+    {
+      "G_aux_S": 2.32e-09,
+      "checkpoint": "52E",
+      "id": "case_07",
+      "ko_supply_multiplier": 1.0,
+      "projection": "central",
+      "protocol": "CCH_ONLY"
+    },
+    {
+      "G_aux_S": 2.32e-09,
+      "checkpoint": "52E",
+      "id": "case_08",
+      "ko_supply_multiplier": 1.0,
+      "projection": "central",
+      "protocol": "IPR_ONLY"
+    }
+  ],
+  "conservation_tolerances": {
+    "ae4_charge_fmol_s": 1e-10,
+    "apical_current_A": 1e-20,
+    "basolateral_current_A": 1e-20,
+    "buffer_site_accounting_fmol_s": 1e-10,
+    "carbon_accounting_fmol_s": 1e-10,
+    "cell_bulk_charge_rate_fmol_s": 1e-10,
+    "cell_speciation_alkalinity_mM": 1e-09,
+    "homeostasis_charge_fmol_s": 1e-10,
+    "lumen_bulk_charge_rate_minus_outflow_fmol_s": 1e-10,
+    "lumen_speciation_alkalinity_mM": 1e-09,
+    "water_volume_accounting_pL_s": 1e-12
+  },
+  "duration_s": 600.0,
+  "measured_onset": {
+    "AE4_KO": {
+      "cl_i_mM": 36.5,
+      "ph_i": 6.89
+    },
+    "WT": {
+      "cl_i_mM": 50.1,
+      "ph_i": 6.91
+    }
+  },
+  "observation": {
+    "broad_window_s": [
+      60.0,
+      600.0
+    ],
+    "cumulative_times_s": [
+      60,
+      120,
+      180,
+      240,
+      300,
+      360,
+      420,
+      480,
+      540,
+      600
+    ],
+    "grid_step_s": 1.0,
+    "headline_quadrature": "one-second trapezoid with onset samples",
+    "quadrature_crosscheck_abs_tolerance_fmol": 1e-06,
+    "reservoir_identity_abs_tolerance_fmol": 1e-05,
+    "reservoir_quadrature": "8-node Gauss-Legendre per accepted dense step, independent 4-node cross-check"
+  },
+  "production_trajectories_at_freeze": 0,
+  "retuning_allowed": false,
+  "scientific_processes": 1,
+  "solver": {
+    "amount_atol_fmol": 1e-10,
+    "fallback": "BDF only after explicit solver-status failure; same tolerances",
+    "integration_start_s": 1e-06,
+    "max_step_s": 2.0,
+    "method": "Radau",
+    "regulatory_atol": 1e-10,
+    "rtol": 1e-07,
+    "volume_atol_pL": 1e-12
+  }
+}

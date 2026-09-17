@@ -1,0 +1,3 @@
+{"stage": "52D", "id": "case_01", "status": "completed", "selected_attempt": "Radau", "attempts": ["Radau"], "summary_sha256": "ae80a6bf2a82aedaea40a561196b153d16631499aee0177ed1fff0a45a166d9e", "T_s": 600.0, "mass_budget_pass": true}
+{"stage": "52D", "id": "case_02", "status": "completed", "selected_attempt": "Radau", "attempts": ["Radau"], "summary_sha256": "8bee8705e61ebd27526e044a80201bffa2a64991f7db6bebfa2cd62a1bb29eb3", "T_s": 600.0, "mass_budget_pass": true}
+{"stage": "52D", "id": "case_03", "status": "completed", "selected_attempt": "Radau", "attempts": ["Radau"], "summary_sha256": "0553b9544ff6711d09c735a8c2886f948854a797a936aca99a15f338a255759b", "T_s": 600.0, "mass_budget_pass": true}
