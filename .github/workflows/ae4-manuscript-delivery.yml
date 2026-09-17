@@ -1,0 +1,31 @@
+name: AE4 manuscript delivery
+on:
+  push:
+    branches: [manuscript/task52-reservoir-synthesis]
+    paths:
+      - .github/workflows/ae4-manuscript-delivery.yml
+      - manuscript/scripts/deliver_revision.py
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Package recorded sources without scientific execution
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p delivery
+          git rev-parse HEAD > delivery/manuscript-source-sha.txt
+          git archive --format=tar HEAD | gzip -1 > delivery/manuscript-source.tar.gz
+          git fetch --no-tags --depth=1 origin analysis/task-52-manuscript-integration-transfer
+          git rev-parse FETCH_HEAD > delivery/results-source-sha.txt
+          git archive --format=tar FETCH_HEAD | gzip -1 > delivery/recorded-results.tar.gz
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ae4-manuscript-recorded-sources
+          path: delivery/
+          retention-days: 7
