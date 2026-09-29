@@ -94,7 +94,6 @@ def main():
     np.savetxt(output / 'Fig_4_data.csv', np.column_stack((plot_time, *[v for v, _ in series])),
                delimiter=',', header='time_s,additional_export,Ae4_uptake,initial_difference,remaining_difference,equation_rhs', comments='')
     print('Plotted Fig_1 to Fig_4 from stored data. No ODE was integrated.')
-    print('Fig_5 is not generated because the full continuation dataset is not supplied.')
 
 
 if __name__ == '__main__':

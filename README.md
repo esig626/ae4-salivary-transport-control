@@ -1,15 +1,25 @@
 # Ae4 salivary secretion
 
-## Manuscript model, data and reproduction
+Code, numerical data and supplementary material for **Intracellular chloride availability limits Slc4a9-dependent salivary secretion**.
 
-**Start in [reviewer/](reviewer/README.md).** This folder identifies the model used for the principal control and Ae4 knockout comparison and separates its complete archived simulations from earlier summary material.
+## Start here
 
-The model entry is [reviewer/model/task52_model.py](reviewer/model/task52_model.py). Its isolated dependencies are under [reviewer/model/frozen_task37/](reviewer/model/frozen_task37/). The [parameter document](reviewer/PARAMETERS.md), [full precision onset and case records](reviewer/parameters/), [archived central trajectories](reviewer/data/central/) and [Python scripts](reviewer/scripts/) are grouped together for reviewers and readers.
+**Manuscript model**  
+[`supplementary_material/model/ae4_salivary_model.py`](supplementary_material/model/ae4_salivary_model.py)
 
-The release contains the three complete combined stimulation cases. The later full compensation continuation and complete single stimulus records are not yet deposited in this review package. See [reproducibility coverage](reviewer/REPRODUCIBILITY_STATUS.md) before treating the package as a complete reproduction of every current manuscript result.
+**Supplementary material**  
+[`supplementary_material/`](supplementary_material/README.md)
 
-## Research history
+The supplementary directory contains the model used for the principal control and Ae4 knockout simulations, its preserved transport dependencies, full-precision parameter and onset records, stored simulation data, and the Python scripts used to rerun the principal simulations and plot the numerical results.
 
-The numbered analysis folders, source modules, earlier manuscripts and scientific ledgers remain unchanged. They document the development of several different constructions and should not be interchanged with the principal manuscript model. The previous repository introduction is preserved in [archive/README_before_review_package_20260929.md](archive/README_before_review_package_20260929.md).
+The principal public model entry point is `PairedModel` in `supplementary_material/model/ae4_salivary_model.py`.
 
-This repository concerns Ae4, encoded by Slc4a9, a member of solute carrier family 4.
+## Repository structure
+
+- `supplementary_material/` manuscript model, parameter records, numerical data and plotting scripts
+- `manuscript/` manuscript source and figures
+- `analysis/` numbered scientific analyses and development history
+- `archive/` earlier material retained for provenance
+- `docs/` project ledgers and supporting documentation
+
+The historical analysis directories are retained to document the development of the model. For the simulations reported in the current manuscript, use the model identified above.

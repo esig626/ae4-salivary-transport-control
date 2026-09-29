@@ -1,0 +1,10 @@
+\section{Model code and simulation data}
+\label{app:code}
+
+The model implementation, parameter records, simulation data, and Python analysis scripts are available in the supplementary material of the accompanying repository,
+\begin{center}
+\url{https://github.com/esig626/ae4-salivary-transport-control/tree/main/supplementary_material}
+\end{center}
+The manuscript model entry point is \path{model/ae4_salivary_model.py}, with the underlying transport, membrane, acid base, and water submodels in \path{model/frozen_task37/src/modern_full_model/}. These files implement the principal comparison described in \cref{app:model,app:onset}.
+
+The parameter document \path{PARAMETERS.md} identifies parameter definitions, units, and source locations. Full precision onset states, prescribed inputs, and numerical settings are provided in \path{parameters/}. Stored trajectories and numerical summaries for the principal simulations are in \path{data/central/}. The Python scripts in \path{scripts/} provide entry points for rerunning the principal simulations, checking the supplied files, exporting model parameters, and plotting the stored numerical results. Data and the Python plotting material supplied in \path{ae4_sections.zip} are retained under \path{provenance/ae4_sections/}. The rounded parameter tables in \cref{app:parameters} are for presentation; the numerical implementation retains the source precision.

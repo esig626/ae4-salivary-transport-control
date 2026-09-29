@@ -1,8 +1,9 @@
-"""Task52 paired chloride-reservoir experiment on byte-exact Task37 sources.
+"""Ae4 salivary secretion model used in the manuscript.
 
-No model is constructed at import. The isolated package contains only the
-historical pre-Palk dependency closure. All source replacements are explicit
-electroneutral cycle vectors, after the final local NBC/homeostasis evaluation.
+The public model entry point is PairedModel. It evaluates the paired control
+and Ae4-knockout system used for the principal simulations. The preserved
+transport, membrane, acid-base and water submodels are loaded from the adjacent
+frozen_task37 source directory.
 """
 from pathlib import Path
 from dataclasses import replace
