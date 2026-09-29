@@ -12,7 +12,7 @@ import traceback
 import numpy as np
 from scipy.integrate import Radau, BDF
 from threadpoolctl import threadpool_limits, threadpool_info
-from task52_model import PairedModel, COUNTS, dependency_audit
+from ae4_salivary_model import PairedModel, COUNTS, dependency_audit
 from diagnostics import diagnose, flux_values
 
 TASK = Path(__file__).resolve().parent

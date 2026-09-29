@@ -2,7 +2,7 @@
 from dataclasses import asdict
 import math
 import numpy as np
-from task52_model import current_to_fmol_s
+from ae4_salivary_model import current_to_fmol_s
 from task52_pre_palk.validation import CONSERVATION_RESIDUAL_TOLERANCES
 
 LIMITS = (('na_i_mM',None,40.,False),('k_i_mM',50.,200.,True),

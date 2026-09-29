@@ -24,7 +24,7 @@ def main():
     args = parser.parse_args()
     from verify_files import verify
     verify()
-    from task52_model import make_parent, CARRIER
+    from ae4_salivary_model import make_parent, CARRIER
     parent = make_parent('CCH_IPR')
     freeze = json.loads((ROOT / 'parameters/parameter_and_case_freeze.json').read_text())
     record = {'whole_cell_parameters': parent.parameters,

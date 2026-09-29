@@ -7,10 +7,9 @@
   "uploaded_archive_sha256": "58d122f5c4acdd9bf8d9375f6c058fdf52ec557a856d091ad6792748af944286",
   "archive_scope": "Selected original data, plotting script and provenance notes. Earlier PDF figures and manuscript records are not presented as current results.",
   "git_blobs": {
-    "model/task52_model.py": "d27d77427ead1d0adb9d75e70fa5929ffa76985e",
-    "model/diagnostics.py": "85ab0eb2000e0242966720131c2f117eaf25a95c",
+    "model/diagnostics.py": "dcab6aff33b3e5612e33a82ced37bec0bbb5bf18",
     "model/project_onset.py": "0beaffc48641c50d0789e246577d37b945c803a5",
-    "model/run_frozen_cases.py": "d784acd034620e5c7c2e0cc2fc0471a41ce7e66e",
+    "model/run_frozen_cases.py": "a484d3ffc6c5f029553a1a7c911233a78bd84ee5",
     "model/run_reporter_recovery_52D.py": "026a596c6dfcfe9610e7593c0e07ebfd9ed47d67",
     "parameters/parameter_and_case_freeze.json": "274390a490d2d7bc9a4a31a5e2f063a17fbeaac5",
     "parameters/projected_onsets.json": "e5d43df8b329c6739913a5a5cb1e09c921cb817d",
