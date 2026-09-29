@@ -1,64 +1,77 @@
 # Supplementary material
 
-This directory accompanies **Intracellular chloride availability limits Slc4a9-dependent salivary secretion**.
+This directory accompanies **Chloride availability limits Slc4a9-dependent salivary secretion**.
 
-## Run the model
+## Start here
 
-The model used for the principal control and Ae4 knockout simulations is
+The manuscript model is **[`model/ae4_salivary_model.py`](model/ae4_salivary_model.py)** and the executable simulation script is **[`model/run_model.py`](model/run_model.py)**.
 
-**[`model/ae4_salivary_model.py`](model/ae4_salivary_model.py)**
-
-and the directly executable script is
-
-**[`model/run_model.py`](model/run_model.py)**.
-
-The public model class is `PairedModel`. It evaluates the 26-variable paired control and knockout system. The transport, membrane, acid-base and water submodels used by this entry point are retained under [`model/frozen_task37/src/modern_full_model/`](model/frozen_task37/src/modern_full_model/).
-
-From the repository root,
+From the repository root:
 
 ```bash
 python -m venv .venv
-. .venv/bin/activate
+source .venv/bin/activate
 python -m pip install -r supplementary_material/requirements.txt
 python supplementary_material/model/run_model.py
 ```
 
-This runs `case_02`, the principal manuscript case. To run all three principal auxiliary-conductance cases,
+The default command runs the principal combined CCh + IPR control versus Ae4 knockout comparison.
+
+## Article simulations
 
 ```bash
-python supplementary_material/model/run_model.py --case all --output ae4_output
+# Principal comparison
+python supplementary_material/model/run_model.py --simulation principal --output output_principal
+
+# Auxiliary conductance sensitivity
+python supplementary_material/model/run_model.py --simulation auxiliary --output output_auxiliary
+
+# CCh alone
+python supplementary_material/model/run_model.py --simulation cch-only --output output_cch
+
+# IPR alone
+python supplementary_material/model/run_model.py --simulation ipr-only --output output_ipr
+
+# Compensation at sigma = 1.49
+python supplementary_material/model/run_model.py --simulation compensation --sigma 1.49 --output output_sigma_149
+
+# Manuscript compensation root
+python supplementary_material/model/run_model.py --simulation compensation-root --output output_sigma_root
+
+# 41-point compensation scan
+python supplementary_material/model/run_model.py --simulation compensation-scan --output output_compensation
 ```
 
-Use the model identified above rather than selecting one of the historical model variants elsewhere in the repository.
+The IPR-only knockout reaches the prescribed intracellular pH acceptance limit before 600 s, so that run records the accepted trajectory up to the stopping point.
 
 ## Contents
 
 | Location | Contents |
 | --- | --- |
 | [`model/ae4_salivary_model.py`](model/ae4_salivary_model.py) | **Manuscript model and public model class** |
-| [`model/run_model.py`](model/run_model.py) | **Directly executable simulation script** |
+| [`model/run_model.py`](model/run_model.py) | **Directly executable article simulations** |
 | `model/frozen_task37/` | Transport, membrane, acid-base and water model dependencies |
-| `parameters/parameter_and_case_freeze.json` | Full-precision model inputs, cases and numerical settings |
+| `parameters/parameter_and_case_freeze.json` | Full-precision model inputs and numerical settings |
 | `parameters/projected_onsets.json` | Control and Ae4 knockout onset states |
-| [`PARAMETERS.md`](PARAMETERS.md) | Parameter document with definitions, units and source locations |
-| `data/central/` | Stored numerical trajectories and summaries for the principal simulations |
+| [`PARAMETERS.md`](PARAMETERS.md) | Parameter definitions, units and source locations |
+| `data/central/` | Stored principal numerical trajectories and summaries |
 | `data/summary_52D.csv` | Compact principal simulation summary |
-| `scripts/plot_figures.py` | Python plotting script for the manuscript numerical figures |
-| `scripts/export_parameters.py` | Export the constructed model parameters |
-| `scripts/verify_files.py` | Check the supplied scientific files against the manifest |
+| `scripts/plot_figures.py` | Plot numerical manuscript figures from stored trajectories |
+| `scripts/export_parameters.py` | Export constructed model parameters |
+| `scripts/verify_files.py` | Check supplied scientific files against the manifest |
 | `provenance/ae4_sections/` | Data and Python plotting material supplied in `ae4_sections.zip` |
 | [`SOURCE_MANIFEST.json`](SOURCE_MANIFEST.json) | Source revision and file identifiers |
 
-## Plotting the numerical figures
+## Plot figures
 
 ```bash
-python supplementary_material/scripts/plot_figures.py --output ae4_figures
+python supplementary_material/scripts/plot_figures.py --output article_figures
 ```
 
-The plotting script reads the stored numerical trajectories and exports the plotted values alongside EPS, PDF and PNG versions.
+## Export parameters
 
-## Parameters and data
+```bash
+python supplementary_material/scripts/export_parameters.py --output ae4_parameters.json
+```
 
-The appendix tables contain rounded values for presentation. The numerical implementation uses the full-precision values retained in the model and parameter records. The control and knockout onset states, prescribed inputs, solver settings and case definitions are in `parameters/`.
-
-The material supplied in `ae4_sections.zip` is retained under `provenance/ae4_sections/`, including its data files and Python summary plotting script.
+The manuscript tables contain rounded values for readability. The simulations use the full-precision parameter and onset records retained in `parameters/`.

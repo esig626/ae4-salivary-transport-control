@@ -32,7 +32,8 @@ from task52_pre_palk.membranes import hill_activation, nernst_voltage_V, current
 from task52_pre_palk.validation import StimulusArm, sha256_object
 
 ALLOWED_G = (0.0, 2.32e-9, 4.49e-9)
-ALLOWED_SUPPLY = (1.0, 1.05, 1.10)
+SUPPLY_MIN = 1.0
+SUPPLY_MAX = 2.01
 CARRIER = 2.339370005697548e-05
 CHECKPOINT = FROZEN / 'results/31_nhe1_mechanistic_repair/rest_checkpoints/185f5cee3bcec7a023cf82e4092872114f2292732ad9c4bab68ecf4e062f76e3.json'
 COUNTS = {'parent_factories': 0, 'constructor_core_evaluations': 0,
@@ -131,8 +132,8 @@ class SharedAuxiliaryModel:
 
 class PairedModel:
     def __init__(self, *, protocol='CCH_IPR', G_aux_S=2.32e-9, ko_supply_multiplier=1.0):
-        if ko_supply_multiplier not in ALLOWED_SUPPLY:
-            raise ValueError('Only matched, x1.05 and x1.10 KO supply are permitted')
+        if not (SUPPLY_MIN <= float(ko_supply_multiplier) <= SUPPLY_MAX):
+            raise ValueError(f'ko_supply_multiplier must lie between {SUPPLY_MIN} and {SUPPLY_MAX}')
         self.local = SharedAuxiliaryModel(make_parent(protocol), G_aux_S)
         self.ko_supply_multiplier = float(ko_supply_multiplier)
         self.parameters = self.local.parameters
