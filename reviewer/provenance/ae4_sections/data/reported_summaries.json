@@ -1,0 +1,10 @@
+{
+  "status": "Reported summaries only, not independently reverified trajectories",
+  "CCh_only_deficit_percent": 18.92,
+  "IPR_only_failure_time_s": 488,
+  "supply_1_05_deficit_percent": 17.65,
+  "supply_1_10_deficit_percent": 15.3,
+  "alternate_onset_deficit_percent": 19.77,
+  "source": "manuscript/reported_continuation_summary.md",
+  "ref": "c44160e1849828cde887a5e24618335c88f97af7"
+}

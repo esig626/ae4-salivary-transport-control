@@ -1,0 +1,48 @@
+{
+  "case_01": {
+    "expected_git_blob": "7ba6d50af999eec890e061d2e56c43169b1aa4d7",
+    "copied_git_blob": "7ba6d50af999eec890e061d2e56c43169b1aa4d7",
+    "match": true
+  },
+  "case_02": {
+    "expected_git_blob": "c75b92e6dee81a951b008df90d92035e862186b1",
+    "copied_git_blob": "c75b92e6dee81a951b008df90d92035e862186b1",
+    "match": true
+  },
+  "case_03": {
+    "expected_git_blob": "726b2c0c52d0b9d0ba35c11104afc23d777ef88b",
+    "copied_git_blob": "726b2c0c52d0b9d0ba35c11104afc23d777ef88b",
+    "match": true
+  },
+  "figures": {
+    "method": "Vector figure regions reused from supplied reading PDF; no data curves or labels altered.",
+    "source_reading_pdf_sha256": "5a8e0993d6b9f01b009c8a0222b9f133c1fa46df2b634d8a62dc892f60fec7b8",
+    "repository_correspondence": [
+      "fig05_fluid_flow",
+      "fig06_chloride",
+      "fig07_reservoir_budget",
+      "fig08_driving_force"
+    ]
+  },
+  "central_arithmetic": {
+    "fluid_deficit_percent": 20.07575265451126,
+    "initial_WT_Cl_fmol": 72.5661467695488,
+    "initial_KO_Cl_fmol": 52.867552037695226,
+    "endpoint_driving_WT_mV": 2.029506605134849,
+    "endpoint_driving_KO_mV": 1.6489974888852579,
+    "endpoint_apical_export_deficit_percent": 18.748848379545347,
+    "range_conductance_fluid_deficit_pp": 0.06215357320604653,
+    "cumulative_deficit_180_600_min_percent": 19.83553502745363,
+    "cumulative_deficit_180_600_max_percent": 20.290569933238856,
+    "WT_volume_change_percent": -3.9248953172749568,
+    "KO_volume_change_percent": -7.472772257885807,
+    "WT_pH_change": 0.11942094186038066,
+    "KO_pH_change": 0.38440451510280393
+  },
+  "scientific_execution": {
+    "new_model_evaluations": 0,
+    "new_trajectories": 0,
+    "new_fits": 0,
+    "scope": "Read records, transcribe with hashes, calculate displayed ratios and reuse figures."
+  }
+}

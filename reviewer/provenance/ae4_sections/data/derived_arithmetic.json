@@ -1,0 +1,15 @@
+{
+  "WT_log_secant_G_2_32_to_4_49": 0.006380854847407686,
+  "WT_fraction_change_G_0_to_4_49": 0.010061209731867748,
+  "KO_log_secant_G_2_32_to_4_49": 0.005891327689842519,
+  "KO_fraction_change_G_0_to_4_49": 0.009276086360795466,
+  "ratio_log_secant": -0.0004895271575651667,
+  "normalised_initial_difference_fmol": 0.08578393826804889,
+  "normalised_ae4_input_fmol": 0.20316312774697562,
+  "normalised_remaining_difference_fmol": 0.10663859426657098,
+  "normalised_excess_apical_export_fmol": 0.18230847206200096,
+  "WT_aux_fraction": 0.13203863988340844,
+  "KO_aux_fraction": 0.13203863988198436,
+  "beta_deficit_difference_percentage_points": 1.1557526545112573,
+  "min_Ae4_input_for_extra_export_fmol": 22.164961312
+}

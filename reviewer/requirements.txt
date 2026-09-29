@@ -1,0 +1,8 @@
+# Numerical and plotting versions recorded in requirements-analysis.txt.
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8
+# Additional dependencies of the archived runner and summary plotting script.
+# Their historical versions were not specified in the supplied package.
+threadpoolctl
+pandas

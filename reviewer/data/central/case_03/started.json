@@ -1,0 +1,11 @@
+{
+  "case": {
+    "G_aux_S": 4.49e-09,
+    "checkpoint": "52D",
+    "id": "case_03",
+    "ko_supply_multiplier": 1.0,
+    "projection": "central",
+    "protocol": "CCH_IPR"
+  },
+  "freeze_sha256": "9cebb8fcf85557643f6c7838ff57f9fb9603f5a7479cbe6fb63ba8c40b417ba2"
+}

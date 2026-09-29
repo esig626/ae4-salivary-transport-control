@@ -1,0 +1,41 @@
+{
+  "cases": [
+    "case_01",
+    "case_02",
+    "case_03"
+  ],
+  "checks": [
+    "exact frozen cases and onsets",
+    "600s Radau and no fallback",
+    "summary and NPZ SHA256",
+    "integer0..600 grid and accepted-step validation",
+    "26 finite paired states and156 union fields",
+    "exactly4 masked absent onset current values per case",
+    "frozen positivity/physical ranges and conservation ratios",
+    "matched NKCC/AE2,shared conductances,zero KO AE4",
+    "delta from paired chloride amounts",
+    "Gauss8 plus onset budget,Gauss4 cross-check",
+    "independent saved-array trapezoidal headlines and broad windows"
+  ],
+  "headline_fluid_deficit_percent": [
+    20.0394286366602,
+    20.0757526545115,
+    20.1015822098661
+  ],
+  "immutable_input_count": 50,
+  "original_failure_artifacts_unchanged": [
+    "execution_52D.json",
+    "execution_52D.log",
+    "failure_52D.json",
+    "cases/case_01/started.json",
+    "launch_52D_recovery.py"
+  ],
+  "pass": true,
+  "reservoir_error_fmol": [
+    6.874628866171406e-08,
+    7.2253648397691e-08,
+    7.487736297662195e-08
+  ],
+  "reviewer": "independent reporter_review agent",
+  "scope": "read-only saved-output audit; no model evaluation"
+}

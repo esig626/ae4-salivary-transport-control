@@ -1,0 +1,26 @@
+{
+  "scope": "Static symbolic deductions and arithmetic using recorded summaries only",
+  "new_trajectory_integrations": 0,
+  "new_parameter_fits": 0,
+  "donor_allocation_export_identity_residual": "0",
+  "equal_allocation_export_identity_residual": "0",
+  "charge_source_matches_electrical_fluxes_residual": "0",
+  "carrier_occupancy_elimination_residual": "0",
+  "carrier_amount_rate_scaling_residual": "0",
+  "WT_logarithmic_secant": 0.006380854847407686,
+  "KO_logarithmic_secant": 0.005891327689842519,
+  "ratio_logarithmic_secant": -0.0004895271575649796,
+  "normalised_chloride_budget": {
+    "initial_difference": 0.08578393826804889,
+    "continued_Ae4_input": 0.20316312774697562,
+    "remaining_difference": 0.10663859426657098,
+    "excess_apical_export": 0.18230847206200096
+  },
+  "normalised_budget_residual": -3.135474102577973e-10,
+  "deficit_range_percentage_points": 0.06215357320605008,
+  "checks_pass": true,
+  "input_sha256": {
+    "data/central_results.csv": "f19990eefe7cc67c657c016b103073f58d2639b709d8f976c416309fd8ba6ce5",
+    "data/gauss_totals.json": "78501bb1ce2d60e3ffccfd3d970f2ff93c1cecf6e4d3eb827c9fe58ff5e33cc8"
+  }
+}

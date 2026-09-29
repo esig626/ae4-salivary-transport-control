@@ -1,0 +1,21 @@
+{
+  "pages": 13,
+  "sections": [
+    "Results",
+    "Model analysis",
+    "Discussion"
+  ],
+  "results_subsections": 3,
+  "model_analysis_subsections": 5,
+  "figures": 5,
+  "plot_assets": 7,
+  "tables": 3,
+  "numbered_equations": 2,
+  "unresolved_citations_or_references": false,
+  "overfull_boxes": false,
+  "latex_warnings": false,
+  "replacement_glyphs": 0,
+  "visual_review": "All pages rendered and reviewed in page montages; the analytical equations, class plot and table, and final bibliography also inspected at larger scale.",
+  "scope": "Document review, symbolic identities and summary arithmetic only. No new dynamical model evaluation or trajectory integration.",
+  "pdf_sha256": "6110d2f2edd84967b1d99391f31f457a93165e3d84a49371356fa002b59c38cf"
+}

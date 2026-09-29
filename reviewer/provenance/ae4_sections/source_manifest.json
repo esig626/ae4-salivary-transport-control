@@ -1,0 +1,58 @@
+{
+  "repository": "esig626/ae4-salivary-transport-control",
+  "read_revision": "c44160e1849828cde887a5e24618335c88f97af7",
+  "scientific_revision": "764e32a648ee3b69265364788df5a59f76cb2843",
+  "central_records": "analysis/52_chloride_reservoir_final_test/output/reporter_recovery_52D/cases",
+  "central_summary": "analysis/52_chloride_reservoir_final_test/PRODUCTION_SUMMARY_52D.md",
+  "continuation_status": "Reported summaries only; raw trajectories not available in this snapshot",
+  "source_pdf_sha256": "5a8e0993d6b9f01b009c8a0222b9f133c1fa46df2b634d8a62dc892f60fec7b8",
+  "source_class_plot_crop": {
+    "page_one_based": 14,
+    "rectangle_pdf_points": [
+      80,
+      74,
+      518,
+      342
+    ]
+  },
+  "figures": {
+    "conductance_normalised": {
+      "kind": "New plot of recorded numerical summaries",
+      "sha256": "e6bf521190ed22ec41ebc943b938543605370617e94435f1a748870874d8645e"
+    },
+    "cumulative_central": {
+      "kind": "New plot of recorded numerical summaries",
+      "sha256": "cd7ce5a90c20eb70c02b6a4dfa94d4d4e69710a6c745d679baf51e184f4b3d47"
+    },
+    "fig05_fluid_flow": {
+      "kind": "Vector plot reused from supplied manuscript",
+      "sha256": "b6f9c58b895e63558c559d008c1a58bb5adc0e07642991d49670bfb971eb510e"
+    },
+    "fig06_chloride": {
+      "kind": "Vector plot reused from supplied manuscript",
+      "sha256": "bb27c873329a166deab8a313f2559574fc8a4f5fb74180f095e354c0b7362251"
+    },
+    "fig07_reservoir_budget": {
+      "kind": "Vector plot reused from supplied manuscript",
+      "sha256": "faf6c013995ab1c89cfa2ab0763540edeef81ef3e3704fa4139acbf48a079319"
+    },
+    "fig08_driving_force": {
+      "kind": "Vector plot reused from supplied manuscript",
+      "sha256": "46f28eb736c37981d858a4a6f44ba09852714777d74e59c04619677a02a19563"
+    },
+    "fig_source_class_ph": {
+      "kind": "Vector plot reused from supplied manuscript",
+      "sha256": "8b3a38f0d83a53e199aea24b082b192af5c46c49f7d3ce23a25b9f64cf471f1a"
+    }
+  },
+  "new_mathematical_deductions": [
+    "General donor allocation export identity",
+    "Carrier amount and common attempt rate scaling ambiguity",
+    "Associated local control identity",
+    "Full state Jacobian charge constraint"
+  ],
+  "new_numerical_analyses": "Only ratios and logarithmic finite contrasts from archived summaries; no new local sensitivity matrix",
+  "new_model_evaluations": 0,
+  "new_integrations": 0,
+  "new_fits": 0
+}

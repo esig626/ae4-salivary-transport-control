@@ -1,0 +1,1012 @@
+{
+  "accepted_steps_recorded": 326,
+  "broad_60_600": {
+    "chloride_fmol": {
+      "KO": 168.1262058618782,
+      "KO_deficit_fraction": 0.1782415405650608,
+      "WT": 204.59321584287164
+    },
+    "fluid_pL": {
+      "KO": 0.6995235475235234,
+      "KO_deficit_fraction": 0.19762690983632725,
+      "WT": 0.871818305098979
+    },
+    "mean_chloride_fmol_per_s": {
+      "KO": 0.3113448256701448,
+      "WT": 0.3788763256349475
+    },
+    "mean_fluid_pL_per_s": {
+      "KO": 0.0012954139768954138,
+      "WT": 0.001614478342775887
+    },
+    "window_s": [
+      60.0,
+      600.0
+    ]
+  },
+  "case": {
+    "G_aux_S": 0.0,
+    "checkpoint": "52D",
+    "id": "case_01",
+    "ko_supply_multiplier": 1.0,
+    "projection": "central",
+    "protocol": "CCH_IPR"
+  },
+  "completed_600s": true,
+  "cumulative_observations": {
+    "120": {
+      "chloride_fmol": {
+        "KO": 38.11231537948571,
+        "KO_deficit_fraction": 0.1960367985010254,
+        "WT": 47.405547055419945
+      },
+      "fluid_pL": {
+        "KO": 0.15975285763108615,
+        "KO_deficit_fraction": 0.20839074197622276,
+        "WT": 0.2018077176483549
+      },
+      "mean_chloride_fmol_per_s": {
+        "KO": 0.3176026281623809,
+        "WT": 0.3950462254618329
+      },
+      "mean_fluid_pL_per_s": {
+        "KO": 0.0013312738135923847,
+        "WT": 0.0016817309804029574
+      },
+      "window_s": [
+        0.0,
+        120.0
+      ]
+    },
+    "180": {
+      "chloride_fmol": {
+        "KO": 57.43224132749258,
+        "KO_deficit_fraction": 0.18801701352049238,
+        "WT": 70.73084323662984
+      },
+      "fluid_pL": {
+        "KO": 0.2406829766528478,
+        "KO_deficit_fraction": 0.20192525999739652,
+        "WT": 0.3015794944870234
+      },
+      "mean_chloride_fmol_per_s": {
+        "KO": 0.3190680073749588,
+        "WT": 0.392949129092388
+      },
+      "mean_fluid_pL_per_s": {
+        "KO": 0.0013371276480713767,
+        "WT": 0.001675441636039019
+      },
+      "window_s": [
+        0.0,
+        180.0
+      ]
+    },
+    "240": {
+      "chloride_fmol": {
+        "KO": 76.54973740260706,
+        "KO_deficit_fraction": 0.18393828955459435,
+        "WT": 93.80385873125489
+      },
+      "fluid_pL": {
+        "KO": 0.320507092068469,
+        "KO_deficit_fraction": 0.19895646438766978,
+        "WT": 0.40011195124802845
+      },
+      "mean_chloride_fmol_per_s": {
+        "KO": 0.31895723917752944,
+        "WT": 0.3908494113802287
+      },
+      "mean_fluid_pL_per_s": {
+        "KO": 0.0013354462169519541,
+        "WT": 0.0016671331302001186
+      },
+      "window_s": [
+        0.0,
+        240.0
+      ]
+    },
+    "300": {
+      "chloride_fmol": {
+        "KO": 95.42443901887395,
+        "KO_deficit_fraction": 0.18193187455430793,
+        "WT": 116.64607879311484
+      },
+      "fluid_pL": {
+        "KO": 0.39909630096674265,
+        "KO_deficit_fraction": 0.19781568954434592,
+        "WT": 0.497511975446203
+      },
+      "mean_chloride_fmol_per_s": {
+        "KO": 0.3180814633962465,
+        "WT": 0.3888202626437161
+      },
+      "mean_fluid_pL_per_s": {
+        "KO": 0.0013303210032224754,
+        "WT": 0.0016583732514873434
+      },
+      "window_s": [
+        0.0,
+        300.0
+      ]
+    },
+    "360": {
+      "chloride_fmol": {
+        "KO": 114.06674428590115,
+        "KO_deficit_fraction": 0.18109423858199658,
+        "WT": 139.29166170278873
+      },
+      "fluid_pL": {
+        "KO": 0.47654398567949213,
+        "KO_deficit_fraction": 0.1976699466513291,
+        "WT": 0.5939500629330147
+      },
+      "mean_chloride_fmol_per_s": {
+        "KO": 0.31685206746083655,
+        "WT": 0.3869212825077465
+      },
+      "mean_fluid_pL_per_s": {
+        "KO": 0.0013237332935541449,
+        "WT": 0.0016498612859250407
+      },
+      "window_s": [
+        0.0,
+        360.0
+      ]
+    },
+    "420": {
+      "chloride_fmol": {
+        "KO": 132.504308960577,
+        "KO_deficit_fraction": 0.18092445422989634,
+        "WT": 161.77300084816355
+      },
+      "fluid_pL": {
+        "KO": 0.55300655912056,
+        "KO_deficit_fraction": 0.1980616237834295,
+        "WT": 0.6895873492543967
+      },
+      "mean_chloride_fmol_per_s": {
+        "KO": 0.31548644990613567,
+        "WT": 0.38517381154324654
+      },
+      "mean_fluid_pL_per_s": {
+        "KO": 0.0013166822836203809,
+        "WT": 0.001641874641081897
+      },
+      "window_s": [
+        0.0,
+        420.0
+      ]
+    },
+    "480": {
+      "chloride_fmol": {
+        "KO": 150.76793966754164,
+        "KO_deficit_fraction": 0.18113369598244866,
+        "WT": 184.11789437157023
+      },
+      "fluid_pL": {
+        "KO": 0.6286428256438349,
+        "KO_deficit_fraction": 0.19873346793945612,
+        "WT": 0.7845614417804417
+      },
+      "mean_chloride_fmol_per_s": {
+        "KO": 0.3140998743073784,
+        "WT": 0.38357894660743796
+      },
+      "mean_fluid_pL_per_s": {
+        "KO": 0.001309672553424656,
+        "WT": 0.0016345030037092536
+      },
+      "window_s": [
+        0.0,
+        480.0
+      ]
+    },
+    "540": {
+      "chloride_fmol": {
+        "KO": 168.88624500604863,
+        "KO_deficit_fraction": 0.18155223738380222,
+        "WT": 206.3494491892771
+      },
+      "fluid_pL": {
+        "KO": 0.7035941344138718,
+        "KO_deficit_fraction": 0.1995390108200491,
+        "WT": 0.8789861641286024
+      },
+      "mean_chloride_fmol_per_s": {
+        "KO": 0.3127523055667567,
+        "WT": 0.3821286096097724
+      },
+      "mean_fluid_pL_per_s": {
+        "KO": 0.001302952100766429,
+        "WT": 0.0016277521557937081
+      },
+      "window_s": [
+        0.0,
+        540.0
+      ]
+    },
+    "60": {
+      "chloride_fmol": {
+        "KO": 18.757814311845074,
+        "KO_deficit_fraction": 0.2149392769189954,
+        "WT": 23.893456595598394
+      },
+      "fluid_pL": {
+        "KO": 0.07845661254648513,
+        "KO_deficit_fraction": 0.224249683200187,
+        "WT": 0.10113642346952638
+      },
+      "mean_chloride_fmol_per_s": {
+        "KO": 0.3126302385307512,
+        "WT": 0.39822427659330656
+      },
+      "mean_fluid_pL_per_s": {
+        "KO": 0.0013076102091080855,
+        "WT": 0.0016856070578254397
+      },
+      "window_s": [
+        0.0,
+        60.0
+      ]
+    },
+    "600": {
+      "chloride_fmol": {
+        "KO": 186.88402017372331,
+        "KO_deficit_fraction": 0.18207912006749594,
+        "WT": 228.48667243847012
+      },
+      "fluid_pL": {
+        "KO": 0.7779801600700088,
+        "KO_deficit_fraction": 0.20039428636660195,
+        "WT": 0.9729547285685054
+      },
+      "mean_chloride_fmol_per_s": {
+        "KO": 0.31147336695620553,
+        "WT": 0.38081112073078355
+      },
+      "mean_fluid_pL_per_s": {
+        "KO": 0.0012966336001166813,
+        "WT": 0.0016215912142808423
+      },
+      "window_s": [
+        0.0,
+        600.0
+      ]
+    }
+  },
+  "diagnostic_schema": {
+    "column_count": 156,
+    "encoding": "union of original names; NaN+presence mask in NPZ; null in JSON",
+    "missing_value_count": 4,
+    "original_named_values_preserved": true
+  },
+  "endpoint_at_recorded_T": {
+    "KO": {
+      "A_fmol_s": 0.0,
+      "B_fmol_s": -0.0007140788969466616,
+      "C_fmol_s": -0.001995263645368133,
+      "E_Cl_V": -0.03635871286740566,
+      "E_fmol_s": -0.0008324210433085444,
+      "G_aux_effective_S": 0.0,
+      "G_tmem16a_effective_S": 1.525061419317377e-08,
+      "H_fmol_s": 0.0012002010363516922,
+      "I_aux_A": -0.0,
+      "I_nbc_A": -6.88981395317819e-14,
+      "I_tmem16a_A": -2.885678981112337e-11,
+      "I_total_Cl_A": -2.885678981112337e-11,
+      "J_aux_fmol_s": 0.0,
+      "J_fmol_s": 0.2990795510268216,
+      "J_para_Cl_fmol_s": 0.11811181875361505,
+      "J_tmem16a_fmol_s": 0.2990795510268216,
+      "K_apical_fmol_s": 0.040685482140654136,
+      "K_basolateral_fmol_s": 0.21041218580537058,
+      "N_fmol_s": 0.14478888666733528,
+      "P_fmol_s": 0.04869596197774158,
+      "V_a_V": -0.038250885172442385,
+      "V_b_V": -0.07983020785160945,
+      "V_trans_V": -0.041579322679167065,
+      "ae4_alkalinity_cell_fmol_s": 0.0,
+      "ae4_cl_cell_fmol_s": 0.0,
+      "ae4_effective_activation_fraction": 0.9999999979388463,
+      "ae4_k_cell_fmol_s": 0.0,
+      "ae4_na_cell_fmol_s": 0.0,
+      "ae4_tic_cell_fmol_s": 0.0,
+      "alk_i_fmol": 44.23814312620138,
+      "alk_l_fmol": 0.38454480530792456,
+      "alkalinity_i_mM": 32.964198812038674,
+      "alkalinity_l_mM": 3.6216936737101,
+      "auxiliary_component_residual_A": 0.0,
+      "bath_osmolarity_mOsm": 301.1615928036609,
+      "cell_charge_fmol": 4.476419235288631e-12,
+      "cell_osmolarity_mOsm": 301.1826507148294,
+      "chloride_concentration_slope_mM_s": -0.0055926554624744825,
+      "chloride_driving_force_V": 0.0018921723050367226,
+      "chloride_equation_residual_fmol_s": 5.551115123125783e-17,
+      "cl_i_fmol": 50.460185581443085,
+      "cl_i_mM": 37.600574347205594,
+      "cl_l_fmol": 15.561093815161467,
+      "cl_l_mM": 146.55643308261915,
+      "co2_bath_to_cell_fmol_s": -0.0006879550688218927,
+      "co2_i_mM": 1.2261370733026447,
+      "co2_l_mM": 1.0954062156480207,
+      "co2_lumen_to_cell_fmol_s": -0.00130730857654624,
+      "co3_i_mM": 0.017291801194688285,
+      "co3_l_mM": 0.0007549769630627362,
+      "current_apical_total_A": -2.4550512626424288e-11,
+      "current_basolateral_old_A": 2.4619410765955883e-11,
+      "current_basolateral_total_A": 2.45505126264241e-11,
+      "current_cl_apical_A": -2.885678981112337e-11,
+      "current_cl_apical_total_A": -2.885678981112337e-11,
+      "current_cl_auxiliary_A": -0.0,
+      "current_cl_tmem16a_A": -2.885678981112337e-11,
+      "current_k_apical_A": 3.925552256803343e-12,
+      "current_k_basolateral_A": 2.030168962952633e-11,
+      "current_nbc_basolateral_A": -6.88981395317819e-14,
+      "current_para_cl_A": -1.1396058059739795e-11,
+      "current_para_hco3_A": 4.3627281422337525e-13,
+      "current_para_k_A": 1.1704477605127134e-13,
+      "current_para_na_A": -1.3707772156958979e-11,
+      "current_paracellular_total_A": -2.4550512626424127e-11,
+      "current_pump_apical_A": 3.8072492789573545e-13,
+      "current_pump_basolateral_A": 4.3177211364295525e-12,
+      "d_ae4_effective_activation_fraction_dt": 6.870512307225832e-11,
+      "d_alk_i_fmol_dt": 0.0006044642857669135,
+      "d_alk_l_fmol_dt": 4.656150307964877e-05,
+      "d_cl_i_fmol_dt": -0.010334198735459543,
+      "d_cl_l_fmol_dt": -0.00012236910670379575,
+      "d_k_i_fmol_dt": -0.008916857323206268,
+      "d_k_l_fmol_dt": -0.00037461976229711397,
+      "d_na_i_fmol_dt": -0.0008128771264844237,
+      "d_na_l_fmol_dt": 0.0002988121586721959,
+      "d_tic_i_fmol_dt": -0.002591000395952912,
+      "d_tic_l_fmol_dt": 1.0363148967851288e-06,
+      "d_volume_i_pL_dt": -7.523350916236165e-05,
+      "d_volume_l_pL_dt": -6.452205079125663e-07,
+      "hco3_i_mM": 18.33114652460293,
+      "hco3_l_mM": 3.6203824458493474,
+      "independent_cell_assembly_max_abs_fmol_s": 5.551115123125783e-17,
+      "k_i_fmol": 156.0389391068698,
+      "k_i_mM": 116.27293208181564,
+      "k_l_fmol": 2.7459095282211936,
+      "k_l_mM": 25.861337949879836,
+      "lumen_osmolarity_mOsm": 301.4511034774081,
+      "minimal_nbc_activation_fraction": 1.0,
+      "minimal_nbc_affinity_log": -0.012342810809573557,
+      "na_i_fmol": 16.721151806723977,
+      "na_i_mM": 12.459821628378075,
+      "na_l_fmol": 13.199729092248116,
+      "na_l_mM": 124.31678880644864,
+      "nhe1_stimulation_multiplier": 2.3,
+      "outflow_alkalinity_fmol_s": 0.004475087587382903,
+      "outflow_cl_fmol_s": 0.18109010137991036,
+      "outflow_k_fmol_s": 0.03195514664664195,
+      "outflow_na_fmol_s": 0.15361004232065034,
+      "outflow_tic_fmol_s": 0.005827921352112007,
+      "ph_i": 7.2746506049374675,
+      "ph_l": 6.619179249552985,
+      "q_out_pL_s": 0.001235633930022187,
+      "residual_ae4_charge_fmol_s": 0.0,
+      "residual_apical_current_A": -1.6155871338926322e-25,
+      "residual_basolateral_current_A": -2.5849394142282115e-26,
+      "residual_buffer_site_accounting_fmol_s": 0.0,
+      "residual_carbon_accounting_fmol_s": 0.0,
+      "residual_cell_bulk_charge_rate_fmol_s": 1.938553484404082e-15,
+      "residual_cell_speciation_alkalinity_mM": 3.552713678800501e-14,
+      "residual_homeostasis_charge_fmol_s": -2.992397996059992e-17,
+      "residual_lumen_bulk_charge_rate_minus_outflow_fmol_s": -1.736458199452784e-15,
+      "residual_lumen_speciation_alkalinity_mM": 4.440892098500626e-16,
+      "residual_minimal_nbc_carbon_source_fmol_s": -0.0014281577938933233,
+      "residual_minimal_nbc_charge_source_fmol_s": 0.0007140788969466616,
+      "residual_water_volume_accounting_pL_s": 0.0,
+      "speciation_i_alkalinity_residual_mM": 3.552713678800501e-14,
+      "speciation_i_buffer_h_mM": 7.756265719789379,
+      "speciation_i_buffer_minus_mM": 14.598333602790209,
+      "speciation_i_co2_mM": 1.2261370733026447,
+      "speciation_i_co3_mM": 0.017291801194688285,
+      "speciation_i_h_mM": 5.313117189147472e-05,
+      "speciation_i_hco3_mM": 18.33114652460293,
+      "speciation_i_oh_mM": 0.00018821342808748726,
+      "speciation_i_ph": 7.2746506049374675,
+      "speciation_i_total_alkalinity_mM": 32.964198812038674,
+      "speciation_i_total_carbon_mM": 19.574575399100258,
+      "speciation_l_alkalinity_residual_mM": 4.440892098500626e-16,
+      "speciation_l_buffer_h_mM": 6.650836456021641e-09,
+      "speciation_l_buffer_minus_mM": 2.7672953812034815e-09,
+      "speciation_l_co2_mM": 1.0954062156480207,
+      "speciation_l_co3_mM": 0.0007549769630627362,
+      "speciation_l_h_mM": 0.0002403370634445691,
+      "speciation_l_hco3_mM": 3.6203824458493474,
+      "speciation_l_oh_mM": 4.160823077671656e-05,
+      "speciation_l_ph": 6.619179249552985,
+      "speciation_l_total_alkalinity_mM": 3.6216936737101,
+      "speciation_l_total_carbon_mM": 4.716543638460431,
+      "task52_local_unimposed_ae2_cycles": 0.002211898588276834,
+      "task52_local_unimposed_nkcc1_cycles": 0.391171453494106,
+      "tic_i_fmol": 26.269192012753287,
+      "tic_i_mM": 19.574575399100258,
+      "tic_l_fmol": 0.5007939706066031,
+      "tic_l_mM": 4.716543638460431,
+      "time_s": 600.0,
+      "tracked_cell_osmole_residual_fmol_s": 1.8735013540549517e-16,
+      "tracked_cell_osmole_source_fmol_s": -0.022654933581103334,
+      "volume_i_pL": 1.3420057128779788,
+      "volume_l_pL": 0.10617816965011094,
+      "water_bath_to_cell_pL_s": 0.0010844824251776402,
+      "water_bath_to_lumen_pL_s": 7.52727751742725e-05,
+      "water_cell_to_lumen_pL_s": 0.0011597159343400018,
+      "water_cell_volume_source_pL_s": -7.523350916236165e-05,
+      "water_lumen_outflow_pL_s": 0.001235633930022187,
+      "water_lumen_volume_source_pL_s": -6.452205079125663e-07,
+      "water_volume_conservation_residual_pL_s": 0.0
+    },
+    "WT": {
+      "A_fmol_s": 0.07116106833856334,
+      "B_fmol_s": 0.06738680481281427,
+      "C_fmol_s": 0.005626103852010754,
+      "E_Cl_V": -0.026922744006835635,
+      "E_fmol_s": -0.0008324210433085444,
+      "G_aux_effective_S": 0.0,
+      "G_tmem16a_effective_S": 1.525061419317377e-08,
+      "H_fmol_s": 0.00626716209301632,
+      "I_aux_A": -0.0,
+      "I_nbc_A": 6.5018382428699995e-12,
+      "I_tmem16a_A": -3.5531541981072476e-11,
+      "I_total_Cl_A": -3.5531541981072476e-11,
+      "J_aux_fmol_s": 0.0,
+      "J_fmol_s": 0.36825848240726844,
+      "J_para_Cl_fmol_s": 0.13766957047238654,
+      "J_tmem16a_fmol_s": 0.36825848240726844,
+      "K_apical_fmol_s": 0.06085150100075975,
+      "K_basolateral_fmol_s": 0.17246983579944664,
+      "N_fmol_s": 0.14478888666733528,
+      "P_fmol_s": 0.06755034079424697,
+      "V_a_V": -0.02925258735156968,
+      "V_b_V": -0.07818780240221583,
+      "V_trans_V": -0.04893521505064615,
+      "ae4_alkalinity_cell_fmol_s": -0.14232213667712668,
+      "ae4_cl_cell_fmol_s": 0.07116106833856334,
+      "ae4_effective_activation_fraction": 0.9999999979388463,
+      "ae4_k_cell_fmol_s": -0.05894414228886207,
+      "ae4_na_cell_fmol_s": -0.012216926049701263,
+      "ae4_tic_cell_fmol_s": -0.14232213667712668,
+      "alk_i_fmol": 25.653912618821877,
+      "alk_l_fmol": 0.2997954127368289,
+      "alkalinity_i_mM": 18.391222889899225,
+      "alkalinity_l_mM": 2.7806742398303155,
+      "auxiliary_component_residual_A": 0.0,
+      "bath_osmolarity_mOsm": 301.1615928036609,
+      "cell_charge_fmol": 2.7000623958883807e-13,
+      "cell_osmolarity_mOsm": 301.1888995349321,
+      "chloride_concentration_slope_mM_s": -0.0036464341928352283,
+      "chloride_driving_force_V": 0.002329843344734045,
+      "chloride_equation_residual_fmol_s": 0.0,
+      "cl_i_fmol": 75.19537515803988,
+      "cl_i_mM": 53.90736786896455,
+      "cl_l_fmol": 15.914894260008799,
+      "cl_l_mM": 147.61445511935725,
+      "co2_bath_to_cell_fmol_s": 0.006771054550074742,
+      "co2_i_mM": 0.8531865923578129,
+      "co2_l_mM": 0.7386915225514141,
+      "co2_lumen_to_cell_fmol_s": -0.001144950698063988,
+      "co3_i_mM": 0.003897897180878724,
+      "co3_l_mM": 0.0006598966470279193,
+      "current_apical_total_A": -2.9131568224585e-11,
+      "current_basolateral_old_A": 2.262972998171492e-11,
+      "current_basolateral_total_A": 2.913156822458492e-11,
+      "current_cl_apical_A": -3.5531541981072476e-11,
+      "current_cl_apical_total_A": -3.5531541981072476e-11,
+      "current_cl_auxiliary_A": -0.0,
+      "current_cl_tmem16a_A": -3.5531541981072476e-11,
+      "current_k_apical_A": 5.871277284058817e-12,
+      "current_k_basolateral_A": 1.6640809387791475e-11,
+      "current_nbc_basolateral_A": 6.5018382428699995e-12,
+      "current_para_cl_A": -1.328309422984596e-11,
+      "current_para_hco3_A": 4.216737669160465e-13,
+      "current_para_k_A": 3.089621269800162e-14,
+      "current_para_na_A": -1.6301043974352987e-11,
+      "current_paracellular_total_A": -2.91315682245849e-11,
+      "current_pump_apical_A": 5.286964724286592e-13,
+      "current_pump_basolateral_A": 5.9889205939234454e-12,
+      "d_ae4_effective_activation_fraction_dt": 6.870512307225832e-11,
+      "d_alk_i_fmol_dt": -0.0004489439151732777,
+      "d_alk_l_fmol_dt": 2.47428766802036e-05,
+      "d_cl_i_fmol_dt": -0.0083520617773431,
+      "d_cl_l_fmol_dt": -0.00010083767973262381,
+      "d_k_i_fmol_dt": -0.012375910833239231,
+      "d_k_l_fmol_dt": -0.00032574491815661605,
+      "d_na_i_fmol_dt": 0.0035749051407237,
+      "d_na_l_fmol_dt": 0.0002496501151039998,
+      "d_tic_i_fmol_dt": -0.0010900021561788542,
+      "d_tic_l_fmol_dt": 1.6052479634329556e-05,
+      "d_volume_i_pL_dt": -6.0578946471791933e-05,
+      "d_volume_l_pL_dt": -5.260954154063038e-07,
+      "hco3_i_mM": 7.260009692862609,
+      "hco3_l_mM": 2.77951817583266,
+      "independent_cell_assembly_max_abs_fmol_s": 2.7755575615628914e-17,
+      "k_i_fmol": 148.19561641574407,
+      "k_i_mM": 106.24104998347511,
+      "k_l_fmol": 3.4423730556849232,
+      "k_l_mM": 31.928834375567245,
+      "lumen_osmolarity_mOsm": 301.5284540735754,
+      "minimal_nbc_activation_fraction": 1.0,
+      "minimal_nbc_affinity_log": 1.3321165462848223,
+      "na_i_fmol": 30.7154335670628,
+      "na_i_mM": 22.019814025455524,
+      "na_l_fmol": 12.772316617060648,
+      "na_l_mM": 118.4662949836198,
+      "nhe1_stimulation_multiplier": 2.3,
+      "outflow_alkalinity_fmol_s": 0.004345597750759473,
+      "outflow_cl_fmol_s": 0.23068974961461453,
+      "outflow_k_fmol_s": 0.04989792362563968,
+      "outflow_na_fmol_s": 0.1851374237397335,
+      "outflow_tic_fmol_s": 0.0054992388458693356,
+      "ph_i": 7.029893178540999,
+      "ph_l": 6.675506403369476,
+      "q_out_pL_s": 0.0015627856325322932,
+      "residual_ae4_charge_fmol_s": 0.0,
+      "residual_apical_current_A": -9.693522803355793e-26,
+      "residual_basolateral_current_A": 1.9387045606711586e-26,
+      "residual_buffer_site_accounting_fmol_s": 0.0,
+      "residual_carbon_accounting_fmol_s": -2.0816681711721685e-17,
+      "residual_cell_bulk_charge_rate_fmol_s": 8.465450562766819e-16,
+      "residual_cell_speciation_alkalinity_mM": 1.3855583347321954e-13,
+      "residual_homeostasis_charge_fmol_s": -3.469446951953614e-18,
+      "residual_lumen_bulk_charge_rate_minus_outflow_fmol_s": -1.0130785099704553e-15,
+      "residual_lumen_speciation_alkalinity_mM": 6.616929226765933e-14,
+      "residual_minimal_nbc_carbon_source_fmol_s": 0.13477360962562854,
+      "residual_minimal_nbc_charge_source_fmol_s": -0.06738680481281427,
+      "residual_water_volume_accounting_pL_s": 0.0,
+      "speciation_i_alkalinity_residual_mM": 1.3855583347321954e-13,
+      "speciation_i_buffer_h_mM": 10.383517946087872,
+      "speciation_i_buffer_minus_mM": 11.12340362548465,
+      "speciation_i_co2_mM": 0.8531865923578129,
+      "speciation_i_co3_mM": 0.003897897180878724,
+      "speciation_i_h_mM": 9.334838773896835e-05,
+      "speciation_i_hco3_mM": 7.260009692862609,
+      "speciation_i_oh_mM": 0.00010712557808671712,
+      "speciation_i_ph": 7.029893178540999,
+      "speciation_i_total_alkalinity_mM": 18.391222889899225,
+      "speciation_i_total_carbon_mM": 8.117094182401301,
+      "speciation_l_alkalinity_residual_mM": 6.616929226765933e-14,
+      "speciation_l_buffer_h_mM": 6.2938309897147675e-09,
+      "speciation_l_buffer_minus_mM": 2.981408462568949e-09,
+      "speciation_l_co2_mM": 0.7386915225514141,
+      "speciation_l_co3_mM": 0.0006598966470279193,
+      "speciation_l_h_mM": 0.00021110260699708515,
+      "speciation_l_hco3_mM": 2.77951817583266,
+      "speciation_l_oh_mM": 4.737032925480677e-05,
+      "speciation_l_ph": 6.675506403369476,
+      "speciation_l_total_alkalinity_mM": 2.7806742398303155,
+      "speciation_l_total_carbon_mM": 3.518869595031102,
+      "task52_local_unimposed_ae2_cycles": -0.0008324210433085444,
+      "task52_local_unimposed_nkcc1_cycles": 0.14478888666733528,
+      "tic_i_fmol": 11.322532825614154,
+      "tic_i_mM": 8.117094182401301,
+      "tic_l_fmol": 0.3793831537324569,
+      "tic_l_mM": 3.518869595031102,
+      "time_s": 600.0,
+      "tracked_cell_osmole_residual_fmol_s": -6.245004513516506e-17,
+      "tracked_cell_osmole_source_fmol_s": -0.018243069626037424,
+      "volume_i_pL": 1.3948997721576983,
+      "volume_l_pL": 0.10781392816266147,
+      "water_bath_to_cell_pL_s": 0.001406296660467319,
+      "water_bath_to_lumen_pL_s": 9.538393017777593e-05,
+      "water_cell_to_lumen_pL_s": 0.001466875606939111,
+      "water_cell_volume_source_pL_s": -6.0578946471791933e-05,
+      "water_lumen_outflow_pL_s": 0.0015627856325322932,
+      "water_lumen_volume_source_pL_s": -5.260954154063038e-07,
+      "water_volume_conservation_residual_pL_s": 0.0
+    }
+  },
+  "evaluation_counts": {
+    "constructor_core_evaluations": 0,
+    "local_evaluations": 14362,
+    "paired_evaluations": 7181,
+    "parent_factories": 0
+  },
+  "finite_trajectory_arrays": true,
+  "first_failure": null,
+  "gauss8_integrals_0_T": {
+    "KO": {
+      "A": 0.0,
+      "B": -5.449393312875705,
+      "C": -8.7350210776016,
+      "E": -0.437496063674667,
+      "H": 2.450866476694018,
+      "J": 186.88455316627162,
+      "J_aux": 0.0,
+      "J_para_Cl": 72.77437278230934,
+      "J_tmem16a": 186.88455316627162,
+      "K_apical": 26.859715482683036,
+      "K_basolateral": 135.61032072927637,
+      "N": 92.45734155470294,
+      "P": 29.863910267183563,
+      "Q": 0.7779811077678846
+    },
+    "WT": {
+      "A": 46.63671308670384,
+      "B": 39.44463684550413,
+      "C": 1.2291629648320308,
+      "E": -0.437496063674667,
+      "H": 5.323713723770528,
+      "J": 228.48467147697852,
+      "J_aux": 0.0,
+      "J_para_Cl": 84.32474620890763,
+      "J_tmem16a": 228.48467147697852,
+      "K_apical": 39.6383173235781,
+      "K_basolateral": 110.61494808489473,
+      "N": 92.45734155470294,
+      "P": 38.786769223001166,
+      "Q": 0.9729678197805695
+    }
+  },
+  "gauss8_partial_integrals": {
+    "end_s": 600.0,
+    "values": {
+      "KO": {
+        "A": 0.0,
+        "B": -5.449393312875705,
+        "C": -8.7350210776016,
+        "E": -0.437496063674667,
+        "H": 2.450866476694018,
+        "J": 186.88455316627162,
+        "J_aux": 0.0,
+        "J_para_Cl": 72.77437278230934,
+        "J_tmem16a": 186.88455316627162,
+        "K_apical": 26.859715482683036,
+        "K_basolateral": 135.61032072927637,
+        "N": 92.45734155470294,
+        "P": 29.863910267183563,
+        "Q": 0.7779811077678846
+      },
+      "WT": {
+        "A": 46.63671308670384,
+        "B": 39.44463684550413,
+        "C": 1.2291629648320308,
+        "E": -0.437496063674667,
+        "H": 5.323713723770528,
+        "J": 228.48467147697852,
+        "J_aux": 0.0,
+        "J_para_Cl": 84.32474620890763,
+        "J_tmem16a": 228.48467147697852,
+        "K_apical": 39.6383173235781,
+        "K_basolateral": 110.61494808489473,
+        "N": 92.45734155470294,
+        "P": 38.786769223001166,
+        "Q": 0.9729678197805695
+      }
+    }
+  },
+  "headline_0_600": {
+    "chloride_fmol": {
+      "KO": 186.88402017372331,
+      "KO_deficit_fraction": 0.18207912006749594,
+      "WT": 228.48667243847012
+    },
+    "fluid_pL": {
+      "KO": 0.7779801600700088,
+      "KO_deficit_fraction": 0.20039428636660195,
+      "WT": 0.9729547285685054
+    },
+    "mean_chloride_fmol_per_s": {
+      "KO": 0.31147336695620553,
+      "WT": 0.38081112073078355
+    },
+    "mean_fluid_pL_per_s": {
+      "KO": 0.0012966336001166813,
+      "WT": 0.0016215912142808423
+    },
+    "window_s": [
+      0.0,
+      600.0
+    ]
+  },
+  "last_valid_sample_s": 600.0,
+  "max_absolute_residuals": {
+    "KO__auxiliary_component_residual_A": 0.0,
+    "KO__cell_charge_fmol": 4.504840944719035e-12,
+    "KO__chloride_equation_residual_fmol_s": 1.6653345369377348e-16,
+    "KO__independent_cell_assembly_max_abs_fmol_s": 1.6653345369377348e-16,
+    "KO__residual_ae4_charge_fmol_s": 0.0,
+    "KO__residual_apical_current_A": 2.7464981276174747e-25,
+    "KO__residual_basolateral_current_A": 2.3384008175961958e-23,
+    "KO__residual_buffer_site_accounting_fmol_s": 0.0,
+    "KO__residual_carbon_accounting_fmol_s": 5.551115123125783e-17,
+    "KO__residual_cell_bulk_charge_rate_fmol_s": 2.416053468401458e-13,
+    "KO__residual_cell_speciation_alkalinity_mM": 7.425171588693047e-12,
+    "KO__residual_homeostasis_charge_fmol_s": 1.6306400674181987e-16,
+    "KO__residual_lumen_bulk_charge_rate_minus_outflow_fmol_s": 2.856222203195813e-15,
+    "KO__residual_lumen_speciation_alkalinity_mM": 1.2931877790833823e-12,
+    "KO__residual_minimal_nbc_carbon_source_fmol_s": 0.07596827500153976,
+    "KO__residual_minimal_nbc_charge_source_fmol_s": 0.03798413750076988,
+    "KO__residual_water_volume_accounting_pL_s": 2.168404344971009e-19,
+    "KO__speciation_i_alkalinity_residual_mM": 7.425171588693047e-12,
+    "KO__speciation_l_alkalinity_residual_mM": 1.2931877790833823e-12,
+    "KO__tracked_cell_osmole_residual_fmol_s": 4.440892098500626e-16,
+    "KO__water_volume_conservation_residual_pL_s": 2.168404344971009e-19,
+    "WT__auxiliary_component_residual_A": 0.0,
+    "WT__cell_charge_fmol": 3.126388037344441e-13,
+    "WT__chloride_equation_residual_fmol_s": 1.1102230246251565e-16,
+    "WT__independent_cell_assembly_max_abs_fmol_s": 1.1102230246251565e-16,
+    "WT__residual_ae4_charge_fmol_s": 2.7755575615628914e-17,
+    "WT__residual_apical_current_A": 2.714186384939622e-25,
+    "WT__residual_basolateral_current_A": 5.169878828456423e-26,
+    "WT__residual_buffer_site_accounting_fmol_s": 0.0,
+    "WT__residual_carbon_accounting_fmol_s": 5.551115123125783e-17,
+    "WT__residual_cell_bulk_charge_rate_fmol_s": 2.6506574712925612e-15,
+    "WT__residual_cell_speciation_alkalinity_mM": 6.210143510543276e-12,
+    "WT__residual_homeostasis_charge_fmol_s": 1.214306433183765e-16,
+    "WT__residual_lumen_bulk_charge_rate_minus_outflow_fmol_s": 2.8215277336762767e-15,
+    "WT__residual_lumen_speciation_alkalinity_mM": 6.297184995673888e-13,
+    "WT__residual_minimal_nbc_carbon_source_fmol_s": 0.13734227919137448,
+    "WT__residual_minimal_nbc_charge_source_fmol_s": 0.06867113959568724,
+    "WT__residual_water_volume_accounting_pL_s": 2.168404344971009e-19,
+    "WT__speciation_i_alkalinity_residual_mM": 6.210143510543276e-12,
+    "WT__speciation_l_alkalinity_residual_mM": 6.297184995673888e-13,
+    "WT__tracked_cell_osmole_residual_fmol_s": 3.885780586188048e-16,
+    "WT__water_volume_conservation_residual_pL_s": 2.168404344971009e-19
+  },
+  "max_inherited_conservation_tolerance_ratios": {
+    "KO__ae4_charge_fmol_s": 0.0,
+    "KO__apical_current_A": 2.7464981276174747e-05,
+    "KO__basolateral_current_A": 0.002338400817596196,
+    "KO__buffer_site_accounting_fmol_s": 0.0,
+    "KO__carbon_accounting_fmol_s": 5.551115123125783e-07,
+    "KO__cell_bulk_charge_rate_fmol_s": 0.002416053468401458,
+    "KO__cell_speciation_alkalinity_mM": 0.007425171588693046,
+    "KO__homeostasis_charge_fmol_s": 1.6306400674181987e-06,
+    "KO__lumen_bulk_charge_rate_minus_outflow_fmol_s": 2.856222203195813e-05,
+    "KO__lumen_speciation_alkalinity_mM": 0.0012931877790833823,
+    "KO__water_volume_accounting_pL_s": 2.168404344971009e-07,
+    "WT__ae4_charge_fmol_s": 2.7755575615628914e-07,
+    "WT__apical_current_A": 2.714186384939622e-05,
+    "WT__basolateral_current_A": 5.169878828456423e-06,
+    "WT__buffer_site_accounting_fmol_s": 0.0,
+    "WT__carbon_accounting_fmol_s": 5.551115123125783e-07,
+    "WT__cell_bulk_charge_rate_fmol_s": 2.6506574712925612e-05,
+    "WT__cell_speciation_alkalinity_mM": 0.006210143510543276,
+    "WT__homeostasis_charge_fmol_s": 1.214306433183765e-06,
+    "WT__lumen_bulk_charge_rate_minus_outflow_fmol_s": 2.8215277336762767e-05,
+    "WT__lumen_speciation_alkalinity_mM": 0.0006297184995673888,
+    "WT__water_volume_accounting_pL_s": 2.168404344971009e-07
+  },
+  "method": "Radau",
+  "partial_0_T": {
+    "chloride_fmol": {
+      "KO": 186.88402017372331,
+      "KO_deficit_fraction": 0.18207912006749594,
+      "WT": 228.48667243847012
+    },
+    "fluid_pL": {
+      "KO": 0.7779801600700088,
+      "KO_deficit_fraction": 0.20039428636660195,
+      "WT": 0.9729547285685054
+    },
+    "mean_chloride_fmol_per_s": {
+      "KO": 0.31147336695620553,
+      "WT": 0.38081112073078355
+    },
+    "mean_fluid_pL_per_s": {
+      "KO": 0.0012966336001166813,
+      "WT": 0.0016215912142808423
+    },
+    "window_s": [
+      0.0,
+      600.0
+    ]
+  },
+  "raw_endpoint_policy": "An accepted endpoint beyond the first failed dense sample is retained as unvalidated state only; no further integration or diagnostic evaluation.",
+  "raw_solver_accepted_steps": 326,
+  "recorded_end_s": 600.0,
+  "reservoir_budget": {
+    "D_A_fmol": 46.63671308670384,
+    "D_E_fmol": 0.0,
+    "D_J_fmol": 41.600118310706904,
+    "D_N_cycles_fmol": 0.0,
+    "RHS_fmol": 41.600118241960615,
+    "T_s": 600.0,
+    "absolute_tolerance_fmol": 1e-05,
+    "available_reservoir_plus_differential_supply_fmol": 66.33530781855741,
+    "delta_0_fmol": 19.698594731853568,
+    "delta_T_fmol": 24.735189576596795,
+    "headline_trapezoidal_identity_error_fmol": 0.002535345453097193,
+    "identity_error_fmol": 6.874628866171406e-08,
+    "onset_held_state_interval_s": [
+      0.0,
+      1e-06
+    ],
+    "onset_identity_error_bound_fmol": 3.4293471195851085e-07,
+    "onset_right_limit_integrals": {
+      "KO": {
+        "A": 0.0,
+        "B": -3.7956558339147616e-08,
+        "C": -1.0066572471171458e-07,
+        "E": 1.0340193720500542e-09,
+        "H": 2.0221240367815e-08,
+        "J": 2.76533134349884e-07,
+        "J_aux": 0.0,
+        "J_para_Cl": 1.1384919412259606e-07,
+        "J_tmem16a": 2.76533134349884e-07,
+        "K_apical": 2.6319830881208922e-08,
+        "K_basolateral": 2.4298140727443e-07,
+        "N": 3.057649144736831e-07,
+        "P": 4.518845453329205e-08,
+        "Q": 1.0757073853493031e-09
+      },
+      "WT": {
+        "A": 1.3380862931861923e-07,
+        "B": 3.143642172427674e-08,
+        "C": -3.605102401086603e-08,
+        "E": 1.0340193720500542e-09,
+        "H": 1.8148357590546877e-08,
+        "J": 4.856592169897756e-07,
+        "J_aux": 0.0,
+        "J_para_Cl": 1.3396616808801201e-07,
+        "J_tmem16a": 4.856592169897756e-07,
+        "K_apical": 1.831417812110192e-07,
+        "K_basolateral": 2.2589255952118597e-07,
+        "N": 3.057649144736831e-07,
+        "P": 4.518845453329205e-08,
+        "Q": 1.0757073853493031e-09
+      }
+    },
+    "pass": true,
+    "quadrature_8_minus_4_differential_fmol": {
+      "A": -7.105427357601002e-15,
+      "E": 0.0,
+      "J": 0.0,
+      "N": 0.0,
+      "two_N": 0.0
+    },
+    "quadrature_8_minus_4_each_cell_fmol": {
+      "KO": {
+        "A": 0.0,
+        "E": -2.220446049250313e-16,
+        "J": -2.842170943040401e-14,
+        "N": 0.0,
+        "two_N": 0.0
+      },
+      "WT": {
+        "A": -7.105427357601002e-15,
+        "E": -2.220446049250313e-16,
+        "J": -2.842170943040401e-14,
+        "N": 0.0,
+        "two_N": 0.0
+      }
+    },
+    "quadrature_coverage_complete": true,
+    "quadrature_end_s": 600.0,
+    "quadrature_tolerance_fmol": 1e-06,
+    "released_fraction": 0.6271187950841045,
+    "two_D_N_fmol": 0.0
+  },
+  "runtime_s": 6.243469482998989,
+  "sample_count": 927,
+  "sampled_extrema": {
+    "KO": {
+      "B_fmol_s": {
+        "max": 0.0,
+        "min": -0.03798413750076988
+      },
+      "E_Cl_V": {
+        "max": -0.03293386095299552,
+        "min": -0.03703534498350983
+      },
+      "H_fmol_s": {
+        "max": 0.020221240367815002,
+        "min": 0.0012002010363516922
+      },
+      "J_aux_fmol_s": {
+        "max": 0.0,
+        "min": 0.0
+      },
+      "J_fmol_s": {
+        "max": 0.32313911225517167,
+        "min": 0.1661512295491201
+      },
+      "V_a_V": {
+        "max": -0.03497824685566794,
+        "min": -0.0421093217053414
+      },
+      "chloride_driving_force_V": {
+        "max": 0.0050739767218315746,
+        "min": 0.0017495289679464732
+      },
+      "cl_i_mM": {
+        "max": 42.674087211464375,
+        "min": 36.5
+      },
+      "k_i_mM": {
+        "max": 116.30649947209493,
+        "min": 114.35137604764279
+      },
+      "na_i_mM": {
+        "max": 13.750667700675763,
+        "min": 11.636125748680639
+      },
+      "ph_i": {
+        "max": 7.2746506049374675,
+        "min": 6.890000000000001
+      },
+      "q_out_pL_s": {
+        "max": 0.0013567747945720217,
+        "min": 0.0010757073853493032
+      },
+      "tic_i_mM": {
+        "max": 31.389591779249464,
+        "min": 19.574575399100258
+      },
+      "volume_i_pL": {
+        "max": 1.4735348274728293,
+        "min": 1.3420057128779788
+      }
+    },
+    "WT": {
+      "B_fmol_s": {
+        "max": 0.06867113959568724,
+        "min": 0.0
+      },
+      "E_Cl_V": {
+        "max": -0.02514160603704553,
+        "min": -0.028578190792753057
+      },
+      "H_fmol_s": {
+        "max": 0.01814835759054688,
+        "min": 0.00626716209301632
+      },
+      "J_aux_fmol_s": {
+        "max": 0.0,
+        "min": 0.0
+      },
+      "J_fmol_s": {
+        "max": 0.48565921698977566,
+        "min": 0.22480641156538328
+      },
+      "V_a_V": {
+        "max": -0.027617522579378953,
+        "min": -0.035435984739433726
+      },
+      "chloride_driving_force_V": {
+        "max": 0.006865206488670755,
+        "min": 0.002329843344734045
+      },
+      "cl_i_mM": {
+        "max": 57.66757390039875,
+        "min": 50.1
+      },
+      "k_i_mM": {
+        "max": 116.02297004103225,
+        "min": 106.24104998347511
+      },
+      "na_i_mM": {
+        "max": 22.019814025455524,
+        "min": 11.636125748680639
+      },
+      "ph_i": {
+        "max": 7.029893178540999,
+        "min": 6.91
+      },
+      "q_out_pL_s": {
+        "max": 0.0018018430636195432,
+        "min": 0.0010757073853493032
+      },
+      "tic_i_mM": {
+        "max": 16.597344053123294,
+        "min": 8.117094182401301
+      },
+      "volume_i_pL": {
+        "max": 1.465830044221382,
+        "min": 1.3948997721576983
+      }
+    }
+  },
+  "secondary_errors": [],
+  "solver_counters": {
+    "nfev": 2287,
+    "njev": 2,
+    "nlu": 600
+  },
+  "status": "completed",
+  "trajectory_sha256": "4548bde133fd51dcd0046146c7aec16d0cfa287e272513239915b5b40c301134"
+}
