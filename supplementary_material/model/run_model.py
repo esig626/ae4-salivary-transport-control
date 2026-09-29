@@ -4,7 +4,7 @@ Examples
 --------
 Run the principal case::
 
-    python run_model.py --output ae4_output
+    python run_model.py
 
 Run all three auxiliary-conductance cases::
 
@@ -31,8 +31,8 @@ def main():
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("ae4_output"),
-        help="New directory for simulation output. Default: ./ae4_output",
+        default=SUPPLEMENTARY_DIR.parent / "ae4_output",
+        help="New directory for simulation output. Default: <repository>/ae4_output",
     )
     args = parser.parse_args()
 

@@ -7,7 +7,7 @@ This folder contains the model used for the simulations reported in the manuscri
 From the repository root,
 
 ```bash
-python supplementary_material/model/run_model.py --output ae4_output
+python supplementary_material/model/run_model.py
 ```
 
 The default is `case_02`, the principal manuscript simulation. Use

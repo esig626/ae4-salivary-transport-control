@@ -7,7 +7,7 @@ Code, numerical data and supplementary material for **Intracellular chloride ava
 **Run the manuscript model**
 
 ```bash
-python supplementary_material/model/run_model.py --output ae4_output
+python supplementary_material/model/run_model.py
 ```
 
 **Model implementation**  

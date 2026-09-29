@@ -20,7 +20,7 @@ From the repository root,
 python -m venv .venv
 . .venv/bin/activate
 python -m pip install -r supplementary_material/requirements.txt
-python supplementary_material/model/run_model.py --output ae4_output
+python supplementary_material/model/run_model.py
 ```
 
 This runs `case_02`, the principal manuscript case. To run all three principal auxiliary-conductance cases,
