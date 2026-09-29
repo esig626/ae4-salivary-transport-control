@@ -122,7 +122,7 @@ python supplementary_material/model/run_model.py \
   --output output_compensation
 ```
 
-The scan also writes `compensation_scan.csv` with the control secretion, knockout secretion and cumulative secretion deficit at each value of (sigma).
+The scan also writes `compensation_scan.csv` with the control secretion, knockout secretion and cumulative secretion deficit at each value of `sigma`.
 
 ## Plot the numerical figures
 
