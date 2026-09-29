@@ -4,15 +4,21 @@ Code, numerical data and supplementary material for **Intracellular chloride ava
 
 ## Start here
 
-**Manuscript model**  
+**Run the manuscript model**
+
+```bash
+python supplementary_material/model/run_model.py --output ae4_output
+```
+
+**Model implementation**  
 [`supplementary_material/model/ae4_salivary_model.py`](supplementary_material/model/ae4_salivary_model.py)
 
 **Supplementary material**  
 [`supplementary_material/`](supplementary_material/README.md)
 
-The supplementary directory contains the model used for the principal control and Ae4 knockout simulations, its preserved transport dependencies, full-precision parameter and onset records, stored simulation data, and the Python scripts used to rerun the principal simulations and plot the numerical results.
+The supplementary directory contains the model used for the principal control and Ae4 knockout simulations, its preserved transport dependencies, full-precision parameter and onset records, stored simulation data, and the Python plotting scripts.
 
-The principal public model entry point is `PairedModel` in `supplementary_material/model/ae4_salivary_model.py`.
+The principal public model entry point is `PairedModel` in `supplementary_material/model/ae4_salivary_model.py`. The executable entry point is `supplementary_material/model/run_model.py`.
 
 ## Repository structure
 

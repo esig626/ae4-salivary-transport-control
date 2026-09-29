@@ -45,5 +45,6 @@
   "model_entry": "model/ae4_salivary_model.py",
   "model_source": "analysis/52_chloride_reservoir_final_test/task52_model.py",
   "presentation_note": "The supplementary model entry has a publication-facing filename; its scientific implementation is inherited from the recorded source revision.",
-  "archive_location": "provenance/ae4_sections/"
+  "archive_location": "provenance/ae4_sections/",
+  "run_entry": "model/run_model.py"
 }
