@@ -59,8 +59,19 @@ The IPR-only knockout reaches the prescribed intracellular pH acceptance limit b
 | `scripts/plot_figures.py` | Plot numerical manuscript figures from stored trajectories |
 | `scripts/export_parameters.py` | Export constructed model parameters |
 | `scripts/verify_files.py` | Check supplied scientific files against the manifest |
+| [`model_analysis/`](model_analysis/README.md) | **Python scripts, exact inputs and source mapping for the mathematical Model analysis figures** |
 | `provenance/ae4_sections/` | Data and Python plotting material supplied in `ae4_sections.zip` |
 | [`SOURCE_MANIFEST.json`](SOURCE_MANIFEST.json) | Source revision and file identifiers |
+
+## Model-analysis figures
+
+The mathematical figures accompanying the Model analysis section are regenerated with:
+
+```bash
+python supplementary_material/model_analysis/plot_model_analysis.py
+```
+
+See [`model_analysis/README.md`](model_analysis/README.md) for the exact source of each figure. The membrane-potential uniqueness plot uses the stored principal `case_02` endpoint, whereas the Ae4 parameter-equivalence plot is an analytical consequence of the carrier scaling symmetry and does not come from an ODE simulation.
 
 ## Plot figures
 
