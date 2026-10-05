@@ -1,0 +1,12 @@
+{
+  "VT_V": 0.026726659113460144,
+  "J_star_fmol_s": 0.120943577949248,
+  "I_star_A": 1.1669281286214302e-11,
+  "NBC_capacity_from_WT_fmol_s": 0.11570913197464397,
+  "NBC_capacity_from_KO_fmol_s": 0.11570913197464397,
+  "NBC_capacity_recovery_difference": 0.0,
+  "slope_lower_bound": 12.342413215027536,
+  "WT": {"calculated_V_b_V":-0.07811958875484439,"recorded_V_b_V":-0.07811958875484437,"V_b_error_V":1.3877787807814457e-17,"V_a_error_V":3.469446951953614e-18,"minimum_tested_slope":12.34241321508356},
+  "KO": {"calculated_V_b_V":-0.07979768599059225,"recorded_V_b_V":-0.07979768599059224,"V_b_error_V":1.3877787807814457e-17,"V_a_error_V":6.938893903907228e-18,"minimum_tested_slope":12.342413215229248},
+  "maximum_relative_carrier_symmetry_error": 7.771561172376096e-16
+}
