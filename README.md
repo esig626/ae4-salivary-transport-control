@@ -135,6 +135,26 @@ python supplementary_material/scripts/plot_figures.py \
 
 The script exports EPS, PDF and PNG figures together with the numerical values used for plotting.
 
+## Model-analysis figures
+
+The two mathematical figures used in the **Model analysis** section have their own reproducible source folder:
+
+[`supplementary_material/model_analysis/`](supplementary_material/model_analysis/README.md)
+
+Run both figure scripts with:
+
+```bash
+python supplementary_material/model_analysis/plot_model_analysis.py
+```
+
+The membrane-potential uniqueness figure uses the archived **principal central simulation** in `supplementary_material/data/central/case_02/` at `t = 600 s`. That source simulation can be rerun with:
+
+```bash
+python supplementary_material/model/run_model.py --simulation principal --output output_principal
+```
+
+The Ae4 parameter-equivalence figure is analytical and does not use a dynamical trajectory. Its README links directly to the Ae4 carrier implementation and records the exact inputs used for the published plot.
+
 ## Inspect the parameters
 
 A readable parameter document is provided at:
